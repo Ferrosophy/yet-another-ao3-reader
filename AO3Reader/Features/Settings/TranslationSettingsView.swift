@@ -6,6 +6,7 @@ struct TranslationSettingsView: View {
     @State private var keyStatus: String?
     @State private var testResult: String?
     @State private var isTesting = false
+    @State private var challenge: TranslationChallenge?
 
     var body: some View {
         @Bindable var settings = app.translation
@@ -30,7 +31,7 @@ struct TranslationSettingsView: View {
                 Text("沉浸式翻譯：譯文顯示在每段原文下方，不會取代原文。")
             }
 
-            if kind.requiresAPIKey {
+            if kind.acceptsAPIKey {
                 Section {
                     SecureField("API Key", text: $apiKey)
                         .textInputAutocapitalization(.never)
@@ -89,6 +90,16 @@ struct TranslationSettingsView: View {
                         .appFont(.footnote)
                         .foregroundStyle(.secondary)
                 }
+            case .apple:
+                notice("在裝置上翻譯，免金鑰、可離線。首次使用某組語言時會彈出下載視窗。原文語言為自動偵測時，會先在本機判斷語言。")
+            case .deepL:
+                notice("不填金鑰時使用 DeepL 網頁版（非官方，限流嚴格）；填入 DeepL API 金鑰則使用官方介面，免費版金鑰每月 50 萬字。")
+            case .transmart:
+                notice("騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。")
+            case .volcano:
+                notice("火山翻譯（字節跳動）瀏覽器擴充所用的介面，免金鑰。屬非官方介面，可能變更或限流。")
+            case .baiduWeb, .youdaoWeb, .sogouWeb:
+                notice("網頁版非官方介面，網站改版時可能失效；如遇驗證碼，會彈出網頁讓你完成驗證後再重試。有道網頁版只支援譯成中文或英文。")
             case .bingFree:
                 Section {
                     Text("使用 Edge 瀏覽器內建的微軟翻譯端點，無需金鑰。屬非官方介面，可能變更或限流。")
@@ -139,10 +150,21 @@ struct TranslationSettingsView: View {
             }
         }
         .navigationTitle("翻譯")
+        .sheet(item: $challenge) { challenge in
+            TranslationChallengeView(challenge: challenge)
+        }
         .onAppear(perform: loadKey)
         .onChange(of: kind) {
             loadKey()
             testResult = nil
+        }
+    }
+
+    private func notice(_ text: LocalizedStringKey) -> some View {
+        Section {
+            Text(text)
+                .appFont(.footnote)
+                .foregroundStyle(.secondary)
         }
     }
 
@@ -168,6 +190,9 @@ struct TranslationSettingsView: View {
             let provider = try app.translation.makeProvider()
             let result = try await provider.translate([sample], from: app.translation.config.sourceLanguage, to: app.translation.config.targetLanguage)
             testResult = "✅ \(result.first ?? "")"
+        } catch TranslationError.verificationRequired(let required) {
+            testResult = nil
+            challenge = required
         } catch {
             testResult = "❌ \(error.localizedDescription)"
         }

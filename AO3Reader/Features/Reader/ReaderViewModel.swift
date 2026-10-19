@@ -23,6 +23,10 @@ final class ReaderViewModel {
     private(set) var chapterIndex = 0
     private(set) var translations: [Paragraph.ID: ParagraphTranslation] = [:]
     private(set) var translationError: String?
+    /// 翻譯服務要求驗證（網頁驗證碼或 Apple 語言下載）時由閱讀頁彈出視窗
+    var challenge: TranslationChallenge?
+    /// 同一個驗證只自動彈出一次，避免使用者直接關閉後反覆彈出
+    private var presentedChallenges: Set<String> = []
 
     /// 目前畫面頂端的段落 ID（ScrollView 的 scrollPosition），用於保持捲動位置與記住閱讀進度。
     var scrollAnchor: String? {
@@ -252,6 +256,10 @@ final class ReaderViewModel {
                 guard generation == self.generation else { return }
                 for paragraph in batch { translations[paragraph.id] = .failed(error.localizedDescription) }
                 translationError = error.localizedDescription
+                if case TranslationError.verificationRequired(let required) = error, challenge == nil,
+                   presentedChallenges.insert(required.id).inserted {
+                    challenge = required
+                }
             }
         }
 

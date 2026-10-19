@@ -2,7 +2,8 @@ import Foundation
 import Observation
 
 enum TranslationProviderKind: String, CaseIterable, Codable, Identifiable, Sendable {
-    case googleWeb, bingFree, googleCloud, microsoftAzure, openAICompatible, anthropic, gemini
+    case googleWeb, bingFree, apple, deepL, transmart, volcano, baiduWeb, youdaoWeb, sogouWeb
+    case googleCloud, microsoftAzure, openAICompatible, anthropic, gemini
 
     var id: String { rawValue }
 
@@ -10,6 +11,13 @@ enum TranslationProviderKind: String, CaseIterable, Codable, Identifiable, Senda
         switch self {
         case .googleWeb: String(localized: "Google 翻譯（免金鑰）")
         case .bingFree: String(localized: "Bing 翻譯（免金鑰）")
+        case .apple: String(localized: "Apple 翻譯（裝置上）")
+        case .deepL: "DeepL"
+        case .transmart: String(localized: "騰訊交互翻譯 TranSmart（免金鑰）")
+        case .volcano: String(localized: "火山翻譯（免金鑰）")
+        case .baiduWeb: String(localized: "百度翻譯（網頁版）")
+        case .youdaoWeb: String(localized: "有道翻譯（網頁版）")
+        case .sogouWeb: String(localized: "搜狗翻譯（網頁版）")
         case .googleCloud: "Google Cloud Translation"
         case .microsoftAzure: "Microsoft Translator（Azure）"
         case .openAICompatible: String(localized: "OpenAI 相容 API")
@@ -18,7 +26,9 @@ enum TranslationProviderKind: String, CaseIterable, Codable, Identifiable, Senda
         }
     }
 
-    var requiresAPIKey: Bool { self != .googleWeb && self != .bingFree }
+    var requiresAPIKey: Bool { [.googleCloud, .microsoftAzure, .openAICompatible, .anthropic, .gemini].contains(self) }
+    /// 可填可不填金鑰（DeepL：填了走官方 API，不填走網頁版）
+    var acceptsAPIKey: Bool { requiresAPIKey || self == .deepL }
     var isLLM: Bool { [.openAICompatible, .anthropic, .gemini].contains(self) }
     var keychainAccount: String { "apikey.\(rawValue)" }
 }
@@ -119,6 +129,20 @@ final class TranslationSettings {
             return GoogleWebTranslator()
         case .bingFree:
             return BingTranslator(auth: .edgeFree)
+        case .apple:
+            return AppleTranslator()
+        case .deepL:
+            return DeepLTranslator(apiKey: key)
+        case .transmart:
+            return TransmartTranslator()
+        case .volcano:
+            return VolcanoTranslator()
+        case .baiduWeb:
+            return BaiduWebTranslator()
+        case .youdaoWeb:
+            return YoudaoWebTranslator()
+        case .sogouWeb:
+            return SogouWebTranslator()
         case .googleCloud:
             return GoogleCloudTranslator(apiKey: key)
         case .microsoftAzure:

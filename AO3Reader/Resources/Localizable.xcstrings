@@ -144,6 +144,149 @@
         }
       }
     },
+    "%@ 需要驗證，請在彈出的網頁中完成後重試": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ يحتاج إلى التحقق. أكمله على الصفحة التي تفتح، ثم حاول مرة أخرى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ muss überprüft werden. Vervollständigen Sie den Vorgang auf der Seite, die geöffnet wird, und versuchen Sie es dann erneut."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ needs verification. Complete it on the page that opens, then try again."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ necesita verificación. Complételo en la página que se abre y vuelva a intentarlo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ doit être vérifié. Complétez-le sur la page qui s'ouvre, puis réessayez."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ सत्यापन की आवश्यकता है। खुलने वाले पृष्ठ पर इसे पूरा करें, फिर पुनः प्रयास करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ perlu verifikasi. Selesaikan di halaman yang terbuka, lalu coba lagi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ necessita di verifica. Completalo nella pagina che si apre, quindi riprova."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@は確認が必要です。開いたページで入力を完了してから、もう一度お試しください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 확인이 필요합니다. 열리는 페이지에서 작성을 완료한 후 다시 시도하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ heeft verificatie nodig. Vul het in op de pagina die wordt geopend en probeer het opnieuw."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ wymaga weryfikacji. Wypełnij go na stronie, która się otworzy, a następnie spróbuj ponownie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ precisa de verificação. Conclua-o na página exibida e tente novamente."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ требует проверки. Завершите его на открывшейся странице и повторите попытку."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ต้องการการยืนยัน กรอกข้อมูลในหน้าที่เปิดขึ้นมาแล้วลองอีกครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@'ın doğrulanması gerekiyor. Açılan sayfada işlemi tamamlayıp tekrar deneyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ потребує перевірки. Завершіть його на сторінці, що відкриється, а потім повторіть спробу."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ cần xác minh. Hãy hoàn thành nó trên trang mở ra, sau đó thử lại."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 需要验证，请在弹出的网页中完成后重试"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 需要驗證，請在彈出的網頁中完成後重試"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 需要驗證，請在彈出的網頁中完成後重試"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 需要驗證，請在彈出的網頁中完成後重試"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 需要驗證，請在彈出的網頁中完成後重試"
+          }
+        }
+      }
+    },
     "%@（讀取中或無法訂閱）": {
       "extractionState": "manual",
       "localizations": {
@@ -716,6 +859,435 @@
         }
       }
     },
+    "Apple 翻譯不支援這組語言": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تدعم خدمة Apple Translate هذا الزوج اللغوي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate unterstützt dieses Sprachpaar nicht"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate doesn't support this language pair"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate no admite este par de idiomas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate ne prend pas en charge cette paire de langues"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate इस भाषा युग्म का समर्थन नहीं करता"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate tidak mendukung pasangan bahasa ini"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate non supporta questa combinazione linguistica"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate はこの言語ペアをサポートしていません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 번역은 이 언어 쌍을 지원하지 않습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate ondersteunt dit talenpaar niet"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Apple nie obsługuje tej pary językowej"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Apple Translate não oferece suporte a este par de idiomas"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate не поддерживает эту языковую пару"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate ไม่รองรับคู่ภาษานี้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate bu dil çiftini desteklemiyor"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate не підтримує цю мовну пару"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate không hỗ trợ cặp ngôn ngữ này"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻译不支持这组语言"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯不支援這組語言"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯不支援這組語言"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯不支援這組語言"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯不支援這組語言"
+          }
+        }
+      }
+    },
+    "Apple 翻譯需要先下載這組語言才能在裝置上翻譯。下載後可離線使用。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحتاج خدمة Apple Translate إلى تنزيل هذه اللغات لترجمتها على جهازك. بعد ذلك يعمل دون اتصال."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate muss diese Sprachen herunterladen, um sie auf Ihrem Gerät übersetzen zu können. Danach funktioniert es offline."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate needs to download these languages to translate on your device. After that it works offline."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate necesita descargar estos idiomas para traducir en su dispositivo. Después de eso, funciona sin conexión."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate doit télécharger ces langues pour traduire sur votre appareil. Après cela, cela fonctionne hors ligne."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate को आपके डिवाइस पर अनुवाद करने के लिए इन भाषाओं को डाउनलोड करना होगा। इसके बाद यह ऑफलाइन काम करता है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate perlu mengunduh bahasa-bahasa ini untuk diterjemahkan di perangkat Anda. Setelah itu berfungsi offline."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate deve scaricare queste lingue per tradurre sul tuo dispositivo. Dopodiché funziona offline."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate で翻訳するには、これらの言語をデバイスにダウンロードする必要があります。その後はオフラインでも動作します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기에서 번역하려면 Apple Translate에서 이러한 언어를 다운로드해야 합니다. 그 후에는 오프라인으로 작동합니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate moet deze talen downloaden om ze op uw apparaat te kunnen vertalen. Daarna werkt het offline."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aby móc tłumaczyć na swoim urządzeniu, Apple Translate musi pobrać te języki. Potem działa offline."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Apple Translate precisa baixar esses idiomas para traduzir no seu dispositivo. Depois disso, funciona offline."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate необходимо загрузить эти языки для перевода на ваше устройство. После этого он работает в автономном режиме."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate จำเป็นต้องดาวน์โหลดภาษาเหล่านี้เพื่อแปลบนอุปกรณ์ของคุณ หลังจากนั้นก็ทำงานแบบออฟไลน์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate'in cihazınızda çeviri yapabilmesi için bu dilleri indirmesi gerekiyor. Bundan sonra çevrimdışı çalışır."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate потрібно завантажити ці мови для перекладу на вашому пристрої. Після цього він працює в автономному режимі."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate cần tải xuống các ngôn ngữ này để dịch trên thiết bị của bạn. Sau đó nó hoạt động ngoại tuyến."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻译需要先下载这组语言才能在设备上翻译。下载后可脱机使用。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯需要先下載這組語言才能在裝置上翻譯。下載後可離線使用。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯需要先下載這組語言才能在裝置上翻譯。下載後可離線使用。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯需要先下載這組語言才能在裝置上翻譯。下載後可離線使用。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯需要先下載這組語言才能在裝置上翻譯。下載後可離線使用。"
+          }
+        }
+      }
+    },
+    "Apple 翻譯（裝置上）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة Apple (على الجهاز)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (auf dem Gerät)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (On Device)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traductor de Apple (en el dispositivo)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (sur l'appareil)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple अनुवाद (डिवाइस पर)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (Di Perangkat)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Traduttore (sul dispositivo)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻訳 (デバイス上)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 번역(기기 내)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (op apparaat)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Apple (na urządzeniu)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (no dispositivo)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (на устройстве)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (บนอุปกรณ์)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (Cihazda)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (на пристрої)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate (Trên thiết bị)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻译（设备上）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯（裝置上）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯（裝置上）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯（裝置上）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯（裝置上）"
+          }
+        }
+      }
+    },
     "Archive of Our Own（官網）": {
       "extractionState": "manual",
       "localizations": {
@@ -1141,6 +1713,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "Claude 模型"
+          }
+        }
+      }
+    },
+    "DeepL 網頁版暫時限流，請稍後再試，或填入免費的 DeepL API 金鑰": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "موقع DeepL هو طلبات تحدد المعدل. حاول مرة أخرى لاحقًا، أو قم بإضافة مفتاح DeepL API مجاني."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf der DeepL-Website gibt es geschwindigkeitsbegrenzende Anfragen. Versuchen Sie es später noch einmal oder fügen Sie einen kostenlosen DeepL-API-Schlüssel hinzu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The DeepL website is rate-limiting requests. Try again later, or add a free DeepL API key."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El sitio web de DeepL limita la tasa de solicitudes. Vuelva a intentarlo más tarde o agregue una clave API de DeepL gratuita."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le site Web DeepL limite le débit des requêtes. Réessayez plus tard ou ajoutez une clé API DeepL gratuite."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डीपएल वेबसाइट दर-सीमित अनुरोध है। बाद में पुनः प्रयास करें, या एक निःशुल्क डीपएल एपीआई कुंजी जोड़ें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Situs web DeepL membatasi permintaan. Coba lagi nanti, atau tambahkan kunci API DeepL gratis."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il sito Web DeepL limita la velocità delle richieste. Riprova più tardi o aggiungi una chiave API DeepL gratuita."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL Web サイトはレート制限リクエストです。後でもう一度試すか、無料の DeepL API キーを追加してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL 웹사이트는 요청 속도를 제한합니다. 나중에 다시 시도하거나 무료 DeepL API 키를 추가하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De DeepL-website bevat snelheidsbeperkende verzoeken. Probeer het later opnieuw of voeg een gratis DeepL API-sleutel toe."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Witryna DeepL obsługuje żądania ograniczające szybkość transmisji. Spróbuj ponownie później lub dodaj bezpłatny klucz API DeepL."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O site DeepL limita as solicitações. Tente novamente mais tarde ou adicione uma chave API gratuita do DeepL."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Веб-сайт DeepL ограничивает скорость запросов. Повторите попытку позже или добавьте бесплатный ключ API DeepL."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เว็บไซต์ DeepL เป็นคำขอที่จำกัดอัตรา ลองอีกครั้งในภายหลัง หรือเพิ่มคีย์ DeepL API ฟรี"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL web sitesinde istekler hız sınırlayıcıdır. Daha sonra tekrar deneyin veya ücretsiz bir DeepL API anahtarı ekleyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Веб-сайт DeepL обмежує швидкість запитів. Спробуйте пізніше або додайте безкоштовний ключ DeepL API."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trang web DeepL có các yêu cầu giới hạn tỷ lệ. Hãy thử lại sau hoặc thêm khóa API DeepL miễn phí."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL 网页版暂时限流，请稍后再试，或填入免费的 DeepL API 密钥"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL 網頁版暫時限流，請稍後再試，或填入免費的 DeepL API 金鑰"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL 網頁版暫時限流，請稍後再試，或填入免費的 DeepL API 金鑰"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL 網頁版暫時限流，請稍後再試，或填入免費的 DeepL API 金鑰"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DeepL 網頁版暫時限流，請稍後再試，或填入免費的 DeepL API 金鑰"
           }
         }
       }
@@ -2142,6 +2857,435 @@
           "stringUnit": {
             "state": "translated",
             "value": "下一章"
+          }
+        }
+      }
+    },
+    "下載": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحميل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herunterladen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Télécharger"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डाउनलोड करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unduh"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scarica"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロード"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다운로드"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloaden"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pobierz"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baixar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скачать"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดาวน์โหลด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İndir"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завантажити"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tải xuống"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載"
+          }
+        }
+      }
+    },
+    "下載翻譯語言": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحميل اللغات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprachen herunterladen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download Languages"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargar Idiomas"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Télécharger les langues"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "भाषाएँ डाउनलोड करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unduh Bahasa"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scarica Lingue"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロード言語"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "언어 다운로드"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Talen downloaden"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pobierz Języki"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baixar idiomas"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скачать языки"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดาวน์โหลดภาษา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dilleri İndir"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завантажити мови"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tải xuống ngôn ngữ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载翻译语言"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載翻譯語言"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載翻譯語言"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載翻譯語言"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載翻譯語言"
+          }
+        }
+      }
+    },
+    "不填金鑰時使用 DeepL 網頁版（非官方，限流嚴格）；填入 DeepL API 金鑰則使用官方介面，免費版金鑰每月 50 萬字。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بدون مفتاح، يتم استخدام موقع DeepL (غير رسمي ومحدود للغاية). باستخدام مفتاح DeepL API، يتم استخدام واجهة برمجة التطبيقات الرسمية؛ تتضمن المفاتيح المجانية 500000 حرف شهريًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohne Schlüssel wird die DeepL-Website genutzt (inoffiziell und streng limitiert). Bei einem DeepL-API-Schlüssel wird die offizielle API verwendet; Kostenlose Schlüssel umfassen 500.000 Zeichen pro Monat."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without a key, the DeepL website is used (unofficial and strictly rate-limited). With a DeepL API key the official API is used; free keys include 500,000 characters per month."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin clave, se utiliza el sitio web de DeepL (no oficial y con tarifa estrictamente limitada). Con una clave API de DeepL se utiliza la API oficial; Las claves gratuitas incluyen 500.000 caracteres por mes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans clé, le site DeepL est utilisé (non officiel et strictement limité). Avec une clé API DeepL, l'API officielle est utilisée ; les clés gratuites incluent 500 000 caractères par mois."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कुंजी के बिना, डीपएल वेबसाइट का उपयोग किया जाता है (अनौपचारिक और सख्ती से दर-सीमित)। डीपएल एपीआई कुंजी के साथ आधिकारिक एपीआई का उपयोग किया जाता है; मुफ़्त कुंजियों में प्रति माह 500,000 अक्षर शामिल हैं।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanpa kunci, situs web DeepL digunakan (tidak resmi dan dibatasi tarifnya). Dengan kunci API DeepL, API resmi digunakan; kunci gratis mencakup 500.000 karakter per bulan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senza chiave viene utilizzato il sito web DeepL (non ufficiale e con velocità rigorosamente limitata). Con una chiave API DeepL viene utilizzata l'API ufficiale; le chiavi gratuite includono 500.000 caratteri al mese."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キーがないと、DeepL Web サイトが使用されます (非公式で厳密にレートが制限されています)。 DeepL API キーを使用すると、公式 API が使用されます。無料キーには 1 か月あたり 500,000 文字が含まれます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키가 없으면 DeepL 웹사이트가 사용됩니다(비공식적이고 엄격하게 속도가 제한됨). DeepL API 키를 사용하면 공식 API가 사용됩니다. 무료 키에는 월 500,000자가 포함됩니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zonder sleutel wordt de DeepL-website gebruikt (onofficieel en strikt beperkt). Met een DeepL API-sleutel wordt de officiële API gebruikt; gratis sleutels bevatten 500.000 tekens per maand."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez klucza używana jest strona DeepL (nieoficjalna i ściśle ograniczona stawka). W przypadku klucza DeepL API używane jest oficjalne API; darmowe klucze zawierają 500 000 znaków miesięcznie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sem uma chave, o site DeepL é usado (não oficial e com taxa estritamente limitada). Com uma chave API do DeepL, a API oficial é usada; as chaves gratuitas incluem 500.000 caracteres por mês."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без ключа используется веб-сайт DeepL (неофициальный и строго ограниченный по скорости). С ключом API DeepL используется официальный API; бесплатные ключи включают 500 000 символов в месяц."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หากไม่มีคีย์ ระบบจะใช้เว็บไซต์ DeepL (ไม่เป็นทางการและจำกัดอัตราอย่างเคร่งครัด) ด้วยคีย์ DeepL API จะใช้ API อย่างเป็นทางการ คีย์ฟรีรวม 500,000 ตัวอักษรต่อเดือน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anahtar olmadan DeepL web sitesi kullanılır (resmi değildir ve kesinlikle oranlarla sınırlıdır). DeepL API anahtarıyla resmi API kullanılır; ücretsiz anahtarlar ayda 500.000 karakter içerir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без ключа використовується веб-сайт DeepL (неофіційний і суворо обмежений). З ключем DeepL API використовується офіційний API; безкоштовні ключі містять 500 000 символів на місяць."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nếu không có khóa, trang web DeepL sẽ được sử dụng (không chính thức và bị giới hạn tỷ lệ nghiêm ngặt). Với khóa API DeepL, API chính thức sẽ được sử dụng; khóa miễn phí bao gồm 500.000 ký tự mỗi tháng."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不填密钥时使用 DeepL 网页版（非官方，限流严格）；填入 DeepL API 密钥则使用官方界面，免费版密钥每月 50 万字。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不填金鑰時使用 DeepL 網頁版（非官方，限流嚴格）；填入 DeepL API 金鑰則使用官方介面，免費版金鑰每月 50 萬字。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不填金鑰時使用 DeepL 網頁版（非官方，限流嚴格）；填入 DeepL API 金鑰則使用官方介面，免費版金鑰每月 50 萬字。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不填金鑰時使用 DeepL 網頁版（非官方，限流嚴格）；填入 DeepL API 金鑰則使用官方介面，免費版金鑰每月 50 萬字。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不填金鑰時使用 DeepL 網頁版（非官方，限流嚴格）；填入 DeepL API 金鑰則使用官方介面，免費版金鑰每月 50 萬字。"
           }
         }
       }
@@ -12156,6 +13300,149 @@
         }
       }
     },
+    "在裝置上翻譯，免金鑰、可離線。首次使用某組語言時會彈出下載視窗。原文語言為自動偵測時，會先在本機判斷語言。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يترجم على جهازك، بدون مفتاح ودعم دون اتصال بالإنترنت. سيُطلب منك تنزيل كل زوج لغوي في المرة الأولى. عندما تكون اللغة المصدر تلقائية، يتم اكتشافها على جهازك أولاً."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetzt auf Ihrem Gerät, ohne Schlüssel- und Offline-Unterstützung. Beim ersten Mal werden Sie aufgefordert, jedes Sprachpaar herunterzuladen. Wenn die Ausgangssprache automatisch ist, wird sie zuerst auf Ihrem Gerät erkannt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translates on your device, with no key and offline support. You'll be asked to download each language pair the first time. When the source language is automatic, it's detected on your device first."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduce en su dispositivo, sin clave y con soporte sin conexión. Se le pedirá que descargue cada par de idiomas la primera vez. Cuando el idioma de origen es automático, se detecta primero en su dispositivo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduit sur votre appareil, sans clé ni support hors ligne. Il vous sera demandé de télécharger chaque paire de langues la première fois. Lorsque la langue source est automatique, elle est détectée en premier sur votre appareil."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बिना किसी कुंजी और ऑफ़लाइन समर्थन के, आपके डिवाइस पर अनुवाद करता है। आपसे पहली बार प्रत्येक भाषा युग्म को डाउनलोड करने के लिए कहा जाएगा। जब स्रोत भाषा स्वचालित होती है, तो सबसे पहले इसका पता आपके डिवाइस पर लगाया जाता है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menerjemahkan di perangkat Anda, tanpa kunci dan dukungan offline. Anda akan diminta mengunduh setiap pasangan bahasa untuk pertama kalinya. Jika bahasa sumbernya otomatis, bahasa tersebut akan terdeteksi terlebih dahulu di perangkat Anda."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduce sul tuo dispositivo, senza chiave e supporto offline. Ti verrà chiesto di scaricare ciascuna coppia linguistica la prima volta. Quando la lingua di origine è automatica, viene rilevata prima sul tuo dispositivo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キーなし、オフライン サポートなしで、デバイス上で翻訳します。初めて各言語ペアをダウンロードするように求められます。ソース言語が自動の場合、デバイス上で最初に検出されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키 및 오프라인 지원 없이 장치에서 번역합니다. 처음에는 각 언어 쌍을 다운로드하라는 메시지가 표시됩니다. 출발어가 자동인 경우 기기에서 먼저 감지됩니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertaalt op uw apparaat, zonder sleutel en offline ondersteuning. De eerste keer wordt u gevraagd elk talenpaar te downloaden. Wanneer de brontaal automatisch is, wordt deze eerst op uw apparaat gedetecteerd."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumaczy na Twoim urządzeniu, bez obsługi kluczy i trybu offline. Za pierwszym razem zostaniesz poproszony o pobranie każdej pary językowej. Jeśli język źródłowy jest ustawiony automatycznie, jest on najpierw wykrywany na Twoim urządzeniu."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduz no seu dispositivo, sem chave e com suporte offline. Você será solicitado a baixar cada par de idiomas na primeira vez. Quando o idioma de origem é automático, ele é detectado primeiro no seu dispositivo."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переводит на вашем устройстве без ключа и автономной поддержки. Вам будет предложено загрузить каждую языковую пару в первый раз. Если исходный язык выбран автоматически, он сначала определяется на вашем устройстве."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แปลบนอุปกรณ์ของคุณโดยไม่ต้องใช้คีย์และรองรับออฟไลน์ คุณจะถูกขอให้ดาวน์โหลดแต่ละคู่ภาษาในครั้งแรก เมื่อภาษาต้นทางเป็นแบบอัตโนมัติ ระบบจะตรวจพบภาษาดังกล่าวบนอุปกรณ์ของคุณก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anahtarsız ve çevrimdışı destek olmadan cihazınızda çeviri yapar. İlk seferde her dil çiftini indirmeniz istenecektir. Kaynak dil otomatik olduğunda ilk olarak cihazınızda algılanır."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перекладає на вашому пристрої, без ключа та підтримки офлайн. Перший раз вам буде запропоновано завантажити кожну мовну пару. Коли вихідна мова встановлюється автоматично, вона спочатку визначається на вашому пристрої."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dịch trên thiết bị của bạn mà không cần hỗ trợ chính và ngoại tuyến. Bạn sẽ được yêu cầu tải từng cặp ngôn ngữ xuống lần đầu tiên. Khi ngôn ngữ nguồn được tự động hóa, ngôn ngữ nguồn đó sẽ được phát hiện trên thiết bị của bạn trước tiên."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在设备上翻译，免密钥、可脱机。首次使用某组语言时会弹出下载窗口。原文语言为自动侦测时，会先在本机判断语言。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在裝置上翻譯，免金鑰、可離線。首次使用某組語言時會彈出下載視窗。原文語言為自動偵測時，會先在本機判斷語言。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在裝置上翻譯，免金鑰、可離線。首次使用某組語言時會彈出下載視窗。原文語言為自動偵測時，會先在本機判斷語言。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在裝置上翻譯，免金鑰、可離線。首次使用某組語言時會彈出下載視窗。原文語言為自動偵測時，會先在本機判斷語言。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在裝置上翻譯，免金鑰、可離線。首次使用某組語言時會彈出下載視窗。原文語言為自動偵測時，會先在本機判斷語言。"
+          }
+        }
+      }
+    },
     "墨黑": {
       "extractionState": "manual",
       "localizations": {
@@ -20450,6 +21737,292 @@
         }
       }
     },
+    "搜狗翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة سوغو"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Übersetzen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Translate"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Traducir"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Traduire"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सोगौ अनुवाद"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Sogou"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Traduci"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "総合翻訳"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "소고번역"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Vertalen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Sogou"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Traduzir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Переводчик"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โซกูแปล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Çeviri"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Translate"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Dịch"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯"
+          }
+        }
+      }
+    },
+    "搜狗翻譯（網頁版）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة سوغو (الويب)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Translate (Web)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Translate (Web)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traductor Sogou (Web)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Traduire (Web)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सोगौ अनुवाद (वेब)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Sogou (Web)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Traduttore (Web)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "総合翻訳（Web）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "소고번역(웹)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Vertalen (Web)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Sogou (internet)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tradução Sogou (Web)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Translate (Интернет)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou แปล (เว็บ)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Çeviri (Web)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Translate (веб)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sogou Dịch (Web)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻译（网页版）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜狗翻譯（網頁版）"
+          }
+        }
+      }
+    },
     "操作失敗：%@": {
       "extractionState": "manual",
       "localizations": {
@@ -23735,6 +25308,435 @@
           "stringUnit": {
             "state": "translated",
             "value": "最新作品"
+          }
+        }
+      }
+    },
+    "有道翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يوداو ترجمة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Übersetzen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Translate"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Traducir"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Traduire"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao अनुवाद"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Youdao"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Traduci"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヨウダオ翻訳"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "유다오 번역"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Vertalen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Tłumacz"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Traduzir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Переводчик"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โหยวเต่าแปล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Çeviri"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Translate"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Dịch"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯"
+          }
+        }
+      }
+    },
+    "有道翻譯（網頁版）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة يوداو (الويب)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Translate (Web)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Translate (Web)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traductor de Youdao (Web)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Traduire (Web)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao अनुवाद (वेब)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Youdao (Web)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Traduttore (Web)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao 翻訳 (Web)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao 번역(웹)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Vertalen (Web)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Youdao (internet)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tradução Youdao (Web)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Translate (Интернет)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao แปล (เว็บ)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Çeviri (Web)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Translate (веб)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao Dịch (Web)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻译（网页版）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）"
+          }
+        }
+      }
+    },
+    "有道翻譯（網頁版）只支援譯成中文或英文": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يترجم Youdao (الويب) إلى اللغة الصينية أو الإنجليزية فقط"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (Web) übersetzt nur ins Chinesische oder Englische"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) only translates into Chinese or English"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) solo traduce al chino o al inglés"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) ne traduit qu'en chinois ou en anglais"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (वेब) केवल चीनी या अंग्रेजी में अनुवाद करता है"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) hanya diterjemahkan ke dalam bahasa Mandarin atau Inggris"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) si traduce solo in cinese o inglese"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (ウェブ) は中国語または英語のみに翻訳されます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao(웹)는 중국어 또는 영어로만 번역됩니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) vertaalt alleen in het Chinees of Engels"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (internet) można tłumaczyć tylko na język chiński lub angielski"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) traduz apenas para chinês ou inglês"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (веб-версия) переводится только на китайский или английский язык."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (เว็บ) แปลเป็นภาษาจีนหรือภาษาอังกฤษเท่านั้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) yalnızca Çince veya İngilizceye çevrilir"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) перекладається лише китайською або англійською"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Youdao (web) chỉ dịch sang tiếng Trung hoặc tiếng Anh"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻译（网页版）只支持译成中文或英文"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）只支援譯成中文或英文"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）只支援譯成中文或英文"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）只支援譯成中文或英文"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有道翻譯（網頁版）只支援譯成中文或英文"
           }
         }
       }
@@ -30031,6 +32033,435 @@
         }
       }
     },
+    "火山翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة بركان"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vulkan übersetzen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcano Translate"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcán Traducir"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcan Traduire"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ज्वालामुखी अनुवाद"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Gunung Berapi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vulcano Traduci"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻訳"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화산 번역"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vulkaan Vertalen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz wulkan"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vulcão Traduzir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вулкан Перевод"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ภูเขาไฟแปล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volkan Çevirisi"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вулкан Переклад"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dịch núi lửa"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯"
+          }
+        }
+      }
+    },
+    "火山翻譯（免金鑰）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة البركان (بدون مفتاح)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vulkanübersetzung (kein Schlüssel)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcano Translate (No Key)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducción de volcán (sin clave)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcan Traduire (Pas de clé)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ज्वालामुखी अनुवाद (कोई कुंजी नहीं)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Gunung Berapi (Tanpa Kunci)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vulcano Traduci (nessuna chiave)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻訳 (鍵なし)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화산 번역(열쇠 없음)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vulkaan vertalen (geen sleutel)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz wulkanu (bez klucza)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tradução do vulcão (sem chave)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcano Translate (без ключа)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ภูเขาไฟแปล (ไม่มีคีย์)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volkan Çevirisi (Anahtar Yok)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переклад вулкана (без ключа)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dịch Núi Lửa (Không Cần Chìa Khóa)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻译（免密钥）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（免金鑰）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（免金鑰）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（免金鑰）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（免金鑰）"
+          }
+        }
+      }
+    },
+    "火山翻譯（字節跳動）瀏覽器擴充所用的介面，免金鑰。屬非官方介面，可能變更或限流。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الواجهة المستخدمة بواسطة ملحق متصفح Volcano Translate (ByteDance). لا حاجة للمفتاح. إنه غير رسمي وقد يتغير أو يكون معدله محدودًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die von der Browsererweiterung Volcano Translate (ByteDance) verwendete Schnittstelle. Kein Schlüssel erforderlich. Es ist inoffiziell und kann sich ändern oder die Tarife sind begrenzt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The interface used by the Volcano Translate (ByteDance) browser extension. No key needed. It's unofficial and may change or be rate-limited."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La interfaz utilizada por la extensión del navegador Volcano Translate (ByteDance). No se necesita clave. No es oficial y puede cambiar o tener una tarifa limitada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'interface utilisée par l'extension de navigateur Volcano Translate (ByteDance). Aucune clé nécessaire. Ce n'est pas officiel et peut changer ou être limité."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ज्वालामुखी अनुवाद (बाइटडांस) ब्राउज़र एक्सटेंशन द्वारा उपयोग किया जाने वाला इंटरफ़ेस। किसी चाबी की जरूरत नहीं. यह अनौपचारिक है और इसमें बदलाव हो सकता है या दर-सीमित हो सकती है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antarmuka yang digunakan oleh ekstensi browser Volcano Translate (ByteDance). Tidak diperlukan kunci. Ini tidak resmi dan dapat berubah atau dibatasi tarifnya."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'interfaccia utilizzata dall'estensione del browser Volcano Translate (ByteDance). Nessuna chiave necessaria. Non è ufficiale e potrebbe cambiare o avere una tariffa limitata."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcano Translate (ByteDance) ブラウザ拡張機能によって使用されるインターフェイス。鍵は必要ありません。これは非公式であり、変更されたり、レートが制限されたりする可能性があります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcano Translate(ByteDance) 브라우저 확장에서 사용되는 인터페이스입니다. 열쇠가 필요하지 않습니다. 비공식적이며 변경되거나 속도가 제한될 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De interface die wordt gebruikt door de browserextensie Volcano Translate (ByteDance). Geen sleutel nodig. Het is niet-officieel en kan veranderen of aan een tariefbeperking onderhevig zijn."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfejs używany przez rozszerzenie przeglądarki Volcano Translate (ByteDance). Nie potrzeba klucza. Jest to nieoficjalne i może ulec zmianie lub podlegać ograniczeniom."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A interface usada pela extensão do navegador Volcano Translate (ByteDance). Nenhuma chave necessária. Não é oficial e pode mudar ou ter taxa limitada."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Интерфейс, используемый расширением браузера Volcano Translate (ByteDance). Ключ не нужен. Он неофициальный и может меняться или иметь ограничения по скорости."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อินเทอร์เฟซที่ใช้โดยส่วนขยายเบราว์เซอร์ Volcano Translate (ByteDance) ไม่จำเป็นต้องใช้กุญแจ ไม่เป็นทางการและอาจมีการเปลี่ยนแปลงหรือจำกัดอัตรา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volcano Translate (ByteDance) tarayıcı uzantısı tarafından kullanılan arayüz. Anahtara gerek yok. Resmi değildir ve değişebilir veya oran sınırlı olabilir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Інтерфейс, який використовується розширенням для браузера Volcano Translate (ByteDance). Ключ не потрібен. Це неофіційно та може змінюватись або мати обмеження."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giao diện được sử dụng bởi tiện ích mở rộng trình duyệt Volcano Translate (ByteDance). Không cần chìa khóa. Nó không chính thức và có thể thay đổi hoặc bị giới hạn tỷ lệ."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻译（字节跳动）浏览器扩充所用的界面，免密钥。属非官方界面，可能变更或限流。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（字節跳動）瀏覽器擴充所用的介面，免金鑰。屬非官方介面，可能變更或限流。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（字節跳動）瀏覽器擴充所用的介面，免金鑰。屬非官方介面，可能變更或限流。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（字節跳動）瀏覽器擴充所用的介面，免金鑰。屬非官方介面，可能變更或限流。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火山翻譯（字節跳動）瀏覽器擴充所用的介面，免金鑰。屬非官方介面，可能變更或限流。"
+          }
+        }
+      }
+    },
     "無效的來源網址": {
       "extractionState": "manual",
       "localizations": {
@@ -32601,6 +35032,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "發佈日期"
+          }
+        }
+      }
+    },
+    "百度翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة بايدو"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu-Übersetzung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Translate"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traductor Baidu"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Traduire"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu अनुवाद"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Baidu"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Traduci"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻訳"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "바이두 번역"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Vertalen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Baidu"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tradução do Baidu"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Байду Переводчик"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu แปล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Çeviri"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переклад Baidu"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Dịch"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯"
+          }
+        }
+      }
+    },
+    "百度翻譯（網頁版）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة بايدو (الويب)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Translate (Web)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Translate (Web)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traductor de Baidu (Web)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Traduire (Web)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu अनुवाद (वेब)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan Baidu (Web)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Traduttore (Web)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻訳（ウェブ）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu 번역(웹)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Vertalen (Web)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Baidu (internet)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tradução do Baidu (Web)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Translate (Интернет)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu แปล (เว็บ)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Çeviri (Web)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перекладач Baidu (веб)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baidu Dịch (Web)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻译（网页版）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯（網頁版）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "百度翻譯（網頁版）"
           }
         }
       }
@@ -36033,6 +38750,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "網址，例如 https://mirror.example.org"
+          }
+        }
+      }
+    },
+    "網頁版非官方介面，網站改版時可能失效；如遇驗證碼，會彈出網頁讓你完成驗證後再重試。有道網頁版只支援譯成中文或英文。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "واجهات الويب غير الرسمية التي قد تتوقف عن العمل عندما يتغير الموقع. إذا ظهرت كلمة التحقق، فسيتم فتح صفحة حتى تتمكن من إكمالها وإعادة المحاولة. يُترجم إصدار الويب الخاص بـ Youdao إلى اللغة الصينية أو الإنجليزية فقط."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inoffizielle Webschnittstellen, die möglicherweise nicht mehr funktionieren, wenn sich die Website ändert. Wenn ein Captcha angezeigt wird, wird eine Seite geöffnet, auf der Sie es abschließen und erneut versuchen können. Die Webversion von Youdao lässt sich nur ins Chinesische oder Englische übersetzen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unofficial web interfaces that may stop working when the site changes. If a captcha appears, a page opens so you can complete it and retry. Youdao's web version only translates into Chinese or English."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfaces web no oficiales que pueden dejar de funcionar cuando cambia el sitio. Si aparece un captcha, se abre una página para que puedas completarlo y volver a intentarlo. La versión web de Youdao sólo se traduce al chino o al inglés."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfaces Web non officielles qui peuvent cesser de fonctionner lorsque le site change. Si un captcha apparaît, une page s'ouvre pour que vous puissiez le compléter et réessayer. La version Web de Youdao ne traduit qu'en chinois ou en anglais."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अनौपचारिक वेब इंटरफ़ेस जो साइट बदलने पर काम करना बंद कर सकते हैं। यदि कोई कैप्चा दिखाई देता है, तो एक पृष्ठ खुलता है ताकि आप इसे पूरा कर सकें और पुनः प्रयास कर सकें। Youdao का वेब संस्करण केवल चीनी या अंग्रेजी में अनुवाद करता है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antarmuka web tidak resmi yang mungkin berhenti berfungsi saat situs berubah. Jika captcha muncul, sebuah halaman akan terbuka sehingga Anda dapat menyelesaikannya dan mencoba lagi. Versi web Youdao hanya diterjemahkan ke dalam bahasa Mandarin atau Inggris."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfacce web non ufficiali che potrebbero smettere di funzionare quando il sito cambia. Se viene visualizzato un captcha, si apre una pagina in cui puoi completarlo e riprovare. La versione web di Youdao si traduce solo in cinese o inglese."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サイトが変更されると機能しなくなる可能性がある非公式の Web インターフェイス。キャプチャが表示された場合はページが開き、キャプチャを完了して再試行できます。 Youdao の Web バージョンは中国語または英語にのみ翻訳されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사이트가 변경되면 작동이 중단될 수 있는 비공식 웹 인터페이스입니다. 보안 문자가 나타나면 보안 문자를 완료하고 다시 시도할 수 있는 페이지가 열립니다. Youdao의 웹 버전은 중국어 또는 영어로만 번역됩니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onofficiële webinterfaces die mogelijk niet meer werken als de site verandert. Als er een captcha verschijnt, wordt er een pagina geopend, zodat u deze kunt voltooien en het opnieuw kunt proberen. De webversie van Youdao vertaalt alleen in het Chinees of Engels."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieoficjalne interfejsy internetowe, które mogą przestać działać po zmianie witryny. Jeśli pojawi się captcha, otworzy się strona, na której możesz ją uzupełnić i spróbować ponownie. Wersja internetowa Youdao jest tłumaczona tylko na język chiński i angielski."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfaces web não oficiais que podem parar de funcionar quando o site muda. Se aparecer um captcha, uma página será aberta para que você possa concluí-lo e tentar novamente. A versão web do Youdao é traduzida apenas para chinês ou inglês."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Неофициальные веб-интерфейсы, которые могут перестать работать при изменении сайта. Если появится капча, откроется страница, на которой вы сможете заполнить ее и повторить попытку. Веб-версия Youdao переводится только на китайский или английский язык."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เว็บอินเตอร์เฟสที่ไม่เป็นทางการที่อาจหยุดทำงานเมื่อไซต์มีการเปลี่ยนแปลง หาก captcha ปรากฏขึ้น หน้าเว็บจะเปิดขึ้นเพื่อให้คุณกรอกข้อมูลให้ครบถ้วนและลองอีกครั้ง เวอร์ชันเว็บของ Youdao แปลเป็นภาษาจีนหรือภาษาอังกฤษเท่านั้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Site değiştiğinde çalışmayı durdurabilecek resmi olmayan web arayüzleri. Bir captcha görünürse, tamamlayıp tekrar deneyebilmeniz için bir sayfa açılır. Youdao'nun web sürümü yalnızca Çince veya İngilizce'ye çevrilmektedir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Неофіційні веб-інтерфейси, які можуть перестати працювати при зміні сайту. Якщо з’явиться код перевірки, відкриється сторінка, на якій ви зможете завершити її та повторити спробу. Веб-версія Youdao перекладається лише китайською або англійською мовами."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giao diện web không chính thức có thể ngừng hoạt động khi trang web thay đổi. Nếu hình ảnh xác thực xuất hiện, một trang sẽ mở ra để bạn có thể hoàn thành và thử lại. Phiên bản web của Youdao chỉ dịch sang tiếng Trung hoặc tiếng Anh."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "网页版非官方界面，网站改版时可能失效；如遇验证码，会弹出网页让你完成验证后再重试。有道网页版只支持译成中文或英文。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁版非官方介面，網站改版時可能失效；如遇驗證碼，會彈出網頁讓你完成驗證後再重試。有道網頁版只支援譯成中文或英文。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁版非官方介面，網站改版時可能失效；如遇驗證碼，會彈出網頁讓你完成驗證後再重試。有道網頁版只支援譯成中文或英文。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁版非官方介面，網站改版時可能失效；如遇驗證碼，會彈出網頁讓你完成驗證後再重試。有道網頁版只支援譯成中文或英文。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁版非官方介面，網站改版時可能失效；如遇驗證碼，會彈出網頁讓你完成驗證後再重試。有道網頁版只支援譯成中文或英文。"
           }
         }
       }
@@ -40895,6 +43755,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "語言代碼（如 en、zh、ja）"
+          }
+        }
+      }
+    },
+    "請在網頁中完成驗證（如驗證碼），完成後點「完成」重新翻譯。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكمل عملية التحقق على الصفحة (مثل كلمة التحقق)، ثم اضغط على \"تم\" للترجمة مرة أخرى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schließen Sie die Überprüfung auf der Seite ab (z. B. ein Captcha) und tippen Sie dann auf „Fertig“, um die Übersetzung erneut durchzuführen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete the verification on the page (such as a captcha), then tap Done to translate again."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete la verificación en la página (como un captcha), luego toque Listo para traducir nuevamente."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complétez la vérification sur la page (comme un captcha), puis appuyez sur Terminé pour traduire à nouveau."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "पृष्ठ पर सत्यापन पूरा करें (जैसे कैप्चा), फिर दोबारा अनुवाद करने के लिए संपन्न पर टैप करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selesaikan verifikasi pada halaman tersebut (seperti captcha), lalu ketuk Selesai untuk menerjemahkan lagi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completa la verifica sulla pagina (ad esempio un captcha), quindi tocca Fine per tradurre nuovamente."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページ上の検証 (キャプチャなど) を完了し、[完了] をタップして再度翻訳します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "페이지에서 인증(예: 보안 문자)을 완료한 다음 완료를 탭하여 다시 번역하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voltooi de verificatie op de pagina (zoals een captcha) en tik vervolgens op Gereed om opnieuw te vertalen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zakończ weryfikację na stronie (np. captcha), a następnie dotknij Gotowe, aby przetłumaczyć ponownie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conclua a verificação na página (como um captcha) e toque em Concluído para traduzir novamente."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завершите проверку на странице (например, с помощью капчи), затем нажмите «Готово», чтобы перевести еще раз."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดำเนินการยืนยันบนเพจให้เสร็จสิ้น (เช่น captcha) จากนั้นแตะเสร็จสิ้นเพื่อแปลอีกครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sayfadaki doğrulamayı (captcha gibi) tamamlayın ve ardından tekrar çevirmek için Bitti'ye dokunun."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завершіть перевірку на сторінці (наприклад, captcha), а потім натисніть «Готово», щоб перекласти ще раз."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoàn tất xác minh trên trang (chẳng hạn như hình ảnh xác thực), sau đó nhấn Xong để dịch lại."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请在网页中完成验证（如验证码），完成后点「完成」重新翻译。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在網頁中完成驗證（如驗證碼），完成後點「完成」重新翻譯。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在網頁中完成驗證（如驗證碼），完成後點「完成」重新翻譯。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在網頁中完成驗證（如驗證碼），完成後點「完成」重新翻譯。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在網頁中完成驗證（如驗證碼），完成後點「完成」重新翻譯。"
           }
         }
       }
@@ -46190,6 +49193,149 @@
         }
       }
     },
+    "需要先下載 Apple 翻譯語言": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يجب تنزيل لغات ترجمة Apple أولاً"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Sprachen von Apple Translate müssen zuerst heruntergeladen werden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate languages need to be downloaded first"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los idiomas de Apple Translate deben descargarse primero"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les langues Apple Translate doivent d’abord être téléchargées"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple अनुवाद भाषाओं को पहले डाउनलोड करना होगा"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bahasa Apple Translate perlu diunduh terlebih dahulu"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le lingue di Apple Translate devono essere prima scaricate"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate の言語を最初にダウンロードする必要があります"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 번역 언어를 먼저 다운로드해야 합니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate-talen moeten eerst worden gedownload"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Najpierw należy pobrać języki Apple Translate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os idiomas do Apple Translate precisam ser baixados primeiro"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Языки Apple Translate необходимо сначала загрузить"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ต้องดาวน์โหลดภาษาของ Apple Translate ก่อน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öncelikle Apple Translate dillerinin indirilmesi gerekiyor"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Спершу потрібно завантажити мови Apple Translate"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngôn ngữ Apple Translate cần phải được tải xuống trước"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要先下载 Apple 翻译语言"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要先下載 Apple 翻譯語言"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要先下載 Apple 翻譯語言"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要先下載 Apple 翻譯語言"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要先下載 Apple 翻譯語言"
+          }
+        }
+      }
+    },
     "頁面解析失敗：%@": {
       "extractionState": "manual",
       "localizations": {
@@ -47044,6 +50190,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "顯示方式"
+          }
+        }
+      }
+    },
+    "騰訊交互翻譯 TranSmart（免金鑰）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (بدون مفتاح)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (kein Schlüssel)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (No Key)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (sin clave)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (pas de clé)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "टेनसेंट ट्रांसस्मार्ट (कोई चाबी नहीं)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (Tanpa Kunci)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (nessuna chiave)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TransSmart (キーなし)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart(키 없음)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (geen sleutel)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (bez klucza)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (sem chave)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (без ключа)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (ไม่มีกุญแจ)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (Anahtarsız)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (без ключа)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart (Không cần chìa khóa)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "腾讯交互翻译 TranSmart（免密钥）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯 TranSmart（免金鑰）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯 TranSmart（免金鑰）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯 TranSmart（免金鑰）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯 TranSmart（免金鑰）"
+          }
+        }
+      }
+    },
+    "騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "واجهة الويب الخاصة بـ Tencent TranSmart. لا حاجة لمفتاح وقوي للغتين الصينية والإنجليزية. إنه غير رسمي وقد يتغير أو يكون معدله محدودًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Weboberfläche von Tencent TranSmart. Kein Schlüssel erforderlich und stark für Chinesisch und Englisch. Es ist inoffiziell und kann sich ändern oder die Tarife sind begrenzt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart's web interface. No key needed and strong for Chinese and English. It's unofficial and may change or be rate-limited."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfaz web de Tencent TranSmart. No se necesita clave y es fuerte para chino e inglés. No es oficial y puede cambiar o tener una tarifa limitada."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interface Web de Tencent TranSmart. Aucune clé nécessaire et solide pour le chinois et l'anglais. Ce n'est pas officiel et peut changer ou être limité."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent ट्रांसस्मार्ट का वेब इंटरफ़ेस। चीनी और अंग्रेजी के लिए किसी कुंजी की आवश्यकता नहीं है और यह मजबूत है। यह अनौपचारिक है और इसमें बदलाव हो सकता है या दर-सीमित हो सकती है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antarmuka web Tencent TranSmart. Tidak diperlukan kunci dan kuat untuk bahasa Mandarin dan Inggris. Ini tidak resmi dan dapat berubah atau dibatasi tarifnya."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfaccia web di Tencent TranSmart. Nessuna chiave necessaria ed efficace per il cinese e l'inglese. Non è ufficiale e potrebbe cambiare o avere una tariffa limitata."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart の Web インターフェイス。キー不要で中国語、英語に強い。これは非公式であり、変更されたり、レートが制限されたりする可能性があります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart의 웹 인터페이스. 키가 필요하지 않으며 중국어와 영어에 강력합니다. 비공식적이며 변경되거나 속도가 제한될 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De webinterface van Tencent TranSmart. Geen sleutel nodig en sterk voor Chinees en Engels. Het is niet-officieel en kan veranderen of aan een tariefbeperking onderhevig zijn."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interfejs sieciowy Tencent TranSmart. Nie jest potrzebny żaden klucz, jest mocny dla języka chińskiego i angielskiego. Jest to nieoficjalne i może ulec zmianie lub podlegać ograniczeniom."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interface web do Tencent TranSmart. Nenhuma chave necessária e forte para chinês e inglês. Não é oficial e pode mudar ou ter taxa limitada."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Веб-интерфейс Tencent TranSmart. Ключ не нужен и надежен для китайского и английского языков. Он неофициальный и может меняться или иметь ограничения по скорости."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เว็บอินเตอร์เฟสของ Tencent TranSmart ไม่จำเป็นต้องใช้คีย์และแข็งแกร่งสำหรับภาษาจีนและอังกฤษ ไม่เป็นทางการและอาจมีการเปลี่ยนแปลงหรือจำกัดอัตรา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tencent TranSmart'ın web arayüzü. Çince ve İngilizce için anahtara gerek yoktur ve güçlüdür. Resmi değildir ve değişebilir veya oran sınırlı olabilir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Веб-інтерфейс Tencent TranSmart. Ключ не потрібен і надійний для китайської та англійської. Це неофіційно та може змінюватись або мати обмеження."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giao diện web của Tencent TranSmart. Không cần chìa khóa và mạnh mẽ cho tiếng Trung và tiếng Anh. Nó không chính thức và có thể thay đổi hoặc bị giới hạn tỷ lệ."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "腾讯交互翻译网页界面，免密钥，中英品质佳。属非官方界面，可能变更或限流。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。"
           }
         }
       }

@@ -323,6 +323,31 @@ EN = {
 "Google 翻譯（免金鑰）": "Google Translate (No Key)",
 "Bing 翻譯（免金鑰）": "Bing Translator (No Key)",
 "原文 + 譯文": "Original + Translation",
+"請在網頁中完成驗證（如驗證碼），完成後點「完成」重新翻譯。": "Complete the verification on the page (such as a captcha), then tap Done to translate again.",
+"在裝置上翻譯，免金鑰、可離線。首次使用某組語言時會彈出下載視窗。原文語言為自動偵測時，會先在本機判斷語言。": "Translates on your device, with no key and offline support. You'll be asked to download each language pair the first time. When the source language is automatic, it's detected on your device first.",
+"不填金鑰時使用 DeepL 網頁版（非官方，限流嚴格）；填入 DeepL API 金鑰則使用官方介面，免費版金鑰每月 50 萬字。": "Without a key, the DeepL website is used (unofficial and strictly rate-limited). With a DeepL API key the official API is used; free keys include 500,000 characters per month.",
+"騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。": "Tencent TranSmart's web interface. No key needed and strong for Chinese and English. It's unofficial and may change or be rate-limited.",
+"火山翻譯（字節跳動）瀏覽器擴充所用的介面，免金鑰。屬非官方介面，可能變更或限流。": "The interface used by the Volcano Translate (ByteDance) browser extension. No key needed. It's unofficial and may change or be rate-limited.",
+"網頁版非官方介面，網站改版時可能失效；如遇驗證碼，會彈出網頁讓你完成驗證後再重試。有道網頁版只支援譯成中文或英文。": "Unofficial web interfaces that may stop working when the site changes. If a captcha appears, a page opens so you can complete it and retry. Youdao's web version only translates into Chinese or English.",
+"Apple 翻譯不支援這組語言": "Apple Translate doesn't support this language pair",
+"下載翻譯語言": "Download Languages",
+"Apple 翻譯需要先下載這組語言才能在裝置上翻譯。下載後可離線使用。": "Apple Translate needs to download these languages to translate on your device. After that it works offline.",
+"下載": "Download",
+"火山翻譯": "Volcano Translate",
+"百度翻譯": "Baidu Translate",
+"有道翻譯（網頁版）只支援譯成中文或英文": "Youdao (web) only translates into Chinese or English",
+"有道翻譯": "Youdao Translate",
+"搜狗翻譯": "Sogou Translate",
+"DeepL 網頁版暫時限流，請稍後再試，或填入免費的 DeepL API 金鑰": "The DeepL website is rate-limiting requests. Try again later, or add a free DeepL API key.",
+"%@ 需要驗證，請在彈出的網頁中完成後重試": "%@ needs verification. Complete it on the page that opens, then try again.",
+"需要先下載 Apple 翻譯語言": "Apple Translate languages need to be downloaded first",
+"Apple 翻譯（裝置上）": "Apple Translate (On Device)",
+"騰訊交互翻譯 TranSmart（免金鑰）": "Tencent TranSmart (No Key)",
+"火山翻譯（免金鑰）": "Volcano Translate (No Key)",
+"百度翻譯（網頁版）": "Baidu Translate (Web)",
+"有道翻譯（網頁版）": "Youdao Translate (Web)",
+"搜狗翻譯（網頁版）": "Sogou Translate (Web)",
+
 "AO3 說明": "AO3 Guide",
 "標籤與簡介": "Tags & Summary",
 "背景色": "Background Color",
@@ -332,4 +357,4 @@ EN = {
 "僅譯文": "Translation Only",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
-SKIP = {"简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文"}
+SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文"}

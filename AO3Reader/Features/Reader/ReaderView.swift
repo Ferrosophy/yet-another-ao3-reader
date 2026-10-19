@@ -89,6 +89,9 @@ struct ReaderView: View {
             }
             .presentationDetents([.medium, .large])
         }
+        .sheet(item: $model.challenge, onDismiss: { model.resetTranslations() }) { challenge in
+            TranslationChallengeView(challenge: challenge)
+        }
         .sheet(isPresented: $showsTranslationSettings, onDismiss: { model.resetTranslations() }) {
             NavigationStack {
                 TranslationSettingsView()

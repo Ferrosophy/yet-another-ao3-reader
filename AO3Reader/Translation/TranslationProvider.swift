@@ -18,6 +18,9 @@ enum TranslationError: LocalizedError {
     case server(Int, String)
     case malformedResponse(String)
     case countMismatch(expected: Int, got: Int)
+    case unsupportedLanguage(String)
+    /// 需要使用者完成網頁驗證或下載語言後重試
+    case verificationRequired(TranslationChallenge)
 
     var errorDescription: String? {
         switch self {
@@ -27,6 +30,9 @@ enum TranslationError: LocalizedError {
         case .server(let code, let message): String(localized: "翻譯服務錯誤（\(code)）：\(message)")
         case .malformedResponse(let detail): String(localized: "翻譯回應格式錯誤：\(detail)")
         case .countMismatch(let expected, let got): String(localized: "譯文段落數不符（預期 \(expected)，實際 \(got)）")
+        case .unsupportedLanguage(let message): message
+        case .verificationRequired(.web(let provider, _)): String(localized: "\(provider) 需要驗證，請在彈出的網頁中完成後重試")
+        case .verificationRequired(.appleDownload): String(localized: "需要先下載 Apple 翻譯語言")
         }
     }
 }
