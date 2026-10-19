@@ -8,10 +8,10 @@ struct LatestWorksView: View {
         var id: String { rawValue }
         var title: String {
             switch self {
-            case .latest: "最新"
+            case .latest: String(localized: "最新")
             case .kudos: "Kudos"
-            case .comments: "評論"
-            case .hits: "點擊"
+            case .comments: String(localized: "評論")
+            case .hits: String(localized: "點擊")
             }
         }
         var sort: WorkSearchQuery.SortColumn {
@@ -29,11 +29,11 @@ struct LatestWorksView: View {
         var id: String { rawValue }
         var title: String {
             switch self {
-            case .day: "24 小時"
-            case .week: "本週"
-            case .month: "本月"
-            case .year: "今年"
-            case .all: "全部"
+            case .day: String(localized: "24 小時")
+            case .week: String(localized: "本週")
+            case .month: String(localized: "本月")
+            case .year: String(localized: "今年")
+            case .all: String(localized: "全部")
             }
         }
         /// AO3 的相對日期語法（作用於最後更新時間）
@@ -56,8 +56,12 @@ struct LatestWorksView: View {
     @State private var languages = LatestWorksView.cachedLanguages()
     @State private var showsLanguages = false
 
+    /// 特殊語言值：所有中文分支（普通話、粵語、吳語、閩南語、客家話、文言…）
+    static let chineseAll = "@zh-all"
+
     private struct LoadKey: Equatable {
         var language: String
+        var languageCount: Int
         var board: Board
         var period: Period
     }
@@ -93,7 +97,7 @@ struct LatestWorksView: View {
             }
         }
         .sheet(isPresented: $showsLanguages) {
-            LanguagePickerSheet(languages: languages, selection: $languageID)
+            LanguagePickerSheet(languages: languages, selection: $languageID, chineseAll: Self.chineseAll)
                 .presentationDetents([.medium, .large])
         }
         .task {
@@ -103,12 +107,17 @@ struct LatestWorksView: View {
                 UserDefaults.standard.set(try? JSONEncoder().encode(loaded), forKey: Self.languagesKey)
             }
         }
-        .task(id: LoadKey(language: languageID, board: board, period: period)) {
+        .task(id: LoadKey(language: languageID, languageCount: languages.count, board: board, period: period)) {
             let client = app.client
             var query = WorkSearchQuery()
             query.sortColumn = board.sort
             query.sortDirection = .desc
-            query.languageID = languageID
+            if languageID == Self.chineseAll {
+                // AO3 的語言篩選只接受單一語言；關鍵字欄位支援 Elasticsearch 欄位查詢，以 OR 合併所有中文分支
+                query.query = "language_id:(" + chineseCodes.joined(separator: " OR ") + ")"
+            } else {
+                query.languageID = languageID
+            }
             if board != .latest { query.revisedAt = period.revisedAt }
             let snapshot = query
             let loader: PagedWorksModel.Loader = { page in try await client.searchWorks(snapshot, page: page) }
@@ -121,8 +130,15 @@ struct LatestWorksView: View {
         }
     }
 
+    /// 從 AO3 語言清單找出所有以「中文」開頭的語言；清單尚未載入時使用常見代碼
+    private var chineseCodes: [String] {
+        let codes = languages.filter { $0.name.hasPrefix("中文") }.map(\.code)
+        return codes.count > 1 ? codes : ["zh", "yue", "wuu", "nan", "hak", "lzh"]
+    }
+
     private var languageName: String {
-        languageID.isEmpty ? "全部語言" : (languages.first { $0.code == languageID }?.name ?? languageID)
+        if languageID == Self.chineseAll { return String(localized: "中文（全部分支）") }
+        return languageID.isEmpty ? String(localized: "全部語言") : (languages.first { $0.code == languageID }?.name ?? languageID)
     }
 
     private static let languagesKey = "ao3.languages"
@@ -137,6 +153,7 @@ struct LatestWorksView: View {
 struct LanguagePickerSheet: View {
     let languages: [AO3Language]
     @Binding var selection: String
+    var chineseAll: String?
     @Environment(\.dismiss) private var dismiss
     @State private var search = ""
 
@@ -152,9 +169,12 @@ struct LanguagePickerSheet: View {
             List {
                 if search.isEmpty {
                     row(code: "", name: "全部語言")
+                    if let chineseAll {
+                        row(code: chineseAll, name: "中文（全部分支：普通話、粵語、吳語、閩南語等）")
+                    }
                 }
                 ForEach(filtered) { language in
-                    row(code: language.code, name: language.name)
+                    row(code: language.code, name: LocalizedStringKey(language.name))
                 }
             }
             .searchable(text: $search, prompt: "搜尋語言")
@@ -163,7 +183,7 @@ struct LanguagePickerSheet: View {
         }
     }
 
-    private func row(code: String, name: String) -> some View {
+    private func row(code: String, name: LocalizedStringKey) -> some View {
         Button {
             selection = code
             dismiss()

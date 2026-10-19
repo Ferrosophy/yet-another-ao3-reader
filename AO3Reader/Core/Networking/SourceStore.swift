@@ -10,7 +10,7 @@ struct AO3Source: Identifiable, Hashable, Codable, Sendable {
 
     static let official = AO3Source(
         id: UUID(uuidString: "00000000-0000-0000-0000-00000000A030")!,
-        name: "Archive of Our Own（官網）",
+        name: String(localized: "Archive of Our Own（官網）"),
         baseURL: URL(string: "https://archiveofourown.org")!,
         isBuiltIn: true
     )

@@ -22,6 +22,14 @@ struct SettingsView: View {
                 }
             }
 
+            Section("介面語言") {
+                NavigationLink {
+                    InterfaceLanguageView()
+                } label: {
+                    LabeledContent("語言", value: InterfaceLanguage.all.first { $0.code == InterfaceLanguage.selectedCode }?.name ?? String(localized: "跟隨系統"))
+                }
+            }
+
             Section("外觀") {
                 NavigationLink {
                     AppearanceSettingsView()

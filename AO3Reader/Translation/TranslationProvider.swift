@@ -21,12 +21,12 @@ enum TranslationError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .missingAPIKey(let provider): "尚未設定 \(provider) 的 API Key"
-        case .missingModel: "尚未填寫模型名稱"
-        case .invalidBaseURL: "API 位址無效"
-        case .server(let code, let message): "翻譯服務錯誤（\(code)）：\(message)"
-        case .malformedResponse(let detail): "翻譯回應格式錯誤：\(detail)"
-        case .countMismatch(let expected, let got): "譯文段落數不符（預期 \(expected)，實際 \(got)）"
+        case .missingAPIKey(let provider): String(localized: "尚未設定 \(provider) 的 API Key")
+        case .missingModel: String(localized: "尚未填寫模型名稱")
+        case .invalidBaseURL: String(localized: "API 位址無效")
+        case .server(let code, let message): String(localized: "翻譯服務錯誤（\(code)）：\(message)")
+        case .malformedResponse(let detail): String(localized: "翻譯回應格式錯誤：\(detail)")
+        case .countMismatch(let expected, let got): String(localized: "譯文段落數不符（預期 \(expected)，實際 \(got)）")
         }
     }
 }

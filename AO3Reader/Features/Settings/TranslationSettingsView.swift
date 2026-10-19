@@ -40,7 +40,7 @@ struct TranslationSettingsView: View {
                         Button("儲存到本機鑰匙圈", action: saveKey)
                         Spacer()
                         if let keyStatus {
-                            Text(keyStatus).font(.caption).foregroundStyle(.secondary)
+                            Text(keyStatus).appFont(.caption).foregroundStyle(.secondary)
                         }
                     }
                 } header: {
@@ -86,13 +86,13 @@ struct TranslationSettingsView: View {
             case .googleWeb:
                 Section {
                     Text("使用 Google 翻譯網頁端點，無需金鑰。屬非官方介面，大量使用時可能被暫時限流。")
-                        .font(.footnote)
+                        .appFont(.footnote)
                         .foregroundStyle(.secondary)
                 }
             case .bingFree:
                 Section {
                     Text("使用 Edge 瀏覽器內建的微軟翻譯端點，無需金鑰。屬非官方介面，可能變更或限流。")
-                        .font(.footnote)
+                        .appFont(.footnote)
                         .foregroundStyle(.secondary)
                 }
             case .microsoftAzure:
@@ -134,7 +134,7 @@ struct TranslationSettingsView: View {
                 }
                 .disabled(isTesting)
                 if let testResult {
-                    Text(testResult).font(.callout)
+                    Text(testResult).appFont(.callout)
                 }
             }
         }
@@ -148,13 +148,13 @@ struct TranslationSettingsView: View {
 
     private func loadKey() {
         apiKey = app.translation.apiKey(for: app.translation.config.provider)
-        keyStatus = apiKey.isEmpty ? nil : "已保存"
+        keyStatus = apiKey.isEmpty ? nil : String(localized: "已保存")
     }
 
     private func saveKey() {
         do {
             try app.translation.setAPIKey(apiKey, for: app.translation.config.provider)
-            keyStatus = apiKey.isEmpty ? "已刪除" : "已保存"
+            keyStatus = apiKey.isEmpty ? String(localized: "已刪除") : String(localized: "已保存")
         } catch {
             keyStatus = error.localizedDescription
         }

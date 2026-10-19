@@ -56,9 +56,9 @@ struct SubscriptionsView: View {
 
     private func row(_ item: SubscriptionItem) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(item.title).font(.headline)
+            Text(item.title).appFont(.headline)
             if let byline = item.byline {
-                Text(byline).font(.subheadline).foregroundStyle(.secondary)
+                Text(byline).appFont(.subheadline).foregroundStyle(.secondary)
             }
         }
         .padding(.vertical, 2)

@@ -3,7 +3,7 @@ import SwiftUI
 /// 標籤輸入框：輸入時向 AO3 /autocomplete 查詢匹配的正式標籤，點選後加入為標籤膠囊。
 /// 綁定值仍是官網使用的逗號分隔字串，方便直接帶入搜尋參數。
 struct TagTokenField: View {
-    let title: String
+    let title: LocalizedStringKey
     @Binding var text: String
     let kind: AutocompleteKind
 
@@ -30,7 +30,7 @@ struct TagTokenField: View {
                                 Text(token).lineLimit(1)
                                 Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary)
                             }
-                            .font(.footnote)
+                            .appFont(.footnote)
                             .padding(.horizontal, 10)
                             .padding(.vertical, 5)
                             .fixedSize()
@@ -54,7 +54,7 @@ struct TagTokenField: View {
                     add(suggestion)
                 } label: {
                     Label(suggestion, systemImage: "tag")
-                        .font(.callout)
+                        .appFont(.callout)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .contentShape(.rect)
                 }

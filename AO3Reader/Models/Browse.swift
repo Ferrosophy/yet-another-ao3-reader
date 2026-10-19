@@ -46,9 +46,9 @@ struct SubscriptionItem: Identifiable, Hashable, Sendable {
         var id: String { rawValue }
         var title: String {
             switch self {
-            case .works: "作品"
-            case .series: "系列"
-            case .users: "用戶"
+            case .works: String(localized: "作品")
+            case .series: String(localized: "系列")
+            case .users: String(localized: "用戶")
             }
         }
     }

@@ -23,9 +23,9 @@ struct LoginView: View {
                     .padding(.top, 32)
 
                 VStack(spacing: 4) {
-                    Text("登入 Archive of Our Own").font(.title2.bold())
+                    Text("登入 Archive of Our Own").appFont(.title2, weight: .bold)
                     Text(app.sources.selected.baseURL.host() ?? "")
-                        .font(.footnote)
+                        .appFont(.footnote)
                         .foregroundStyle(.secondary)
                 }
 
@@ -48,7 +48,7 @@ struct LoginView: View {
 
                 if let error {
                     Text(error)
-                        .font(.footnote)
+                        .appFont(.footnote)
                         .foregroundStyle(.red)
                         .multilineTextAlignment(.center)
                 }
@@ -67,7 +67,7 @@ struct LoginView: View {
                     .buttonStyle(.glass)
 
                 Text("密碼只會直接傳送給目前的 AO3 來源，不會被本應用保存。")
-                    .font(.caption)
+                    .appFont(.caption)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
             }

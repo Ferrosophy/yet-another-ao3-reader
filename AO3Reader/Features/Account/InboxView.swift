@@ -52,20 +52,20 @@ private struct InboxRow: View {
                     Circle().fill(.tint).frame(width: 8, height: 8)
                         .accessibilityLabel("未讀")
                 }
-                Text(comment.commenter).font(.headline)
+                Text(comment.commenter).appFont(.headline)
                 Spacer()
                 if let posted = comment.posted {
-                    Text(posted).font(.caption).foregroundStyle(.secondary)
+                    Text(posted).appFont(.caption).foregroundStyle(.secondary)
                 }
             }
             if !comment.targetTitle.isEmpty {
                 Label(comment.targetTitle, systemImage: "book")
-                    .font(.caption)
+                    .appFont(.caption)
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
             }
             Text(comment.body)
-                .font(.callout)
+                .appFont(.callout)
                 .lineLimit(6)
         }
         .padding(.vertical, 2)

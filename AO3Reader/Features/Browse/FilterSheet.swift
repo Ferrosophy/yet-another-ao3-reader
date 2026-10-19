@@ -104,7 +104,7 @@ struct FilterSheet: View {
         }
     }
 
-    private func triStatePicker(_ title: String, selection: Binding<WorkSearchQuery.TriState>, yes: String, no: String) -> some View {
+    private func triStatePicker(_ title: LocalizedStringKey, selection: Binding<WorkSearchQuery.TriState>, yes: LocalizedStringKey, no: LocalizedStringKey) -> some View {
         Picker(title, selection: selection) {
             Text("不限").tag(WorkSearchQuery.TriState.any)
             Text(yes).tag(WorkSearchQuery.TriState.yes)

@@ -186,16 +186,16 @@ extension WorkSearchQuery {
         var id: String { rawValue }
         var title: String {
             switch self {
-            case .bestMatch: "最佳匹配"
-            case .author: "作者"
-            case .title: "標題"
-            case .datePosted: "發佈日期"
-            case .dateUpdated: "更新日期"
-            case .wordCount: "字數"
-            case .hits: "點擊"
+            case .bestMatch: String(localized: "最佳匹配")
+            case .author: String(localized: "作者")
+            case .title: String(localized: "標題")
+            case .datePosted: String(localized: "發佈日期")
+            case .dateUpdated: String(localized: "更新日期")
+            case .wordCount: String(localized: "字數")
+            case .hits: String(localized: "點擊")
             case .kudos: "Kudos"
-            case .comments: "評論"
-            case .bookmarks: "書籤"
+            case .comments: String(localized: "評論")
+            case .bookmarks: String(localized: "書籤")
             }
         }
     }
@@ -203,6 +203,6 @@ extension WorkSearchQuery {
     enum SortDirection: String, CaseIterable, Codable, Sendable, Identifiable {
         case desc, asc
         var id: String { rawValue }
-        var title: String { self == .desc ? "降冪" : "升冪" }
+        var title: String { self == .desc ? String(localized: "降冪") : String(localized: "升冪") }
     }
 }

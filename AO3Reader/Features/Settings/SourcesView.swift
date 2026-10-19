@@ -18,7 +18,7 @@ struct SourcesView: View {
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(source.name).foregroundStyle(.primary)
                                 Text(source.baseURL.absoluteString)
-                                    .font(.caption)
+                                    .appFont(.caption)
                                     .foregroundStyle(.secondary)
                             }
                             Spacer()
@@ -108,7 +108,7 @@ private struct AddSourceSheet: View {
         status = .testing
         do {
             let result = try await AO3Client(baseURL: url).probe()
-            status = result.isAO3 ? .ok(result.username) : .failed("回應不像 AO3 頁面，可能不是相容的鏡像")
+            status = result.isAO3 ? .ok(result.username) : .failed(String(localized: "回應不像 AO3 頁面，可能不是相容的鏡像"))
         } catch {
             status = .failed(error.localizedDescription)
         }

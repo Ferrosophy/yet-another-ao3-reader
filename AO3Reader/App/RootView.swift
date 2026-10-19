@@ -40,5 +40,13 @@ struct RootView: View {
         .tabBarMinimizeBehavior(.onScrollDown)
         .tint(app.appearance.accentColor)
         .preferredColorScheme(app.appearance.config.colorScheme.scheme)
+        // 介面字體：未指定樣式的文字用 body，各處 .appFont(...) 依此換字體；系統字體則以 fontDesign 套用
+        .environment(\.interfaceFont, app.appearance.interfaceFontChoice)
+        .font(InterfaceFont.font(app.appearance.interfaceFontChoice, style: .body))
+        .fontDesign(InterfaceFont.design(app.appearance.interfaceFontChoice))
+        .environment(\.locale, InterfaceLanguage.selectedCode.map(Locale.init(identifier:)) ?? .autoupdatingCurrent)
+        .onChange(of: app.appearance.interfaceFontChoice, initial: true) {
+            InterfaceFont.applyNavigationBarAppearance(app.appearance.interfaceFontChoice)
+        }
     }
 }

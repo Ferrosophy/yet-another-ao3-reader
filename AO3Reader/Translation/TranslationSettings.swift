@@ -8,11 +8,11 @@ enum TranslationProviderKind: String, CaseIterable, Codable, Identifiable, Senda
 
     var title: String {
         switch self {
-        case .googleWeb: "Google 翻譯（免金鑰）"
-        case .bingFree: "Bing 翻譯（免金鑰）"
+        case .googleWeb: String(localized: "Google 翻譯（免金鑰）")
+        case .bingFree: String(localized: "Bing 翻譯（免金鑰）")
         case .googleCloud: "Google Cloud Translation"
         case .microsoftAzure: "Microsoft Translator（Azure）"
-        case .openAICompatible: "OpenAI 相容 API"
+        case .openAICompatible: String(localized: "OpenAI 相容 API")
         case .anthropic: "Anthropic Claude"
         case .gemini: "Google Gemini"
         }
@@ -28,7 +28,7 @@ enum BilingualDisplayMode: String, CaseIterable, Codable, Identifiable, Sendable
     case bilingual, translationOnly
 
     var id: String { rawValue }
-    var title: String { self == .bilingual ? "原文 + 譯文" : "僅譯文" }
+    var title: String { self == .bilingual ? String(localized: "原文 + 譯文") : String(localized: "僅譯文") }
 }
 
 /// 除 API Key 以外的翻譯設定（Key 只存在鑰匙圈）。

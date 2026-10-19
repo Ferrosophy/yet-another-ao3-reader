@@ -8,10 +8,10 @@ struct SearchView: View {
         var id: String { rawValue }
         var title: String {
             switch self {
-            case .works: "作品"
-            case .tags: "標籤"
-            case .people: "用戶"
-            case .collections: "合集"
+            case .works: String(localized: "作品")
+            case .tags: String(localized: "標籤")
+            case .people: String(localized: "用戶")
+            case .collections: String(localized: "合集")
             }
         }
     }
@@ -30,7 +30,7 @@ struct SearchView: View {
     var body: some View {
         content
             .navigationTitle("搜尋")
-            .searchable(text: $query.query, prompt: prompt)
+            .searchable(text: $query.query, prompt: Text(prompt))
             .searchScopes($scope) {
                 ForEach(Scope.allCases) { Text($0.title).tag($0) }
             }
@@ -54,10 +54,10 @@ struct SearchView: View {
 
     private var prompt: String {
         switch scope {
-        case .works: "標題、作者、標籤、關鍵字"
-        case .tags: "標籤名稱"
-        case .people: "用戶名稱"
-        case .collections: "合集標題"
+        case .works: String(localized: "標題、作者、標籤、關鍵字")
+        case .tags: String(localized: "標籤名稱")
+        case .people: String(localized: "用戶名稱")
+        case .collections: String(localized: "合集標題")
         }
     }
 
@@ -113,7 +113,7 @@ struct SearchView: View {
         }
     }
 
-    private func placeholder(_ title: String, _ message: String) -> some View {
+    private func placeholder(_ title: LocalizedStringKey, _ message: LocalizedStringKey) -> some View {
         ContentUnavailableView(title, systemImage: "magnifyingglass", description: Text(message))
     }
 
@@ -151,7 +151,7 @@ private struct TagRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 6) {
-                Text(tag.name).font(.headline)
+                Text(tag.name).appFont(.headline)
                 if tag.isCanonical {
                     Image(systemName: "checkmark.seal.fill")
                         .foregroundStyle(.tint)
@@ -162,7 +162,7 @@ private struct TagRow: View {
                 if !tag.type.isEmpty { Text(tag.type) }
                 if let uses = tag.uses { Label(uses, systemImage: "doc.text").labelStyle(.titleAndIcon) }
             }
-            .font(.caption)
+            .appFont(.caption)
             .foregroundStyle(.secondary)
         }
         .padding(.vertical, 2)
@@ -174,12 +174,12 @@ private struct PersonRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Label(person.name, systemImage: "person.crop.circle").font(.headline)
+            Label(person.name, systemImage: "person.crop.circle").appFont(.headline)
             if let detail = person.detail, !detail.isEmpty {
-                Text(detail).font(.caption).foregroundStyle(.secondary)
+                Text(detail).appFont(.caption).foregroundStyle(.secondary)
             }
             if let summary = person.summary, !summary.isEmpty {
-                Text(summary).font(.callout).lineLimit(2)
+                Text(summary).appFont(.callout).lineLimit(2)
             }
         }
         .padding(.vertical, 2)
@@ -191,19 +191,19 @@ struct CollectionRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(collection.title).font(.headline)
+            Text(collection.title).appFont(.headline)
             HStack(spacing: 6) {
                 if !collection.name.isEmpty { Text(collection.name) }
                 if !collection.maintainers.isEmpty { Text("· " + collection.maintainers.joined(separator: ", ")) }
             }
-            .font(.caption)
+            .appFont(.caption)
             .foregroundStyle(.secondary)
             .lineLimit(1)
             if !collection.summary.isEmpty {
-                Text(collection.summary).font(.callout).lineLimit(3)
+                Text(collection.summary).appFont(.callout).lineLimit(3)
             }
             if let updated = collection.updated {
-                Text(updated).font(.caption2).foregroundStyle(.secondary)
+                Text(updated).appFont(.caption2).foregroundStyle(.secondary)
             }
         }
         .padding(.vertical, 2)

@@ -8,9 +8,9 @@ enum AppColorScheme: String, CaseIterable, Codable, Identifiable, Sendable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .system: "跟隨系統"
-        case .light: "淺色"
-        case .dark: "深色"
+        case .system: String(localized: "跟隨系統")
+        case .light: String(localized: "淺色")
+        case .dark: String(localized: "深色")
         }
     }
     var scheme: ColorScheme? {
@@ -30,7 +30,7 @@ enum ReaderBackgroundKind: String, Codable, Sendable {
 enum DimStyle: String, CaseIterable, Codable, Identifiable, Sendable {
     case lighten, darken
     var id: String { rawValue }
-    var title: String { self == .lighten ? "加亮" : "加暗" }
+    var title: String { self == .lighten ? String(localized: "加亮") : String(localized: "加暗") }
 }
 
 /// 單一外觀模式（淺色或深色）下的閱讀頁配色。
@@ -51,11 +51,11 @@ enum ReaderFontWeight: String, CaseIterable, Codable, Identifiable, Sendable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .light: "細"
-        case .regular: "標準"
-        case .medium: "中"
-        case .semibold: "半粗"
-        case .bold: "粗"
+        case .light: String(localized: "細")
+        case .regular: String(localized: "標準")
+        case .medium: String(localized: "中")
+        case .semibold: String(localized: "半粗")
+        case .bold: String(localized: "粗")
         }
     }
     var font: Font.Weight {
@@ -81,7 +81,7 @@ enum ReaderFontWeight: String, CaseIterable, Codable, Identifiable, Sendable {
 enum ReadingMode: String, CaseIterable, Codable, Identifiable, Sendable {
     case scroll, paged
     var id: String { rawValue }
-    var title: String { self == .scroll ? "捲動" : "翻頁" }
+    var title: String { self == .scroll ? String(localized: "捲動") : String(localized: "翻頁") }
 }
 
 enum PageTransition: String, CaseIterable, Codable, Identifiable, Sendable {
@@ -89,10 +89,10 @@ enum PageTransition: String, CaseIterable, Codable, Identifiable, Sendable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .curl: "仿真"
-        case .slide: "平滑"
-        case .cover: "覆蓋"
-        case .fade: "淡入淡出"
+        case .curl: String(localized: "仿真")
+        case .slide: String(localized: "平滑")
+        case .cover: String(localized: "覆蓋")
+        case .fade: String(localized: "淡入淡出")
         }
     }
 }
@@ -101,7 +101,7 @@ enum PageTransition: String, CaseIterable, Codable, Identifiable, Sendable {
 enum ChromeMode: String, CaseIterable, Codable, Identifiable, Sendable {
     case floating, pinned
     var id: String { rawValue }
-    var title: String { self == .floating ? "浮動（自動隱藏）" : "鎖定（常駐）" }
+    var title: String { self == .floating ? String(localized: "浮動（自動隱藏）") : String(localized: "鎖定（常駐）") }
 }
 
 struct ReaderLayout: Codable, Hashable, Sendable {
@@ -125,9 +125,9 @@ struct TranslationAppearance: Codable, Hashable, Sendable {
         var id: String { rawValue }
         var title: String {
             switch self {
-            case .bar: "側條"
-            case .card: "卡片"
-            case .plain: "純文字"
+            case .bar: String(localized: "側條")
+            case .card: String(localized: "卡片")
+            case .plain: String(localized: "純文字")
             }
         }
     }
@@ -154,6 +154,8 @@ struct AppearanceConfig: Codable, Equatable, Sendable {
     var darkTheme = ReaderTheme.defaultDark
     /// "system" / "serif" / "rounded" / "family:<字族名稱>" / "custom:<PostScript 名稱>"
     var readerFont = "system"
+    /// 介面字體，與閱讀字體分開；nil 為系統預設（Optional 讓舊設定可正常解碼）
+    var interfaceFont: String?
     var customFonts: [CustomFont] = []
     var layout = ReaderLayout()
     var translation = TranslationAppearance()
@@ -266,11 +268,14 @@ final class AppearanceSettings {
     /// 系統內建字族（含中文的蘋方、宋體、楷體等），按名稱排序。
     static let systemFontFamilies: [String] = UIFont.familyNames.sorted()
 
-    var fontDisplayName: String {
-        let value = config.readerFont
-        if value == "system" { return "系統預設" }
-        if value == "serif" { return "系統襯線" }
-        if value == "rounded" { return "系統圓體" }
+    var fontDisplayName: String { displayName(forFont: config.readerFont) }
+
+    var interfaceFontChoice: String { config.interfaceFont ?? "system" }
+
+    func displayName(forFont value: String) -> String {
+        if value == "system" { return String(localized: "系統預設") }
+        if value == "serif" { return String(localized: "系統襯線") }
+        if value == "rounded" { return String(localized: "系統圓體") }
         if value.hasPrefix("family:") { return String(value.dropFirst("family:".count)) }
         if value.hasPrefix("custom:") {
             let name = String(value.dropFirst("custom:".count))
@@ -310,7 +315,6 @@ final class AppearanceSettings {
         let font = CustomFont(fileName: fileName, postScriptName: postScriptName, displayName: displayName)
         config.customFonts.removeAll { $0.postScriptName == postScriptName || $0.fileName == fileName }
         config.customFonts.append(font)
-        config.readerFont = "custom:\(postScriptName)"
         return font
     }
 
@@ -339,9 +343,9 @@ enum AppearanceError: LocalizedError {
     case invalidImage, invalidFont, unreadableFile(String)
     var errorDescription: String? {
         switch self {
-        case .invalidImage: "無法讀取這張圖片"
-        case .invalidFont: "無法讀取字體檔，請選擇 .ttf 或 .otf 檔案"
-        case .unreadableFile(let reason): "無法讀取檔案：\(reason)"
+        case .invalidImage: String(localized: "無法讀取這張圖片")
+        case .invalidFont: String(localized: "無法讀取字體檔，請選擇 .ttf 或 .otf 檔案")
+        case .unreadableFile(let reason): String(localized: "無法讀取檔案：\(reason)")
         }
     }
 }

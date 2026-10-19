@@ -10,7 +10,7 @@ struct WorkListView: View {
         List {
             if showsHeading, let heading = model.heading {
                 Text(heading)
-                    .font(.footnote)
+                    .appFont(.footnote)
                     .foregroundStyle(.secondary)
                     .listRowBackground(Color.clear)
             }
@@ -53,7 +53,7 @@ struct WorkRow: View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(alignment: .firstTextBaseline) {
                 Text(work.title)
-                    .font(.headline)
+                    .appFont(.headline)
                     .lineLimit(2)
                 Spacer(minLength: 8)
                 if let rating = work.rating {
@@ -62,25 +62,25 @@ struct WorkRow: View {
             }
             if !work.authors.isEmpty {
                 Text(work.authors.joined(separator: ", "))
-                    .font(.subheadline)
+                    .appFont(.subheadline)
                     .foregroundStyle(.secondary)
             }
             if !work.fandoms.isEmpty {
                 Text(work.fandoms.joined(separator: " · "))
-                    .font(.caption)
+                    .appFont(.caption)
                     .foregroundStyle(.tint)
                     .lineLimit(1)
             }
             let tags = work.relationships + work.characters.prefix(3) + work.freeforms.prefix(4)
             if !tags.isEmpty {
                 Text(tags.joined(separator: " · "))
-                    .font(.caption)
+                    .appFont(.caption)
                     .foregroundStyle(.secondary)
                     .lineLimit(2)
             }
             if !work.summary.isEmpty {
                 Text(work.summary)
-                    .font(.callout)
+                    .appFont(.callout)
                     .lineLimit(3)
             }
             // 統計項目數量與長度不定（語言名稱可能很長），用自動換行排列，避免擠壓成直排
@@ -92,7 +92,7 @@ struct WorkRow: View {
                 stat(work.hits, "eye")
                 stat(work.updated, "calendar")
             }
-            .font(.caption2)
+            .appFont(.caption2)
             .foregroundStyle(.secondary)
         }
         .padding(.vertical, 4)
@@ -134,7 +134,7 @@ struct RatingBadge: View {
 
     var body: some View {
         Text(letter)
-            .font(.caption.bold())
+            .appFont(.caption, weight: .bold)
             .frame(width: 24, height: 24)
             .glassEffect(.regular.tint(color.opacity(0.6)), in: .rect(cornerRadius: 6))
             .accessibilityLabel(rating)

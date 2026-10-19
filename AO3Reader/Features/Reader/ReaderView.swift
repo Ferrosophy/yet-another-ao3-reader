@@ -239,7 +239,7 @@ struct ReaderView: View {
                     ForEach(detail.series, id: \.path) { series in
                         NavigationLink(value: WorkListRoute.series(name: series.name, path: series.path)) {
                             Label(series.name, systemImage: "books.vertical")
-                                .font(.subheadline)
+                                .appFont(.subheadline)
                         }
                     }
                 }
@@ -248,7 +248,7 @@ struct ReaderView: View {
                 }
                 if !detail.summary.isEmpty {
                     Text(detail.summary)
-                        .font(.callout)
+                        .appFont(.callout)
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .glassEffect(.regular, in: .rect(cornerRadius: 16))
@@ -281,7 +281,7 @@ struct ReaderView: View {
     private var toast: some View {
         if let message = actions.message {
             Text(message)
-                .font(.subheadline.weight(.medium))
+                .appFont(.subheadline, weight: .medium)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 10)
                 .glassEffect(.regular, in: .capsule)
@@ -302,7 +302,7 @@ struct ReaderView: View {
         VStack(spacing: 8) {
             if let error = model.translationError, model.isTranslationOn {
                 Label(error, systemImage: "exclamationmark.triangle.fill")
-                    .font(.caption)
+                    .appFont(.caption)
                     .lineLimit(2)
                     .padding(.horizontal, 14)
                     .padding(.vertical, 8)
@@ -327,7 +327,7 @@ struct ReaderView: View {
                         }
                         .accessibilityLabel("閱讀設定")
                     }
-                    .font(.title3)
+                    .appFont(.title3)
                     .padding(.horizontal, 18)
                     .frame(height: 48)
                     .glassEffect(.regular.interactive(), in: .capsule)
@@ -336,7 +336,7 @@ struct ReaderView: View {
                         withAnimation(.bouncy) { model.isTranslationOn.toggle() }
                     } label: {
                         Image(systemName: "translate")
-                            .font(.title3)
+                            .appFont(.title3)
                             .foregroundStyle(model.isTranslationOn ? .white : .primary)
                             .frame(width: 48, height: 48)
                     }
@@ -384,7 +384,7 @@ struct ReaderView: View {
             Button("翻譯設定…", systemImage: "gearshape") { showsTranslationSettings = true }
         } label: {
             Text(model.targetLanguage.name)
-                .font(.subheadline.weight(.medium))
+                .appFont(.subheadline, weight: .medium)
                 .lineLimit(1)
                 .padding(.horizontal, 14)
                 .frame(height: 48)
@@ -392,10 +392,10 @@ struct ReaderView: View {
         .glassEffect(.regular.interactive(), in: .capsule)
     }
 
-    private func circleButton(_ symbol: String, label: String, enabled: Bool, action: @escaping () -> Void) -> some View {
+    private func circleButton(_ symbol: String, label: LocalizedStringKey, enabled: Bool, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Image(systemName: symbol)
-                .font(.title3)
+                .appFont(.title3)
                 .frame(width: 48, height: 48)
         }
         .disabled(!enabled)
@@ -462,13 +462,13 @@ private struct WorkTagsView: View {
             ForEach(expanded ? groups : Array(groups.prefix(4)), id: \.title) { group in
                 VStack(alignment: .leading, spacing: 4) {
                     Text(group.title)
-                        .font(.caption.weight(.semibold))
+                        .appFont(.caption, weight: .semibold)
                         .foregroundStyle(.secondary)
                     FlowLayout(horizontalSpacing: 6, verticalSpacing: 6) {
                         ForEach(group.tags, id: \.path) { tag in
                             NavigationLink(value: WorkListRoute.tag(name: tag.name, path: tag.path)) {
                                 Text(tag.name)
-                                    .font(.caption)
+                                    .appFont(.caption)
                                     .lineLimit(1)
                                     .padding(.horizontal, 10)
                                     .padding(.vertical, 4)
@@ -484,7 +484,7 @@ private struct WorkTagsView: View {
                 Button(expanded ? "收起標籤" : "顯示全部標籤") {
                     withAnimation { expanded.toggle() }
                 }
-                .font(.caption)
+                .appFont(.caption)
             }
         }
     }

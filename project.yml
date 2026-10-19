@@ -2,6 +2,7 @@
 name: AO3Reader
 options:
   bundleIdPrefix: io.github.ferrosophy
+  developmentLanguage: zh-Hant
   deploymentTarget:
     iOS: "26.0"
   createIntermediateGroups: true

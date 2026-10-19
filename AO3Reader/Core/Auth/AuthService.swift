@@ -18,7 +18,7 @@ final class AuthService {
 
         let loginPage = try await client.get("/users/login")
         guard let token = AO3Parser.authenticityToken(loginPage) else {
-            throw AO3Error.parse("找不到登入表單 authenticity_token")
+            throw AO3Error.parse(String(localized: "找不到登入表單 authenticity_token"))
         }
         let (html, _) = try await client.postForm("/users/login", fields: [
             ("authenticity_token", token),

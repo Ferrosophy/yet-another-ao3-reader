@@ -11,13 +11,13 @@ enum AO3Error: LocalizedError, Equatable {
 
     var errorDescription: String? {
         switch self {
-        case .http(let code): "伺服器回應錯誤（HTTP \(code)）"
-        case .rateLimited(let after): "請求過於頻繁，AO3 暫時限制存取" + (after.map { "，請於 \($0) 秒後再試" } ?? "")
-        case .cloudflareChallenge: "來源要求瀏覽器驗證，請改用「網頁登入」通過驗證後再試"
-        case .requiresLogin: "此作品僅限登入用戶閱讀"
-        case .loginFailed: "登入失敗，請檢查帳號密碼"
-        case .parse(let what): "頁面解析失敗：\(what)"
-        case .invalidSource: "無效的來源網址"
+        case .http(let code): String(localized: "伺服器回應錯誤（HTTP \(code)）")
+        case .rateLimited(let after): after.map { String(localized: "請求過於頻繁，AO3 暫時限制存取，請於 \($0) 秒後再試") } ?? String(localized: "請求過於頻繁，AO3 暫時限制存取")
+        case .cloudflareChallenge: String(localized: "來源要求瀏覽器驗證，請改用「網頁登入」通過驗證後再試")
+        case .requiresLogin: String(localized: "此作品僅限登入用戶閱讀")
+        case .loginFailed: String(localized: "登入失敗，請檢查帳號密碼")
+        case .parse(let what): String(localized: "頁面解析失敗：\(what)")
+        case .invalidSource: String(localized: "無效的來源網址")
         }
     }
 }
@@ -191,11 +191,11 @@ enum TagSearchType: String, CaseIterable, Identifiable, Sendable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .any: "全部類型"
+        case .any: String(localized: "全部類型")
         case .fandom: "Fandom"
-        case .character: "角色"
-        case .relationship: "配對"
-        case .freeform: "其他標籤"
+        case .character: String(localized: "角色")
+        case .relationship: String(localized: "配對")
+        case .freeform: String(localized: "其他標籤")
         }
     }
 }

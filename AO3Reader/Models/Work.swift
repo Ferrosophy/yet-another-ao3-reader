@@ -71,9 +71,9 @@ enum UserListKind: String, CaseIterable, Identifiable, Hashable, Sendable {
 
     var title: String {
         switch self {
-        case .history: "閱讀紀錄"
-        case .markedForLater: "稍後閱讀"
-        case .bookmarks: "書籤"
+        case .history: String(localized: "閱讀紀錄")
+        case .markedForLater: String(localized: "稍後閱讀")
+        case .bookmarks: String(localized: "書籤")
         }
     }
 

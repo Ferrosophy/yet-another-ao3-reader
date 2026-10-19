@@ -22,9 +22,9 @@ struct AccountView: View {
                         .font(.system(size: 44))
                         .foregroundStyle(.tint)
                     VStack(alignment: .leading) {
-                        Text(username).font(.title3.bold())
+                        Text(username).appFont(.title3, weight: .bold)
                         Text(app.sources.selected.baseURL.host() ?? "")
-                            .font(.caption)
+                            .appFont(.caption)
                             .foregroundStyle(.secondary)
                     }
                 }

@@ -18,13 +18,22 @@ struct AppearanceSettingsView: View {
 
                 HStack(spacing: 20) {
                     ForEach(AppearanceSettings.accentPresets, id: \.hex) { preset in
-                        Swatch(color: Color(hex: preset.hex) ?? .red, label: preset.name,
+                        Swatch(color: Color(hex: preset.hex) ?? .red, label: LocalizedStringKey(preset.name),
                                isSelected: appearance.config.accentHex == preset.hex) {
                             appearance.config.accentHex = preset.hex
                         }
                     }
                 }
                 .frame(maxWidth: .infinity)
+
+                NavigationLink {
+                    FontPickerView(title: "介面字體", selection: Binding(
+                        get: { appearance.interfaceFontChoice },
+                        set: { appearance.config.interfaceFont = $0 == "system" ? nil : $0 }
+                    ))
+                } label: {
+                    LabeledContent("介面字體", value: appearance.displayName(forFont: appearance.interfaceFontChoice))
+                }
             }
         } trailing: {
             EmptyView()
@@ -94,7 +103,7 @@ struct ReaderAppearanceForm<Leading: View, Trailing: View>: View {
 
             Section("字體") {
                 NavigationLink {
-                    FontPickerView()
+                    FontPickerView(title: "閱讀字體", selection: $appearance.config.readerFont)
                 } label: {
                     LabeledContent("閱讀字體", value: appearance.fontDisplayName)
                 }
@@ -119,7 +128,7 @@ struct ReaderAppearanceForm<Leading: View, Trailing: View>: View {
                         theme.wrappedValue.background = .system
                     }
                     ForEach(AppearanceSettings.backgroundPresets, id: \.hex) { preset in
-                        Swatch(color: Color(hex: preset.hex) ?? .white, label: preset.name,
+                        Swatch(color: Color(hex: preset.hex) ?? .white, label: LocalizedStringKey(preset.name),
                                isSelected: theme.wrappedValue.background == .color && theme.wrappedValue.backgroundHex == preset.hex) {
                             theme.wrappedValue.backgroundHex = preset.hex
                             theme.wrappedValue.background = .color
@@ -154,7 +163,7 @@ struct ReaderAppearanceForm<Leading: View, Trailing: View>: View {
                         theme.wrappedValue.textHex = nil
                     }
                     ForEach(AppearanceSettings.textPresets, id: \.hex) { preset in
-                        Swatch(color: Color(hex: preset.hex) ?? .black, label: preset.name,
+                        Swatch(color: Color(hex: preset.hex) ?? .black, label: LocalizedStringKey(preset.name),
                                isSelected: theme.wrappedValue.textHex == preset.hex) {
                             theme.wrappedValue.textHex = preset.hex
                         }
@@ -209,16 +218,23 @@ struct ReaderAppearanceForm<Leading: View, Trailing: View>: View {
         }
     }
 
-    private func slider(_ title: String, value: Binding<Double>, in range: ClosedRange<Double>, step: Double, percent: Bool = false) -> some View {
+    private func slider(_ title: LocalizedStringKey, value: Binding<Double>, in range: ClosedRange<Double>, step: Double, percent: Bool = false) -> some View {
         let display = percent ? "\(Int((value.wrappedValue * 100).rounded()))%" : value.wrappedValue.formatted(.number.precision(.fractionLength(0...1)))
-        return LabeledContent("\(title) \(display)") {
+        return LabeledContent {
             Slider(value: value, in: range, step: step)
+        } label: {
+            HStack(spacing: 4) {
+                Text(title)
+                Text(verbatim: display).monospacedDigit()
+            }
         }
     }
 }
 
 /// 字體選擇：系統預設、蘋果內建字族與自行匯入的 TTF / OTF。
 struct FontPickerView: View {
+    let title: LocalizedStringKey
+    @Binding var selection: String
     @Environment(AppState.self) private var app
     @State private var search = ""
     @State private var importing = false
@@ -243,7 +259,7 @@ struct FontPickerView: View {
 
                 Section {
                     ForEach(appearance.config.customFonts) { font in
-                        row("custom:\(font.postScriptName)", title: font.displayName, font: .custom(font.postScriptName, size: 17))
+                        row("custom:\(font.postScriptName)", title: LocalizedStringKey(font.displayName), font: .custom(font.postScriptName, size: 17))
                     }
                     .onDelete { offsets in
                         for index in offsets { appearance.removeFont(appearance.config.customFonts[index]) }
@@ -258,16 +274,17 @@ struct FontPickerView: View {
 
             Section("蘋果內建字體") {
                 ForEach(families, id: \.self) { family in
-                    row("family:\(family)", title: family, font: .custom(family, size: 17))
+                    row("family:\(family)", title: LocalizedStringKey(family), font: .custom(family, size: 17))
                 }
             }
         }
         .searchable(text: $search, prompt: "搜尋字體")
-        .navigationTitle("閱讀字體")
+        .navigationTitle(title)
         .fileImporter(isPresented: $importing, allowedContentTypes: Self.importTypes, allowsMultipleSelection: false) { result in
             do {
                 guard let url = try result.get().first else { return }
-                try appearance.importFont(from: url)
+                let font = try appearance.importFont(from: url)
+                selection = "custom:\(font.postScriptName)"
             } catch {
                 errorMessage = error.localizedDescription
             }
@@ -279,17 +296,17 @@ struct FontPickerView: View {
         }
     }
 
-    private func row(_ value: String, title: String, font: Font) -> some View {
+    private func row(_ value: String, title: LocalizedStringKey, font: Font) -> some View {
         Button {
-            app.appearance.config.readerFont = value
+            selection = value
         } label: {
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(title).font(.subheadline).foregroundStyle(.secondary)
+                    Text(title).appFont(.subheadline).foregroundStyle(.secondary)
                     Text(Self.sample).font(font).foregroundStyle(.primary)
                 }
                 Spacer()
-                if app.appearance.config.readerFont == value {
+                if selection == value {
                     Image(systemName: "checkmark").foregroundStyle(.tint)
                 }
             }
@@ -314,7 +331,7 @@ private struct SwatchRow<Content: View>: View {
 /// 圓形色票，選中時外圈高亮；外圈包含在框架內，不會被裁切。
 private struct Swatch: View {
     let color: Color
-    let label: String
+    let label: LocalizedStringKey
     let isSelected: Bool
     var symbol: String?
     let action: () -> Void
@@ -330,11 +347,11 @@ private struct Swatch: View {
                         .overlay(Circle().strokeBorder(.secondary.opacity(0.4), lineWidth: 1))
                         .padding(5)
                     if let symbol {
-                        Image(systemName: symbol).font(.caption).foregroundStyle(.white)
+                        Image(systemName: symbol).appFont(.caption).foregroundStyle(.white)
                     }
                 }
                 .frame(width: 46, height: 46)
-                Text(label).font(.caption2).foregroundStyle(.secondary)
+                Text(label).appFont(.caption2).foregroundStyle(.secondary)
             }
         }
         .buttonStyle(.borderless)

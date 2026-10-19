@@ -85,7 +85,7 @@ enum AO3Parser {
             if html.contains("only available to registered users") || (try? doc.select("form#new_user").isEmpty()) == false {
                 throw AO3Error.requiresLogin
             }
-            throw AO3Error.parse("找不到作品內容 #chapters")
+            throw AO3Error.parse(String(localized: "找不到作品內容 #chapters"))
         }
 
         let title = try doc.select("#workskin h2.title.heading").first()?.text() ?? "Work \(id)"
@@ -108,7 +108,7 @@ enum AO3Parser {
                 chapters.append(Chapter(id: index, title: chapterTitle, paragraphs: try paragraphs(in: content, chapter: index)))
             }
         }
-        guard !chapters.isEmpty else { throw AO3Error.parse("作品沒有章節") }
+        guard !chapters.isEmpty else { throw AO3Error.parse(String(localized: "作品沒有章節")) }
         return WorkDetail(
             id: id, title: title, authors: authors, summary: summary, chapters: chapters,
             tagGroups: try workTagGroups(doc), series: try workSeries(doc),

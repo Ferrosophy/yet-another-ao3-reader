@@ -45,19 +45,19 @@ final class WorkActionsModel {
     func toggleMarkForLater() async {
         guard let form = actions?.mark else { return }
         let marked = actions?.isMarkedForLater ?? false
-        await perform(marked ? "已標記為已讀" : "已加入稍後閱讀") { try await self.client.submit(form) }
+        await perform(marked ? String(localized: "已標記為已讀") : String(localized: "已加入稍後閱讀")) { try await self.client.submit(form) }
     }
 
     func toggleWorkSubscription() async {
         guard let form = actions?.subscribe else { return }
         let subscribed = actions?.isSubscribed ?? false
-        await perform(subscribed ? "已取消訂閱作品" : "已訂閱作品") { try await self.client.submit(form) }
+        await perform(subscribed ? String(localized: "已取消訂閱作品") : String(localized: "已訂閱作品")) { try await self.client.submit(form) }
     }
 
     func toggleSubscription(_ target: SubscriptionTarget) async {
         guard let form = target.form else { return }
         let subscribed = target.isSubscribed
-        await perform(subscribed ? "已取消訂閱 \(target.name)" : "已訂閱 \(target.name)") {
+        await perform(subscribed ? String(localized: "已取消訂閱 \(target.name)") : String(localized: "已訂閱 \(target.name)")) {
             try await self.client.submit(form)
         }
         if let loaded = try? await client.subscriptionTarget(name: target.name, path: target.path) {
@@ -69,14 +69,14 @@ final class WorkActionsModel {
     func saveBookmark(notes: String, tags: String, isPrivate: Bool) async {
         guard let actions, let form = actions.bookmark else { return }
         let isUpdate = actions.isBookmarked
-        await perform(isUpdate ? "書籤已更新" : "已加入書籤") {
+        await perform(isUpdate ? String(localized: "書籤已更新") : String(localized: "已加入書籤")) {
             try await self.client.saveBookmark(form, notes: notes, tags: tags, isPrivate: isPrivate, isUpdate: isUpdate)
         }
     }
 
     func deleteBookmark() async {
         guard let actions, let form = actions.bookmark, actions.isBookmarked, let token = actions.authenticityToken else { return }
-        await perform("已移除書籤") { try await self.client.deleteBookmark(form, token: token) }
+        await perform(String(localized: "已移除書籤")) { try await self.client.deleteBookmark(form, token: token) }
     }
 
     private func perform(_ success: String, _ operation: @escaping () async throws -> Void) async {
@@ -87,7 +87,7 @@ final class WorkActionsModel {
             actions = try await client.workActions(id: workID) ?? actions
             message = success
         } catch {
-            message = "操作失敗：\(error.localizedDescription)"
+            message = String(localized: "操作失敗：\(error.localizedDescription)")
         }
     }
 }

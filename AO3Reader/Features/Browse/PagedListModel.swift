@@ -51,7 +51,7 @@ final class PagedListModel<Item: Identifiable & Sendable> {
 
 struct PagedListView<Item: Identifiable & Sendable, Row: View>: View {
     let model: PagedListModel<Item>
-    var emptyTitle = "沒有結果"
+    var emptyTitle: LocalizedStringKey = "沒有結果"
     @ViewBuilder var row: (Item) -> Row
 
     var body: some View {
