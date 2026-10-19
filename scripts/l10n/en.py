@@ -323,6 +323,12 @@ EN = {
 "Google 翻譯（免金鑰）": "Google Translate (No Key)",
 "Bing 翻譯（免金鑰）": "Bing Translator (No Key)",
 "原文 + 譯文": "Original + Translation",
+"AO3 說明": "AO3 Guide",
+"標籤與簡介": "Tags & Summary",
+"背景色": "Background Color",
+"文字色": "Text Color",
+"恢復自動配色": "Reset to Automatic Colors",
+"自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Automatic colors use a light tint of the text color so tags blend with the reading background.",
 "僅譯文": "Translation Only",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯

@@ -55,6 +55,7 @@ struct LatestWorksView: View {
     @State private var model: PagedWorksModel?
     @State private var languages = LatestWorksView.cachedLanguages()
     @State private var showsLanguages = false
+    @State private var showsGuide = false
 
     /// 特殊語言值：所有中文分支（普通話、粵語、吳語、閩南語、客家話、文言…）
     static let chineseAll = "@zh-all"
@@ -68,26 +69,13 @@ struct LatestWorksView: View {
 
     var body: some View {
         Group {
-            if let model { WorkListView(model: model, showsHeading: false) } else { AO3LoadingView() }
-        }
-        .safeAreaInset(edge: .top) {
-            VStack(spacing: 8) {
-                Picker("榜單", selection: $board) {
-                    ForEach(Board.allCases) { Text($0.title).tag($0) }
-                }
-                .pickerStyle(.segmented)
-                if board != .latest {
-                    Picker("時間範圍", selection: $period) {
-                        ForEach(Period.allCases) { Text($0.title).tag($0) }
-                    }
-                    .pickerStyle(.segmented)
-                }
-            }
-            .padding(.horizontal)
-            .padding(.bottom, 8)
+            if let model { WorkListView(model: model, showsHeading: false, header: AnyView(boardPickers)) } else { AO3LoadingView() }
         }
         .navigationTitle(board == .latest ? "最新作品" : "\(board.title) 排行")
         .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("AO3 說明", systemImage: "info.circle") { showsGuide = true }
+            }
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     showsLanguages = true
@@ -95,6 +83,9 @@ struct LatestWorksView: View {
                     Label(languageName, systemImage: "globe")
                 }
             }
+        }
+        .sheet(isPresented: $showsGuide) {
+            AO3GuideView()
         }
         .sheet(isPresented: $showsLanguages) {
             LanguagePickerSheet(languages: languages, selection: $languageID, chineseAll: Self.chineseAll)
@@ -134,6 +125,21 @@ struct LatestWorksView: View {
     private var chineseCodes: [String] {
         let codes = languages.filter { $0.name.hasPrefix("中文") }.map(\.code)
         return codes.count > 1 ? codes : ["zh", "yue", "wuu", "nan", "hak", "lzh"]
+    }
+
+    private var boardPickers: some View {
+        VStack(spacing: 8) {
+            Picker("榜單", selection: $board) {
+                ForEach(Board.allCases) { Text($0.title).tag($0) }
+            }
+            .pickerStyle(.segmented)
+            if board != .latest {
+                Picker("時間範圍", selection: $period) {
+                    ForEach(Period.allCases) { Text($0.title).tag($0) }
+                }
+                .pickerStyle(.segmented)
+            }
+        }
     }
 
     private var languageName: String {

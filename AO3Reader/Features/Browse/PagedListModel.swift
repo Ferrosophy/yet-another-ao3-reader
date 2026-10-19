@@ -52,16 +52,26 @@ final class PagedListModel<Item: Identifiable & Sendable> {
 struct PagedListView<Item: Identifiable & Sendable, Row: View>: View {
     let model: PagedListModel<Item>
     var emptyTitle: LocalizedStringKey = "沒有結果"
+    var header: AnyView?
     @ViewBuilder var row: (Item) -> Row
 
     var body: some View {
         List {
-            ForEach(model.items) { item in
-                row(item)
-                    .task { await model.loadMoreIfNeeded(current: item) }
+            if let header {
+                header
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
             }
-            if model.isLoading {
+            Section {
+                ForEach(model.items) { item in
+                    row(item)
+                        .task { await model.loadMoreIfNeeded(current: item) }
+                }
+            }
+            .listSectionSeparator(.hidden)
+            if model.isLoading, !model.items.isEmpty {
                 AO3LoadingView(compact: true)
+                    .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
             }
         }
@@ -76,6 +86,8 @@ struct PagedListView<Item: Identifiable & Sendable, Row: View>: View {
                     Button("重試") { Task { await model.reload() } }
                         .buttonStyle(.glassProminent)
                 }
+            } else if model.isLoading, model.items.isEmpty {
+                AO3LoadingView()
             } else if model.hasLoaded, !model.isLoading, model.items.isEmpty {
                 ContentUnavailableView(emptyTitle, systemImage: "tray")
             }

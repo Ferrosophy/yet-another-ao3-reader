@@ -5,23 +5,36 @@ struct WorkListView: View {
     let model: PagedWorksModel
     /// 是否顯示 AO3 的結果數標題（如 "1 - 20 of 12,345 Works"）
     var showsHeading = true
+    /// 列表頂部、跟著內容一起捲動的區塊（例如首頁的榜單切換）
+    var header: AnyView?
 
     var body: some View {
         List {
+            if let header {
+                header
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
+            }
             if showsHeading, let heading = model.heading {
                 Text(heading)
                     .appFont(.footnote)
                     .foregroundStyle(.secondary)
+                    .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
             }
-            ForEach(model.works) { work in
-                NavigationLink(value: WorkRoute(id: work.id, title: work.title)) {
-                    WorkRow(work: work)
+            Section {
+                ForEach(model.works) { work in
+                    NavigationLink(value: WorkRoute(id: work.id, title: work.title)) {
+                        WorkRow(work: work)
+                    }
+                    .task { await model.loadMoreIfNeeded(current: work) }
                 }
-                .task { await model.loadMoreIfNeeded(current: work) }
             }
-            if model.isLoading {
+            .listSectionSeparator(.hidden)
+            // 第一頁載入時由下方 overlay 顯示大圖示，這裡只在載入下一頁時顯示
+            if model.isLoading, !model.works.isEmpty {
                 AO3LoadingView(compact: true)
+                    .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
             }
         }
@@ -141,7 +154,7 @@ struct RatingBadge: View {
     }
 }
 
-/// 由左至右排列子視圖，超出寬度時整個項目換到下一行。
+/// 由左至右排列子視圖，超出寬度時整個項目換到下一行；單一項目最寬不超過容器寬度。
 struct FlowLayout: Layout {
     var horizontalSpacing: CGFloat = 8
     var verticalSpacing: CGFloat = 4
@@ -157,9 +170,8 @@ struct FlowLayout: Layout {
         var y = bounds.minY
         for row in arrange(subviews, maxWidth: bounds.width) {
             var x = bounds.minX
-            for index in row.indices {
-                let size = subviews[index].sizeThatFits(.unspecified)
-                subviews[index].place(at: CGPoint(x: x, y: y + (row.height - size.height) / 2), proposal: .unspecified)
+            for (index, size) in zip(row.indices, row.sizes) {
+                subviews[index].place(at: CGPoint(x: x, y: y + (row.height - size.height) / 2), proposal: ProposedViewSize(size))
                 x += size.width + horizontalSpacing
             }
             y += row.height + verticalSpacing
@@ -168,15 +180,18 @@ struct FlowLayout: Layout {
 
     private struct Row {
         var indices: [Int] = []
+        var sizes: [CGSize] = []
         var width: CGFloat = 0
         var height: CGFloat = 0
     }
 
     private func arrange(_ subviews: Subviews, maxWidth: CGFloat) -> [Row] {
+        let limit = ProposedViewSize(width: maxWidth.isFinite ? maxWidth : nil, height: nil)
         var rows: [Row] = []
         var current = Row()
         for index in subviews.indices {
-            let size = subviews[index].sizeThatFits(.unspecified)
+            var size = subviews[index].sizeThatFits(limit)
+            if maxWidth.isFinite { size.width = min(size.width, maxWidth) }
             guard size.width > 0 else { continue }  // 空的 stat（值為 nil）不佔位
             let needed = current.indices.isEmpty ? size.width : current.width + horizontalSpacing + size.width
             if needed > maxWidth, !current.indices.isEmpty {
@@ -186,6 +201,7 @@ struct FlowLayout: Layout {
             current.width = current.indices.isEmpty ? size.width : current.width + horizontalSpacing + size.width
             current.height = max(current.height, size.height)
             current.indices.append(index)
+            current.sizes.append(size)
         }
         if !current.indices.isEmpty { rows.append(current) }
         return rows

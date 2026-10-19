@@ -10,20 +10,12 @@ struct SubscriptionsView: View {
     var body: some View {
         Group {
             if let model {
-                PagedListView(model: model, emptyTitle: "沒有\(kind.title)訂閱") { item in
+                PagedListView(model: model, emptyTitle: "沒有\(kind.title)訂閱", header: AnyView(kindPicker)) { item in
                     link(item)
                 }
             } else {
                 AO3LoadingView()
             }
-        }
-        .safeAreaInset(edge: .top) {
-            Picker("類型", selection: $kind) {
-                ForEach(SubscriptionItem.Kind.allCases) { Text($0.title).tag($0) }
-            }
-            .pickerStyle(.segmented)
-            .padding(.horizontal)
-            .padding(.bottom, 8)
         }
         .navigationTitle("訂閱")
         .task(id: kind) {
@@ -35,6 +27,13 @@ struct SubscriptionsView: View {
             self.model = model
             await model.reload()
         }
+    }
+
+    private var kindPicker: some View {
+        Picker("類型", selection: $kind) {
+            ForEach(SubscriptionItem.Kind.allCases) { Text($0.title).tag($0) }
+        }
+        .pickerStyle(.segmented)
     }
 
     /// 不同類型導向不同的 route 型別，NavigationLink 需各自宣告才能對應 navigationDestination。

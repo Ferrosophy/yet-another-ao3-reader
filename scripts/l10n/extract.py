@@ -58,8 +58,12 @@ def normalize_multiline(text):
     out = '\n'.join(l[indent:] for l in lines)
     return out.replace('\x00JOIN\n', '')
 
+# 內容本身已分語言撰寫、以 verbatim 顯示的檔案不進字串目錄
+SKIP_FILES = {'AO3GuideView.swift'}
+
 keys = {}
 for f in sorted(pathlib.Path(sys.argv[1]).rglob('*.swift')):
+    if f.name in SKIP_FILES: continue
     src = f.read_text(); i = 0
     while i < len(src):
         if src.startswith('//', i):

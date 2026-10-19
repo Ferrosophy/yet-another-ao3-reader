@@ -156,6 +156,9 @@ struct AppearanceConfig: Codable, Equatable, Sendable {
     var readerFont = "system"
     /// 介面字體，與閱讀字體分開；nil 為系統預設（Optional 讓舊設定可正常解碼）
     var interfaceFont: String?
+    /// 閱讀頁標籤膠囊與簡介框的背景 / 文字色；nil 為依正文顏色自動
+    var tagBackgroundHex: String?
+    var tagTextHex: String?
     var customFonts: [CustomFont] = []
     var layout = ReaderLayout()
     var translation = TranslationAppearance()

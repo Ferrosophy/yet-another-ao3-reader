@@ -179,6 +179,27 @@ struct ReaderAppearanceForm<Leading: View, Trailing: View>: View {
                 Text("「自動」會依背景深淺選擇黑色或白色文字。")
             }
 
+            Section {
+                ColorPicker("背景色", selection: Binding(
+                    get: { appearance.config.tagBackgroundHex.flatMap(Color.init(hex:)) ?? Color.primary.opacity(0.08) },
+                    set: { appearance.config.tagBackgroundHex = $0.hexString }
+                ), supportsOpacity: false)
+                ColorPicker("文字色", selection: Binding(
+                    get: { appearance.config.tagTextHex.flatMap(Color.init(hex:)) ?? .primary },
+                    set: { appearance.config.tagTextHex = $0.hexString }
+                ), supportsOpacity: false)
+                if appearance.config.tagBackgroundHex != nil || appearance.config.tagTextHex != nil {
+                    Button("恢復自動配色") {
+                        appearance.config.tagBackgroundHex = nil
+                        appearance.config.tagTextHex = nil
+                    }
+                }
+            } header: {
+                Text("標籤與簡介")
+            } footer: {
+                Text("自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。")
+            }
+
             Section("譯文外觀") {
                 Picker("樣式", selection: $appearance.config.translation.style) {
                     ForEach(TranslationAppearance.Style.allCases) { Text($0.title).tag($0) }

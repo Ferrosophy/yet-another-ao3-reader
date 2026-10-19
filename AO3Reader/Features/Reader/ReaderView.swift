@@ -244,14 +244,15 @@ struct ReaderView: View {
                     }
                 }
                 if !detail.tagGroups.isEmpty {
-                    WorkTagsView(groups: detail.tagGroups)
+                    WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground)
                 }
                 if !detail.summary.isEmpty {
                     Text(detail.summary)
                         .appFont(.callout)
+                        .foregroundStyle(cardForeground.map { AnyShapeStyle($0) } ?? AnyShapeStyle(.primary))
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .glassEffect(.regular, in: .rect(cornerRadius: 16))
+                        .background(cardBackground, in: .rect(cornerRadius: 14))
                 }
             }
             if detail.chapters.count > 1 {
@@ -260,6 +261,15 @@ struct ReaderView: View {
                     .padding(.top, 8)
             }
         }
+    }
+
+    /// 標籤與簡介的底色：自訂色或正文顏色的淡色，與閱讀背景融為一體
+    private var cardBackground: Color {
+        appearance.config.tagBackgroundHex.flatMap(Color.init(hex:)) ?? (style.textColor ?? .primary).opacity(0.08)
+    }
+
+    private var cardForeground: Color? {
+        appearance.config.tagTextHex.flatMap(Color.init(hex:))
     }
 
     private var chapterFooter: some View {
@@ -455,6 +465,8 @@ struct ReaderBackground: View {
 /// 作品頁的標籤分組；點擊標籤查看該標籤下的所有作品（可再篩選）。
 private struct WorkTagsView: View {
     let groups: [WorkTagGroup]
+    let background: Color
+    let foreground: Color?
     @State private var expanded = false
 
     var body: some View {
@@ -470,12 +482,13 @@ private struct WorkTagsView: View {
                                 Text(tag.name)
                                     .appFont(.caption)
                                     .lineLimit(1)
+                                    .truncationMode(.middle)
+                                    .foregroundStyle(foreground.map { AnyShapeStyle($0) } ?? AnyShapeStyle(.primary))
                                     .padding(.horizontal, 10)
                                     .padding(.vertical, 4)
-                                    .fixedSize()
+                                    .background(background, in: .capsule)
                             }
                             .buttonStyle(.plain)
-                            .glassEffect(.regular.interactive(), in: .capsule)
                         }
                     }
                 }

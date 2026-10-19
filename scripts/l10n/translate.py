@@ -26,8 +26,13 @@ def gtx(text, tl):
             time.sleep(2 ** attempt)
     raise RuntimeError('gtx failed')
 
-def translate_all(tl):
-    keys = list(EN); out = {}
+import os
+CACHE = json.load(open('mt.json')) if os.path.exists('mt.json') else {}
+
+def translate_all(tl, code):
+    cached = CACHE.get(code, {})
+    out = {k: v for k, v in cached.items() if k in EN}
+    keys = [k for k in EN if k not in out]
     for start in range(0, len(keys), 40):
         chunk = keys[start:start+40]
         prot = [protect(EN[k]) for k in chunk]
@@ -46,6 +51,6 @@ def translate_all(tl):
 langs = {'ja':'ja','ko':'ko','es':'es','fr':'fr','de':'de','pt-BR':'pt','it':'it','ru':'ru','uk':'uk','pl':'pl','tr':'tr','nl':'nl','ar':'ar','hi':'hi','id':'id','vi':'vi','th':'th'}
 result = {}
 for code, tl in langs.items():
-    result[code] = translate_all(tl)
+    result[code] = translate_all(tl, code)
     print(code, sum(1 for k in EN if result[code][k] == EN[k]), 'fallbacks/unchanged', flush=True)
 json.dump(result, open('mt.json', 'w'), ensure_ascii=False, indent=1)

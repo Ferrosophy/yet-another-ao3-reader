@@ -324,7 +324,13 @@
   "Google 翻譯（免金鑰）": "Google翻訳（鍵なし）",
   "Bing 翻譯（免金鑰）": "Bing 翻訳者 (キーなし)",
   "原文 + 譯文": "原文+翻訳",
-  "僅譯文": "翻訳のみ"
+  "僅譯文": "翻訳のみ",
+  "AO3 說明": "AO3 ガイド",
+  "標籤與簡介": "タグと概要",
+  "背景色": "背景色",
+  "文字色": "文字の色",
+  "恢復自動配色": "自動カラーにリセット",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "自動カラーではテキストの色の明るい色合いが使用されるため、タグが読書の背景に溶け込みます。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -651,7 +657,13 @@
   "Google 翻譯（免金鑰）": "Google 번역(키 없음)",
   "Bing 翻譯（免金鑰）": "Bing 번역기(키 없음)",
   "原文 + 譯文": "원본 + 번역",
-  "僅譯文": "번역만"
+  "僅譯文": "번역만",
+  "AO3 說明": "AO3 가이드",
+  "標籤與簡介": "태그 및 요약",
+  "背景色": "배경색",
+  "文字色": "텍스트 색상",
+  "恢復自動配色": "자동 색상으로 재설정",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "자동 색상은 텍스트 색상의 밝은 색조를 사용하므로 태그가 읽기 배경과 혼합됩니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -978,7 +990,13 @@
   "Google 翻譯（免金鑰）": "Traductor de Google (sin clave)",
   "Bing 翻譯（免金鑰）": "Traductor de Bing (sin clave)",
   "原文 + 譯文": "Original + Traducción",
-  "僅譯文": "Sólo traducción"
+  "僅譯文": "Sólo traducción",
+  "AO3 說明": "Guía AO3",
+  "標籤與簡介": "Etiquetas y resumen",
+  "背景色": "Color de fondo",
+  "文字色": "Color del texto",
+  "恢復自動配色": "Restablecer a colores automáticos",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Los colores automáticos utilizan un tono claro del color del texto para que las etiquetas se mezclen con el fondo de lectura."
  },
  "fr": {
   "載入中": "Chargement",
@@ -1305,7 +1323,13 @@
   "Google 翻譯（免金鑰）": "Google Translate (pas de clé)",
   "Bing 翻譯（免金鑰）": "Traducteur Bing (sans clé)",
   "原文 + 譯文": "Original + Traduction",
-  "僅譯文": "Traduction uniquement"
+  "僅譯文": "Traduction uniquement",
+  "AO3 說明": "Guide AO3",
+  "標籤與簡介": "Balises et résumé",
+  "背景色": "Couleur d'arrière-plan",
+  "文字色": "Couleur du texte",
+  "恢復自動配色": "Réinitialiser les couleurs automatiques",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Les couleurs automatiques utilisent une légère teinte de la couleur du texte afin que les balises se fondent dans l’arrière-plan de lecture."
  },
  "de": {
   "載入中": "Laden",
@@ -1632,7 +1656,13 @@
   "Google 翻譯（免金鑰）": "Google Translate (kein Schlüssel)",
   "Bing 翻譯（免金鑰）": "Bing-Übersetzer (kein Schlüssel)",
   "原文 + 譯文": "Original + Übersetzung",
-  "僅譯文": "Nur Übersetzung"
+  "僅譯文": "Nur Übersetzung",
+  "AO3 說明": "AO3-Leitfaden",
+  "標籤與簡介": "Schlagworte und Zusammenfassung",
+  "背景色": "Hintergrundfarbe",
+  "文字色": "Textfarbe",
+  "恢復自動配色": "Auf automatische Farben zurücksetzen",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Automatische Farben verwenden einen leichten Farbton der Textfarbe, sodass Tags mit dem Lesehintergrund verschmelzen."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -1959,7 +1989,13 @@
   "Google 翻譯（免金鑰）": "Google Tradutor (sem chave)",
   "Bing 翻譯（免金鑰）": "Tradutor Bing (sem chave)",
   "原文 + 譯文": "Original + Tradução",
-  "僅譯文": "Somente tradução"
+  "僅譯文": "Somente tradução",
+  "AO3 說明": "Guia AO3",
+  "標籤與簡介": "Tags e resumo",
+  "背景色": "Cor de fundo",
+  "文字色": "Cor do texto",
+  "恢復自動配色": "Redefinir para cores automáticas",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "As cores automáticas usam um tom claro da cor do texto para que as tags se misturem ao fundo de leitura."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -2286,7 +2322,13 @@
   "Google 翻譯（免金鑰）": "Google Traduttore (nessuna chiave)",
   "Bing 翻譯（免金鑰）": "Traduttore Bing (nessuna chiave)",
   "原文 + 譯文": "Originale + Traduzione",
-  "僅譯文": "Solo traduzione"
+  "僅譯文": "Solo traduzione",
+  "AO3 說明": "Guida AO3",
+  "標籤與簡介": "Tag e riepilogo",
+  "背景色": "Colore di sfondo",
+  "文字色": "Colore del testo",
+  "恢復自動配色": "Ripristina i colori automatici",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "I colori automatici utilizzano una tonalità chiara del colore del testo in modo che i tag si fondano con lo sfondo di lettura."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -2613,7 +2655,13 @@
   "Google 翻譯（免金鑰）": "Google Translate (без ключа)",
   "Bing 翻譯（免金鑰）": "Переводчик Bing (без ключа)",
   "原文 + 譯文": "Оригинал + Перевод",
-  "僅譯文": "Только перевод"
+  "僅譯文": "Только перевод",
+  "AO3 說明": "Руководство по АО3",
+  "標籤與簡介": "Теги и сводка",
+  "背景色": "Цвет фона",
+  "文字色": "Цвет текста",
+  "恢復自動配色": "Сброс к автоматическим цветам",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Автоматические цвета используют светлый оттенок цвета текста, поэтому теги сливаются с фоном чтения."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -2940,7 +2988,13 @@
   "Google 翻譯（免金鑰）": "Перекладач Google (без ключа)",
   "Bing 翻譯（免金鑰）": "Перекладач Bing (без ключа)",
   "原文 + 譯文": "Оригінал + переклад",
-  "僅譯文": "Тільки переклад"
+  "僅譯文": "Тільки переклад",
+  "AO3 說明": "Керівництво AO3",
+  "標籤與簡介": "Теги та резюме",
+  "背景色": "Колір фону",
+  "文字色": "Колір тексту",
+  "恢復自動配色": "Скинути до автоматичних кольорів",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Автоматичні кольори використовують легкий відтінок кольору тексту, щоб теги зливалися з фоном читання."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -3267,7 +3321,13 @@
   "Google 翻譯（免金鑰）": "Tłumacz Google (bez klucza)",
   "Bing 翻譯（免金鑰）": "Tłumacz Bing (bez klucza)",
   "原文 + 譯文": "Oryginał + tłumaczenie",
-  "僅譯文": "Tylko tłumaczenie"
+  "僅譯文": "Tylko tłumaczenie",
+  "AO3 說明": "Przewodnik AO3",
+  "標籤與簡介": "Tagi i podsumowanie",
+  "背景色": "Kolor tła",
+  "文字色": "Kolor tekstu",
+  "恢復自動配色": "Zresetuj do kolorów automatycznych",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Kolory automatyczne wykorzystują jasny odcień koloru tekstu, dzięki czemu znaczniki zlewają się z tłem do czytania."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -3594,7 +3654,13 @@
   "Google 翻譯（免金鑰）": "Google Çeviri (Anahtar Yok)",
   "Bing 翻譯（免金鑰）": "Bing Çevirmen (Anahtarsız)",
   "原文 + 譯文": "Orijinal + Çeviri",
-  "僅譯文": "Yalnızca Çeviri"
+  "僅譯文": "Yalnızca Çeviri",
+  "AO3 說明": "AO3 Kılavuzu",
+  "標籤與簡介": "Etiketler ve Özet",
+  "背景色": "Arka Plan Rengi",
+  "文字色": "Metin Rengi",
+  "恢復自動配色": "Otomatik Renklere Sıfırla",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Otomatik renkler, metin renginin açık bir tonunu kullanır, böylece etiketler okuma arka planıyla karışır."
  },
  "nl": {
   "載入中": "Laden",
@@ -3921,7 +3987,13 @@
   "Google 翻譯（免金鑰）": "Google Translate (geen sleutel)",
   "Bing 翻譯（免金鑰）": "Bing Vertaler (geen sleutel)",
   "原文 + 譯文": "Origineel + vertaling",
-  "僅譯文": "Alleen vertaling"
+  "僅譯文": "Alleen vertaling",
+  "AO3 說明": "AO3-gids",
+  "標籤與簡介": "Tags en samenvatting",
+  "背景色": "Achtergrondkleur",
+  "文字色": "Tekstkleur",
+  "恢復自動配色": "Reset naar automatische kleuren",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Automatische kleuren gebruiken een lichte tint van de tekstkleur, zodat tags opgaan in de leesachtergrond."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -4248,7 +4320,13 @@
   "Google 翻譯（免金鑰）": "ترجمة جوجل (بدون مفتاح)",
   "Bing 翻譯（免金鑰）": "مترجم Bing (بدون مفتاح)",
   "原文 + 譯文": "الأصل + الترجمة",
-  "僅譯文": "الترجمة فقط"
+  "僅譯文": "الترجمة فقط",
+  "AO3 說明": "دليل AO3",
+  "標籤與簡介": "العلامات والملخص",
+  "背景色": "لون الخلفية",
+  "文字色": "لون النص",
+  "恢復自動配色": "إعادة التعيين إلى الألوان التلقائية",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "تستخدم الألوان التلقائية صبغة خفيفة من لون النص بحيث تمتزج العلامات مع خلفية القراءة."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -4575,7 +4653,13 @@
   "Google 翻譯（免金鑰）": "Google अनुवाद (कोई कुंजी नहीं)",
   "Bing 翻譯（免金鑰）": "बिंग अनुवादक (कोई कुंजी नहीं)",
   "原文 + 譯文": "मूल + अनुवाद",
-  "僅譯文": "केवल अनुवाद"
+  "僅譯文": "केवल अनुवाद",
+  "AO3 說明": "AO3 गाइड",
+  "標籤與簡介": "टैग और सारांश",
+  "背景色": "पृष्ठभूमि का रंग",
+  "文字色": "पाठ का रंग",
+  "恢復自動配色": "स्वचालित रंगों पर रीसेट करें",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "स्वचालित रंग टेक्स्ट रंग के हल्के रंग का उपयोग करते हैं ताकि टैग पढ़ने की पृष्ठभूमि के साथ मिश्रित हो जाएं।"
  },
  "id": {
   "載入中": "Memuat",
@@ -4902,7 +4986,13 @@
   "Google 翻譯（免金鑰）": "Google Terjemahan (Tanpa Kunci)",
   "Bing 翻譯（免金鑰）": "Penerjemah Bing (Tanpa Kunci)",
   "原文 + 譯文": "Asli + Terjemahan",
-  "僅譯文": "Hanya Terjemahan"
+  "僅譯文": "Hanya Terjemahan",
+  "AO3 說明": "Panduan AO3",
+  "標籤與簡介": "Tag & Ringkasan",
+  "背景色": "Warna Latar Belakang",
+  "文字色": "Warna Teks",
+  "恢復自動配色": "Atur Ulang ke Warna Otomatis",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Warna otomatis menggunakan rona terang pada warna teks sehingga tag menyatu dengan latar belakang pembacaan."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -5229,7 +5319,13 @@
   "Google 翻譯（免金鑰）": "Google Dịch (Không có phím)",
   "Bing 翻譯（免金鑰）": "Trình dịch Bing (Không có khóa)",
   "原文 + 譯文": "Bản gốc + Bản dịch",
-  "僅譯文": "Chỉ dịch"
+  "僅譯文": "Chỉ dịch",
+  "AO3 說明": "Hướng dẫn AO3",
+  "標籤與簡介": "Thẻ & Tóm tắt",
+  "背景色": "Màu nền",
+  "文字色": "Màu văn bản",
+  "恢復自動配色": "Đặt lại về màu tự động",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Màu tự động sử dụng tông màu nhạt của màu văn bản để thẻ hòa hợp với nền đọc."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -5556,6 +5652,12 @@
   "Google 翻譯（免金鑰）": "Google แปลภาษา (ไม่มีคีย์)",
   "Bing 翻譯（免金鑰）": "Bing Translator (ไม่มีคีย์)",
   "原文 + 譯文": "ต้นฉบับ + การแปล",
-  "僅譯文": "การแปลเท่านั้น"
+  "僅譯文": "การแปลเท่านั้น",
+  "AO3 說明": "คู่มือ AO3",
+  "標籤與簡介": "แท็ก & สรุป",
+  "背景色": "สีพื้นหลัง",
+  "文字色": "สีข้อความ",
+  "恢復自動配色": "รีเซ็ตเป็นสีอัตโนมัติ",
+  "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "สีอัตโนมัติจะใช้สีอ่อนของสีข้อความเพื่อให้แท็กผสมผสานกับพื้นหลังการอ่าน"
  }
 }

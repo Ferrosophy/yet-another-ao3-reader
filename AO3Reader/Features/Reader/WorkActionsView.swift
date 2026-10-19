@@ -108,7 +108,7 @@ struct WorkActionsMenu: View {
                     .disabled(actions.bookmark == nil)
                     if actions.mark != nil {
                         Button(actions.isMarkedForLater ? "標記為已讀" : "稍後閱讀",
-                               systemImage: actions.isMarkedForLater ? "checkmark.circle" : "clock.badge.plus") {
+                               systemImage: actions.isMarkedForLater ? "checkmark.circle" : "clock") {
                             Task { await model.toggleMarkForLater() }
                         }
                     }
