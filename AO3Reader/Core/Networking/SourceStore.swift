@@ -43,7 +43,7 @@ final class SourceStore {
     }
 
     /// 解析使用者輸入的網址，補齊 scheme 並去掉路徑。
-    static func normalize(_ raw: String) -> URL? {
+    nonisolated static func normalize(_ raw: String) -> URL? {
         var text = raw.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty else { return nil }
         if !text.contains("://") { text = "https://" + text }
