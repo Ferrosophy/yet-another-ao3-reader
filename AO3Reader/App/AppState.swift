@@ -10,6 +10,7 @@ final class AppState {
     let auth = AuthService()
     let translation = TranslationSettings()
     let translator = TranslationService()
+    let appearance = AppearanceSettings()
 
     /// 目前來源的客戶端；切換來源時自動跟著變更。
     var client: AO3Client { AO3Client(baseURL: sources.selected.baseURL) }

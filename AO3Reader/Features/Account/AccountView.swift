@@ -32,6 +32,16 @@ struct AccountView: View {
             }
 
             Section("我的 AO3") {
+                NavigationLink {
+                    InboxView(username: username)
+                } label: {
+                    Label("收件匣", systemImage: "tray")
+                }
+                NavigationLink {
+                    SubscriptionsView(username: username)
+                } label: {
+                    Label("訂閱", systemImage: "bell")
+                }
                 ForEach(UserListKind.allCases) { kind in
                     NavigationLink {
                         UserWorkListView(kind: kind, username: username)

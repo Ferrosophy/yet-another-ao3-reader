@@ -1,0 +1,61 @@
+import SwiftUI
+
+/// 導航目標：點擊作品卡片進入閱讀器。
+struct WorkRoute: Hashable {
+    let id: Int
+    let title: String
+}
+
+/// 導航目標：任意作品列表頁（標籤、合集、系列、用戶作品）。
+/// `filterable` 為 true 時提供與官網相同的「Sort and Filter」篩選。
+struct WorkListRoute: Hashable {
+    var title: String
+    var path: String
+    var baseQuery: [URLQueryItem] = []
+    var filterable = false
+
+    /// 標籤下的所有作品：/works?tag_id=<to_param>，可再篩選。
+    static func tag(name: String, param: String? = nil) -> WorkListRoute {
+        WorkListRoute(
+            title: name,
+            path: "/works",
+            baseQuery: [URLQueryItem(name: "tag_id", value: param ?? AO3Paths.tagParam(name))],
+            filterable: true
+        )
+    }
+
+    /// 由作品頁或搜尋結果中的標籤連結（/tags/<param>[/works]）建立。
+    static func tag(name: String, path: String) -> WorkListRoute {
+        tag(name: name, param: AO3Paths.tagParam(fromPath: path))
+    }
+
+    static func collection(_ collection: CollectionResult) -> WorkListRoute {
+        WorkListRoute(title: collection.title, path: collection.path + "/works", filterable: true)
+    }
+
+    static func person(name: String, path: String) -> WorkListRoute {
+        WorkListRoute(title: name, path: path.hasSuffix("/works") ? path : path + "/works")
+    }
+
+    static func series(name: String, path: String) -> WorkListRoute {
+        WorkListRoute(title: name, path: path)
+    }
+}
+
+private struct WorkNavigation: ViewModifier {
+    @Environment(AppState.self) private var app
+
+    func body(content: Content) -> some View {
+        content
+            .navigationDestination(for: WorkRoute.self) { route in
+                ReaderView(model: ReaderViewModel(route: route, app: app))
+            }
+            .navigationDestination(for: WorkListRoute.self) { route in
+                WorkListScreen(route: route)
+            }
+    }
+}
+
+extension View {
+    func withWorkNavigation() -> some View { modifier(WorkNavigation()) }
+}

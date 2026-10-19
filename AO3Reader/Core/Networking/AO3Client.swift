@@ -107,11 +107,97 @@ struct AO3Client: Sendable {
         return try AO3Parser.workPage(html: html, page: page)
     }
 
+    /// 任意作品列表頁（標籤、合集、系列、用戶作品…），列表中的 `li.blurb` 皆可解析。
+    func worksPage(path: String, query: [URLQueryItem] = [], page: Int = 1) async throws -> WorkPage {
+        let html = try await get(path, query: Self.paged(query, page))
+        return try AO3Parser.workPage(html: html, page: page)
+    }
+
+    func searchTags(name: String, type: TagSearchType, page: Int = 1) async throws -> ListPage<TagResult> {
+        let html = try await get("/tags/search", query: Self.paged([
+            URLQueryItem(name: "tag_search[name]", value: name),
+            URLQueryItem(name: "tag_search[type]", value: type.rawValue),
+            URLQueryItem(name: "tag_search[sort_column]", value: "uses"),
+            URLQueryItem(name: "tag_search[sort_direction]", value: "desc"),
+            URLQueryItem(name: "commit", value: "Search Tags"),
+        ], page))
+        return try AO3Parser.tagResults(html: html, page: page)
+    }
+
+    func searchPeople(name: String, page: Int = 1) async throws -> ListPage<PersonResult> {
+        let html = try await get("/people/search", query: Self.paged([
+            URLQueryItem(name: "people_search[name]", value: name),
+            URLQueryItem(name: "commit", value: "Search People"),
+        ], page))
+        return try AO3Parser.peopleResults(html: html, page: page)
+    }
+
+    func searchCollections(title: String, page: Int = 1) async throws -> ListPage<CollectionResult> {
+        var query: [URLQueryItem] = []
+        if !title.isEmpty {
+            query = [
+                URLQueryItem(name: "collection_search[title]", value: title),
+                URLQueryItem(name: "commit", value: "Sort and Filter"),
+            ]
+        }
+        let html = try await get("/collections", query: Self.paged(query, page))
+        return try AO3Parser.collectionResults(html: html, page: page)
+    }
+
+    func subscriptions(username: String, kind: SubscriptionItem.Kind, page: Int = 1) async throws -> ListPage<SubscriptionItem> {
+        let html = try await get("/users/\(username)/subscriptions", query: Self.paged([
+            URLQueryItem(name: "type", value: kind.rawValue),
+        ], page))
+        return try AO3Parser.subscriptions(html: html, page: page)
+    }
+
+    func inbox(username: String, unreadOnly: Bool, page: Int = 1) async throws -> ListPage<InboxComment> {
+        var query: [URLQueryItem] = []
+        if unreadOnly { query.append(URLQueryItem(name: "filters[read]", value: "false")) }
+        let html = try await get("/users/\(username)/inbox", query: Self.paged(query, page))
+        return try AO3Parser.inbox(html: html, page: page)
+    }
+
+    /// AO3 輸入框自動完成（/autocomplete/fandom 等），回傳 `[{id, name}]`。
+    func autocomplete(_ kind: AutocompleteKind, term: String) async throws -> [String] {
+        var request = URLRequest(url: url("/autocomplete/\(kind.rawValue)", query: [URLQueryItem(name: "term", value: term)]))
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue("XMLHttpRequest", forHTTPHeaderField: "X-Requested-With")
+        let (data, response) = try await Self.session.data(for: request)
+        if let http = response as? HTTPURLResponse { try Self.validate(http) }
+        struct Item: Decodable { let name: String }
+        return try JSONDecoder().decode([Item].self, from: data).map(\.name)
+    }
+
+    private static func paged(_ query: [URLQueryItem], _ page: Int) -> [URLQueryItem] {
+        page > 1 ? query + [URLQueryItem(name: "page", value: String(page))] : query
+    }
+
     /// 以首頁判斷來源是否為可用的 AO3（或其鏡像），並回傳目前登入的用戶名。
     func probe() async throws -> (isAO3: Bool, username: String?) {
         let html = try await get("/")
         return (AO3Parser.looksLikeAO3(html), AO3Parser.loggedInUsername(html))
     }
+}
+
+/// Tag Search 的類型篩選，值與官網 radio button 相同。
+enum TagSearchType: String, CaseIterable, Identifiable, Sendable {
+    case any = "", fandom = "Fandom", character = "Character", relationship = "Relationship", freeform = "Freeform"
+    var id: String { rawValue }
+    var title: String {
+        switch self {
+        case .any: "全部類型"
+        case .fandom: "Fandom"
+        case .character: "角色"
+        case .relationship: "配對"
+        case .freeform: "其他標籤"
+        }
+    }
+}
+
+/// /autocomplete/<kind> 端點。
+enum AutocompleteKind: String, Sendable {
+    case tag, fandom, character, relationship, freeform
 }
 
 enum FormEncoding {

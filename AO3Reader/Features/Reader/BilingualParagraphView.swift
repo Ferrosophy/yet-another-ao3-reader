@@ -3,11 +3,26 @@ import SwiftUI
 struct ReaderStyle {
     var fontSize: Double
     var lineSpacing: Double
-    var serif: Bool
+    /// "system" / "serif" / "rounded" / "custom:<PostScript 名稱>"
+    var font: String
 
-    var bodyFont: Font { .system(size: fontSize, design: serif ? .serif : .default) }
-    var headingFont: Font { .system(size: fontSize * 1.2, weight: .semibold, design: serif ? .serif : .default) }
-    var translationFont: Font { .system(size: fontSize * 0.95, design: .default) }
+    private func makeFont(size: Double, weight: Font.Weight = .regular) -> Font {
+        if font.hasPrefix("custom:") {
+            return .custom(String(font.dropFirst("custom:".count)), size: size).weight(weight)
+        }
+        let design: Font.Design = switch font {
+        case "serif": .serif
+        case "rounded": .rounded
+        default: .default
+        }
+        return .system(size: size, weight: weight, design: design)
+    }
+
+    var bodyFont: Font { makeFont(size: fontSize) }
+    var headingFont: Font { makeFont(size: fontSize * 1.2, weight: .semibold) }
+    var titleFont: Font { makeFont(size: fontSize * 1.5, weight: .bold) }
+    /// 譯文使用同一字體、略小字級，與原文區分但不突兀
+    var translationFont: Font { makeFont(size: fontSize * 0.95) }
 }
 
 /// 沉浸式雙語段落：原文在上，譯文緊接其下並以強調色側條標示，不取代原文。

@@ -38,25 +38,7 @@ struct RootView: View {
             }
         }
         .tabBarMinimizeBehavior(.onScrollDown)
+        .tint(app.appearance.accentColor)
+        .preferredColorScheme(app.appearance.config.colorScheme.scheme)
     }
-}
-
-/// 導航目標：點擊作品卡片進入閱讀器。
-struct WorkRoute: Hashable {
-    let id: Int
-    let title: String
-}
-
-private struct WorkNavigation: ViewModifier {
-    @Environment(AppState.self) private var app
-
-    func body(content: Content) -> some View {
-        content.navigationDestination(for: WorkRoute.self) { route in
-            ReaderView(model: ReaderViewModel(route: route, app: app))
-        }
-    }
-}
-
-extension View {
-    func withWorkNavigation() -> some View { modifier(WorkNavigation()) }
 }

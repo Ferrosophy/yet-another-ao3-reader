@@ -11,7 +11,9 @@
 | AO3 帳號登入 | 原生表單（取 `authenticity_token` → `POST /users/login`），失敗或遇 Cloudflare 驗證時可改用 WKWebView 網頁登入並同步 Cookie。不保存密碼。 |
 | 官網原生搜尋與篩選 | `FilterSheet` 與 AO3「Work Search」欄位一一對應（關鍵字、標題、作者、更新時間、完結、Crossover、字數、語言、Fandom、分級、Warnings、分類、角色、配對、其他標籤、點擊/Kudos/評論/書籤、排序），原樣產生 `work_search[...]` 參數交給 AO3 伺服器處理。 |
 | 鏡像來源 | 可新增單一鏡像（含連線測試）或批次導入（每行一個網址），切換後所有搜尋、閱讀、登入都走該來源。 |
-| 個人列表 | 登入後可瀏覽閱讀紀錄、稍後閱讀、書籤。 |
+| 個人列表 | 登入後可瀏覽收件匣（收到的評論）、訂閱（作品 / 系列 / 用戶）、閱讀紀錄、稍後閱讀、書籤。 |
+| 標籤 / 用戶 / 合集 | 搜尋分頁支援作品、標籤（Tag Search）、用戶（People Search）、合集（Collections）四種範圍；點標籤可查看該標籤下所有作品，並用「Sort and Filter」再包含 / 排除標籤篩選。篩選表單的標籤欄位會向 AO3 自動完成查找匹配標籤。 |
+| 外觀 | 深色模式（跟隨系統 / 淺色 / 深色）、主題色；閱讀頁可換純色或自選圖片背景，並可匯入自己的 TTF / OTF 字體。 |
 | 沉浸式翻譯 | **不取代原文**：每段原文下方顯示譯文（強調色側條），也可切換為「僅譯文」。只翻譯螢幕上可見的段落並預取後續幾段，合併批次送出並快取。 |
 | 翻譯服務 | Google 翻譯（免金鑰）、Google Cloud Translation、OpenAI 相容 API（OpenAI / DeepSeek / OpenRouter / Groq / 自訂 Base URL）、Anthropic Claude、Google Gemini。 |
 | 多語言 | 繁中、繁中（香港）、簡中、英、日、韓、法、德、西、葡、義、俄、烏、波、土、越、泰、印尼、阿拉伯文，閱讀中可隨時切換。 |

@@ -24,6 +24,14 @@ final class ReaderViewModel {
     private(set) var translations: [Paragraph.ID: ParagraphTranslation] = [:]
     private(set) var translationError: String?
 
+    /// 目前畫面頂端的段落 ID（ScrollView 的 scrollPosition），用於保持捲動位置與記住閱讀進度。
+    var scrollAnchor: String? {
+        didSet {
+            guard let scrollAnchor, scrollAnchor != oldValue else { return }
+            UserDefaults.standard.set(scrollAnchor, forKey: anchorKey)
+        }
+    }
+
     var isTranslationOn = false {
         didSet {
             guard isTranslationOn != oldValue else { return }
@@ -73,6 +81,10 @@ final class ReaderViewModel {
             let saved = UserDefaults.standard.integer(forKey: positionKey)
             chapterIndex = min(max(saved, 0), detail.chapters.count - 1)
             self.detail = detail
+            // 只在同一章時恢復段落位置
+            if let anchor = UserDefaults.standard.string(forKey: anchorKey), anchor.hasPrefix("c\(chapterIndex)-") {
+                scrollAnchor = anchor
+            }
         } catch AO3Error.requiresLogin {
             requiresLogin = true
             loadError = AO3Error.requiresLogin.localizedDescription
@@ -82,6 +94,10 @@ final class ReaderViewModel {
     }
 
     private var positionKey: String { "reader.position.\(route.id)" }
+    private var anchorKey: String { "reader.anchor.\(route.id)" }
+
+    /// 每章頂部標題區塊的捲動 ID
+    static func headerID(_ chapter: Int) -> String { "header-\(chapter)" }
 
     // MARK: - Chapters
 
@@ -89,6 +105,7 @@ final class ReaderViewModel {
         guard let detail, detail.chapters.indices.contains(index) else { return }
         chapterIndex = index
         visible.removeAll()
+        scrollAnchor = Self.headerID(index)
         UserDefaults.standard.set(index, forKey: positionKey)
     }
 
@@ -133,6 +150,18 @@ final class ReaderViewModel {
     func retry(_ paragraph: Paragraph) {
         translations[paragraph.id] = nil
         enqueue(paragraph)
+    }
+
+    /// 目前可見段落及其後預取範圍。
+    private func wantedParagraphs() -> Set<Paragraph.ID> {
+        guard let paragraphs = chapter?.paragraphs else { return [] }
+        var wanted: Set<Paragraph.ID> = []
+        for (index, paragraph) in paragraphs.enumerated() where visible.contains(paragraph.id) {
+            for next in paragraphs[index..<min(index + prefetchCount + 1, paragraphs.count)] {
+                wanted.insert(next.id)
+            }
+        }
+        return wanted
     }
 
     private func enqueueVisible() {
@@ -180,6 +209,11 @@ final class ReaderViewModel {
             flushTask = nil
             return
         }
+
+        // 快速捲動時一閃而過的段落不翻譯，等它再次出現時才重新排入，避免浪費請求與版面跳動
+        let wanted = wantedParagraphs()
+        for id in queue where !wanted.contains(id) { translations[id] = nil }
+        queue.removeAll { !wanted.contains($0) }
 
         var batch: [Paragraph] = []
         var characters = 0

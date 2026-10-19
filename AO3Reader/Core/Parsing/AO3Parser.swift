@@ -109,7 +109,10 @@ enum AO3Parser {
             }
         }
         guard !chapters.isEmpty else { throw AO3Error.parse("作品沒有章節") }
-        return WorkDetail(id: id, title: title, authors: authors, summary: summary, chapters: chapters)
+        return WorkDetail(
+            id: id, title: title, authors: authors, summary: summary, chapters: chapters,
+            tagGroups: try workTagGroups(doc), series: try workSeries(doc)
+        )
     }
 
     /// 把正文切成段落；`<br>` 保留為換行，`<hr>` 轉為分隔線。
@@ -150,7 +153,7 @@ enum AO3Parser {
 
     private static let lineBreakMarker = "\u{E000}"
 
-    private static func blockText(_ element: Element) throws -> String {
+    static func blockText(_ element: Element) throws -> String {
         let marked = try element.html().replacing(#/<br\s*/?>/#.ignoresCase(), with: lineBreakMarker)
         let text = try SwiftSoup.parseBodyFragment(marked).text()
         return text

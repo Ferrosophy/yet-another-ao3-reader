@@ -22,6 +22,14 @@ struct SettingsView: View {
                 }
             }
 
+            Section("外觀") {
+                NavigationLink {
+                    AppearanceSettingsView()
+                } label: {
+                    LabeledContent("深色模式、主題色、閱讀背景與字體", value: app.appearance.config.colorScheme.title)
+                }
+            }
+
             Section("翻譯") {
                 NavigationLink {
                     TranslationSettingsView()

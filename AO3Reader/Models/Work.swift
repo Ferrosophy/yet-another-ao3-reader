@@ -37,6 +37,8 @@ struct WorkDetail: Sendable {
     var authors: [String]
     var summary: String
     var chapters: [Chapter]
+    var tagGroups: [WorkTagGroup] = []
+    var series: [WorkTag] = []
 }
 
 struct Chapter: Identifiable, Hashable, Sendable {

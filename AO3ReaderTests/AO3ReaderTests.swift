@@ -94,3 +94,72 @@ struct SourceStoreTests {
         #expect(SourceStore.normalize("   ") == nil)
     }
 }
+
+struct BrowseParserTests {
+    @Test func parsesTagSearchResults() throws {
+        let html = """
+        <ol class="tag index group">
+          <li><span class='canonical'>Fandom: <a class="tag" href="/tags/Harry%20Potter%20-%20J*d*%20K*d*%20Rowling">Harry Potter - J. K. Rowling</a> &lrm;(123,456)</span></li>
+          <li><span>Freeform: <a class="tag" href="/tags/fluff">fluff</a> &lrm;(7)</span></li>
+        </ol>
+        """
+        let page = try AO3Parser.tagResults(html: html, page: 1)
+        #expect(page.items.count == 2)
+        let first = try #require(page.items.first)
+        #expect(first.name == "Harry Potter - J. K. Rowling")
+        #expect(first.type == "Fandom")
+        #expect(first.uses == "123,456")
+        #expect(first.isCanonical)
+        #expect(first.path == "/tags/Harry Potter - J*d* K*d* Rowling")
+        #expect(WorkListRoute.tag(name: first.name, path: first.path).baseQuery.first?.value == "Harry Potter - J*d* K*d* Rowling")
+    }
+
+    @Test func parsesSubscriptions() throws {
+        let html = """
+        <dl class="subscription index group">
+          <dt><a href="/works/42">A Work</a> by <a rel="author" href="/users/a/pseuds/a">a</a></dt><dd></dd>
+          <dt><a href="/series/7">A Series</a> by <a rel="author" href="/users/b/pseuds/b">b</a></dt><dd></dd>
+          <dt><a href="/users/c">c</a></dt><dd></dd>
+        </dl>
+        """
+        let items = try AO3Parser.subscriptions(html: html, page: 1).items
+        #expect(items.map(\.kind) == [.works, .series, .users])
+        #expect(items[0].workID == 42)
+        #expect(items[0].byline == "a")
+    }
+
+    @Test func parsesInboxComments() throws {
+        let html = """
+        <ol class="comment index group">
+          <li class="unread comment group" id="feedback_comment_99">
+            <h4 class="heading byline"><a href="/users/fan/pseuds/fan">fan</a> on <a href="/works/5/chapters/8?show_comments=true#comment_99">My Fic</a>
+              <span class="posted datetime">2 days ago</span></h4>
+            <blockquote class="userstuff"><p>Loved it!</p></blockquote>
+          </li>
+        </ol>
+        """
+        let comment = try #require(AO3Parser.inbox(html: html, page: 1).items.first)
+        #expect(comment.commenter == "fan")
+        #expect(comment.targetTitle == "My Fic")
+        #expect(comment.workID == 5)
+        #expect(comment.body == "Loved it!")
+        #expect(comment.isUnread)
+    }
+
+    @Test func encodesTagFilterParameters() {
+        var query = WorkSearchQuery(sortColumn: .kudos)
+        query.fandomNames = "A,B"
+        query.excludedTagNames = "C"
+        query.rating = .general
+        let items = Dictionary(query.filterItems(page: 1).map { ($0.name, $0.value ?? "") }, uniquingKeysWith: { a, _ in a })
+        #expect(items["work_search[sort_column]"] == "kudos_count")
+        #expect(items["work_search[other_tag_names]"] == "A,B")
+        #expect(items["work_search[excluded_tag_names]"] == "C")
+        #expect(items["include_work_search[rating_ids][]"] == "10")
+        #expect(items["page"] == nil)
+    }
+
+    @Test func encodesTagParam() {
+        #expect(AO3Paths.tagParam("Mr. & Mrs./Smith?#") == "Mr*d* *a* Mrs*s*Smith*q**h*")
+    }
+}

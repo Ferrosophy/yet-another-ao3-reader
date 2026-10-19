@@ -32,6 +32,11 @@ struct WorkSearchQuery: Hashable, Codable, Sendable {
     var commentsCount = ""
     var bookmarksCount = ""
 
+    // 僅用於標籤 / 合集作品列表的篩選（/works?tag_id=…）
+    var excludedTagNames = ""
+    var wordsFrom = ""
+    var wordsTo = ""
+
     // 排序
     var sortColumn: SortColumn = .bestMatch
     var sortDirection: SortDirection = .desc
@@ -79,6 +84,43 @@ struct WorkSearchQuery: Hashable, Codable, Sendable {
 }
 
 extension WorkSearchQuery {
+    /// 標籤 / 合集作品列表右側「Sort and Filter」表單的參數（otwarchive works/_filters）。
+    /// 標籤欄位全部併入 other_tag_names，由 AO3 依名稱比對。
+    func filterItems(page: Int) -> [URLQueryItem] {
+        var items: [URLQueryItem] = []
+        func add(_ key: String, _ value: String) {
+            items.append(URLQueryItem(name: "work_search[\(key)]", value: value))
+        }
+        // 標籤頁不支援「最佳匹配」，預設依更新日期
+        add("sort_column", sortColumn == .bestMatch ? SortColumn.dateUpdated.rawValue : sortColumn.rawValue)
+        let included = [fandomNames, characterNames, relationshipNames, freeformNames]
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+            .joined(separator: ",")
+        add("other_tag_names", included)
+        add("excluded_tag_names", excludedTagNames)
+        add("crossover", crossover.rawValue)
+        add("complete", completion.rawValue)
+        add("words_from", wordsFrom)
+        add("words_to", wordsTo)
+        add("query", query)
+        add("language_id", languageID)
+        if let rating {
+            items.append(URLQueryItem(name: "include_work_search[rating_ids][]", value: String(rating.rawValue)))
+        }
+        for warning in warnings.sorted(by: { $0.rawValue < $1.rawValue }) {
+            items.append(URLQueryItem(name: "include_work_search[archive_warning_ids][]", value: String(warning.rawValue)))
+        }
+        for category in categories.sorted(by: { $0.rawValue < $1.rawValue }) {
+            items.append(URLQueryItem(name: "include_work_search[category_ids][]", value: String(category.rawValue)))
+        }
+        items.append(URLQueryItem(name: "commit", value: "Sort and Filter"))
+        if page > 1 {
+            items.append(URLQueryItem(name: "page", value: String(page)))
+        }
+        return items
+    }
+
     enum TriState: String, CaseIterable, Codable, Sendable, Identifiable {
         case any = "", yes = "T", no = "F"
         var id: String { rawValue }
