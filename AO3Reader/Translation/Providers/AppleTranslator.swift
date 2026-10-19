@@ -80,9 +80,9 @@ struct AppleLanguageDownloadView: View {
             .disabled(isPreparing)
         }
         .padding(28)
-        .translationTask(configuration) { session in
+        .translationTask(configuration) { @Sendable session in
             try? await session.prepareTranslation()
-            onFinish()
+            await MainActor.run { onFinish() }
         }
     }
 }

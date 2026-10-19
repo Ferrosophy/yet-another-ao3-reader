@@ -210,6 +210,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
     @ViewBuilder
     private func colorSections(theme: Binding<ReaderTheme>) -> some View {
         let appearance = app.appearance
+        let hasBackgroundImage = appearance.backgroundImage(for: scheme) != nil
         Section {
             Picker("編輯", selection: Binding(get: { scheme }, set: { editingScheme = $0 })) {
                 Text("淺色模式").tag(ColorScheme.light)
@@ -245,7 +246,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                 ))
             }
             PhotosPicker(selection: $photoItem, matching: .images) {
-                Label(appearance.backgroundImage(for: scheme) == nil ? "選擇背景圖片" : "更換背景圖片", systemImage: "photo")
+                Label(hasBackgroundImage ? "更換背景圖片" : "選擇背景圖片", systemImage: "photo")
             }
             if appearance.backgroundImage(for: scheme) != nil, theme.wrappedValue.background != .image {
                 Button("使用背景圖片", systemImage: "photo.fill") { theme.wrappedValue.background = .image }
