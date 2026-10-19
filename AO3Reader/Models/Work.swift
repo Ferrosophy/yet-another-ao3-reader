@@ -37,6 +37,9 @@ struct WorkDetail: Sendable {
     var authors: [String]
     var summary: String
     var chapters: [Chapter]
+    /// 作品開頭與結尾的作者註（AO3 的 Notes / End Notes）
+    var notes: String = ""
+    var endNotes: String = ""
     var tagGroups: [WorkTagGroup] = []
     var series: [WorkTag] = []
     var authorLinks: [WorkTag] = []
@@ -58,6 +61,9 @@ struct Chapter: Identifiable, Hashable, Sendable {
     let id: Int
     var title: String
     var paragraphs: [Paragraph]
+    /// 章節開頭與結尾的作者註
+    var notes: String = ""
+    var endNotes: String = ""
 }
 
 /// 沉浸式翻譯的最小單位：一個段落對應一段譯文。

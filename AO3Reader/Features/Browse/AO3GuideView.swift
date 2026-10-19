@@ -1,39 +1,62 @@
 import SwiftUI
 
-/// AO3 術語與使用說明（依官網 FAQ 與 Terms 整理），提供中文與英文兩個版本。
+/// AO3 術語與使用說明（依官網 FAQ 與 Terms 整理）。繁體中文與英文為原稿，
+/// 其他介面語言由 `scripts/l10n/guide.py` 產生於 AO3Guide.json；預設顯示目前介面語言的版本，術語附英文原文。
 struct AO3GuideView: View {
-    enum Language: String, CaseIterable, Identifiable {
-        case chinese, english
-        var id: String { rawValue }
-        var title: String { self == .chinese ? "中文" : "English" }
-    }
-
-    struct Entry: Identifiable {
+    struct Entry: Identifiable, Decodable {
         let term: String
         let detail: String
         var id: String { term }
     }
 
-    struct Topic: Identifiable {
+    struct Topic: Identifiable, Decodable {
         let title: String
         let entries: [Entry]
         var id: String { title }
     }
 
     @Environment(\.dismiss) private var dismiss
-    @State private var language: Language = Locale.preferredLanguages.first?.hasPrefix("zh") == true ? .chinese : .english
+    @State private var language = AO3GuideView.defaultLanguage
     @State private var search = ""
+
+    /// 其他語言版本（機器翻譯自英文版）
+    private static let translations: [String: [Topic]] = {
+        guard let url = Bundle.main.url(forResource: "AO3Guide", withExtension: "json"),
+              let data = try? Data(contentsOf: url)
+        else { return [:] }
+        return (try? JSONDecoder().decode([String: [Topic]].self, from: data)) ?? [:]
+    }()
+
+    /// 可選的版本：代碼與顯示名稱（與介面語言清單一致，繁體中文各地區共用一個版本）
+    private static var languages: [(code: String, name: String)] {
+        var result: [(code: String, name: String)] = [(code: "zh-Hant", name: "繁體中文"), (code: "en", name: "English")]
+        for language in InterfaceLanguage.all where translations[language.code] != nil {
+            result.append((code: language.code, name: language.name))
+        }
+        return result
+    }
+
+    private static var defaultLanguage: String {
+        let code = InterfaceLanguage.currentCode
+        if code.hasPrefix("zh-Hant") || code == "zh-TW" || code == "zh-HK" { return "zh-Hant" }
+        if code.hasPrefix("zh") { return translations["zh-Hans"] == nil ? "zh-Hant" : "zh-Hans" }
+        if translations[code] != nil { return code }
+        let base = String(code.prefix { $0 != "-" })
+        if base == "pt", translations["pt-BR"] != nil { return "pt-BR" }
+        return translations[base] != nil ? base : "en"
+    }
+
+    private var topics: [Topic] {
+        switch language {
+        case "zh-Hant": Self.chinese
+        case "en": Self.english
+        default: Self.translations[language] ?? Self.english
+        }
+    }
 
     var body: some View {
         NavigationStack {
             List {
-                Picker("語言", selection: $language) {
-                    ForEach(Language.allCases) { Text(verbatim: $0.title).tag($0) }
-                }
-                .pickerStyle(.segmented)
-                .listRowBackground(Color.clear)
-                .listRowSeparator(.hidden)
-
                 ForEach(filteredTopics) { topic in
                     Section {
                         ForEach(topic.entries) { entry in
@@ -51,9 +74,18 @@ struct AO3GuideView: View {
                 }
             }
             .searchable(text: $search)
-            .navigationTitle(language == .chinese ? "AO3 說明" : "AO3 Guide")
+            .navigationTitle("AO3 說明")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Menu {
+                        Picker("語言", selection: $language) {
+                            ForEach(Self.languages, id: \.code) { Text(verbatim: $0.name).tag($0.code) }
+                        }
+                    } label: {
+                        Label("語言", systemImage: "globe")
+                    }
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("完成") { dismiss() }
                 }
@@ -62,7 +94,6 @@ struct AO3GuideView: View {
     }
 
     private var filteredTopics: [Topic] {
-        let topics = language == .chinese ? Self.chinese : Self.english
         guard !search.isEmpty else { return topics }
         return topics.compactMap { topic in
             let entries = topic.entries.filter {

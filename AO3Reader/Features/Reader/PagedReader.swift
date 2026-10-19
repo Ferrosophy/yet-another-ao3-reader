@@ -14,6 +14,13 @@ struct PagedContent {
     var spans: [Span]
 }
 
+/// 翻頁模式中的作者註
+struct PagedNote {
+    var id: String
+    var title: String
+    var text: String
+}
+
 /// 把章節段落（含沉浸式譯文）組成 NSAttributedString，供 TextKit 分頁。
 @MainActor
 enum PagedTextBuilder {
@@ -23,6 +30,9 @@ enum PagedTextBuilder {
         chapterTitle: String?,
         chapterIndex: Int,
         chapter: Chapter,
+        /// 章首與章末的作者註（標題、內容、譯文 ID）
+        leadingNotes: [PagedNote] = [],
+        trailingNotes: [PagedNote] = [],
         translations: [Paragraph.ID: ParagraphTranslation],
         showsTranslation: Bool,
         mode: BilingualDisplayMode,
@@ -76,6 +86,13 @@ enum PagedTextBuilder {
             append(chapterTitle, font: style.uiFont(scale: 1.2, weight: .semibold), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5))
             appendMetaTranslation(ReaderViewModel.chapterTitleID(chapterIndex), scale: 1.1, weight: .semibold)
         }
+        func appendNote(_ note: PagedNote) {
+            append(note.title, font: style.uiFont(scale: 0.8, weight: .semibold), color: secondaryColor,
+                   paragraph: paragraphStyle(after: 4))
+            append(note.text, font: style.uiFont(scale: 0.9), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
+            appendMetaTranslation(note.id, scale: 0.9)
+        }
+        for note in leadingNotes { appendNote(note) }
 
         for paragraph in chapter.paragraphs {
             let start = result.length
@@ -113,6 +130,7 @@ enum PagedTextBuilder {
             }
             spans.append(.init(paragraph: paragraph, range: NSRange(location: start, length: result.length - start)))
         }
+        for note in trailingNotes { appendNote(note) }
         return (result, spans)
     }
 

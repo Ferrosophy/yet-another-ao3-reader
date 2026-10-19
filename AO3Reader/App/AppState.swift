@@ -13,10 +13,14 @@ final class AppState {
     let appearance: AppearanceSettings
     /// 作品卡片的簡介翻譯
     let summaries: SummaryTranslator
+    /// 標籤翻譯（目標語言跟隨介面語言）
+    let tags: TagTranslator
     /// 書架（本機資料）
     let bookshelf: BookshelfStore
     /// 時長管理
     let readingTime: ReadingTimeStore
+    /// 下載列表（批次下載）
+    let downloads = DownloadManager()
     /// 個人資料同步（iCloud / WebDAV），與 AO3 帳號資料分開
     let sync: SyncService
 
@@ -26,6 +30,7 @@ final class AppState {
         self.translation = translation
         self.translator = translator
         summaries = SummaryTranslator(settings: translation, translator: translator)
+        tags = TagTranslator(settings: translation, translator: translator)
         let appearance = AppearanceSettings()
         let bookshelf = BookshelfStore()
         let readingTime = ReadingTimeStore()

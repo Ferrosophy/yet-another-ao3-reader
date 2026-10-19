@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// 載入動畫：AO3 標誌呼吸縮放。`compact` 用於列表底部的分頁載入。
+/// 載入動畫：AO3 標誌循環淡入淡出。`compact` 用於列表底部的分頁載入。
 struct AO3LoadingView: View {
     var compact = false
 
@@ -9,12 +9,10 @@ struct AO3LoadingView: View {
             .resizable()
             .scaledToFit()
             .frame(width: compact ? 34 : 76)
-            .phaseAnimator([false, true]) { content, phase in
-                content
-                    .scaleEffect(phase ? 1.06 : 0.9)
-                    .opacity(phase ? 1 : 0.5)
+            .phaseAnimator([false, true]) { content, visible in
+                content.opacity(visible ? 1 : 0.15)
             } animation: { _ in
-                .easeInOut(duration: 0.85)
+                .easeInOut(duration: 0.9)
             }
             .padding(compact ? 8 : 0)
             .frame(maxWidth: .infinity, maxHeight: compact ? nil : .infinity)

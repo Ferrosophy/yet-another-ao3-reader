@@ -1,0 +1,4376 @@
+{
+ "ja": [
+  {
+   "title": "AO3について (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (私たち自身のアーカイブ) (AO3 (Archive of Our Own))",
+     "detail": "Organization for Transformative Works (OTW) が運営する非営利のファンワーク アーカイブ。広告はなく、クリエイターが作品の権利を保持します。このアプリは非公式のサードパーティ製リーダーです。"
+    },
+    {
+     "term": "アカウントと招待状 (Accounts & invitations)",
+     "detail": "登録には招待状が必要です。Web サイトの招待キューに参加し、メールが届いたらサインアップしてください。ほとんどの作品はログインせずに読むことができますが、制限された作品、ブックマーク、購読、履歴にはアカウントが必要です。"
+    },
+    {
+     "term": "疑似 (Pseud)",
+     "detail": "ペンネーム。 1 つのアカウントに複数のアカウントを持つことができます。署名欄には仮名が表示され、異なる場合はアカウント名が括弧内に表示されます。"
+    }
+   ]
+  },
+  {
+   "title": "作品情報 (Work Info)",
+   "entries": [
+    {
+     "term": "称賛 (Kudos)",
+     "detail": "「好き」みたいな。各人は 1 回だけ作品に対して賞賛を残すことができます。ゲストも可能です。"
+    },
+    {
+     "term": "ヒット曲 (Hits)",
+     "detail": "作品が開かれた回数。リピート訪問は複数回カウントされる場合があるため、人気度の大まかな尺度として扱います。"
+    },
+    {
+     "term": "ブックマーク (Bookmarks)",
+     "detail": "公開または非公開で、独自のメモとタグを付けて作品を保存します。公開ブックマークは推奨としても機能します。"
+    },
+    {
+     "term": "第3章/? (Chapters 3/?)",
+     "detail": "投稿チャプター/予定合計。 「？」合計が設定されていないことを意味します。数字が等しい場合は、作業が完了していることを意味します。"
+    },
+    {
+     "term": "作業中/完了 (WIP / Complete)",
+     "detail": "作業中/完了しました。"
+    },
+    {
+     "term": "シリーズ (Series)",
+     "detail": "関連作品を作者ごとにまとめました。シリーズ全体を購読できます。"
+    },
+    {
+     "term": "コレクション (Collections)",
+     "detail": "ギフト交換や即興ミーム (例: クリスマス) などの課題を含む、テーマまたはイベントの作品グループ。"
+    },
+    {
+     "term": "制限付き (Restricted)",
+     "detail": "作者がログインユーザー限定で公開している作品。"
+    },
+    {
+     "term": "孤立した作品 (Orphaned works)",
+     "detail": "作者が所有権を放棄した作品。彼らは現在 orphan_account に属しています。"
+    },
+    {
+     "term": "匿名 (Anonymous)",
+     "detail": "作者名をとりあえず伏せて匿名コレクションに投稿した作品。"
+    }
+   ]
+  },
+  {
+   "title": "評価 (Ratings)",
+   "entries": [
+    {
+     "term": "G — 一般視聴者 (G — General Audiences)",
+     "detail": "すべての年齢層に適しています。"
+    },
+    {
+     "term": "T — 10 代以上の視聴者 (T — Teen And Up Audiences)",
+     "detail": "対象年齢は13歳以上です。"
+    },
+    {
+     "term": "M — 成熟した (M — Mature)",
+     "detail": "大人向けのテーマ。Explicit よりもグラフィックが少ない。"
+    },
+    {
+     "term": "E — 明示的 (E — Explicit)",
+     "detail": "生々しい性的コンテンツ、暴力、その他のアダルト コンテンツ。"
+    },
+    {
+     "term": "評価されていません (Not Rated)",
+     "detail": "作成者が評価を選択したわけではありません。作品には何でも含まれる可能性があります。"
+    }
+   ]
+  },
+  {
+   "title": "アーカイブの警告 (Archive Warnings)",
+   "entries": [
+    {
+     "term": "作成者はアーカイブ警告を使用しないことを選択しました (Creator Chose Not To Use Archive Warnings)",
+     "detail": "作品には警告が含まれる場合があります。ご自身の判断でお読みください。"
+    },
+    {
+     "term": "アーカイブ警告は適用されません (No Archive Warnings Apply)",
+     "detail": "4 つの主要な警告はどれも当てはまりません。他の機密コンテンツは依然として別の場所でタグ付けされている可能性があります。"
+    },
+    {
+     "term": "暴力の生々しい描写 (Graphic Depictions Of Violence)",
+     "detail": "生々しい暴力。"
+    },
+    {
+     "term": "主要人物の死 (Major Character Death)",
+     "detail": "主人公が死んでしまう。"
+    },
+    {
+     "term": "レイプ/非犯罪 (Rape/Non-Con)",
+     "detail": "合意のない性的コンテンツ。"
+    },
+    {
+     "term": "未成年のセックス (Underage Sex)",
+     "detail": "未成年者が関与する性的なコンテンツ。"
+    }
+   ]
+  },
+  {
+   "title": "カテゴリー (Categories)",
+   "entries": [
+    {
+     "term": "男女、男女、男女 (F/F, F/M, M/M)",
+     "detail": "女性、女性と男性、または男性間の恋愛関係または性的関係。"
+    },
+    {
+     "term": "ゲン (Gen)",
+     "detail": "一般: 恋愛関係や性的関係には焦点が当てられていません。"
+    },
+    {
+     "term": "マルチ (Multi)",
+     "detail": "複数の種類の関係。"
+    },
+    {
+     "term": "他の (Other)",
+     "detail": "他のタイプの関係。"
+    }
+   ]
+  },
+  {
+   "title": "タグ (Tags)",
+   "entries": [
+    {
+     "term": "ファンダム (Fandom)",
+     "detail": "作品が基づいている出典。複数のファンダムにまたがる作品はクロスオーバーです。"
+    },
+    {
+     "term": "人間関係 (Relationships)",
+     "detail": "「A/B」は恋愛関係または性的関係を指します。 「A&B」はプラトニック（友情、家族）。通常、名前の順序は役割を意味しません。"
+    },
+    {
+     "term": "キャラクター (Characters)",
+     "detail": "作品に登場するキャラクター。"
+    },
+    {
+     "term": "追加のタグ (Additional Tags)",
+     "detail": "綿毛、怒り、傷つき/慰め、代替宇宙などの比喩、テーマ、メモ用の自由形式のタグ。"
+    },
+    {
+     "term": "正規のタグとラングリング (Canonical tags & wrangling)",
+     "detail": "ボランティアのタグ管理者は同義語を 1 つの正規タグにリンクするため、タグ ページには他のスペルを使用した作品も表示されます。"
+    },
+    {
+     "term": "毛羽立ち/不安/傷つき/快適さ (Fluff / Angst / Hurt/Comfort)",
+     "detail": "甘くて軽い / 感情的に痛い / ある登場人物は傷つき、別の登場人物は彼らを慰めます。"
+    },
+    {
+     "term": "AU（オルタナティブ・ユニバース） (AU (Alternate Universe))",
+     "detail": "正史とは異なる設定に配置されたキャラクター。コーヒーショップAUまたはモダンAU。"
+    },
+    {
+     "term": "読者 / あなた (Reader / You)",
+     "detail": "「あなた」が登場人物の一人となる読者挿入作品。"
+    }
+   ]
+  },
+  {
+   "title": "検索とフィルタリング (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "お仕事検索 (Work search)",
+     "detail": "キーワード、タイトル、作成者、ファンダム、評価、警告、カテゴリ、登場人物、関係、タグ、単語数、言語、称賛などで検索できます。結果は AO3 から直接得られます。"
+    },
+    {
+     "term": "数字と日付 (Numbers & dates)",
+     "detail": "カウントには「> 1000」、「< 500」、または「100-500」を使用し、日付には「< 7 日」または「> 1 年」を使用します。"
+    },
+    {
+     "term": "タグのフィルタリング (Filtering a tag)",
+     "detail": "タグの作品に対して、さらに多くのタグを含めたり除外したり、評価、完了、単語数、言語などでフィルタリングしたりできます。"
+    },
+    {
+     "term": "タグを除く (Excluding tags)",
+     "detail": "人間関係や主要キャラクターの死など、見たくないものは除外します。"
+    },
+    {
+     "term": "チャート (Charts)",
+     "detail": "このアプリの称賛、コメント、ヒット チャートは AO3 の検索並べ替えを使用しています。期間は各作品の最終更新に基づいています。"
+    }
+   ]
+  },
+  {
+   "title": "アカウントの機能 (Account Features)",
+   "entries": [
+    {
+     "term": "後で使用するためにマーク済み (Marked for Later)",
+     "detail": "読むべきリスト。完了すると、マークは既読として機能します。 AO3 設定で履歴を有効にする必要があります。"
+    },
+    {
+     "term": "歴史 (History)",
+     "detail": "ログイン中に開いた作品はアカウントに記録されます。"
+    },
+    {
+     "term": "定期購入 (Subscriptions)",
+     "detail": "作品、シリーズ、クリエイターを購読すると、投稿時に最新情報をメールで受け取ることができます。"
+    },
+    {
+     "term": "受信箱 (Inbox)",
+     "detail": "作品に対するコメントや返信、コメントがここに表示されます。"
+    },
+    {
+     "term": "コメント (Comments)",
+     "detail": "章にコメントを残してください。クリエイターはコメントを管理または無効にすることができます。"
+    }
+   ]
+  },
+  {
+   "title": "このアプリの使用方法 (Using This App)",
+   "entries": [
+    {
+     "term": "没入型翻訳 (Immersive translation)",
+     "detail": "読書中に翻訳ボタンをタップすると、各段落の下に翻訳が表示されます。タッチしたままにすると、翻訳設定が開きます。 API キーはこのデバイスに残ります。"
+    },
+    {
+     "term": "ミラーソース (Mirror sources)",
+     "detail": "「設定」→「コンテンツソース」でミラーを追加します。ログインはソースごとに保持されます。信頼できるミラーにのみログインしてください。"
+    },
+    {
+     "term": "エチケット (Etiquette)",
+     "detail": "クリエイターをサポートするために、称賛やコメントを残してください。作品を他の場所に再投稿したり、AI トレーニングに使用したりしないでください。"
+    }
+   ]
+  }
+ ],
+ "ko": [
+  {
+   "title": "AO3 소개 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (우리만의 아카이브) (AO3 (Archive of Our Own))",
+     "detail": "OTW(변형적 작품 조직)에서 운영하는 비영리 팬작품 아카이브입니다. 광고가 없으며 창작자는 자신의 작품에 대한 권리를 유지합니다. 이 앱은 비공식 타사 리더입니다."
+    },
+    {
+     "term": "계정 및 초대 (Accounts & invitations)",
+     "detail": "등록하려면 초대가 필요합니다. 웹사이트의 초대 대기열에 가입하고 이메일이 도착하면 등록하세요. 대부분의 작품은 로그인 없이도 열람이 가능하지만, 제한된 작품, 북마크, 구독, 히스토리는 계정이 필요합니다."
+    },
+    {
+     "term": "필명 (Pseud)",
+     "detail": "펜 이름. 하나의 계정은 여러 개를 가질 수 있습니다. 작성자 이름에는 필명이 표시되며, 다를 경우 괄호 안에 계정 이름이 표시됩니다."
+    }
+   ]
+  },
+  {
+   "title": "직장 정보 (Work Info)",
+   "entries": [
+    {
+     "term": "칭찬 (Kudos)",
+     "detail": "\"좋아요\"처럼요. 각 사람은 한 번만 작품에 칭찬을 남길 수 있습니다. 손님도 할 수 있어요."
+    },
+    {
+     "term": "조회수 (Hits)",
+     "detail": "작품이 개봉된 횟수. 재방문은 2회 이상으로 계산될 수 있으므로 이를 대략적인 인기 척도로 활용하세요."
+    },
+    {
+     "term": "북마크 (Bookmarks)",
+     "detail": "자신만의 메모와 태그를 사용하여 공개 또는 비공개로 작품을 저장하세요. 공개 북마크도 권장 사항으로 작동합니다."
+    },
+    {
+     "term": "3장/? (Chapters 3/?)",
+     "detail": "게시된 장/계획된 총계입니다. “?” 총액이 설정되지 않았음을 의미합니다. 같은 숫자는 작업이 완료되었음을 의미합니다."
+    },
+    {
+     "term": "WIP / 완료 (WIP / Complete)",
+     "detail": "작업 진행 중/완료되었습니다."
+    },
+    {
+     "term": "시리즈 (Series)",
+     "detail": "관련 작품을 창작자별로 분류한 것입니다. 전체 시리즈를 구독할 수 있습니다."
+    },
+    {
+     "term": "컬렉션 (Collections)",
+     "detail": "선물 교환 및 프롬프트 밈(예: Yuletide)과 같은 챌린지를 포함하여 테마 또는 이벤트에 대한 작품 그룹입니다."
+    },
+    {
+     "term": "제한됨 (Restricted)",
+     "detail": "창작자가 로그인한 사용자에게만 공개한 작품입니다."
+    },
+    {
+     "term": "고아 작품 (Orphaned works)",
+     "detail": "창작자가 소유권을 포기한 작품 이제 orphan_account에 속합니다."
+    },
+    {
+     "term": "익명 (Anonymous)",
+     "detail": "익명 컬렉션에 게시된 작품은 현재 제작자의 이름이 숨겨져 있습니다."
+    }
+   ]
+  },
+  {
+   "title": "평가 (Ratings)",
+   "entries": [
+    {
+     "term": "G — 일반 청중 (G — General Audiences)",
+     "detail": "모든 연령대에 적합합니다."
+    },
+    {
+     "term": "T — 청소년 이상 청중 (T — Teen And Up Audiences)",
+     "detail": "13세 이상에게 적합합니다."
+    },
+    {
+     "term": "M - 성숙함 (M — Mature)",
+     "detail": "성인용 테마로 노골적인 테마보다 덜 노골적입니다."
+    },
+    {
+     "term": "E — 명시적 (E — Explicit)",
+     "detail": "노골적인 성적 콘텐츠, 폭력 또는 기타 성인용 콘텐츠."
+    },
+    {
+     "term": "등급 없음 (Not Rated)",
+     "detail": "제작자가 등급을 선택하지 않았습니다. 작품에는 무엇이든 포함될 수 있습니다."
+    }
+   ]
+  },
+  {
+   "title": "아카이브 경고 (Archive Warnings)",
+   "entries": [
+    {
+     "term": "제작자는 보관 경고를 사용하지 않기로 결정했습니다. (Creator Chose Not To Use Archive Warnings)",
+     "detail": "저작물에는 경고가 포함될 수 있습니다. 귀하의 재량에 따라 읽으십시오."
+    },
+    {
+     "term": "보관 경고가 적용되지 않음 (No Archive Warnings Apply)",
+     "detail": "네 가지 주요 경고 중 어느 것도 적용되지 않습니다. 다른 민감한 콘텐츠는 여전히 다른 곳에 태그가 지정될 수 있습니다."
+    },
+    {
+     "term": "폭력을 노골적으로 묘사한 경우 (Graphic Depictions Of Violence)",
+     "detail": "노골적인 폭력."
+    },
+    {
+     "term": "주요 캐릭터의 죽음 (Major Character Death)",
+     "detail": "주인공이 죽습니다."
+    },
+    {
+     "term": "강간/비콘 (Rape/Non-Con)",
+     "detail": "합의되지 않은 성적 콘텐츠."
+    },
+    {
+     "term": "미성년자 섹스 (Underage Sex)",
+     "detail": "미성년자가 관련된 성적인 콘텐츠."
+    }
+   ]
+  },
+  {
+   "title": "카테고리 (Categories)",
+   "entries": [
+    {
+     "term": "금/금, 금/월, 월/월 (F/F, F/M, M/M)",
+     "detail": "여성, 여성과 남성, 또는 남성 간의 로맨틱 또는 성적 관계."
+    },
+    {
+     "term": "겐 (Gen)",
+     "detail": "일반사항: 연애나 성적인 관계에 초점을 두지 않습니다."
+    },
+    {
+     "term": "멀티 (Multi)",
+     "detail": "두 가지 이상의 관계 유형."
+    },
+    {
+     "term": "다른 (Other)",
+     "detail": "다른 유형의 관계."
+    }
+   ]
+  },
+  {
+   "title": "태그 (Tags)",
+   "entries": [
+    {
+     "term": "팬덤 (Fandom)",
+     "detail": "작품의 기반이 되는 소스입니다. 여러 팬덤에 걸쳐 있는 작품은 크로스오버다."
+    },
+    {
+     "term": "관계 (Relationships)",
+     "detail": "\"A/B\"는 낭만적이거나 성적인 관계입니다. “A & B”는 플라토닉(우정, 가족)입니다. 이름의 순서는 일반적으로 역할을 의미하지 않습니다."
+    },
+    {
+     "term": "캐릭터 (Characters)",
+     "detail": "작품에 등장하는 등장인물."
+    },
+    {
+     "term": "추가 태그 (Additional Tags)",
+     "detail": "Fluff, Angst, Hurt/Comfort 또는 Alternate Universe와 같은 비유, 테마 및 메모에 대한 자유형 태그입니다."
+    },
+    {
+     "term": "정식 태그 및 랭글링 (Canonical tags & wrangling)",
+     "detail": "자원 봉사 태그 랭글러는 동의어를 하나의 표준 태그에 연결하므로 태그 페이지에는 다른 철자를 사용한 작업도 표시됩니다."
+    },
+    {
+     "term": "보풀/불안/상처/편안함 (Fluff / Angst / Hurt/Comfort)",
+     "detail": "달콤하고 가벼운 / 감정적으로 고통스러운 / 한 캐릭터는 상처를 주고 다른 캐릭터는 그들을 위로합니다."
+    },
+    {
+     "term": "AU(대체 우주) (AU (Alternate Universe))",
+     "detail": "캐논과 다른 설정에 배치된 캐릭터. 커피숍 AU 또는 모던 AU."
+    },
+    {
+     "term": "독자 / 당신 (Reader / You)",
+     "detail": "Reader-insert는 \"당신\"이 문자 중 하나인 경우에 작동합니다."
+    }
+   ]
+  },
+  {
+   "title": "검색 및 필터링 (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "일자리 찾기 (Work search)",
+     "detail": "키워드, 제목, 작성자, 팬덤, 등급, 경고, 카테고리, 캐릭터, 관계, 태그, 단어 수, 언어, 명성 등으로 검색하세요. 결과는 AO3에서 바로 나옵니다."
+    },
+    {
+     "term": "숫자 및 날짜 (Numbers & dates)",
+     "detail": "개수에는 \"> 1000\", \"< 500\" 또는 \"100-500\"을 사용하고 날짜에는 \"< 7일\" 또는 \"> 1년\"을 사용합니다."
+    },
+    {
+     "term": "태그 필터링 (Filtering a tag)",
+     "detail": "태그 작품에 더 많은 태그를 포함하거나 제외하고 평가, 완성도, 단어 수, 언어 등을 기준으로 필터링할 수 있습니다."
+    },
+    {
+     "term": "태그 제외 (Excluding tags)",
+     "detail": "관계나 주요 인물의 죽음 등 보고 싶지 않은 내용은 제외하세요."
+    },
+    {
+     "term": "차트 (Charts)",
+     "detail": "이 앱의 칭찬, 댓글, 조회수 차트는 AO3의 검색 정렬을 사용합니다. 시간 범위는 각 작품의 마지막 업데이트를 기준으로 합니다."
+    }
+   ]
+  },
+  {
+   "title": "계정 기능 (Account Features)",
+   "entries": [
+    {
+     "term": "나중에 표시됨 (Marked for Later)",
+     "detail": "읽어야 할 목록; 완료되면 mark가 읽음 상태로 작동합니다. AO3 환경설정에서 기록을 활성화해야 합니다."
+    },
+    {
+     "term": "역사 (History)",
+     "detail": "로그인한 상태에서 연 작품은 귀하의 계정에 기록됩니다."
+    },
+    {
+     "term": "구독 (Subscriptions)",
+     "detail": "작품, 시리즈 또는 제작자를 구독하면 게시 시 이메일 업데이트를 받을 수 있습니다."
+    },
+    {
+     "term": "받은편지함 (Inbox)",
+     "detail": "귀하의 작품과 댓글에 대한 댓글과 답글이 여기에 표시됩니다."
+    },
+    {
+     "term": "댓글 (Comments)",
+     "detail": "챕터에 댓글을 남겨주세요. 작성자는 댓글을 검토하거나 비활성화할 수 있습니다."
+    }
+   ]
+  },
+  {
+   "title": "이 앱 사용하기 (Using This App)",
+   "entries": [
+    {
+     "term": "몰입형 번역 (Immersive translation)",
+     "detail": "읽는 동안 번역 버튼을 탭하면 각 단락 아래에 번역이 표시됩니다. 번역 설정을 열려면 길게 터치하세요. API 키는 이 기기에 유지됩니다."
+    },
+    {
+     "term": "미러 소스 (Mirror sources)",
+     "detail": "설정 → 콘텐츠 소스에서 미러를 추가하세요. 로그인은 소스별로 유지됩니다. 신뢰할 수 있는 미러에만 로그인하세요."
+    },
+    {
+     "term": "에티켓 (Etiquette)",
+     "detail": "크리에이터를 지원하려면 칭찬이나 댓글을 남겨주세요. 작품을 다른 곳에 다시 게시하거나 AI 훈련에 사용하지 마세요."
+    }
+   ]
+  }
+ ],
+ "es": [
+  {
+   "title": "Acerca de AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (Archivo propio) (AO3 (Archive of Our Own))",
+     "detail": "Un archivo de obras de fans sin fines de lucro administrado por la Organización para Obras Transformativas (OTW). No tiene anuncios y los creadores conservan los derechos de sus obras. Esta aplicación es un lector externo no oficial."
+    },
+    {
+     "term": "Cuentas e invitaciones (Accounts & invitations)",
+     "detail": "El registro necesita una invitación: únase a la cola de invitación en el sitio web y regístrese cuando llegue el correo electrónico. La mayoría de las obras se pueden leer sin iniciar sesión, pero las obras restringidas, los marcadores, las suscripciones y el historial necesitan una cuenta."
+    },
+    {
+     "term": "Pseudónimo",
+     "detail": "Un seudónimo. Una cuenta puede tener varias; Las firmas muestran el pseudónimo, con el nombre de la cuenta entre paréntesis cuando es diferente."
+    }
+   ]
+  },
+  {
+   "title": "Información de trabajo (Work Info)",
+   "entries": [
+    {
+     "term": "Felicitaciones (Kudos)",
+     "detail": "Como un “me gusta”. Cada persona puede felicitar un trabajo una vez; los invitados también pueden hacerlo."
+    },
+    {
+     "term": "Visitas (Hits)",
+     "detail": "Cuántas veces se abrió una obra. Las visitas repetidas pueden contar más de una vez, así que trátelas como una medida aproximada de popularidad."
+    },
+    {
+     "term": "Marcadores (Bookmarks)",
+     "detail": "Guarda una obra con tus propias notas y etiquetas, de forma pública o privada. Los marcadores públicos también funcionan como recomendaciones."
+    },
+    {
+     "term": "Capítulos 3/? (Chapters 3/?)",
+     "detail": "Capítulos publicados/total planificado. “¿?” significa que el total no está establecido; números iguales significan que el trabajo está completo."
+    },
+    {
+     "term": "Trabajo en curso/Completo (WIP / Complete)",
+     "detail": "Trabajo en curso/terminado."
+    },
+    {
+     "term": "Serie (Series)",
+     "detail": "Obras relacionadas agrupadas por el creador. Puedes suscribirte a una serie completa."
+    },
+    {
+     "term": "Colecciones (Collections)",
+     "detail": "Grupos de obras para un tema o evento, incluidos desafíos como intercambios de regalos y memes rápidos (por ejemplo, Yuletide)."
+    },
+    {
+     "term": "Restringido (Restricted)",
+     "detail": "Obras que el creador ha limitado a usuarios registrados."
+    },
+    {
+     "term": "Obras huérfanas (Orphaned works)",
+     "detail": "Obras cuyos creadores renunciaron a su propiedad; ahora pertenecen a orphan_account."
+    },
+    {
+     "term": "Anónimo (Anonymous)",
+     "detail": "Obras publicadas en una colección anónima, con el nombre del creador oculto por ahora."
+    }
+   ]
+  },
+  {
+   "title": "Calificaciones (Ratings)",
+   "entries": [
+    {
+     "term": "G — Audiencias generales (G — General Audiences)",
+     "detail": "Apto para todas las edades."
+    },
+    {
+     "term": "T - Público adolescente y mayor (T — Teen And Up Audiences)",
+     "detail": "Apto para mayores de 13 años."
+    },
+    {
+     "term": "M-madura (M — Mature)",
+     "detail": "Temas para adultos, menos gráficos que Explícitos."
+    },
+    {
+     "term": "E - Explícito (E — Explicit)",
+     "detail": "Contenido sexual gráfico, violencia u otro contenido para adultos."
+    },
+    {
+     "term": "No clasificado (Not Rated)",
+     "detail": "El creador no eligió una calificación; la obra podría contener cualquier cosa."
+    }
+   ]
+  },
+  {
+   "title": "Advertencias de archivo (Archive Warnings)",
+   "entries": [
+    {
+     "term": "El creador decidió no utilizar advertencias de archivo (Creator Chose Not To Use Archive Warnings)",
+     "detail": "El trabajo puede contener cualquiera de las advertencias. Lea a su propia discreción."
+    },
+    {
+     "term": "No se aplican advertencias de archivo (No Archive Warnings Apply)",
+     "detail": "Ninguna de las cuatro advertencias principales se aplica. Es posible que otros contenidos confidenciales aún estén etiquetados en otros lugares."
+    },
+    {
+     "term": "Representaciones gráficas de violencia (Graphic Depictions Of Violence)",
+     "detail": "Violencia gráfica."
+    },
+    {
+     "term": "Muerte del personaje principal (Major Character Death)",
+     "detail": "Muere un personaje principal."
+    },
+    {
+     "term": "Violación/No estafa (Rape/Non-Con)",
+     "detail": "Contenido sexual no consentido."
+    },
+    {
+     "term": "Sexo con menores de edad (Underage Sex)",
+     "detail": "Contenido sexual que involucre a menores."
+    }
+   ]
+  },
+  {
+   "title": "Categorías (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/M, M/M",
+     "detail": "Relaciones románticas o sexuales entre mujeres, una mujer y un hombre, u hombres."
+    },
+    {
+     "term": "generación (Gen)",
+     "detail": "General: ninguna relación romántica o sexual como foco."
+    },
+    {
+     "term": "Múltiples (Multi)",
+     "detail": "Más de un tipo de relación."
+    },
+    {
+     "term": "Otro (Other)",
+     "detail": "Otros tipos de relaciones."
+    }
+   ]
+  },
+  {
+   "title": "Etiquetas (Tags)",
+   "entries": [
+    {
+     "term": "Fanático (Fandom)",
+     "detail": "La fuente en la que se basa el trabajo. Las obras que abarcan varios fandoms son cruzadas."
+    },
+    {
+     "term": "Relaciones (Relationships)",
+     "detail": "“A/B” es una relación romántica o sexual; “A & B” es platónico (amistad, familia). El orden de los nombres no suele implicar roles."
+    },
+    {
+     "term": "Personajes (Characters)",
+     "detail": "Personajes que aparecen en la obra."
+    },
+    {
+     "term": "Etiquetas adicionales (Additional Tags)",
+     "detail": "Etiquetas de formato libre para tropos, temas y notas, como Fluff, Angst, Hurt/Comfort o Alternate Universe."
+    },
+    {
+     "term": "Etiquetas canónicas y disputas (Canonical tags & wrangling)",
+     "detail": "Los organizadores voluntarios de etiquetas vinculan sinónimos a una etiqueta canónica, por lo que una página de etiquetas también muestra obras que utilizan otras grafías."
+    },
+    {
+     "term": "Pelusa / Angustia / Dolor / Comodidad (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Dulce y ligera / emocionalmente dolorosa / un personaje herido y otro consolándolo."
+    },
+    {
+     "term": "AU (Universo Alterno) (AU (Alternate Universe))",
+     "detail": "Personajes ubicados en un entorno diferente al canon, p. Cafetería AU o AU Moderna."
+    },
+    {
+     "term": "Lector / usted (Reader / You)",
+     "detail": "El lector insertado funciona en los que “tú” eres uno de los personajes."
+    }
+   ]
+  },
+  {
+   "title": "Búsqueda y filtrado (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Búsqueda de trabajo (Work search)",
+     "detail": "Busque por palabras clave, título, creador, fandom, calificación, advertencias, categoría, personajes, relaciones, etiquetas, recuento de palabras, idioma, felicitaciones y más. Los resultados provienen directamente de AO3."
+    },
+    {
+     "term": "Números y fechas (Numbers & dates)",
+     "detail": "Utilice “> 1000”, “< 500” o “100-500” para recuentos y “< 7 días” o “> 1 año” para fechas."
+    },
+    {
+     "term": "Filtrar una etiqueta (Filtering a tag)",
+     "detail": "En los trabajos de una etiqueta, incluya o excluya más etiquetas y filtre por calificación, finalización, recuento de palabras, idioma, etc."
+    },
+    {
+     "term": "Excluyendo etiquetas (Excluding tags)",
+     "detail": "Excluye cosas que no quieras ver, como una relación o la muerte de un personaje principal."
+    },
+    {
+     "term": "Gráficos (Charts)",
+     "detail": "Los gráficos de felicitaciones, comentarios y visitas de esta aplicación utilizan la clasificación de búsqueda de AO3; Los rangos de tiempo se basan en la última actualización de cada trabajo."
+    }
+   ]
+  },
+  {
+   "title": "Características de la cuenta (Account Features)",
+   "entries": [
+    {
+     "term": "Marcado para más tarde (Marked for Later)",
+     "detail": "Una lista de lectura; marcar funciona como leído cuando haya terminado. Requiere que el historial esté habilitado en sus preferencias de AO3."
+    },
+    {
+     "term": "Historia (History)",
+     "detail": "Los trabajos que abre mientras está conectado se registran en su cuenta."
+    },
+    {
+     "term": "Suscripciones (Subscriptions)",
+     "detail": "Suscríbete a una obra, serie o creador para recibir actualizaciones por correo electrónico cuando publiquen."
+    },
+    {
+     "term": "Bandeja de entrada (Inbox)",
+     "detail": "Los comentarios y respuestas a tus trabajos y comentarios aparecen aquí."
+    },
+    {
+     "term": "Comentarios (Comments)",
+     "detail": "Dejar comentarios sobre los capítulos. Los creadores pueden moderar o desactivar los comentarios."
+    }
+   ]
+  },
+  {
+   "title": "Usando esta aplicación (Using This App)",
+   "entries": [
+    {
+     "term": "Traducción inmersiva (Immersive translation)",
+     "detail": "Toque el botón traducir mientras lee para mostrar una traducción debajo de cada párrafo. Manténgalo presionado para abrir la configuración de traducción. Las claves API permanecen en este dispositivo."
+    },
+    {
+     "term": "Fuentes espejo (Mirror sources)",
+     "detail": "Agregue espejos en Configuración → Fuente de contenido. Los inicios de sesión se mantienen por fuente; Inicie sesión únicamente en espejos en los que confíe."
+    },
+    {
+     "term": "Etiqueta (Etiquette)",
+     "detail": "Deje felicitaciones o comentarios para apoyar a los creadores. No vuelvas a publicar trabajos en ningún otro lugar ni los uses para entrenamiento de IA."
+    }
+   ]
+  }
+ ],
+ "fr": [
+  {
+   "title": "À propos d’AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (archives qui nous appartiennent) (AO3 (Archive of Our Own))",
+     "detail": "Une archive de fanworks à but non lucratif gérée par l'Organisation for Transformative Works (OTW). Il ne contient aucune publicité et les créateurs conservent les droits sur leurs œuvres. Cette application est un lecteur tiers non officiel."
+    },
+    {
+     "term": "Comptes et invitations (Accounts & invitations)",
+     "detail": "L'inscription nécessite une invitation : rejoignez la file d'attente des invitations sur le site Web et inscrivez-vous lorsque l'e-mail arrive. La plupart des œuvres peuvent être lues sans se connecter, mais les œuvres restreintes, les signets, les abonnements et l'historique nécessitent un compte."
+    },
+    {
+     "term": "Pseudo",
+     "detail": "Un nom de plume. Un compte peut en avoir plusieurs ; les signatures montrent le pseudo, avec le nom du compte entre parenthèses lorsqu'il est différent."
+    }
+   ]
+  },
+  {
+   "title": "Informations sur le travail (Work Info)",
+   "entries": [
+    {
+     "term": "Félicitations (Kudos)",
+     "detail": "Comme un « j’aime ». Chaque personne peut laisser des félicitations sur une œuvre une fois ; les invités le peuvent aussi."
+    },
+    {
+     "term": "Clics (Hits)",
+     "detail": "Combien de fois une œuvre a été ouverte. Les visites répétées peuvent compter plus d’une fois, alors considérez-les comme une mesure approximative de la popularité."
+    },
+    {
+     "term": "Signets (Bookmarks)",
+     "detail": "Enregistrez une œuvre avec vos propres notes et tags, publiquement ou en privé. Les signets publics fonctionnent également comme des recommandations."
+    },
+    {
+     "term": "Chapitres 3/? (Chapters 3/?)",
+     "detail": "Chapitres publiés / total prévu. \"?\" signifie que le total n'est pas défini ; un nombre égal signifie que le travail est terminé."
+    },
+    {
+     "term": "En cours / Terminé (WIP / Complete)",
+     "detail": "Travaux en cours / terminés."
+    },
+    {
+     "term": "Série (Series)",
+     "detail": "Œuvres connexes regroupées par le créateur. Vous pouvez vous abonner à toute une série."
+    },
+    {
+     "term": "Collections",
+     "detail": "Groupes d'œuvres pour un thème ou un événement, y compris des défis comme des échanges de cadeaux et des mèmes rapides (par exemple Yuletide)."
+    },
+    {
+     "term": "Restreint (Restricted)",
+     "detail": "Travaux que le créateur a limités aux utilisateurs connectés."
+    },
+    {
+     "term": "Œuvres orphelines (Orphaned works)",
+     "detail": "Œuvres dont les créateurs ont renoncé à la propriété ; ils appartiennent désormais à orphelin_account."
+    },
+    {
+     "term": "Anonyme (Anonymous)",
+     "detail": "Œuvres publiées dans une collection anonyme, avec le nom du créateur masqué pour l'instant."
+    }
+   ]
+  },
+  {
+   "title": "Notes (Ratings)",
+   "entries": [
+    {
+     "term": "G — Audiences générales (G — General Audiences)",
+     "detail": "Convient à tous les âges."
+    },
+    {
+     "term": "T — Public adolescent et plus (T — Teen And Up Audiences)",
+     "detail": "Convient aux 13 ans et plus."
+    },
+    {
+     "term": "M — Mûre (M — Mature)",
+     "detail": "Thèmes adultes, moins graphiques qu'Explicit."
+    },
+    {
+     "term": "E — Explicite",
+     "detail": "Contenu graphique à caractère sexuel, violent ou autre contenu pour adultes."
+    },
+    {
+     "term": "Non noté (Not Rated)",
+     "detail": "Le créateur n'a pas choisi de note ; l'œuvre pouvait contenir n'importe quoi."
+    }
+   ]
+  },
+  {
+   "title": "Archiver les avertissements (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Le créateur a choisi de ne pas utiliser les avertissements d'archives (Creator Chose Not To Use Archive Warnings)",
+     "detail": "L'ouvrage peut contenir n'importe lequel des avertissements. Lisez à votre propre discrétion."
+    },
+    {
+     "term": "Aucun avertissement d'archive ne s'applique (No Archive Warnings Apply)",
+     "detail": "Aucun des quatre avertissements principaux ne s’applique. D'autres contenus sensibles peuvent toujours être étiquetés ailleurs."
+    },
+    {
+     "term": "Représentations graphiques de la violence (Graphic Depictions Of Violence)",
+     "detail": "Violence graphique."
+    },
+    {
+     "term": "Mort du personnage majeur (Major Character Death)",
+     "detail": "Un personnage principal meurt."
+    },
+    {
+     "term": "Viol/Non-escroquerie (Rape/Non-Con)",
+     "detail": "Contenu sexuel non consensuel."
+    },
+    {
+     "term": "Sexe mineur (Underage Sex)",
+     "detail": "Contenu à caractère sexuel impliquant des mineurs."
+    }
+   ]
+  },
+  {
+   "title": "Catégories (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/H, H/M (F/F, F/M, M/M)",
+     "detail": "Relations amoureuses ou sexuelles entre femmes, une femme et un homme, ou des hommes."
+    },
+    {
+     "term": "Gén. (Gen)",
+     "detail": "Général : aucune relation amoureuse ou sexuelle comme objectif."
+    },
+    {
+     "term": "Multi",
+     "detail": "Plus d'un type de relation."
+    },
+    {
+     "term": "Autre (Other)",
+     "detail": "Autres types de relations."
+    }
+   ]
+  },
+  {
+   "title": "Balises (Tags)",
+   "entries": [
+    {
+     "term": "Fandom",
+     "detail": "La source sur laquelle le travail est basé. Les œuvres couvrant plusieurs fandoms sont des croisements."
+    },
+    {
+     "term": "Relations (Relationships)",
+     "detail": "« A/B » est une relation amoureuse ou sexuelle ; « A & B » est platonique (amitié, famille). L'ordre des noms n'implique généralement pas de rôles."
+    },
+    {
+     "term": "Personnages (Characters)",
+     "detail": "Personnages qui apparaissent dans l'œuvre."
+    },
+    {
+     "term": "Balises supplémentaires (Additional Tags)",
+     "detail": "Balises de forme libre pour les tropes, les thèmes et les notes, tels que Fluff, Angst, Hurt/Comfort ou Alternate Universe."
+    },
+    {
+     "term": "Balises canoniques et querelles (Canonical tags & wrangling)",
+     "detail": "Les lutteurs de balises bénévoles associent les synonymes à une balise canonique, de sorte qu'une page de balises montre également les œuvres qui utilisent d'autres orthographes."
+    },
+    {
+     "term": "Fluff / Angst / Blessure / Confort (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Doux et léger / émotionnellement douloureux / un personnage blessé et un autre qui les réconforte."
+    },
+    {
+     "term": "AU (Univers Alternatif) (AU (Alternate Universe))",
+     "detail": "Personnages placés dans un décor différent du canon, par ex. Coffee Shop AU ou Modern AU."
+    },
+    {
+     "term": "Lecteur / Vous (Reader / You)",
+     "detail": "Le lecteur-insert fonctionne où « vous » êtes l'un des personnages."
+    }
+   ]
+  },
+  {
+   "title": "Recherche et filtrage (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Recherche d'emploi (Work search)",
+     "detail": "Recherchez par mots-clés, titre, créateur, fandom, note, avertissements, catégorie, personnages, relations, tags, nombre de mots, langue, félicitations et plus encore. Les résultats viennent directement d’AO3."
+    },
+    {
+     "term": "Numéros et dates (Numbers & dates)",
+     "detail": "Utilisez « > 1 000 », « < 500 » ou « 100-500 » pour les décomptes et « < 7 jours » ou « > 1 an » pour les dates."
+    },
+    {
+     "term": "Filtrage d'une balise (Filtering a tag)",
+     "detail": "Sur les œuvres d'une balise, incluez ou excluez plus de balises et filtrez par note, achèvement, nombre de mots, langue, etc."
+    },
+    {
+     "term": "Exclure les balises (Excluding tags)",
+     "detail": "Excluez les choses que vous ne voulez pas voir, comme une relation ou la mort d'un personnage majeur."
+    },
+    {
+     "term": "Graphiques (Charts)",
+     "detail": "Les graphiques de félicitations, de commentaires et de succès de cette application utilisent le tri de recherche d'AO3 ; les plages horaires sont basées sur la dernière mise à jour de chaque œuvre."
+    }
+   ]
+  },
+  {
+   "title": "Fonctionnalités du compte (Account Features)",
+   "entries": [
+    {
+     "term": "Marqué pour plus tard (Marked for Later)",
+     "detail": "Une liste de choses à lire ; mark fonctionne comme lu lorsque vous avez terminé. Nécessite que l'historique soit activé dans vos préférences AO3."
+    },
+    {
+     "term": "Histoire (History)",
+     "detail": "Les œuvres que vous ouvrez en étant connecté sont enregistrées sur votre compte."
+    },
+    {
+     "term": "Abonnements (Subscriptions)",
+     "detail": "Abonnez-vous à une œuvre, une série ou un créateur pour recevoir des mises à jour par e-mail lors de leur publication."
+    },
+    {
+     "term": "Boîte de réception (Inbox)",
+     "detail": "Les commentaires et réponses sur vos travaux et commentaires apparaissent ici."
+    },
+    {
+     "term": "Commentaires (Comments)",
+     "detail": "Laissez des commentaires sur les chapitres. Les créateurs peuvent modérer ou désactiver les commentaires."
+    }
+   ]
+  },
+  {
+   "title": "Utiliser cette application (Using This App)",
+   "entries": [
+    {
+     "term": "Traduction immersive (Immersive translation)",
+     "detail": "Appuyez sur le bouton de traduction pendant la lecture pour afficher une traduction sous chaque paragraphe. Touchez-le et maintenez-le enfoncé pour ouvrir les paramètres de traduction. Les clés API restent sur cet appareil."
+    },
+    {
+     "term": "Sources miroir (Mirror sources)",
+     "detail": "Ajoutez des miroirs dans Paramètres → Source de contenu. Les identifiants sont conservés par source ; Connectez-vous uniquement sur des miroirs auxquels vous faites confiance."
+    },
+    {
+     "term": "Étiquette (Etiquette)",
+     "detail": "Laissez des félicitations ou des commentaires pour soutenir les créateurs. Ne republiez pas vos travaux ailleurs et ne les utilisez pas pour la formation en IA."
+    }
+   ]
+  }
+ ],
+ "de": [
+  {
+   "title": "Über AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (eigenes Archiv) (AO3 (Archive of Our Own))",
+     "detail": "Ein gemeinnütziges Fanwork-Archiv, das von der Organisation für Transformative Werke (OTW) betrieben wird. Es gibt keine Werbung und die Urheber behalten die Rechte an ihren Werken. Diese App ist ein inoffizieller Drittanbieter-Reader."
+    },
+    {
+     "term": "Konten und Einladungen (Accounts & invitations)",
+     "detail": "Für die Registrierung ist eine Einladung erforderlich: Treten Sie der Einladungswarteschlange auf der Website bei und melden Sie sich an, sobald die E-Mail eintrifft. Die meisten Werke können ohne Anmeldung gelesen werden, für eingeschränkte Werke, Lesezeichen, Abonnements und den Verlauf ist jedoch ein Konto erforderlich."
+    },
+    {
+     "term": "Pseudo",
+     "detail": "Ein Pseudonym. Ein Konto kann mehrere haben; Bylines zeigen das Pseudonym an, wobei der Kontoname in Klammern steht, wenn er anders ist."
+    }
+   ]
+  },
+  {
+   "title": "Arbeitsinformationen (Work Info)",
+   "entries": [
+    {
+     "term": "Ein großes Lob (Kudos)",
+     "detail": "Wie ein „Gefällt mir“. Jede Person kann einmal ein Lob für ein Werk hinterlassen; Gäste können das auch."
+    },
+    {
+     "term": "Treffer (Hits)",
+     "detail": "Wie oft wurde ein Werk geöffnet? Wiederholte Besuche können mehr als einmal gezählt werden. Betrachten Sie dies daher als groben Maßstab für die Beliebtheit."
+    },
+    {
+     "term": "Lesezeichen (Bookmarks)",
+     "detail": "Speichern Sie ein Werk mit Ihren eigenen Notizen und Tags, öffentlich oder privat. Öffentliche Lesezeichen funktionieren auch als Empfehlungen."
+    },
+    {
+     "term": "Kapitel 3/? (Chapters 3/?)",
+     "detail": "Gepostete Kapitel / geplante Gesamtzahl. „?“ bedeutet, dass die Gesamtsumme nicht festgelegt ist; Gleiche Zahlen bedeuten, dass die Arbeit abgeschlossen ist."
+    },
+    {
+     "term": "In Bearbeitung / abgeschlossen (WIP / Complete)",
+     "detail": "In Arbeit / fertig."
+    },
+    {
+     "term": "Serie (Series)",
+     "detail": "Verwandte Werke, gruppiert nach dem Ersteller. Sie können eine ganze Serie abonnieren."
+    },
+    {
+     "term": "Sammlungen (Collections)",
+     "detail": "Werkgruppen zu einem Thema oder einer Veranstaltung, einschließlich Herausforderungen wie dem Austausch von Geschenken und prompten Memes (z. B. Weihnachtszeit)."
+    },
+    {
+     "term": "Eingeschränkt (Restricted)",
+     "detail": "Die Funktion des Erstellers ist auf angemeldete Benutzer beschränkt."
+    },
+    {
+     "term": "Verwaiste Werke (Orphaned works)",
+     "detail": "Werke, deren Urheber das Eigentum aufgegeben haben; Sie gehören jetzt zu orphan_account."
+    },
+    {
+     "term": "Anonym (Anonymous)",
+     "detail": "Werke werden in einer anonymen Sammlung veröffentlicht, wobei der Name des Erstellers vorerst verborgen bleibt."
+    }
+   ]
+  },
+  {
+   "title": "Bewertungen (Ratings)",
+   "entries": [
+    {
+     "term": "G – Allgemeines Publikum (G — General Audiences)",
+     "detail": "Geeignet für alle Altersgruppen."
+    },
+    {
+     "term": "T – Zielgruppe für Jugendliche und Erwachsene (T — Teen And Up Audiences)",
+     "detail": "Geeignet ab 13 Jahren."
+    },
+    {
+     "term": "M – Ausgereift (M — Mature)",
+     "detail": "Themen für Erwachsene, weniger anschaulich als Explicit."
+    },
+    {
+     "term": "E – Explizit (E — Explicit)",
+     "detail": "Grafische sexuelle Inhalte, Gewalt oder andere Inhalte für Erwachsene."
+    },
+    {
+     "term": "Nicht bewertet (Not Rated)",
+     "detail": "Der Ersteller hat keine Bewertung ausgewählt; Das Werk könnte alles enthalten."
+    }
+   ]
+  },
+  {
+   "title": "Archivwarnungen (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Der Ersteller hat sich entschieden, keine Archivwarnungen zu verwenden (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Die Arbeit kann alle Warnungen enthalten. Lesen Sie nach eigenem Ermessen."
+    },
+    {
+     "term": "Es gelten keine Archivwarnungen (No Archive Warnings Apply)",
+     "detail": "Keine der vier Hauptwarnungen trifft zu. Andere sensible Inhalte können weiterhin an anderer Stelle markiert werden."
+    },
+    {
+     "term": "Grafische Darstellungen von Gewalt (Graphic Depictions Of Violence)",
+     "detail": "Grafische Gewalt."
+    },
+    {
+     "term": "Tod eines Hauptcharakters (Major Character Death)",
+     "detail": "Eine Hauptfigur stirbt."
+    },
+    {
+     "term": "Vergewaltigung/Nichtbetrug (Rape/Non-Con)",
+     "detail": "Nicht einvernehmliche sexuelle Inhalte."
+    },
+    {
+     "term": "Sex mit Minderjährigen (Underage Sex)",
+     "detail": "Sexuelle Inhalte mit Beteiligung Minderjähriger."
+    }
+   ]
+  },
+  {
+   "title": "Kategorien (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/M, M/M",
+     "detail": "Romantische oder sexuelle Beziehungen zwischen Frauen, einer Frau und einem Mann oder Männern."
+    },
+    {
+     "term": "Gen",
+     "detail": "Allgemein: Keine romantische oder sexuelle Beziehung im Mittelpunkt."
+    },
+    {
+     "term": "Multi",
+     "detail": "Mehr als eine Art von Beziehung."
+    },
+    {
+     "term": "Andere (Other)",
+     "detail": "Andere Arten von Beziehungen."
+    }
+   ]
+  },
+  {
+   "title": "Schlagworte (Tags)",
+   "entries": [
+    {
+     "term": "Fandom",
+     "detail": "Die Quelle, auf der die Arbeit basiert. Werke, die mehrere Fandoms umfassen, sind Crossover."
+    },
+    {
+     "term": "Beziehungen (Relationships)",
+     "detail": "„A/B“ ist eine romantische oder sexuelle Beziehung; „A & B“ ist platonisch (Freundschaft, Familie). Die Reihenfolge der Namen impliziert normalerweise keine Rollen."
+    },
+    {
+     "term": "Charaktere (Characters)",
+     "detail": "Charaktere, die im Werk vorkommen."
+    },
+    {
+     "term": "Zusätzliche Tags (Additional Tags)",
+     "detail": "Freiform-Tags für Tropen, Themen und Notizen, wie Fluff, Angst, Hurt/Comfort oder Alternate Universe."
+    },
+    {
+     "term": "Kanonische Tags und Streitereien (Canonical tags & wrangling)",
+     "detail": "Ehrenamtliche Tag-Wrangler verknüpfen Synonyme mit einem kanonischen Tag, sodass auf einer Tag-Seite auch Werke angezeigt werden, die andere Schreibweisen verwenden."
+    },
+    {
+     "term": "Flaum / Angst / Schmerz / Trost (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Süß und leicht / emotional schmerzhaft / eine Figur verletzt und eine andere tröstet sie."
+    },
+    {
+     "term": "AU (Alternatives Universum) (AU (Alternate Universe))",
+     "detail": "Charaktere, die in einer anderen als der kanonischen Umgebung platziert sind, z.B. Coffee Shop AU oder Modern AU."
+    },
+    {
+     "term": "Leser / Du (Reader / You)",
+     "detail": "Reader-Insert funktioniert, wenn „Sie“ einer der Charaktere ist."
+    }
+   ]
+  },
+  {
+   "title": "Suchen und Filtern (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Arbeitssuche (Work search)",
+     "detail": "Suchen Sie nach Schlüsselwörtern, Titel, Ersteller, Fandom, Bewertung, Warnungen, Kategorie, Charakteren, Beziehungen, Tags, Wortanzahl, Sprache, Lob und mehr. Die Ergebnisse kommen direkt von AO3."
+    },
+    {
+     "term": "Zahlen und Daten (Numbers & dates)",
+     "detail": "Verwenden Sie „> 1000“, „< 500“ oder „100-500“ für Zählungen und „< 7 Tage“ oder „> 1 Jahr“ für Datumsangaben."
+    },
+    {
+     "term": "Filtern eines Tags (Filtering a tag)",
+     "detail": "Bei den Werken eines Tags können Sie weitere Tags ein- oder ausschließen und nach Bewertung, Vervollständigung, Wortanzahl, Sprache usw. filtern."
+    },
+    {
+     "term": "Ohne Tags (Excluding tags)",
+     "detail": "Schließen Sie Dinge aus, die Sie nicht sehen möchten, wie eine Beziehung oder den Tod einer Hauptfigur."
+    },
+    {
+     "term": "Diagramme (Charts)",
+     "detail": "Die Lob-, Kommentar- und Trefferdiagramme dieser App verwenden die Suchsortierung von AO3. Zeitspannen basieren auf der letzten Aktualisierung jedes Werks."
+    }
+   ]
+  },
+  {
+   "title": "Kontofunktionen (Account Features)",
+   "entries": [
+    {
+     "term": "Für später markiert (Marked for Later)",
+     "detail": "Eine To-Read-Liste; Markieren funktioniert als gelesen, wenn Sie fertig sind. Erfordert die Aktivierung des Verlaufs in Ihren AO3-Einstellungen."
+    },
+    {
+     "term": "Geschichte (History)",
+     "detail": "Werke, die Sie öffnen, während Sie angemeldet sind, werden in Ihrem Konto erfasst."
+    },
+    {
+     "term": "Abonnements (Subscriptions)",
+     "detail": "Abonnieren Sie ein Werk, eine Serie oder einen Autor, um E-Mail-Updates zu erhalten, wenn er etwas postet."
+    },
+    {
+     "term": "Posteingang (Inbox)",
+     "detail": "Kommentare und Antworten zu Ihren Werken und Kommentaren erscheinen hier."
+    },
+    {
+     "term": "Kommentare (Comments)",
+     "detail": "Hinterlassen Sie Kommentare zu Kapiteln. Ersteller können Kommentare moderieren oder deaktivieren."
+    }
+   ]
+  },
+  {
+   "title": "Verwenden dieser App (Using This App)",
+   "entries": [
+    {
+     "term": "Immersive Übersetzung (Immersive translation)",
+     "detail": "Tippen Sie beim Lesen auf die Schaltfläche „Übersetzen“, um unter jedem Absatz eine Übersetzung anzuzeigen. Berühren und halten Sie es, um die Übersetzungseinstellungen zu öffnen. API-Schlüssel bleiben auf diesem Gerät."
+    },
+    {
+     "term": "Spiegelquellen (Mirror sources)",
+     "detail": "Fügen Sie Spiegel unter Einstellungen → Inhaltsquelle hinzu. Anmeldungen werden pro Quelle gespeichert; Melden Sie sich nur bei Spiegelservern an, denen Sie vertrauen."
+    },
+    {
+     "term": "Etikette (Etiquette)",
+     "detail": "Hinterlassen Sie Lob oder Kommentare, um die Ersteller zu unterstützen. Veröffentlichen Sie Werke nicht an anderer Stelle und verwenden Sie sie nicht für das KI-Training."
+    }
+   ]
+  }
+ ],
+ "pt-BR": [
+  {
+   "title": "Sobre o AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (arquivo nosso) (AO3 (Archive of Our Own))",
+     "detail": "Um arquivo de fanwork sem fins lucrativos administrado pela Organization for Transformative Works (OTW). Não contém anúncios e os criadores mantêm os direitos de suas obras. Este aplicativo é um leitor de terceiros não oficial."
+    },
+    {
+     "term": "Contas e convites (Accounts & invitations)",
+     "detail": "O registro precisa de um convite: entre na fila de convites no site e inscreva-se quando o e-mail chegar. A maioria das obras pode ser lida sem login, mas obras restritas, favoritos, assinaturas e histórico precisam de uma conta."
+    },
+    {
+     "term": "Pseudônimo",
+     "detail": "Um pseudônimo. Uma conta pode ter várias; as assinaturas mostram o pseudônimo, com o nome da conta entre parênteses quando diferente."
+    }
+   ]
+  },
+  {
+   "title": "Informações de trabalho (Work Info)",
+   "entries": [
+    {
+     "term": "Parabéns (Kudos)",
+     "detail": "Como um “curtir”. Cada pessoa pode deixar elogios por um trabalho uma vez; os hóspedes também podem."
+    },
+    {
+     "term": "Acessos (Hits)",
+     "detail": "Quantas vezes uma obra foi aberta. As visitas repetidas podem contar mais de uma vez, portanto, trate isso como uma medida aproximada de popularidade."
+    },
+    {
+     "term": "Favoritos (Bookmarks)",
+     "detail": "Salve um trabalho com suas próprias notas e tags, de forma pública ou privada. Os marcadores públicos também funcionam como recomendações."
+    },
+    {
+     "term": "Capítulos 3/? (Chapters 3/?)",
+     "detail": "Capítulos publicados/total planejado. “?” significa que o total não está definido; números iguais significam que o trabalho está completo."
+    },
+    {
+     "term": "WIP/Concluído (WIP / Complete)",
+     "detail": "Trabalho em andamento/concluído."
+    },
+    {
+     "term": "Série (Series)",
+     "detail": "Trabalhos relacionados agrupados pelo criador. Você pode assinar uma série inteira."
+    },
+    {
+     "term": "Coleções (Collections)",
+     "detail": "Grupos de trabalhos para um tema ou evento, incluindo desafios como troca de presentes e memes imediatos (por exemplo, Natal)."
+    },
+    {
+     "term": "Restrito (Restricted)",
+     "detail": "Obras que o criador limitou a usuários logados."
+    },
+    {
+     "term": "Obras órfãs (Orphaned works)",
+     "detail": "Obras cujos criadores abriram mão da propriedade; eles agora pertencem a orphan_account."
+    },
+    {
+     "term": "Anônimo (Anonymous)",
+     "detail": "Obras postadas em acervo anônimo, com o nome do criador oculto por enquanto."
+    }
+   ]
+  },
+  {
+   "title": "Avaliações (Ratings)",
+   "entries": [
+    {
+     "term": "G - Audiências Gerais (G — General Audiences)",
+     "detail": "Adequado para todas as idades."
+    },
+    {
+     "term": "T - Público adolescente e superior (T — Teen And Up Audiences)",
+     "detail": "Adequado para maiores de 13 anos."
+    },
+    {
+     "term": "M - Maduro (M — Mature)",
+     "detail": "Temas adultos, menos gráficos que Explícitos."
+    },
+    {
+     "term": "E - Explícito (E — Explicit)",
+     "detail": "Conteúdo sexual gráfico, violência ou outro conteúdo adulto."
+    },
+    {
+     "term": "Não avaliado (Not Rated)",
+     "detail": "O criador não escolheu uma classificação; o trabalho pode conter qualquer coisa."
+    }
+   ]
+  },
+  {
+   "title": "Avisos de arquivo (Archive Warnings)",
+   "entries": [
+    {
+     "term": "O criador optou por não usar avisos de arquivo (Creator Chose Not To Use Archive Warnings)",
+     "detail": "O trabalho pode conter qualquer um dos avisos. Leia a seu critério."
+    },
+    {
+     "term": "Nenhum aviso de arquivo se aplica (No Archive Warnings Apply)",
+     "detail": "Nenhum dos quatro avisos principais se aplica. Outros conteúdos sensíveis ainda podem ser marcados em outro lugar."
+    },
+    {
+     "term": "Representações gráficas de violência (Graphic Depictions Of Violence)",
+     "detail": "Violência gráfica."
+    },
+    {
+     "term": "Morte do personagem principal (Major Character Death)",
+     "detail": "Um personagem principal morre."
+    },
+    {
+     "term": "Estupro/Não-Con (Rape/Non-Con)",
+     "detail": "Conteúdo sexual não consensual."
+    },
+    {
+     "term": "Sexo com menores (Underage Sex)",
+     "detail": "Conteúdo sexual envolvendo menores."
+    }
+   ]
+  },
+  {
+   "title": "Categorias (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/M, M/M",
+     "detail": "Relacionamentos românticos ou sexuais entre mulheres, uma mulher e um homem, ou homens."
+    },
+    {
+     "term": "Geral (Gen)",
+     "detail": "Geral: nenhum relacionamento romântico ou sexual como foco."
+    },
+    {
+     "term": "Múltiplo (Multi)",
+     "detail": "Mais de um tipo de relacionamento."
+    },
+    {
+     "term": "Outro (Other)",
+     "detail": "Outros tipos de relacionamentos."
+    }
+   ]
+  },
+  {
+   "title": "Etiquetas (Tags)",
+   "entries": [
+    {
+     "term": "Fandom",
+     "detail": "A fonte em que o trabalho se baseia. Obras que abrangem vários fandoms são crossovers."
+    },
+    {
+     "term": "Relacionamentos (Relationships)",
+     "detail": "“A/B” é um relacionamento romântico ou sexual; “A & B” é platônico (amizade, família). A ordem dos nomes geralmente não implica funções."
+    },
+    {
+     "term": "Personagens (Characters)",
+     "detail": "Personagens que aparecem na obra."
+    },
+    {
+     "term": "Etiquetas Adicionais (Additional Tags)",
+     "detail": "Tags de formato livre para tropos, temas e notas, como Fluff, Angst, Hurt/Comfort ou Alternate Universe."
+    },
+    {
+     "term": "Tags canônicas e disputa (Canonical tags & wrangling)",
+     "detail": "Organizadores de tags voluntários vinculam sinônimos a uma tag canônica, portanto, uma página de tags também mostra trabalhos que usaram outras grafias."
+    },
+    {
+     "term": "Fluff / Angústia / Magoa / Conforto (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Doce e leve / emocionalmente doloroso / um personagem machuca e outro os conforta."
+    },
+    {
+     "term": "UA (Universo Alternativo) (AU (Alternate Universe))",
+     "detail": "Personagens colocados em um cenário diferente do cânone, por ex. Cafeteria AU ou Modern AU."
+    },
+    {
+     "term": "Leitor / Você (Reader / You)",
+     "detail": "A inserção do leitor funciona onde “você” é um dos personagens."
+    }
+   ]
+  },
+  {
+   "title": "Pesquisa e filtragem (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Pesquisa de trabalho (Work search)",
+     "detail": "Pesquise por palavras-chave, título, criador, fandom, classificação, avisos, categoria, personagens, relacionamentos, tags, contagem de palavras, idioma, elogios e muito mais. Os resultados vêm direto do AO3."
+    },
+    {
+     "term": "Números e datas (Numbers & dates)",
+     "detail": "Use “> 1000”, “< 500” ou “100-500” para contagens e “< 7 dias” ou “> 1 ano” para datas."
+    },
+    {
+     "term": "Filtrando uma tag (Filtering a tag)",
+     "detail": "Nos trabalhos de uma tag, inclua ou exclua mais tags e filtre por classificação, conclusão, contagem de palavras, idioma e assim por diante."
+    },
+    {
+     "term": "Excluindo tags (Excluding tags)",
+     "detail": "Exclua coisas que você não quer ver, como um relacionamento ou a morte de um personagem principal."
+    },
+    {
+     "term": "Gráficos (Charts)",
+     "detail": "Os gráficos de elogios, comentários e sucessos deste aplicativo usam a classificação de pesquisa do AO3; os intervalos de tempo são baseados na última atualização de cada trabalho."
+    }
+   ]
+  },
+  {
+   "title": "Recursos da conta (Account Features)",
+   "entries": [
+    {
+     "term": "Marcado para mais tarde (Marked for Later)",
+     "detail": "Uma lista para ler; mark funciona como lido quando você terminar. Requer que o histórico esteja ativado nas suas preferências do AO3."
+    },
+    {
+     "term": "História (History)",
+     "detail": "Os trabalhos que você abre enquanto estiver logado são registrados em sua conta."
+    },
+    {
+     "term": "Assinaturas (Subscriptions)",
+     "detail": "Inscreva-se em uma obra, série ou criador para receber atualizações por e-mail quando eles postarem."
+    },
+    {
+     "term": "Caixa de entrada (Inbox)",
+     "detail": "Comentários e respostas sobre seus trabalhos e comentários aparecem aqui."
+    },
+    {
+     "term": "Comentários (Comments)",
+     "detail": "Deixe comentários nos capítulos. Os criadores podem moderar ou desativar comentários."
+    }
+   ]
+  },
+  {
+   "title": "Usando este aplicativo (Using This App)",
+   "entries": [
+    {
+     "term": "Tradução imersiva (Immersive translation)",
+     "detail": "Toque no botão traduzir durante a leitura para mostrar uma tradução em cada parágrafo. Toque e segure para abrir as configurações de tradução. As chaves de API permanecem neste dispositivo."
+    },
+    {
+     "term": "Fontes espelhadas (Mirror sources)",
+     "detail": "Adicione espelhos em Configurações → Fonte de conteúdo. Os logins são mantidos por fonte; faça login apenas em espelhos em que você confia."
+    },
+    {
+     "term": "Etiqueta (Etiquette)",
+     "detail": "Deixe elogios ou comentários para apoiar os criadores. Não repasse trabalhos em outro lugar nem os use para treinamento de IA."
+    }
+   ]
+  }
+ ],
+ "it": [
+  {
+   "title": "A proposito di AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (Archivio nostro) (AO3 (Archive of Our Own))",
+     "detail": "Un archivio fanwork senza scopo di lucro gestito dall'Organizzazione per i Lavori Trasformativi (OTW). Non ha pubblicità e i creatori mantengono i diritti sulle loro opere. Questa app è un lettore di terze parti non ufficiale."
+    },
+    {
+     "term": "Account e inviti (Accounts & invitations)",
+     "detail": "Per registrarsi è necessario un invito: unisciti alla coda inviti sul sito e iscriviti quando arriva l'e-mail. La maggior parte delle opere può essere letta senza effettuare l'accesso, ma le opere limitate, i segnalibri, gli abbonamenti e la cronologia richiedono un account."
+    },
+    {
+     "term": "Pseudo",
+     "detail": "Uno pseudonimo. Un account può averne diversi; le righe mostrano lo pseudonimo, con il nome dell'account tra parentesi quando diverso."
+    }
+   ]
+  },
+  {
+   "title": "Informazioni sul lavoro (Work Info)",
+   "entries": [
+    {
+     "term": "Complimenti (Kudos)",
+     "detail": "Come un “mi piace”. Ogni persona può lasciare complimenti per un lavoro una volta; anche gli ospiti possono farlo."
+    },
+    {
+     "term": "Colpi (Hits)",
+     "detail": "Quante volte è stata aperta un'opera. Le visite ripetute possono contare più di una volta, quindi trattale come una misura approssimativa della popolarità."
+    },
+    {
+     "term": "Segnalibri (Bookmarks)",
+     "detail": "Salva un lavoro con le tue note e i tuoi tag, pubblicamente o privatamente. I segnalibri pubblici funzionano anche come consigli."
+    },
+    {
+     "term": "Capitoli 3/? (Chapters 3/?)",
+     "detail": "Capitoli pubblicati/totale pianificato. “?” significa che il totale non è impostato; numeri uguali indicano che il lavoro è completo."
+    },
+    {
+     "term": "WIP/Completato (WIP / Complete)",
+     "detail": "Lavori in corso/finiti."
+    },
+    {
+     "term": "Serie (Series)",
+     "detail": "Lavori correlati raggruppati per autore. Puoi iscriverti a un'intera serie."
+    },
+    {
+     "term": "Collezioni (Collections)",
+     "detail": "Gruppi di opere per un tema o un evento, comprese sfide come scambi di regali e meme tempestivi (ad esempio Yuletide)."
+    },
+    {
+     "term": "Limitato (Restricted)",
+     "detail": "Opere che il creatore ha limitato agli utenti registrati."
+    },
+    {
+     "term": "Opere orfane (Orphaned works)",
+     "detail": "Opere i cui creatori hanno rinunciato alla proprietà; ora appartengono a orphan_account."
+    },
+    {
+     "term": "Anonimo (Anonymous)",
+     "detail": "Opere pubblicate in una raccolta anonima, con il nome dell'autore nascosto per ora."
+    }
+   ]
+  },
+  {
+   "title": "Valutazioni (Ratings)",
+   "entries": [
+    {
+     "term": "G — Udienze generali (G — General Audiences)",
+     "detail": "Adatto a tutte le età."
+    },
+    {
+     "term": "T – Pubblico di adolescenti e adulti (T — Teen And Up Audiences)",
+     "detail": "Adatto dai 13 anni in su."
+    },
+    {
+     "term": "M – Maturo (M — Mature)",
+     "detail": "Temi per adulti, meno grafici di Explicit."
+    },
+    {
+     "term": "E – Esplicito (E — Explicit)",
+     "detail": "Contenuti sessuali espliciti, violenza o altri contenuti per adulti."
+    },
+    {
+     "term": "Non valutato (Not Rated)",
+     "detail": "Il creatore non ha scelto una valutazione; l'opera potrebbe contenere qualsiasi cosa."
+    }
+   ]
+  },
+  {
+   "title": "Avvisi di archivio (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Il creatore ha scelto di non utilizzare gli avvisi di archivio (Creator Chose Not To Use Archive Warnings)",
+     "detail": "L'opera può contenere uno qualsiasi degli avvertimenti. Leggi a tua discrezione."
+    },
+    {
+     "term": "Non si applicano avvisi di archivio (No Archive Warnings Apply)",
+     "detail": "Nessuno dei quattro avvertimenti principali è applicabile. Altri contenuti sensibili potrebbero comunque essere taggati altrove."
+    },
+    {
+     "term": "Rappresentazioni grafiche della violenza (Graphic Depictions Of Violence)",
+     "detail": "Violenza grafica."
+    },
+    {
+     "term": "Morte del personaggio principale (Major Character Death)",
+     "detail": "Un personaggio principale muore."
+    },
+    {
+     "term": "Stupro/Non detenuta (Rape/Non-Con)",
+     "detail": "Contenuti sessuali non consensuali."
+    },
+    {
+     "term": "Sesso minorile (Underage Sex)",
+     "detail": "Contenuti sessuali che coinvolgono minori."
+    }
+   ]
+  },
+  {
+   "title": "Categorie (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/M, M/M",
+     "detail": "Rapporti romantici o sessuali tra donne, una donna e un uomo, o uomini."
+    },
+    {
+     "term": "gen",
+     "detail": "Generale: nessuna relazione romantica o sessuale al centro dell'attenzione."
+    },
+    {
+     "term": "Multiplo",
+     "detail": "Più di un tipo di relazione."
+    },
+    {
+     "term": "Altro (Other)",
+     "detail": "Altri tipi di relazioni."
+    }
+   ]
+  },
+  {
+   "title": "Tag (Tags)",
+   "entries": [
+    {
+     "term": "Fandom",
+     "detail": "La fonte su cui si basa il lavoro. Le opere che abbracciano diversi fandom sono crossover."
+    },
+    {
+     "term": "Relazioni (Relationships)",
+     "detail": "“A/B” è una relazione romantica o sessuale; “A & B” è platonico (amicizia, famiglia). L'ordine dei nomi di solito non implica ruoli."
+    },
+    {
+     "term": "Personaggi (Characters)",
+     "detail": "Personaggi che compaiono nell'opera."
+    },
+    {
+     "term": "Tag aggiuntivi (Additional Tags)",
+     "detail": "Tag a forma libera per tropi, temi e note, come Fluff, Angst, Hurt/Comfort o Alternate Universe."
+    },
+    {
+     "term": "Tag canonici e discussioni (Canonical tags & wrangling)",
+     "detail": "I tag wrangler volontari collegano i sinonimi a un tag canonico, quindi una pagina di tag mostra anche le opere che utilizzano altre ortografie."
+    },
+    {
+     "term": "Lanugine/Angoscia/Dolore/Conforto (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Dolce e leggero / emotivamente doloroso / un personaggio ferisce e un altro li conforta."
+    },
+    {
+     "term": "AU (Universo alternativo) (AU (Alternate Universe))",
+     "detail": "Personaggi collocati in un'ambientazione diversa da quella canonica, ad es. Caffetteria AU o AU moderna."
+    },
+    {
+     "term": "Lettore/tu (Reader / You)",
+     "detail": "L'inserimento del lettore funziona dove \"tu\" sei uno dei personaggi."
+    }
+   ]
+  },
+  {
+   "title": "Ricerca e filtraggio (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Ricerca di lavoro (Work search)",
+     "detail": "Cerca per parole chiave, titolo, creatore, fandom, valutazione, avvisi, categoria, personaggi, relazioni, tag, conteggio parole, lingua, complimenti e altro ancora. I risultati provengono direttamente da AO3."
+    },
+    {
+     "term": "Numeri e date (Numbers & dates)",
+     "detail": "Utilizzare \"> 1000\", \"< 500\" o \"100-500\" per i conteggi e \"< 7 giorni\" o \"> 1 anno\" per le date."
+    },
+    {
+     "term": "Filtraggio di un tag (Filtering a tag)",
+     "detail": "Nei lavori di un tag, includi o escludi più tag e filtra per valutazione, completamento, conteggio parole, lingua e così via."
+    },
+    {
+     "term": "Tag esclusi (Excluding tags)",
+     "detail": "Escludi cose che non vuoi vedere, come una relazione o la morte di un personaggio principale."
+    },
+    {
+     "term": "Grafici (Charts)",
+     "detail": "I complimenti, i commenti e le classifiche dei risultati di questa app utilizzano l'ordinamento di ricerca di AO3; gli intervalli di tempo si basano sull'ultimo aggiornamento di ciascuna opera."
+    }
+   ]
+  },
+  {
+   "title": "Funzionalità dell'account (Account Features)",
+   "entries": [
+    {
+     "term": "Contrassegnato per dopo (Marked for Later)",
+     "detail": "Una lista da leggere; mark funziona come letto quando hai finito. Richiede che la cronologia sia abilitata nelle preferenze di AO3."
+    },
+    {
+     "term": "Storia (History)",
+     "detail": "I lavori che apri mentre sei loggato vengono registrati sul tuo account."
+    },
+    {
+     "term": "Abbonamenti (Subscriptions)",
+     "detail": "Iscriviti a un'opera, una serie o un creatore per ricevere aggiornamenti via email quando pubblicano."
+    },
+    {
+     "term": "Posta in arrivo (Inbox)",
+     "detail": "Commenti e risposte sui tuoi lavori e commenti appaiono qui."
+    },
+    {
+     "term": "Commenti (Comments)",
+     "detail": "Lascia commenti sui capitoli. I creatori possono moderare o disabilitare i commenti."
+    }
+   ]
+  },
+  {
+   "title": "Utilizzo di questa app (Using This App)",
+   "entries": [
+    {
+     "term": "Traduzione immersiva (Immersive translation)",
+     "detail": "Tocca il pulsante di traduzione durante la lettura per mostrare una traduzione sotto ogni paragrafo. Toccalo e tienilo premuto per aprire le impostazioni di traduzione. Le chiavi API rimangono su questo dispositivo."
+    },
+    {
+     "term": "Fonti speculari (Mirror sources)",
+     "detail": "Aggiungi mirror in Impostazioni → Origine contenuto. Gli accessi vengono mantenuti per fonte; accedi solo ai mirror di cui ti fidi."
+    },
+    {
+     "term": "Etichetta (Etiquette)",
+     "detail": "Lascia complimenti o commenti per supportare i creatori. Non ripubblicare i lavori altrove né utilizzarli per la formazione sull'intelligenza artificiale."
+    }
+   ]
+  }
+ ],
+ "ru": [
+  {
+   "title": "О АО3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (Наш собственный архив) (AO3 (Archive of Our Own))",
+     "detail": "Некоммерческий архив фан-работ, которым управляет Организация трансформационных работ (OTW). В нем нет рекламы, а авторы сохраняют права на свои произведения. Это приложение является неофициальной сторонней программой чтения."
+    },
+    {
+     "term": "Аккаунты и приглашения (Accounts & invitations)",
+     "detail": "Для регистрации требуется приглашение: встаньте в очередь на приглашения на веб-сайте и зарегистрируйтесь, когда придет письмо. Большинство работ можно прочитать без входа в систему, но для ограниченных работ, закладок, подписок и истории требуется учетная запись."
+    },
+    {
+     "term": "Псевдоним (Pseud)",
+     "detail": "Псевдоним. У одной учетной записи может быть несколько; В подписях указывается псевдоним с именем учетной записи в скобках, если оно отличается."
+    }
+   ]
+  },
+  {
+   "title": "Информация о работе (Work Info)",
+   "entries": [
+    {
+     "term": "Престижность (Kudos)",
+     "detail": "Типа «нравится». Каждый человек может оставить похвалу за работу один раз; гости тоже могут."
+    },
+    {
+     "term": "Хиты (Hits)",
+     "detail": "Сколько раз открывалось произведение. Повторные посещения могут учитываться более одного раза, поэтому воспринимайте это как приблизительный показатель популярности."
+    },
+    {
+     "term": "Закладки (Bookmarks)",
+     "detail": "Сохраняйте работу со своими заметками и тегами, публично или конфиденциально. Публичные закладки также работают как рекомендации."
+    },
+    {
+     "term": "Главы 3/? (Chapters 3/?)",
+     "detail": "Опубликовано глав / запланировано всего. «?» означает, что сумма не установлена; равные числа означают, что работа завершена."
+    },
+    {
+     "term": "НЗП / Завершено (WIP / Complete)",
+     "detail": "Работа в процессе/завершена."
+    },
+    {
+     "term": "Серия (Series)",
+     "detail": "Похожие работы сгруппированы по автору. Вы можете подписаться на целую серию."
+    },
+    {
+     "term": "Коллекции (Collections)",
+     "detail": "Группы работ по теме или событию, включая такие задачи, как обмен подарками и мемы-подсказки (например, Святки)."
+    },
+    {
+     "term": "Ограниченный (Restricted)",
+     "detail": "Работы создатель ограничил только вошедшими в систему пользователями."
+    },
+    {
+     "term": "Сиротские произведения (Orphaned works)",
+     "detail": "Произведения, авторы которых отказались от права собственности; теперь они принадлежат orphan_account."
+    },
+    {
+     "term": "Анонимный (Anonymous)",
+     "detail": "Работы размещены в анонимной коллекции, имя автора пока скрыто."
+    }
+   ]
+  },
+  {
+   "title": "Рейтинги (Ratings)",
+   "entries": [
+    {
+     "term": "G — Общая аудитория (G — General Audiences)",
+     "detail": "Подходит для всех возрастов."
+    },
+    {
+     "term": "T — Аудитория подростков и старше (T — Teen And Up Audiences)",
+     "detail": "Подходит для детей от 13 лет и старше."
+    },
+    {
+     "term": "М — зрелый (M — Mature)",
+     "detail": "Темы для взрослых, менее графические, чем Explicit."
+    },
+    {
+     "term": "Е — Явный (E — Explicit)",
+     "detail": "Графический контент сексуального характера, насилие или другой контент для взрослых."
+    },
+    {
+     "term": "Без рейтинга (Not Rated)",
+     "detail": "Автор не выбирал рейтинг; работа может содержать что угодно."
+    }
+   ]
+  },
+  {
+   "title": "Предупреждения архива (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Автор решил не использовать предупреждения архива (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Работа может содержать любые предупреждения. Читайте на свое усмотрение."
+    },
+    {
+     "term": "Предупреждения об архивировании не применяются (No Archive Warnings Apply)",
+     "detail": "Ни одно из четырех основных предупреждений не применимо. Другой конфиденциальный контент по-прежнему может быть помечен где-то еще."
+    },
+    {
+     "term": "Графические изображения насилия (Graphic Depictions Of Violence)",
+     "detail": "Графическое насилие."
+    },
+    {
+     "term": "Смерть главного героя (Major Character Death)",
+     "detail": "Главный герой умирает."
+    },
+    {
+     "term": "Изнасилование/неконституция (Rape/Non-Con)",
+     "detail": "Сексуальный контент без согласия."
+    },
+    {
+     "term": "Секс с несовершеннолетними (Underage Sex)",
+     "detail": "Сексуальный контент с участием несовершеннолетних."
+    }
+   ]
+  },
+  {
+   "title": "Категории (Categories)",
+   "entries": [
+    {
+     "term": "Ж/Ж, Ж/М, М/М (F/F, F/M, M/M)",
+     "detail": "Романтические или сексуальные отношения между женщинами, женщиной и мужчиной или мужчинами."
+    },
+    {
+     "term": "Генерал (Gen)",
+     "detail": "Общее: никаких романтических или сексуальных отношений в центре внимания."
+    },
+    {
+     "term": "Мульти (Multi)",
+     "detail": "Более одного типа отношений."
+    },
+    {
+     "term": "Другой (Other)",
+     "detail": "Другие типы отношений."
+    }
+   ]
+  },
+  {
+   "title": "Теги (Tags)",
+   "entries": [
+    {
+     "term": "Фэндом (Fandom)",
+     "detail": "Источник, на котором основана работа. Работы, охватывающие несколько фандомов, являются кроссоверами."
+    },
+    {
+     "term": "Отношения (Relationships)",
+     "detail": "«А/Б» — романтические или сексуальные отношения; «А&Б» — платоническое (дружба, семья). Порядок имен обычно не подразумевает роли."
+    },
+    {
+     "term": "Персонажи (Characters)",
+     "detail": "Персонажи, которые появляются в произведении."
+    },
+    {
+     "term": "Дополнительные теги (Additional Tags)",
+     "detail": "Теги произвольной формы для образов, тем и примечаний, таких как Fluff, Angst, Hurt/Comfort или Alternate Universe."
+    },
+    {
+     "term": "Канонические теги и споры (Canonical tags & wrangling)",
+     "detail": "Добровольные специалисты по обработке тегов связывают синонимы с одним каноническим тегом, поэтому на странице тегов также отображаются произведения, в которых используются другие варианты написания."
+    },
+    {
+     "term": "Пух/Тога/Обид/Комфорт (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Мило и легко / эмоционально больно / один персонаж ранит, а другой утешает."
+    },
+    {
+     "term": "AU (Альтернативная вселенная) (AU (Alternate Universe))",
+     "detail": "Персонажи помещены в сеттинг, отличный от канона, например. Кофейня AU или Modern AU."
+    },
+    {
+     "term": "Читатель / Вы (Reader / You)",
+     "detail": "Читатель-вставка работает, где «вы» — один из персонажей."
+    }
+   ]
+  },
+  {
+   "title": "Поиск и фильтрация (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Поиск работы (Work search)",
+     "detail": "Поиск по ключевым словам, названию, создателю, фэндому, рейтингу, предупреждениям, категории, персонажам, отношениям, тегам, количеству слов, языку, репутации и т. д. Результаты приходят прямо из AO3."
+    },
+    {
+     "term": "Числа и даты (Numbers & dates)",
+     "detail": "Используйте «> 1000», «< 500» или «100–500» для количества и «< 7 дней» или «> 1 года» для дат."
+    },
+    {
+     "term": "Фильтрация тега (Filtering a tag)",
+     "detail": "В произведениях с тегом можно включать или исключать дополнительные теги и фильтровать по рейтингу, завершению, количеству слов, языку и т. д."
+    },
+    {
+     "term": "Исключение тегов (Excluding tags)",
+     "detail": "Исключите то, что вы не хотите видеть, например отношения или смерть главного героя."
+    },
+    {
+     "term": "Графики (Charts)",
+     "detail": "В рейтингах, комментариях и рейтингах этого приложения используется поисковая сортировка AO3; Временные диапазоны основаны на последнем обновлении каждой работы."
+    }
+   ]
+  },
+  {
+   "title": "Возможности учетной записи (Account Features)",
+   "entries": [
+    {
+     "term": "Отмечено на потом (Marked for Later)",
+     "detail": "Список к прочтению; пометка работает как прочитанная, когда вы закончите. Требуется, чтобы история была включена в настройках AO3."
+    },
+    {
+     "term": "История (History)",
+     "detail": "Работы, которые вы открываете при входе в систему, записываются в вашу учетную запись."
+    },
+    {
+     "term": "Подписки (Subscriptions)",
+     "detail": "Подпишитесь на произведение, серию или автора, чтобы получать обновления по электронной почте, когда они публикуют."
+    },
+    {
+     "term": "Входящие (Inbox)",
+     "detail": "Здесь появляются комментарии и ответы на ваши работы и комментарии."
+    },
+    {
+     "term": "Комментарии (Comments)",
+     "detail": "Оставляйте комментарии к главам. Создатели могут модерировать или отключать комментарии."
+    }
+   ]
+  },
+  {
+   "title": "Использование этого приложения (Using This App)",
+   "entries": [
+    {
+     "term": "Иммерсивный перевод (Immersive translation)",
+     "detail": "Нажмите кнопку перевода во время чтения, чтобы отобразить перевод под каждым абзацем. Нажмите и удерживайте его, чтобы открыть настройки перевода. Ключи API остаются на этом устройстве."
+    },
+    {
+     "term": "Зеркальные источники (Mirror sources)",
+     "detail": "Добавьте зеркала в «Настройки» → «Источник контента». Логины сохраняются для каждого источника; Заходите только на те зеркала, которым вы доверяете."
+    },
+    {
+     "term": "Этикет (Etiquette)",
+     "detail": "Оставляйте похвалы или комментарии, чтобы поддержать создателей. Не репостите работы где-либо еще и не используйте их для обучения ИИ."
+    }
+   ]
+  }
+ ],
+ "uk": [
+  {
+   "title": "Про AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (Наш власний архів) (AO3 (Archive of Our Own))",
+     "detail": "Некомерційний архів фанів, яким керує Організація трансформаційних робіт (OTW). У ньому немає реклами, і автори зберігають права на свої роботи. Ця програма є неофіційним стороннім зчитувачем."
+    },
+    {
+     "term": "Облікові записи та запрошення (Accounts & invitations)",
+     "detail": "Для реєстрації потрібне запрошення: приєднайтеся до черги запрошень на веб-сайті та зареєструйтесь, коли прийде електронний лист. Більшість творів можна читати без входу в систему, але обмежені роботи, закладки, підписки та історія потребують облікового запису."
+    },
+    {
+     "term": "Псевд (Pseud)",
+     "detail": "псевдонім. В одному обліковому записі може бути декілька; авторські рядки показують псевдонім із назвою облікового запису в дужках, якщо вона відрізняється."
+    }
+   ]
+  },
+  {
+   "title": "Інформація про роботу (Work Info)",
+   "entries": [
+    {
+     "term": "Слава (Kudos)",
+     "detail": "Подобається \"лайк\". Кожна особа може один раз залишити похвалу за роботу; гості теж можуть."
+    },
+    {
+     "term": "Хіти (Hits)",
+     "detail": "Скільки разів відкривався твір. Повторні відвідування можуть зараховуватися більше одного разу, тому розглядайте це як приблизний показник популярності."
+    },
+    {
+     "term": "Закладки (Bookmarks)",
+     "detail": "Збережіть роботу з власними примітками та тегами, публічно чи приватно. Публічні закладки також працюють як рекомендації."
+    },
+    {
+     "term": "Розділи 3/? (Chapters 3/?)",
+     "detail": "Розміщені розділи / запланована загальна кількість. \"?\" означає, що загальна сума не встановлена; рівні числа означають, що робота завершена."
+    },
+    {
+     "term": "WIP / Завершено (WIP / Complete)",
+     "detail": "Робота в процесі / завершено."
+    },
+    {
+     "term": "Серія (Series)",
+     "detail": "Пов’язані роботи, згруповані за автором. Ви можете підписатися на цілу серію."
+    },
+    {
+     "term": "Колекції (Collections)",
+     "detail": "Групи робіт для певної теми чи події, включаючи виклики, як-от обмін подарунками та меми-підказки (наприклад, Святковий день)."
+    },
+    {
+     "term": "Обмежений (Restricted)",
+     "detail": "Роботи, які творець обмежив для авторизованих користувачів."
+    },
+    {
+     "term": "Осиротілі твори (Orphaned works)",
+     "detail": "Твори, автори яких відмовилися від власності; тепер вони належать orphan_account."
+    },
+    {
+     "term": "Анонім (Anonymous)",
+     "detail": "Роботи опубліковані в анонімній колекції, ім’я творця поки що приховано."
+    }
+   ]
+  },
+  {
+   "title": "Рейтинги (Ratings)",
+   "entries": [
+    {
+     "term": "G — Загальна аудиторія (G — General Audiences)",
+     "detail": "Підходить для будь-якого віку."
+    },
+    {
+     "term": "T — підліткова аудиторія (T — Teen And Up Audiences)",
+     "detail": "Підходить для дітей віком від 13 років."
+    },
+    {
+     "term": "М — Зрілий (M — Mature)",
+     "detail": "Теми для дорослих, менш графічні, ніж відверті."
+    },
+    {
+     "term": "Е — Явний (E — Explicit)",
+     "detail": "Відразливий вміст сексуального характеру, насильство чи інший вміст для дорослих."
+    },
+    {
+     "term": "Не оцінено (Not Rated)",
+     "detail": "Творець не вибирав рейтинг; твір міг містити будь-що."
+    }
+   ]
+  },
+  {
+   "title": "Архів попереджень (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Творець вирішив не використовувати архівні попередження (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Робота може містити будь-яке із застережень. Прочитайте на власний розсуд."
+    },
+    {
+     "term": "Попередження про архів не застосовуються (No Archive Warnings Apply)",
+     "detail": "Жодне з чотирьох основних попереджень не застосовується. Інший конфіденційний вміст може бути позначений деінде."
+    },
+    {
+     "term": "Графічні зображення насильства (Graphic Depictions Of Violence)",
+     "detail": "Наочне насильство."
+    },
+    {
+     "term": "Смерть головного героя (Major Character Death)",
+     "detail": "Головний герой гине."
+    },
+    {
+     "term": "Зґвалтування/неконф (Rape/Non-Con)",
+     "detail": "Вміст сексуального характеру без згоди."
+    },
+    {
+     "term": "Секс з неповнолітніми (Underage Sex)",
+     "detail": "Вміст сексуального характеру за участю неповнолітніх."
+    }
+   ]
+  },
+  {
+   "title": "Категорії (Categories)",
+   "entries": [
+    {
+     "term": "П/П, П/П, П/П (F/F, F/M, M/M)",
+     "detail": "Романтичні або сексуальні стосунки між жінками, жінкою та чоловіком або чоловіками."
+    },
+    {
+     "term": "Ген (Gen)",
+     "detail": "Загальне: без романтичних чи сексуальних стосунків у центрі уваги."
+    },
+    {
+     "term": "Мульти (Multi)",
+     "detail": "Більш ніж один тип стосунків."
+    },
+    {
+     "term": "інше (Other)",
+     "detail": "Інші види відносин."
+    }
+   ]
+  },
+  {
+   "title": "Теги (Tags)",
+   "entries": [
+    {
+     "term": "Фандом (Fandom)",
+     "detail": "Джерело, за яким побудовано твір. Роботи, що охоплюють кілька фандомів, є кросоверами."
+    },
+    {
+     "term": "стосунки (Relationships)",
+     "detail": "«A/B» — романтичні або сексуальні стосунки; «А і Б» — платонічні (дружба, сім’я). Порядок імен зазвичай не означає ролі."
+    },
+    {
+     "term": "Персонажі (Characters)",
+     "detail": "Персонажі, які постають у творі."
+    },
+    {
+     "term": "Додаткові теги (Additional Tags)",
+     "detail": "Теги довільної форми для тропів, тем і нотаток, наприклад Fluff, Angst, Hurt/Comfort або Alternate Universe."
+    },
+    {
+     "term": "Канонічні теги та суперечки (Canonical tags & wrangling)",
+     "detail": "Волонтери-розробники тегів пов’язують синоніми з одним канонічним тегом, тому сторінка тегів також показує твори, які використовують інші варіанти написання."
+    },
+    {
+     "term": "Пух / Страх / Боляче / Комфорт (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Мило і легко / емоційно болісно / один герой завдає болю, а інший втішає."
+    },
+    {
+     "term": "AU (альтернативний всесвіт) (AU (Alternate Universe))",
+     "detail": "Персонажі, розміщені в умовах, відмінних від канонічних, напр. Coffee Shop AU або Modern AU."
+    },
+    {
+     "term": "Хрестоматія / Ви (Reader / You)",
+     "detail": "Reader-insert працює, де «ви» є одним із персонажів."
+    }
+   ]
+  },
+  {
+   "title": "Пошук і фільтрація (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Пошук роботи (Work search)",
+     "detail": "Шукайте за ключовими словами, назвою, творцем, фаном, рейтингом, попередженнями, категорією, персонажами, зв’язками, тегами, кількістю слів, мовою, похвалою тощо. Результати надходять безпосередньо з AO3."
+    },
+    {
+     "term": "Числа і дати (Numbers & dates)",
+     "detail": "Використовуйте «> 1000», «< 500» або «100-500» для підрахунку та «< 7 днів» або «> 1 року» для дат."
+    },
+    {
+     "term": "Фільтрування тегу (Filtering a tag)",
+     "detail": "До тегу працює, додайте або виключіть більше тегів і фільтруйте за рейтингом, завершенням, кількістю слів, мовою тощо."
+    },
+    {
+     "term": "Виключення тегів (Excluding tags)",
+     "detail": "Виключіть речі, які ви не хочете бачити, наприклад стосунки чи смерть головного героя."
+    },
+    {
+     "term": "Діаграми (Charts)",
+     "detail": "Подяки, коментарі та діаграми відвідувань цієї програми використовують сортування пошуку AO3; часові діапазони базуються на останньому оновленні кожної роботи."
+    }
+   ]
+  },
+  {
+   "title": "Особливості облікового запису (Account Features)",
+   "entries": [
+    {
+     "term": "Позначено на потім (Marked for Later)",
+     "detail": "Список для прочитання; позначте роботи як прочитані, коли закінчите. Потрібно ввімкнути історію в налаштуваннях AO3."
+    },
+    {
+     "term": "історія (History)",
+     "detail": "Роботи, які ви відкриваєте під час входу в систему, реєструються у вашому обліковому записі."
+    },
+    {
+     "term": "Підписки (Subscriptions)",
+     "detail": "Підпишіться на роботу, серіал або творця, щоб отримувати оновлення електронною поштою, коли вони публікують."
+    },
+    {
+     "term": "Вхідні (Inbox)",
+     "detail": "Тут з'являються коментарі та відповіді на ваші роботи та коментарі."
+    },
+    {
+     "term": "Коментарі (Comments)",
+     "detail": "Залишайте коментарі до розділів. Творці можуть модерувати або вимикати коментарі."
+    }
+   ]
+  },
+  {
+   "title": "Використання цієї програми (Using This App)",
+   "entries": [
+    {
+     "term": "Імерсивний переклад (Immersive translation)",
+     "detail": "Торкніться кнопки перекладу під час читання, щоб відобразити переклад під кожним абзацом. Натисніть і утримуйте його, щоб відкрити налаштування перекладу. Ключі API залишаються на цьому пристрої."
+    },
+    {
+     "term": "Дзеркальні джерела (Mirror sources)",
+     "detail": "Додайте дзеркала в Налаштування → Джерело вмісту. Логіни зберігаються для кожного джерела; входьте лише на тих дзеркалах, яким довіряєте."
+    },
+    {
+     "term": "Етикет (Etiquette)",
+     "detail": "Залиште подяку або коментарі, щоб підтримати творців. Не публікуйте роботи в інших місцях і не використовуйте їх для навчання ШІ."
+    }
+   ]
+  }
+ ],
+ "pl": [
+  {
+   "title": "O AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (własne archiwum) (AO3 (Archive of Our Own))",
+     "detail": "Archiwum prac fanowskich non-profit prowadzone przez Organizację Dzieł Transformacyjnych (OTW). Nie zawiera reklam, a twórcy zachowują prawa do swoich dzieł. Ta aplikacja jest nieoficjalnym czytnikiem innej firmy."
+    },
+    {
+     "term": "Konta i zaproszenia (Accounts & invitations)",
+     "detail": "Rejestracja wymaga zaproszenia: dołącz do kolejki zaproszeń na stronie internetowej i zarejestruj się, gdy nadejdzie wiadomość e-mail. Większość dzieł można czytać bez logowania, ale dzieła zastrzeżone, zakładki, subskrypcje i historia wymagają konta."
+    },
+    {
+     "term": "Pseudo",
+     "detail": "Pseudonim. Jedno konto może mieć kilka; Bylines pokazują pseudonim, a nazwa konta w nawiasach, jeśli jest inna."
+    }
+   ]
+  },
+  {
+   "title": "Informacje o pracy (Work Info)",
+   "entries": [
+    {
+     "term": "Uznanie (Kudos)",
+     "detail": "Podobnie jak „lubię”. Każda osoba może raz zostawić uznanie w pracy; goście też mogą."
+    },
+    {
+     "term": "Hity (Hits)",
+     "detail": "Ile razy otwierano dzieło. Powtarzające się wizyty mogą się liczyć więcej niż raz, więc traktuj to jako przybliżoną miarę popularności."
+    },
+    {
+     "term": "Zakładki (Bookmarks)",
+     "detail": "Zapisz pracę z własnymi notatkami i znacznikami, publicznie lub prywatnie. Zakładki publiczne działają również jako rekomendacje."
+    },
+    {
+     "term": "Rozdziały 3/? (Chapters 3/?)",
+     "detail": "Opublikowane rozdziały / planowana suma. „?” oznacza, że ​​suma nie jest ustawiona; równe liczby oznaczają, że praca została ukończona."
+    },
+    {
+     "term": "WIP / Kompletny (WIP / Complete)",
+     "detail": "Prace w toku/zakończone."
+    },
+    {
+     "term": "Seria (Series)",
+     "detail": "Powiązane prace pogrupowane według twórcy. Możesz subskrybować całą serię."
+    },
+    {
+     "term": "Kolekcje (Collections)",
+     "detail": "Grupy prac związane z danym tematem lub wydarzeniem, obejmujące wyzwania takie jak wymiana prezentów i memy z zachętą (np. Boże Narodzenie)."
+    },
+    {
+     "term": "Ograniczone (Restricted)",
+     "detail": "Prace twórcy ograniczyły się do zalogowanych użytkowników."
+    },
+    {
+     "term": "Prace osierocone (Orphaned works)",
+     "detail": "Dzieła, których twórcy zrzekli się własności; należą teraz do konta orphan_account."
+    },
+    {
+     "term": "Anonimowy (Anonymous)",
+     "detail": "Prace przesłane do anonimowej kolekcji, na razie ukryte pod nazwiskiem twórcy."
+    }
+   ]
+  },
+  {
+   "title": "Oceny (Ratings)",
+   "entries": [
+    {
+     "term": "G — Audiencje ogólne (G — General Audiences)",
+     "detail": "Odpowiedni dla wszystkich grup wiekowych."
+    },
+    {
+     "term": "T — Widzowie dla nastolatków i starszych (T — Teen And Up Audiences)",
+     "detail": "Odpowiedni dla osób w wieku 13 lat i starszych."
+    },
+    {
+     "term": "M – Dojrzały (M — Mature)",
+     "detail": "Motywy dla dorosłych, mniej drastyczne niż dla dorosłych."
+    },
+    {
+     "term": "E – Wyraźne (E — Explicit)",
+     "detail": "Graficzne treści o charakterze seksualnym, przemocy lub inne treści dla dorosłych."
+    },
+    {
+     "term": "Brak oceny (Not Rated)",
+     "detail": "Twórca nie wybrał oceny; praca może zawierać wszystko."
+    }
+   ]
+  },
+  {
+   "title": "Archiwizuj ostrzeżenia (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Twórca zdecydował się nie używać ostrzeżeń dotyczących archiwów (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Praca może zawierać dowolne z ostrzeżeń. Czytaj według własnego uznania."
+    },
+    {
+     "term": "Nie obowiązują żadne ostrzeżenia dotyczące archiwizacji (No Archive Warnings Apply)",
+     "detail": "Żadne z czterech głównych ostrzeżeń nie ma zastosowania. Inne wrażliwe treści mogą nadal być oznaczone w innym miejscu."
+    },
+    {
+     "term": "Graficzne przedstawienia przemocy (Graphic Depictions Of Violence)",
+     "detail": "Graficzna przemoc."
+    },
+    {
+     "term": "Śmierć głównego bohatera (Major Character Death)",
+     "detail": "Główny bohater umiera."
+    },
+    {
+     "term": "Gwałt/bez skazy (Rape/Non-Con)",
+     "detail": "Treści o charakterze seksualnym za zgodą."
+    },
+    {
+     "term": "Seks nieletnich (Underage Sex)",
+     "detail": "Treści o charakterze seksualnym z udziałem nieletnich."
+    }
+   ]
+  },
+  {
+   "title": "Kategorie (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/M, M/M",
+     "detail": "Romantyczne lub seksualne relacje między kobietami, kobietą i mężczyzną lub mężczyznami."
+    },
+    {
+     "term": "gen",
+     "detail": "Ogólne: brak relacji romantycznej lub seksualnej w centrum uwagi."
+    },
+    {
+     "term": "Wielu (Multi)",
+     "detail": "Więcej niż jeden typ relacji."
+    },
+    {
+     "term": "Inny (Other)",
+     "detail": "Inne typy relacji."
+    }
+   ]
+  },
+  {
+   "title": "Tagi (Tags)",
+   "entries": [
+    {
+     "term": "Fandom",
+     "detail": "Źródło, na którym opiera się praca. Prace obejmujące kilka fandomów są skrzyżowaniami."
+    },
+    {
+     "term": "Relacje (Relationships)",
+     "detail": "„A/B” to związek romantyczny lub seksualny; „A i B” jest platoniczne (przyjaźń, rodzina). Kolejność imion zwykle nie implikuje ról."
+    },
+    {
+     "term": "Postacie (Characters)",
+     "detail": "Postacie pojawiające się w dziele."
+    },
+    {
+     "term": "Dodatkowe tagi (Additional Tags)",
+     "detail": "Tagi o dowolnym kształcie dla tropów, motywów i nut, takich jak Fluff, Angst, Hurt/Comfort lub Alternate Universe."
+    },
+    {
+     "term": "Tagi kanoniczne i spory (Canonical tags & wrangling)",
+     "detail": "Ochotnicy zajmujący się tagami łączą synonimy z jednym tagiem kanonicznym, więc na stronie tagów wyświetlane są także prace, w których zastosowano inną pisownię."
+    },
+    {
+     "term": "Puch / Niepokój / Ból / Komfort (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Słodki i lekki / emocjonalnie bolesny / jedna postać rani, a druga pociesza."
+    },
+    {
+     "term": "AU (alternatywny wszechświat) (AU (Alternate Universe))",
+     "detail": "Postacie umieszczone w innej niż kanoniczna scenerii, np. Kawiarnia AU lub Modern AU."
+    },
+    {
+     "term": "Czytelnik / Ty (Reader / You)",
+     "detail": "Wkładka czytelnika działa, gdy „ty” jesteś jedną z postaci."
+    }
+   ]
+  },
+  {
+   "title": "Wyszukiwanie i filtrowanie (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Poszukiwanie pracy (Work search)",
+     "detail": "Szukaj według słów kluczowych, tytułu, twórcy, fandomu, ocen, ostrzeżeń, kategorii, postaci, relacji, tagów, liczby słów, języka, pochwał i nie tylko. Wyniki pochodzą prosto z AO3."
+    },
+    {
+     "term": "Liczby i daty (Numbers & dates)",
+     "detail": "Użyj „> 1000”, „< 500” lub „100–500” dla zliczeń i „< 7 dni” lub „> 1 rok” dla dat."
+    },
+    {
+     "term": "Filtrowanie tagu (Filtering a tag)",
+     "detail": "W przypadku działania tagu dołącz lub wyklucz więcej tagów i filtruj według oceny, ukończenia, liczby słów, języka i tak dalej."
+    },
+    {
+     "term": "Z wyłączeniem tagów (Excluding tags)",
+     "detail": "Wyklucz rzeczy, których nie chcesz oglądać, na przykład związek lub śmierć głównego bohatera."
+    },
+    {
+     "term": "Wykresy (Charts)",
+     "detail": "Listy pochwał, komentarzy i trafień tej aplikacji korzystają z sortowania wyszukiwania AO3; zakresy czasowe opierają się na ostatniej aktualizacji każdego dzieła."
+    }
+   ]
+  },
+  {
+   "title": "Funkcje konta (Account Features)",
+   "entries": [
+    {
+     "term": "Zaznaczone na później (Marked for Later)",
+     "detail": "Lista do przeczytania; gdy skończysz, oznaczenie będzie działać jako przeczytane. Wymaga włączenia historii w preferencjach AO3."
+    },
+    {
+     "term": "Historia (History)",
+     "detail": "Prace, które otwierasz będąc zalogowanym, są rejestrowane na Twoim koncie."
+    },
+    {
+     "term": "Subskrypcje (Subscriptions)",
+     "detail": "Subskrybuj dzieło, serię lub twórcę, aby otrzymywać powiadomienia e-mailem o ich opublikowaniu."
+    },
+    {
+     "term": "Skrzynka odbiorcza (Inbox)",
+     "detail": "Tutaj pojawiają się komentarze i odpowiedzi na temat Twoich prac oraz komentarzy."
+    },
+    {
+     "term": "Komentarze (Comments)",
+     "detail": "Zostaw komentarze pod rozdziałami. Twórcy mogą moderować lub wyłączać komentarze."
+    }
+   ]
+  },
+  {
+   "title": "Korzystanie z tej aplikacji (Using This App)",
+   "entries": [
+    {
+     "term": "Wciągające tłumaczenie (Immersive translation)",
+     "detail": "Podczas czytania dotknij przycisku tłumaczenia, aby wyświetlić tłumaczenie pod każdym akapitem. Dotknij i przytrzymaj, aby otworzyć ustawienia tłumaczenia. Klucze API pozostają na tym urządzeniu."
+    },
+    {
+     "term": "Źródła lustrzane (Mirror sources)",
+     "detail": "Dodaj kopie lustrzane w Ustawieniach → Źródło treści. Dane logowania są przechowywane dla każdego źródła; loguj się tylko na zaufanych serwerach lustrzanych."
+    },
+    {
+     "term": "Etykieta (Etiquette)",
+     "detail": "Zostaw pochwały lub komentarze, aby wesprzeć twórców. Nie publikuj ponownie prac gdzie indziej ani nie używaj ich do szkolenia AI."
+    }
+   ]
+  }
+ ],
+ "tr": [
+  {
+   "title": "AO3 Hakkında (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (Kendi Arşivimiz) (AO3 (Archive of Our Own))",
+     "detail": "Dönüştürücü Çalışmalar Örgütü (OTW) tarafından yürütülen, kar amacı gütmeyen bir hayran çalışması arşivi. Hiçbir reklamı yoktur ve yaratıcılar eserlerinin haklarını saklı tutar. Bu uygulama resmi olmayan bir üçüncü taraf okuyucudur."
+    },
+    {
+     "term": "Hesaplar ve davetiyeler (Accounts & invitations)",
+     "detail": "Kayıt için davetiye gereklidir: web sitesindeki Davet Kuyruğuna katılın ve e-posta geldiğinde kaydolun. Çoğu eser giriş yapılmadan okunabilir ancak kısıtlı çalışmalar, yer imleri, abonelikler ve geçmiş için bir hesaba ihtiyaç vardır."
+    },
+    {
+     "term": "Sözde (Pseud)",
+     "detail": "Bir takma ad. Bir hesapta birden fazla hesap bulunabilir; imza satırları, farklı olduğunda parantez içinde hesap adı ile birlikte takma adı gösterir."
+    }
+   ]
+  },
+  {
+   "title": "İş Bilgileri (Work Info)",
+   "entries": [
+    {
+     "term": "Teşekkürler (Kudos)",
+     "detail": "\"Beğen\" gibi. Herkes bir esere bir kez teşekkür edebilir; misafirler de yapabilir."
+    },
+    {
+     "term": "İsabetler (Hits)",
+     "detail": "Bir eser kaç kez açıldı? Tekrarlanan ziyaretler birden fazla sayılabilir, bu nedenle bunu kabaca bir popülerlik ölçüsü olarak değerlendirin."
+    },
+    {
+     "term": "Yer imleri (Bookmarks)",
+     "detail": "Bir çalışmayı kendi notlarınız ve etiketlerinizle herkese açık veya özel olarak kaydedin. Genel yer imleri aynı zamanda öneri olarak da çalışır."
+    },
+    {
+     "term": "Bölüm 3/? (Chapters 3/?)",
+     "detail": "Yayınlanan bölümler / planlanan toplam. \"?\" toplamın belirlenmediği anlamına gelir; eşit sayılar işin tamamlandığı anlamına gelir."
+    },
+    {
+     "term": "Devam Eden Çalışma / Tamamlandı (WIP / Complete)",
+     "detail": "Çalışma devam ediyor/bitti."
+    },
+    {
+     "term": "Serisi (Series)",
+     "detail": "Yaratıcıya göre gruplandırılmış ilgili çalışmalar. Bir serinin tamamına abone olabilirsiniz."
+    },
+    {
+     "term": "Koleksiyonlar (Collections)",
+     "detail": "Hediye alışverişi ve anlık memler (ör. Noel Bayramı) gibi zorluklar da dahil olmak üzere, bir tema veya etkinlik için çalışma grupları."
+    },
+    {
+     "term": "Kısıtlı (Restricted)",
+     "detail": "Yaratıcının, oturum açmış kullanıcılarla sınırlandırdığı çalışmalar."
+    },
+    {
+     "term": "Yetim eserler (Orphaned works)",
+     "detail": "Yaratıcılarının mülkiyetinden vazgeçtiği eserler; artık yetim_hesabına aitler."
+    },
+    {
+     "term": "İsimsiz (Anonymous)",
+     "detail": "Anonim bir koleksiyonda yayınlanan çalışmalar, yaratıcının adı şimdilik gizlenmiştir."
+    }
+   ]
+  },
+  {
+   "title": "Derecelendirmeler (Ratings)",
+   "entries": [
+    {
+     "term": "G — Genel İzleyiciler (G — General Audiences)",
+     "detail": "Her yaş için uygundur."
+    },
+    {
+     "term": "T — Genç ve Üzeri Kitleler (T — Teen And Up Audiences)",
+     "detail": "13 yaş ve üzeri için uygundur."
+    },
+    {
+     "term": "M - Olgun (M — Mature)",
+     "detail": "Yetişkinlere yönelik temalar, Açıktan daha az grafik."
+    },
+    {
+     "term": "E — Açık (E — Explicit)",
+     "detail": "Sansürlenmemiş cinsel içerik, şiddet veya yetişkinlere yönelik diğer içerikler."
+    },
+    {
+     "term": "Derecelendirilmemiş (Not Rated)",
+     "detail": "Yaratıcı bir derecelendirme seçmedi; çalışma her şeyi içerebilir."
+    }
+   ]
+  },
+  {
+   "title": "Arşiv Uyarıları (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Yaratıcı Arşiv Uyarılarını Kullanmamayı Seçti (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Çalışma uyarılardan herhangi birini içerebilir. Kendi takdirinize göre okuyun."
+    },
+    {
+     "term": "Arşiv Uyarısı Uygulanmıyor (No Archive Warnings Apply)",
+     "detail": "Dört ana uyarının hiçbiri geçerli değildir. Diğer hassas içerikler yine de başka bir yerde etiketlenmiş olabilir."
+    },
+    {
+     "term": "Şiddetin Grafik Tasvirleri (Graphic Depictions Of Violence)",
+     "detail": "Grafik şiddet."
+    },
+    {
+     "term": "Başlıca Karakter Ölümü (Major Character Death)",
+     "detail": "Bir ana karakter ölür."
+    },
+    {
+     "term": "Tecavüz/Dolandırıcılık Dışı (Rape/Non-Con)",
+     "detail": "Rıza dışı cinsel içerik."
+    },
+    {
+     "term": "Reşit Olmayan Seks (Underage Sex)",
+     "detail": "Küçüklerin yer aldığı cinsel içerik."
+    }
+   ]
+  },
+  {
+   "title": "Kategoriler (Categories)",
+   "entries": [
+    {
+     "term": "K/K, K/A, A/A (F/F, F/M, M/M)",
+     "detail": "Kadınlar, bir kadın ve bir erkek veya erkekler arasındaki romantik veya cinsel ilişkiler."
+    },
+    {
+     "term": "Gen",
+     "detail": "Genel: Odak noktası olarak romantik veya cinsel ilişki yok."
+    },
+    {
+     "term": "Çoklu (Multi)",
+     "detail": "Birden fazla ilişki türü."
+    },
+    {
+     "term": "Diğer (Other)",
+     "detail": "Diğer ilişki türleri."
+    }
+   ]
+  },
+  {
+   "title": "Etiketler (Tags)",
+   "entries": [
+    {
+     "term": "Hayranlık (Fandom)",
+     "detail": "Çalışmanın dayandığı kaynak. Çeşitli fandomları kapsayan çalışmalar geçişlerdir."
+    },
+    {
+     "term": "İlişkiler (Relationships)",
+     "detail": "“A/B” romantik veya cinsel bir ilişkidir; “A & B” platoniktir (arkadaşlık, aile). İsimlerin sırası genellikle rolleri ima etmez."
+    },
+    {
+     "term": "Karakterler (Characters)",
+     "detail": "Eserde yer alan karakterler."
+    },
+    {
+     "term": "Ek Etiketler (Additional Tags)",
+     "detail": "Fluff, Angst, Hurt/Comfort veya Alternatif Evren gibi kinayeler, temalar ve notlar için serbest biçimli etiketler."
+    },
+    {
+     "term": "Kanonik etiketler ve çekişme (Canonical tags & wrangling)",
+     "detail": "Gönüllü etiket düzenleyicileri eşanlamlıları tek bir kanonik etikete bağlar, böylece bir etiket sayfası aynı zamanda diğer yazımların kullanıldığı çalışmaları da gösterir."
+    },
+    {
+     "term": "Kabartmak / Öfke / Acı / Rahatlık (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Tatlı ve hafif / duygusal açıdan acı verici / bir karakter onları incitiyor ve diğeri onları rahatlatıyor."
+    },
+    {
+     "term": "AU (Alternatif Evren) (AU (Alternate Universe))",
+     "detail": "Canon'dan farklı bir ortama yerleştirilmiş karakterler, ör. Kahve Dükkanı AU veya Modern AU."
+    },
+    {
+     "term": "Okuyucu / Siz (Reader / You)",
+     "detail": "Reader-insert, \"sizin\" karakterlerden biri olduğunuz yerde çalışır."
+    }
+   ]
+  },
+  {
+   "title": "Arama ve Filtreleme (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "İş arama (Work search)",
+     "detail": "Anahtar kelimelere, başlığa, yaratıcıya, hayran kitlesine, derecelendirmeye, uyarılara, kategoriye, karakterlere, ilişkilere, etiketlere, kelime sayısına, dile, tebriklere ve daha fazlasına göre arama yapın. Sonuçlar doğrudan AO3'ten gelir."
+    },
+    {
+     "term": "Sayılar ve tarihler (Numbers & dates)",
+     "detail": "Sayımlar için “> 1000”, “< 500” veya “100-500”, tarihler için “< 7 gün” veya “> 1 yıl” kullanın."
+    },
+    {
+     "term": "Bir etiketi filtreleme (Filtering a tag)",
+     "detail": "Bir etiketin çalışmalarına daha fazla etiket ekleyin veya hariç tutun ve derecelendirmeye, tamamlamaya, kelime sayısına, dile vb. göre filtreleyin."
+    },
+    {
+     "term": "Etiketleri hariç tutma (Excluding tags)",
+     "detail": "Bir ilişki veya Büyük Karakter Ölümü gibi görmek istemediğiniz şeyleri hariç tutun."
+    },
+    {
+     "term": "Grafikler (Charts)",
+     "detail": "Bu uygulamanın tebrikleri, yorumları ve hit listeleri AO3'ün arama sıralamasını kullanır; zaman aralıkları her çalışmanın son güncellemesine dayanmaktadır."
+    }
+   ]
+  },
+  {
+   "title": "Hesap Özellikleri (Account Features)",
+   "entries": [
+    {
+     "term": "Daha Sonra İşaretlendi (Marked for Later)",
+     "detail": "Okunacaklar listesi; işareti, işiniz bittiğinde okundu olarak çalışır. AO3 tercihlerinizde geçmişin etkinleştirilmesini gerektirir."
+    },
+    {
+     "term": "Tarih (History)",
+     "detail": "Giriş yaptığınızda açtığınız çalışmalar hesabınıza kaydedilir."
+    },
+    {
+     "term": "Abonelikler (Subscriptions)",
+     "detail": "Bir esere, diziye veya yaratıcıya, yayınlandıklarında e-posta güncellemeleri almak için abone olun."
+    },
+    {
+     "term": "Gelen kutusu (Inbox)",
+     "detail": "Çalışmalarınız ve yorumlarınız hakkındaki yorumlar ve yanıtlar burada görünür."
+    },
+    {
+     "term": "Yorumlar (Comments)",
+     "detail": "Bölümlere yorum bırakın. İçerik oluşturucular yorumları denetleyebilir veya devre dışı bırakabilir."
+    }
+   ]
+  },
+  {
+   "title": "Bu Uygulamayı Kullanma (Using This App)",
+   "entries": [
+    {
+     "term": "Sürükleyici çeviri (Immersive translation)",
+     "detail": "Her paragrafın altında bir çevirinin gösterilmesi için okurken çevir düğmesine dokunun. Çeviri ayarlarını açmak için buna dokunup basılı tutun. API anahtarları bu cihazda kalır."
+    },
+    {
+     "term": "Ayna kaynakları (Mirror sources)",
+     "detail": "Ayarlar → İçerik Kaynağı'na ayna ekleyin. Oturum açma bilgileri kaynak başına tutulur; yalnızca güvendiğiniz aynalarda oturum açın."
+    },
+    {
+     "term": "Görgü kuralları (Etiquette)",
+     "detail": "İçerik oluşturucuları desteklemek için tebriklerinizi veya yorumlarınızı bırakın. Çalışmalarınızı başka bir yerde yeniden yayınlamayın veya yapay zeka eğitimi için kullanmayın."
+    }
+   ]
+  }
+ ],
+ "nl": [
+  {
+   "title": "Over AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (eigen archief) (AO3 (Archive of Our Own))",
+     "detail": "Een non-profit fanwerkarchief beheerd door de Organization for Transformative Works (OTW). Er zijn geen advertenties en makers behouden de rechten op hun werken. Deze app is een onofficiële lezer van derden."
+    },
+    {
+     "term": "Accounts & uitnodigingen (Accounts & invitations)",
+     "detail": "Voor registratie is een uitnodiging nodig: sluit u aan bij de uitnodigingswachtrij op de website en meld u aan zodra de e-mail binnenkomt. De meeste werken kunnen worden gelezen zonder in te loggen, maar beperkte werken, bladwijzers, abonnementen en geschiedenis hebben een account nodig."
+    },
+    {
+     "term": "Pseud",
+     "detail": "Een pseudoniem. Eén account kan meerdere hebben; bylines tonen de pseudoniem, met de accountnaam tussen haakjes als deze verschillend is."
+    }
+   ]
+  },
+  {
+   "title": "Werkinformatie (Work Info)",
+   "entries": [
+    {
+     "term": "Een pluim (Kudos)",
+     "detail": "Als een “vind ik leuk”. Iedereen kan één keer een pluim voor een werk achterlaten; gasten kunnen dat ook."
+    },
+    {
+     "term": "Hits",
+     "detail": "Hoe vaak is een werk geopend. Herhaalde bezoeken kunnen meer dan één keer tellen, dus beschouw dit als een ruwe maatstaf voor de populariteit."
+    },
+    {
+     "term": "Bladwijzers (Bookmarks)",
+     "detail": "Bewaar een werk met uw eigen aantekeningen en tags, openbaar of privé. Openbare bladwijzers werken ook als aanbevelingen."
+    },
+    {
+     "term": "Hoofdstukken 3/? (Chapters 3/?)",
+     "detail": "Geposte hoofdstukken / gepland totaal. “?” betekent dat het totaal niet is ingesteld; gelijke aantallen betekenen dat het werk voltooid is."
+    },
+    {
+     "term": "WIP / Voltooid (WIP / Complete)",
+     "detail": "Werk in uitvoering/voltooid."
+    },
+    {
+     "term": "Serie (Series)",
+     "detail": "Gerelateerde werken gegroepeerd op maker. Je kunt je abonneren op een hele serie."
+    },
+    {
+     "term": "Collecties (Collections)",
+     "detail": "Groepen werken voor een thema of evenement, inclusief uitdagingen zoals het uitwisselen van geschenken en snelle memes (bijv. Yuletide)."
+    },
+    {
+     "term": "Beperkt (Restricted)",
+     "detail": "Werken die de maker heeft beperkt tot ingelogde gebruikers."
+    },
+    {
+     "term": "Verweesde werken (Orphaned works)",
+     "detail": "Werken waarvan de makers het eigendom hebben opgegeven; ze behoren nu tot orphan_account."
+    },
+    {
+     "term": "Anoniem (Anonymous)",
+     "detail": "Werken geplaatst in een anonieme collectie, waarbij de naam van de maker voorlopig verborgen is."
+    }
+   ]
+  },
+  {
+   "title": "Beoordelingen (Ratings)",
+   "entries": [
+    {
+     "term": "G — Algemeen publiek (G — General Audiences)",
+     "detail": "Geschikt voor alle leeftijden."
+    },
+    {
+     "term": "T - Publiek voor tieners en volwassenen (T — Teen And Up Audiences)",
+     "detail": "Geschikt voor kinderen vanaf 13 jaar."
+    },
+    {
+     "term": "M — Volwassen (M — Mature)",
+     "detail": "Volwassen thema's, minder grafisch dan expliciet."
+    },
+    {
+     "term": "E — Expliciet (E — Explicit)",
+     "detail": "Grafische seksuele inhoud, geweld of andere inhoud voor volwassenen."
+    },
+    {
+     "term": "Niet beoordeeld (Not Rated)",
+     "detail": "De maker heeft geen beoordeling gekozen; het werk kan van alles zijn."
+    }
+   ]
+  },
+  {
+   "title": "Archiefwaarschuwingen (Archive Warnings)",
+   "entries": [
+    {
+     "term": "De maker heeft ervoor gekozen om geen archiefwaarschuwingen te gebruiken (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Het werk kan een van de waarschuwingen bevatten. Lees naar eigen inzicht."
+    },
+    {
+     "term": "Er zijn geen archiefwaarschuwingen van toepassing (No Archive Warnings Apply)",
+     "detail": "Geen van de vier belangrijkste waarschuwingen is van toepassing. Andere gevoelige inhoud kan nog steeds elders worden getagd."
+    },
+    {
+     "term": "Grafische afbeeldingen van geweld (Graphic Depictions Of Violence)",
+     "detail": "Grafisch geweld."
+    },
+    {
+     "term": "De dood van een belangrijk personage (Major Character Death)",
+     "detail": "Een hoofdpersoon sterft."
+    },
+    {
+     "term": "Verkrachting/niet-oplichting (Rape/Non-Con)",
+     "detail": "Seksuele inhoud zonder wederzijds goedvinden."
+    },
+    {
+     "term": "Seks met minderjarigen (Underage Sex)",
+     "detail": "Seksuele inhoud waarbij minderjarigen betrokken zijn."
+    }
+   ]
+  },
+  {
+   "title": "Categorieën (Categories)",
+   "entries": [
+    {
+     "term": "V/V, F/M, M/M (F/F, F/M, M/M)",
+     "detail": "Romantische of seksuele relaties tussen vrouwen, een vrouw en een man, of mannen."
+    },
+    {
+     "term": "Gen",
+     "detail": "Algemeen: geen romantische of seksuele relatie als focus."
+    },
+    {
+     "term": "Meervoudig (Multi)",
+     "detail": "Meer dan één type relatie."
+    },
+    {
+     "term": "Ander (Other)",
+     "detail": "Andere soorten relaties."
+    }
+   ]
+  },
+  {
+   "title": "Labels (Tags)",
+   "entries": [
+    {
+     "term": "Fandom",
+     "detail": "De bron waarop het werk is gebaseerd. Werken die verschillende fandoms omspannen, zijn cross-overs."
+    },
+    {
+     "term": "Relaties (Relationships)",
+     "detail": "“A/B” is een romantische of seksuele relatie; “A & B” is platonisch (vriendschap, familie). De volgorde van de namen impliceert meestal geen rollen."
+    },
+    {
+     "term": "Karakters (Characters)",
+     "detail": "Personages die in het werk voorkomen."
+    },
+    {
+     "term": "Extra labels (Additional Tags)",
+     "detail": "Vrije vormtags voor stijlfiguren, thema's en notities, zoals Fluff, Angst, Hurt/Comfort of Alternate Universe."
+    },
+    {
+     "term": "Canonieke tags en ruzie (Canonical tags & wrangling)",
+     "detail": "Vrijwillige tagbeheerders koppelen synoniemen aan één canonieke tag, zodat een tagpagina ook werken toont die andere spellingen gebruiken."
+    },
+    {
+     "term": "Pluis / Angst / Pijn / Troost (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Lief en licht / emotioneel pijnlijk / het ene personage doet pijn en het andere troost ze."
+    },
+    {
+     "term": "AU (alternatief universum) (AU (Alternate Universe))",
+     "detail": "Karakters geplaatst in een andere setting dan de canon, b.v. Coffeeshop AU of moderne AU."
+    },
+    {
+     "term": "Lezer / Jij (Reader / You)",
+     "detail": "Reader-insert werkt waarbij “jij” een van de karakters bent."
+    }
+   ]
+  },
+  {
+   "title": "Zoeken en filteren (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Werk zoeken (Work search)",
+     "detail": "Zoek op trefwoorden, titel, maker, fandom, beoordeling, waarschuwingen, categorie, karakters, relaties, tags, aantal woorden, taal, complimenten en meer. De resultaten komen rechtstreeks uit AO3."
+    },
+    {
+     "term": "Cijfers & data (Numbers & dates)",
+     "detail": "Gebruik “> 1000”, “< 500” of “100-500” voor tellingen, en “< 7 dagen” of “> 1 jaar” voor datums."
+    },
+    {
+     "term": "Een tag filteren (Filtering a tag)",
+     "detail": "Bij de werking van een tag kunt u meer tags opnemen of uitsluiten en filteren op beoordeling, voltooiing, aantal woorden, taal enzovoort."
+    },
+    {
+     "term": "Exclusief tags (Excluding tags)",
+     "detail": "Sluit dingen uit die je niet wilt zien, zoals een relatie of de dood van een belangrijk personage."
+    },
+    {
+     "term": "Grafieken (Charts)",
+     "detail": "De complimenten, commentaren en hitlijsten van deze app maken gebruik van de zoeksortering van AO3; tijdsbereiken zijn gebaseerd op de laatste update van elk werk."
+    }
+   ]
+  },
+  {
+   "title": "Accountfuncties (Account Features)",
+   "entries": [
+    {
+     "term": "Gemarkeerd voor later (Marked for Later)",
+     "detail": "Een te lezen lijst; mark werkt als gelezen als je klaar bent. Vereist dat de geschiedenis is ingeschakeld in uw AO3-voorkeuren."
+    },
+    {
+     "term": "Geschiedenis (History)",
+     "detail": "Werken die u opent terwijl u bent ingelogd, worden opgenomen in uw account."
+    },
+    {
+     "term": "Abonnementen (Subscriptions)",
+     "detail": "Abonneer je op een werk, serie of maker om e-mailupdates te ontvangen wanneer ze iets posten."
+    },
+    {
+     "term": "Postvak IN (Inbox)",
+     "detail": "Opmerkingen en antwoorden op uw werken en opmerkingen verschijnen hier."
+    },
+    {
+     "term": "Opmerkingen (Comments)",
+     "detail": "Laat commentaar achter op hoofdstukken. Makers kunnen reacties modereren of uitschakelen."
+    }
+   ]
+  },
+  {
+   "title": "Deze app gebruiken (Using This App)",
+   "entries": [
+    {
+     "term": "Meeslepende vertaling (Immersive translation)",
+     "detail": "Tik tijdens het lezen op de vertaalknop om onder elke paragraaf een vertaling weer te geven. Houd uw vinger erop om de vertaalinstellingen te openen. API-sleutels blijven op dit apparaat staan."
+    },
+    {
+     "term": "Spiegel bronnen (Mirror sources)",
+     "detail": "Voeg spiegels toe via Instellingen → Inhoudsbron. Logins worden per bron bijgehouden; log alleen in op spiegels die u vertrouwt."
+    },
+    {
+     "term": "Etiquette",
+     "detail": "Laat complimenten of opmerkingen achter om makers te steunen. Plaats geen werken elders en gebruik ze niet voor AI-training."
+    }
+   ]
+  }
+ ],
+ "ar": [
+  {
+   "title": "حول AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (الأرشيف الخاص بنا) (AO3 (Archive of Our Own))",
+     "detail": "أرشيف غير ربحي لأعمال المعجبين تديره منظمة الأعمال التحويلية (OTW). لا تحتوي على إعلانات، ويحتفظ المبدعون بحقوق أعمالهم. هذا التطبيق هو قارئ غير رسمي لجهة خارجية."
+    },
+    {
+     "term": "الحسابات والدعوات (Accounts & invitations)",
+     "detail": "يحتاج التسجيل إلى دعوة: انضم إلى قائمة انتظار الدعوات على الموقع وقم بالتسجيل عند وصول البريد الإلكتروني. يمكن قراءة معظم الأعمال دون تسجيل الدخول، لكن الأعمال المقيدة والإشارات المرجعية والاشتراكات والتاريخ تحتاج إلى حساب."
+    },
+    {
+     "term": "زائفة (Pseud)",
+     "detail": "اسم قلم. يمكن أن يحتوي الحساب الواحد على عدة حسابات؛ تُظهر الخطوط الثانوية الاسم المستعار، مع اسم الحساب بين قوسين عندما يكون مختلفًا."
+    }
+   ]
+  },
+  {
+   "title": "معلومات العمل (Work Info)",
+   "entries": [
+    {
+     "term": "مجد (Kudos)",
+     "detail": "مثل \"مثل\". يمكن لكل شخص أن يترك شهرة على العمل مرة واحدة؛ يمكن للضيوف أيضًا."
+    },
+    {
+     "term": "الزيارات (Hits)",
+     "detail": "كم مرة تم فتح العمل. قد يتم احتساب الزيارات المتكررة أكثر من مرة، لذا تعامل معها كمقياس تقريبي للشعبية."
+    },
+    {
+     "term": "الإشارات المرجعية (Bookmarks)",
+     "detail": "احفظ العمل باستخدام ملاحظاتك وعلاماتك الخاصة، بشكل عام أو خاص. تعمل الإشارات المرجعية العامة أيضًا كتوصيات."
+    },
+    {
+     "term": "الفصل 3/؟ (Chapters 3/?)",
+     "detail": "الفصول المنشورة / المجموع المخطط له. \"؟\" يعني لم يتم تعيين المجموع؛ الأعداد المتساوية تعني أن العمل قد اكتمل."
+    },
+    {
+     "term": "ويب / كامل (WIP / Complete)",
+     "detail": "العمل جاري / انتهى ."
+    },
+    {
+     "term": "سلسلة (Series)",
+     "detail": "الأعمال ذات الصلة التي تم تجميعها من قبل المبدع. يمكنك الاشتراك في سلسلة كاملة."
+    },
+    {
+     "term": "المجموعات (Collections)",
+     "detail": "مجموعات من الأعمال لموضوع أو حدث، بما في ذلك التحديات مثل تبادل الهدايا والميمات السريعة (مثل عيد الميلاد)."
+    },
+    {
+     "term": "مقيد (Restricted)",
+     "detail": "يقتصر عمل المنشئ على المستخدمين الذين قاموا بتسجيل الدخول."
+    },
+    {
+     "term": "أعمال يتيمة (Orphaned works)",
+     "detail": "المصنفات التي تخلى منشئوها عن ملكيتها؛ إنهم ينتمون الآن إلى orphan_account."
+    },
+    {
+     "term": "مجهول (Anonymous)",
+     "detail": "تم نشر الأعمال في مجموعة مجهولة، مع إخفاء اسم المنشئ في الوقت الحالي."
+    }
+   ]
+  },
+  {
+   "title": "التقييمات (Ratings)",
+   "entries": [
+    {
+     "term": "ز- الجمهور العام (G — General Audiences)",
+     "detail": "مناسبة لجميع الأعمار."
+    },
+    {
+     "term": "T - الجماهير في سن المراهقة وما فوق (T — Teen And Up Audiences)",
+     "detail": "مناسبة للأعمار من 13 سنة فما فوق."
+    },
+    {
+     "term": "م – ناضج (M — Mature)",
+     "detail": "موضوعات للبالغين، أقل رسومية من المواضيع الصريحة."
+    },
+    {
+     "term": "ه - صريح (E — Explicit)",
+     "detail": "محتوى جنسي مصور أو عنف أو محتوى للبالغين آخر."
+    },
+    {
+     "term": "غير مصنف (Not Rated)",
+     "detail": "لم يقم المنشئ باختيار التقييم؛ يمكن أن يحتوي العمل على أي شيء."
+    }
+   ]
+  },
+  {
+   "title": "تحذيرات الأرشيف (Archive Warnings)",
+   "entries": [
+    {
+     "term": "اختار المنشئ عدم استخدام تحذيرات الأرشيف (Creator Chose Not To Use Archive Warnings)",
+     "detail": "قد يحتوي العمل على أي من التحذيرات. اقرأ حسب تقديرك الخاص."
+    },
+    {
+     "term": "لا تنطبق تحذيرات الأرشيف (No Archive Warnings Apply)",
+     "detail": "لا ينطبق أي من التحذيرات الأربعة الرئيسية. قد يتم وضع علامة على محتوى حساس آخر في مكان آخر."
+    },
+    {
+     "term": "تصوير رسومي للعنف (Graphic Depictions Of Violence)",
+     "detail": "العنف المصور."
+    },
+    {
+     "term": "وفاة الشخصية الرئيسية (Major Character Death)",
+     "detail": "وفاة شخصية رئيسية."
+    },
+    {
+     "term": "الاغتصاب / عدم الخداع (Rape/Non-Con)",
+     "detail": "المحتوى الجنسي غير التوافقي."
+    },
+    {
+     "term": "الجنس دون السن القانونية (Underage Sex)",
+     "detail": "المحتوى الجنسي الذي يشمل القُصّر."
+    }
+   ]
+  },
+  {
+   "title": "الفئات (Categories)",
+   "entries": [
+    {
+     "term": "f/f، f/m، m/m (F/F, F/M, M/M)",
+     "detail": "العلاقات الرومانسية أو الجنسية بين المرأة، المرأة والرجل، أو الرجال."
+    },
+    {
+     "term": "الجنرال (Gen)",
+     "detail": "عام: لا توجد علاقة رومانسية أو جنسية هي محور التركيز."
+    },
+    {
+     "term": "متعدد (Multi)",
+     "detail": "أكثر من نوع من العلاقة."
+    },
+    {
+     "term": "آخر (Other)",
+     "detail": "أنواع أخرى من العلاقات."
+    }
+   ]
+  },
+  {
+   "title": "العلامات (Tags)",
+   "entries": [
+    {
+     "term": "فندوم (Fandom)",
+     "detail": "المصدر الذي يستند إليه العمل. الأعمال التي تمتد إلى العديد من القواعد الجماهيرية هي عمليات انتقال."
+    },
+    {
+     "term": "العلاقات (Relationships)",
+     "detail": "\"أ/ب\" هي علاقة رومانسية أو جنسية؛ \"أ و ب\" أفلاطوني (الصداقة، الأسرة). ترتيب الأسماء عادة لا يتضمن الأدوار."
+    },
+    {
+     "term": "الشخصيات (Characters)",
+     "detail": "الشخصيات التي تظهر في العمل."
+    },
+    {
+     "term": "علامات إضافية (Additional Tags)",
+     "detail": "علامات ذات شكل حر للمجازات والموضوعات والملاحظات، مثل Fluff أو Angst أو Hurt/Comfort أو Alternate Universe."
+    },
+    {
+     "term": "العلامات الأساسية والمشاحنات (Canonical tags & wrangling)",
+     "detail": "يقوم منسقو العلامات التطوعية بربط المرادفات بعلامة أساسية واحدة، لذلك تعرض صفحة العلامات أيضًا الأعمال التي استخدمت تهجئة أخرى."
+    },
+    {
+     "term": "زغب/قلق/أذى/راحة (Fluff / Angst / Hurt/Comfort)",
+     "detail": "حلوة وخفيفة / مؤلمة عاطفياً / شخصية تتألم وأخرى تريحها."
+    },
+    {
+     "term": "الاتحاد الأفريقي (الكون البديل) (AU (Alternate Universe))",
+     "detail": "الأحرف الموضوعة في بيئة مختلفة عن Canon، على سبيل المثال. مقهى AU أو AU الحديث."
+    },
+    {
+     "term": "القارئ / أنت (Reader / You)",
+     "detail": "تعمل خاصية Reader-insert حيث تكون كلمة \"أنت\" أحد الشخصيات."
+    }
+   ]
+  },
+  {
+   "title": "البحث والتصفية (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "بحث العمل (Work search)",
+     "detail": "البحث حسب الكلمات الرئيسية، العنوان، المنشئ، القاعدة الجماهيرية، التصنيف، التحذيرات، الفئة، الشخصيات، العلاقات، العلامات، عدد الكلمات، اللغة، الشهرة والمزيد. النتائج تأتي مباشرة من AO3."
+    },
+    {
+     "term": "الأرقام والتواريخ (Numbers & dates)",
+     "detail": "استخدم \"> 1000\" أو \"< 500\" أو \"100-500\" للأعداد، و\"< 7 أيام\" أو \"> 1 سنة\" للتواريخ."
+    },
+    {
+     "term": "تصفية العلامة (Filtering a tag)",
+     "detail": "في أعمال العلامة، قم بتضمين أو استبعاد المزيد من العلامات والتصفية حسب التصنيف والإكمال وعدد الكلمات واللغة وما إلى ذلك."
+    },
+    {
+     "term": "استبعاد العلامات (Excluding tags)",
+     "detail": "استبعد الأشياء التي لا تريد رؤيتها، مثل العلاقة أو وفاة الشخصية الرئيسية."
+    },
+    {
+     "term": "الرسوم البيانية (Charts)",
+     "detail": "تستخدم مخططات الشهرة والتعليقات والنتائج لهذا التطبيق فرز البحث الخاص بـ AO3؛ تعتمد النطاقات الزمنية على آخر تحديث لكل عمل."
+    }
+   ]
+  },
+  {
+   "title": "مميزات الحساب (Account Features)",
+   "entries": [
+    {
+     "term": "تم وضع علامة عليها لاحقًا (Marked for Later)",
+     "detail": "قائمة للقراءة؛ تعمل العلامة كقراءة عند الانتهاء. يتطلب تمكين السجل في تفضيلات AO3 الخاصة بك."
+    },
+    {
+     "term": "التاريخ (History)",
+     "detail": "يتم تسجيل الأعمال التي تفتحها أثناء تسجيل الدخول في حسابك."
+    },
+    {
+     "term": "الاشتراكات (Subscriptions)",
+     "detail": "اشترك في عمل أو سلسلة أو منشئ محتوى للحصول على تحديثات عبر البريد الإلكتروني عند النشر."
+    },
+    {
+     "term": "البريد الوارد (Inbox)",
+     "detail": "تظهر هنا التعليقات والردود على أعمالك وتعليقاتك."
+    },
+    {
+     "term": "التعليقات (Comments)",
+     "detail": "ترك التعليقات على الفصول. يمكن لمنشئي المحتوى تعديل التعليقات أو تعطيلها."
+    }
+   ]
+  },
+  {
+   "title": "باستخدام هذا التطبيق (Using This App)",
+   "entries": [
+    {
+     "term": "ترجمة غامرة (Immersive translation)",
+     "detail": "اضغط على زر الترجمة أثناء القراءة لإظهار الترجمة أسفل كل فقرة. المسه مع الاستمرار لفتح إعدادات الترجمة. تبقى مفاتيح API على هذا الجهاز."
+    },
+    {
+     "term": "مصادر مرآة (Mirror sources)",
+     "detail": "أضف مرايا في الإعدادات → مصدر المحتوى. يتم الاحتفاظ بتسجيلات الدخول لكل مصدر؛ قم بتسجيل الدخول فقط على المرايا التي تثق بها."
+    },
+    {
+     "term": "آداب (Etiquette)",
+     "detail": "ترك مجد أو تعليقات لدعم المبدعين. لا تقم بإعادة نشر الأعمال في مكان آخر أو استخدامها للتدريب على الذكاء الاصطناعي."
+    }
+   ]
+  }
+ ],
+ "hi": [
+  {
+   "title": "AO3 के बारे में (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (हमारा अपना पुरालेख) (AO3 (Archive of Our Own))",
+     "detail": "ऑर्गनाइजेशन फॉर ट्रांसफॉर्मेटिव वर्क्स (ओटीडब्ल्यू) द्वारा संचालित एक गैर-लाभकारी फैनवर्क संग्रह। इसमें कोई विज्ञापन नहीं है, और निर्माता अपने कार्यों के अधिकार रखते हैं। यह ऐप एक अनौपचारिक तृतीय-पक्ष रीडर है।"
+    },
+    {
+     "term": "खाते एवं आमंत्रण (Accounts & invitations)",
+     "detail": "पंजीकरण के लिए निमंत्रण की आवश्यकता है: वेबसाइट पर निमंत्रण कतार में शामिल हों और ईमेल आने पर साइन अप करें। अधिकांश कार्यों को लॉग इन किए बिना पढ़ा जा सकता है, लेकिन प्रतिबंधित कार्यों, बुकमार्क, सदस्यता और इतिहास के लिए एक खाते की आवश्यकता होती है।"
+    },
+    {
+     "term": "छद्म (Pseud)",
+     "detail": "एक कलम नाम. एक खाते में कई हो सकते हैं; बाइलाइनें अलग-अलग होने पर कोष्ठक में खाता नाम के साथ छद्म दिखाती हैं।"
+    }
+   ]
+  },
+  {
+   "title": "कार्य की जानकारी (Work Info)",
+   "entries": [
+    {
+     "term": "यश (Kudos)",
+     "detail": "एक \"पसंद\" की तरह. प्रत्येक व्यक्ति किसी कार्य पर एक बार प्रशंसा छोड़ सकता है; मेहमान भी कर सकते हैं."
+    },
+    {
+     "term": "हिट्स (Hits)",
+     "detail": "कोई कार्य कितनी बार खोला गया. बार-बार आने की गिनती एक से अधिक बार हो सकती है, इसलिए इसे लोकप्रियता का एक मोटा माप मानें।"
+    },
+    {
+     "term": "बुकमार्क (Bookmarks)",
+     "detail": "किसी कार्य को सार्वजनिक या निजी तौर पर अपने नोट्स और टैग के साथ सहेजें। सार्वजनिक बुकमार्क अनुशंसाओं के रूप में भी काम करते हैं।"
+    },
+    {
+     "term": "अध्याय 3/? (Chapters 3/?)",
+     "detail": "पोस्ट किए गए अध्याय/योजनाबद्ध कुल। “?” इसका मतलब है कि कुल सेट नहीं है; समान संख्या का मतलब है कि कार्य पूरा हो गया है।"
+    },
+    {
+     "term": "डब्ल्यूआईपी/पूर्ण (WIP / Complete)",
+     "detail": "कार्य प्रगति पर/समाप्त।"
+    },
+    {
+     "term": "शृंखला (Series)",
+     "detail": "संबंधित कार्य निर्माता द्वारा समूहीकृत किए गए। आप एक पूरी श्रृंखला की सदस्यता ले सकते हैं."
+    },
+    {
+     "term": "संग्रह (Collections)",
+     "detail": "किसी थीम या इवेंट के लिए कार्यों के समूह, जिनमें उपहारों के आदान-प्रदान और प्रॉम्प्ट मीम्स (उदाहरण के लिए यूलटाइड) जैसी चुनौतियाँ शामिल हैं।"
+    },
+    {
+     "term": "प्रतिबंधित (Restricted)",
+     "detail": "निर्माता ने कार्यों को लॉग-इन उपयोगकर्ताओं तक सीमित कर दिया है।"
+    },
+    {
+     "term": "अनाथ कार्य (Orphaned works)",
+     "detail": "वे कार्य जिनके रचनाकारों ने स्वामित्व छोड़ दिया; वे अब अनाथ खाते से संबंधित हैं।"
+    },
+    {
+     "term": "गुमनाम (Anonymous)",
+     "detail": "रचनाएँ एक गुमनाम संग्रह में पोस्ट की गईं, निर्माता का नाम अभी छिपा हुआ है।"
+    }
+   ]
+  },
+  {
+   "title": "रेटिंग (Ratings)",
+   "entries": [
+    {
+     "term": "जी - सामान्य दर्शक (G — General Audiences)",
+     "detail": "सभी उम्र के लिए उपयुक्त."
+    },
+    {
+     "term": "टी - किशोर और ऊपर के दर्शक (T — Teen And Up Audiences)",
+     "detail": "13 वर्ष और उससे अधिक उम्र के लिए उपयुक्त।"
+    },
+    {
+     "term": "एम - परिपक्व (M — Mature)",
+     "detail": "वयस्क थीम, स्पष्ट की तुलना में कम ग्राफ़िक।"
+    },
+    {
+     "term": "ई - स्पष्ट (E — Explicit)",
+     "detail": "ग्राफिक यौन सामग्री, हिंसा या अन्य वयस्क सामग्री।"
+    },
+    {
+     "term": "रेटेड नहीं (Not Rated)",
+     "detail": "निर्माता ने कोई रेटिंग नहीं चुनी; कार्य में कुछ भी शामिल हो सकता है."
+    }
+   ]
+  },
+  {
+   "title": "पुरालेख चेतावनियाँ (Archive Warnings)",
+   "entries": [
+    {
+     "term": "निर्माता ने पुरालेख चेतावनियों का उपयोग न करने का निर्णय लिया (Creator Chose Not To Use Archive Warnings)",
+     "detail": "कार्य में कोई भी चेतावनियाँ शामिल हो सकती हैं। अपने विवेक से पढ़ें."
+    },
+    {
+     "term": "कोई पुरालेख चेतावनी लागू नहीं होती (No Archive Warnings Apply)",
+     "detail": "चार मुख्य चेतावनियों में से कोई भी लागू नहीं होती. अन्य संवेदनशील सामग्री को अभी भी कहीं और टैग किया जा सकता है।"
+    },
+    {
+     "term": "हिंसा का ग्राफिक चित्रण (Graphic Depictions Of Violence)",
+     "detail": "ग्राफ़िक हिंसा."
+    },
+    {
+     "term": "प्रमुख पात्र मृत्यु (Major Character Death)",
+     "detail": "एक मुख्य पात्र मर जाता है."
+    },
+    {
+     "term": "बलात्कार/गैर-चोरी (Rape/Non-Con)",
+     "detail": "गैर-सहमति वाली यौन सामग्री."
+    },
+    {
+     "term": "कम उम्र में सेक्स (Underage Sex)",
+     "detail": "नाबालिगों से जुड़ी यौन सामग्री."
+    }
+   ]
+  },
+  {
+   "title": "श्रेणियाँ (Categories)",
+   "entries": [
+    {
+     "term": "एफ/एफ, एफ/एम, एम/एम (F/F, F/M, M/M)",
+     "detail": "महिलाओं, एक महिला और एक पुरुष, या पुरुषों के बीच रोमांटिक या यौन संबंध।"
+    },
+    {
+     "term": "जनरल (Gen)",
+     "detail": "सामान्य: फोकस के रूप में कोई रोमांटिक या यौन संबंध नहीं।"
+    },
+    {
+     "term": "बहु (Multi)",
+     "detail": "एक से अधिक प्रकार के रिश्ते."
+    },
+    {
+     "term": "अन्य (Other)",
+     "detail": "अन्य प्रकार के रिश्ते."
+    }
+   ]
+  },
+  {
+   "title": "टैग (Tags)",
+   "entries": [
+    {
+     "term": "प्रशंसक (Fandom)",
+     "detail": "कार्य जिस स्रोत पर आधारित है. कई प्रशंसकों में फैले कार्य क्रॉसओवर हैं।"
+    },
+    {
+     "term": "रिश्ते (Relationships)",
+     "detail": "\"ए/बी\" एक रोमांटिक या यौन संबंध है; \"ए और बी\" प्लेटोनिक (दोस्ती, परिवार) है। नामों का क्रम आम तौर पर भूमिकाओं का संकेत नहीं देता है।"
+    },
+    {
+     "term": "अक्षर (Characters)",
+     "detail": "पात्र जो कार्य में दिखाई देते हैं।"
+    },
+    {
+     "term": "अतिरिक्त टैग (Additional Tags)",
+     "detail": "ट्रॉप्स, थीम और नोट्स के लिए फ़्रीफ़ॉर्म टैग, जैसे फ़्लफ़, एंगस्ट, हर्ट/कम्फर्ट या अल्टरनेट यूनिवर्स।"
+    },
+    {
+     "term": "विहित टैग और तकरार (Canonical tags & wrangling)",
+     "detail": "वालंटियर टैग रैंगलर समानार्थक शब्द को एक कैनोनिकल टैग से जोड़ते हैं, इसलिए एक टैग पेज उन कार्यों को भी दिखाता है जिनमें अन्य वर्तनी का उपयोग किया जाता है।"
+    },
+    {
+     "term": "फुलाना/क्रोध/चोट/आराम (Fluff / Angst / Hurt/Comfort)",
+     "detail": "मधुर और हल्का / भावनात्मक रूप से दर्दनाक / एक पात्र चोट पहुँचाता है और दूसरा उन्हें सांत्वना देता है।"
+    },
+    {
+     "term": "एयू (वैकल्पिक ब्रह्मांड) (AU (Alternate Universe))",
+     "detail": "कैनन से भिन्न सेटिंग में रखे गए अक्षर, उदा. कॉफ़ी शॉप एयू या मॉडर्न एयू।"
+    },
+    {
+     "term": "पाठक/आप (Reader / You)",
+     "detail": "रीडर-इंसर्ट कार्य जहां \"आप\" पात्रों में से एक हैं।"
+    }
+   ]
+  },
+  {
+   "title": "खोजना और फ़िल्टर करना (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "कार्य खोज (Work search)",
+     "detail": "कीवर्ड, शीर्षक, निर्माता, प्रशंसक समूह, रेटिंग, चेतावनियाँ, श्रेणी, पात्र, रिश्ते, टैग, शब्द गणना, भाषा, यश और बहुत कुछ के आधार पर खोजें। परिणाम सीधे AO3 से आते हैं।"
+    },
+    {
+     "term": "संख्याएँ एवं दिनांक (Numbers & dates)",
+     "detail": "गिनती के लिए \"> 1000\", \"<500\" या \"100-500\" और तारीखों के लिए \"<7 दिन\" या \"> 1 वर्ष\" का उपयोग करें।"
+    },
+    {
+     "term": "किसी टैग को फ़िल्टर करना (Filtering a tag)",
+     "detail": "किसी टैग के कार्यों पर, अधिक टैग शामिल करें या बाहर करें और रेटिंग, पूर्णता, शब्द गणना, भाषा इत्यादि के आधार पर फ़िल्टर करें।"
+    },
+    {
+     "term": "टैग को छोड़कर (Excluding tags)",
+     "detail": "उन चीज़ों को हटा दें जिन्हें आप नहीं देखना चाहते, जैसे कोई रिश्ता या प्रमुख चरित्र की मृत्यु।"
+    },
+    {
+     "term": "चार्ट (Charts)",
+     "detail": "इस ऐप की प्रशंसा, टिप्पणियाँ और हिट चार्ट AO3 की खोज सॉर्टिंग का उपयोग करते हैं; समय सीमा प्रत्येक कार्य के अंतिम अद्यतन पर आधारित होती है।"
+    }
+   ]
+  },
+  {
+   "title": "खाता सुविधाएँ (Account Features)",
+   "entries": [
+    {
+     "term": "बाद के लिए चिह्नित (Marked for Later)",
+     "detail": "पढ़ने योग्य सूची; जब आपका काम पूरा हो जाए तो काम को पढ़ा हुआ के रूप में चिह्नित करें। आपकी AO3 प्राथमिकताओं में इतिहास को सक्षम करना आवश्यक है।"
+    },
+    {
+     "term": "इतिहास (History)",
+     "detail": "लॉग इन करते समय आपके द्वारा खोले गए कार्य आपके खाते में दर्ज किए जाते हैं।"
+    },
+    {
+     "term": "सदस्यताएँ (Subscriptions)",
+     "detail": "किसी कार्य, श्रृंखला या निर्माता के पोस्ट करने पर ईमेल अपडेट प्राप्त करने के लिए उनकी सदस्यता लें।"
+    },
+    {
+     "term": "इनबॉक्स (Inbox)",
+     "detail": "आपके कार्यों और टिप्पणियों पर टिप्पणियाँ और उत्तर यहां दिखाई देते हैं।"
+    },
+    {
+     "term": "टिप्पणियाँ (Comments)",
+     "detail": "अध्यायों पर टिप्पणियाँ छोड़ें। निर्माता टिप्पणियों को मॉडरेट या अक्षम कर सकते हैं।"
+    }
+   ]
+  },
+  {
+   "title": "इस ऐप का उपयोग करना (Using This App)",
+   "entries": [
+    {
+     "term": "भावपूर्ण अनुवाद (Immersive translation)",
+     "detail": "प्रत्येक अनुच्छेद के अंतर्गत अनुवाद दिखाने के लिए पढ़ते समय अनुवाद बटन पर टैप करें। अनुवाद सेटिंग खोलने के लिए इसे स्पर्श करके रखें. एपीआई कुंजियाँ इस डिवाइस पर रहती हैं।"
+    },
+    {
+     "term": "दर्पण स्रोत (Mirror sources)",
+     "detail": "सेटिंग्स → सामग्री स्रोत में दर्पण जोड़ें। लॉगिन प्रति स्रोत रखे जाते हैं; केवल उन्हीं दर्पणों पर लॉग इन करें जिन पर आपको भरोसा है।"
+    },
+    {
+     "term": "शिष्टाचार (Etiquette)",
+     "detail": "रचनाकारों का समर्थन करने के लिए प्रशंसा या टिप्पणियाँ छोड़ें। कार्यों को कहीं और दोबारा पोस्ट न करें या उन्हें एआई प्रशिक्षण के लिए उपयोग न करें।"
+    }
+   ]
+  }
+ ],
+ "id": [
+  {
+   "title": "Tentang AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (Arsip Milik Kita) (AO3 (Archive of Our Own))",
+     "detail": "Arsip karya penggemar nirlaba yang dijalankan oleh Organisasi untuk Karya Transformatif (OTW). Tidak ada iklan di dalamnya, dan pencipta mempunyai hak atas karya mereka. Aplikasi ini adalah pembaca pihak ketiga tidak resmi."
+    },
+    {
+     "term": "Akun & undangan (Accounts & invitations)",
+     "detail": "Pendaftaran memerlukan undangan: bergabunglah dengan Antrean Undangan di situs web dan daftar ketika email tiba. Sebagian besar karya dapat dibaca tanpa login, tetapi karya yang dibatasi, bookmark, langganan, dan riwayat memerlukan akun."
+    },
+    {
+     "term": "alias (Pseud)",
+     "detail": "Nama pena. Satu akun bisa memiliki beberapa; byline menunjukkan nama samaran, dengan nama akun di dalam tanda kurung jika berbeda."
+    }
+   ]
+  },
+  {
+   "title": "Informasi Pekerjaan (Work Info)",
+   "entries": [
+    {
+     "term": "pujian (Kudos)",
+     "detail": "Seperti “suka”. Setiap orang dapat memberikan pujian pada suatu karya satu kali; tamu juga bisa."
+    },
+    {
+     "term": "Pukulan (Hits)",
+     "detail": "Berapa kali suatu karya dibuka. Kunjungan berulang mungkin dihitung lebih dari satu kali, jadi perlakukan ini sebagai ukuran kasar popularitas."
+    },
+    {
+     "term": "Bookmark (Bookmarks)",
+     "detail": "Simpan karya dengan catatan dan tag Anda sendiri, secara publik atau pribadi. Bookmark publik juga berfungsi sebagai rekomendasi."
+    },
+    {
+     "term": "Bab 3/? (Chapters 3/?)",
+     "detail": "Bab yang diposting / total yang direncanakan. “?” berarti totalnya belum ditentukan; angka yang sama berarti pekerjaan telah selesai."
+    },
+    {
+     "term": "WIP / Lengkap (WIP / Complete)",
+     "detail": "Pekerjaan sedang berlangsung/selesai."
+    },
+    {
+     "term": "Seri (Series)",
+     "detail": "Karya terkait dikelompokkan berdasarkan penciptanya. Anda dapat berlangganan seluruh seri."
+    },
+    {
+     "term": "Koleksi (Collections)",
+     "detail": "Kelompok karya untuk suatu tema atau acara, termasuk tantangan seperti pertukaran hadiah dan meme cepat (misalnya Yuletide)."
+    },
+    {
+     "term": "Terbatas (Restricted)",
+     "detail": "Karya yang penciptanya terbatas pada pengguna yang masuk."
+    },
+    {
+     "term": "Karya yatim piatu (Orphaned works)",
+     "detail": "Karya yang penciptanya menyerahkan kepemilikannya; mereka sekarang menjadi milik Orphan_account."
+    },
+    {
+     "term": "Anonim (Anonymous)",
+     "detail": "Karya diposting ke koleksi anonim, dengan nama pembuatnya disembunyikan untuk saat ini."
+    }
+   ]
+  },
+  {
+   "title": "Peringkat (Ratings)",
+   "entries": [
+    {
+     "term": "G - Audiens Umum (G — General Audiences)",
+     "detail": "Cocok untuk segala usia."
+    },
+    {
+     "term": "T - Audiens Remaja Ke Atas (T — Teen And Up Audiences)",
+     "detail": "Cocok untuk usia 13 tahun ke atas."
+    },
+    {
+     "term": "M - Dewasa (M — Mature)",
+     "detail": "Tema dewasa, kurang grafis dibandingkan Eksplisit."
+    },
+    {
+     "term": "E — Eksplisit (E — Explicit)",
+     "detail": "Konten seksual vulgar, kekerasan, atau konten dewasa lainnya."
+    },
+    {
+     "term": "Tidak Dinilai (Not Rated)",
+     "detail": "Pencipta tidak memilih rating; karya itu bisa berisi apa saja."
+    }
+   ]
+  },
+  {
+   "title": "Peringatan Arsip (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Pencipta Memilih Untuk Tidak Menggunakan Peringatan Arsip (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Karya tersebut mungkin berisi peringatan apa pun. Baca sesuai kebijaksanaan Anda sendiri."
+    },
+    {
+     "term": "Tidak Ada Peringatan Arsip yang Berlaku (No Archive Warnings Apply)",
+     "detail": "Tak satu pun dari empat peringatan utama tersebut berlaku. Konten sensitif lainnya mungkin masih diberi tag di tempat lain."
+    },
+    {
+     "term": "Penggambaran Grafis Kekerasan (Graphic Depictions Of Violence)",
+     "detail": "Kekerasan grafis."
+    },
+    {
+     "term": "Kematian Karakter Utama (Major Character Death)",
+     "detail": "Seorang karakter utama meninggal."
+    },
+    {
+     "term": "Pemerkosaan/Non-Penipu (Rape/Non-Con)",
+     "detail": "Konten seksual non-konsensual."
+    },
+    {
+     "term": "Seks Di Bawah Umur (Underage Sex)",
+     "detail": "Konten seksual yang melibatkan anak di bawah umur."
+    }
+   ]
+  },
+  {
+   "title": "Kategori (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/M, M/M",
+     "detail": "Hubungan romantis atau seksual antara wanita, wanita dan pria, atau pria."
+    },
+    {
+     "term": "Jenderal (Gen)",
+     "detail": "Umum: tidak ada hubungan romantis atau seksual sebagai fokus."
+    },
+    {
+     "term": "Multi",
+     "detail": "Lebih dari satu jenis hubungan."
+    },
+    {
+     "term": "Lainnya (Other)",
+     "detail": "Jenis hubungan lainnya."
+    }
+   ]
+  },
+  {
+   "title": "Tag (Tags)",
+   "entries": [
+    {
+     "term": "fandom",
+     "detail": "Sumber yang menjadi dasar karya tersebut. Karya yang mencakup beberapa fandom merupakan persilangan."
+    },
+    {
+     "term": "Hubungan (Relationships)",
+     "detail": "“A/B” adalah hubungan romantis atau seksual; “A & B” bersifat platonis (persahabatan, keluarga). Urutan nama biasanya tidak menunjukkan peran."
+    },
+    {
+     "term": "Karakter (Characters)",
+     "detail": "Tokoh yang muncul dalam karya."
+    },
+    {
+     "term": "Tag Tambahan (Additional Tags)",
+     "detail": "Tag bentuk bebas untuk kiasan, tema, dan catatan, seperti Fluff, Angst, Hurt/Comfort, atau Alternate Universe."
+    },
+    {
+     "term": "Tag & perselisihan kanonik (Canonical tags & wrangling)",
+     "detail": "Pengatur tag sukarelawan menghubungkan sinonim ke satu tag kanonik, sehingga halaman tag juga menampilkan karya yang menggunakan ejaan lain."
+    },
+    {
+     "term": "Bulu Halus / Kecemasan / Sakit / Kenyamanan (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Manis dan ringan / menyakitkan secara emosional / satu karakter terluka dan karakter lainnya menghibur mereka."
+    },
+    {
+     "term": "AU (Alam Semesta Alternatif) (AU (Alternate Universe))",
+     "detail": "Karakter ditempatkan dalam pengaturan yang berbeda dari kanon, mis. Kedai Kopi AU atau AU Modern."
+    },
+    {
+     "term": "Pembaca / Anda (Reader / You)",
+     "detail": "Sisipan pembaca berfungsi jika \"Anda\" adalah salah satu karakternya."
+    }
+   ]
+  },
+  {
+   "title": "Mencari & Memfilter (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Pencarian pekerjaan (Work search)",
+     "detail": "Cari berdasarkan kata kunci, judul, pencipta, fandom, rating, peringatan, kategori, karakter, hubungan, tag, jumlah kata, bahasa, pujian, dan banyak lagi. Hasil datang langsung dari AO3."
+    },
+    {
+     "term": "Angka & tanggal (Numbers & dates)",
+     "detail": "Gunakan “> 1000”, “< 500” atau “100-500” untuk hitungan, dan “< 7 hari” atau “> 1 tahun” untuk tanggal."
+    },
+    {
+     "term": "Memfilter tag (Filtering a tag)",
+     "detail": "Pada karya tag, sertakan atau kecualikan lebih banyak tag dan filter berdasarkan peringkat, penyelesaian, jumlah kata, bahasa, dan sebagainya."
+    },
+    {
+     "term": "Tidak termasuk tag (Excluding tags)",
+     "detail": "Kecualikan hal-hal yang tidak ingin Anda lihat, seperti hubungan atau Kematian Karakter Utama."
+    },
+    {
+     "term": "Grafik (Charts)",
+     "detail": "Grafik pujian, komentar, dan hits aplikasi ini menggunakan penyortiran pencarian AO3; rentang waktu didasarkan pada pembaruan terakhir setiap karya."
+    }
+   ]
+  },
+  {
+   "title": "Fitur Akun (Account Features)",
+   "entries": [
+    {
+     "term": "Ditandai untuk Nanti (Marked for Later)",
+     "detail": "Daftar yang harus dibaca; tandai berfungsi sebagai telah dibaca ketika Anda selesai. Membutuhkan riwayat untuk diaktifkan di preferensi AO3 Anda."
+    },
+    {
+     "term": "Sejarah (History)",
+     "detail": "Karya yang Anda buka saat login dicatat di akun Anda."
+    },
+    {
+     "term": "Langganan (Subscriptions)",
+     "detail": "Berlanggananlah karya, serial, atau pencipta untuk mendapatkan pembaruan email saat mereka memposting."
+    },
+    {
+     "term": "Kotak masuk (Inbox)",
+     "detail": "Komentar dan balasan atas karya dan komentar Anda muncul di sini."
+    },
+    {
+     "term": "Komentar (Comments)",
+     "detail": "Tinggalkan komentar pada bab. Kreator dapat memoderasi atau menonaktifkan komentar."
+    }
+   ]
+  },
+  {
+   "title": "Menggunakan Aplikasi Ini (Using This App)",
+   "entries": [
+    {
+     "term": "Terjemahan yang mendalam (Immersive translation)",
+     "detail": "Ketuk tombol terjemahkan saat membaca untuk menampilkan terjemahan di bawah setiap paragraf. Sentuh dan tahan untuk membuka pengaturan terjemahan. Kunci API tetap ada di perangkat ini."
+    },
+    {
+     "term": "Sumber cermin (Mirror sources)",
+     "detail": "Tambahkan cermin di Pengaturan → Sumber Konten. Login disimpan per sumber; hanya masuk di mirror yang Anda percayai."
+    },
+    {
+     "term": "Etiket (Etiquette)",
+     "detail": "Tinggalkan pujian atau komentar untuk mendukung pembuat konten. Jangan memposting ulang karya di tempat lain atau menggunakannya untuk pelatihan AI."
+    }
+   ]
+  }
+ ],
+ "vi": [
+  {
+   "title": "Giới thiệu về AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (Kho lưu trữ của riêng chúng tôi) (AO3 (Archive of Our Own))",
+     "detail": "Kho lưu trữ tác phẩm của người hâm mộ phi lợi nhuận do Tổ chức các tác phẩm được chuyển hóa (OTW) điều hành. Nó không có quảng cáo và người sáng tạo giữ quyền đối với tác phẩm của họ. Ứng dụng này là một trình đọc bên thứ ba không chính thức."
+    },
+    {
+     "term": "Tài khoản & lời mời (Accounts & invitations)",
+     "detail": "Việc đăng ký cần có lời mời: tham gia Hàng đợi Lời mời trên trang web và đăng ký khi có email đến. Hầu hết các tác phẩm có thể được đọc mà không cần đăng nhập, nhưng các tác phẩm bị hạn chế, dấu trang, đăng ký và lịch sử cần có tài khoản."
+    },
+    {
+     "term": "bút danh (Pseud)",
+     "detail": "Một bút danh. Một tài khoản có thể có nhiều tài khoản; dòng tên hiển thị bút danh, với tên tài khoản trong ngoặc đơn khi khác."
+    }
+   ]
+  },
+  {
+   "title": "Thông tin công việc (Work Info)",
+   "entries": [
+    {
+     "term": "Cảm ơn (Kudos)",
+     "detail": "Giống như một cái “thích”. Mỗi người có thể để lại lời khen ngợi cho một tác phẩm một lần; khách cũng có thể"
+    },
+    {
+     "term": "Lượt truy cập (Hits)",
+     "detail": "Đã bao nhiêu lần một tác phẩm được mở ra. Số lượt truy cập lặp lại có thể được tính nhiều hơn một lần, vì vậy hãy coi đó là thước đo sơ bộ về mức độ phổ biến."
+    },
+    {
+     "term": "Dấu trang (Bookmarks)",
+     "detail": "Lưu tác phẩm với ghi chú và thẻ của riêng bạn, công khai hoặc riêng tư. Dấu trang công khai cũng có tác dụng như đề xuất."
+    },
+    {
+     "term": "Chương 3/? (Chapters 3/?)",
+     "detail": "Số chương đã đăng/tổng ​​số theo kế hoạch. “?” có nghĩa là tổng số chưa được đặt; số bằng nhau có nghĩa là công việc đã hoàn thành."
+    },
+    {
+     "term": "WIP / Hoàn thành (WIP / Complete)",
+     "detail": "Công việc đang tiến hành/đã hoàn thành."
+    },
+    {
+     "term": "loạt (Series)",
+     "detail": "Các tác phẩm liên quan được nhóm bởi người sáng tạo. Bạn có thể đăng ký cả một bộ truyện."
+    },
+    {
+     "term": "Bộ sưu tập (Collections)",
+     "detail": "Nhóm tác phẩm theo chủ đề hoặc sự kiện, bao gồm các thử thách như trao đổi quà tặng và meme nhắc nhở (ví dụ: Yuletide)."
+    },
+    {
+     "term": "Bị hạn chế (Restricted)",
+     "detail": "Tác phẩm mà người sáng tạo đã giới hạn cho người dùng đã đăng nhập."
+    },
+    {
+     "term": "Tác phẩm mồ côi (Orphaned works)",
+     "detail": "Tác phẩm mà người sáng tạo đã từ bỏ quyền sở hữu; bây giờ họ thuộc về orphan_account."
+    },
+    {
+     "term": "Ẩn danh (Anonymous)",
+     "detail": "Các tác phẩm được đăng lên một bộ sưu tập ẩn danh, hiện đang ẩn tên người sáng tạo."
+    }
+   ]
+  },
+  {
+   "title": "Xếp hạng (Ratings)",
+   "entries": [
+    {
+     "term": "G — Khán giả đại chúng (G — General Audiences)",
+     "detail": "Thích hợp cho mọi lứa tuổi."
+    },
+    {
+     "term": "T — Khán giả tuổi teen trở lên (T — Teen And Up Audiences)",
+     "detail": "Phù hợp cho lứa tuổi từ 13 trở lên."
+    },
+    {
+     "term": "M - Trưởng thành (M — Mature)",
+     "detail": "Chủ đề dành cho người lớn, ít đồ họa hơn Rõ ràng."
+    },
+    {
+     "term": "E - Rõ ràng (E — Explicit)",
+     "detail": "Nội dung khiêu dâm, bạo lực hoặc nội dung người lớn khác có hình ảnh phản cảm."
+    },
+    {
+     "term": "Không được xếp hạng (Not Rated)",
+     "detail": "Người sáng tạo không chọn xếp hạng; công việc có thể chứa bất cứ điều gì."
+    }
+   ]
+  },
+  {
+   "title": "Cảnh báo lưu trữ (Archive Warnings)",
+   "entries": [
+    {
+     "term": "Người sáng tạo đã chọn không sử dụng cảnh báo lưu trữ (Creator Chose Not To Use Archive Warnings)",
+     "detail": "Tác phẩm có thể chứa bất kỳ cảnh báo nào. Đọc theo ý riêng của bạn."
+    },
+    {
+     "term": "Không có cảnh báo lưu trữ nào được áp dụng (No Archive Warnings Apply)",
+     "detail": "Không có cảnh báo nào trong bốn cảnh báo chính được áp dụng. Nội dung nhạy cảm khác vẫn có thể được gắn thẻ ở nơi khác."
+    },
+    {
+     "term": "Hình ảnh mô tả bạo lực (Graphic Depictions Of Violence)",
+     "detail": "Bạo lực đồ họa."
+    },
+    {
+     "term": "Cái chết của nhân vật chính (Major Character Death)",
+     "detail": "Một nhân vật chính chết."
+    },
+    {
+     "term": "Hiếp dâm/Không lừa đảo (Rape/Non-Con)",
+     "detail": "Nội dung tình dục không có sự đồng thuận."
+    },
+    {
+     "term": "Tình dục vị thành niên (Underage Sex)",
+     "detail": "Nội dung khiêu dâm liên quan đến trẻ vị thành niên."
+    }
+   ]
+  },
+  {
+   "title": "Danh mục (Categories)",
+   "entries": [
+    {
+     "term": "F/F, F/M, M/M",
+     "detail": "Mối quan hệ lãng mạn hoặc tình dục giữa phụ nữ, phụ nữ và đàn ông hoặc đàn ông."
+    },
+    {
+     "term": "thế hệ (Gen)",
+     "detail": "Tổng quát: không có mối quan hệ lãng mạn hay tình dục nào là trọng tâm."
+    },
+    {
+     "term": "đa (Multi)",
+     "detail": "Nhiều hơn một loại mối quan hệ."
+    },
+    {
+     "term": "Khác (Other)",
+     "detail": "Các loại mối quan hệ khác."
+    }
+   ]
+  },
+  {
+   "title": "Thẻ (Tags)",
+   "entries": [
+    {
+     "term": "người hâm mộ (Fandom)",
+     "detail": "Nguồn mà tác phẩm dựa vào. Các tác phẩm trải dài trên nhiều fandom đều là tác phẩm chéo."
+    },
+    {
+     "term": "Mối quan hệ (Relationships)",
+     "detail": "“A/B” là mối quan hệ lãng mạn hoặc tình dục; “A & B” mang tính thuần khiết (tình bạn, gia đình). Thứ tự tên thường không hàm ý vai trò."
+    },
+    {
+     "term": "nhân vật (Characters)",
+     "detail": "Các nhân vật xuất hiện trong tác phẩm."
+    },
+    {
+     "term": "Thẻ bổ sung (Additional Tags)",
+     "detail": "Thẻ dạng tự do dành cho các ý nghĩa, chủ đề và ghi chú, chẳng hạn như Fluff, Angst, Hurt/Comfort hoặc Alternate Universe."
+    },
+    {
+     "term": "Thẻ Canonical và tranh cãi (Canonical tags & wrangling)",
+     "detail": "Những người sắp xếp thẻ tình nguyện liên kết các từ đồng nghĩa với một thẻ chuẩn, do đó, một trang thẻ cũng hiển thị các tác phẩm sử dụng cách viết khác."
+    },
+    {
+     "term": "Cảm giác khó chịu / Giận dữ / Tổn thương / Sự thoải mái (Fluff / Angst / Hurt/Comfort)",
+     "detail": "Ngọt ngào và nhẹ nhàng/đau đớn về mặt cảm xúc/một nhân vật bị tổn thương và một nhân vật khác an ủi họ."
+    },
+    {
+     "term": "AU (Vũ trụ thay thế) (AU (Alternate Universe))",
+     "detail": "Các ký tự được đặt trong bối cảnh khác với bối cảnh chuẩn, ví dụ: Quán cà phê AU hoặc AU hiện đại."
+    },
+    {
+     "term": "Người đọc / Bạn (Reader / You)",
+     "detail": "Reader-insert hoạt động trong đó “bạn” là một trong các nhân vật."
+    }
+   ]
+  },
+  {
+   "title": "Tìm kiếm & Lọc (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "Tìm kiếm việc làm (Work search)",
+     "detail": "Tìm kiếm theo từ khóa, tiêu đề, người sáng tạo, fandom, xếp hạng, cảnh báo, danh mục, nhân vật, mối quan hệ, thẻ, số từ, ngôn ngữ, danh tiếng và hơn thế nữa. Kết quả đến trực tiếp từ AO3."
+    },
+    {
+     "term": "Số & ngày (Numbers & dates)",
+     "detail": "Sử dụng “> 1000”, “< 500” hoặc “100-500” cho số lượng và “< 7 ngày” hoặc “> 1 năm” cho ngày."
+    },
+    {
+     "term": "Lọc thẻ (Filtering a tag)",
+     "detail": "Trên tác phẩm của thẻ, hãy bao gồm hoặc loại trừ nhiều thẻ hơn và lọc theo xếp hạng, mức độ hoàn thành, số từ, ngôn ngữ, v.v."
+    },
+    {
+     "term": "Loại trừ thẻ (Excluding tags)",
+     "detail": "Loại trừ những thứ bạn không muốn thấy, chẳng hạn như một mối quan hệ hoặc Cái chết của nhân vật chính."
+    },
+    {
+     "term": "Biểu đồ (Charts)",
+     "detail": "Biểu đồ danh tiếng, nhận xét và lượt truy cập của ứng dụng này sử dụng tính năng sắp xếp tìm kiếm của AO3; phạm vi thời gian dựa trên bản cập nhật cuối cùng của mỗi tác phẩm."
+    }
+   ]
+  },
+  {
+   "title": "Tính năng tài khoản (Account Features)",
+   "entries": [
+    {
+     "term": "Đánh dấu để sau (Marked for Later)",
+     "detail": "Một danh sách cần đọc; đánh dấu hoạt động như đã đọc khi bạn hoàn thành. Yêu cầu bật lịch sử trong tùy chọn AO3 của bạn."
+    },
+    {
+     "term": "Lịch sử (History)",
+     "detail": "Các tác phẩm bạn mở khi đăng nhập sẽ được ghi lại trên tài khoản của bạn."
+    },
+    {
+     "term": "Đăng ký (Subscriptions)",
+     "detail": "Đăng ký một tác phẩm, bộ truyện hoặc người sáng tạo để nhận thông tin cập nhật qua email khi họ đăng."
+    },
+    {
+     "term": "Hộp thư đến (Inbox)",
+     "detail": "Nhận xét và trả lời về tác phẩm và nhận xét của bạn xuất hiện ở đây."
+    },
+    {
+     "term": "Bình luận (Comments)",
+     "detail": "Để lại nhận xét về các chương. Người sáng tạo có thể kiểm duyệt hoặc vô hiệu hóa nhận xét."
+    }
+   ]
+  },
+  {
+   "title": "Sử dụng ứng dụng này (Using This App)",
+   "entries": [
+    {
+     "term": "Bản dịch sâu sắc (Immersive translation)",
+     "detail": "Nhấn vào nút dịch trong khi đọc để hiển thị bản dịch dưới mỗi đoạn văn. Chạm và giữ nó để mở cài đặt dịch. Khóa API vẫn còn trên thiết bị này."
+    },
+    {
+     "term": "Nguồn gương (Mirror sources)",
+     "detail": "Thêm gương trong Cài đặt → Nguồn nội dung. Thông tin đăng nhập được lưu giữ trên mỗi nguồn; chỉ đăng nhập vào những tấm gương mà bạn tin tưởng."
+    },
+    {
+     "term": "nghi thức (Etiquette)",
+     "detail": "Để lại lời khen ngợi hoặc nhận xét để hỗ trợ người sáng tạo. Không đăng lại tác phẩm ở nơi khác hoặc sử dụng chúng để đào tạo AI."
+    }
+   ]
+  }
+ ],
+ "th": [
+  {
+   "title": "เกี่ยวกับ AO3 (About AO3)",
+   "entries": [
+    {
+     "term": "AO3 (เอกสารสำคัญของเราเอง) (AO3 (Archive of Our Own))",
+     "detail": "ไฟล์เก็บถาวรผลงานแฟนเวิร์กที่ไม่แสวงหาผลกำไร ดำเนินการโดย Organisation for Transformative Works (OTW) ไม่มีโฆษณา และผู้สร้างก็รักษาสิทธิ์ในผลงานของตน แอพนี้เป็นโปรแกรมอ่านบุคคลที่สามที่ไม่เป็นทางการ"
+    },
+    {
+     "term": "บัญชีและคำเชิญ (Accounts & invitations)",
+     "detail": "การลงทะเบียนจำเป็นต้องมีคำเชิญ: เข้าร่วมคิวคำเชิญบนเว็บไซต์และลงทะเบียนเมื่ออีเมลมาถึง ผลงานส่วนใหญ่สามารถอ่านได้โดยไม่ต้องเข้าสู่ระบบ แต่งานที่จำกัด บุ๊กมาร์ก การสมัครสมาชิก และประวัติจำเป็นต้องมีบัญชี"
+    },
+    {
+     "term": "หลอก (Pseud)",
+     "detail": "นามปากกา. บัญชีหนึ่งสามารถมีได้หลายบัญชี ทางสายย่อยจะแสดงนามแฝง โดยมีชื่อบัญชีอยู่ในวงเล็บเมื่อต่างกัน"
+    }
+   ]
+  },
+  {
+   "title": "ข้อมูลการทำงาน (Work Info)",
+   "entries": [
+    {
+     "term": "ขอชื่นชม (Kudos)",
+     "detail": "เหมือน \"ชอบ\" แต่ละคนสามารถชื่นชมผลงานได้เพียงครั้งเดียว แขกก็สามารถทำได้เช่นกัน"
+    },
+    {
+     "term": "ฮิต (Hits)",
+     "detail": "เปิดงานกี่ครั้ง.. การเข้าชมซ้ำอาจนับได้มากกว่าหนึ่งครั้ง ดังนั้นให้ถือว่าเป็นการวัดความนิยมคร่าวๆ"
+    },
+    {
+     "term": "บุ๊กมาร์ก (Bookmarks)",
+     "detail": "บันทึกงานด้วยบันทึกย่อและแท็กของคุณเองทั้งแบบสาธารณะหรือแบบส่วนตัว บุ๊กมาร์กสาธารณะยังใช้เป็นคำแนะนำได้อีกด้วย"
+    },
+    {
+     "term": "บทที่ 3/? (Chapters 3/?)",
+     "detail": "บทที่โพสต์ / ยอดรวมที่วางแผนไว้ “?” หมายถึงไม่ได้กำหนดยอดรวม ตัวเลขเท่ากันแสดงว่างานเสร็จสมบูรณ์"
+    },
+    {
+     "term": "งานระหว่างดำเนินการ / เสร็จสมบูรณ์ (WIP / Complete)",
+     "detail": "งานระหว่างดำเนินการ/เสร็จสิ้นแล้ว."
+    },
+    {
+     "term": "ซีรีส์ (Series)",
+     "detail": "งานที่เกี่ยวข้องจัดกลุ่มตามผู้สร้าง คุณสามารถสมัครรับข้อมูลซีรีส์ทั้งหมดได้"
+    },
+    {
+     "term": "คอลเลกชัน (Collections)",
+     "detail": "กลุ่มผลงานสำหรับธีมหรือกิจกรรม รวมถึงความท้าทาย เช่น การแลกเปลี่ยนของขวัญและมีม (เช่น เทศกาลคริสต์มาส)"
+    },
+    {
+     "term": "ถูกจำกัด (Restricted)",
+     "detail": "งานที่ผู้สร้างจำกัดไว้เฉพาะผู้ใช้ที่เข้าสู่ระบบเท่านั้น"
+    },
+    {
+     "term": "ผลงานเด็กกำพร้า (Orphaned works)",
+     "detail": "ผลงานที่ผู้สร้างสละกรรมสิทธิ์ ตอนนี้พวกเขาเป็นของ orphan_account"
+    },
+    {
+     "term": "ไม่ระบุชื่อ (Anonymous)",
+     "detail": "ผลงานที่โพสต์ในคอลเลกชันที่ไม่ระบุชื่อ โดยซ่อนชื่อผู้สร้างไว้ในขณะนี้"
+    }
+   ]
+  },
+  {
+   "title": "การให้คะแนน (Ratings)",
+   "entries": [
+    {
+     "term": "G - ผู้ชมทั่วไป (G — General Audiences)",
+     "detail": "เหมาะสำหรับทุกวัย"
+    },
+    {
+     "term": "T - ผู้ชมที่เป็นวัยรุ่นขึ้นไป (T — Teen And Up Audiences)",
+     "detail": "เหมาะสำหรับอายุ 13 ปีขึ้นไป"
+    },
+    {
+     "term": "เอ็ม — เป็นผู้ใหญ่ (M — Mature)",
+     "detail": "ธีมสำหรับผู้ใหญ่ มีกราฟิกน้อยกว่าโจ่งแจ้ง"
+    },
+    {
+     "term": "E - ชัดเจน (E — Explicit)",
+     "detail": "เนื้อหาทางเพศที่โจ่งแจ้ง ความรุนแรง หรือเนื้อหาสำหรับผู้ใหญ่อื่นๆ"
+    },
+    {
+     "term": "ไม่ได้รับการจัดอันดับ (Not Rated)",
+     "detail": "ผู้สร้างไม่ได้เลือกการให้คะแนน งานอาจมีอะไรก็ได้"
+    }
+   ]
+  },
+  {
+   "title": "คำเตือนการเก็บถาวร (Archive Warnings)",
+   "entries": [
+    {
+     "term": "ผู้สร้างเลือกที่จะไม่ใช้คำเตือนการเก็บถาวร (Creator Chose Not To Use Archive Warnings)",
+     "detail": "งานอาจมีคำเตือนใดๆ อ่านตามดุลยพินิจของคุณเอง"
+    },
+    {
+     "term": "ไม่มีคำเตือนการเก็บถาวรใช้ (No Archive Warnings Apply)",
+     "detail": "ไม่มีคำเตือนหลักทั้งสี่ข้อที่เกี่ยวข้อง เนื้อหาที่ละเอียดอ่อนอื่นๆ อาจยังคงถูกแท็กที่อื่น"
+    },
+    {
+     "term": "การแสดงภาพความรุนแรงอย่างโจ่งแจ้ง (Graphic Depictions Of Violence)",
+     "detail": "ความรุนแรงอย่างโจ่งแจ้ง"
+    },
+    {
+     "term": "ความตายของตัวละครหลัก (Major Character Death)",
+     "detail": "ตัวละครหลักเสียชีวิต"
+    },
+    {
+     "term": "การข่มขืน/ไม่ Con (Rape/Non-Con)",
+     "detail": "เนื้อหาเกี่ยวกับเรื่องเพศที่ไม่ได้รับความยินยอม"
+    },
+    {
+     "term": "เพศที่ยังไม่บรรลุนิติภาวะ (Underage Sex)",
+     "detail": "เนื้อหาเกี่ยวกับเรื่องเพศที่เกี่ยวข้องกับผู้เยาว์"
+    }
+   ]
+  },
+  {
+   "title": "หมวดหมู่ (Categories)",
+   "entries": [
+    {
+     "term": "เอฟ/เอฟ เอฟ/เอ็ม เอ็ม/เอ็ม (F/F, F/M, M/M)",
+     "detail": "ความสัมพันธ์โรแมนติกหรือทางเพศระหว่างผู้หญิง ผู้หญิงกับผู้ชาย หรือผู้ชาย"
+    },
+    {
+     "term": "พล (Gen)",
+     "detail": "ทั่วไป: ไม่มีความสัมพันธ์แบบโรแมนติกหรือทางเพศเป็นจุดสนใจ"
+    },
+    {
+     "term": "มัลติ (Multi)",
+     "detail": "ความสัมพันธ์มากกว่าหนึ่งประเภท"
+    },
+    {
+     "term": "อื่น (Other)",
+     "detail": "ความสัมพันธ์ประเภทอื่นๆ"
+    }
+   ]
+  },
+  {
+   "title": "แท็ก (Tags)",
+   "entries": [
+    {
+     "term": "แฟนดอม (Fandom)",
+     "detail": "แหล่งที่มาของงานจะขึ้นอยู่กับ ผลงานที่มีแฟนด้อมหลายกลุ่มเป็นแบบครอสโอเวอร์"
+    },
+    {
+     "term": "ความสัมพันธ์ (Relationships)",
+     "detail": "“A/B” คือความสัมพันธ์แบบโรแมนติกหรือทางเพศ “A & B” คือความสงบ (มิตรภาพ ครอบครัว) ลำดับของชื่อมักจะไม่ได้หมายความถึงบทบาท"
+    },
+    {
+     "term": "ตัวละคร (Characters)",
+     "detail": "ตัวละครที่ปรากฏในผลงาน"
+    },
+    {
+     "term": "แท็กเพิ่มเติม (Additional Tags)",
+     "detail": "แท็กรูปแบบอิสระสำหรับถ้วยรางวัล ธีม และโน้ต เช่น Fluff, Angst, Hurt/Comfort หรือ Alternate Universe"
+    },
+    {
+     "term": "แท็ก Canonical และการทะเลาะวิวาท (Canonical tags & wrangling)",
+     "detail": "ผู้รวบรวมแท็กอาสาสมัครเชื่อมโยงคำพ้องกับแท็กมาตรฐานหนึ่งแท็ก ดังนั้นหน้าแท็กจึงแสดงผลงานที่ใช้การสะกดแบบอื่นด้วย"
+    },
+    {
+     "term": "ปุย / โกรธ / เจ็บ / สบายใจ (Fluff / Angst / Hurt/Comfort)",
+     "detail": "อ่อนหวานและเบา / เจ็บปวดทางอารมณ์ / ตัวละครหนึ่งทำร้ายและอีกคนปลอบใจพวกเขา"
+    },
+    {
+     "term": "AU (จักรวาลสำรอง) (AU (Alternate Universe))",
+     "detail": "ตัวละครที่วางอยู่ในฉากที่แตกต่างจากแคนนอน เช่น ร้านกาแฟ AU หรือ Modern AU"
+    },
+    {
+     "term": "ผู้อ่าน / คุณ (Reader / You)",
+     "detail": "ส่วนแทรกของตัวอ่านใช้งานได้โดยที่ “คุณ” เป็นหนึ่งในตัวละคร"
+    }
+   ]
+  },
+  {
+   "title": "การค้นหาและการกรอง (Searching & Filtering)",
+   "entries": [
+    {
+     "term": "ค้นหางาน (Work search)",
+     "detail": "ค้นหาด้วยคำสำคัญ ชื่อเรื่อง ผู้สร้าง แฟนคลับ การให้คะแนน คำเตือน หมวดหมู่ ตัวละคร ความสัมพันธ์ แท็ก จำนวนคำ ภาษา ความชื่นชอบ และอื่นๆ ผลลัพธ์มาจาก AO3 โดยตรง"
+    },
+    {
+     "term": "ตัวเลขและวันที่ (Numbers & dates)",
+     "detail": "ใช้ “> 1,000”, “< 500” หรือ “100-500” สำหรับการนับ และ “< 7 วัน” หรือ ”> 1 ปี” สำหรับวันที่"
+    },
+    {
+     "term": "การกรองแท็ก (Filtering a tag)",
+     "detail": "ในงานของแท็ก ให้รวมหรือยกเว้นแท็กเพิ่มเติม และกรองตามการให้คะแนน ความสมบูรณ์ จำนวนคำ ภาษา และอื่นๆ"
+    },
+    {
+     "term": "ไม่รวมแท็ก (Excluding tags)",
+     "detail": "ยกเว้นสิ่งที่คุณไม่ต้องการเห็น เช่น ความสัมพันธ์หรือการเสียชีวิตของตัวละครหลัก"
+    },
+    {
+     "term": "แผนภูมิ (Charts)",
+     "detail": "ความรุ่งโรจน์ ความคิดเห็น และแผนภูมิการเข้าชมของแอปนี้ใช้การเรียงลำดับการค้นหาของ AO3 ช่วงเวลาจะขึ้นอยู่กับการอัพเดตครั้งล่าสุดของแต่ละงาน"
+    }
+   ]
+  },
+  {
+   "title": "คุณสมบัติบัญชี (Account Features)",
+   "entries": [
+    {
+     "term": "ทำเครื่องหมายไว้สำหรับภายหลัง (Marked for Later)",
+     "detail": "รายการที่ต้องอ่าน เครื่องหมายทำงานเหมือนอ่านแล้วเมื่อคุณทำเสร็จแล้ว ต้องเปิดใช้งานประวัติในการตั้งค่า AO3 ของคุณ"
+    },
+    {
+     "term": "ประวัติศาสตร์ (History)",
+     "detail": "ผลงานที่คุณเปิดขณะเข้าสู่ระบบจะถูกบันทึกไว้ในบัญชีของคุณ"
+    },
+    {
+     "term": "การสมัครรับข้อมูล (Subscriptions)",
+     "detail": "สมัครติดตามผลงาน ซีรีส์ หรือผู้สร้างเพื่อรับข้อมูลอัปเดตทางอีเมลเมื่อพวกเขาโพสต์"
+    },
+    {
+     "term": "กล่องจดหมาย (Inbox)",
+     "detail": "ความคิดเห็นและการตอบกลับเกี่ยวกับผลงานและความคิดเห็นของคุณปรากฏที่นี่"
+    },
+    {
+     "term": "ความคิดเห็น (Comments)",
+     "detail": "แสดงความคิดเห็นในบท ผู้สร้างสามารถกลั่นกรองหรือปิดใช้งานความคิดเห็นได้"
+    }
+   ]
+  },
+  {
+   "title": "การใช้แอพนี้ (Using This App)",
+   "entries": [
+    {
+     "term": "การแปลที่ดื่มด่ำ (Immersive translation)",
+     "detail": "แตะปุ่มแปลขณะอ่านเพื่อแสดงคำแปลในแต่ละย่อหน้า แตะค้างไว้เพื่อเปิดการตั้งค่าการแปล คีย์ API จะยังคงอยู่ในอุปกรณ์นี้"
+    },
+    {
+     "term": "แหล่งที่มาของกระจก (Mirror sources)",
+     "detail": "เพิ่มมิเรอร์ในการตั้งค่า → แหล่งที่มาของเนื้อหา การเข้าสู่ระบบจะถูกเก็บไว้ตามแหล่งที่มา เข้าสู่ระบบบนมิเรอร์ที่คุณเชื่อถือเท่านั้น"
+    },
+    {
+     "term": "มารยาท (Etiquette)",
+     "detail": "ฝากคำชื่นชมหรือความคิดเห็นเพื่อสนับสนุนผู้สร้าง อย่ารีโพสต์ผลงานที่อื่นหรือใช้เพื่อการฝึกอบรม AI"
+    }
+   ]
+  }
+ ],
+ "zh-Hans": [
+  {
+   "title": "认识 AO3",
+   "entries": [
+    {
+     "term": "AO3（Archive of Our Own）",
+     "detail": "由非营利组织 OTW（Organization for Transformative Works）营运的同人作品存盘库，没有广告，作品版权属于作者。本 App 是非官方的第三方阅读器。"
+    },
+    {
+     "term": "帐号与邀请",
+     "detail": "AO3 需要邀请才能注册：在官网加入邀请队列（Invitation Queue），收到邀请信后注册。未登录也能阅读大部分作品，但「仅限登录用户」的作品、书签、订阅、Kudos 等需要登录。"
+    },
+    {
+     "term": "Pseud（笔名）",
+     "detail": "同一帐号可以有多个笔名，作品署名显示的是笔名，括号内才是帐号名称。"
+    }
+   ]
+  },
+  {
+   "title": "作品信息",
+   "entries": [
+    {
+     "term": "Kudos",
+     "detail": "类似「喜欢」，每个人对同一作品只能给一次，访客也可以给。"
+    },
+    {
+     "term": "Hits（点击）",
+     "detail": "作品被打开的次数，同一人重复打开可能被重复计算，只能作为热度参考。"
+    },
+    {
+     "term": "Bookmarks（书签）",
+     "detail": "收藏作品，可附备注与自己的标签，可设为私人；公开书签也是读者推荐作品的方式。"
+    },
+    {
+     "term": "Chapters 3/?",
+     "detail": "已发布章数 / 预计总章数。「?」表示作者未定总章数；两数相同代表完结（Complete）。"
+    },
+    {
+     "term": "WIP / Complete",
+     "detail": "连载中（Work in Progress）／已完结。"
+    },
+    {
+     "term": "Series（系列）",
+     "detail": "作者把多部相关作品串成系列，可订阅整个系列。"
+    },
+    {
+     "term": "Collections（合集）",
+     "detail": "依主题、活动或交换活动（Gift Exchange、Prompt Meme）收录的作品集合，例如 Yuletide。"
+    },
+    {
+     "term": "Restricted（仅限登录）",
+     "detail": "作者设置只有登录用户才能阅读的作品，未登录时会显示需要登录。"
+    },
+    {
+     "term": "Orphan（孤儿作品）",
+     "detail": "作者放弃所有权后转到 orphan_account 帐号名下的作品。"
+    },
+    {
+     "term": "Anonymous（匿名）",
+     "detail": "在匿名合集中发布、暂时隐藏作者身份的作品。"
+    }
+   ]
+  },
+  {
+   "title": "分级 Rating",
+   "entries": [
+    {
+     "term": "G — General Audiences",
+     "detail": "适合所有年龄。"
+    },
+    {
+     "term": "T — Teen And Up Audiences",
+     "detail": "适合 13 岁以上。"
+    },
+    {
+     "term": "M — Mature",
+     "detail": "含成人主题，但不如 Explicit 露骨。"
+    },
+    {
+     "term": "E — Explicit",
+     "detail": "含露骨的性或暴力等成人内容。"
+    },
+    {
+     "term": "Not Rated",
+     "detail": "作者未选择分级，内容可能包含任何程度。"
+    }
+   ]
+  },
+  {
+   "title": "警告 Archive Warnings",
+   "entries": [
+    {
+     "term": "Creator Chose Not To Use Archive Warnings",
+     "detail": "作者选择不标警告，内容可能包含任何警告项目，请自行斟酌。"
+    },
+    {
+     "term": "No Archive Warnings Apply",
+     "detail": "不含以下四项主要警告（但仍可能有其他敏感内容，请看其他标签）。"
+    },
+    {
+     "term": "Graphic Depictions Of Violence",
+     "detail": "露骨的暴力描写。"
+    },
+    {
+     "term": "Major Character Death",
+     "detail": "主要角色死亡。"
+    },
+    {
+     "term": "Rape/Non-Con",
+     "detail": "强迫性行为描写。"
+    },
+    {
+     "term": "Underage Sex",
+     "detail": "涉及未成年人的性描写。"
+    }
+   ]
+  },
+  {
+   "title": "分类 Category",
+   "entries": [
+    {
+     "term": "F/F、F/M、M/M",
+     "detail": "女女、男女、男男的恋爱或性关系。"
+    },
+    {
+     "term": "Gen",
+     "detail": "General，没有恋爱或性关系为主轴，或关系不是重点。"
+    },
+    {
+     "term": "Multi",
+     "detail": "包含多种关系类型。"
+    },
+    {
+     "term": "Other",
+     "detail": "其他类型的关系。"
+    }
+   ]
+  },
+  {
+   "title": "标签 Tags",
+   "entries": [
+    {
+     "term": "Fandom",
+     "detail": "作品所属的原作，例如某部小说、动画或电影。跨多个原作的作品称为 Crossover。"
+    },
+    {
+     "term": "Relationship（配对）",
+     "detail": "「A/B」表示恋爱或性关系；「A & B」表示友情、亲情等非恋爱关系。斜线前后顺序通常没有攻受含义。"
+    },
+    {
+     "term": "Characters",
+     "detail": "作品中出现的角色。"
+    },
+    {
+     "term": "Additional Tags（其他标签）",
+     "detail": "作者自由填写的标签（Freeform），描述题材、剧情元素或附注，例如 Fluff、Angst、Hurt/Comfort、Alternate Universe。"
+    },
+    {
+     "term": "正式标签（Canonical）与标签整理",
+     "detail": "AO3 志工（Tag Wranglers）会把同义的标签合并到一个正式标签下，所以点进某个标签时也会看到使用同义写法的作品。"
+    },
+    {
+     "term": "Fluff / Angst / Hurt/Comfort",
+     "detail": "温馨甜文／虐文／受伤与安慰。"
+    },
+    {
+     "term": "AU（Alternate Universe）",
+     "detail": "平行世界设置，把角色放进与原作不同的背景，例如 Coffee Shop AU、Modern AU。"
+    },
+    {
+     "term": "Reader / You",
+     "detail": "以读者（你）为主角之一的作品（Reader-Insert）。"
+    }
+   ]
+  },
+  {
+   "title": "搜索与筛选",
+   "entries": [
+    {
+     "term": "作品搜索",
+     "detail": "可同时以关键字、标题、作者、Fandom、分级、警告、分类、角色、配对、标签、字数、语言、Kudos 等条件搜索，结果由 AO3 官网产生。"
+    },
+    {
+     "term": "数值与日期语法",
+     "detail": "字数、Kudos、点击等可用「> 1000」「< 500」「100-500」；更新时间可用「< 7 days」「> 1 year」。"
+    },
+    {
+     "term": "标签页筛选",
+     "detail": "进入某个标签后，可再「包含」或「排除」其他标签，并依分级、完结状态、字数、语言等筛选。"
+    },
+    {
+     "term": "排除标签",
+     "detail": "不想看的题材可以加入排除标签，例如排除某个配对或 Major Character Death。"
+    },
+    {
+     "term": "排行榜",
+     "detail": "本 App 的 Kudos／评论／点击排行以官网搜索排序产生，时间范围以作品最后更新时间计算。"
+    }
+   ]
+  },
+  {
+   "title": "帐号功能",
+   "entries": [
+    {
+     "term": "稍后阅读（Marked for Later）",
+     "detail": "把作品存到待读清单，读完可标记为已读。需要在官网偏好设置中打开阅读纪录。"
+    },
+    {
+     "term": "阅读纪录（History）",
+     "detail": "登录后浏览过的作品会记录在帐号中。"
+    },
+    {
+     "term": "订阅（Subscriptions）",
+     "detail": "订阅作品、系列或作者后，有更新时 AO3 会寄送电子邮件通知。"
+    },
+    {
+     "term": "收件匣（Inbox）",
+     "detail": "别人对你作品或评论的回复会出现在这里。"
+    },
+    {
+     "term": "评论（Comments）",
+     "detail": "可针对章节留言；作者可选择审核或关闭评论。"
+    }
+   ]
+  },
+  {
+   "title": "本 App 的使用",
+   "entries": [
+    {
+     "term": "沉浸式翻译",
+     "detail": "阅读页点翻译按钮，译文会显示在每段原文下方；长按翻译按钮可打开翻译设置。翻译只在本机进行，API Key 只存在这台设备。"
+    },
+    {
+     "term": "镜像来源",
+     "detail": "设置 → 内容来源可加入镜像网址；登录状态依来源分开保存，请只在信任的镜像登录。"
+    },
+    {
+     "term": "礼仪",
+     "detail": "喜欢的作品可以留 Kudos 或评论支持作者；不要把作品转载到其他网站或用于 AI 训练。"
+    }
+   ]
+  }
+ ]
+}

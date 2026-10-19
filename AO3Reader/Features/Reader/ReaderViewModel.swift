@@ -125,17 +125,27 @@ final class ReaderViewModel {
 
     /// 簡介與章節標題也以段落形式排入同一個翻譯佇列（ID 以 meta- 開頭，不會與正文衝突）
     static let summaryID = "meta-summary"
+    static let notesID = "meta-notes"
+    static let endNotesID = "meta-endnotes"
     static func chapterTitleID(_ chapter: Int) -> String { "meta-title-c\(chapter)" }
+    static func chapterNotesID(_ chapter: Int) -> String { "meta-notes-c\(chapter)" }
+    static func chapterEndNotesID(_ chapter: Int) -> String { "meta-endnotes-c\(chapter)" }
 
     private static func metaParagraphs(detail: WorkDetail, chapters: some Sequence<Int>) -> [Paragraph] {
         var result: [Paragraph] = []
-        for index in chapters {
-            if index == 0, !detail.summary.isEmpty {
-                result.append(Paragraph(id: summaryID, text: detail.summary))
+        func add(_ id: String, _ text: String, kind: Paragraph.Kind = .body) {
+            if !text.isEmpty { result.append(Paragraph(id: id, text: text, kind: kind)) }
+        }
+        for index in chapters where detail.chapters.indices.contains(index) {
+            let chapter = detail.chapters[index]
+            if index == 0 {
+                add(summaryID, detail.summary)
+                add(notesID, detail.notes)
             }
-            if detail.chapters.count > 1, detail.chapters.indices.contains(index) {
-                result.append(Paragraph(id: chapterTitleID(index), text: detail.chapters[index].title, kind: .heading))
-            }
+            if detail.chapters.count > 1 { add(chapterTitleID(index), chapter.title, kind: .heading) }
+            add(chapterNotesID(index), chapter.notes)
+            add(chapterEndNotesID(index), chapter.endNotes)
+            if index == detail.chapters.count - 1 { add(endNotesID, detail.endNotes) }
         }
         return result
     }

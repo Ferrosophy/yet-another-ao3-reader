@@ -1,5 +1,10 @@
 LANGS = ['ja','ko','es','fr','de','pt-BR','it','ru','uk','pl','tr','nl','ar','hi','id','vi','th']
 _T = {
+"作者註": "作者メモ|작가 노트|Notas|Notes|Anmerkungen|Notas|Note|Примечания|Примітки|Notatki|Notlar|Notities|ملاحظات|नोट्स|Catatan|Ghi chú|หมายเหตุ",
+"簡介": "あらすじ|줄거리|Resumen|Résumé|Zusammenfassung|Resumo|Riassunto|Описание|Опис|Opis|Özet|Samenvatting|الملخص|सारांश|Ringkasan|Tóm tắt|เรื่องย่อ",
+"浮動": "フローティング|플로팅|Flotante|Flottant|Schwebend|Flutuante|Fluttuante|Плавающий|Плаваючий|Pływający|Yüzen|Zwevend|عائم|फ़्लोटिंग|Mengambang|Nổi|ลอย",
+"鎖定": "固定|고정|Fijo|Épinglé|Fixiert|Fixo|Fisso|Закреплён|Закріплений|Przypięty|Sabit|Vast|مثبت|पिन किया|Disematkan|Cố định|ปักหมุด",
+"自訂": "カスタム|사용자 지정|Personalizado|Personnalisé|Eigene|Personalizado|Personalizzato|Свой|Власний|Własny|Özel|Aangepast|مخصص|कस्टम|Kustom|Tùy chỉnh|กำหนดเอง",
 "手動排序": "手動で並べ替え|수동 정렬|Orden manual|Ordre manuel|Manuelle Reihenfolge|Ordem manual|Ordine manuale|Ручной порядок|Ручний порядок|Ręczna kolejność|Manuel sıralama|Handmatige volgorde|ترتيب يدوي|मैन्युअल क्रम|Urutan manual|Thứ tự thủ công|เรียงเอง",
 "順序": "順序|순서|Orden|Ordre|Reihenfolge|Ordem|Ordine|Порядок|Порядок|Kolejność|Sıra|Volgorde|الترتيب|क्रम|Urutan|Thứ tự|ลำดับ",
 "瀏覽": "ブラウズ|둘러보기|Explorar|Parcourir|Entdecken|Explorar|Esplora|Обзор|Огляд|Przeglądaj|Keşfet|Bladeren|تصفح|ब्राउज़ करें|Jelajahi|Duyệt|เรียกดู",

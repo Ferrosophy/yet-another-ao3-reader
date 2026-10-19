@@ -36,6 +36,14 @@ struct InterfaceLanguage: Identifiable, Hashable {
 
     private static let key = "app.interfaceLanguage"
 
+    /// 目前實際使用的介面語言代碼（跟隨系統時取 App 實際載入的語系）
+    static var currentCode: String {
+        selectedCode ?? Bundle.main.preferredLocalizations.first ?? "en"
+    }
+
+    /// 介面是否為英文（英文介面不需要再附上術語的英文原文）
+    static var isEnglish: Bool { currentCode.hasPrefix("en") }
+
     /// nil 為跟隨系統
     static var selectedCode: String? {
         UserDefaults.standard.string(forKey: key)
@@ -139,5 +147,27 @@ extension View {
     /// 依「介面字體」設定套用文字樣式（取代 `.font(.headline)` 等）。
     func appFont(_ style: Font.TextStyle, weight: Font.Weight? = nil) -> some View {
         modifier(AppFontModifier(style: style, weight: weight))
+    }
+}
+
+/// AO3 特有術語：在非英文介面時附上官網的英文原文（例如「簡介 Summary」），方便對照官網。
+struct AO3TermLabel: View {
+    let title: LocalizedStringKey
+    let english: String
+
+    var body: some View {
+        if InterfaceLanguage.isEnglish {
+            Text(verbatim: english)
+        } else {
+            Text("\(Text(title)) \(Text(verbatim: english).foregroundStyle(.secondary))")
+        }
+    }
+}
+
+enum AO3Term {
+    /// 字串版本：「配對 (Relationships)」；英文介面或兩者相同時只顯示一個
+    static func label(_ localized: String, _ english: String) -> String {
+        if InterfaceLanguage.isEnglish || localized.caseInsensitiveCompare(english) == .orderedSame { return english }
+        return "\(localized) (\(english))"
     }
 }

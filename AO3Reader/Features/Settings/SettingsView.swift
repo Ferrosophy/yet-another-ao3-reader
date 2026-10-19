@@ -27,6 +27,19 @@ struct SettingsView: View {
 
             Section {
                 NavigationLink {
+                    BatchDownloadView()
+                } label: {
+                    Label("批次下載", systemImage: "square.and.arrow.down.on.square")
+                }
+                NavigationLink {
+                    DownloadsView()
+                } label: {
+                    Label("下載列表", systemImage: "arrow.down.circle")
+                }
+            }
+
+            Section {
+                NavigationLink {
                     SyncSettingsView()
                 } label: {
                     LabeledContent("資料同步", value: app.sync.provider.title)

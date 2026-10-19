@@ -101,7 +101,7 @@ enum PageTransition: String, CaseIterable, Codable, Identifiable, Sendable {
 enum ChromeMode: String, CaseIterable, Codable, Identifiable, Sendable {
     case floating, pinned
     var id: String { rawValue }
-    var title: String { self == .floating ? String(localized: "浮動（自動隱藏）") : String(localized: "鎖定（常駐）") }
+    var title: String { self == .floating ? String(localized: "浮動") : String(localized: "鎖定") }
 }
 
 struct ReaderLayout: Codable, Hashable, Sendable {

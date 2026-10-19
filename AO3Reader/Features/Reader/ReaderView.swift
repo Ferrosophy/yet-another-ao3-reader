@@ -190,6 +190,8 @@ struct ReaderView: View {
                     .onAppear { model.paragraphAppeared(paragraph) }
                     .onDisappear { model.paragraphDisappeared(paragraph) }
                 }
+                endNotes(detail: detail, chapter: chapter)
+                    .padding(.top, 8)
                 // 章末留白（換章使用底部控制列的上一章 / 下一章）
                 Color.clear.frame(height: 24)
             }
@@ -234,6 +236,16 @@ struct ReaderView: View {
                 chapterTitle: detail.chapters.count > 1 ? chapter.title : nil,
                 chapterIndex: model.chapterIndex,
                 chapter: chapter,
+                leadingNotes: [PagedNote(id: ReaderViewModel.chapterNotesID(model.chapterIndex),
+                                         title: AO3Term.label(String(localized: "章節作者註"), "Chapter Notes"), text: chapter.notes)]
+                    .filter { !$0.text.isEmpty },
+                trailingNotes: [
+                    PagedNote(id: ReaderViewModel.chapterEndNotesID(model.chapterIndex),
+                              title: AO3Term.label(String(localized: "章節結尾註"), "Chapter End Notes"), text: chapter.endNotes),
+                    PagedNote(id: ReaderViewModel.endNotesID,
+                              title: AO3Term.label(String(localized: "結尾作者註"), "End Notes"),
+                              text: model.chapterIndex == detail.chapters.count - 1 ? detail.endNotes : ""),
+                ].filter { !$0.text.isEmpty },
                 translations: model.translations,
                 showsTranslation: model.isTranslationOn,
                 mode: model.displayMode,
@@ -302,21 +314,13 @@ struct ReaderView: View {
                     }
                 }
                 if !detail.tagGroups.isEmpty {
-                    WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground) {
+                    WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground,
+                                 showsTranslation: model.isTranslationOn) {
                         openedList = $0
                     }
                 }
-                if !detail.summary.isEmpty {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(detail.summary)
-                            .appFont(.callout)
-                            .foregroundStyle(cardForeground)
-                        metaTranslation(ReaderViewModel.summaryID, font: style.font(scale: 0.9 * style.translation.fontScale))
-                    }
-                    .padding(12)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(cardBackground, in: .rect(cornerRadius: 14))
-                }
+                noteCard("簡介", english: "Summary", text: detail.summary, id: ReaderViewModel.summaryID)
+                noteCard("作者註", english: "Notes", text: detail.notes, id: ReaderViewModel.notesID)
             }
             if includesChapterTitle, detail.chapters.count > 1 {
                 VStack(alignment: .leading, spacing: 6) {
@@ -327,6 +331,41 @@ struct ReaderView: View {
                 }
                 .padding(.top, 8)
             }
+            if includesChapterTitle {
+                noteCard("章節作者註", english: "Chapter Notes", text: chapter.notes,
+                         id: ReaderViewModel.chapterNotesID(model.chapterIndex))
+            }
+        }
+    }
+
+    /// 章末的作者註：章節結尾註，最後一章再加上作品結尾註
+    private func endNotes(detail: WorkDetail, chapter: Chapter) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            noteCard("章節結尾註", english: "Chapter End Notes", text: chapter.endNotes,
+                     id: ReaderViewModel.chapterEndNotesID(model.chapterIndex))
+            if model.chapterIndex == detail.chapters.count - 1 {
+                noteCard("結尾作者註", english: "End Notes", text: detail.endNotes, id: ReaderViewModel.endNotesID)
+            }
+        }
+    }
+
+    /// 簡介 / 作者註卡片：標題附 AO3 英文術語，譯文沉浸式顯示在原文下方
+    @ViewBuilder
+    private func noteCard(_ title: LocalizedStringKey, english: String, text: String, id: String) -> some View {
+        if !text.isEmpty {
+            VStack(alignment: .leading, spacing: 8) {
+                AO3TermLabel(title: title, english: english)
+                    .appFont(.caption, weight: .semibold)
+                    .foregroundStyle(cardForeground.opacity(0.7))
+                Text(text)
+                    .appFont(.callout)
+                    .foregroundStyle(cardForeground)
+                metaTranslation(id, font: style.font(scale: 0.9 * style.translation.fontScale))
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(cardBackground, in: .rect(cornerRadius: 14))
+            .textSelection(.enabled)
         }
     }
 
@@ -496,7 +535,7 @@ struct ReaderView: View {
                 ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
             }
             Button("重新翻譯本章", systemImage: "arrow.clockwise") { model.resetTranslations() }
-            Button("翻譯設定…", systemImage: "gearshape") { showsTranslationSettings = true }
+            Button("翻譯設定", systemImage: "gearshape") { showsTranslationSettings = true }
         } label: {
             Text(model.targetLanguage.name)
                 .appFont(.subheadline, weight: .medium)
@@ -504,6 +543,8 @@ struct ReaderView: View {
                 .padding(.horizontal, 14)
                 .frame(height: 48)
         }
+        // 控制列在底部，選單向上展開時系統預設會倒轉項目順序；固定順序讓「原文 + 譯文」在「僅譯文」前面
+        .menuOrder(.fixed)
         .glassEffect(.regular.interactive(), in: .capsule)
     }
 
@@ -572,7 +613,10 @@ private struct WorkTagsView: View {
     let groups: [WorkTagGroup]
     let background: Color
     let foreground: Color
+    /// 開啟翻譯時，在標籤下方顯示譯文（目標語言跟隨介面語言）
+    var showsTranslation = false
     var onOpen: (WorkListRoute) -> Void
+    @Environment(AppState.self) private var app
     @State private var expanded = false
 
     var body: some View {
@@ -587,14 +631,21 @@ private struct WorkTagsView: View {
                             Button {
                                 onOpen(.tag(name: tag.name, path: tag.path))
                             } label: {
-                                Text(tag.name)
-                                    .appFont(.caption)
-                                    .lineLimit(1)
-                                    .truncationMode(.middle)
-                                    .foregroundStyle(foreground)
-                                    .padding(.horizontal, 10)
-                                    .padding(.vertical, 4)
-                                    .background(background, in: .capsule)
+                                // 過長的標籤換行完整顯示
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(tag.name)
+                                        .appFont(.caption)
+                                    if showsTranslation, let translated = app.tags.translation(for: tag.name) {
+                                        Text(translated)
+                                            .appFont(.caption2)
+                                            .opacity(0.7)
+                                    }
+                                }
+                                .multilineTextAlignment(.leading)
+                                .foregroundStyle(foreground)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 4)
+                                .background(background, in: .rect(cornerRadius: 12))
                             }
                             .buttonStyle(.plain)
                         }
@@ -607,6 +658,9 @@ private struct WorkTagsView: View {
                 }
                 .appFont(.caption)
             }
+        }
+        .task(id: showsTranslation) {
+            if showsTranslation { app.tags.request(groups.flatMap { $0.tags.map(\.name) }) }
         }
     }
 }

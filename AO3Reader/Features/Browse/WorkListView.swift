@@ -1,3 +1,4 @@
+import UIKit
 import SwiftUI
 
 /// 作品卡片列表，捲到底自動載入下一頁。
@@ -88,7 +89,7 @@ struct SummaryTranslationToggle: View {
     var body: some View {
         @Bindable var summaries = app.summaries
         Toggle(isOn: $summaries.isEnabled) {
-            Label("翻譯簡介", systemImage: "translate")
+            Label("翻譯簡介與標籤", systemImage: "translate")
         }
         .toggleStyle(.button)
     }
@@ -97,6 +98,10 @@ struct SummaryTranslationToggle: View {
 struct WorkRow: View {
     let work: WorkSummary
     @Environment(AppState.self) private var app
+    /// 簡介原文實際顯示的行數（最多 3 行），譯文顯示相同行數
+    @State private var summaryLines = 3
+
+    private static let summaryLineHeight = UIFont.preferredFont(forTextStyle: .callout).lineHeight
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -114,23 +119,30 @@ struct WorkRow: View {
                     .appFont(.subheadline)
                     .foregroundStyle(.secondary)
             }
+            // 標籤過長時換行完整顯示，不截斷
             if !work.fandoms.isEmpty {
                 Text(work.fandoms.joined(separator: " · "))
                     .appFont(.caption)
                     .foregroundStyle(.tint)
-                    .lineLimit(1)
+                    .task(id: app.summaries.isEnabled) { if app.summaries.isEnabled { app.tags.request(work.fandoms) } }
+                if app.summaries.isEnabled { tagTranslation(work.fandoms) }
             }
             let tags = work.relationships + work.characters.prefix(3) + work.freeforms.prefix(4)
             if !tags.isEmpty {
                 Text(tags.joined(separator: " · "))
                     .appFont(.caption)
                     .foregroundStyle(.secondary)
-                    .lineLimit(2)
+                    .task(id: app.summaries.isEnabled) { if app.summaries.isEnabled { app.tags.request(tags) } }
+                if app.summaries.isEnabled { tagTranslation(tags) }
             }
             if !work.summary.isEmpty {
+                // 卡片只顯示前 3 行；翻譯使用完整簡介，再以與原文相同的行數顯示
                 Text(work.summary)
                     .appFont(.callout)
                     .lineLimit(3)
+                    .onGeometryChange(for: CGFloat.self, of: { $0.size.height }) { height in
+                        summaryLines = min(max(Int((height / Self.summaryLineHeight).rounded()), 1), 3)
+                    }
                 if app.summaries.isEnabled {
                     summaryTranslation
                         .task(id: app.summaries.currentSignature) {
@@ -160,7 +172,7 @@ struct WorkRow: View {
             Text(text)
                 .appFont(.callout)
                 .foregroundStyle(.secondary)
-                .lineLimit(4)
+                .lineLimit(summaryLines)
                 .padding(.leading, 10)
                 .overlay(alignment: .leading) {
                     Capsule().fill(.tint.opacity(0.55)).frame(width: 3)
@@ -183,6 +195,20 @@ struct WorkRow: View {
             .appFont(.caption)
             .foregroundStyle(.tertiary)
             .padding(.leading, 10)
+        }
+    }
+
+    /// 標籤譯文（目標語言跟隨介面語言），顯示在原標籤下方
+    @ViewBuilder
+    private func tagTranslation(_ tags: [String]) -> some View {
+        if tags.contains(where: { app.tags.translation(for: $0) != nil }) {
+            Text(tags.map { app.tags.translation(for: $0) ?? $0 }.joined(separator: " · "))
+                .appFont(.caption)
+                .foregroundStyle(.secondary)
+                .padding(.leading, 8)
+                .overlay(alignment: .leading) {
+                    Capsule().fill(.tint.opacity(0.4)).frame(width: 2)
+                }
         }
     }
 

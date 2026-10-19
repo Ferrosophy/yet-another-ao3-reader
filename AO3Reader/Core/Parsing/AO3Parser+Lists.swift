@@ -132,13 +132,13 @@ extension AO3Parser {
 
     static func workTagGroups(_ doc: Document) throws -> [WorkTagGroup] {
         let groups: [(String, String)] = [
-            ("dd.rating", String(localized: "分級")),
-            ("dd.warning", String(localized: "Archive Warnings")),
-            ("dd.category", String(localized: "分類")),
-            ("dd.fandom", String(localized: "Fandoms")),
-            ("dd.relationship", String(localized: "配對")),
-            ("dd.character", String(localized: "角色")),
-            ("dd.freeform", String(localized: "其他標籤")),
+            ("dd.rating", AO3Term.label(String(localized: "分級"), "Rating")),
+            ("dd.warning", AO3Term.label(String(localized: "警告"), "Archive Warnings")),
+            ("dd.category", AO3Term.label(String(localized: "分類"), "Category")),
+            ("dd.fandom", AO3Term.label(String(localized: "原作"), "Fandoms")),
+            ("dd.relationship", AO3Term.label(String(localized: "配對"), "Relationships")),
+            ("dd.character", AO3Term.label(String(localized: "角色"), "Characters")),
+            ("dd.freeform", AO3Term.label(String(localized: "其他標籤"), "Additional Tags")),
         ]
         var result: [WorkTagGroup] = []
         for (css, title) in groups {

@@ -235,14 +235,15 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                         theme.wrappedValue.background = .color
                     }
                 }
+                // 自訂顏色放在色票列末尾
+                CustomColorSwatch(isSelected: theme.wrappedValue.background == .color && !AppearanceSettings.backgroundPresets.contains { $0.hex == theme.wrappedValue.backgroundHex }, selection: Binding(
+                    get: { Color(hex: theme.wrappedValue.backgroundHex) ?? .white },
+                    set: {
+                        theme.wrappedValue.backgroundHex = $0.hexString
+                        theme.wrappedValue.background = .color
+                    }
+                ))
             }
-            ColorPicker("自訂背景色", selection: Binding(
-                get: { Color(hex: theme.wrappedValue.backgroundHex) ?? .white },
-                set: {
-                    theme.wrappedValue.backgroundHex = $0.hexString
-                    theme.wrappedValue.background = .color
-                }
-            ), supportsOpacity: false)
             PhotosPicker(selection: $photoItem, matching: .images) {
                 Label(appearance.backgroundImage(for: scheme) == nil ? "選擇背景圖片" : "更換背景圖片", systemImage: "photo")
             }
@@ -269,11 +270,12 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                         theme.wrappedValue.textHex = preset.hex
                     }
                 }
+                // 自訂顏色放在色票列末尾
+                CustomColorSwatch(isSelected: theme.wrappedValue.textHex.map { hex in !AppearanceSettings.textPresets.contains { $0.hex == hex } } ?? false, selection: Binding(
+                    get: { theme.wrappedValue.textHex.flatMap(Color.init(hex:)) ?? .primary },
+                    set: { theme.wrappedValue.textHex = $0.hexString }
+                ))
             }
-            ColorPicker("自訂文字色", selection: Binding(
-                get: { theme.wrappedValue.textHex.flatMap(Color.init(hex:)) ?? .primary },
-                set: { theme.wrappedValue.textHex = $0.hexString }
-            ), supportsOpacity: false)
         } header: {
             Text("文字顏色")
         } footer: {
@@ -295,11 +297,12 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                         appearance.config.tagBackgroundHex = preset.hex
                     }
                 }
+                // 自訂顏色放在色票列末尾
+                CustomColorSwatch(isSelected: appearance.config.tagBackgroundHex.map { hex in !AppearanceSettings.tagBackgroundPresets.contains { $0.hex == hex } } ?? false, selection: Binding(
+                    get: { appearance.config.tagBackgroundHex.flatMap(Color.init(hex:)) ?? Color.primary.opacity(0.08) },
+                    set: { appearance.config.tagBackgroundHex = $0.hexString }
+                ))
             }
-            ColorPicker("自訂背景色", selection: Binding(
-                get: { appearance.config.tagBackgroundHex.flatMap(Color.init(hex:)) ?? Color.primary.opacity(0.08) },
-                set: { appearance.config.tagBackgroundHex = $0.hexString }
-            ), supportsOpacity: false)
         } header: {
             Text("標籤與簡介背景")
         } footer: {
@@ -317,11 +320,12 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                         appearance.config.tagTextHex = preset.hex
                     }
                 }
+                // 自訂顏色放在色票列末尾
+                CustomColorSwatch(isSelected: appearance.config.tagTextHex.map { hex in !AppearanceSettings.textPresets.contains { $0.hex == hex } } ?? false, selection: Binding(
+                    get: { appearance.config.tagTextHex.flatMap(Color.init(hex:)) ?? .primary },
+                    set: { appearance.config.tagTextHex = $0.hexString }
+                ))
             }
-            ColorPicker("自訂文字色", selection: Binding(
-                get: { appearance.config.tagTextHex.flatMap(Color.init(hex:)) ?? .primary },
-                set: { appearance.config.tagTextHex = $0.hexString }
-            ), supportsOpacity: false)
         } header: {
             Text("標籤與簡介文字")
         } footer: {
@@ -451,6 +455,7 @@ struct FontPickerView: View {
     @Environment(AppState.self) private var app
     @State private var search = ""
     @State private var importing = false
+    @State private var cloudDrive: CloudDrive?
     @State private var errorMessage: String?
 
     private static let sample = "Aa 永字八法 あア"
@@ -477,11 +482,18 @@ struct FontPickerView: View {
                     .onDelete { offsets in
                         for index in offsets { appearance.removeFont(appearance.config.customFonts[index]) }
                     }
-                    Button("匯入字體檔（TTF / OTF）", systemImage: "square.and.arrow.down") { importing = true }
+                    Button("從本機檔案匯入（TTF / OTF）", systemImage: "square.and.arrow.down") { importing = true }
+                    Menu {
+                        ForEach(CloudDrive.allCases) { drive in
+                            Button(drive.title) { cloudDrive = drive }
+                        }
+                    } label: {
+                        Label("從雲端硬碟匯入", systemImage: "icloud.and.arrow.down")
+                    }
                 } header: {
                     Text("已匯入")
                 } footer: {
-                    Text("從「檔案」選擇字體檔，僅在本 App 內使用；向左滑可刪除。")
+                    Text("可從「檔案」或雲端硬碟（Google Drive、OneDrive、PikPak、百度網盤、夸克網盤、阿里雲盤）匯入字體檔，僅在本 App 內使用；向左滑可刪除。")
                 }
             }
 
@@ -501,6 +513,9 @@ struct FontPickerView: View {
             } catch {
                 errorMessage = error.localizedDescription
             }
+        }
+        .sheet(item: $cloudDrive) { drive in
+            CloudFontImportView(drive: drive) { font in selection = "custom:\(font.postScriptName)" }
         }
         .alert("無法匯入字體", isPresented: Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })) {
             Button("好") { errorMessage = nil }
@@ -538,6 +553,31 @@ private struct SwatchRow<Content: View>: View {
                 .padding(.vertical, 10)
         }
         .listRowInsets(EdgeInsets())
+    }
+}
+
+/// 色票列末尾的「自訂」色環：點擊開啟系統調色盤；目前顏色不屬於預設色票時顯示為選中。
+private struct CustomColorSwatch: View {
+    let isSelected: Bool
+    @Binding var selection: Color
+
+    var body: some View {
+        VStack(spacing: 4) {
+            ZStack {
+                Circle()
+                    .strokeBorder(isSelected ? Color.accentColor : .clear, lineWidth: 3)
+                Circle()
+                    .fill(AngularGradient(colors: [.red, .yellow, .green, .cyan, .blue, .purple, .red], center: .center))
+                    .padding(5)
+                ColorPicker("自訂", selection: $selection, supportsOpacity: false)
+                    .labelsHidden()
+                    .scaleEffect(1.3)
+                    .opacity(0.02)
+            }
+            .frame(width: 46, height: 46)
+            Text("自訂").appFont(.caption2).foregroundStyle(.secondary)
+        }
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }
 
