@@ -1,7 +1,7 @@
 import Foundation
 import Observation
 
-enum ParagraphTranslation: Equatable, Sendable {
+enum ParagraphTranslation: Hashable, Sendable {
     case loading
     case done(String)
     case failed(String)
@@ -39,7 +39,7 @@ final class ReaderViewModel {
         }
     }
 
-    private let client: AO3Client
+    let client: AO3Client
     private let settings: TranslationSettings
     private let translator: TranslationService
 
@@ -135,6 +135,21 @@ final class ReaderViewModel {
         resetTranslations()
     }
 
+    func setSourceLanguage(_ code: String?) {
+        guard code != settings.config.sourceLanguageCode else { return }
+        settings.config.sourceLanguageCode = code
+        resetTranslations()
+    }
+
+    var sourceLanguage: TranslationLanguage? { settings.config.sourceLanguage }
+
+    /// 翻頁模式：以目前頁面上的段落取代可見集合（捲動模式則由 onAppear / onDisappear 維護）。
+    func setVisibleParagraphs(_ paragraphs: [Paragraph]) {
+        visible = Set(paragraphs.map(\.id))
+        guard isTranslationOn else { return }
+        for paragraph in paragraphs { paragraphAppeared(paragraph) }
+    }
+
     func setDisplayMode(_ mode: BilingualDisplayMode) {
         settings.config.displayMode = mode
     }
@@ -227,7 +242,7 @@ final class ReaderViewModel {
 
         if !batch.isEmpty {
             do {
-                let results = try await translator.translate(batch.map(\.text), provider: provider, target: targetLanguage)
+                let results = try await translator.translate(batch.map(\.text), provider: provider, source: settings.config.sourceLanguage, target: targetLanguage)
                 guard generation == self.generation else { return }
                 for (paragraph, text) in zip(batch, results) {
                     translations[paragraph.id] = .done(text)

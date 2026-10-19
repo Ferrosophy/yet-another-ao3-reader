@@ -107,6 +107,11 @@ struct AO3Client: Sendable {
         return try AO3Parser.workPage(html: html, page: page)
     }
 
+    /// 從官網搜尋表單讀取所有可篩選的語言。
+    func languages() async throws -> [AO3Language] {
+        try AO3Parser.languageOptions(html: try await get("/works/search"))
+    }
+
     /// 任意作品列表頁（標籤、合集、系列、用戶作品…），列表中的 `li.blurb` 皆可解析。
     func worksPage(path: String, query: [URLQueryItem] = [], page: Int = 1) async throws -> WorkPage {
         let html = try await get(path, query: Self.paged(query, page))

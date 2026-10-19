@@ -163,3 +163,47 @@ struct BrowseParserTests {
         #expect(AO3Paths.tagParam("Mr. & Mrs./Smith?#") == "Mr*d* *a* Mrs*d**s*Smith*q**h*")
     }
 }
+
+struct AccountActionTests {
+    @Test func parsesLanguageOptions() throws {
+        let html = """
+        <select name="work_search[language_id]" id="work_search_language_id">
+          <option value=""></option><option value="en">English</option><option value="zh">中文-普通话 國語</option>
+        </select>
+        """
+        let languages = try AO3Parser.languageOptions(html: html)
+        #expect(languages.map(\.code) == ["en", "zh"])
+    }
+
+    @Test func parsesWorkActionForms() throws {
+        let html = """
+        <meta name="csrf-token" content="tok">
+        <ul class="work navigation actions">
+          <li class="mark"><form class="button_to" method="post" action="/works/9/mark_for_later">
+            <input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="tok"></form></li>
+          <li class="subscribe"><form action="/users/me/subscriptions/55" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <input type="hidden" name="subscription[subscribable_id]" value="9">
+            <input type="hidden" name="subscription[subscribable_type]" value="Work"></form></li>
+        </ul>
+        <div id="bookmark-form"><form action="/works/9/bookmarks" method="post">
+          <input type="hidden" name="authenticity_token" value="tok">
+          <input type="hidden" name="bookmark[pseud_id]" value="3">
+          <input type="hidden" name="bookmark[private]" value="0">
+          <input type="checkbox" name="bookmark[private]" value="1">
+        </form></div>
+        """
+        let actions = try #require(try AO3Parser.workActions(html: html))
+        #expect(!actions.isMarkedForLater)
+        #expect(actions.isSubscribed)
+        #expect(!actions.isBookmarked)
+        #expect(actions.bookmark?.value("bookmark[pseud_id]") == "3")
+        #expect(actions.authenticityToken == "tok")
+    }
+
+    @Test func mapsMicrosoftChineseCodes() {
+        #expect(BingTranslator.microsoftCode("zh-TW") == "zh-Hant")
+        #expect(BingTranslator.microsoftCode("zh-CN") == "zh-Hans")
+        #expect(BingTranslator.microsoftCode("ja") == "ja")
+    }
+}

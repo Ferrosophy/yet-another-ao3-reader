@@ -19,27 +19,27 @@ struct LLMTranslator: TranslationProvider {
     }
     var maxBatchCharacters: Int { 6000 }
 
-    func translate(_ texts: [String], to target: TranslationLanguage) async throws -> [String] {
+    func translate(_ texts: [String], from source: TranslationLanguage?, to target: TranslationLanguage) async throws -> [String] {
         do {
             let output = try await backend.complete(
-                system: LLMPrompt.system(target: target, extra: extraInstructions),
+                system: LLMPrompt.system(source: source, target: target, extra: extraInstructions),
                 user: try LLMPrompt.user(texts)
             )
             return try LLMPrompt.parse(output, expectedCount: texts.count)
         } catch TranslationError.countMismatch where texts.count > 1 {
             let middle = texts.count / 2
-            async let head = translate(Array(texts[..<middle]), to: target)
-            async let tail = translate(Array(texts[middle...]), to: target)
+            async let head = translate(Array(texts[..<middle]), from: source, to: target)
+            async let tail = translate(Array(texts[middle...]), from: source, to: target)
             return try await head + tail
         }
     }
 }
 
 enum LLMPrompt {
-    static func system(target: TranslationLanguage, extra: String) -> String {
+    static func system(source: TranslationLanguage? = nil, target: TranslationLanguage, extra: String) -> String {
         var prompt = """
         You are a professional literary translator working on fan fiction from Archive of Our Own (AO3).
-        Translate every paragraph into \(target.englishName) (\(target.code)).
+        Translate every paragraph\(source.map { " from \($0.englishName)" } ?? "") into \(target.englishName) (\(target.code)).
 
         Rules:
         - Faithfully preserve meaning, tone, voice, humor and emotional nuance; write natural, fluent prose in the target language.

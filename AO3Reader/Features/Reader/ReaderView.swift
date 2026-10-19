@@ -1,93 +1,119 @@
 import SwiftUI
+import UIKit
 
 struct ReaderView: View {
     @State private var model: ReaderViewModel
+    @State private var actions: WorkActionsModel
     @Environment(AppState.self) private var app
-
-    @AppStorage("reader.fontSize") private var fontSize = 18.0
-    @AppStorage("reader.lineSpacing") private var lineSpacing = 6.0
+    @Environment(\.colorScheme) private var colorScheme
 
     @State private var showsChrome = true
     @State private var showsChapters = false
     @State private var showsAppearance = false
+    @State private var showsTranslationSettings = false
+    /// 翻頁模式往前翻到上一章時，從該章最後一頁開始
+    @State private var startAtEnd = false
+    /// 顯示控制列時量到的安全區域；內容以固定邊距排版，控制列出現 / 隱藏不會推動正文
+    @State private var topInset: CGFloat = 0
+    @State private var bottomInset: CGFloat = 0
+    @State private var pagedCache = PagedContentCache()
     @Namespace private var glass
 
     init(model: ReaderViewModel) {
         _model = State(initialValue: model)
+        _actions = State(initialValue: WorkActionsModel(workID: model.route.id, client: model.client))
     }
 
     private var appearance: AppearanceSettings { app.appearance }
+    private var layout: ReaderLayout { appearance.config.layout }
+    private var chromeVisible: Bool { layout.chrome == .pinned || showsChrome }
 
     private var style: ReaderStyle {
-        ReaderStyle(fontSize: fontSize, lineSpacing: lineSpacing, font: appearance.config.readerFont)
+        ReaderStyle(
+            layout: layout,
+            font: appearance.config.readerFont,
+            textColor: appearance.textColor(for: colorScheme),
+            translation: appearance.config.translation
+        )
     }
 
     var body: some View {
-        content
-            .background { ReaderBackground(appearance: appearance) }
-            // 控制列以 overlay 疊在內容上，顯示 / 隱藏不改變內容的安全區域，避免捲動位置跳動
-            .overlay(alignment: .bottom) {
-                if showsChrome, model.detail != nil {
-                    controls
-                        .transition(.move(edge: .bottom).combined(with: .opacity))
+        ZStack {
+            ReaderBackground(appearance: appearance, scheme: colorScheme)
+            content
+        }
+        .onGeometryChange(for: EdgeInsets.self, of: { $0.safeAreaInsets }) { insets in
+            topInset = max(topInset, insets.top)
+            bottomInset = max(bottomInset, insets.bottom)
+        }
+        .overlay(alignment: .bottom) {
+            if chromeVisible, model.detail != nil {
+                controls
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
+        .overlay(alignment: .top) { toast }
+        .animation(.smooth(duration: 0.25), value: chromeVisible)
+        .navigationTitle(model.chapter?.title ?? model.route.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(chromeVisible ? .visible : .hidden, for: .navigationBar)
+        .toolbar(.hidden, for: .tabBar)
+        .statusBarHidden(!chromeVisible)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                if app.auth.isLoggedIn { WorkActionsMenu(model: actions) }
+            }
+        }
+        .task { await model.load() }
+        .task(id: model.detail?.id) {
+            if let detail = model.detail { await actions.load(from: detail) }
+        }
+        .sheet(isPresented: $showsChapters) {
+            ChapterListSheet(model: model)
+                .presentationDetents([.medium, .large])
+        }
+        .sheet(isPresented: $showsAppearance) {
+            NavigationStack {
+                ReaderAppearanceForm {
+                    EmptyView()
+                } trailing: {
+                    Section("譯文顯示") {
+                        Picker("顯示方式", selection: Binding(get: { model.displayMode }, set: { model.setDisplayMode($0) })) {
+                            ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
+                        }
+                        .pickerStyle(.segmented)
+                    }
                 }
+                .navigationTitle("閱讀設定")
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .animation(.smooth(duration: 0.25), value: showsChrome)
-            .environment(\.colorScheme, appearance.readerColorScheme ?? colorScheme)
-            .navigationTitle(model.chapter?.title ?? model.route.title)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar(.hidden, for: .tabBar)
-            .task { await model.load() }
-            .sheet(isPresented: $showsChapters) {
-                ChapterListSheet(model: model)
-                    .presentationDetents([.medium, .large])
+            .presentationDetents([.medium, .large])
+        }
+        .sheet(isPresented: $showsTranslationSettings, onDismiss: { model.resetTranslations() }) {
+            NavigationStack {
+                TranslationSettingsView()
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("完成") { showsTranslationSettings = false }
+                        }
+                    }
             }
-            .sheet(isPresented: $showsAppearance) {
-                ReaderAppearanceSheet(model: model, fontSize: $fontSize, lineSpacing: $lineSpacing)
-                    .presentationDetents([.medium, .large])
-            }
+        }
     }
 
-    @Environment(\.colorScheme) private var colorScheme
+    private func toggleChrome() {
+        guard layout.chrome == .floating else { return }
+        showsChrome.toggle()
+    }
 
     // MARK: - Content
 
     @ViewBuilder
     private var content: some View {
         if let detail = model.detail, let chapter = model.chapter {
-            ScrollView {
-                LazyVStack(alignment: .leading, spacing: style.lineSpacing * 2 + 8) {
-                    header(detail: detail, chapter: chapter)
-                        .id(ReaderViewModel.headerID(model.chapterIndex))
-                    ForEach(chapter.paragraphs) { paragraph in
-                        BilingualParagraphView(
-                            paragraph: paragraph,
-                            translation: model.translations[paragraph.id],
-                            showsTranslation: model.isTranslationOn,
-                            mode: model.displayMode,
-                            style: style,
-                            onRetry: { model.retry(paragraph) }
-                        )
-                        .onAppear { model.paragraphAppeared(paragraph) }
-                        .onDisappear { model.paragraphDisappeared(paragraph) }
-                    }
-                    chapterFooter
-                }
-                // scrollTargetLayout + scrollPosition：上方段落高度變化（譯文載入）時，
-                // 以目前頂端段落為錨點保持位置，不會被往上或往下推
-                .scrollTargetLayout()
-                .padding(.horizontal, 20)
-                .padding(.top, 16)
-                .padding(.bottom, 96)
-            }
-            .scrollPosition(id: $model.scrollAnchor, anchor: .top)
-            .scrollEdgeEffectStyle(.soft, for: .top)
-            .onTapGesture { showsChrome.toggle() }
-            .onScrollGeometryChange(for: CGFloat.self, of: { $0.contentOffset.y }) { old, new in
-                // 只在明確的捲動方向上切換，忽略回彈區域
-                guard new > 0 else { showsChrome = true; return }
-                if new - old > 24 { showsChrome = false }
-                else if old - new > 24 { showsChrome = true }
+            switch layout.mode {
+            case .scroll: scrollContent(detail: detail, chapter: chapter)
+            case .paged: pagedContent(detail: detail, chapter: chapter)
             }
         } else if let error = model.loadError {
             ContentUnavailableView {
@@ -96,8 +122,110 @@ struct ReaderView: View {
                 Text(error)
             }
         } else {
-            ProgressView("載入中…")
+            AO3LoadingView()
         }
+    }
+
+    private func scrollContent(detail: WorkDetail, chapter: Chapter) -> some View {
+        ScrollView {
+            LazyVStack(alignment: .leading, spacing: layout.paragraphSpacing) {
+                header(detail: detail, chapter: chapter)
+                    .id(ReaderViewModel.headerID(model.chapterIndex))
+                ForEach(chapter.paragraphs) { paragraph in
+                    BilingualParagraphView(
+                        paragraph: paragraph,
+                        translation: model.translations[paragraph.id],
+                        showsTranslation: model.isTranslationOn,
+                        mode: model.displayMode,
+                        style: style,
+                        onRetry: { model.retry(paragraph) }
+                    )
+                    .onAppear { model.paragraphAppeared(paragraph) }
+                    .onDisappear { model.paragraphDisappeared(paragraph) }
+                }
+                chapterFooter
+            }
+            // 上方段落高度變化（譯文載入）時，以頂端段落為錨點保持位置
+            .scrollTargetLayout()
+            .padding(.horizontal, layout.horizontalMargin)
+            .foregroundStyle(style.textColor.map { AnyShapeStyle($0) } ?? AnyShapeStyle(.primary))
+        }
+        .scrollPosition(id: $model.scrollAnchor, anchor: .top)
+        .contentMargins(.top, topInset + 12, for: .scrollContent)
+        .contentMargins(.bottom, bottomInset + 96, for: .scrollContent)
+        .ignoresSafeArea(edges: .vertical)
+        .scrollEdgeEffectStyle(.soft, for: .top)
+        .onTapGesture { toggleChrome() }
+        .onScrollGeometryChange(for: CGFloat.self, of: { $0.contentOffset.y }) { old, new in
+            guard layout.chrome == .floating else { return }
+            if new <= 0 { showsChrome = true }
+            else if new - old > 24 { showsChrome = false }
+            else if old - new > 24 { showsChrome = true }
+        }
+    }
+
+    private func pagedContent(detail: WorkDetail, chapter: Chapter) -> some View {
+        let textColor = style.textColor.map(UIColor.init) ?? .label
+        let secondary = style.textColor.map { UIColor($0).withAlphaComponent(0.65) } ?? .secondaryLabel
+        var hasher = Hasher()
+        hasher.combine(model.chapterIndex)
+        hasher.combine(model.isTranslationOn)
+        hasher.combine(model.displayMode)
+        hasher.combine(model.translations)
+        hasher.combine(layout)
+        hasher.combine(appearance.config.translation)
+        hasher.combine(appearance.config.readerFont)
+        hasher.combine(textColor.resolvedColor(with: UITraitCollection(userInterfaceStyle: colorScheme == .dark ? .dark : .light)).hashValue)
+        let signature = hasher.finalize()
+
+        let content = pagedCache.content(signature: signature) {
+            let (text, spans) = PagedTextBuilder.build(
+                title: model.chapterIndex == 0 ? detail.title : nil,
+                chapterTitle: detail.chapters.count > 1 ? chapter.title : nil,
+                chapter: chapter,
+                translations: model.translations,
+                showsTranslation: model.isTranslationOn,
+                mode: model.displayMode,
+                style: style,
+                textColor: textColor,
+                secondaryColor: secondary
+            )
+            return PagedContent(signature: signature, chapterIndex: model.chapterIndex, text: text, spans: spans)
+        }
+
+        let theme = appearance.theme(for: colorScheme)
+        let pageColor: UIColor = theme.background == .color
+            ? UIColor(Color(hex: theme.backgroundHex) ?? .white)
+            : .systemBackground
+
+        return PagedReaderView(
+            content: content,
+            transition: layout.pageTransition,
+            insets: UIEdgeInsets(
+                top: topInset + layout.verticalMargin,
+                left: layout.horizontalMargin,
+                bottom: bottomInset + layout.verticalMargin + (layout.chrome == .pinned ? 64 : 0),
+                right: layout.horizontalMargin
+            ),
+            pageColor: pageColor,
+            anchorParagraphID: model.scrollAnchor,
+            startAtEnd: startAtEnd,
+            onPageChange: { paragraphs in
+                model.setVisibleParagraphs(paragraphs)
+                if let first = paragraphs.first { model.scrollAnchor = first.id }
+            },
+            onCenterTap: { withAnimation { toggleChrome() } },
+            onBoundary: { forward in
+                if forward, model.hasNext {
+                    startAtEnd = false
+                    model.nextChapter()
+                } else if !forward, model.hasPrevious {
+                    startAtEnd = true
+                    model.previousChapter()
+                }
+            }
+        )
+        .ignoresSafeArea()
     }
 
     private func header(detail: WorkDetail, chapter: Chapter) -> some View {
@@ -149,10 +277,27 @@ struct ReaderView: View {
         .padding(.vertical, 24)
     }
 
+    @ViewBuilder
+    private var toast: some View {
+        if let message = actions.message {
+            Text(message)
+                .font(.subheadline.weight(.medium))
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .glassEffect(.regular, in: .capsule)
+                .padding(.top, topInset + 8)
+                .transition(.move(edge: .top).combined(with: .opacity))
+                .task(id: message) {
+                    try? await Task.sleep(for: .seconds(2))
+                    withAnimation { actions.message = nil }
+                }
+        }
+    }
+
     // MARK: - Liquid Glass controls
 
     /// 浮動控制列：多個玻璃元件置於同一 GlassEffectContainer，彼此靠近時會融合，
-    /// 開啟翻譯時語言膠囊從翻譯按鈕「流出」（glassEffectID 形變動畫）。
+    /// 開啟翻譯時語言膠囊從翻譯按鈕「流出」（glassEffectID 形變動畫）。長按翻譯按鈕可直接開啟翻譯設定。
     private var controls: some View {
         VStack(spacing: 8) {
             if let error = model.translationError, model.isTranslationOn {
@@ -162,11 +307,13 @@ struct ReaderView: View {
                     .padding(.horizontal, 14)
                     .padding(.vertical, 8)
                     .glassEffect(.regular.tint(.red.opacity(0.25)), in: .capsule)
+                    .onTapGesture { showsTranslationSettings = true }
             }
 
             GlassEffectContainer(spacing: 10) {
                 HStack(spacing: 10) {
                     circleButton("chevron.left", label: "上一章", enabled: model.hasPrevious) {
+                        startAtEnd = false
                         model.previousChapter()
                     }
 
@@ -198,7 +345,11 @@ struct ReaderView: View {
                         in: .circle
                     )
                     .glassEffectID("translate", in: glass)
+                    .contextMenu {
+                        Button("翻譯設定", systemImage: "gearshape") { showsTranslationSettings = true }
+                    }
                     .accessibilityLabel(model.isTranslationOn ? "關閉翻譯" : "開啟翻譯")
+                    .accessibilityHint("長按開啟翻譯設定")
 
                     if model.isTranslationOn {
                         languageMenu
@@ -206,6 +357,7 @@ struct ReaderView: View {
                     }
 
                     circleButton("chevron.right", label: "下一章", enabled: model.hasNext) {
+                        startAtEnd = false
                         model.nextChapter()
                     }
                 }
@@ -216,13 +368,20 @@ struct ReaderView: View {
 
     private var languageMenu: some View {
         Menu {
+            Picker("原文語言", selection: Binding(get: { model.sourceLanguage?.code }, set: { model.setSourceLanguage($0) })) {
+                Text("自動偵測").tag(String?.none)
+                ForEach(TranslationLanguage.all) { Text($0.name).tag(Optional($0.code)) }
+            }
+            .pickerStyle(.menu)
             Picker("目標語言", selection: Binding(get: { model.targetLanguage.code }, set: { model.setTargetLanguage($0) })) {
                 ForEach(TranslationLanguage.all) { Text($0.name).tag($0.code) }
             }
+            .pickerStyle(.menu)
             Picker("顯示方式", selection: Binding(get: { model.displayMode }, set: { model.setDisplayMode($0) })) {
                 ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
             }
             Button("重新翻譯本章", systemImage: "arrow.clockwise") { model.resetTranslations() }
+            Button("翻譯設定…", systemImage: "gearshape") { showsTranslationSettings = true }
         } label: {
             Text(model.targetLanguage.name)
                 .font(.subheadline.weight(.medium))
@@ -245,33 +404,49 @@ struct ReaderView: View {
     }
 }
 
+/// 翻頁內容快取：同一簽章不重複建立整章的 NSAttributedString。
+final class PagedContentCache {
+    private var cached: PagedContent?
+
+    func content(signature: Int, build: () -> PagedContent) -> PagedContent {
+        if let cached, cached.signature == signature { return cached }
+        let content = build()
+        cached = content
+        return content
+    }
+}
+
 // MARK: - Background
 
-/// 閱讀頁背景：系統預設、純色或使用者上傳的圖片（覆蓋一層系統背景色以確保文字可讀）。
+/// 閱讀頁背景：依目前淺色 / 深色模式套用各自的設定（系統、純色或圖片）。
 struct ReaderBackground: View {
     let appearance: AppearanceSettings
+    let scheme: ColorScheme
 
     var body: some View {
-        switch appearance.config.readerBackground {
-        case .system:
-            Color(.systemBackground).ignoresSafeArea()
-        case .color:
-            appearance.readerColor.ignoresSafeArea()
-        case .image:
-            if let image = appearance.backgroundImage {
-                GeometryReader { proxy in
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: proxy.size.width, height: proxy.size.height)
-                        .clipped()
-                        .overlay(Color(.systemBackground).opacity(appearance.config.readerImageDim))
+        let theme = appearance.theme(for: scheme)
+        Group {
+            switch theme.background {
+            case .system:
+                Color(.systemBackground)
+            case .color:
+                Color(hex: theme.backgroundHex) ?? Color(.systemBackground)
+            case .image:
+                if let image = appearance.backgroundImage(for: scheme) {
+                    GeometryReader { proxy in
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: proxy.size.width, height: proxy.size.height)
+                            .clipped()
+                            .overlay((theme.dimStyle == .darken ? Color.black : Color.white).opacity(theme.imageDim))
+                    }
+                } else {
+                    Color(.systemBackground)
                 }
-                .ignoresSafeArea()
-            } else {
-                Color(.systemBackground).ignoresSafeArea()
             }
         }
+        .ignoresSafeArea()
     }
 }
 
@@ -339,36 +514,6 @@ struct ChapterListSheet: View {
                 .foregroundStyle(.primary)
             }
             .navigationTitle("章節")
-            .navigationBarTitleDisplayMode(.inline)
-        }
-    }
-}
-
-struct ReaderAppearanceSheet: View {
-    let model: ReaderViewModel
-    @Binding var fontSize: Double
-    @Binding var lineSpacing: Double
-
-    var body: some View {
-        NavigationStack {
-            Form {
-                Section("排版") {
-                    LabeledContent("字級 \(Int(fontSize))") {
-                        Slider(value: $fontSize, in: 14...30, step: 1)
-                    }
-                    LabeledContent("行距 \(Int(lineSpacing))") {
-                        Slider(value: $lineSpacing, in: 0...16, step: 1)
-                    }
-                }
-                ReaderAppearanceSections()
-                Section("翻譯") {
-                    Picker("顯示方式", selection: Binding(get: { model.displayMode }, set: { model.setDisplayMode($0) })) {
-                        ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
-                    }
-                    .pickerStyle(.segmented)
-                }
-            }
-            .navigationTitle("閱讀設定")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

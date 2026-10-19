@@ -70,7 +70,7 @@ struct UserWorkListView: View {
 
     var body: some View {
         Group {
-            if let model { WorkListView(model: model) } else { ProgressView() }
+            if let model { WorkListView(model: model) } else { AO3LoadingView() }
         }
         .navigationTitle(kind.title)
         .task {

@@ -111,7 +111,8 @@ enum AO3Parser {
         guard !chapters.isEmpty else { throw AO3Error.parse("作品沒有章節") }
         return WorkDetail(
             id: id, title: title, authors: authors, summary: summary, chapters: chapters,
-            tagGroups: try workTagGroups(doc), series: try workSeries(doc)
+            tagGroups: try workTagGroups(doc), series: try workSeries(doc),
+            authorLinks: try workAuthors(doc), actions: try workActions(doc)
         )
     }
 

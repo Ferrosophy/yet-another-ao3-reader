@@ -14,7 +14,7 @@ struct SubscriptionsView: View {
                     link(item)
                 }
             } else {
-                ProgressView()
+                AO3LoadingView()
             }
         }
         .safeAreaInset(edge: .top) {

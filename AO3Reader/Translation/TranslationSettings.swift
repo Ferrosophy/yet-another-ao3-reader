@@ -2,21 +2,23 @@ import Foundation
 import Observation
 
 enum TranslationProviderKind: String, CaseIterable, Codable, Identifiable, Sendable {
-    case googleWeb, googleCloud, openAICompatible, anthropic, gemini
+    case googleWeb, bingFree, googleCloud, microsoftAzure, openAICompatible, anthropic, gemini
 
     var id: String { rawValue }
 
     var title: String {
         switch self {
         case .googleWeb: "Google 翻譯（免金鑰）"
+        case .bingFree: "Bing 翻譯（免金鑰）"
         case .googleCloud: "Google Cloud Translation"
+        case .microsoftAzure: "Microsoft Translator（Azure）"
         case .openAICompatible: "OpenAI 相容 API"
         case .anthropic: "Anthropic Claude"
         case .gemini: "Google Gemini"
         }
     }
 
-    var requiresAPIKey: Bool { self != .googleWeb }
+    var requiresAPIKey: Bool { self != .googleWeb && self != .bingFree }
     var isLLM: Bool { [.openAICompatible, .anthropic, .gemini].contains(self) }
     var keychainAccount: String { "apikey.\(rawValue)" }
 }
@@ -39,8 +41,12 @@ struct TranslationConfig: Codable, Equatable, Sendable {
     var anthropicModel = "claude-sonnet-5-5"
     var geminiModel = "gemini-2.5-flash"
     var extraInstructions = ""
+    /// nil 為自動偵測原文語言（新增欄位皆為 Optional，舊設定可正常解碼）
+    var sourceLanguageCode: String?
+    var azureRegion: String?
 
     var targetLanguage: TranslationLanguage { .named(targetLanguageCode) }
+    var sourceLanguage: TranslationLanguage? { sourceLanguageCode.map(TranslationLanguage.named) }
 
     private static func matchLanguage(_ preferred: String) -> String {
         if preferred.hasPrefix("zh-Hans") { return "zh-CN" }
@@ -111,8 +117,12 @@ final class TranslationSettings {
         switch kind {
         case .googleWeb:
             return GoogleWebTranslator()
+        case .bingFree:
+            return BingTranslator(auth: .edgeFree)
         case .googleCloud:
             return GoogleCloudTranslator(apiKey: key)
+        case .microsoftAzure:
+            return BingTranslator(auth: .azure(key: key, region: config.azureRegion ?? ""))
         case .openAICompatible:
             guard let url = URL(string: config.openAIBaseURL.trimmingCharacters(in: .whitespaces)), url.scheme != nil else {
                 throw TranslationError.invalidBaseURL

@@ -61,8 +61,7 @@ struct PagedListView<Item: Identifiable & Sendable, Row: View>: View {
                     .task { await model.loadMoreIfNeeded(current: item) }
             }
             if model.isLoading {
-                ProgressView()
-                    .frame(maxWidth: .infinity)
+                AO3LoadingView(compact: true)
                     .listRowBackground(Color.clear)
             }
         }

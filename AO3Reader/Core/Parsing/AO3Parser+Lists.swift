@@ -157,3 +157,17 @@ extension AO3Parser {
         }
     }
 }
+
+extension AO3Parser {
+    /// Work Search 表單中的語言選項（value 為 AO3 語言代碼）。
+    static func languageOptions(html: String) throws -> [AO3Language] {
+        let doc = try SwiftSoup.parse(html)
+        return try doc.select("select#work_search_language_id option, select[name=\"work_search[language_id]\"] option")
+            .array()
+            .compactMap { option in
+                let code = try option.attr("value")
+                guard !code.isEmpty else { return nil }
+                return AO3Language(code: code, name: try option.text())
+            }
+    }
+}

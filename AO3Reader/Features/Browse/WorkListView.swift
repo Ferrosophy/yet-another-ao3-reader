@@ -3,10 +3,12 @@ import SwiftUI
 /// 作品卡片列表，捲到底自動載入下一頁。
 struct WorkListView: View {
     let model: PagedWorksModel
+    /// 是否顯示 AO3 的結果數標題（如 "1 - 20 of 12,345 Works"）
+    var showsHeading = true
 
     var body: some View {
         List {
-            if let heading = model.heading {
+            if showsHeading, let heading = model.heading {
                 Text(heading)
                     .font(.footnote)
                     .foregroundStyle(.secondary)
@@ -19,8 +21,7 @@ struct WorkListView: View {
                 .task { await model.loadMoreIfNeeded(current: work) }
             }
             if model.isLoading {
-                ProgressView()
-                    .frame(maxWidth: .infinity)
+                AO3LoadingView(compact: true)
                     .listRowBackground(Color.clear)
             }
         }
@@ -35,6 +36,8 @@ struct WorkListView: View {
                     Button("重試") { Task { await model.reload() } }
                         .buttonStyle(.glassProminent)
                 }
+            } else if model.isLoading, model.works.isEmpty {
+                AO3LoadingView()
             } else if model.hasLoaded, !model.isLoading, model.works.isEmpty {
                 ContentUnavailableView("沒有作品", systemImage: "books.vertical")
             }

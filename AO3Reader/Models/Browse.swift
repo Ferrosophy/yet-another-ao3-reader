@@ -121,3 +121,19 @@ enum AO3Paths {
         return raw.removingPercentEncoding ?? raw
     }
 }
+
+/// AO3 作品語言（篩選用）。
+struct AO3Language: Codable, Hashable, Identifiable, Sendable {
+    var code: String
+    var name: String
+    var id: String { code }
+
+    /// 尚未從 AO3 讀取完整清單時的備用選項
+    static let fallback: [AO3Language] = [
+        .init(code: "en", name: "English"), .init(code: "zh", name: "中文-普通话 國語"),
+        .init(code: "ja", name: "日本語"), .init(code: "ko", name: "한국어"),
+        .init(code: "es", name: "Español"), .init(code: "fr", name: "Français"),
+        .init(code: "de", name: "Deutsch"), .init(code: "ru", name: "Русский"),
+        .init(code: "pt-BR", name: "Português brasileiro"), .init(code: "it", name: "Italiano"),
+    ]
+}

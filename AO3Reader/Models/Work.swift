@@ -39,6 +39,9 @@ struct WorkDetail: Sendable {
     var chapters: [Chapter]
     var tagGroups: [WorkTagGroup] = []
     var series: [WorkTag] = []
+    var authorLinks: [WorkTag] = []
+    /// 登入後才有：書籤、稍後閱讀、訂閱
+    var actions: WorkActions?
 }
 
 struct Chapter: Identifiable, Hashable, Sendable {

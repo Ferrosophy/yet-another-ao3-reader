@@ -12,13 +12,13 @@ actor TranslationService {
         try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
     }
 
-    func translate(_ texts: [String], provider: any TranslationProvider, target: TranslationLanguage) async throws -> [String] {
-        let keys = texts.map { cacheKey($0, provider: provider, target: target) }
+    func translate(_ texts: [String], provider: any TranslationProvider, source: TranslationLanguage?, target: TranslationLanguage) async throws -> [String] {
+        let keys = texts.map { cacheKey($0, provider: provider, source: source, target: target) }
         var results = keys.map(cached)
 
         let missing = results.indices.filter { results[$0] == nil }
         if !missing.isEmpty {
-            let translated = try await provider.translate(missing.map { texts[$0] }, to: target)
+            let translated = try await provider.translate(missing.map { texts[$0] }, from: source, to: target)
             for (index, text) in zip(missing, translated) {
                 results[index] = text
                 store(text, for: keys[index])
@@ -33,8 +33,8 @@ actor TranslationService {
         try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
     }
 
-    private func cacheKey(_ text: String, provider: any TranslationProvider, target: TranslationLanguage) -> String {
-        let digest = SHA256.hash(data: Data("\(provider.cacheIdentifier)|\(target.code)|\(text)".utf8))
+    private func cacheKey(_ text: String, provider: any TranslationProvider, source: TranslationLanguage?, target: TranslationLanguage) -> String {
+        let digest = SHA256.hash(data: Data("\(provider.cacheIdentifier)|\(source?.code ?? "auto")|\(target.code)|\(text)".utf8))
         return digest.map { String(format: "%02x", $0) }.joined()
     }
 

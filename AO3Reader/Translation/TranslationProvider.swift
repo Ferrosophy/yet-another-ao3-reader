@@ -7,7 +7,8 @@ protocol TranslationProvider: Sendable {
     var cacheIdentifier: String { get }
     /// 單一批次建議的最大字元數。
     var maxBatchCharacters: Int { get }
-    func translate(_ texts: [String], to target: TranslationLanguage) async throws -> [String]
+    /// `source` 為 nil 時由服務自動偵測原文語言。
+    func translate(_ texts: [String], from source: TranslationLanguage?, to target: TranslationLanguage) async throws -> [String]
 }
 
 enum TranslationError: LocalizedError {

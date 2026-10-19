@@ -108,7 +108,7 @@ struct SearchView: View {
                     NavigationLink(value: WorkListRoute.collection(collection)) { CollectionRow(collection: collection) }
                 }
             } else {
-                ProgressView()
+                AO3LoadingView()
             }
         }
     }

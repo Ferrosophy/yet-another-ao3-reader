@@ -16,6 +16,10 @@ struct TranslationSettingsView: View {
                 Picker("翻譯服務", selection: $settings.config.provider) {
                     ForEach(TranslationProviderKind.allCases) { Text($0.title).tag($0) }
                 }
+                Picker("原文語言", selection: $settings.config.sourceLanguageCode) {
+                    Text("自動偵測").tag(String?.none)
+                    ForEach(TranslationLanguage.all) { Text($0.name).tag(Optional($0.code)) }
+                }
                 Picker("目標語言", selection: $settings.config.targetLanguageCode) {
                     ForEach(TranslationLanguage.all) { Text($0.name).tag($0.code) }
                 }
@@ -85,6 +89,25 @@ struct TranslationSettingsView: View {
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
+            case .bingFree:
+                Section {
+                    Text("使用 Edge 瀏覽器內建的微軟翻譯端點，無需金鑰。屬非官方介面，可能變更或限流。")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+            case .microsoftAzure:
+                Section {
+                    TextField("區域（如 eastasia、global）", text: Binding(
+                        get: { settings.config.azureRegion ?? "" },
+                        set: { settings.config.azureRegion = $0.isEmpty ? nil : $0 }
+                    ))
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                } header: {
+                    Text("Azure Translator")
+                } footer: {
+                    Text("在 Azure 入口網站建立 Translator 資源後取得金鑰與區域；全域資源可留空。")
+                }
             case .googleCloud:
                 EmptyView()
             }
@@ -143,7 +166,7 @@ struct TranslationSettingsView: View {
         let sample = "The rain had stopped, but neither of them moved to leave."
         do {
             let provider = try app.translation.makeProvider()
-            let result = try await provider.translate([sample], to: app.translation.config.targetLanguage)
+            let result = try await provider.translate([sample], from: app.translation.config.sourceLanguage, to: app.translation.config.targetLanguage)
             testResult = "✅ \(result.first ?? "")"
         } catch {
             testResult = "❌ \(error.localizedDescription)"

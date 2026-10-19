@@ -18,7 +18,7 @@ struct InboxView: View {
                     }
                 }
             } else {
-                ProgressView()
+                AO3LoadingView()
             }
         }
         .navigationTitle("收件匣")

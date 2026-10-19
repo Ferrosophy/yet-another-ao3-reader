@@ -8,14 +8,14 @@ struct GoogleWebTranslator: TranslationProvider {
     /// 同時進行的請求數，過高容易觸發 429
     private let concurrency = 4
 
-    func translate(_ texts: [String], to target: TranslationLanguage) async throws -> [String] {
+    func translate(_ texts: [String], from source: TranslationLanguage?, to target: TranslationLanguage) async throws -> [String] {
         var results = Array(repeating: "", count: texts.count)
         for chunkStart in stride(from: 0, to: texts.count, by: concurrency) {
             let range = chunkStart..<min(chunkStart + concurrency, texts.count)
             try await withThrowingTaskGroup(of: (Int, String).self) { group in
                 for index in range {
                     let text = texts[index]
-                    group.addTask { (index, try await translateOne(text, to: target)) }
+                    group.addTask { (index, try await translateOne(text, from: source, to: target)) }
                 }
                 for try await (index, translated) in group {
                     results[index] = translated
@@ -25,11 +25,11 @@ struct GoogleWebTranslator: TranslationProvider {
         return results
     }
 
-    private func translateOne(_ text: String, to target: TranslationLanguage) async throws -> String {
+    private func translateOne(_ text: String, from source: TranslationLanguage?, to target: TranslationLanguage) async throws -> String {
         var components = URLComponents(string: "https://translate.googleapis.com/translate_a/single")!
         components.queryItems = [
             URLQueryItem(name: "client", value: "gtx"),
-            URLQueryItem(name: "sl", value: "auto"),
+            URLQueryItem(name: "sl", value: source?.code ?? "auto"),
             URLQueryItem(name: "tl", value: target.code),
             URLQueryItem(name: "dt", value: "t"),
         ]
@@ -58,6 +58,7 @@ struct GoogleCloudTranslator: TranslationProvider {
     private struct Request: Encodable {
         let q: [String]
         let target: String
+        let source: String?
         let format = "text"
     }
 
@@ -67,9 +68,9 @@ struct GoogleCloudTranslator: TranslationProvider {
         let data: Payload
     }
 
-    func translate(_ texts: [String], to target: TranslationLanguage) async throws -> [String] {
+    func translate(_ texts: [String], from source: TranslationLanguage?, to target: TranslationLanguage) async throws -> [String] {
         let url = URL(string: "https://translation.googleapis.com/language/translate/v2")!
-        let data = try await HTTP.postJSON(url, headers: ["X-Goog-Api-Key": apiKey], body: Request(q: texts, target: target.code))
+        let data = try await HTTP.postJSON(url, headers: ["X-Goog-Api-Key": apiKey], body: Request(q: texts, target: target.code, source: source?.code))
         let translations = try JSONDecoder().decode(Response.self, from: data).data.translations.map(\.translatedText)
         guard translations.count == texts.count else {
             throw TranslationError.countMismatch(expected: texts.count, got: translations.count)
