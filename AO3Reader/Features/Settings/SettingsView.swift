@@ -11,9 +11,35 @@ struct SettingsView: View {
         return "\(version) (\(build))"
     }()
     @State private var showsClearConfirm = false
+    @AppStorage(StartTab.storageKey) private var startTab: StartTab = .browse
+    @AppStorage(DownloadFormat.storageKey) private var downloadFormat: DownloadFormat = .epub
 
     var body: some View {
         List {
+            Section("一般") {
+                Picker("啟動頁面", selection: $startTab) {
+                    ForEach(StartTab.allCases) { Text($0.title).tag($0) }
+                }
+                Picker("預設下載格式", selection: $downloadFormat) {
+                    ForEach(DownloadFormat.allCases) { Text(verbatim: $0.title).tag($0) }
+                }
+            }
+
+            Section {
+                NavigationLink {
+                    SyncSettingsView()
+                } label: {
+                    LabeledContent("資料同步", value: app.sync.provider.title)
+                }
+                NavigationLink {
+                    ReadingStatsView()
+                } label: {
+                    LabeledContent("時長管理", value: app.readingTime.reminderEnabled
+                        ? String(localized: "每 \(app.readingTime.reminderMinutes) 分鐘提醒")
+                        : String(localized: "未開啟提醒"))
+                }
+            }
+
             Section("內容來源") {
                 NavigationLink {
                     SourcesView()

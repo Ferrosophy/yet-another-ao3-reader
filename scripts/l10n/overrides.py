@@ -1,5 +1,11 @@
 LANGS = ['ja','ko','es','fr','de','pt-BR','it','ru','uk','pl','tr','nl','ar','hi','id','vi','th']
 _T = {
+"手動排序": "手動で並べ替え|수동 정렬|Orden manual|Ordre manuel|Manuelle Reihenfolge|Ordem manual|Ordine manuale|Ручной порядок|Ручний порядок|Ręczna kolejność|Manuel sıralama|Handmatige volgorde|ترتيب يدوي|मैन्युअल क्रम|Urutan manual|Thứ tự thủ công|เรียงเอง",
+"順序": "順序|순서|Orden|Ordre|Reihenfolge|Ordem|Ordine|Порядок|Порядок|Kolejność|Sıra|Volgorde|الترتيب|क्रम|Urutan|Thứ tự|ลำดับ",
+"瀏覽": "ブラウズ|둘러보기|Explorar|Parcourir|Entdecken|Explorar|Esplora|Обзор|Огляд|Przeglądaj|Keşfet|Bladeren|تصفح|ब्राउज़ करें|Jelajahi|Duyệt|เรียกดู",
+"減少": "減らす|줄이기|Disminuir|Diminuer|Verringern|Diminuir|Diminuisci|Уменьшить|Зменшити|Zmniejsz|Azalt|Verlagen|إنقاص|घटाएँ|Kurangi|Giảm|ลด",
+"增加": "増やす|늘리기|Aumentar|Augmenter|Erhöhen|Aumentar|Aumenta|Увеличить|Збільшити|Zwiększ|Artır|Verhogen|زيادة|बढ़ाएँ|Tambah|Tăng|เพิ่ม",
+"時長管理": "読書時間の管理|독서 시간 관리|Tiempo de lectura|Temps de lecture|Lesezeit|Tempo de leitura|Tempo di lettura|Время чтения|Час читання|Czas czytania|Okuma süresi|Leestijd|وقت القراءة|पढ़ने का समय|Waktu baca|Thời gian đọc|เวลาอ่าน",
 "閱讀配色": "閲覧画面の配色|읽기 화면 색상|Colores de lectura|Couleurs de lecture|Lesefarben|Cores de leitura|Colori di lettura|Цвета чтения|Кольори читання|Kolory czytania|Okuma renkleri|Leeskleuren|ألوان القراءة|पठन रंग|Warna baca|Màu đọc|สีหน้าอ่าน",
 "閱讀模式與排版": "モードとレイアウト|모드 및 레이아웃|Modo y diseño|Mode et mise en page|Modus und Layout|Modo e layout|Modalità e layout|Режим и макет|Режим і макет|Tryb i układ|Mod ve düzen|Modus en indeling|الوضع والتخطيط|मोड और लेआउट|Mode & tata letak|Chế độ & bố cục|โหมดและเลย์เอาต์",
 "翻譯簡介": "あらすじを翻訳|줄거리 번역|Traducir resúmenes|Traduire les résumés|Zusammenfassungen übersetzen|Traduzir resumos|Traduci riassunti|Переводить описания|Перекладати описи|Tłumacz opisy|Özetleri çevir|Samenvattingen vertalen|ترجمة الملخصات|सारांश अनुवाद करें|Terjemahkan ringkasan|Dịch tóm tắt|แปลเรื่องย่อ",

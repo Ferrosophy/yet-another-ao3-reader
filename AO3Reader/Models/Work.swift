@@ -1,7 +1,7 @@
 import Foundation
 
 /// 搜尋結果、閱讀紀錄、書籤列表中的一個作品卡片（AO3 的 `li.blurb`）。
-struct WorkSummary: Identifiable, Hashable, Sendable {
+struct WorkSummary: Identifiable, Hashable, Codable, Sendable {
     let id: Int
     var title: String
     var authors: [String] = []
@@ -42,6 +42,15 @@ struct WorkDetail: Sendable {
     var authorLinks: [WorkTag] = []
     /// 登入後才有：書籤、稍後閱讀、訂閱
     var actions: WorkActions?
+    /// 官網提供的下載連結，鍵為副檔名（azw3、epub、mobi、pdf、html）
+    var downloads: [String: String] = [:]
+    /// 作品資訊（分級、標籤、統計），用於加入書架與閱讀時長統計
+    var info: WorkSummary?
+
+    /// 加入書架等需要卡片資料時使用：優先取作品頁解析出的完整資訊
+    var summaryInfo: WorkSummary {
+        info ?? WorkSummary(id: id, title: title, authors: authors, summary: summary)
+    }
 }
 
 struct Chapter: Identifiable, Hashable, Sendable {

@@ -41,6 +41,6 @@ for k in keys:
         locs[lang] = {'stringUnit': {'state': 'translated', 'value': value}}
     catalog['strings'][k] = {'extractionState': 'manual', 'localizations': locs}
 json.dump(catalog, open(sys.argv[1], 'w'), ensure_ascii=False, indent=2, sort_keys=True)
-for k in ['帳號', '用戶', '字體', '介面字體', '搜尋', '預設', '用戶名或電子郵件', '批次導入', '登入狀態以 AO3 的 Cookie 保存在本機，依來源網域分開。本應用沒有自己的帳號系統，也不保存你的密碼。']:
+for k in ['帳號', '用戶', '字體', '介面字體', '搜尋', '預設', '用戶名或電子郵件', '登入狀態以 AO3 的 Cookie 保存在本機，依來源網域分開。本應用沒有自己的帳號系統，也不保存你的密碼。']:
     print(k, '|', zh_hans[k], '|', zh_tw[k], '|', zh_hk[k])
 print(len(keys), 'keys,', len(locales), 'locales')

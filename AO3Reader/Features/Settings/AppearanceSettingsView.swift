@@ -5,9 +5,12 @@ import UniformTypeIdentifiers
 /// 設定 → 外觀：深色模式、主題色，以及閱讀頁的模式、排版、字體、配色與譯文外觀。
 struct AppearanceSettingsView: View {
     @Environment(AppState.self) private var app
+    @Environment(\.colorScheme) private var systemScheme
+    @State private var accentScheme: ColorScheme?
 
     var body: some View {
         @Bindable var appearance = app.appearance
+        let scheme = accentScheme ?? systemScheme
 
         ReaderAppearanceForm(showsInterface: true) {
             Section {
@@ -15,17 +18,31 @@ struct AppearanceSettingsView: View {
                     ForEach(AppColorScheme.allCases) { Text($0.title).tag($0) }
                 }
                 .pickerStyle(.segmented)
+            }
+
+            Section {
+                Picker("編輯", selection: Binding(get: { scheme }, set: { accentScheme = $0 })) {
+                    Text("淺色模式").tag(ColorScheme.light)
+                    Text("深色模式").tag(ColorScheme.dark)
+                }
+                .pickerStyle(.segmented)
 
                 HStack(spacing: 20) {
                     ForEach(AppearanceSettings.accentPresets, id: \.hex) { preset in
                         Swatch(color: Color(hex: preset.hex) ?? .red, label: LocalizedStringKey(preset.name),
-                               isSelected: appearance.config.accentHex == preset.hex) {
-                            appearance.config.accentHex = preset.hex
+                               isSelected: appearance.accentHex(for: scheme) == preset.hex) {
+                            appearance.setAccentHex(preset.hex, for: scheme)
                         }
                     }
                 }
                 .frame(maxWidth: .infinity)
+            } header: {
+                Text("主題色")
+            } footer: {
+                Text("淺色與深色模式各自保存主題色，跟隨系統切換。")
+            }
 
+            Section {
                 NavigationLink {
                     FontPickerView(title: "介面字體", selection: Binding(
                         get: { appearance.interfaceFontChoice },
@@ -176,16 +193,16 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
         }
 
         Section("排版") {
-            slider("字級", value: layout.fontSize, in: 12...34, step: 1)
+            slider("字體大小", value: layout.fontSize, in: 10...40, step: 1)
             Picker("字重", selection: layout.fontWeight) {
                 ForEach(ReaderFontWeight.allCases) { Text($0.title).tag($0) }
             }
             slider("行距", value: layout.lineSpacing, in: 0...20, step: 1)
             slider("段落間距", value: layout.paragraphSpacing, in: 0...40, step: 1)
-            slider("字間距", value: layout.letterSpacing, in: -1...6, step: 0.5)
-            slider("左右邊距", value: layout.horizontalMargin, in: 8...60, step: 2)
+            slider("字間距", value: layout.letterSpacing, in: -1...6, step: 0.1)
+            slider("左右邊距", value: layout.horizontalMargin, in: 0...80, step: 1)
             if appearance.config.layout.mode == .paged {
-                slider("上下邊距", value: layout.verticalMargin, in: 8...100, step: 2)
+                slider("上下邊距", value: layout.verticalMargin, in: 0...120, step: 1)
             }
         }
     }
@@ -237,7 +254,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                     ForEach(DimStyle.allCases) { Text($0.title).tag($0) }
                 }
                 .pickerStyle(.segmented)
-                slider("淡化程度", value: theme.imageDim, in: 0...0.95, step: 0.05, percent: true)
+                slider("淡化程度", value: theme.imageDim, in: 0...0.95, step: 0.01, percent: true)
             }
         }
 
@@ -268,24 +285,47 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
     private var tagSections: some View {
         @Bindable var appearance = app.appearance
         Section {
-            ColorPicker("背景色", selection: Binding(
+            SwatchRow {
+                Swatch(color: .gray, label: "自動", isSelected: appearance.config.tagBackgroundHex == nil, symbol: "wand.and.stars") {
+                    appearance.config.tagBackgroundHex = nil
+                }
+                ForEach(AppearanceSettings.tagBackgroundPresets, id: \.hex) { preset in
+                    Swatch(color: Color(hex: preset.hex) ?? .gray, label: LocalizedStringKey(preset.name),
+                           isSelected: appearance.config.tagBackgroundHex == preset.hex) {
+                        appearance.config.tagBackgroundHex = preset.hex
+                    }
+                }
+            }
+            ColorPicker("自訂背景色", selection: Binding(
                 get: { appearance.config.tagBackgroundHex.flatMap(Color.init(hex:)) ?? Color.primary.opacity(0.08) },
                 set: { appearance.config.tagBackgroundHex = $0.hexString }
             ), supportsOpacity: false)
-            ColorPicker("文字色", selection: Binding(
+        } header: {
+            Text("標籤與簡介背景")
+        } footer: {
+            Text("自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。")
+        }
+
+        Section {
+            SwatchRow {
+                Swatch(color: .gray, label: "自動", isSelected: appearance.config.tagTextHex == nil, symbol: "wand.and.stars") {
+                    appearance.config.tagTextHex = nil
+                }
+                ForEach(AppearanceSettings.textPresets, id: \.hex) { preset in
+                    Swatch(color: Color(hex: preset.hex) ?? .black, label: LocalizedStringKey(preset.name),
+                           isSelected: appearance.config.tagTextHex == preset.hex) {
+                        appearance.config.tagTextHex = preset.hex
+                    }
+                }
+            }
+            ColorPicker("自訂文字色", selection: Binding(
                 get: { appearance.config.tagTextHex.flatMap(Color.init(hex:)) ?? .primary },
                 set: { appearance.config.tagTextHex = $0.hexString }
             ), supportsOpacity: false)
-            if appearance.config.tagBackgroundHex != nil || appearance.config.tagTextHex != nil {
-                Button("恢復自動配色") {
-                    appearance.config.tagBackgroundHex = nil
-                    appearance.config.tagTextHex = nil
-                }
-            }
         } header: {
-            Text("標籤與簡介")
+            Text("標籤與簡介文字")
         } footer: {
-            Text("自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。")
+            Text("「自動」與正文顏色相同。")
         }
     }
 
@@ -297,7 +337,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                 ForEach(TranslationAppearance.Style.allCases) { Text($0.title).tag($0) }
             }
             .pickerStyle(.segmented)
-            slider("譯文字級", value: $appearance.config.translation.fontScale, in: 0.7...1.2, step: 0.05, percent: true)
+            slider("譯文大小", value: $appearance.config.translation.fontScale, in: 0.6...1.3, step: 0.01, percent: true)
             Toggle("斜體", isOn: $appearance.config.translation.italic)
             ColorPicker("譯文顏色", selection: Binding(
                 get: { appearance.config.translation.colorHex.flatMap(Color.init(hex:)) ?? .secondary },
@@ -310,15 +350,55 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
     }
 
     private func slider(_ title: LocalizedStringKey, value: Binding<Double>, in range: ClosedRange<Double>, step: Double, percent: Bool = false) -> some View {
-        let display = percent ? "\(Int((value.wrappedValue * 100).rounded()))%" : value.wrappedValue.formatted(.number.precision(.fractionLength(0...1)))
-        return LabeledContent {
-            Slider(value: value, in: range, step: step)
-        } label: {
-            HStack(spacing: 4) {
-                Text(title)
-                Text(verbatim: display).monospacedDigit()
-            }
+        FineSlider(title: title, value: value, range: range, step: step, percent: percent)
+    }
+}
+
+/// 帶「−」「＋」微調按鈕的滑桿：標題欄固定寬度，讓每一列的標題、滑桿與數值左右對齊。
+struct FineSlider: View {
+    let title: LocalizedStringKey
+    @Binding var value: Double
+    let range: ClosedRange<Double>
+    /// 滑桿與按鈕的最小單位（百分比項目為 0.01，即 1%）
+    let step: Double
+    var percent = false
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Text(title)
+                .lineLimit(2)
+                .minimumScaleFactor(0.8)
+                .frame(width: 84, alignment: .leading)
+            nudge("minus", by: -step)
+            Slider(value: $value, in: range, step: step)
+            nudge("plus", by: step)
+            Text(verbatim: display)
+                .appFont(.subheadline)
+                .monospacedDigit()
+                .foregroundStyle(.secondary)
+                .frame(width: 44, alignment: .trailing)
         }
+    }
+
+    private var display: String {
+        if percent { return "\(Int((value * 100).rounded()))%" }
+        return value.formatted(.number.precision(.fractionLength(step < 1 ? 1 : 0)))
+    }
+
+    private func nudge(_ symbol: String, by delta: Double) -> some View {
+        Button {
+            // 以步長為單位取整，避免浮點誤差累積（例如 0.30000000004）
+            let next = ((value + delta) / step).rounded() * step
+            value = min(max(next, range.lowerBound), range.upperBound)
+        } label: {
+            Image(systemName: symbol)
+                .appFont(.caption, weight: .bold)
+                .frame(width: 28, height: 28)
+                .contentShape(.rect)
+        }
+        .buttonStyle(.borderless)
+        .disabled(delta < 0 ? value <= range.lowerBound : value >= range.upperBound)
+        .accessibilityLabel(delta < 0 ? Text("減少") : Text("增加"))
     }
 }
 

@@ -1,11 +1,9 @@
 import SwiftUI
-import UIKit
 
 /// 來源管理：官網 + 使用者導入的鏡像站。鏡像必須與 AO3 官網 HTML 結構相同（例如 OTW 官方域名或反向代理）。
 struct SourcesView: View {
     @Environment(AppState.self) private var app
     @State private var showsAdd = false
-    @State private var showsImport = false
 
     var body: some View {
         List {
@@ -39,16 +37,10 @@ struct SourcesView: View {
         .navigationTitle("內容來源")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Menu {
-                    Button("新增鏡像", systemImage: "plus") { showsAdd = true }
-                    Button("批次導入", systemImage: "square.and.arrow.down") { showsImport = true }
-                } label: {
-                    Image(systemName: "plus")
-                }
+                Button("新增鏡像", systemImage: "plus") { showsAdd = true }
             }
         }
         .sheet(isPresented: $showsAdd) { AddSourceSheet() }
-        .sheet(isPresented: $showsImport) { ImportSourcesSheet() }
     }
 }
 
@@ -111,46 +103,6 @@ private struct AddSourceSheet: View {
             status = result.isAO3 ? .ok(result.username) : .failed(String(localized: "回應不像 AO3 頁面，可能不是相容的鏡像"))
         } catch {
             status = .failed(error.localizedDescription)
-        }
-    }
-}
-
-private struct ImportSourcesSheet: View {
-    @Environment(AppState.self) private var app
-    @Environment(\.dismiss) private var dismiss
-    @State private var text = ""
-    @State private var result: Int?
-
-    var body: some View {
-        NavigationStack {
-            Form {
-                Section {
-                    TextEditor(text: $text)
-                        .frame(minHeight: 180)
-                        .font(.callout.monospaced())
-                        .textInputAutocapitalization(.never)
-                        .autocorrectionDisabled()
-                } footer: {
-                    Text("每行一個來源，可寫成「網址」或「名稱 網址」。")
-                }
-                if let result {
-                    Text("已導入 \(result) 個來源")
-                }
-            }
-            .navigationTitle("批次導入")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("關閉") { dismiss() } }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("貼上", systemImage: "doc.on.clipboard") {
-                        text = UIPasteboard.general.string ?? text
-                    }
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("導入") { result = app.sources.importList(text) }
-                        .disabled(text.isEmpty)
-                }
-            }
         }
     }
 }

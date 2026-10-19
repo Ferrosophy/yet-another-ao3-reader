@@ -68,20 +68,6 @@ final class SourceStore {
         return source
     }
 
-    /// 批次導入：每行一個網址，可選「名稱 網址」或「名稱,網址」格式。回傳成功導入數量。
-    func importList(_ text: String) -> Int {
-        var count = 0
-        for line in text.split(whereSeparator: \.isNewline) {
-            let parts = line.split(whereSeparator: { $0 == "," || $0 == " " || $0 == "\t" }).map(String.init)
-            guard let urlPart = parts.last, let url = Self.normalize(urlPart) else { continue }
-            let name = parts.dropLast().joined(separator: " ")
-            let before = sources.count
-            add(name: name, url: url)
-            if sources.count > before { count += 1 }
-        }
-        return count
-    }
-
     func remove(_ source: AO3Source) {
         guard !source.isBuiltIn else { return }
         sources.removeAll { $0.id == source.id }

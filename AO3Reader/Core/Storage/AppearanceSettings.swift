@@ -149,7 +149,10 @@ struct CustomFont: Codable, Hashable, Identifiable, Sendable {
 
 struct AppearanceConfig: Codable, Equatable, Sendable {
     var colorScheme: AppColorScheme = .system
+    /// 淺色模式的主題色
     var accentHex = "#990000"  // 書房紅
+    /// 深色模式的主題色；nil 為與淺色模式相同
+    var darkAccentHex: String?
     var lightTheme = ReaderTheme.defaultLight
     var darkTheme = ReaderTheme.defaultDark
     /// "system" / "serif" / "rounded" / "family:<字族名稱>" / "custom:<PostScript 名稱>"
@@ -190,6 +193,16 @@ final class AppearanceSettings {
         ("純黑", "#000000"),
     ]
 
+    /// 標籤與簡介的底色預設（淺色系用於淺色背景，深色系用於深色背景）
+    static let tagBackgroundPresets: [(name: String, hex: String)] = [
+        ("淺米", "#EFE6D2"),
+        ("淺灰", "#E5E5EA"),
+        ("淺藍", "#DCE6F2"),
+        ("淺綠", "#DDEBDD"),
+        ("深灰", "#2C2C2E"),
+        ("深藍", "#22304A"),
+    ]
+
     static let textPresets: [(name: String, hex: String)] = [
         ("墨黑", "#1C1C1E"),
         ("深棕", "#4A3B2A"),
@@ -214,6 +227,9 @@ final class AppearanceSettings {
         if !Self.accentPresets.contains(where: { $0.hex == config.accentHex }) {
             config.accentHex = Self.defaultAccent
         }
+        if let dark = config.darkAccentHex, !Self.accentPresets.contains(where: { $0.hex == dark }) {
+            config.darkAccentHex = nil
+        }
         self.config = config
         try? FileManager.default.createDirectory(at: Self.fontsDirectory, withIntermediateDirectories: true)
         for font in config.customFonts {
@@ -226,7 +242,22 @@ final class AppearanceSettings {
         }
     }
 
-    var accentColor: Color { Color(hex: config.accentHex) ?? Color(red: 0.6, green: 0, blue: 0) }
+    /// 介面主題色：淺色與深色模式各自設定，隨系統外觀自動切換
+    var accentColor: Color {
+        let fallback = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
+        let light = Color(hex: config.accentHex).map(UIColor.init) ?? fallback
+        let dark = (config.darkAccentHex ?? config.accentHex)
+        let darkColor = Color(hex: dark).map(UIColor.init) ?? light
+        return Color(uiColor: UIColor { $0.userInterfaceStyle == .dark ? darkColor : light })
+    }
+
+    func accentHex(for scheme: ColorScheme) -> String {
+        scheme == .dark ? (config.darkAccentHex ?? config.accentHex) : config.accentHex
+    }
+
+    func setAccentHex(_ hex: String, for scheme: ColorScheme) {
+        if scheme == .dark { config.darkAccentHex = hex } else { config.accentHex = hex }
+    }
 
     // MARK: - Themes
 

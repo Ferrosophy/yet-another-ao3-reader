@@ -1,6 +1,6 @@
 import re, sys, json, pathlib
 han = re.compile(r'[一-鿿]')
-INT_HINTS = re.compile(r'^(code|expected|got|result|count|index|Int\(.*\)|.*\.count|status)$')
+INT_HINTS = re.compile(r'^(code|expected|got|result|count|index|Int\(.*\)|.*\.count|status|.*[mM]inutes)$')
 
 def parse_interp(src, i):
     # src[i] is just after '\(' ; return (expr, new_index after ')')

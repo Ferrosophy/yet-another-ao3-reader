@@ -236,4 +236,68 @@ struct AccountActionTests {
         #expect(AccountEntry.decode("") == [.bookmarks, .markedForLater, .history, .subscriptions, .inbox])
         #expect(AccountEntry.decode("inbox,history,inbox,bogus") == [.inbox, .history, .bookmarks, .markedForLater, .subscriptions])
     }
+
+    @Test func parsesDownloadLinksAndInfo() throws {
+        let html = """
+        <ul class="work navigation actions"><li class="download"><ul class="expandable secondary">
+        <li><a href="/downloads/42/My%20Work.epub?updated_at=1">EPUB</a></li>
+        <li><a href="/downloads/42/My%20Work.pdf?updated_at=1">PDF</a></li>
+        </ul></li></ul>
+        <dl class="work meta group"><dd class="rating tags"><a class="tag" href="/tags/x">Teen And Up Audiences</a></dd>
+        <dd class="fandom tags"><a class="tag" href="/tags/y">Some Fandom</a></dd>
+        <dd class="language">English</dd>
+        <dl class="stats"><dd class="words">1,234</dd><dd class="kudos">56</dd></dl></dl>
+        <div id="workskin"><h2 class="title heading">T</h2></div>
+        <div id="chapters"><div class="userstuff"><p>Hello</p></div></div>
+        """
+        let detail = try AO3Parser.workDetail(html: html, id: 42)
+        #expect(detail.downloads["epub"] == "/downloads/42/My%20Work.epub?updated_at=1")
+        #expect(detail.downloads["pdf"] != nil)
+        let info = try #require(detail.info)
+        #expect(info.rating == "Teen And Up Audiences")
+        #expect(info.fandoms == ["Some Fandom"])
+        #expect(info.language == "English")
+        #expect(info.words == "1,234")
+    }
+
+    @Test func detectsCloudflareChallenge() {
+        let url = URL(string: "https://archiveofourown.org/")!
+        let challenge = HTTPURLResponse(url: url, statusCode: 403, httpVersion: nil, headerFields: [:])!
+        let page = Data("<html><head><title>Just a moment...</title></head><script>window._cf_chl_opt={}</script></html>".utf8)
+        #expect(AO3Client.isCloudflareChallenge(challenge, data: page))
+        let normal = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: [:])!
+        let injected = Data("<html><title>AO3</title><script src=\"/cdn-cgi/challenge-platform/scripts/jsd/main.js\"></script></html>".utf8)
+        #expect(!AO3Client.isCloudflareChallenge(normal, data: injected))
+    }
+
+    @Test func mergesBookshelvesByModificationTime() {
+        let old = Date(timeIntervalSince1970: 100), new = Date(timeIntervalSince1970: 200)
+        func item(_ id: Int, _ title: String, _ date: Date) -> BookshelfItem {
+            BookshelfItem(work: WorkSummary(id: id, title: title), addedAt: old, modifiedAt: date)
+        }
+        var local = BookshelfState(items: [item(1, "old title", old), item(2, "kept", old)], manualOrder: [1, 2], orderModifiedAt: old)
+        local.removed = [:]
+        let remote = BookshelfState(items: [item(1, "new title", new), item(3, "added", new)],
+                                    removed: ["2": new], manualOrder: [3, 1], orderModifiedAt: new)
+        let merged = SyncMerge.bookshelf(local, remote)
+        #expect(Set(merged.items.map(\.id)) == [1, 3])
+        #expect(merged.items.first { $0.id == 1 }?.work.title == "new title")
+        #expect(merged.manualOrder == [3, 1])
+    }
+
+    @Test func mergesReadingLogsPerDevice() {
+        var a = ReadingLog()
+        a.devices["A"] = DeviceReadingLog(days: ["2026-01-01": ["1": 60]], modifiedAt: Date(timeIntervalSince1970: 10))
+        var b = ReadingLog()
+        b.devices["A"] = DeviceReadingLog(days: ["2026-01-01": ["1": 120]], modifiedAt: Date(timeIntervalSince1970: 20))
+        b.devices["B"] = DeviceReadingLog(days: ["2026-01-01": ["1": 30]], modifiedAt: Date(timeIntervalSince1970: 5))
+        let merged = a.merged(with: b)
+        #expect(merged.devices["A"]?.days["2026-01-01"]?["1"] == 120)
+        #expect(merged.devices["B"] != nil)
+    }
+
+    @Test func sanitizesDownloadFileNames() {
+        #expect(AO3Client.fileName("A/B: C?") == "A B  C")
+        #expect(AO3Client.fileName("  ") == "work")
+    }
 }

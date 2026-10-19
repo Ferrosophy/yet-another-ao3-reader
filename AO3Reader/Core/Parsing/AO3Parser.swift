@@ -121,7 +121,9 @@ enum AO3Parser {
         return WorkDetail(
             id: id, title: title, authors: authors, summary: summary, chapters: chapters,
             tagGroups: try workTagGroups(doc), series: try workSeries(doc),
-            authorLinks: try workAuthors(doc), actions: try workActions(doc)
+            authorLinks: try workAuthors(doc), actions: try workActions(doc),
+            downloads: try workDownloads(doc),
+            info: try workInfo(doc, id: id, title: title, authors: authors, summary: summary)
         )
     }
 

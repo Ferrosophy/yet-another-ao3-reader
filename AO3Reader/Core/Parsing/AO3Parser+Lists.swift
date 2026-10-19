@@ -150,6 +150,46 @@ extension AO3Parser {
         return result
     }
 
+    /// 作品頁「Download」選單中的各格式連結，鍵為小寫副檔名。
+    static func workDownloads(_ doc: Document) throws -> [String: String] {
+        var result: [String: String] = [:]
+        for link in try doc.select("li.download a[href*=/downloads/]").array() {
+            let href = try link.attr("href")
+            let path = href.split(separator: "?").first.map(String.init) ?? href
+            guard let ext = path.split(separator: ".").last?.lowercased(), !ext.contains("/") else { continue }
+            result[ext] = href
+        }
+        return result
+    }
+
+    /// 作品頁的分級、標籤與統計，組成與列表卡片相同的資料。
+    static func workInfo(_ doc: Document, id: Int, title: String, authors: [String], summary: String) throws -> WorkSummary {
+        func tags(_ css: String) throws -> [String] {
+            try doc.select("dl.work.meta \(css) a.tag").array().map { try $0.text() }
+        }
+        func stat(_ css: String) throws -> String? {
+            let text = try doc.select("dl.stats \(css)").first()?.text()
+            return text?.isEmpty == false ? text : nil
+        }
+        return WorkSummary(
+            id: id, title: title, authors: authors,
+            fandoms: try tags("dd.fandom"),
+            rating: try tags("dd.rating").first,
+            warnings: try tags("dd.warning"),
+            categories: try tags("dd.category"),
+            relationships: try tags("dd.relationship"),
+            characters: try tags("dd.character"),
+            freeforms: try tags("dd.freeform"),
+            summary: summary,
+            language: try doc.select("dl.work.meta dd.language").first()?.text(),
+            words: try stat("dd.words"),
+            chapters: try stat("dd.chapters"),
+            kudos: try stat("dd.kudos"),
+            hits: try stat("dd.hits"),
+            updated: try stat("dd.status") ?? stat("dd.published")
+        )
+    }
+
     /// 作品所屬系列（dd.series 內的連結）。
     static func workSeries(_ doc: Document) throws -> [WorkTag] {
         try doc.select("dl.work.meta dd.series a[href^=/series/]").array().map {

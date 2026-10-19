@@ -27,6 +27,9 @@ struct WorkListView: View {
                     NavigationLink(value: WorkRoute(id: work.id, title: work.title)) {
                         WorkRow(work: work)
                     }
+                    .contextMenu {
+                        BookshelfMenuButton(work: work)
+                    }
                     .task { await model.loadMoreIfNeeded(current: work) }
                 }
             }
@@ -60,6 +63,20 @@ struct WorkListView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 SummaryTranslationToggle()
             }
+        }
+    }
+}
+
+/// 長按作品卡片：加入或移出書架
+struct BookshelfMenuButton: View {
+    let work: WorkSummary
+    @Environment(AppState.self) private var app
+
+    var body: some View {
+        if app.bookshelf.contains(work.id) {
+            Button("移出書架", systemImage: "books.vertical.fill", role: .destructive) { app.bookshelf.remove(work.id) }
+        } else {
+            Button("加入書架", systemImage: "books.vertical") { app.bookshelf.add(work) }
         }
     }
 }

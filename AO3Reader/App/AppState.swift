@@ -10,9 +10,15 @@ final class AppState {
     let auth = AuthService()
     let translation: TranslationSettings
     let translator: TranslationService
-    let appearance = AppearanceSettings()
+    let appearance: AppearanceSettings
     /// 作品卡片的簡介翻譯
     let summaries: SummaryTranslator
+    /// 書架（本機資料）
+    let bookshelf: BookshelfStore
+    /// 時長管理
+    let readingTime: ReadingTimeStore
+    /// 個人資料同步（iCloud / WebDAV），與 AO3 帳號資料分開
+    let sync: SyncService
 
     init() {
         let translation = TranslationSettings()
@@ -20,6 +26,13 @@ final class AppState {
         self.translation = translation
         self.translator = translator
         summaries = SummaryTranslator(settings: translation, translator: translator)
+        let appearance = AppearanceSettings()
+        let bookshelf = BookshelfStore()
+        let readingTime = ReadingTimeStore()
+        self.appearance = appearance
+        self.bookshelf = bookshelf
+        self.readingTime = readingTime
+        sync = SyncService(bookshelf: bookshelf, readingTime: readingTime, appearance: appearance, translation: translation)
     }
 
     /// 目前來源的客戶端；切換來源時自動跟著變更。

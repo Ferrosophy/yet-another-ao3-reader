@@ -33,6 +33,7 @@ final class ReaderViewModel {
         didSet {
             guard let scrollAnchor, scrollAnchor != oldValue else { return }
             UserDefaults.standard.set(scrollAnchor, forKey: anchorKey)
+            ReadingProgress.touch(route.id)
         }
     }
 
@@ -114,6 +115,7 @@ final class ReaderViewModel {
         visible.removeAll()
         scrollAnchor = Self.headerID(index)
         UserDefaults.standard.set(index, forKey: positionKey)
+        ReadingProgress.touch(route.id)
     }
 
     func nextChapter() { goToChapter(chapterIndex + 1) }

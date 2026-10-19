@@ -6,12 +6,15 @@ struct ReaderView: View {
     @State private var actions: WorkActionsModel
     @Environment(AppState.self) private var app
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.scenePhase) private var scenePhase
 
     @State private var showsChrome = true
     @State private var showsChapters = false
     @State private var showsAppearance = false
     @State private var showsTranslationSettings = false
     @State private var showsSourcePicker = false
+    /// 標題頁的系列與標籤連結（翻頁模式的資訊頁在 UIKit 容器中，無法使用 NavigationLink）
+    @State private var openedList: WorkListRoute?
     /// 翻頁模式往前翻到上一章時，從該章最後一頁開始
     @State private var startAtEnd = false
     /// 顯示控制列時量到的安全區域；內容以固定邊距排版，控制列出現 / 隱藏不會推動正文
@@ -61,10 +64,40 @@ struct ReaderView: View {
         .toolbar(.hidden, for: .tabBar)
         .statusBarHidden(!chromeVisible)
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
+            ToolbarItemGroup(placement: .topBarTrailing) {
+                if let detail = model.detail {
+                    Button {
+                        app.bookshelf.toggle(detail.summaryInfo)
+                    } label: {
+                        Label(app.bookshelf.contains(detail.id) ? LocalizedStringKey("移出書架") : "加入書架",
+                              systemImage: app.bookshelf.contains(detail.id) ? "books.vertical.fill" : "books.vertical")
+                    }
+                    WorkDownloadButton(detail: detail, client: model.client)
+                }
                 if app.auth.isLoggedIn { WorkActionsMenu(model: actions) }
             }
         }
+        // 時長管理：閱讀頁在前景時計時，定期寫入並檢查休息提醒
+        .task(id: model.detail?.id) {
+            guard let detail = model.detail else { return }
+            app.bookshelf.markRead(detail.id, info: detail.info)
+            startReadingTimer(detail)
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(30))
+                app.readingTime.tick()
+            }
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active, let detail = model.detail { startReadingTimer(detail) } else { app.readingTime.pause() }
+        }
+        .onAppear { if let detail = model.detail { startReadingTimer(detail) } }
+        .onDisappear { app.readingTime.pause() }
+        .alert("休息一下吧", isPresented: Binding(get: { app.readingTime.restDue }, set: { if !$0 { app.readingTime.acknowledgeRest() } })) {
+            Button("好") { app.readingTime.acknowledgeRest() }
+        } message: {
+            Text("你已連續閱讀 \(app.readingTime.reminderMinutes) 分鐘，讓眼睛休息一下。")
+        }
+        .navigationDestination(item: $openedList) { WorkListScreen(route: $0) }
         .task { await model.load() }
         .task(id: model.detail?.id) {
             if let detail = model.detail { await actions.load(from: detail) }
@@ -107,6 +140,10 @@ struct ReaderView: View {
                     }
             }
         }
+    }
+
+    private func startReadingTimer(_ detail: WorkDetail) {
+        app.readingTime.begin(workID: detail.id, meta: detail.summaryInfo.readingMeta)
     }
 
     private func toggleChrome() {
@@ -153,7 +190,8 @@ struct ReaderView: View {
                     .onAppear { model.paragraphAppeared(paragraph) }
                     .onDisappear { model.paragraphDisappeared(paragraph) }
                 }
-                chapterFooter
+                // 章末留白（換章使用底部控制列的上一章 / 下一章）
+                Color.clear.frame(height: 24)
             }
             // 上方段落高度變化（譯文載入）時，以頂端段落為錨點保持位置
             .scrollTargetLayout()
@@ -190,8 +228,9 @@ struct ReaderView: View {
 
         let content = pagedCache.content(signature: signature) {
             let (text, spans) = PagedTextBuilder.build(
-                title: model.chapterIndex == 0 ? detail.title : nil,
-                summary: model.chapterIndex == 0 && !detail.summary.isEmpty ? detail.summary : nil,
+                // 作品標題與簡介顯示在第一頁的資訊頁，正文頁只保留章節標題
+                title: nil,
+                summary: nil,
                 chapterTitle: detail.chapters.count > 1 ? chapter.title : nil,
                 chapterIndex: model.chapterIndex,
                 chapter: chapter,
@@ -206,20 +245,23 @@ struct ReaderView: View {
         }
 
         let theme = appearance.theme(for: colorScheme)
-        let pageColor: UIColor = theme.background == .color
-            ? UIColor(Color(hex: theme.backgroundHex) ?? .white)
-            : .systemBackground
+        let background: PageBackground = switch theme.background {
+        case .system:
+            .color(.systemBackground)
+        case .color:
+            .color(UIColor(Color(hex: theme.backgroundHex) ?? .white))
+        case .image:
+            appearance.backgroundImage(for: colorScheme).map {
+                PageBackground.image($0, dim: CGFloat(theme.imageDim), dimColor: theme.dimStyle == .darken ? .black : .white)
+            } ?? .color(.systemBackground)
+        }
 
         return PagedReaderView(
             content: content,
+            header: model.chapterIndex == 0 ? pagedHeader(detail: detail, chapter: chapter) : nil,
             transition: layout.pageTransition,
-            insets: UIEdgeInsets(
-                top: topInset + layout.verticalMargin,
-                left: layout.horizontalMargin,
-                bottom: bottomInset + layout.verticalMargin + (layout.chrome == .pinned ? 64 : 0),
-                right: layout.horizontalMargin
-            ),
-            pageColor: pageColor,
+            margins: pageMargins,
+            background: background,
             anchorParagraphID: model.scrollAnchor,
             startAtEnd: startAtEnd,
             onPageChange: { paragraphs in
@@ -240,7 +282,7 @@ struct ReaderView: View {
         .ignoresSafeArea()
     }
 
-    private func header(detail: WorkDetail, chapter: Chapter) -> some View {
+    private func header(detail: WorkDetail, chapter: Chapter, includesChapterTitle: Bool = true) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             if model.chapterIndex == 0 {
                 Text(detail.title)
@@ -249,7 +291,9 @@ struct ReaderView: View {
                     .foregroundStyle(bodyColor.opacity(0.7))
                 if !detail.series.isEmpty {
                     ForEach(detail.series, id: \.path) { series in
-                        NavigationLink(value: WorkListRoute.series(name: series.name, path: series.path)) {
+                        Button {
+                            openedList = .series(name: series.name, path: series.path)
+                        } label: {
                             Label(series.name, systemImage: "books.vertical")
                                 .appFont(.subheadline)
                                 .foregroundStyle(bodyColor)
@@ -258,7 +302,9 @@ struct ReaderView: View {
                     }
                 }
                 if !detail.tagGroups.isEmpty {
-                    WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground)
+                    WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground) {
+                        openedList = $0
+                    }
                 }
                 if !detail.summary.isEmpty {
                     VStack(alignment: .leading, spacing: 8) {
@@ -272,7 +318,7 @@ struct ReaderView: View {
                     .background(cardBackground, in: .rect(cornerRadius: 14))
                 }
             }
-            if detail.chapters.count > 1 {
+            if includesChapterTitle, detail.chapters.count > 1 {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(chapter.title)
                         .font(style.headingFont)
@@ -282,6 +328,44 @@ struct ReaderView: View {
                 .padding(.top, 8)
             }
         }
+    }
+
+    /// 翻頁模式的邊距：以裝置安全區域為基準；控制列鎖定時另外保留導覽列與控制列的空間
+    private var pageMargins: PageMargins {
+        PageMargins(
+            horizontal: layout.horizontalMargin,
+            vertical: layout.verticalMargin,
+            extraTop: layout.chrome == .pinned ? 44 : 0,
+            extraBottom: layout.chrome == .pinned ? 64 : 0
+        )
+    }
+
+    /// 翻頁模式的第一頁：作品標題、作者、系列、標籤與簡介，可上下捲動。
+    /// 以 UIHostingController 放進翻頁器，因此明確傳入環境（AppState、主題色、介面語言與字體）。
+    private func pagedHeader(detail: WorkDetail, chapter: Chapter) -> AnyView {
+        let insets = pageMargins.insets(safeArea: DeviceInsets.current)
+        let page = ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                header(detail: detail, chapter: chapter, includesChapterTitle: false)
+                Label("向左翻頁開始閱讀", systemImage: "chevron.right.2")
+                    .appFont(.footnote)
+                    .foregroundStyle(bodyColor.opacity(0.5))
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 8)
+            }
+            .padding(.horizontal, insets.left)
+            .contentShape(.rect)
+            .onTapGesture { withAnimation { toggleChrome() } }
+        }
+        .contentMargins(.top, insets.top, for: .scrollContent)
+        .contentMargins(.bottom, insets.bottom, for: .scrollContent)
+        .scrollIndicators(.hidden)
+        .foregroundStyle(bodyColor)
+        .environment(app)
+        .tint(appearance.accentColor)
+        .environment(\.interfaceFont, appearance.interfaceFontChoice)
+        .environment(\.locale, InterfaceLanguage.selectedCode.map(Locale.init(identifier:)) ?? .autoupdatingCurrent)
+        return AnyView(page)
     }
 
     /// 標題與簡介的沉浸式譯文（顯示在原文下方，不取代原文）
@@ -306,21 +390,6 @@ struct ReaderView: View {
 
     /// 正文顏色（未自訂時為系統主要文字色）
     private var bodyColor: Color { style.textColor ?? .primary }
-
-    private var chapterFooter: some View {
-        HStack {
-            if model.hasPrevious {
-                Button("上一章", systemImage: "chevron.left") { model.previousChapter() }
-            }
-            Spacer()
-            if model.hasNext {
-                Button("下一章", systemImage: "chevron.right") { model.nextChapter() }
-                    .buttonStyle(.glassProminent)
-            }
-        }
-        .buttonStyle(.glass)
-        .padding(.vertical, 24)
-    }
 
     @ViewBuilder
     private var toast: some View {
@@ -503,6 +572,7 @@ private struct WorkTagsView: View {
     let groups: [WorkTagGroup]
     let background: Color
     let foreground: Color
+    var onOpen: (WorkListRoute) -> Void
     @State private var expanded = false
 
     var body: some View {
@@ -514,7 +584,9 @@ private struct WorkTagsView: View {
                         .foregroundStyle(foreground.opacity(0.65))
                     FlowLayout(horizontalSpacing: 6, verticalSpacing: 6) {
                         ForEach(group.tags, id: \.path) { tag in
-                            NavigationLink(value: WorkListRoute.tag(name: tag.name, path: tag.path)) {
+                            Button {
+                                onOpen(.tag(name: tag.name, path: tag.path))
+                            } label: {
                                 Text(tag.name)
                                     .appFont(.caption)
                                     .lineLimit(1)

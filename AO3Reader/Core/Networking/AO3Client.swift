@@ -13,13 +13,18 @@ enum AO3Error: LocalizedError, Equatable {
         switch self {
         case .http(let code): String(localized: "伺服器回應錯誤（HTTP \(code)）")
         case .rateLimited(let after): after.map { String(localized: "請求過於頻繁，AO3 暫時限制存取，請於 \($0) 秒後再試") } ?? String(localized: "請求過於頻繁，AO3 暫時限制存取")
-        case .cloudflareChallenge: String(localized: "來源要求瀏覽器驗證，請改用「網頁登入」通過驗證後再試")
+        case .cloudflareChallenge: String(localized: "網站要求人機驗證（Cloudflare），請在彈出的頁面完成驗證後重試")
         case .requiresLogin: String(localized: "此作品僅限登入用戶閱讀")
         case .loginFailed: String(localized: "登入失敗，請檢查帳號密碼")
         case .parse(let what): String(localized: "頁面解析失敗：\(what)")
         case .invalidSource: String(localized: "無效的來源網址")
         }
     }
+}
+
+extension Notification.Name {
+    /// AO3 請求遇到 Cloudflare 人機驗證；userInfo["url"] 為觸發驗證的網址
+    static let ao3CloudflareChallenge = Notification.Name("AO3CloudflareChallenge")
 }
 
 /// 對某個 AO3 來源（官網或鏡像）的 HTML 存取。
@@ -64,25 +69,39 @@ struct AO3Client: Sendable {
         request.httpBody = Data(FormEncoding.encode(fields).utf8)
         let (data, response) = try await Self.session.data(for: request)
         let http = response as! HTTPURLResponse
-        try Self.validate(http)
+        try validate(http, data: data)
         return (String(decoding: data, as: UTF8.self), http)
     }
 
     private func send(_ request: URLRequest) async throws -> String {
         let (data, response) = try await Self.session.data(for: request)
-        try Self.validate(response as! HTTPURLResponse)
+        try validate(response as! HTTPURLResponse, data: data)
         return String(decoding: data, as: UTF8.self)
     }
 
-    private static func validate(_ response: HTTPURLResponse) throws {
+    private func validate(_ response: HTTPURLResponse, data: Data) throws {
+        if Self.isCloudflareChallenge(response, data: data) {
+            // 通知介面彈出驗證頁，讓使用者點一下人機驗證
+            NotificationCenter.default.post(name: .ao3CloudflareChallenge, object: nil,
+                                            userInfo: ["url": response.url ?? baseURL])
+            throw AO3Error.cloudflareChallenge
+        }
         switch response.statusCode {
         case 200..<400: return
         case 429: throw AO3Error.rateLimited(retryAfter: response.value(forHTTPHeaderField: "Retry-After"))
-        case 403 where response.value(forHTTPHeaderField: "cf-mitigated") != nil
-                    || response.value(forHTTPHeaderField: "Server")?.lowercased() == "cloudflare":
-            throw AO3Error.cloudflareChallenge
         default: throw AO3Error.http(response.statusCode)
         }
+    }
+
+    /// Cloudflare 的人機驗證頁：回應標頭 cf-mitigated: challenge，或 403 / 503 的「Just a moment...」頁面。
+    static func isCloudflareChallenge(_ response: HTTPURLResponse, data: Data) -> Bool {
+        if response.value(forHTTPHeaderField: "cf-mitigated")?.lowercased() == "challenge" { return true }
+        let head = String(decoding: data.prefix(16_000), as: UTF8.self)
+        if [403, 503].contains(response.statusCode) {
+            return head.contains("<title>Just a moment") || head.contains("cf_chl_opt") || head.contains("cf-turnstile")
+        }
+        // 一般頁面也可能被注入 challenge-platform 腳本，所以 200 回應只認完整的驗證頁
+        return head.contains("<title>Just a moment") && head.contains("cf_chl_opt")
     }
 
     // MARK: - High level API
