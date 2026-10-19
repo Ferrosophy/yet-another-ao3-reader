@@ -382,7 +382,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
             }, completion: { _ in finish() })
         default:
             // 覆蓋：前進時新頁從右側蓋上；後退時舊頁向右滑開露出前一頁
-            let moving = forward ? page.view : old.view
+            let moving: UIView = forward ? page.view : old.view
             moving.layer.shadowColor = UIColor.black.cgColor
             moving.layer.shadowOpacity = 0.25
             moving.layer.shadowRadius = 8
