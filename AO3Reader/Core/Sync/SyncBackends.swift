@@ -125,6 +125,11 @@ struct ICloudBackend: SyncBackend {
             if values == nil, !FileManager.default.fileExists(atPath: url.path(percentEncoded: false)) { break }
             try await Task.sleep(for: .milliseconds(500))
         }
+        if let status = (try? url.resourceValues(forKeys: [.ubiquitousItemDownloadingStatusKey]))?.ubiquitousItemDownloadingStatus,
+           status != .current {
+            // 雲端檔案尚未下載完成：不可視為「沒有檔案」，否則會用本機資料覆蓋雲端
+            throw SyncError.iCloudUnavailable
+        }
         guard FileManager.default.fileExists(atPath: url.path(percentEncoded: false)) else { return nil }
         return try await Task.detached {
             var result: Result<Data, Error> = .failure(SyncError.corrupt)

@@ -252,6 +252,9 @@ final class TextPageController: ReaderPage {
         super.init(index: index, background: background)
     }
 
+    @available(*, unavailable)
+    required init?(coder: NSCoder) { fatalError() }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let textView = PageTextView(text: text, insets: insets)
@@ -302,6 +305,9 @@ final class HeaderPageController: ReaderPage {
         hosting = UIHostingController(rootView: rootView)
         super.init(index: index, background: background)
     }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) { fatalError() }
 
     override func viewDidLoad() {
         super.viewDidLoad()

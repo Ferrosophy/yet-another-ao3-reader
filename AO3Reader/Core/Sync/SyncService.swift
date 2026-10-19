@@ -76,8 +76,10 @@ final class SyncService {
         pending?.cancel()
         pending = Task { [weak self] in
             try? await Task.sleep(for: .seconds(30))
-            guard !Task.isCancelled else { return }
-            await self?.syncNow()
+            guard !Task.isCancelled, let self else { return }
+            // 先清掉自己，否則 syncNow() 取消 pending 時會連同正在執行的這個任務一起取消
+            self.pending = nil
+            await self.syncNow()
         }
     }
 
@@ -122,7 +124,8 @@ final class SyncService {
                                             translation: translation.config, options: options)
         // 內容與上次同步時不同，表示在這台裝置上修改過
         let fingerprint = preferences.fingerprint
-        if fingerprint != defaults.string(forKey: Self.prefsFingerprintKey) {
+        // 從未同步過的裝置視為最舊，避免新裝置的預設值覆蓋雲端設定
+        if let saved = defaults.string(forKey: Self.prefsFingerprintKey), saved != fingerprint {
             preferences.modifiedAt = Date()
         } else {
             let saved = defaults.double(forKey: Self.prefsModifiedKey)
