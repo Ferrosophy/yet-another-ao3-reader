@@ -55,7 +55,7 @@ struct VolcanoTranslator: TranslationProvider {
     private static let site = URL(string: "https://translate.volcengine.com/")!
 
     func translate(_ texts: [String], from source: TranslationLanguage?, to target: TranslationLanguage) async throws -> [String] {
-        let sourceCode = source.map(Self.code) ?? "detect"
+        let sourceCode = source.map { $0.code == "zh-TW" ? "zh-Hant" : Self.code($0) } ?? "detect"
         let targetCode = Self.code(target)
         return try await WebTranslation.mapConcurrently(texts) { text in
             let json = try await WebTranslation.postJSON(Self.endpoint, body: [
@@ -84,7 +84,7 @@ struct BaiduWebTranslator: TranslationProvider {
     private static let site = URL(string: "https://fanyi.baidu.com/")!
 
     func translate(_ texts: [String], from source: TranslationLanguage?, to target: TranslationLanguage) async throws -> [String] {
-        let from = source.map(Self.code) ?? "auto"
+        let from = source.map { $0.code == "zh-TW" ? "cht" : Self.code($0) } ?? "auto"
         let to = Self.code(target)
         let provider = String(localized: "百度翻譯")
         return try await WebTranslation.mapConcurrently(texts) { text in
@@ -114,6 +114,13 @@ struct BaiduWebTranslator: TranslationProvider {
         case "vi": "vie"
         case "ar": "ara"
         case "uk": "ukr"
+        case "bg": "bul"
+        case "et": "est"
+        case "da": "dan"
+        case "fi": "fin"
+        case "ro": "rom"
+        case "sl": "slo"
+        case "sv": "swe"
         default: language.code
         }
     }
@@ -185,7 +192,7 @@ struct SogouWebTranslator: TranslationProvider {
         if (HTTPCookieStorage.shared.cookies(for: Self.site) ?? []).isEmpty {
             _ = try? await WebTranslation.send(URLRequest(url: Self.site), provider: provider, verifyAt: Self.site)
         }
-        let from = source.map(Self.code) ?? "auto"
+        let from = source.map { $0.code == "zh-TW" ? "zh-CHT" : Self.code($0) } ?? "auto"
         let to = Self.code(target)
         return try await WebTranslation.mapConcurrently(texts, limit: 2) { text in
             let json = try await WebTranslation.postJSON(Self.endpoint, body: [

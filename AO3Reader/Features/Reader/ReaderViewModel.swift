@@ -82,6 +82,9 @@ final class ReaderViewModel {
             for chapter in detail.chapters {
                 for paragraph in chapter.paragraphs { lookup[paragraph.id] = paragraph }
             }
+            for paragraph in Self.metaParagraphs(detail: detail, chapters: detail.chapters.indices) {
+                lookup[paragraph.id] = paragraph
+            }
             let saved = UserDefaults.standard.integer(forKey: positionKey)
             chapterIndex = min(max(saved, 0), detail.chapters.count - 1)
             self.detail = detail
@@ -118,6 +121,46 @@ final class ReaderViewModel {
 
     // MARK: - Immersive translation
 
+    /// 簡介與章節標題也以段落形式排入同一個翻譯佇列（ID 以 meta- 開頭，不會與正文衝突）
+    static let summaryID = "meta-summary"
+    static func chapterTitleID(_ chapter: Int) -> String { "meta-title-c\(chapter)" }
+
+    private static func metaParagraphs(detail: WorkDetail, chapters: some Sequence<Int>) -> [Paragraph] {
+        var result: [Paragraph] = []
+        for index in chapters {
+            if index == 0, !detail.summary.isEmpty {
+                result.append(Paragraph(id: summaryID, text: detail.summary))
+            }
+            if detail.chapters.count > 1, detail.chapters.indices.contains(index) {
+                result.append(Paragraph(id: chapterTitleID(index), text: detail.chapters[index].title, kind: .heading))
+            }
+        }
+        return result
+    }
+
+    /// 目前章節頂部（標題、簡介）需要翻譯的項目
+    private var currentMeta: [Paragraph] {
+        guard let detail else { return [] }
+        return Self.metaParagraphs(detail: detail, chapters: [chapterIndex])
+    }
+
+    /// 章節頂部的標題區塊出現 / 消失（捲動模式）
+    func headerAppeared() {
+        for paragraph in currentMeta {
+            visible.insert(paragraph.id)
+            if isTranslationOn { enqueue(paragraph) }
+        }
+    }
+
+    func headerDisappeared() {
+        for paragraph in currentMeta { visible.remove(paragraph.id) }
+    }
+
+    func retryMeta(_ id: String) {
+        guard let paragraph = lookup[id] else { return }
+        retry(paragraph)
+    }
+
     func paragraphAppeared(_ paragraph: Paragraph) {
         visible.insert(paragraph.id)
         guard isTranslationOn, let chapter else { return }
@@ -150,6 +193,10 @@ final class ReaderViewModel {
     /// 翻頁模式：以目前頁面上的段落取代可見集合（捲動模式則由 onAppear / onDisappear 維護）。
     func setVisibleParagraphs(_ paragraphs: [Paragraph]) {
         visible = Set(paragraphs.map(\.id))
+        // 章節第一頁同時顯示標題
+        if let first = chapter?.paragraphs.first, paragraphs.contains(first) || paragraphs.isEmpty {
+            headerAppeared()
+        }
         guard isTranslationOn else { return }
         for paragraph in paragraphs { paragraphAppeared(paragraph) }
     }
@@ -174,7 +221,7 @@ final class ReaderViewModel {
     /// 目前可見段落及其後預取範圍。
     private func wantedParagraphs() -> Set<Paragraph.ID> {
         guard let paragraphs = chapter?.paragraphs else { return [] }
-        var wanted: Set<Paragraph.ID> = []
+        var wanted = Set(currentMeta.map(\.id).filter(visible.contains))
         for (index, paragraph) in paragraphs.enumerated() where visible.contains(paragraph.id) {
             for next in paragraphs[index..<min(index + prefetchCount + 1, paragraphs.count)] {
                 wanted.insert(next.id)
@@ -185,6 +232,7 @@ final class ReaderViewModel {
 
     private func enqueueVisible() {
         guard let chapter else { return }
+        for paragraph in currentMeta where visible.contains(paragraph.id) { enqueue(paragraph) }
         for paragraph in chapter.paragraphs where visible.contains(paragraph.id) {
             paragraphAppeared(paragraph)
         }

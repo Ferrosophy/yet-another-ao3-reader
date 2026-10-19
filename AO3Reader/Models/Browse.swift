@@ -128,6 +128,28 @@ struct AO3Language: Codable, Hashable, Identifiable, Sendable {
     var name: String
     var id: String { code }
 
+    /// 全球使用人數（母語 + 第二語言）由多到少的大致排序；AO3 語言代碼含部分非標準寫法（ptBR 等）
+    private static let speakerRank: [String] = [
+        "en", "zh", "hi", "es", "ar", "fr", "bn", "ptBR", "pt-BR", "ptPT", "pt-PT", "pt", "ru", "ur", "id", "de", "ja",
+        "mr", "te", "tr", "ta", "yue", "vi", "wuu", "tl", "fil", "ko", "fa", "ha", "sw", "jv", "it", "pa", "gu", "th",
+        "kn", "am", "ms", "nan", "my", "pl", "hak", "ml", "uk", "or", "ro", "nl", "so", "ku", "ne", "si", "km", "az",
+        "uz", "yo", "ig", "zu", "el", "hu", "cs", "sv", "be", "he", "sr", "bg", "da", "fi", "sk", "no", "nb", "nn",
+        "hr", "ka", "hy", "lt", "sq", "mn", "lv", "et", "sl", "ga", "cy", "eu", "ca", "gl", "is", "la", "eo",
+    ]
+
+    /// 依全球使用人數排序；未列入排名的語言依名稱排在後面
+    static func bySpeakers(_ languages: [AO3Language]) -> [AO3Language] {
+        let rank = Dictionary(speakerRank.enumerated().map { ($1, $0) }, uniquingKeysWith: { first, _ in first })
+        return languages.sorted { lhs, rhs in
+            switch (rank[lhs.code], rank[rhs.code]) {
+            case let (l?, r?): l < r
+            case (_?, nil): true
+            case (nil, _?): false
+            case (nil, nil): lhs.name.localizedStandardCompare(rhs.name) == .orderedAscending
+            }
+        }
+    }
+
     /// 尚未從 AO3 讀取完整清單時的備用選項
     static let fallback: [AO3Language] = [
         .init(code: "en", name: "English"), .init(code: "zh", name: "中文-普通话 國語"),

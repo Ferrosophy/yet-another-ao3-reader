@@ -4,6 +4,9 @@ import SwiftUI
 struct WorkRoute: Hashable {
     let id: Int
     let title: String
+    /// 每次建立都不同：避免列表把「與導航路徑上相同的作品」顯示為選取狀態
+    /// （例如從作品進入其系列時，系列列表中的該作品會一直保持加暗）
+    var nonce = UUID()
 }
 
 /// 導航目標：任意作品列表頁（標籤、合集、系列、用戶作品）。

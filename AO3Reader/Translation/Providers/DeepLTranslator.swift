@@ -54,7 +54,11 @@ struct DeepLTranslator: TranslationProvider {
     }
 
     private static func baseCode(_ language: TranslationLanguage) -> String {
-        language.code.hasPrefix("zh") ? "ZH" : String(language.code.prefix(2)).uppercased()
+        switch language.code {
+        case let code where code.hasPrefix("zh"): "ZH"
+        case "no": "NB"
+        default: language.code.uppercased()
+        }
     }
 
     // MARK: 網頁版

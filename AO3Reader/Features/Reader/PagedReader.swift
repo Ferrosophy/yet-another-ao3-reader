@@ -19,7 +19,9 @@ struct PagedContent {
 enum PagedTextBuilder {
     static func build(
         title: String?,
+        summary: String?,
         chapterTitle: String?,
+        chapterIndex: Int,
         chapter: Chapter,
         translations: [Paragraph.ID: ParagraphTranslation],
         showsTranslation: Bool,
@@ -50,15 +52,30 @@ enum PagedTextBuilder {
             ]))
         }
 
+        let translationColor = style.translation.colorHex.flatMap(Color.init(hex:)).map(UIColor.init) ?? secondaryColor
+        let smallFont = UIFont.preferredFont(forTextStyle: .footnote)
+        let translationIndent: CGFloat = style.translation.style == .plain ? 0 : 12
+
+        /// 標題與簡介的沉浸式譯文：已完成才排入（載入中不佔版面，避免分頁跳動）
+        func appendMetaTranslation(_ id: String, scale: Double, weight: UIFont.Weight? = nil) {
+            guard showsTranslation, case .done(let text) = translations[id] else { return }
+            append(text,
+                   font: style.uiFont(scale: scale * style.translation.fontScale, weight: weight, italic: style.translation.italic),
+                   color: translationColor,
+                   paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5, indent: translationIndent))
+        }
+
         if let title {
             append(title, font: style.uiFont(scale: 1.5, weight: .bold), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5))
         }
+        if let summary {
+            append(summary, font: style.uiFont(scale: 0.9), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
+            appendMetaTranslation(ReaderViewModel.summaryID, scale: 0.9)
+        }
         if let chapterTitle {
             append(chapterTitle, font: style.uiFont(scale: 1.2, weight: .semibold), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5))
+            appendMetaTranslation(ReaderViewModel.chapterTitleID(chapterIndex), scale: 1.1, weight: .semibold)
         }
-
-        let translationColor = style.translation.colorHex.flatMap(Color.init(hex:)).map(UIColor.init) ?? secondaryColor
-        let smallFont = UIFont.preferredFont(forTextStyle: .footnote)
 
         for paragraph in chapter.paragraphs {
             let start = result.length
@@ -79,7 +96,7 @@ enum PagedTextBuilder {
                     switch state {
                     case .done(let text):
                         if mode == .bilingual {
-                            let indent: CGFloat = style.translation.style == .plain ? 0 : 12
+                            let indent = translationIndent
                             append(text,
                                    font: style.uiFont(scale: style.translation.fontScale, italic: style.translation.italic),
                                    color: translationColor,

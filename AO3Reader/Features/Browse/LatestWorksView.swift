@@ -151,7 +151,8 @@ struct LatestWorksView: View {
 
     private static func cachedLanguages() -> [AO3Language] {
         UserDefaults.standard.data(forKey: languagesKey)
-            .flatMap { try? JSONDecoder().decode([AO3Language].self, from: $0) } ?? AO3Language.fallback
+            .flatMap { try? JSONDecoder().decode([AO3Language].self, from: $0) }
+            .map(AO3Language.bySpeakers) ?? AO3Language.bySpeakers(AO3Language.fallback)
     }
 }
 

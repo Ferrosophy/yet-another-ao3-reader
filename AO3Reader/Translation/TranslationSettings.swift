@@ -56,7 +56,7 @@ struct TranslationConfig: Codable, Equatable, Sendable {
     var azureRegion: String?
 
     var targetLanguage: TranslationLanguage { .named(targetLanguageCode) }
-    var sourceLanguage: TranslationLanguage? { sourceLanguageCode.map(TranslationLanguage.named) }
+    var sourceLanguage: TranslationLanguage? { sourceLanguageCode.flatMap(TranslationLanguage.lookup) }
 
     private static func matchLanguage(_ preferred: String) -> String {
         if preferred.hasPrefix("zh-Hans") { return "zh-CN" }
@@ -85,7 +85,14 @@ struct OpenAIPreset: Identifiable, Hashable {
 @Observable
 final class TranslationSettings {
     var config: TranslationConfig {
-        didSet { if config != oldValue { save() } }
+        didSet {
+            // 換服務後原文語言不在支援範圍內時改回自動偵測
+            if let code = config.sourceLanguageCode, !config.provider.supportsSource(code) {
+                config.sourceLanguageCode = nil
+                return
+            }
+            if config != oldValue { save() }
+        }
     }
 
     private let defaults: UserDefaults

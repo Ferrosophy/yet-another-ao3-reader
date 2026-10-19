@@ -56,11 +56,30 @@ struct WorkListView: View {
             }
         }
         .refreshable { await model.reload() }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                SummaryTranslationToggle()
+            }
+        }
+    }
+}
+
+/// 作品列表的「翻譯簡介」開關（沉浸式：譯文顯示在簡介下方）。
+struct SummaryTranslationToggle: View {
+    @Environment(AppState.self) private var app
+
+    var body: some View {
+        @Bindable var summaries = app.summaries
+        Toggle(isOn: $summaries.isEnabled) {
+            Label("翻譯簡介", systemImage: "translate")
+        }
+        .toggleStyle(.button)
     }
 }
 
 struct WorkRow: View {
     let work: WorkSummary
+    @Environment(AppState.self) private var app
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -95,6 +114,12 @@ struct WorkRow: View {
                 Text(work.summary)
                     .appFont(.callout)
                     .lineLimit(3)
+                if app.summaries.isEnabled {
+                    summaryTranslation
+                        .task(id: app.summaries.currentSignature) {
+                            app.summaries.request(id: work.id, summary: work.summary)
+                        }
+                }
             }
             // 統計項目數量與長度不定（語言名稱可能很長），用自動換行排列，避免擠壓成直排
             FlowLayout(horizontalSpacing: 12, verticalSpacing: 4) {
@@ -109,6 +134,39 @@ struct WorkRow: View {
             .foregroundStyle(.secondary)
         }
         .padding(.vertical, 4)
+    }
+
+    @ViewBuilder
+    private var summaryTranslation: some View {
+        switch app.summaries.translation(for: work.id) {
+        case .done(let text):
+            Text(text)
+                .appFont(.callout)
+                .foregroundStyle(.secondary)
+                .lineLimit(4)
+                .padding(.leading, 10)
+                .overlay(alignment: .leading) {
+                    Capsule().fill(.tint.opacity(0.55)).frame(width: 3)
+                }
+        case .failed(let message):
+            Button {
+                app.summaries.retry(id: work.id, summary: work.summary)
+            } label: {
+                Label("翻譯失敗：\(message)　點擊重試", systemImage: "arrow.clockwise")
+                    .appFont(.caption)
+                    .lineLimit(2)
+            }
+            .buttonStyle(.borderless)
+            .foregroundStyle(.red)
+        case .loading, nil:
+            HStack(spacing: 6) {
+                ProgressView().controlSize(.mini)
+                Text("翻譯中…")
+            }
+            .appFont(.caption)
+            .foregroundStyle(.tertiary)
+            .padding(.leading, 10)
+        }
     }
 
     @ViewBuilder

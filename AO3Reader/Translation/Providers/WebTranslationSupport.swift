@@ -93,7 +93,7 @@ enum WebTranslation {
         case .traditionalChinese: "zh-TW"
         default: language.rawValue
         }
-        return TranslationLanguage.all.first { $0.code == code }
+        return TranslationLanguage.lookup(code)
     }
 
     /// 每段一個請求的服務：限制同時請求數，保持結果順序

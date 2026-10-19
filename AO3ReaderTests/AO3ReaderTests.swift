@@ -206,4 +206,34 @@ struct AccountActionTests {
         #expect(BingTranslator.microsoftCode("zh-CN") == "zh-Hans")
         #expect(BingTranslator.microsoftCode("ja") == "ja")
     }
+
+    @Test func sortsAO3LanguagesBySpeakers() {
+        let sorted = AO3Language.bySpeakers([
+            .init(code: "ko", name: "한국어"), .init(code: "zz", name: "Zzz"), .init(code: "en", name: "English"),
+            .init(code: "aa", name: "Aaa"), .init(code: "zh", name: "中文-普通话 國語"), .init(code: "es", name: "Español"),
+        ])
+        #expect(sorted.map(\.code) == ["en", "zh", "es", "ko", "aa", "zz"])
+    }
+
+    @Test func providerSourceLanguages() {
+        #expect(TranslationProviderKind.googleWeb.supportsSource("haw"))
+        #expect(!TranslationProviderKind.youdaoWeb.supportsSource("de"))
+        #expect(!TranslationProviderKind.apple.supportsSource("zh-HK"))
+        #expect(TranslationProviderKind.deepL.sourceLanguages.contains { $0.code == "no" })
+        #expect(TranslationLanguage.named("yue").englishName == "Cantonese")
+        #expect(TranslationLanguage.lookup("xx") == nil)
+    }
+
+    @Test func parsesUserIcon() {
+        let base = URL(string: "https://archiveofourown.org")!
+        let custom = #"<div class="primary header module"><div class="icon"><a href="/users/a/pseuds/a"><img class="icon" src="https://s3.amazonaws.com/otw-ao3-icons/icons/1/standard.png?1"></a></div></div>"#
+        #expect(AO3Parser.userIcon(custom, baseURL: base)?.host() == "s3.amazonaws.com")
+        let fallback = #"<div class="primary header module"><div class="icon"><img class="icon" src="/images/skins/iconsets/default/icon_user.png"></div></div>"#
+        #expect(AO3Parser.userIcon(fallback, baseURL: base) == nil)
+    }
+
+    @Test func decodesAccountEntryOrder() {
+        #expect(AccountEntry.decode("") == [.bookmarks, .markedForLater, .history, .subscriptions, .inbox])
+        #expect(AccountEntry.decode("inbox,history,inbox,bogus") == [.inbox, .history, .bookmarks, .markedForLater, .subscriptions])
+    }
 }

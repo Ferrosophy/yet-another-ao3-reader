@@ -1,5 +1,9 @@
 LANGS = ['ja','ko','es','fr','de','pt-BR','it','ru','uk','pl','tr','nl','ar','hi','id','vi','th']
 _T = {
+"閱讀配色": "閲覧画面の配色|읽기 화면 색상|Colores de lectura|Couleurs de lecture|Lesefarben|Cores de leitura|Colori di lettura|Цвета чтения|Кольори читання|Kolory czytania|Okuma renkleri|Leeskleuren|ألوان القراءة|पठन रंग|Warna baca|Màu đọc|สีหน้าอ่าน",
+"閱讀模式與排版": "モードとレイアウト|모드 및 레이아웃|Modo y diseño|Mode et mise en page|Modus und Layout|Modo e layout|Modalità e layout|Режим и макет|Режим і макет|Tryb i układ|Mod ve düzen|Modus en indeling|الوضع والتخطيط|मोड और लेआउट|Mode & tata letak|Chế độ & bố cục|โหมดและเลย์เอาต์",
+"翻譯簡介": "あらすじを翻訳|줄거리 번역|Traducir resúmenes|Traduire les résumés|Zusammenfassungen übersetzen|Traduzir resumos|Traduci riassunti|Переводить описания|Перекладати описи|Tłumacz opisy|Özetleri çevir|Samenvattingen vertalen|ترجمة الملخصات|सारांश अनुवाद करें|Terjemahkan ringkasan|Dịch tóm tắt|แปลเรื่องย่อ",
+"搜尋語言": "言語を検索|언어 검색|Buscar idioma|Rechercher une langue|Sprache suchen|Pesquisar idioma|Cerca lingua|Поиск языка|Пошук мови|Szukaj języka|Dil ara|Taal zoeken|البحث عن لغة|भाषा खोजें|Cari bahasa|Tìm ngôn ngữ|ค้นหาภาษา",
 "閱讀紀錄": "閲覧履歴|열람 기록|Historial|Historique|Verlauf|Histórico|Cronologia|История чтения|Історія читання|Historia|Okuma geçmişi|Leesgeschiedenis|سجل القراءة|पढ़ने का इतिहास|Riwayat baca|Lịch sử đọc|ประวัติการอ่าน",
 "細": "ライト|얇게|Fina|Fin|Dünn|Fina|Sottile|Тонкий|Тонкий|Cienka|İnce|Dun|رفيع|पतला|Tipis|Mảnh|บาง",
 "標準": "標準|보통|Normal|Normal|Normal|Normal|Normale|Обычный|Звичайний|Normalna|Normal|Normaal|عادي|सामान्य|Normal|Thường|ปกติ",

@@ -17,10 +17,8 @@ struct TranslationSettingsView: View {
                 Picker("翻譯服務", selection: $settings.config.provider) {
                     ForEach(TranslationProviderKind.allCases) { Text($0.title).tag($0) }
                 }
-                Picker("原文語言", selection: $settings.config.sourceLanguageCode) {
-                    Text("自動偵測").tag(String?.none)
-                    ForEach(TranslationLanguage.all) { Text($0.name).tag(Optional($0.code)) }
-                }
+                LanguageListRow(title: "原文語言", languages: kind.sourceLanguages, allowsAutomatic: true,
+                                selection: $settings.config.sourceLanguageCode)
                 Picker("目標語言", selection: $settings.config.targetLanguageCode) {
                     ForEach(TranslationLanguage.all) { Text($0.name).tag($0.code) }
                 }

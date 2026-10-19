@@ -110,16 +110,30 @@ struct BilingualParagraphView: View {
 
     @ViewBuilder
     private var translationView: some View {
+        if mode == .translationOnly, case .done(let text) = translation {
+            Text(text)
+                .font(style.bodyFont)
+                .tracking(style.layout.letterSpacing)
+                .lineSpacing(style.layout.lineSpacing)
+        } else {
+            ImmersiveTranslationView(translation: translation, style: style, onRetry: onRetry)
+        }
+    }
+}
+
+/// 沉浸式譯文區塊（正文段落、章節標題、簡介共用）：顯示在原文下方，依「譯文外觀」設定呈現；
+/// 載入中與失敗時顯示狀態列。
+struct ImmersiveTranslationView: View {
+    let translation: ParagraphTranslation?
+    let style: ReaderStyle
+    /// 指定時取代譯文字型（例如章節標題使用較大的字）
+    var font: Font?
+    var onRetry: () -> Void
+
+    var body: some View {
         switch translation {
         case .done(let text):
-            if mode == .bilingual {
-                styledTranslation(text)
-            } else {
-                Text(text)
-                    .font(style.bodyFont)
-                    .tracking(style.layout.letterSpacing)
-                    .lineSpacing(style.layout.lineSpacing)
-            }
+            styledTranslation(text)
         case .failed(let message):
             Button(action: onRetry) {
                 Label("翻譯失敗：\(message)　點擊重試", systemImage: "arrow.clockwise")
@@ -142,7 +156,7 @@ struct BilingualParagraphView: View {
     @ViewBuilder
     private func styledTranslation(_ text: String) -> some View {
         let base = Text(text)
-            .font(style.translationFont)
+            .font(font ?? style.translationFont)
             .italic(style.translation.italic)
             .tracking(style.layout.letterSpacing)
             .lineSpacing(style.layout.lineSpacing)

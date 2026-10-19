@@ -21,6 +21,15 @@ enum AO3Parser {
         return href.split(separator: "/").dropFirst().first.map(String.init)
     }
 
+    /// 用戶頁（/users/name）頁首的頭像；預設的灰色頭像回傳 nil，改顯示 App 內的圖示。
+    static func userIcon(_ html: String, baseURL: URL) -> URL? {
+        guard let doc = try? SwiftSoup.parse(html),
+              let image = try? doc.select("div.primary.header div.icon img, div.primary.header img.icon").first(),
+              let src = try? image.attr("src"), !src.isEmpty, !src.contains("icon_user")
+        else { return nil }
+        return URL(string: src, relativeTo: baseURL)?.absoluteURL
+    }
+
     static func authenticityToken(_ html: String) -> String? {
         guard let doc = try? SwiftSoup.parse(html) else { return nil }
         if let input = try? doc.select("form#new_user input[name=authenticity_token], input[name=authenticity_token]").first() {

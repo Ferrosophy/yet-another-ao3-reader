@@ -48,7 +48,7 @@ struct SettingsView: View {
             }
 
             Section {
-                Button("清除翻譯快取") {
+                Button("清除翻譯快取", role: .destructive) {
                     Task { await app.translator.clearCache() }
                 }
                 Button("刪除所有已保存的 API Key", role: .destructive) {

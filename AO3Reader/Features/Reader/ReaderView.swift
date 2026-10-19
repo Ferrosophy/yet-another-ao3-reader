@@ -11,6 +11,7 @@ struct ReaderView: View {
     @State private var showsChapters = false
     @State private var showsAppearance = false
     @State private var showsTranslationSettings = false
+    @State private var showsSourcePicker = false
     /// 翻頁模式往前翻到上一章時，從該章最後一頁開始
     @State private var startAtEnd = false
     /// 顯示控制列時量到的安全區域；內容以固定邊距排版，控制列出現 / 隱藏不會推動正文
@@ -76,7 +77,7 @@ struct ReaderView: View {
             NavigationStack {
                 ReaderAppearanceForm {
                     EmptyView()
-                } trailing: {
+                } translationExtras: {
                     Section("譯文顯示") {
                         Picker("顯示方式", selection: Binding(get: { model.displayMode }, set: { model.setDisplayMode($0) })) {
                             ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
@@ -91,6 +92,10 @@ struct ReaderView: View {
         }
         .sheet(item: $model.challenge, onDismiss: { model.resetTranslations() }) { challenge in
             TranslationChallengeView(challenge: challenge)
+        }
+        .sheet(isPresented: $showsSourcePicker) {
+            TranslationLanguageSheet(title: "原文語言", languages: app.translation.config.provider.sourceLanguages, allowsAutomatic: true,
+                                selection: Binding(get: { model.sourceLanguage?.code }, set: { model.setSourceLanguage($0) }))
         }
         .sheet(isPresented: $showsTranslationSettings, onDismiss: { model.resetTranslations() }) {
             NavigationStack {
@@ -134,6 +139,8 @@ struct ReaderView: View {
             LazyVStack(alignment: .leading, spacing: layout.paragraphSpacing) {
                 header(detail: detail, chapter: chapter)
                     .id(ReaderViewModel.headerID(model.chapterIndex))
+                    .onAppear { model.headerAppeared() }
+                    .onDisappear { model.headerDisappeared() }
                 ForEach(chapter.paragraphs) { paragraph in
                     BilingualParagraphView(
                         paragraph: paragraph,
@@ -184,7 +191,9 @@ struct ReaderView: View {
         let content = pagedCache.content(signature: signature) {
             let (text, spans) = PagedTextBuilder.build(
                 title: model.chapterIndex == 0 ? detail.title : nil,
+                summary: model.chapterIndex == 0 && !detail.summary.isEmpty ? detail.summary : nil,
                 chapterTitle: detail.chapters.count > 1 ? chapter.title : nil,
+                chapterIndex: model.chapterIndex,
                 chapter: chapter,
                 translations: model.translations,
                 showsTranslation: model.isTranslationOn,
@@ -237,43 +246,66 @@ struct ReaderView: View {
                 Text(detail.title)
                     .font(style.titleFont)
                 Text(detail.authors.joined(separator: ", "))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(bodyColor.opacity(0.7))
                 if !detail.series.isEmpty {
                     ForEach(detail.series, id: \.path) { series in
                         NavigationLink(value: WorkListRoute.series(name: series.name, path: series.path)) {
                             Label(series.name, systemImage: "books.vertical")
                                 .appFont(.subheadline)
+                                .foregroundStyle(bodyColor)
                         }
+                        .buttonStyle(.plain)
                     }
                 }
                 if !detail.tagGroups.isEmpty {
                     WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground)
                 }
                 if !detail.summary.isEmpty {
-                    Text(detail.summary)
-                        .appFont(.callout)
-                        .foregroundStyle(cardForeground.map { AnyShapeStyle($0) } ?? AnyShapeStyle(.primary))
-                        .padding(12)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(cardBackground, in: .rect(cornerRadius: 14))
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(detail.summary)
+                            .appFont(.callout)
+                            .foregroundStyle(cardForeground)
+                        metaTranslation(ReaderViewModel.summaryID, font: style.font(scale: 0.9 * style.translation.fontScale))
+                    }
+                    .padding(12)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(cardBackground, in: .rect(cornerRadius: 14))
                 }
             }
             if detail.chapters.count > 1 {
-                Text(chapter.title)
-                    .font(style.headingFont)
-                    .padding(.top, 8)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(chapter.title)
+                        .font(style.headingFont)
+                    metaTranslation(ReaderViewModel.chapterTitleID(model.chapterIndex),
+                                    font: style.font(scale: 1.1 * style.translation.fontScale, weight: .semibold))
+                }
+                .padding(.top, 8)
+            }
+        }
+    }
+
+    /// 標題與簡介的沉浸式譯文（顯示在原文下方，不取代原文）
+    @ViewBuilder
+    private func metaTranslation(_ id: String, font: Font) -> some View {
+        if model.isTranslationOn {
+            ImmersiveTranslationView(translation: model.translations[id], style: style, font: font) {
+                model.retryMeta(id)
             }
         }
     }
 
     /// 標籤與簡介的底色：自訂色或正文顏色的淡色，與閱讀背景融為一體
     private var cardBackground: Color {
-        appearance.config.tagBackgroundHex.flatMap(Color.init(hex:)) ?? (style.textColor ?? .primary).opacity(0.08)
+        appearance.config.tagBackgroundHex.flatMap(Color.init(hex:)) ?? bodyColor.opacity(0.08)
     }
 
-    private var cardForeground: Color? {
-        appearance.config.tagTextHex.flatMap(Color.init(hex:))
+    /// 標籤與簡介的文字：自訂色，否則與正文同色
+    private var cardForeground: Color {
+        appearance.config.tagTextHex.flatMap(Color.init(hex:)) ?? bodyColor
     }
+
+    /// 正文顏色（未自訂時為系統主要文字色）
+    private var bodyColor: Color { style.textColor ?? .primary }
 
     private var chapterFooter: some View {
         HStack {
@@ -381,11 +413,12 @@ struct ReaderView: View {
 
     private var languageMenu: some View {
         Menu {
-            Picker("原文語言", selection: Binding(get: { model.sourceLanguage?.code }, set: { model.setSourceLanguage($0) })) {
-                Text("自動偵測").tag(String?.none)
-                ForEach(TranslationLanguage.all) { Text($0.name).tag(Optional($0.code)) }
+            Button {
+                showsSourcePicker = true
+            } label: {
+                Label("原文語言", systemImage: "character.book.closed")
+                Text(verbatim: model.sourceLanguage?.displayName ?? String(localized: "自動偵測"))
             }
-            .pickerStyle(.menu)
             Picker("目標語言", selection: Binding(get: { model.targetLanguage.code }, set: { model.setTargetLanguage($0) })) {
                 ForEach(TranslationLanguage.all) { Text($0.name).tag($0.code) }
             }
@@ -469,7 +502,7 @@ struct ReaderBackground: View {
 private struct WorkTagsView: View {
     let groups: [WorkTagGroup]
     let background: Color
-    let foreground: Color?
+    let foreground: Color
     @State private var expanded = false
 
     var body: some View {
@@ -478,7 +511,7 @@ private struct WorkTagsView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(group.title)
                         .appFont(.caption, weight: .semibold)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(foreground.opacity(0.65))
                     FlowLayout(horizontalSpacing: 6, verticalSpacing: 6) {
                         ForEach(group.tags, id: \.path) { tag in
                             NavigationLink(value: WorkListRoute.tag(name: tag.name, path: tag.path)) {
@@ -486,7 +519,7 @@ private struct WorkTagsView: View {
                                     .appFont(.caption)
                                     .lineLimit(1)
                                     .truncationMode(.middle)
-                                    .foregroundStyle(foreground.map { AnyShapeStyle($0) } ?? AnyShapeStyle(.primary))
+                                    .foregroundStyle(foreground)
                                     .padding(.horizontal, 10)
                                     .padding(.vertical, 4)
                                     .background(background, in: .capsule)

@@ -6,7 +6,11 @@ import Observation
 @MainActor
 @Observable
 final class AuthService {
-    private(set) var username: String?
+    private(set) var username: String? {
+        didSet { if username != oldValue { avatarURL = nil } }
+    }
+    /// 用戶頁上的頭像（未設定頭像時為 nil）
+    private(set) var avatarURL: URL?
     private(set) var isWorking = false
 
     var isLoggedIn: Bool { username != nil }
@@ -29,13 +33,24 @@ final class AuthService {
         ])
         guard let name = AO3Parser.loggedInUsername(html) else { throw AO3Error.loginFailed }
         self.username = name
+        isWorking = false
+        await loadAvatar(client: client)
+    }
+
+    /// 從用戶頁讀取頭像；失敗不影響登入狀態。
+    func loadAvatar(client: AO3Client) async {
+        guard let username,
+              let html = try? await client.get("/users/\(username)")
+        else { return }
+        avatarURL = AO3Parser.userIcon(html, baseURL: client.baseURL)
     }
 
     /// 網頁登入（WKWebView）完成後或切換來源時呼叫，以 cookie 判斷登入狀態。
     func refresh(client: AO3Client) async {
         isWorking = true
-        defer { isWorking = false }
         username = try? await client.probe().username
+        isWorking = false
+        await loadAvatar(client: client)
     }
 
     func logout(client: AO3Client) async {

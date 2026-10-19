@@ -354,7 +354,11 @@
   "火山翻譯（免金鑰）": "火山翻訳 (鍵なし)",
   "百度翻譯（網頁版）": "百度翻訳（ウェブ）",
   "有道翻譯（網頁版）": "Youdao 翻訳 (Web)",
-  "搜狗翻譯（網頁版）": "総合翻訳（Web）"
+  "搜狗翻譯（網頁版）": "総合翻訳（Web）",
+  "翻譯簡介": "Translate Summaries",
+  "閱讀模式與排版": "Mode & Layout",
+  "閱讀配色": "Reading Colors",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing Translator は一時的に利用できません。後でもう一度試してください。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -711,7 +715,11 @@
   "火山翻譯（免金鑰）": "화산 번역(열쇠 없음)",
   "百度翻譯（網頁版）": "Baidu 번역(웹)",
   "有道翻譯（網頁版）": "Youdao 번역(웹)",
-  "搜狗翻譯（網頁版）": "소고번역(웹)"
+  "搜狗翻譯（網頁版）": "소고번역(웹)",
+  "翻譯簡介": "요약 번역",
+  "閱讀模式與排版": "모드 및 레이아웃",
+  "閱讀配色": "색상 읽기",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing 번역기를 일시적으로 사용할 수 없습니다. 나중에 다시 시도해 주세요."
  },
  "es": {
   "載入中": "Cargando",
@@ -1068,7 +1076,11 @@
   "火山翻譯（免金鑰）": "Traducción de volcán (sin clave)",
   "百度翻譯（網頁版）": "Traductor de Baidu (Web)",
   "有道翻譯（網頁版）": "Traductor de Youdao (Web)",
-  "搜狗翻譯（網頁版）": "Traductor Sogou (Web)"
+  "搜狗翻譯（網頁版）": "Traductor Sogou (Web)",
+  "翻譯簡介": "Traducir resúmenes",
+  "閱讀模式與排版": "Modo y diseño",
+  "閱讀配色": "Colores de lectura",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing Translator no está disponible temporalmente. Inténtelo de nuevo más tarde."
  },
  "fr": {
   "載入中": "Chargement",
@@ -1425,7 +1437,11 @@
   "火山翻譯（免金鑰）": "Volcan Traduire (Pas de clé)",
   "百度翻譯（網頁版）": "Baidu Traduire (Web)",
   "有道翻譯（網頁版）": "Youdao Traduire (Web)",
-  "搜狗翻譯（網頁版）": "Sogou Traduire (Web)"
+  "搜狗翻譯（網頁版）": "Sogou Traduire (Web)",
+  "翻譯簡介": "Traduire les résumés",
+  "閱讀模式與排版": "Mode et disposition",
+  "閱讀配色": "Lire les couleurs",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Le Traducteur Bing est temporairement indisponible. Veuillez réessayer plus tard."
  },
  "de": {
   "載入中": "Laden",
@@ -1782,7 +1798,11 @@
   "火山翻譯（免金鑰）": "Vulkanübersetzung (kein Schlüssel)",
   "百度翻譯（網頁版）": "Baidu Translate (Web)",
   "有道翻譯（網頁版）": "Youdao Translate (Web)",
-  "搜狗翻譯（網頁版）": "Sogou Translate (Web)"
+  "搜狗翻譯（網頁版）": "Sogou Translate (Web)",
+  "翻譯簡介": "Zusammenfassungen übersetzen",
+  "閱讀模式與排版": "Modus und Layout",
+  "閱讀配色": "Farben lesen",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Der Bing-Übersetzer ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später noch einmal."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -2139,7 +2159,11 @@
   "火山翻譯（免金鑰）": "Tradução do vulcão (sem chave)",
   "百度翻譯（網頁版）": "Tradução do Baidu (Web)",
   "有道翻譯（網頁版）": "Tradução Youdao (Web)",
-  "搜狗翻譯（網頁版）": "Tradução Sogou (Web)"
+  "搜狗翻譯（網頁版）": "Tradução Sogou (Web)",
+  "翻譯簡介": "Traduzir resumos",
+  "閱讀模式與排版": "Modo e Layout",
+  "閱讀配色": "Lendo Cores",
+  "Bing 翻譯暫時無法使用，請稍後再試": "O Bing Translator está temporariamente indisponível. Por favor, tente novamente mais tarde."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -2496,7 +2520,11 @@
   "火山翻譯（免金鑰）": "Vulcano Traduci (nessuna chiave)",
   "百度翻譯（網頁版）": "Baidu Traduttore (Web)",
   "有道翻譯（網頁版）": "Youdao Traduttore (Web)",
-  "搜狗翻譯（網頁版）": "Sogou Traduttore (Web)"
+  "搜狗翻譯（網頁版）": "Sogou Traduttore (Web)",
+  "翻譯簡介": "Traduci riepiloghi",
+  "閱讀模式與排版": "Modalità e layout",
+  "閱讀配色": "Leggere i colori",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing Translator è temporaneamente non disponibile. Per favore riprova più tardi."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -2853,7 +2881,11 @@
   "火山翻譯（免金鑰）": "Volcano Translate (без ключа)",
   "百度翻譯（網頁版）": "Baidu Translate (Интернет)",
   "有道翻譯（網頁版）": "Youdao Translate (Интернет)",
-  "搜狗翻譯（網頁版）": "Sogou Translate (Интернет)"
+  "搜狗翻譯（網頁版）": "Sogou Translate (Интернет)",
+  "翻譯簡介": "Перевести сводки",
+  "閱讀模式與排版": "Режим и макет",
+  "閱讀配色": "Чтение цветов",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Переводчик Bing временно недоступен. Пожалуйста, повторите попытку позже."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -3210,7 +3242,11 @@
   "火山翻譯（免金鑰）": "Переклад вулкана (без ключа)",
   "百度翻譯（網頁版）": "Перекладач Baidu (веб)",
   "有道翻譯（網頁版）": "Youdao Translate (веб)",
-  "搜狗翻譯（網頁版）": "Sogou Translate (веб)"
+  "搜狗翻譯（網頁版）": "Sogou Translate (веб)",
+  "翻譯簡介": "Перекласти резюме",
+  "閱讀模式與排版": "Режим і макет",
+  "閱讀配色": "Кольори для читання",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Перекладач Bing тимчасово недоступний. Спробуйте пізніше."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -3567,7 +3603,11 @@
   "火山翻譯（免金鑰）": "Tłumacz wulkanu (bez klucza)",
   "百度翻譯（網頁版）": "Tłumacz Baidu (internet)",
   "有道翻譯（網頁版）": "Tłumacz Youdao (internet)",
-  "搜狗翻譯（網頁版）": "Tłumacz Sogou (internet)"
+  "搜狗翻譯（網頁版）": "Tłumacz Sogou (internet)",
+  "翻譯簡介": "Tłumacz streszczenia",
+  "閱讀模式與排版": "Tryb i układ",
+  "閱讀配色": "Czytanie kolorów",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Tłumacz Bing jest chwilowo niedostępny. Spróbuj ponownie później."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -3924,7 +3964,11 @@
   "火山翻譯（免金鑰）": "Volkan Çevirisi (Anahtar Yok)",
   "百度翻譯（網頁版）": "Baidu Çeviri (Web)",
   "有道翻譯（網頁版）": "Youdao Çeviri (Web)",
-  "搜狗翻譯（網頁版）": "Sogou Çeviri (Web)"
+  "搜狗翻譯（網頁版）": "Sogou Çeviri (Web)",
+  "翻譯簡介": "Özetleri Çevir",
+  "閱讀模式與排版": "Mod ve Düzen",
+  "閱讀配色": "Renkleri Okumak",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing Translator geçici olarak kullanılamıyor. Lütfen daha sonra tekrar deneyin."
  },
  "nl": {
   "載入中": "Laden",
@@ -4281,7 +4325,11 @@
   "火山翻譯（免金鑰）": "Vulkaan vertalen (geen sleutel)",
   "百度翻譯（網頁版）": "Baidu Vertalen (Web)",
   "有道翻譯（網頁版）": "Youdao Vertalen (Web)",
-  "搜狗翻譯（網頁版）": "Sogou Vertalen (Web)"
+  "搜狗翻譯（網頁版）": "Sogou Vertalen (Web)",
+  "翻譯簡介": "Samenvattingen vertalen",
+  "閱讀模式與排版": "Modus en lay-out",
+  "閱讀配色": "Kleuren lezen",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing Vertaler is tijdelijk niet beschikbaar. Probeer het later opnieuw."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -4638,7 +4686,11 @@
   "火山翻譯（免金鑰）": "ترجمة البركان (بدون مفتاح)",
   "百度翻譯（網頁版）": "ترجمة بايدو (الويب)",
   "有道翻譯（網頁版）": "ترجمة يوداو (الويب)",
-  "搜狗翻譯（網頁版）": "ترجمة سوغو (الويب)"
+  "搜狗翻譯（網頁版）": "ترجمة سوغو (الويب)",
+  "翻譯簡介": "ترجمة الملخصات",
+  "閱讀模式與排版": "الوضع والتخطيط",
+  "閱讀配色": "ألوان القراءة",
+  "Bing 翻譯暫時無法使用，請稍後再試": "مترجم Bing غير متاح مؤقتًا. يرجى المحاولة مرة أخرى لاحقا."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -4995,7 +5047,11 @@
   "火山翻譯（免金鑰）": "ज्वालामुखी अनुवाद (कोई कुंजी नहीं)",
   "百度翻譯（網頁版）": "Baidu अनुवाद (वेब)",
   "有道翻譯（網頁版）": "Youdao अनुवाद (वेब)",
-  "搜狗翻譯（網頁版）": "सोगौ अनुवाद (वेब)"
+  "搜狗翻譯（網頁版）": "सोगौ अनुवाद (वेब)",
+  "翻譯簡介": "सारांश का अनुवाद करें",
+  "閱讀模式與排版": "मोड और लेआउट",
+  "閱讀配色": "रंग पढ़ना",
+  "Bing 翻譯暫時無法使用，請稍後再試": "बिंग ट्रांसलेटर अस्थायी रूप से अनुपलब्ध है। कृपया बाद में पुन: प्रयास करें।"
  },
  "id": {
   "載入中": "Memuat",
@@ -5352,7 +5408,11 @@
   "火山翻譯（免金鑰）": "Terjemahan Gunung Berapi (Tanpa Kunci)",
   "百度翻譯（網頁版）": "Terjemahan Baidu (Web)",
   "有道翻譯（網頁版）": "Terjemahan Youdao (Web)",
-  "搜狗翻譯（網頁版）": "Terjemahan Sogou (Web)"
+  "搜狗翻譯（網頁版）": "Terjemahan Sogou (Web)",
+  "翻譯簡介": "Terjemahkan Ringkasan",
+  "閱讀模式與排版": "Mode & Tata Letak",
+  "閱讀配色": "Membaca Warna",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Penerjemah Bing untuk sementara tidak tersedia. Silakan coba lagi nanti."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -5709,7 +5769,11 @@
   "火山翻譯（免金鑰）": "Dịch Núi Lửa (Không Cần Chìa Khóa)",
   "百度翻譯（網頁版）": "Baidu Dịch (Web)",
   "有道翻譯（網頁版）": "Youdao Dịch (Web)",
-  "搜狗翻譯（網頁版）": "Sogou Dịch (Web)"
+  "搜狗翻譯（網頁版）": "Sogou Dịch (Web)",
+  "翻譯簡介": "Dịch tóm tắt",
+  "閱讀模式與排版": "Chế độ & Bố cục",
+  "閱讀配色": "Đọc màu",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing Translator tạm thời không khả dụng. Vui lòng thử lại sau."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -6066,6 +6130,10 @@
   "火山翻譯（免金鑰）": "ภูเขาไฟแปล (ไม่มีคีย์)",
   "百度翻譯（網頁版）": "Baidu แปล (เว็บ)",
   "有道翻譯（網頁版）": "Youdao แปล (เว็บ)",
-  "搜狗翻譯（網頁版）": "Sogou แปล (เว็บ)"
+  "搜狗翻譯（網頁版）": "Sogou แปล (เว็บ)",
+  "翻譯簡介": "แปลสรุป",
+  "閱讀模式與排版": "โหมดและเค้าโครง",
+  "閱讀配色": "การอ่านสี",
+  "Bing 翻譯暫時無法使用，請稍後再試": "Bing Translator ไม่สามารถใช้งานได้ชั่วคราว โปรดลองอีกครั้งในภายหลัง"
  }
 }

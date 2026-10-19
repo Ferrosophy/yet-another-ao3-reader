@@ -1431,6 +1431,149 @@
         }
       }
     },
+    "Bing 翻譯暫時無法使用，請稍後再試": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مترجم Bing غير متاح مؤقتًا. يرجى المحاولة مرة أخرى لاحقا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Bing-Übersetzer ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später noch einmal."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Translator is temporarily unavailable. Please try again later."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Translator no está disponible temporalmente. Inténtelo de nuevo más tarde."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le Traducteur Bing est temporairement indisponible. Veuillez réessayer plus tard."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बिंग ट्रांसलेटर अस्थायी रूप से अनुपलब्ध है। कृपया बाद में पुन: प्रयास करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penerjemah Bing untuk sementara tidak tersedia. Silakan coba lagi nanti."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Translator è temporaneamente non disponibile. Per favore riprova più tardi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Translator は一時的に利用できません。後でもう一度試してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing 번역기를 일시적으로 사용할 수 없습니다. 나중에 다시 시도해 주세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Vertaler is tijdelijk niet beschikbaar. Probeer het later opnieuw."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Bing jest chwilowo niedostępny. Spróbuj ponownie później."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Bing Translator está temporariamente indisponível. Por favor, tente novamente mais tarde."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переводчик Bing временно недоступен. Пожалуйста, повторите попытку позже."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Translator ไม่สามารถใช้งานได้ชั่วคราว โปรดลองอีกครั้งในภายหลัง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Translator geçici olarak kullanılamıyor. Lütfen daha sonra tekrar deneyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перекладач Bing тимчасово недоступний. Спробуйте пізніше."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing Translator tạm thời không khả dụng. Vui lòng thử lại sau."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing 翻译暂时无法使用，请稍后再试"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing 翻譯暫時無法使用，請稍後再試"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing 翻譯暫時無法使用，請稍後再試"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing 翻譯暫時無法使用，請稍後再試"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bing 翻譯暫時無法使用，請稍後再試"
+          }
+        }
+      }
+    },
     "Bing 翻譯（免金鑰）": {
       "extractionState": "manual",
       "localizations": {
@@ -21600,13 +21743,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "لغات البحث"
+            "value": "البحث عن لغة"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sprachen suchen"
+            "value": "Sprache suchen"
           }
         },
         "en": {
@@ -21618,19 +21761,19 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Idiomas de búsqueda"
+            "value": "Buscar idioma"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Langues de recherche"
+            "value": "Rechercher une langue"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "भाषाएँ खोजें"
+            "value": "भाषा खोजें"
           }
         },
         "id": {
@@ -21642,13 +21785,13 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cerca lingue"
+            "value": "Cerca lingua"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "検索言語"
+            "value": "言語を検索"
           }
         },
         "ko": {
@@ -21660,25 +21803,25 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zoek talen"
+            "value": "Taal zoeken"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wyszukaj języki"
+            "value": "Szukaj języka"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Idiomas de pesquisa"
+            "value": "Pesquisar idioma"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Поиск языков"
+            "value": "Поиск языка"
           }
         },
         "th": {
@@ -21690,19 +21833,19 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dilleri ara"
+            "value": "Dil ara"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Пошук мов"
+            "value": "Пошук мови"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tìm kiếm ngôn ngữ"
+            "value": "Tìm ngôn ngữ"
           }
         },
         "zh-Hans": {
@@ -40470,6 +40613,149 @@
         }
       }
     },
+    "翻譯簡介": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة الملخصات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zusammenfassungen übersetzen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Summaries"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducir resúmenes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduire les résumés"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सारांश अनुवाद करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahkan ringkasan"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduci riassunti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あらすじを翻訳"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "줄거리 번역"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samenvattingen vertalen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz opisy"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduzir resumos"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переводить описания"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แปลเรื่องย่อ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Özetleri çevir"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перекладати описи"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dịch tóm tắt"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译简介"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯簡介"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯簡介"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯簡介"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯簡介"
+          }
+        }
+      }
+    },
     "翻譯設定": {
       "extractionState": "manual",
       "localizations": {
@@ -48192,6 +48478,149 @@
         }
       }
     },
+    "閱讀模式與排版": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوضع والتخطيط"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modus und Layout"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode & Layout"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo y diseño"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode et mise en page"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "मोड और लेआउट"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode & tata letak"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modalità e layout"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "モードとレイアウト"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모드 및 레이아웃"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modus en indeling"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryb i układ"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo e layout"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режим и макет"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โหมดและเลย์เอาต์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mod ve düzen"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режим і макет"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chế độ & bố cục"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阅读模式与排版"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀模式與排版"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀模式與排版"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀模式與排版"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀模式與排版"
+          }
+        }
+      }
+    },
     "閱讀紀錄": {
       "extractionState": "manual",
       "localizations": {
@@ -48474,6 +48903,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "閱讀設定"
+          }
+        }
+      }
+    },
+    "閱讀配色": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ألوان القراءة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lesefarben"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reader Colors"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colores de lectura"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couleurs de lecture"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "पठन रंग"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warna baca"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colori di lettura"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閲覧画面の配色"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "읽기 화면 색상"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leeskleuren"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kolory czytania"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cores de leitura"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цвета чтения"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สีหน้าอ่าน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Okuma renkleri"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кольори читання"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Màu đọc"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阅读配色"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀配色"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀配色"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀配色"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀配色"
           }
         }
       }

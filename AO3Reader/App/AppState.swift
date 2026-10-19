@@ -8,9 +8,19 @@ import Observation
 final class AppState {
     let sources = SourceStore()
     let auth = AuthService()
-    let translation = TranslationSettings()
-    let translator = TranslationService()
+    let translation: TranslationSettings
+    let translator: TranslationService
     let appearance = AppearanceSettings()
+    /// 作品卡片的簡介翻譯
+    let summaries: SummaryTranslator
+
+    init() {
+        let translation = TranslationSettings()
+        let translator = TranslationService()
+        self.translation = translation
+        self.translator = translator
+        summaries = SummaryTranslator(settings: translation, translator: translator)
+    }
 
     /// 目前來源的客戶端；切換來源時自動跟著變更。
     var client: AO3Client { AO3Client(baseURL: sources.selected.baseURL) }

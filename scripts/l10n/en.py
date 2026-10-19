@@ -355,6 +355,10 @@ EN = {
 "恢復自動配色": "Reset to Automatic Colors",
 "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": "Automatic colors use a light tint of the text color so tags blend with the reading background.",
 "僅譯文": "Translation Only",
+"翻譯簡介": "Translate Summaries",
+"閱讀模式與排版": "Mode & Layout",
+"閱讀配色": "Reader Colors",
+"Bing 翻譯暫時無法使用，請稍後再試": "Bing Translator is temporarily unavailable. Please try again later.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
-SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文"}
+SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語"}
