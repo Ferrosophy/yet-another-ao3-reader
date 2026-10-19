@@ -72,6 +72,24 @@ open AO3Reader.xcodeproj
 
 相依套件：[SwiftSoup](https://github.com/scinfu/SwiftSoup)（SPM，HTML 解析）。
 
+### 雲端建置 IPA（GitHub Actions）
+
+不需要本機 Mac：`.github/workflows/build-ipa.yml` 在 GitHub 的 macOS runner 上編譯並打包**未簽名** IPA，簽名請自行處理。
+
+| 觸發方式 | 版本號（CFBundleShortVersionString） | 產物 |
+| --- | --- | --- |
+| 推送 tag `v0.1.0` | 取自 tag：`0.1.0` | Artifact + GitHub Release（附 IPA） |
+| Actions 頁面手動執行 | 輸入的版本號 | Artifact |
+| PR / 推送 main | `project.yml` 的 `MARKETING_VERSION` | Artifact |
+
+建置號（CFBundleVersion）一律為 Actions 的 `run_number`。IPA 檔名：`AO3Reader-<版本號>-<建置號>-unsigned.ipa`，App 內「設定 → 版本」也會顯示同樣的版本與建置號。
+
+發佈新版本：
+
+```bash
+git tag v0.1.0 && git push origin v0.1.0
+```
+
 ## 注意事項
 
 - 請遵守 AO3 [服務條款](https://archiveofourown.org/tos)，避免高頻請求；遇到 429 時客戶端會顯示 `Retry-After`。

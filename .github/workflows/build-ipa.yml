@@ -1,0 +1,115 @@
+name: Build IPA
+
+# 版本號規則：
+# - 推送 tag `v1.2.3` → 版本號 1.2.3，並建立 GitHub Release 附上 IPA
+# - 手動執行（workflow_dispatch）→ 使用輸入的版本號
+# - 其他推送 / PR → 使用 project.yml 中的 MARKETING_VERSION
+# 建置號（CFBundleVersion）一律為 GitHub Actions 的 run_number，單調遞增。
+# IPA 未簽名，需自行重新簽名後安裝。
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "版本號（例如 0.1.0），留空則使用 project.yml"
+        required: false
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    name: Unit tests
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Install tools
+        run: brew install xcodegen xcbeautify
+
+      - name: Run tests
+        run: |
+          xcodegen generate
+          # 取第一個可用的 iPhone 模擬器，避免寫死機型名稱
+          DEVICE_ID=$(xcrun simctl list devices available -j \
+            | jq -r '[.devices | to_entries[] | select(.key | contains("iOS")) | .value[] | select(.name | startswith("iPhone"))][0].udid')
+          echo "Simulator: $DEVICE_ID"
+          set -o pipefail
+          xcodebuild test \
+            -project AO3Reader.xcodeproj \
+            -scheme AO3Reader \
+            -destination "id=$DEVICE_ID" \
+            CODE_SIGNING_ALLOWED=NO \
+            | xcbeautify --renderer github-actions
+
+  ipa:
+    name: Unsigned IPA
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Install tools
+        run: brew install xcodegen xcbeautify
+
+      - name: Resolve version
+        id: version
+        env:
+          INPUT_VERSION: ${{ github.event.inputs.version }}
+        run: |
+          if [[ "$GITHUB_REF_TYPE" == "tag" && "$GITHUB_REF_NAME" == v* ]]; then
+            VERSION="${GITHUB_REF_NAME#v}"
+          elif [[ -n "$INPUT_VERSION" ]]; then
+            VERSION="$INPUT_VERSION"
+          else
+            VERSION=$(sed -n 's/^ *MARKETING_VERSION: *"\{0,1\}\([0-9.]*\)"\{0,1\}.*/\1/p' project.yml | head -1)
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "build=$GITHUB_RUN_NUMBER" >> "$GITHUB_OUTPUT"
+          echo "Version $VERSION ($GITHUB_RUN_NUMBER)"
+
+      - name: Build unsigned IPA
+        id: build
+        run: scripts/build-unsigned-ipa.sh "${{ steps.version.outputs.version }}" "${{ steps.version.outputs.build }}"
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.ipa_name }}
+          path: ${{ steps.build.outputs.ipa_path }}
+          if-no-files-found: error
+
+      - name: Upload build log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-log
+          path: build/xcodebuild.log
+
+      - name: Publish release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          name: AO3 Reader ${{ steps.version.outputs.version }} (${{ steps.version.outputs.build }})
+          files: ${{ steps.build.outputs.ipa_path }}
+          body: |
+            未簽名 IPA，請自行簽名後安裝。
+            版本 ${{ steps.version.outputs.version }}，建置號 ${{ steps.version.outputs.build }}。
+          prerelease: ${{ startsWith(steps.version.outputs.version, '0.') }}
