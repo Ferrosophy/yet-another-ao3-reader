@@ -188,7 +188,7 @@ struct AO3Client: Sendable {
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("XMLHttpRequest", forHTTPHeaderField: "X-Requested-With")
         let (data, response) = try await Self.session.data(for: request)
-        if let http = response as? HTTPURLResponse { try Self.validate(http) }
+        if let http = response as? HTTPURLResponse { try validate(http, data: data) }
         struct Item: Decodable { let name: String }
         return try JSONDecoder().decode([Item].self, from: data).map(\.name)
     }
