@@ -1,0 +1,47 @@
+import SwiftUI
+
+struct SettingsView: View {
+    @Environment(AppState.self) private var app
+    @State private var showsClearConfirm = false
+
+    var body: some View {
+        List {
+            Section("內容來源") {
+                NavigationLink {
+                    SourcesView()
+                } label: {
+                    LabeledContent("目前來源", value: app.sources.selected.name)
+                }
+            }
+
+            Section("翻譯") {
+                NavigationLink {
+                    TranslationSettingsView()
+                } label: {
+                    LabeledContent("翻譯服務", value: app.translation.config.provider.title)
+                }
+                LabeledContent("目標語言", value: app.translation.config.targetLanguage.name)
+            }
+
+            Section {
+                Button("清除翻譯快取") {
+                    Task { await app.translator.clearCache() }
+                }
+                Button("刪除所有已保存的 API Key", role: .destructive) {
+                    showsClearConfirm = true
+                }
+            } header: {
+                Text("隱私")
+            } footer: {
+                Text("""
+                本應用沒有帳號系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中\
+                （不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。
+                """)
+            }
+        }
+        .navigationTitle("設定")
+        .confirmationDialog("刪除所有 API Key？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
+            Button("刪除", role: .destructive) { KeychainStore.deleteAll() }
+        }
+    }
+}
