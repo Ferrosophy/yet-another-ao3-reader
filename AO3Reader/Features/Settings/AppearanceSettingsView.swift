@@ -246,7 +246,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                 ))
             }
             PhotosPicker(selection: $photoItem, matching: .images) {
-                Label(hasBackgroundImage ? "更換背景圖片" : "選擇背景圖片", systemImage: "photo")
+                Label(hasBackgroundImage ? LocalizedStringKey("更換背景圖片") : "選擇背景圖片", systemImage: "photo")
             }
             if appearance.backgroundImage(for: scheme) != nil, theme.wrappedValue.background != .image {
                 Button("使用背景圖片", systemImage: "photo.fill") { theme.wrappedValue.background = .image }
