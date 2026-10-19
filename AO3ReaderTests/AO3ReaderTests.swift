@@ -160,6 +160,6 @@ struct BrowseParserTests {
     }
 
     @Test func encodesTagParam() {
-        #expect(AO3Paths.tagParam("Mr. & Mrs./Smith?#") == "Mr*d* *a* Mrs*s*Smith*q**h*")
+        #expect(AO3Paths.tagParam("Mr. & Mrs./Smith?#") == "Mr*d* *a* Mrs*d**s*Smith*q**h*")
     }
 }
