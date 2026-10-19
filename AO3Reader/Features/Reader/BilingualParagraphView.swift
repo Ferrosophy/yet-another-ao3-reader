@@ -9,6 +9,8 @@ struct ReaderStyle {
     /// nil 為系統主要文字色
     var textColor: Color?
     var translation: TranslationAppearance
+    /// 譯文側條等強調色（明確傳入，避免在部分容器中取不到 tint 而不顯示）
+    var accent: Color = .accentColor
 
     // MARK: SwiftUI
 
@@ -171,9 +173,10 @@ struct ImmersiveTranslationView: View {
         case .bar:
             colored
                 .padding(.leading, 12)
-                .overlay(alignment: .leading) {
-                    Capsule()
-                        .fill(.tint.opacity(0.55))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(alignment: .leading) {
+                    RoundedRectangle(cornerRadius: 1.5)
+                        .fill(style.accent.opacity(0.6))
                         .frame(width: 3)
                 }
         case .card:

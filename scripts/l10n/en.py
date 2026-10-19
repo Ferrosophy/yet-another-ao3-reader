@@ -494,6 +494,12 @@ EN = {
 '正在下載字體…': 'Downloading font…',
 '登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。': 'Sign in, find a font file (.ttf / .otf) and download it. It is imported automatically when the download finishes.',
 '下載的檔案不是字體（.ttf / .otf）': 'The downloaded file is not a font (.ttf / .otf)',
+'滾動': 'Scroll',
+'回報問題': 'Report a Problem',
+'功能建議': 'Suggest a Feature',
+'查看所有回饋': 'View All Feedback',
+'意見回饋': 'Feedback',
+'回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。': 'Feedback opens GitHub Issues in your browser with the app and system versions filled in (no account or reading data).',
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
-SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち"}
+SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

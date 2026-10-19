@@ -10,6 +10,18 @@ struct SettingsView: View {
         let build = info?["CFBundleVersion"] as? String ?? "?"
         return "\(version) (\(build))"
     }()
+    /// GitHub Issues 的新回饋網址，預先填入版本與系統資訊
+    private static func feedbackURL(kind: String) -> URL {
+        let system = "iOS \(ProcessInfo.processInfo.operatingSystemVersionString)"
+        let title = kind == "bug" ? "[Bug] " : "[Idea] "
+        let body = kind == "bug"
+            ? "**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp \(versionString) · \(system)"
+            : "**建議 / Suggestion**\n\n\n---\nApp \(versionString) · \(system)"
+        var components = URLComponents(string: "https://github.com/Ferrosophy/AO3-ios-translator/issues/new")!
+        components.queryItems = [URLQueryItem(name: "title", value: title), URLQueryItem(name: "body", value: body)]
+        return components.url!
+    }
+
     @State private var showsClearConfirm = false
     @AppStorage(StartTab.storageKey) private var startTab: StartTab = .browse
     @AppStorage(DownloadFormat.storageKey) private var downloadFormat: DownloadFormat = .epub
@@ -100,6 +112,22 @@ struct SettingsView: View {
                 本應用沒有帳號系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中\
                 （不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。
                 """)
+            }
+
+            Section {
+                Link(destination: Self.feedbackURL(kind: "bug")) {
+                    Label("回報問題", systemImage: "ladybug")
+                }
+                Link(destination: Self.feedbackURL(kind: "idea")) {
+                    Label("功能建議", systemImage: "lightbulb")
+                }
+                Link(destination: URL(string: "https://github.com/Ferrosophy/AO3-ios-translator/issues")!) {
+                    Label("查看所有回饋", systemImage: "bubble.left.and.text.bubble.right")
+                }
+            } header: {
+                Text("意見回饋")
+            } footer: {
+                Text("回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。")
             }
 
             Section {

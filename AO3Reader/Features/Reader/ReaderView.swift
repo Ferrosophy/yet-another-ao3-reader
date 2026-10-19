@@ -13,6 +13,8 @@ struct ReaderView: View {
     @State private var showsAppearance = false
     @State private var showsTranslationSettings = false
     @State private var showsSourcePicker = false
+    /// 換章方向（決定捲動模式的推入方向）
+    @State private var chapterForward = true
     /// 標題頁的系列與標籤連結（翻頁模式的資訊頁在 UIKit 容器中，無法使用 NavigationLink）
     @State private var openedList: WorkListRoute?
     /// 翻頁模式往前翻到上一章時，從該章最後一頁開始
@@ -37,7 +39,8 @@ struct ReaderView: View {
             layout: layout,
             font: appearance.config.readerFont,
             textColor: appearance.textColor(for: colorScheme),
-            translation: appearance.config.translation
+            translation: appearance.config.translation,
+            accent: appearance.accentColor
         )
     }
 
@@ -63,6 +66,7 @@ struct ReaderView: View {
         .toolbar(chromeVisible ? .visible : .hidden, for: .navigationBar)
         .toolbar(.hidden, for: .tabBar)
         .statusBarHidden(!chromeVisible)
+        .background(SwipeBackDisabler().frame(width: 0, height: 0))
         .toolbar {
             ToolbarItemGroup(placement: .topBarTrailing) {
                 if let detail = model.detail {
@@ -146,6 +150,17 @@ struct ReaderView: View {
         app.readingTime.begin(workID: detail.id, meta: detail.summaryInfo.readingMeta)
     }
 
+    /// 控制列的上一章 / 下一章。翻頁模式由翻頁器以目前的翻頁動畫切換；捲動模式以推入動畫切換
+    private func changeChapter(forward: Bool) {
+        startAtEnd = false
+        chapterForward = forward
+        if layout.mode == .scroll {
+            withAnimation(.smooth(duration: 0.35)) { forward ? model.nextChapter() : model.previousChapter() }
+        } else {
+            forward ? model.nextChapter() : model.previousChapter()
+        }
+    }
+
     private func toggleChrome() {
         guard layout.chrome == .floating else { return }
         showsChrome.toggle()
@@ -157,7 +172,14 @@ struct ReaderView: View {
     private var content: some View {
         if let detail = model.detail, let chapter = model.chapter {
             switch layout.mode {
-            case .scroll: scrollContent(detail: detail, chapter: chapter)
+            case .scroll:
+                // 換章時整章以翻頁方向推入，與翻頁模式的換章動畫一致
+                scrollContent(detail: detail, chapter: chapter)
+                    .id(model.chapterIndex)
+                    .transition(.asymmetric(
+                        insertion: .move(edge: chapterForward ? .trailing : .leading),
+                        removal: .move(edge: chapterForward ? .leading : .trailing)
+                    ))
             case .paged: pagedContent(detail: detail, chapter: chapter)
             }
         } else if let error = model.loadError {
@@ -205,12 +227,17 @@ struct ReaderView: View {
         .contentMargins(.bottom, bottomInset + 96, for: .scrollContent)
         .ignoresSafeArea(edges: .vertical)
         .scrollEdgeEffectStyle(.soft, for: .top)
-        .onTapGesture { toggleChrome() }
+        .onTapGesture { withAnimation(.smooth(duration: 0.25)) { toggleChrome() } }
         .onScrollGeometryChange(for: CGFloat.self, of: { $0.contentOffset.y }) { old, new in
             guard layout.chrome == .floating else { return }
-            if new <= 0 { showsChrome = true }
-            else if new - old > 24 { showsChrome = false }
-            else if old - new > 24 { showsChrome = true }
+            // 與翻頁模式相同：頂欄（狀態列、標題）與底部控制列一起以動畫顯示 / 隱藏
+            var visible = showsChrome
+            if new <= 0 { visible = true }
+            else if new - old > 24 { visible = false }
+            else if old - new > 24 { visible = true }
+            if visible != showsChrome {
+                withAnimation(.smooth(duration: 0.25)) { showsChrome = visible }
+            }
         }
     }
 
@@ -466,8 +493,7 @@ struct ReaderView: View {
             GlassEffectContainer(spacing: 10) {
                 HStack(spacing: 10) {
                     circleButton("chevron.left", label: "上一章", enabled: model.hasPrevious) {
-                        startAtEnd = false
-                        model.previousChapter()
+                        changeChapter(forward: false)
                     }
 
                     HStack(spacing: 18) {
@@ -510,8 +536,7 @@ struct ReaderView: View {
                     }
 
                     circleButton("chevron.right", label: "下一章", enabled: model.hasNext) {
-                        startAtEnd = false
-                        model.nextChapter()
+                        changeChapter(forward: true)
                     }
                 }
             }

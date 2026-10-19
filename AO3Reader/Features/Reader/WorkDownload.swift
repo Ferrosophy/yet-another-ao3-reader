@@ -112,3 +112,33 @@ struct ActivityView: UIViewControllerRepresentable {
 
     func updateUIViewController(_ controller: UIActivityViewController, context: Context) {}
 }
+
+/// 閱讀頁停用「從左向右滑動返回」（含 iOS 26 的全頁滑動返回），只能用導覽列的返回按鈕離開，
+/// 避免與翻頁、滑動閱讀衝突。離開閱讀頁時恢復。
+struct SwipeBackDisabler: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> Controller { Controller() }
+    func updateUIViewController(_ controller: Controller, context: Context) {}
+
+    final class Controller: UIViewController {
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            setSwipeBack(enabled: false)
+        }
+
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            setSwipeBack(enabled: false)
+        }
+
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            setSwipeBack(enabled: true)
+        }
+
+        private func setSwipeBack(enabled: Bool) {
+            guard let navigation = navigationController else { return }
+            navigation.interactivePopGestureRecognizer?.isEnabled = enabled
+            navigation.interactiveContentPopGestureRecognizer?.isEnabled = enabled
+        }
+    }
+}

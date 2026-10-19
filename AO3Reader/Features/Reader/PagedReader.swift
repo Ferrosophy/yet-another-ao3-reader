@@ -14,6 +14,21 @@ struct PagedContent {
     var spans: [Span]
 }
 
+extension NSAttributedString.Key {
+    /// 標記譯文範圍，翻頁模式繪製側條或卡片底色
+    static let translationDecoration = NSAttributedString.Key("AO3TranslationDecoration")
+}
+
+final class TranslationDecoration: NSObject {
+    let style: TranslationAppearance.Style
+    let color: UIColor
+
+    init(style: TranslationAppearance.Style, color: UIColor) {
+        self.style = style
+        self.color = color
+    }
+}
+
 /// 翻頁模式中的作者註
 struct PagedNote {
     var id: String
@@ -53,13 +68,22 @@ enum PagedTextBuilder {
             paragraph.alignment = alignment
             return paragraph
         }
-        func append(_ string: String, font: UIFont, color: UIColor, paragraph: NSParagraphStyle) {
-            result.append(NSAttributedString(string: string + "\n", attributes: [
+        func append(_ string: String, font: UIFont, color: UIColor, paragraph: NSParagraphStyle,
+                    decoration: TranslationDecoration? = nil) {
+            var attributes: [NSAttributedString.Key: Any] = [
                 .font: font,
                 .foregroundColor: color,
                 .paragraphStyle: paragraph,
                 .kern: layout.letterSpacing,
-            ]))
+            ]
+            if let decoration { attributes[.translationDecoration] = decoration }
+            result.append(NSAttributedString(string: string + "\n", attributes: attributes))
+        }
+        /// 譯文的側條 / 卡片底色，由 PageTextView 繪製（與捲動模式外觀一致）
+        let decoration: TranslationDecoration? = switch style.translation.style {
+        case .bar: TranslationDecoration(style: .bar, color: UIColor(style.accent).withAlphaComponent(0.6))
+        case .card: TranslationDecoration(style: .card, color: textColor.withAlphaComponent(0.07))
+        case .plain: nil
         }
 
         let translationColor = style.translation.colorHex.flatMap(Color.init(hex:)).map(UIColor.init) ?? secondaryColor
@@ -72,7 +96,8 @@ enum PagedTextBuilder {
             append(text,
                    font: style.uiFont(scale: scale * style.translation.fontScale, weight: weight, italic: style.translation.italic),
                    color: translationColor,
-                   paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5, indent: translationIndent))
+                   paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5, indent: translationIndent),
+                   decoration: decoration)
         }
 
         if let title {
@@ -117,7 +142,8 @@ enum PagedTextBuilder {
                             append(text,
                                    font: style.uiFont(scale: style.translation.fontScale, italic: style.translation.italic),
                                    color: translationColor,
-                                   paragraph: paragraphStyle(after: layout.paragraphSpacing, indent: indent))
+                                   paragraph: paragraphStyle(after: layout.paragraphSpacing, indent: indent),
+                                   decoration: decoration)
                         } else {
                             append(text, font: style.uiFont(), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
                         }
@@ -311,9 +337,39 @@ final class PageTextView: UIView {
         let glyphs = manager.glyphRange(for: container)
         let origin = CGPoint(x: insets.left, y: insets.top)
         manager.drawBackground(forGlyphRange: glyphs, at: origin)
+        drawDecorations(manager: manager, container: container, origin: origin)
         manager.drawGlyphs(forGlyphRange: glyphs, at: origin)
     }
+
+    /// 譯文側條與卡片底色
+    private func drawDecorations(manager: NSLayoutManager, container: NSTextContainer, origin: CGPoint) {
+        text.enumerateAttribute(.translationDecoration, in: NSRange(location: 0, length: text.length)) { value, range, _ in
+            guard let decoration = value as? TranslationDecoration else { return }
+            let glyphRange = manager.glyphRange(forCharacterRange: range, actualCharacterRange: nil)
+            var used = CGRect.null
+            manager.enumerateLineFragments(forGlyphRange: glyphRange) { _, usedRect, _, lineRange, _ in
+                // 只有換行字元的空行不算
+                if NSIntersectionRange(lineRange, glyphRange).length > 0, usedRect.width > 1 { used = used.union(usedRect) }
+            }
+            guard !used.isNull else { return }
+            decoration.color.setFill()
+            switch decoration.style {
+            case .bar:
+                UIBezierPath(roundedRect: CGRect(x: origin.x, y: origin.y + used.minY + 2, width: 3, height: max(used.height - 4, 4)),
+                             cornerRadius: 1.5).fill()
+            case .card:
+                UIBezierPath(roundedRect: CGRect(x: origin.x, y: origin.y + used.minY - 4,
+                                                 width: container.size.width, height: used.height + 8),
+                             cornerRadius: 8).fill()
+            case .plain:
+                break
+            }
+        }
+    }
 }
+
+/// 仿真翻頁時頁面的背面：與閱讀背景同色（跟隨淺色 / 深色模式），不顯示文字。
+final class BackPageController: ReaderPage {}
 
 /// 作品資訊頁（第一頁）：SwiftUI 內容，可上下捲動。
 final class HeaderPageController: ReaderPage {
@@ -368,6 +424,10 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     private var pageViewController: UIPageViewController?
     private var currentPage: ReaderPage?
     private var isAnimating = false
+    /// 翻頁動畫進行中收到新內容時，等動畫結束再重新排版（否則舊頁殘留造成文字重疊）
+    private var needsRelayout = false
+    /// 換章時的翻頁方向（nil 表示不需要動畫，例如第一次載入）
+    private var pendingChapterDirection: Bool?
     private let headerHosts = NSHashTable<UIHostingController<AnyView>>.weakObjects()
 
     private var headerOffset: Int { header == nil ? 0 : 1 }
@@ -375,7 +435,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     private var insets: UIEdgeInsets { margins.insets(safeArea: view.window?.safeAreaInsets ?? DeviceInsets.current) }
 
     private var visiblePage: ReaderPage? {
-        (pageViewController?.viewControllers?.first as? ReaderPage) ?? currentPage
+        (pageViewController?.viewControllers?.first(where: { !($0 is BackPageController) }) as? ReaderPage) ?? currentPage
     }
 
     override func viewDidLoad() {
@@ -403,6 +463,8 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         if chapterChanged {
             pendingAnchor = startAtEnd ? nil : anchorParagraphID
             pendingStartAtEnd = startAtEnd
+            // 換章與章內翻頁使用同樣的翻頁動畫
+            if let old = self.content?.chapterIndex, transition == self.transition { pendingChapterDirection = content.chapterIndex > old }
         }
         self.content = content
         self.header = header
@@ -423,6 +485,10 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
 
     private func relayout() {
         guard let content, view.bounds.width > 0, view.bounds.height > 0 else { return }
+        if isAnimating || card != nil {
+            needsRelayout = true
+            return
+        }
         let insets = insets
         // 先記住目前頁首在哪個段落的第幾個字，重新分頁後回到同一位置
         var anchor: (id: String, offset: Int)?
@@ -465,7 +531,18 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         laidOutHeaderOffset = headerOffset
         lastContent = content
         if pageViewController == nil && currentPage == nil { rebuildContainer() }
-        show(index: currentIndex, animated: false, forward: true)
+        let direction = pendingChapterDirection
+        pendingChapterDirection = nil
+        show(index: currentIndex, animated: direction != nil, forward: direction ?? true)
+    }
+
+    /// 動畫結束後處理期間延後的重新排版
+    private func animationDidEnd() {
+        isAnimating = false
+        if needsRelayout {
+            needsRelayout = false
+            relayout()
+        }
     }
 
     /// 仿真與覆蓋的頁面必須不透明；平滑與淡入淡出直接透出閱讀背景
@@ -507,7 +584,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
             )
             controller.dataSource = self
             controller.delegate = self
-            controller.isDoubleSided = false
+            controller.isDoubleSided = transition == .curl
             addChild(controller)
             controller.view.frame = view.bounds
             controller.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -532,14 +609,21 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         guard let page = makePage(index) else { return }
         if let pageViewController {
             currentIndex = index
-            pageViewController.setViewControllers([page], direction: forward ? .forward : .reverse, animated: animated)
+            // 仿真為雙面：每頁背後是一張依淺色 / 深色模式著色的背頁
+            let controllers: [UIViewController] = pageViewController.isDoubleSided
+                ? [page, BackPageController(index: index, background: background)] : [page]
+            pageViewController.setViewControllers(controllers, direction: forward ? .forward : .reverse, animated: animated)
             notifyPageChange()
         } else if animated, currentPage != nil {
             transitionTo(page, forward: forward)
             return
         } else {
-            currentPage?.view.removeFromSuperview()
-            currentPage?.removeFromParent()
+            // 移除所有舊頁（包含動畫中途留下的），避免文字重疊
+            for child in children where child is ReaderPage {
+                child.willMove(toParent: nil)
+                child.view.removeFromSuperview()
+                child.removeFromParent()
+            }
             install(page, below: nil)
             currentPage = page
             currentIndex = index
@@ -572,9 +656,9 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
 
     private var card: CardTransition?
 
-    private func beginCard(forward: Bool) -> CardTransition? {
+    private func beginCard(forward: Bool, target explicitTarget: ReaderPage? = nil) -> CardTransition? {
         guard let current = currentPage else { return nil }
-        let target = makePage(currentIndex + (forward ? 1 : -1))
+        let target = explicitTarget ?? makePage(currentIndex + (forward ? 1 : -1))
         if let target {
             if forward {
                 // 前進：目前頁像卡牌一樣被拖走，露出下面的下一頁
@@ -642,7 +726,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
                 target.removeFromParent()
             }
             self.card = nil
-            self.isAnimating = false
+            self.animationDidEnd()
         }
         UIView.animate(withDuration: 0.35, delay: 0, usingSpringWithDamping: 0.9,
                        initialSpringVelocity: min(abs(velocity) / max(view.bounds.width, 1), 4),
@@ -663,14 +747,15 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
                 current.willMove(toParent: nil)
                 current.view.removeFromSuperview()
                 current.removeFromParent()
+                current.view.alpha = 1
                 self.currentPage = page
                 self.currentIndex = page.index
-                self.isAnimating = false
                 self.notifyPageChange()
+                self.animationDidEnd()
             })
         } else {
-            // 點擊翻頁：以同一套卡牌動畫自動完成
-            if let card = beginCard(forward: forward) { finishCard(card, complete: card.target != nil) }
+            // 點擊翻頁與換章：以同一套卡牌動畫自動完成
+            if let card = beginCard(forward: forward, target: page) { finishCard(card, complete: card.target != nil) }
         }
     }
 
@@ -773,19 +858,27 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
 
     // MARK: UIPageViewController
 
+    // 雙面仿真的順序：第 i 頁正面 → 第 i 頁背面 → 第 i+1 頁正面
+
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let page = viewController as? ReaderPage else { return nil }
+        if let back = viewController as? BackPageController { return makePage(back.index) }
+        guard let page = viewController as? ReaderPage, page.index > 0 else { return nil }
+        if pageViewController.isDoubleSided { return BackPageController(index: page.index - 1, background: background) }
         return makePage(page.index - 1)
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let page = viewController as? ReaderPage else { return nil }
+        if let back = viewController as? BackPageController { return makePage(back.index + 1) }
+        guard let page = viewController as? ReaderPage, page.index + 1 < pageCount else { return nil }
+        if pageViewController.isDoubleSided { return BackPageController(index: page.index, background: background) }
         return makePage(page.index + 1)
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool,
                             previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        guard completed, let page = pageViewController.viewControllers?.first as? ReaderPage else { return }
+        guard completed,
+              let page = pageViewController.viewControllers?.first(where: { !($0 is BackPageController) }) as? ReaderPage
+        else { return }
         currentIndex = page.index
         notifyPageChange()
     }

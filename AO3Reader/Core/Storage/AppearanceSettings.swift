@@ -81,7 +81,7 @@ enum ReaderFontWeight: String, CaseIterable, Codable, Identifiable, Sendable {
 enum ReadingMode: String, CaseIterable, Codable, Identifiable, Sendable {
     case scroll, paged
     var id: String { rawValue }
-    var title: String { self == .scroll ? String(localized: "捲動") : String(localized: "翻頁") }
+    var title: String { self == .scroll ? String(localized: "滾動") : String(localized: "翻頁") }
 }
 
 enum PageTransition: String, CaseIterable, Codable, Identifiable, Sendable {

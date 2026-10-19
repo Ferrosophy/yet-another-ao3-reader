@@ -165,9 +165,9 @@ struct AO3TermLabel: View {
 }
 
 enum AO3Term {
-    /// 字串版本：「配對 (Relationships)」；英文介面或兩者相同時只顯示一個
+    /// 字串版本：「配對 Relationships」；英文介面或兩者相同時只顯示一個
     static func label(_ localized: String, _ english: String) -> String {
         if InterfaceLanguage.isEnglish || localized.caseInsensitiveCompare(english) == .orderedSame { return english }
-        return "\(localized) (\(english))"
+        return "\(localized) \(english)"
     }
 }

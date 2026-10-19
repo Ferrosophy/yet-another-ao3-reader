@@ -493,7 +493,13 @@
   "阿里雲盤": "阿里雲ドライブ",
   "正在下載字體…": "フォントをダウンロード中…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "サインインし、フォント ファイル (.ttf / .otf) を見つけてダウンロードします。ダウンロードが完了すると、自動的にインポートされます。",
-  "下載的檔案不是字體（.ttf / .otf）": "ダウンロードしたファイルはフォント（.ttf / .otf）ではありません"
+  "下載的檔案不是字體（.ttf / .otf）": "ダウンロードしたファイルはフォント（.ttf / .otf）ではありません",
+  "滾動": "スクロール",
+  "回報問題": "問題を報告する",
+  "功能建議": "機能を提案する",
+  "查看所有回饋": "すべてのフィードバックを表示",
+  "意見回饋": "フィードバック",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "フィードバックを実行すると、ブラウザーで GitHub の問題が開き、アプリとシステムのバージョンが入力されます (アカウントや読み取りデータはありません)。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -989,7 +995,13 @@
   "阿里雲盤": "알리윤 드라이브",
   "正在下載字體…": "글꼴 다운로드 중…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "로그인하고 글꼴 파일(.ttf / .otf)을 찾아 다운로드하세요. 다운로드가 완료되면 자동으로 가져옵니다.",
-  "下載的檔案不是字體（.ttf / .otf）": "다운로드한 파일은 글꼴(.ttf/.otf)이 아닙니다."
+  "下載的檔案不是字體（.ttf / .otf）": "다운로드한 파일은 글꼴(.ttf/.otf)이 아닙니다.",
+  "滾動": "스크롤",
+  "回報問題": "문제 신고",
+  "功能建議": "기능 제안",
+  "查看所有回饋": "모든 피드백 보기",
+  "意見回饋": "피드백",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "피드백은 앱 및 시스템 버전이 채워진(계정 또는 데이터 읽기 없음) 브라우저에서 GitHub 문제를 엽니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -1485,7 +1497,13 @@
   "阿里雲盤": "Unidad Aliyun",
   "正在下載字體…": "Descargando fuente…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Inicie sesión, busque un archivo de fuente (.ttf / .otf) y descárguelo. Se importa automáticamente cuando finaliza la descarga.",
-  "下載的檔案不是字體（.ttf / .otf）": "El archivo descargado no es una fuente (.ttf/.otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "El archivo descargado no es una fuente (.ttf/.otf)",
+  "滾動": "Desplazarse",
+  "回報問題": "Informar un problema",
+  "功能建議": "Sugerir una característica",
+  "查看所有回饋": "Ver todos los comentarios",
+  "意見回饋": "Comentarios",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Los comentarios abren Problemas de GitHub en su navegador con la aplicación y las versiones del sistema completadas (sin cuenta ni datos de lectura)."
  },
  "fr": {
   "載入中": "Chargement",
@@ -1981,7 +1999,13 @@
   "阿里雲盤": "Aliyun Drive",
   "正在下載字體…": "Téléchargement de la police…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Connectez-vous, recherchez un fichier de police (.ttf / .otf) et téléchargez-le. Il est importé automatiquement une fois le téléchargement terminé.",
-  "下載的檔案不是字體（.ttf / .otf）": "Le fichier téléchargé n'est pas une police (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "Le fichier téléchargé n'est pas une police (.ttf / .otf)",
+  "滾動": "Faire défiler",
+  "回報問題": "Signaler un problème",
+  "功能建議": "Suggérer une fonctionnalité",
+  "查看所有回饋": "Afficher tous les commentaires",
+  "意見回饋": "Commentaires",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Les commentaires ouvrent les problèmes GitHub dans votre navigateur avec les versions de l'application et du système renseignées (pas de compte ni de données de lecture)."
  },
  "de": {
   "載入中": "Laden",
@@ -2477,7 +2501,13 @@
   "阿里雲盤": "Aliyun-Laufwerk",
   "正在下載字體…": "Schriftart wird heruntergeladen…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Melden Sie sich an, suchen Sie eine Schriftartdatei (.ttf / .otf) und laden Sie sie herunter. Es wird automatisch importiert, wenn der Download abgeschlossen ist.",
-  "下載的檔案不是字體（.ttf / .otf）": "Die heruntergeladene Datei ist keine Schriftart (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "Die heruntergeladene Datei ist keine Schriftart (.ttf / .otf)",
+  "滾動": "Scrollen",
+  "回報問題": "Melden Sie ein Problem",
+  "功能建議": "Schlagen Sie eine Funktion vor",
+  "查看所有回饋": "Alle Rückmeldungen anzeigen",
+  "意見回饋": "Rückmeldung",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Feedback öffnet GitHub Issues in Ihrem Browser mit den ausgefüllten App- und Systemversionen (kein Konto oder Lesedaten)."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -2973,7 +3003,13 @@
   "阿里雲盤": "Unidade Aliyun",
   "正在下載字體…": "Baixando fonte…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Faça login, encontre um arquivo de fonte (.ttf / .otf) e faça o download. Ele é importado automaticamente quando o download termina.",
-  "下載的檔案不是字體（.ttf / .otf）": "O arquivo baixado não é uma fonte (.ttf/.otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "O arquivo baixado não é uma fonte (.ttf/.otf)",
+  "滾動": "Rolar",
+  "回報問題": "Informar um problema",
+  "功能建議": "Sugira um recurso",
+  "查看所有回饋": "Ver todos os comentários",
+  "意見回饋": "Comentários",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "O feedback abre GitHub Issues em seu navegador com as versões do aplicativo e do sistema preenchidas (sem conta ou dados de leitura)."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3469,7 +3505,13 @@
   "阿里雲盤": "Aliyun Drive",
   "正在下載字體…": "Download del carattere…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Accedi, trova un file di font (.ttf / .otf) e scaricalo. Viene importato automaticamente al termine del download.",
-  "下載的檔案不是字體（.ttf / .otf）": "Il file scaricato non è un font (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "Il file scaricato non è un font (.ttf / .otf)",
+  "滾動": "Scorri",
+  "回報問題": "Segnala un problema",
+  "功能建議": "Suggerisci una funzionalità",
+  "查看所有回饋": "Visualizza tutti i feedback",
+  "意見回饋": "Feedback",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Il feedback apre GitHub Issues nel tuo browser con le versioni dell'app e del sistema compilate (nessun account o dati di lettura)."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -3965,7 +4007,13 @@
   "阿里雲盤": "Алиюн Драйв",
   "正在下載字體…": "Загрузка шрифта…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Войдите в систему, найдите файл шрифта (.ttf/.otf) и загрузите его. Он импортируется автоматически после завершения загрузки.",
-  "下載的檔案不是字體（.ttf / .otf）": "Скачанный файл не является шрифтом (.ttf/.otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "Скачанный файл не является шрифтом (.ttf/.otf)",
+  "滾動": "Прокрутка",
+  "回報問題": "Сообщить о проблеме",
+  "功能建議": "Предложить функцию",
+  "查看所有回饋": "Просмотреть все отзывы",
+  "意見回饋": "Обратная связь",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Отзыв открывает GitHub Issues в вашем браузере с заполненными версиями приложения и системы (без учетной записи или данных для чтения)."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4461,7 +4509,13 @@
   "阿里雲盤": "Аліюн Драйв",
   "正在下載字體…": "Завантаження шрифту…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Увійдіть, знайдіть файл шрифту (.ttf / .otf) і завантажте його. Він імпортується автоматично після завершення завантаження.",
-  "下載的檔案不是字體（.ttf / .otf）": "Завантажений файл не є шрифтом (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "Завантажений файл не є шрифтом (.ttf / .otf)",
+  "滾動": "Прокрутка",
+  "回報問題": "Повідомити про проблему",
+  "功能建議": "Запропонуйте функцію",
+  "查看所有回饋": "Переглянути всі відгуки",
+  "意見回饋": "Зворотній зв'язок",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Відгук відкриває GitHub Issues у вашому браузері із заповненими версіями програми та системи (без даних облікового запису чи читання)."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -4957,7 +5011,13 @@
   "阿里雲盤": "Napęd Aliyun",
   "正在下載字體…": "Pobieram czcionkę…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Zaloguj się, znajdź plik czcionki (.ttf / .otf) i pobierz go. Jest on importowany automatycznie po zakończeniu pobierania.",
-  "下載的檔案不是字體（.ttf / .otf）": "Pobrany plik nie jest czcionką (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "Pobrany plik nie jest czcionką (.ttf / .otf)",
+  "滾動": "Przewiń",
+  "回報問題": "Zgłoś problem",
+  "功能建議": "Zaproponuj funkcję",
+  "查看所有回饋": "Wyświetl wszystkie opinie",
+  "意見回饋": "Informacje zwrotne",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Opinia otwiera GitHub Issues w Twojej przeglądarce z wypełnionymi wersjami aplikacji i systemu (bez konta i danych do odczytu)."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5453,7 +5513,13 @@
   "阿里雲盤": "Aliyun Sürücüsü",
   "正在下載字體…": "Yazı tipi indiriliyor…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Oturum açın, bir yazı tipi dosyası (.ttf / .otf) bulun ve indirin. İndirme tamamlandığında otomatik olarak içe aktarılır.",
-  "下載的檔案不是字體（.ttf / .otf）": "İndirilen dosya bir yazı tipi değil (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "İndirilen dosya bir yazı tipi değil (.ttf / .otf)",
+  "滾動": "Kaydırma",
+  "回報問題": "Sorun Bildir",
+  "功能建議": "Bir Özellik Önerin",
+  "查看所有回饋": "Tüm Geri Bildirimleri Görüntüle",
+  "意見回饋": "Geribildirim",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Geri bildirim, tarayıcınızda uygulama ve sistem sürümleri doldurulmuş olarak (hesap veya okuma verisi yok) GitHub Sorunlarını açar."
  },
  "nl": {
   "載入中": "Laden",
@@ -5949,7 +6015,13 @@
   "阿里雲盤": "Aliyun-aandrijving",
   "正在下載字體…": "Lettertype downloaden…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Meld u aan, zoek een lettertypebestand (.ttf / .otf) en download het. Het wordt automatisch geïmporteerd wanneer het downloaden is voltooid.",
-  "下載的檔案不是字體（.ttf / .otf）": "Het gedownloade bestand is geen lettertype (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "Het gedownloade bestand is geen lettertype (.ttf / .otf)",
+  "滾動": "Blader",
+  "回報問題": "Rapporteer een probleem",
+  "功能建議": "Stel een functie voor",
+  "查看所有回饋": "Bekijk alle feedback",
+  "意見回饋": "Feedback",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Feedback opent GitHub Issues in uw browser met de app- en systeemversies ingevuld (geen account- of leesgegevens)."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6445,7 +6517,13 @@
   "阿里雲盤": "محرك عليون",
   "正在下載字體…": "جارٍ تنزيل الخط…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "قم بتسجيل الدخول، وابحث عن ملف الخط (.ttf / .otf) وقم بتنزيله. يتم استيراده تلقائيًا عند انتهاء التنزيل.",
-  "下載的檔案不是字體（.ttf / .otf）": "الملف الذي تم تنزيله ليس بخط (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "الملف الذي تم تنزيله ليس بخط (.ttf / .otf)",
+  "滾動": "قم بالتمرير",
+  "回報問題": "الإبلاغ عن مشكلة",
+  "功能建議": "اقتراح ميزة",
+  "查看所有回饋": "عرض جميع التعليقات",
+  "意見回饋": "ردود الفعل",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "تفتح التعليقات مشكلات GitHub في متصفحك مع ملء إصدارات التطبيق والنظام (بدون حساب أو بيانات القراءة)."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -6941,7 +7019,13 @@
   "阿里雲盤": "अलीयुन ड्राइव",
   "正在下載字體…": "फ़ॉन्ट डाउनलोड हो रहा है…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "साइन इन करें, एक फ़ॉन्ट फ़ाइल (.ttf / .otf) ढूंढें और इसे डाउनलोड करें। डाउनलोड समाप्त होने पर यह स्वचालित रूप से आयात हो जाता है।",
-  "下載的檔案不是字體（.ttf / .otf）": "डाउनलोड की गई फ़ाइल कोई फ़ॉन्ट नहीं है (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "डाउनलोड की गई फ़ाइल कोई फ़ॉन्ट नहीं है (.ttf / .otf)",
+  "滾動": "स्क्रॉल करें",
+  "回報問題": "किसी समस्या की रिपोर्ट करें",
+  "功能建議": "एक विशेषता सुझाएँ",
+  "查看所有回饋": "सभी प्रतिक्रिया देखें",
+  "意見回饋": "प्रतिक्रिया",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "फीडबैक आपके ब्राउज़र में ऐप और सिस्टम संस्करण (कोई खाता या रीडिंग डेटा नहीं) के साथ GitHub मुद्दे खोलता है।"
  },
  "id": {
   "載入中": "Memuat",
@@ -7437,7 +7521,13 @@
   "阿里雲盤": "Aliyun berkendara",
   "正在下載字體…": "Mengunduh font…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Masuk, cari file font (.ttf / .otf) dan unduh. Itu diimpor secara otomatis ketika unduhan selesai.",
-  "下載的檔案不是字體（.ttf / .otf）": "File yang diunduh bukan font (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "File yang diunduh bukan font (.ttf / .otf)",
+  "滾動": "Gulir",
+  "回報問題": "Laporkan Masalah",
+  "功能建議": "Sarankan Fitur",
+  "查看所有回饋": "Lihat Semua Masukan",
+  "意見回饋": "Umpan balik",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Umpan balik membuka Masalah GitHub di browser Anda dengan versi aplikasi dan sistem terisi (tidak ada akun atau data bacaan)."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -7933,7 +8023,13 @@
   "阿里雲盤": "Ổ Aliyun",
   "正在下載字體…": "Đang tải xuống phông chữ…",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "Đăng nhập, tìm file font (.ttf/.otf) rồi tải về. Nó được nhập tự động khi quá trình tải xuống kết thúc.",
-  "下載的檔案不是字體（.ttf / .otf）": "File tải về không phải là font (.ttf/.otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "File tải về không phải là font (.ttf/.otf)",
+  "滾動": "Cuộn",
+  "回報問題": "Báo cáo sự cố",
+  "功能建議": "Đề xuất một tính năng",
+  "查看所有回饋": "Xem tất cả phản hồi",
+  "意見回饋": "Phản hồi",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Phản hồi sẽ mở ra Sự cố GitHub trong trình duyệt của bạn với phiên bản ứng dụng và hệ thống được điền vào (không có tài khoản hoặc dữ liệu đọc)."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8429,6 +8525,12 @@
   "阿里雲盤": "อาลีหยุน ไดรฟ์",
   "正在下載字體…": "กำลังดาวน์โหลดแบบอักษร...",
   "登入後找到字體檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。": "ลงชื่อเข้าใช้ ค้นหาไฟล์ฟอนต์ (.ttf / .otf) แล้วดาวน์โหลด จะถูกนำเข้าโดยอัตโนมัติเมื่อการดาวน์โหลดเสร็จสิ้น",
-  "下載的檔案不是字體（.ttf / .otf）": "ไฟล์ที่ดาวน์โหลดไม่ใช่แบบอักษร (.ttf / .otf)"
+  "下載的檔案不是字體（.ttf / .otf）": "ไฟล์ที่ดาวน์โหลดไม่ใช่แบบอักษร (.ttf / .otf)",
+  "滾動": "เลื่อน",
+  "回報問題": "รายงานปัญหา",
+  "功能建議": "แนะนำฟีเจอร์",
+  "查看所有回饋": "ดูคำติชมทั้งหมด",
+  "意見回饋": "ข้อเสนอแนะ",
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "คำติชมจะเปิดปัญหา GitHub ในเบราว์เซอร์ของคุณด้วยแอปและเวอร์ชันของระบบที่กรอกไว้ (ไม่มีบัญชีหรือข้อมูลการอ่าน)"
  }
 }
