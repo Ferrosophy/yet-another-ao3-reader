@@ -12,7 +12,6 @@ struct ReaderView: View {
     @State private var showsChrome = true
     @State private var showsChapters = false
     @State private var showsAppearance = false
-    @State private var showsTranslationSettings = false
     @State private var showsSourcePicker = false
     @State private var showsTargetPicker = false
     /// 換章方向（決定捲動模式的推入方向）
@@ -151,16 +150,6 @@ struct ReaderView: View {
         .sheet(isPresented: $showsSourcePicker) {
             TranslationLanguageSheet(title: "原文語言", languages: app.translation.config.provider.sourceLanguages, allowsAutomatic: true,
                                 selection: Binding(get: { model.sourceLanguage?.code }, set: { model.setSourceLanguage($0) }))
-        }
-        .sheet(isPresented: $showsTranslationSettings, onDismiss: { model.resetTranslations(keepOffline: true) }) {
-            NavigationStack {
-                TranslationSettingsView()
-                    .toolbar {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("完成") { showsTranslationSettings = false }
-                        }
-                    }
-            }
         }
     }
 
@@ -526,7 +515,6 @@ struct ReaderView: View {
                     .padding(.horizontal, 14)
                     .padding(.vertical, 8)
                     .glassEffect(.regular.tint(.red.opacity(0.25)), in: .capsule)
-                    .onTapGesture { showsTranslationSettings = true }
             }
 
             GlassEffectContainer(spacing: 10) {
@@ -554,30 +542,23 @@ struct ReaderView: View {
                     .padding(.horizontal, 4)
                     .glassEffect(.regular.interactive(), in: .capsule)
 
-                    // 點擊切換翻譯；長按直接開啟翻譯設定（不經過內容選單，避免預覽動畫的延遲）
-                    Image(systemName: "translate")
-                        .appFont(.title3)
-                        .foregroundStyle(model.isTranslationOn ? .white : .primary)
-                        .frame(width: 48, height: 48)
-                        .contentShape(.circle)
-                        .glassEffect(
-                            model.isTranslationOn ? .regular.tint(.accentColor).interactive() : .regular.interactive(),
-                            in: .circle
-                        )
-                        .glassEffectID("translate", in: glass)
-                        .onTapGesture {
-                            withAnimation(.bouncy) { model.isTranslationOn.toggle() }
-                        }
-                        .onLongPressGesture(minimumDuration: 0.35) {
-                            showsTranslationSettings = true
-                        }
-                        .sensoryFeedback(.impact, trigger: showsTranslationSettings) { _, new in new }
-                        .accessibilityElement()
-                        .accessibilityAddTraits(.isButton)
-                        .accessibilityLabel(model.isTranslationOn ? "關閉翻譯" : "開啟翻譯")
-                        .accessibilityHint("長按開啟翻譯設定")
-                        .accessibilityAction { withAnimation(.bouncy) { model.isTranslationOn.toggle() } }
-                        .accessibilityAction(named: "翻譯設定") { showsTranslationSettings = true }
+                    // 點擊切換翻譯（翻譯設定在「設定」分頁）
+                    Button {
+                        withAnimation(.bouncy) { model.isTranslationOn.toggle() }
+                    } label: {
+                        Image(systemName: "translate")
+                            .appFont(.title3)
+                            .foregroundStyle(model.isTranslationOn ? .white : .primary)
+                            .frame(width: 48, height: 48)
+                            .contentShape(.circle)
+                    }
+                    .buttonStyle(.plain)
+                    .glassEffect(
+                        model.isTranslationOn ? .regular.tint(.accentColor).interactive() : .regular.interactive(),
+                        in: .circle
+                    )
+                    .glassEffectID("translate", in: glass)
+                    .accessibilityLabel(model.isTranslationOn ? "關閉翻譯" : "開啟翻譯")
 
                     if model.isTranslationOn {
                         languageMenu
@@ -617,7 +598,6 @@ struct ReaderView: View {
                 Text(model.displayMode.title)
             }
             Button("重新翻譯本章", systemImage: "arrow.clockwise") { model.resetTranslations() }
-            Button("翻譯設定", systemImage: "gearshape") { showsTranslationSettings = true }
         } label: {
             Text(model.targetLanguage.name)
                 .appFont(.subheadline, weight: .medium)
