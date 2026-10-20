@@ -296,6 +296,22 @@ struct AccountActionTests {
         #expect(merged.devices["B"] != nil)
     }
 
+    @Test func subscribeFormGetsPageTokenAndCommit() throws {
+        let html = """
+        <html><head><meta name="csrf-token" content="pagetok"></head><body>
+        <ul class="work navigation actions"><li class="subscribe">
+        <form class="ajax-create-destroy" action="/users/me/subscriptions" method="post">
+        <input type="hidden" name="subscription[subscribable_id]" value="42">
+        <input type="hidden" name="subscription[subscribable_type]" value="Work">
+        <input type="submit" name="commit" value="Subscribe">
+        </form></li></ul></body></html>
+        """
+        let form = try #require(try AO3Parser.subscribeForm(html: html))
+        #expect(form.value("authenticity_token") == "pagetok")
+        #expect(form.value("commit") == "Subscribe")
+        #expect(form.value("subscription[subscribable_type]") == "Work")
+    }
+
     @Test func sanitizesDownloadFileNames() {
         #expect(AO3Client.fileName("A/B: C?") == "A B  C")
         #expect(AO3Client.fileName("  ") == "work")

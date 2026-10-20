@@ -66,6 +66,9 @@ struct AO3Client: Sendable {
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.setValue(baseURL.absoluteString, forHTTPHeaderField: "Origin")
         request.setValue(url(path).absoluteString, forHTTPHeaderField: "Referer")
+        if let token = fields.first(where: { $0.0 == "authenticity_token" })?.1 {
+            request.setValue(token, forHTTPHeaderField: "X-CSRF-Token")
+        }
         request.httpBody = Data(FormEncoding.encode(fields).utf8)
         let (data, response) = try await Self.session.data(for: request)
         let http = response as! HTTPURLResponse

@@ -52,6 +52,10 @@ final class WorkActionsModel {
         guard let form = actions?.subscribe else { return }
         let subscribed = actions?.isSubscribed ?? false
         await perform(subscribed ? String(localized: "已取消訂閱作品") : String(localized: "已訂閱作品")) { try await self.client.submit(form) }
+        // 重新讀取後狀態沒有改變，代表 AO3 沒有接受這次操作
+        if message != nil, actions?.isSubscribed == subscribed {
+            message = String(localized: "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試")
+        }
     }
 
     func toggleSubscription(_ target: SubscriptionTarget) async {
@@ -63,6 +67,9 @@ final class WorkActionsModel {
         if let loaded = try? await client.subscriptionTarget(name: target.name, path: target.path) {
             if let index = authors.firstIndex(where: { $0.path == target.path }) { authors[index] = loaded }
             if let index = series.firstIndex(where: { $0.path == target.path }) { series[index] = loaded }
+            if loaded.isSubscribed == subscribed {
+                message = String(localized: "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試")
+            }
         }
     }
 

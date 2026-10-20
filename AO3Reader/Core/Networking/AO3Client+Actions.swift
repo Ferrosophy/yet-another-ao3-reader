@@ -43,12 +43,24 @@ struct SubscriptionTarget: Identifiable, Hashable, Sendable {
 }
 
 extension AO3Parser {
-    static func formSpec(_ form: Element) throws -> FormSpec {
+    /// - Parameter pageToken: 頁面 `<meta name="csrf-token">` 的值。AO3 部分表單（例如訂閱）不含
+    ///   authenticity_token 隱藏欄位，而是由網頁腳本補上；缺少時 AO3 會拒絕請求，所以這裡自行補上。
+    static func formSpec(_ form: Element, pageToken: String? = nil) throws -> FormSpec {
         var fields: [FormSpec.Field] = []
         for input in try form.select("input[type=hidden]") {
             let name = try input.attr("name")
             guard !name.isEmpty else { continue }
             fields.append(.init(name: name, value: try input.attr("value")))
+        }
+        if let pageToken, !pageToken.isEmpty, !fields.contains(where: { $0.name == "authenticity_token" }) {
+            fields.append(.init(name: "authenticity_token", value: pageToken))
+        }
+        // 送出按鈕本身的值（例如 commit=Subscribe），與瀏覽器提交時一致
+        if let button = try form.select("input[type=submit][name], button[type=submit][name]").first() {
+            let name = try button.attr("name")
+            if !name.isEmpty, !fields.contains(where: { $0.name == name }) {
+                fields.append(.init(name: name, value: try button.attr("value")))
+            }
         }
         // 多個 pseud 時以 select 選擇，取目前選中的值
         for select in try form.select("select") {
@@ -64,22 +76,26 @@ extension AO3Parser {
         form.value("_method") == "delete" || form.action.range(of: #"/subscriptions/\d+$"#, options: .regularExpression) != nil
     }
 
+    static func pageToken(_ doc: Document) throws -> String? {
+        try doc.select("meta[name=csrf-token]").first()?.attr("content")
+    }
+
     static func workActions(_ doc: Document) throws -> WorkActions? {
         var actions = WorkActions()
+        let token = try pageToken(doc)
         if let form = try doc.select("#bookmark-form form").first() {
-            actions.bookmark = try formSpec(form)
+            actions.bookmark = try formSpec(form, pageToken: token)
             actions.bookmarkNotes = try form.select(#"textarea[name="bookmark[bookmarker_notes]"]"#).first()?.text() ?? ""
             actions.bookmarkTags = try form.select(#"input[name="bookmark[tag_string]"]"#).first()?.attr("value") ?? ""
             actions.bookmarkPrivate = try form.select(#"input[type=checkbox][name="bookmark[private]"]"#).first()?.hasAttr("checked") ?? false
         }
         if let form = try doc.select("li.mark form").first() {
-            actions.mark = try formSpec(form)
+            actions.mark = try formSpec(form, pageToken: token)
         }
         if let form = try doc.select("li.subscribe form").first() {
-            actions.subscribe = try formSpec(form)
+            actions.subscribe = try formSpec(form, pageToken: token)
         }
-        actions.authenticityToken = try doc.select("meta[name=csrf-token]").first()?.attr("content")
-            ?? actions.bookmark?.value("authenticity_token")
+        actions.authenticityToken = token ?? actions.bookmark?.value("authenticity_token")
         // 未登入時頁面上沒有任何操作表單
         guard actions.bookmark != nil || actions.mark != nil || actions.subscribe != nil else { return nil }
         return actions
@@ -91,7 +107,8 @@ extension AO3Parser {
 
     static func subscribeForm(html: String) throws -> FormSpec? {
         let doc = try SwiftSoup.parse(html)
-        return try doc.select("li.subscribe form").first().map(formSpec)
+        let token = try pageToken(doc)
+        return try doc.select("li.subscribe form").first().map { try formSpec($0, pageToken: token) }
     }
 
     static func workAuthors(_ doc: Document) throws -> [WorkTag] {
