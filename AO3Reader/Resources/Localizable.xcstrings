@@ -21165,145 +21165,145 @@
         }
       }
     },
-    "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": {
+    "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "اختر الأعمال في Batch Download لإضافتها هنا. تظهر الملفات التي تم تنزيلها أيضًا في مجلد AO3 Reader في تطبيق الملفات."
+            "value": "اختر الأعمال في Batch Download لإضافتها هنا. تظهر الملفات التي تم تنزيلها أيضًا في مجلد YAAO3R في تطبيق الملفات."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wählen Sie Werke im Batch-Download aus, um sie hier hinzuzufügen. Heruntergeladene Dateien werden auch im AO3 Reader-Ordner in der Dateien-App angezeigt."
+            "value": "Wählen Sie Werke im Batch-Download aus, um sie hier hinzuzufügen. Heruntergeladene Dateien werden auch im Ordner YAAO3R in der Dateien-App angezeigt."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose works in Batch Download to add them here. Downloaded files also appear in the AO3 Reader folder in the Files app."
+            "value": "Choose works in Batch Download to add them here. Downloaded files also appear in the YAAO3R folder in the Files app."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Elija obras en Descarga por lotes para agregarlas aquí. Los archivos descargados también aparecen en la carpeta AO3 Reader en la aplicación Archivos."
+            "value": "Elija obras en Descarga por lotes para agregarlas aquí. Los archivos descargados también aparecen en la carpeta YAAO3R en la aplicación Archivos."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choisissez les œuvres en téléchargement par lots pour les ajouter ici. Les fichiers téléchargés apparaissent également dans le dossier AO3 Reader de l'application Fichiers."
+            "value": "Choisissez les œuvres en téléchargement par lots pour les ajouter ici. Les fichiers téléchargés apparaissent également dans le dossier YAAO3R de l'application Fichiers."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "उन्हें यहां जोड़ने के लिए बैच डाउनलोड में कार्य चुनें। डाउनलोड की गई फ़ाइलें फ़ाइल ऐप में AO3 रीडर फ़ोल्डर में भी दिखाई देती हैं।"
+            "value": "उन्हें यहां जोड़ने के लिए बैच डाउनलोड में कार्य चुनें। डाउनलोड की गई फ़ाइलें फ़ाइलें ऐप में YAAO3R फ़ोल्डर में भी दिखाई देती हैं।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pilih karya di Batch Download untuk menambahkannya di sini. File yang diunduh juga muncul di folder AO3 Reader di aplikasi Files."
+            "value": "Pilih karya di Batch Download untuk menambahkannya di sini. File yang diunduh juga muncul di folder YAAO3R di aplikasi Files."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose works in Batch Download to add them here. I file scaricati vengono visualizzati anche nella cartella AO3 Reader nell'app File."
+            "value": "Scegli le opere in Download batch per aggiungerle qui. I file scaricati vengono visualizzati anche nella cartella YAAO3R nell'app File."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "一括ダウンロードで作品を選択してここに追加します。ダウンロードしたファイルは、ファイル アプリの AO3 Reader フォルダーにも表示されます。"
+            "value": "一括ダウンロードで作品を選択してここに追加します。ダウンロードしたファイルは、ファイル アプリの YAAO3R フォルダーにも表示されます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "여기에 추가하려면 일괄 다운로드에서 작품을 선택하세요. 다운로드한 파일은 파일 앱의 AO3 Reader 폴더에도 나타납니다."
+            "value": "여기에 추가하려면 일괄 다운로드에서 작품을 선택하세요. 다운로드한 파일은 파일 앱의 YAAO3R 폴더에도 나타납니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kies werken in Batchdownload om ze hier toe te voegen. Gedownloade bestanden verschijnen ook in de map AO3 Reader in de app Bestanden."
+            "value": "Kies werken in Batchdownload om ze hier toe te voegen. Gedownloade bestanden verschijnen ook in de map YAAO3R in de app Bestanden."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wybierz prace w trybie pobierania zbiorczego, aby je tutaj dodać. Pobrane pliki pojawiają się także w folderze AO3 Reader w aplikacji Pliki."
+            "value": "Wybierz prace w trybie pobierania zbiorczego, aby je tutaj dodać. Pobrane pliki pojawiają się także w folderze YAAO3R w aplikacji Pliki."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Escolha trabalhos em download em lote para adicioná-los aqui. Os arquivos baixados também aparecem na pasta AO3 Reader no aplicativo Arquivos."
+            "value": "Escolha trabalhos em download em lote para adicioná-los aqui. Os arquivos baixados também aparecem na pasta YAAO3R no aplicativo Arquivos."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Выберите работы в пакетной загрузке, чтобы добавить их сюда. Загруженные файлы также появляются в папке AO3 Reader в приложении «Файлы»."
+            "value": "Выберите работы в пакетной загрузке, чтобы добавить их сюда. Загруженные файлы также появляются в папке YAAO3R в приложении «Файлы»."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "เลือกผลงานแบบดาวน์โหลดเป็นชุดเพื่อเพิ่มที่นี่ ไฟล์ที่ดาวน์โหลดยังปรากฏในโฟลเดอร์ AO3 Reader ในแอพ Files อีกด้วย"
+            "value": "เลือกผลงานแบบดาวน์โหลดเป็นชุดเพื่อเพิ่มที่นี่ ไฟล์ที่ดาวน์โหลดยังปรากฏในโฟลเดอร์ YAAO3R ในแอพ Files อีกด้วย"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Buraya eklemek için Toplu İndirme'deki çalışmaları seçin. İndirilen dosyalar ayrıca Dosyalar uygulamasındaki AO3 Reader klasöründe de görünür."
+            "value": "Buraya eklemek için Toplu İndirme'deki çalışmaları seçin. İndirilen dosyalar ayrıca Dosyalar uygulamasındaki YAAO3R klasöründe de görünür."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Виберіть роботи в пакетному завантаженні, щоб додати їх сюди. Завантажені файли також відображаються в папці AO3 Reader у програмі Файли."
+            "value": "Виберіть роботи в пакетному завантаженні, щоб додати їх сюди. Завантажені файли також відображаються в папці YAAO3R у програмі Файли."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Chọn các tác phẩm trong Tải xuống hàng loạt để thêm chúng vào đây. Các tệp đã tải xuống cũng xuất hiện trong thư mục AO3 Reader trong ứng dụng Tệp."
+            "value": "Chọn các tác phẩm trong Tải xuống hàng loạt để thêm chúng vào đây. Các tệp đã tải xuống cũng xuất hiện trong thư mục YAAO3R trong ứng dụng Tệp."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在「批量下载」中选择作品后加入下载列表。下载的文件也会出现在「文件」App 的 AO3 Reader 文件夹。"
+            "value": "在「批量下载」中选择作品后加入下载列表。下载的文件也会出现在「文件」App 的 YAAO3R 文件夹。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。"
+            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 文件夾。"
+            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 文件夾。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 文件夾。"
+            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 文件夾。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。"
+            "value": "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。"
           }
         }
       }
@@ -68641,145 +68641,145 @@
         }
       }
     },
-    "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": {
+    "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "انقر على اسم حسابك في الجزء العلوي الأيمن ← \"معلومات الحساب\" ← \"الأمان\". ضمن \"إدارة تطبيقات الطرف الثالث\"، انقر على \"إضافة تطبيق\"، وقم بتسميته AO3 Reader، ثم انقر على \"إنشاء كلمة مرور\"."
+            "value": "انقر على اسم حسابك في الجزء العلوي الأيمن ← \"معلومات الحساب\" ← \"الأمان\". ضمن \"إدارة تطبيقات الطرف الثالث\"، انقر على \"إضافة تطبيق\"، وقم بتسميته YAAO3R، ثم انقر على \"إنشاء كلمة مرور\"."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klicken Sie oben rechts auf Ihren Kontonamen → „Kontoinformationen“ → „Sicherheit“. Klicken Sie unter „Drittanbieter-App-Verwaltung“ auf „App hinzufügen“, nennen Sie sie AO3 Reader und klicken Sie dann auf „Passwort generieren“."
+            "value": "Klicken Sie oben rechts auf Ihren Kontonamen → „Kontoinformationen“ → „Sicherheit“. Klicken Sie unter „Drittanbieter-App-Verwaltung“ auf „App hinzufügen“, nennen Sie sie YAAO3R und klicken Sie dann auf „Passwort generieren“."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Click your account name at the top right → “Account Info” → “Security”. Under “Third-party App Management”, click “Add App”, name it AO3 Reader, then click “Generate Password”."
+            "value": "Click your account name at the top right → “Account Info” → “Security”. Under “Third-party App Management”, click “Add App”, name it YAAO3R, then click “Generate Password”."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Haga clic en el nombre de su cuenta en la parte superior derecha → “Información de cuenta” → “Seguridad”. En \"Administración de aplicaciones de terceros\", haga clic en \"Agregar aplicación\", asígnele el nombre AO3 Reader y luego haga clic en \"Generar contraseña\"."
+            "value": "Haga clic en el nombre de su cuenta en la parte superior derecha → “Información de cuenta” → “Seguridad”. En \"Administración de aplicaciones de terceros\", haga clic en \"Agregar aplicación\", asígnele el nombre YAAO3R y luego haga clic en \"Generar contraseña\"."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cliquez sur le nom de votre compte en haut à droite → « Informations sur le compte » → « Sécurité ». Sous « Gestion des applications tierces », cliquez sur « Ajouter une application », nommez-la AO3 Reader, puis cliquez sur « Générer un mot de passe »."
+            "value": "Cliquez sur le nom de votre compte en haut à droite → « Informations sur le compte » → « Sécurité ». Sous « Gestion des applications tierces », cliquez sur « Ajouter une application », nommez-la YAAO3R, puis cliquez sur « Générer un mot de passe »."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "ऊपर दाईं ओर अपने खाते के नाम → \"खाता जानकारी\" → \"सुरक्षा\" पर क्लिक करें। \"तृतीय-पक्ष ऐप प्रबंधन\" के अंतर्गत, \"ऐप जोड़ें\" पर क्लिक करें, इसे AO3 रीडर नाम दें, फिर \"पासवर्ड जेनरेट करें\" पर क्लिक करें।"
+            "value": "ऊपर दाईं ओर अपने खाते के नाम → \"खाता जानकारी\" → \"सुरक्षा\" पर क्लिक करें। \"तृतीय-पक्ष ऐप प्रबंधन\" के अंतर्गत, \"ऐप जोड़ें\" पर क्लिक करें, इसे YAAO3R नाम दें, फिर \"पासवर्ड जेनरेट करें\" पर क्लिक करें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klik nama akun Anda di kanan atas → “Info Akun” → “Keamanan”. Di bawah “Manajemen Aplikasi Pihak Ketiga”, klik “Tambahkan Aplikasi”, beri nama AO3 Reader, lalu klik “Buat Kata Sandi”."
+            "value": "Klik nama akun Anda di kanan atas → “Info Akun” → “Keamanan”. Di bawah “Manajemen Aplikasi Pihak Ketiga”, klik “Tambahkan Aplikasi”, beri nama YAAO3R, lalu klik “Buat Kata Sandi”."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fai clic sul nome del tuo account in alto a destra → “Informazioni sull'account” → “Sicurezza”. In \"Gestione app di terze parti\", fai clic su \"Aggiungi app\", chiamala AO3 Reader, quindi fai clic su \"Genera password\"."
+            "value": "Fai clic sul nome del tuo account in alto a destra → “Informazioni sull'account” → “Sicurezza”. In \"Gestione app di terze parti\", fai clic su \"Aggiungi app\", chiamala YAAO3R, quindi fai clic su \"Genera password\"."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "右上のアカウント名→「アカウント情報」→「セキュリティ」をクリックします。 「サードパーティアプリの管理」で「アプリの追加」をクリックし、「AO3 Reader」という名前を付けて、「パスワードの生成」をクリックします。"
+            "value": "右上のアカウント名→「アカウント情報」→「セキュリティ」をクリックします。 [サードパーティ アプリの管理] で、[アプリの追加] をクリックし、YAAO3R という名前を付けて、[パスワードの生成] をクリックします。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오른쪽 상단의 계정 이름 → “계정 정보” → “보안”을 클릭하세요. \"타사 앱 관리\"에서 \"앱 추가\"를 클릭하고 이름을 AO3 Reader로 지정한 다음 \"비밀번호 생성\"을 클릭하세요."
+            "value": "오른쪽 상단의 계정 이름 → “계정 정보” → “보안”을 클릭하세요. \"타사 앱 관리\"에서 \"앱 추가\"를 클릭하고 이름을 YAAO3R로 지정한 다음 \"비밀번호 생성\"을 클릭합니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klik rechtsboven op uw accountnaam → “Accountinfo” → “Beveiliging”. Klik onder “App-beheer van derden” op “App toevoegen”, noem deze AO3 Reader en klik vervolgens op “Wachtwoord genereren”."
+            "value": "Klik rechtsboven op uw accountnaam → “Accountinfo” → “Beveiliging”. Klik onder “App-beheer van derden” op “App toevoegen”, noem deze YAAO3R en klik vervolgens op “Wachtwoord genereren”."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kliknij nazwę swojego konta w prawym górnym rogu → „Informacje o koncie” → „Bezpieczeństwo”. W sekcji „Zarządzanie aplikacjami innych firm” kliknij „Dodaj aplikację”, nadaj jej nazwę AO3 Reader, a następnie kliknij „Generuj hasło”."
+            "value": "Kliknij nazwę swojego konta w prawym górnym rogu → „Informacje o koncie” → „Bezpieczeństwo”. W sekcji „Zarządzanie aplikacjami innych firm” kliknij „Dodaj aplikację”, nadaj jej nazwę YAAO3R, a następnie kliknij „Wygeneruj hasło”."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clique no nome da sua conta no canto superior direito → “Informações da conta” → “Segurança”. Em “Gerenciamento de aplicativos de terceiros”, clique em “Adicionar aplicativo”, nomeie-o como AO3 Reader e clique em “Gerar senha”."
+            "value": "Clique no nome da sua conta no canto superior direito → “Informações da conta” → “Segurança”. Em “Gerenciamento de aplicativos de terceiros”, clique em “Adicionar aplicativo”, nomeie-o YAAO3R e clique em “Gerar senha”."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Нажмите имя своей учетной записи в правом верхнем углу → «Информация об учетной записи» → «Безопасность». В разделе «Управление сторонними приложениями» нажмите «Добавить приложение», назовите его AO3 Reader, затем нажмите «Создать пароль»."
+            "value": "Нажмите имя своей учетной записи в правом верхнем углу → «Информация об учетной записи» → «Безопасность». В разделе «Управление сторонними приложениями» нажмите «Добавить приложение», назовите его YAAO3R, затем нажмите «Создать пароль»."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "คลิกชื่อบัญชีของคุณที่มุมขวาบน → “ข้อมูลบัญชี” → “ความปลอดภัย” ใต้ \"การจัดการแอปบุคคลที่สาม\" คลิก \"เพิ่มแอป\" ตั้งชื่อเป็น AO3 Reader จากนั้นคลิก \"สร้างรหัสผ่าน\""
+            "value": "คลิกชื่อบัญชีของคุณที่มุมขวาบน → “ข้อมูลบัญชี” → “ความปลอดภัย” ใต้ \"การจัดการแอปบุคคลที่สาม\" คลิก \"เพิ่มแอป\" ตั้งชื่อเป็น YAAO3R จากนั้นคลิก \"สร้างรหัสผ่าน\""
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sağ üstteki hesap adınıza → “Hesap Bilgileri” → “Güvenlik”e tıklayın. “Üçüncü Taraf Uygulama Yönetimi” altında, “Uygulama Ekle”ye tıklayın, bunu AO3 Reader olarak adlandırın ve ardından “Şifre Oluştur”a tıklayın."
+            "value": "Sağ üstteki hesap adınıza → “Hesap Bilgileri” → “Güvenlik”e tıklayın. “Üçüncü Taraf Uygulama Yönetimi” altında, “Uygulama Ekle”ye tıklayın, uygulamaya YAAO3R adını verin ve ardından “Şifre Oluştur”a tıklayın."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Натисніть назву свого облікового запису вгорі праворуч → «Інформація про обліковий запис» → «Безпека». У розділі «Керування сторонніми програмами» натисніть «Додати програму», назвіть її AO3 Reader, а потім натисніть «Створити пароль»."
+            "value": "Натисніть назву свого облікового запису вгорі праворуч → «Інформація про обліковий запис» → «Безпека». У розділі «Керування сторонніми програмами» натисніть «Додати програму», назвіть її YAAO3R, а потім натисніть «Створити пароль»."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nhấp vào tên tài khoản của bạn ở trên cùng bên phải → “Thông tin tài khoản” → “Bảo mật”. Trong “Quản lý ứng dụng của bên thứ ba”, nhấp vào “Thêm ứng dụng”, đặt tên là AO3 Reader, sau đó nhấp vào “Tạo mật khẩu”."
+            "value": "Nhấp vào tên tài khoản của bạn ở trên cùng bên phải → “Thông tin tài khoản” → “Bảo mật”. Trong “Quản lý ứng dụng của bên thứ ba”, hãy nhấp vào “Thêm ứng dụng”, đặt tên là YAAO3R, sau đó nhấp vào “Tạo mật khẩu”."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "点右上角账号名称 →「账户信息」→「安全选项」，在「第三方应用管理」中点「添加应用」，名称填 AO3 Reader，然后「生成密码」。"
+            "value": "点右上角账号名称 →「账户信息」→「安全选项」，在「第三方应用管理」中点「添加应用」，名称填 YAAO3R，然后「生成密码」。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。"
+            "value": "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳戶名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。"
+            "value": "點右上角帳戶名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳戶名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。"
+            "value": "點右上角帳戶名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。"
+            "value": "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
           }
         }
       }

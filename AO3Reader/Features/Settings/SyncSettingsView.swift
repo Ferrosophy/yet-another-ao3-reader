@@ -92,7 +92,7 @@ struct SyncSettingsView: View {
                 Section {
                     VStack(alignment: .leading, spacing: 10) {
                         guideStep(1, "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。")
-                        guideStep(2, "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。")
+                        guideStep(2, "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。")
                         guideStep(3, "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。")
                         guideStep(4, "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。")
                         guideStep(5, "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。")

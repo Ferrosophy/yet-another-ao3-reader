@@ -10,7 +10,7 @@ struct DownloadsView: View {
         List {
             if manager.tasks.isEmpty {
                 ContentUnavailableView("沒有下載項目", systemImage: "arrow.down.circle",
-                                       description: Text("在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。"))
+                                       description: Text("在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。"))
                     .listRowBackground(Color.clear)
             }
             ForEach(manager.tasks) { task in

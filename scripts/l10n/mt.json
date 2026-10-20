@@ -441,7 +441,6 @@
   "資料夾": "フォルダー",
   "儲存並測試連線": "接続を保存してテストする",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Web jianguoyun.com で Jianguoyun (Nutstore) にサインアップしてログインします。中国本土の内外で信頼性の高い接続を備えた無料の WebDAV ストレージを提供するため、推奨される同期サービスです。",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "右上のアカウント名→「アカウント情報」→「セキュリティ」をクリックします。 「サードパーティアプリの管理」で「アプリの追加」をクリックし、「AO3 Reader」という名前を付けて、「パスワードの生成」をクリックします。",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "サーバー アドレスとして https://dav.jianguoyun.com/dav/ を入力し、アカウントとして Jianguoyun ログイン メールアドレスを入力し、アプリ パスワード (ログイン パスワードではありません) として生成されたパスワードを入力します。",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "AO3Reader をフォルダーとして保持できます。アプリが自動的に作成します。 「保存して接続をテスト」をタップし、成功したら「今すぐ同期」をタップします。",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "他のデバイスに同じ設定を入力して同期します。 Nextcloud や Synology NAS などの WebDAV サービスも機能します。",
@@ -455,7 +454,6 @@
   "鎖定": "固定された",
   "翻譯簡介與標籤": "概要とタグを翻訳する",
   "沒有下載項目": "ダウンロードなし",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "一括ダウンロードで作品を選択してここに追加します。ダウンロードしたファイルは、ファイル アプリの AO3 Reader フォルダーにも表示されます。",
   "下載列表": "ダウンロード",
   "清除已完成": "クリア済み",
   "等待中 · %@": "待機中 · %@",
@@ -521,7 +519,9 @@
   "作品名稱": "作品名",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "作品リストとリーダーに表示する翻訳を選択します。タイトルと概要には翻訳対象言語が使用されます。ファンダムとタグはインターフェース言語を使用します。",
   "譯文大小跟隨正文": "本文のテキストサイズを一致させる",
-  "翻譯作品資訊": "翻訳作品情報"
+  "翻譯作品資訊": "翻訳作品情報",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "右上のアカウント名→「アカウント情報」→「セキュリティ」をクリックします。 [サードパーティ アプリの管理] で、[アプリの追加] をクリックし、YAAO3R という名前を付けて、[パスワードの生成] をクリックします。",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "一括ダウンロードで作品を選択してここに追加します。ダウンロードしたファイルは、ファイル アプリの YAAO3R フォルダーにも表示されます。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -965,7 +965,6 @@
   "資料夾": "폴더",
   "儲存並測試連線": "저장 및 연결 테스트",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "jianguoyun.com 웹에서 Jianguoyun(Nutstore)에 가입하고 로그인하세요. 중국 본토 내부와 외부 모두 안정적인 연결을 갖춘 무료 WebDAV 저장소를 제공하므로 권장되는 동기화 서비스입니다.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "오른쪽 상단의 계정 이름 → “계정 정보” → “보안”을 클릭하세요. \"타사 앱 관리\"에서 \"앱 추가\"를 클릭하고 이름을 AO3 Reader로 지정한 다음 \"비밀번호 생성\"을 클릭하세요.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "https://dav.jianguoyun.com/dav/를 서버 주소로, Jianguoyun 로그인 이메일을 계정으로, 생성된 비밀번호를 앱 비밀번호(로그인 비밀번호 아님)로 입력하세요.",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "AO3Reader를 폴더로 유지할 수 있습니다. 앱이 자동으로 생성합니다. \"저장 및 연결 테스트\"를 누른 다음 성공하면 \"지금 동기화\"를 누릅니다.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "다른 장치에도 동일한 설정을 입력하여 동기화하세요. Nextcloud 또는 Synology NAS와 같은 모든 WebDAV 서비스도 작동합니다.",
@@ -979,7 +978,6 @@
   "鎖定": "고정됨",
   "翻譯簡介與標籤": "요약 및 태그 번역",
   "沒有下載項目": "다운로드 없음",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "여기에 추가하려면 일괄 다운로드에서 작품을 선택하세요. 다운로드한 파일은 파일 앱의 AO3 Reader 폴더에도 나타납니다.",
   "下載列表": "다운로드",
   "清除已完成": "클리어 완료",
   "等待中 · %@": "대기중 · %@",
@@ -1045,7 +1043,9 @@
   "作品名稱": "작품명",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "작업 목록과 독자에 표시되는 번역을 선택합니다. 제목과 요약은 번역 대상 언어를 사용합니다. 팬덤과 태그는 인터페이스 언어를 사용합니다.",
   "譯文大小跟隨正文": "본문 텍스트 크기 일치",
-  "翻譯作品資訊": "업무 정보 번역"
+  "翻譯作品資訊": "업무 정보 번역",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "오른쪽 상단의 계정 이름 → “계정 정보” → “보안”을 클릭하세요. \"타사 앱 관리\"에서 \"앱 추가\"를 클릭하고 이름을 YAAO3R로 지정한 다음 \"비밀번호 생성\"을 클릭합니다.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "여기에 추가하려면 일괄 다운로드에서 작품을 선택하세요. 다운로드한 파일은 파일 앱의 YAAO3R 폴더에도 나타납니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -1489,7 +1489,6 @@
   "資料夾": "Carpeta",
   "儲存並測試連線": "Guardar y probar la conexión",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Regístrese e inicie sesión en Jianguoyun (Nutstore) en la web en jianguoyun.com. Ofrece almacenamiento WebDAV gratuito con conexiones confiables tanto dentro como fuera de China continental, por lo que es el servicio de sincronización recomendado.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Haga clic en el nombre de su cuenta en la parte superior derecha → “Información de cuenta” → “Seguridad”. En \"Administración de aplicaciones de terceros\", haga clic en \"Agregar aplicación\", asígnele el nombre AO3 Reader y luego haga clic en \"Generar contraseña\".",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Ingrese https://dav.jianguoyun.com/dav/ como dirección del servidor, su correo electrónico de inicio de sesión de Jianguoyun como cuenta y la contraseña generada como contraseña de la aplicación (no su contraseña de inicio de sesión).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Puede mantener AO3Reader como carpeta; la aplicación lo crea automáticamente. Toque \"Guardar y probar conexión\", luego \"Sincronizar ahora\" una vez que tenga éxito.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Ingrese la misma configuración en sus otros dispositivos para sincronizarlos. También funciona cualquier servicio WebDAV, como Nextcloud o un Synology NAS.",
@@ -1503,7 +1502,6 @@
   "鎖定": "Fijado",
   "翻譯簡介與標籤": "Traducir resúmenes y etiquetas",
   "沒有下載項目": "Sin descargas",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Elija obras en Descarga por lotes para agregarlas aquí. Los archivos descargados también aparecen en la carpeta AO3 Reader en la aplicación Archivos.",
   "下載列表": "Descargas",
   "清除已完成": "Claro acabado",
   "等待中 · %@": "Esperando · %@",
@@ -1569,7 +1567,9 @@
   "作品名稱": "Título del trabajo",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Elija qué traducciones aparecen en las listas de trabajo y en el lector. Los títulos y resúmenes utilizan el idioma de destino de la traducción; Los fandoms y las etiquetas utilizan el idioma de la interfaz.",
   "譯文大小跟隨正文": "Coincidir con el tamaño del texto del cuerpo",
-  "翻譯作品資訊": "Traducir información de trabajo"
+  "翻譯作品資訊": "Traducir información de trabajo",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Haga clic en el nombre de su cuenta en la parte superior derecha → “Información de cuenta” → “Seguridad”. En \"Administración de aplicaciones de terceros\", haga clic en \"Agregar aplicación\", asígnele el nombre YAAO3R y luego haga clic en \"Generar contraseña\".",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Elija obras en Descarga por lotes para agregarlas aquí. Los archivos descargados también aparecen en la carpeta YAAO3R en la aplicación Archivos."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2013,7 +2013,6 @@
   "資料夾": "Dossier",
   "儲存並測試連線": "Enregistrer et tester la connexion",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Inscrivez-vous et connectez-vous à Jianguoyun (Nutstore) sur le Web à l'adresse jianguoyun.com. Il offre un stockage WebDAV gratuit avec des connexions fiables à l'intérieur et à l'extérieur de la Chine continentale, c'est donc le service de synchronisation recommandé.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Cliquez sur le nom de votre compte en haut à droite → « Informations sur le compte » → « Sécurité ». Sous « Gestion des applications tierces », cliquez sur « Ajouter une application », nommez-la AO3 Reader, puis cliquez sur « Générer un mot de passe ».",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Entrez https://dav.jianguoyun.com/dav/ comme adresse du serveur, votre e-mail de connexion Jianguoyun comme compte et le mot de passe généré comme mot de passe de l'application (pas votre mot de passe de connexion).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Vous pouvez conserver AO3Reader comme dossier ; l'application le crée automatiquement. Appuyez sur « Enregistrer et tester la connexion », puis sur « Synchroniser maintenant » une fois l'opération réussie.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Entrez les mêmes paramètres sur vos autres appareils pour les synchroniser. N'importe quel service WebDAV fonctionne également, comme Nextcloud ou un Synology NAS.",
@@ -2027,7 +2026,6 @@
   "鎖定": "Épinglé",
   "翻譯簡介與標籤": "Traduire les résumés et les balises",
   "沒有下載項目": "Aucun téléchargement",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Choisissez les œuvres en téléchargement par lots pour les ajouter ici. Les fichiers téléchargés apparaissent également dans le dossier AO3 Reader de l'application Fichiers.",
   "下載列表": "Téléchargements",
   "清除已完成": "Effacer Terminé",
   "等待中 · %@": "En attente · %@",
@@ -2093,7 +2091,9 @@
   "作品名稱": "Titre du travail",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Choisissez quelles traductions apparaissent dans les listes de travail et dans le lecteur. Les titres et les résumés utilisent la langue cible de votre traduction ; les fandoms et les tags utilisent le langage de l'interface.",
   "譯文大小跟隨正文": "Faire correspondre la taille du corps du texte",
-  "翻譯作品資訊": "Traduire les informations de travail"
+  "翻譯作品資訊": "Traduire les informations de travail",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Cliquez sur le nom de votre compte en haut à droite → « Informations sur le compte » → « Sécurité ». Sous « Gestion des applications tierces », cliquez sur « Ajouter une application », nommez-la YAAO3R, puis cliquez sur « Générer un mot de passe ».",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Choisissez les œuvres en téléchargement par lots pour les ajouter ici. Les fichiers téléchargés apparaissent également dans le dossier YAAO3R de l'application Fichiers."
  },
  "de": {
   "載入中": "Laden",
@@ -2537,7 +2537,6 @@
   "資料夾": "Ordner",
   "儲存並測試連線": "Verbindung speichern und testen",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Registrieren Sie sich und melden Sie sich bei Jianguoyun (Nutstore) im Internet unter jianguoyun.com an. Es bietet kostenlosen WebDAV-Speicher mit zuverlässigen Verbindungen sowohl innerhalb als auch außerhalb des chinesischen Festlandes und ist daher der empfohlene Synchronisierungsdienst.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Klicken Sie oben rechts auf Ihren Kontonamen → „Kontoinformationen“ → „Sicherheit“. Klicken Sie unter „Drittanbieter-App-Verwaltung“ auf „App hinzufügen“, nennen Sie sie AO3 Reader und klicken Sie dann auf „Passwort generieren“.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Geben Sie https://dav.jianguoyun.com/dav/ als Serveradresse, Ihre Jianguoyun-Login-E-Mail-Adresse als Konto und das generierte Passwort als App-Passwort ein (nicht Ihr Login-Passwort).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Sie können AO3Reader als Ordner behalten; Die App erstellt es automatisch. Tippen Sie auf „Verbindung speichern und testen“ und dann auf „Jetzt synchronisieren“, sobald der Vorgang erfolgreich war.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Geben Sie auf Ihren anderen Geräten dieselben Einstellungen ein, um sie zu synchronisieren. Es funktioniert auch jeder WebDAV-Dienst, etwa Nextcloud oder ein Synology NAS.",
@@ -2551,7 +2550,6 @@
   "鎖定": "Angepinnt",
   "翻譯簡介與標籤": "Übersetzen Sie Zusammenfassungen und Tags",
   "沒有下載項目": "Keine Downloads",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Wählen Sie Werke im Batch-Download aus, um sie hier hinzuzufügen. Heruntergeladene Dateien werden auch im AO3 Reader-Ordner in der Dateien-App angezeigt.",
   "下載列表": "Downloads",
   "清除已完成": "Klar, fertig",
   "等待中 · %@": "Warten · %@",
@@ -2617,7 +2615,9 @@
   "作品名稱": "Arbeitstitel",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Wählen Sie aus, welche Übersetzungen in den Arbeitslisten und im Reader angezeigt werden sollen. Titel und Zusammenfassungen verwenden die Zielsprache Ihrer Übersetzung; Fandoms und Tags verwenden die Schnittstellensprache.",
   "譯文大小跟隨正文": "Passen Sie die Größe des Textkörpers an",
-  "翻譯作品資訊": "Arbeitsinformationen übersetzen"
+  "翻譯作品資訊": "Arbeitsinformationen übersetzen",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klicken Sie oben rechts auf Ihren Kontonamen → „Kontoinformationen“ → „Sicherheit“. Klicken Sie unter „Drittanbieter-App-Verwaltung“ auf „App hinzufügen“, nennen Sie sie YAAO3R und klicken Sie dann auf „Passwort generieren“.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wählen Sie Werke im Batch-Download aus, um sie hier hinzuzufügen. Heruntergeladene Dateien werden auch im Ordner YAAO3R in der Dateien-App angezeigt."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3061,7 +3061,6 @@
   "資料夾": "Pasta",
   "儲存並測試連線": "Salvar e testar conexão",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Cadastre-se e faça login em Jianguoyun (Nutstore) na web em jianguoyun.com. Oferece armazenamento WebDAV gratuito com conexões confiáveis ​​dentro e fora da China continental, por isso é o serviço de sincronização recomendado.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Clique no nome da sua conta no canto superior direito → “Informações da conta” → “Segurança”. Em “Gerenciamento de aplicativos de terceiros”, clique em “Adicionar aplicativo”, nomeie-o como AO3 Reader e clique em “Gerar senha”.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Digite https://dav.jianguoyun.com/dav/ como endereço do servidor, seu e-mail de login do Jianguoyun como conta e a senha gerada como senha do aplicativo (não sua senha de login).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Você pode manter AO3Reader como pasta; o aplicativo o cria automaticamente. Toque em “Salvar e testar conexão” e depois em “Sincronizar agora” quando tiver sucesso.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Insira as mesmas configurações em seus outros dispositivos para sincronizá-los. Qualquer serviço WebDAV também funciona, como Nextcloud ou Synology NAS.",
@@ -3075,7 +3074,6 @@
   "鎖定": "Fixado",
   "翻譯簡介與標籤": "Traduzir resumos e tags",
   "沒有下載項目": "Sem downloads",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Escolha trabalhos em download em lote para adicioná-los aqui. Os arquivos baixados também aparecem na pasta AO3 Reader no aplicativo Arquivos.",
   "下載列表": "Transferências",
   "清除已完成": "Limpar concluído",
   "等待中 · %@": "Esperando · %@",
@@ -3141,7 +3139,9 @@
   "作品名稱": "Título do Trabalho",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Escolha quais traduções aparecem nas listas de trabalho e no leitor. Títulos e resumos usam o idioma de destino da tradução; fandoms e tags usam o idioma da interface.",
   "譯文大小跟隨正文": "Corresponder ao tamanho do texto do corpo",
-  "翻譯作品資訊": "Traduzir informações de trabalho"
+  "翻譯作品資訊": "Traduzir informações de trabalho",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Clique no nome da sua conta no canto superior direito → “Informações da conta” → “Segurança”. Em “Gerenciamento de aplicativos de terceiros”, clique em “Adicionar aplicativo”, nomeie-o YAAO3R e clique em “Gerar senha”.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Escolha trabalhos em download em lote para adicioná-los aqui. Os arquivos baixados também aparecem na pasta YAAO3R no aplicativo Arquivos."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3585,7 +3585,6 @@
   "資料夾": "Cartella",
   "儲存並測試連線": "Salva e prova la connessione",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Iscriviti e accedi a Jianguoyun (Nutstore) sul Web all'indirizzo jianguoyun.com. Offre spazio di archiviazione WebDAV gratuito con connessioni affidabili sia all'interno che all'esterno della Cina continentale, quindi è il servizio di sincronizzazione consigliato.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Fai clic sul nome del tuo account in alto a destra → “Informazioni sull'account” → “Sicurezza”. In \"Gestione app di terze parti\", fai clic su \"Aggiungi app\", chiamala AO3 Reader, quindi fai clic su \"Genera password\".",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Inserisci https://dav.jianguoyun.com/dav/ come indirizzo del server, l'e-mail di accesso a Jianguoyun come account e la password generata come password dell'app (non la password di accesso).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Puoi mantenere AO3Reader come cartella; l'app lo crea automaticamente. Tocca \"Salva e prova connessione\", quindi \"Sincronizza ora\" una volta completata l'operazione.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Inserisci le stesse impostazioni sugli altri dispositivi per sincronizzarli. Funziona anche qualsiasi servizio WebDAV, come Nextcloud o Synology NAS.",
@@ -3599,7 +3598,6 @@
   "鎖定": "Appuntato",
   "翻譯簡介與標籤": "Translate Summaries & Tags",
   "沒有下載項目": "Nessun download",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Choose works in Batch Download to add them here. I file scaricati vengono visualizzati anche nella cartella AO3 Reader nell'app File.",
   "下載列表": "Download",
   "清除已完成": "Cancella finito",
   "等待中 · %@": "In attesa · %@",
@@ -3665,7 +3663,9 @@
   "作品名稱": "Titolo dell'opera",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Scegli quali traduzioni visualizzare negli elenchi di lavoro e nel lettore. I titoli e i riassunti utilizzano la lingua di destinazione della traduzione; fandom e tag utilizzano il linguaggio dell'interfaccia.",
   "譯文大小跟隨正文": "Corrisponde alla dimensione del corpo del testo",
-  "翻譯作品資訊": "Traduci informazioni di lavoro"
+  "翻譯作品資訊": "Traduci informazioni di lavoro",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Fai clic sul nome del tuo account in alto a destra → “Informazioni sull'account” → “Sicurezza”. In \"Gestione app di terze parti\", fai clic su \"Aggiungi app\", chiamala YAAO3R, quindi fai clic su \"Genera password\".",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Scegli le opere in Download batch per aggiungerle qui. I file scaricati vengono visualizzati anche nella cartella YAAO3R nell'app File."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4109,7 +4109,6 @@
   "資料夾": "Папка",
   "儲存並測試連線": "Сохранить и проверить соединение",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Зарегистрируйтесь и войдите в систему Jianguoyun (Nutstore) на сайте jianguoyun.com. Он предлагает бесплатное хранилище WebDAV с надежным соединением как внутри, так и за пределами материкового Китая, поэтому это рекомендуемая служба синхронизации.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Нажмите имя своей учетной записи в правом верхнем углу → «Информация об учетной записи» → «Безопасность». В разделе «Управление сторонними приложениями» нажмите «Добавить приложение», назовите его AO3 Reader, затем нажмите «Создать пароль».",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Введите https://dav.jianguoyun.com/dav/ в качестве адреса сервера, свой адрес электронной почты для входа в Jianguoyun в качестве учетной записи и сгенерированный пароль в качестве пароля приложения (а не вашего пароля для входа).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Вы можете сохранить AO3Reader в качестве папки; приложение создает его автоматически. Нажмите «Сохранить и проверить соединение», затем «Синхронизировать сейчас», как только все получится.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введите те же настройки на других устройствах, чтобы синхронизировать их. Также работает любая служба WebDAV, например Nextcloud или Synology NAS.",
@@ -4123,7 +4122,6 @@
   "鎖定": "Закреплено",
   "翻譯簡介與標籤": "Перевести сводки и теги",
   "沒有下載項目": "Нет загрузок",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Выберите работы в пакетной загрузке, чтобы добавить их сюда. Загруженные файлы также появляются в папке AO3 Reader в приложении «Файлы».",
   "下載列表": "Загрузки",
   "清除已完成": "Очистить Готово",
   "等待中 · %@": "Ожидание · %@",
@@ -4189,7 +4187,9 @@
   "作品名稱": "Название работы",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Выберите, какие переводы будут отображаться в рабочих списках и программе чтения. В заголовках и аннотациях используется целевой язык вашего перевода; фандомы и теги используют язык интерфейса.",
   "譯文大小跟隨正文": "Соответствие размеру основного текста",
-  "翻譯作品資訊": "Перевести информацию о работе"
+  "翻譯作品資訊": "Перевести информацию о работе",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Нажмите имя своей учетной записи в правом верхнем углу → «Информация об учетной записи» → «Безопасность». В разделе «Управление сторонними приложениями» нажмите «Добавить приложение», назовите его YAAO3R, затем нажмите «Создать пароль».",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Выберите работы в пакетной загрузке, чтобы добавить их сюда. Загруженные файлы также появляются в папке YAAO3R в приложении «Файлы»."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4633,7 +4633,6 @@
   "資料夾": "Папка",
   "儲存並測試連線": "Зберегти та перевірити підключення",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Зареєструйтеся та увійдіть у Jianguoyun (Nutstore) в Інтернеті за адресою jianguoyun.com. Він пропонує безкоштовне сховище WebDAV із надійним з’єднанням як усередині, так і за межами материкового Китаю, тому це рекомендована служба синхронізації.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Натисніть назву свого облікового запису вгорі праворуч → «Інформація про обліковий запис» → «Безпека». У розділі «Керування сторонніми програмами» натисніть «Додати програму», назвіть її AO3 Reader, а потім натисніть «Створити пароль».",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Введіть https://dav.jianguoyun.com/dav/ як адресу сервера, свою електронну адресу для входу в Jianguoyun як обліковий запис і згенерований пароль як пароль програми (не ваш пароль для входу).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Ви можете зберегти AO3Reader як папку; програма створює його автоматично. Натисніть «Зберегти та перевірити з’єднання», а потім «Синхронізувати зараз», коли це вдасться.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введіть ті самі налаштування на інших пристроях, щоб синхронізувати їх. Будь-яка служба WebDAV також працює, наприклад Nextcloud або Synology NAS.",
@@ -4647,7 +4646,6 @@
   "鎖定": "Закріплено",
   "翻譯簡介與標籤": "Перекласти резюме та теги",
   "沒有下載項目": "Немає завантажень",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Виберіть роботи в пакетному завантаженні, щоб додати їх сюди. Завантажені файли також відображаються в папці AO3 Reader у програмі Файли.",
   "下載列表": "Завантаження",
   "清除已完成": "Очистити завершено",
   "等待中 · %@": "Очікування · %@",
@@ -4713,7 +4711,9 @@
   "作品名稱": "Назва роботи",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Виберіть, які переклади відображатимуться в списках робіт і читанні. У заголовках і резюме використовується цільова мова перекладу; фандоми та теги використовують мову інтерфейсу.",
   "譯文大小跟隨正文": "Відповідність розміру основного тексту",
-  "翻譯作品資訊": "Перекласти робочу інформацію"
+  "翻譯作品資訊": "Перекласти робочу інформацію",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Натисніть назву свого облікового запису вгорі праворуч → «Інформація про обліковий запис» → «Безпека». У розділі «Керування сторонніми програмами» натисніть «Додати програму», назвіть її YAAO3R, а потім натисніть «Створити пароль».",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Виберіть роботи в пакетному завантаженні, щоб додати їх сюди. Завантажені файли також відображаються в папці YAAO3R у програмі Файли."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5157,7 +5157,6 @@
   "資料夾": "Folder",
   "儲存並測試連線": "Zapisz i przetestuj połączenie",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Zarejestruj się i zaloguj do Jianguoyun (Nutstore) w Internecie pod adresem jianguoyun.com. Oferuje bezpłatną pamięć masową WebDAV z niezawodnymi połączeniami zarówno w Chinach kontynentalnych, jak i poza nimi, dlatego jest zalecaną usługą synchronizacji.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Kliknij nazwę swojego konta w prawym górnym rogu → „Informacje o koncie” → „Bezpieczeństwo”. W sekcji „Zarządzanie aplikacjami innych firm” kliknij „Dodaj aplikację”, nadaj jej nazwę AO3 Reader, a następnie kliknij „Generuj hasło”.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Wpisz https://dav.jianguoyun.com/dav/ jako adres serwera, swój adres e-mail logowania Jianguoyun jako konto i wygenerowane hasło jako hasło do aplikacji (nie hasło logowania).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Możesz zachować AO3Reader jako folder; aplikacja tworzy je automatycznie. Kliknij „Zapisz i przetestuj połączenie”, a gdy się powiedzie, „Synchronizuj teraz”.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Wprowadź te same ustawienia na innych urządzeniach, aby je zsynchronizować. Działa również dowolna usługa WebDAV, taka jak Nextcloud lub Synology NAS.",
@@ -5171,7 +5170,6 @@
   "鎖定": "Przypięty",
   "翻譯簡介與標籤": "Tłumaczenie podsumowań i tagów",
   "沒有下載項目": "Brak plików do pobrania",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Wybierz prace w trybie pobierania zbiorczego, aby je tutaj dodać. Pobrane pliki pojawiają się także w folderze AO3 Reader w aplikacji Pliki.",
   "下載列表": "Pliki do pobrania",
   "清除已完成": "Wyczyść Zakończone",
   "等待中 · %@": "Oczekiwanie · %@",
@@ -5237,7 +5235,9 @@
   "作品名稱": "Tytuł pracy",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Wybierz, które tłumaczenia mają się pojawiać na listach zadań i w czytniku. Tytuły i streszczenia korzystają z języka docelowego tłumaczenia; fandomy i tagi używają języka interfejsu.",
   "譯文大小跟隨正文": "Dopasuj rozmiar tekstu głównego",
-  "翻譯作品資訊": "Przetłumacz informacje o pracy"
+  "翻譯作品資訊": "Przetłumacz informacje o pracy",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Kliknij nazwę swojego konta w prawym górnym rogu → „Informacje o koncie” → „Bezpieczeństwo”. W sekcji „Zarządzanie aplikacjami innych firm” kliknij „Dodaj aplikację”, nadaj jej nazwę YAAO3R, a następnie kliknij „Wygeneruj hasło”.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wybierz prace w trybie pobierania zbiorczego, aby je tutaj dodać. Pobrane pliki pojawiają się także w folderze YAAO3R w aplikacji Pliki."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5681,7 +5681,6 @@
   "資料夾": "Klasör",
   "儲存並測試連線": "Bağlantıyı Kaydet ve Test Et",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Jianguoyun.com adresinden Jianguoyun'a (Nutstore) kaydolun ve oturum açın. Çin anakarasının hem içinde hem de dışında güvenilir bağlantılarla ücretsiz WebDAV depolama alanı sunar, dolayısıyla önerilen senkronizasyon hizmetidir.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Sağ üstteki hesap adınıza → “Hesap Bilgileri” → “Güvenlik”e tıklayın. “Üçüncü Taraf Uygulama Yönetimi” altında, “Uygulama Ekle”ye tıklayın, bunu AO3 Reader olarak adlandırın ve ardından “Şifre Oluştur”a tıklayın.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Sunucu adresi olarak https://dav.jianguoyun.com/dav/ adresini, hesap olarak Jianguoyun giriş e-postanızı ve uygulama şifresi olarak oluşturulan şifreyi (giriş şifreniz değil) girin.",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "AO3Reader'ı klasör olarak tutabilirsiniz; uygulama bunu otomatik olarak oluşturur. “Bağlantıyı Kaydet ve Test Et”e, ardından başarılı olduğunda “Şimdi Senkronize Et”e dokunun.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Senkronize etmek için diğer cihazlarınıza da aynı ayarları girin. Nextcloud veya Synology NAS gibi herhangi bir WebDAV hizmeti de çalışır.",
@@ -5695,7 +5694,6 @@
   "鎖定": "Sabitlendi",
   "翻譯簡介與標籤": "Özetleri ve Etiketleri Çevir",
   "沒有下載項目": "İndirme Yok",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Buraya eklemek için Toplu İndirme'deki çalışmaları seçin. İndirilen dosyalar ayrıca Dosyalar uygulamasındaki AO3 Reader klasöründe de görünür.",
   "下載列表": "İndirilenler",
   "清除已完成": "Temizle Bitti",
   "等待中 · %@": "Bekleniyor · %@",
@@ -5761,7 +5759,9 @@
   "作品名稱": "İşin Başlığı",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Çalışma listelerinde ve okuyucuda hangi çevirilerin görüneceğini seçin. Başlıklar ve özetler çeviri hedef dilinizi kullanır; fandomlar ve etiketler arayüz dilini kullanır.",
   "譯文大小跟隨正文": "Gövde Metni Boyutunu Eşleştir",
-  "翻譯作品資訊": "Çalışma Bilgilerini Çevir"
+  "翻譯作品資訊": "Çalışma Bilgilerini Çevir",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Sağ üstteki hesap adınıza → “Hesap Bilgileri” → “Güvenlik”e tıklayın. “Üçüncü Taraf Uygulama Yönetimi” altında, “Uygulama Ekle”ye tıklayın, uygulamaya YAAO3R adını verin ve ardından “Şifre Oluştur”a tıklayın.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Buraya eklemek için Toplu İndirme'deki çalışmaları seçin. İndirilen dosyalar ayrıca Dosyalar uygulamasındaki YAAO3R klasöründe de görünür."
  },
  "nl": {
   "載入中": "Laden",
@@ -6205,7 +6205,6 @@
   "資料夾": "Map",
   "儲存並測試連線": "Verbinding opslaan en testen",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Meld u aan en log in bij Jianguoyun (Nutstore) op internet op jianguoyun.com. Het biedt gratis WebDAV-opslag met betrouwbare verbindingen zowel binnen als buiten het vasteland van China, dus het is de aanbevolen synchronisatieservice.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Klik rechtsboven op uw accountnaam → “Accountinfo” → “Beveiliging”. Klik onder “App-beheer van derden” op “App toevoegen”, noem deze AO3 Reader en klik vervolgens op “Wachtwoord genereren”.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Voer https://dav.jianguoyun.com/dav/ in als serveradres, uw Jianguoyun-inlog-e-mailadres als account en het gegenereerde wachtwoord als app-wachtwoord (niet uw inlogwachtwoord).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "U kunt AO3Reader als map behouden; de app maakt het automatisch aan. Tik op 'Verbinding opslaan en testen' en vervolgens op 'Nu synchroniseren' zodra dit is gelukt.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Voer dezelfde instellingen in op uw andere apparaten om ze te synchroniseren. Elke WebDAV-service werkt ook, zoals Nextcloud of een Synology NAS.",
@@ -6219,7 +6218,6 @@
   "鎖定": "Vastgezet",
   "翻譯簡介與標籤": "Vertaal samenvattingen en tags",
   "沒有下載項目": "Geen downloads",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Kies werken in Batchdownload om ze hier toe te voegen. Gedownloade bestanden verschijnen ook in de map AO3 Reader in de app Bestanden.",
   "下載列表": "Downloads",
   "清除已完成": "Duidelijk klaar",
   "等待中 · %@": "Wachten · %@",
@@ -6285,7 +6283,9 @@
   "作品名稱": "Werktitel",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Kies welke vertalingen in werklijsten en in de reader verschijnen. Titels en samenvattingen gebruiken uw vertalingsdoeltaal; fandoms en tags gebruiken de interfacetaal.",
   "譯文大小跟隨正文": "Overeenkomen met de grootte van de hoofdtekst",
-  "翻譯作品資訊": "Vertaal werkinformatie"
+  "翻譯作品資訊": "Vertaal werkinformatie",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klik rechtsboven op uw accountnaam → “Accountinfo” → “Beveiliging”. Klik onder “App-beheer van derden” op “App toevoegen”, noem deze YAAO3R en klik vervolgens op “Wachtwoord genereren”.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Kies werken in Batchdownload om ze hier toe te voegen. Gedownloade bestanden verschijnen ook in de map YAAO3R in de app Bestanden."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6729,7 +6729,6 @@
   "資料夾": "مجلد",
   "儲存並測試連線": "حفظ واختبار الاتصال",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "قم بالتسجيل وتسجيل الدخول إلى Jianguoyun (Nutstore) على الويب على jianguoyun.com. فهو يوفر تخزين WebDAV مجانيًا مع اتصالات موثوقة داخل وخارج الصين القارية، لذا فهي خدمة المزامنة الموصى بها.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "انقر على اسم حسابك في الجزء العلوي الأيمن ← \"معلومات الحساب\" ← \"الأمان\". ضمن \"إدارة تطبيقات الطرف الثالث\"، انقر على \"إضافة تطبيق\"، وقم بتسميته AO3 Reader، ثم انقر على \"إنشاء كلمة مرور\".",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "أدخل https://dav.jianguoyun.com/dav/ كعنوان الخادم، والبريد الإلكتروني لتسجيل الدخول إلى Jianguoyun كحساب، وكلمة المرور التي تم إنشاؤها ككلمة مرور التطبيق (وليس كلمة مرور تسجيل الدخول الخاصة بك).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "يمكنك الاحتفاظ بـ AO3Reader كمجلد؛ يقوم التطبيق بإنشائه تلقائيًا. اضغط على \"حفظ واختبار الاتصال\"، ثم \"المزامنة الآن\" بمجرد نجاحها.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "أدخل نفس الإعدادات على أجهزتك الأخرى لمزامنتها. تعمل أيضًا أي خدمة WebDAV، مثل Nextcloud أو Synology NAS.",
@@ -6743,7 +6742,6 @@
   "鎖定": "مثبت",
   "翻譯簡介與標籤": "ترجمة الملخصات والعلامات",
   "沒有下載項目": "لا التنزيلات",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "اختر الأعمال في Batch Download لإضافتها هنا. تظهر الملفات التي تم تنزيلها أيضًا في مجلد AO3 Reader في تطبيق الملفات.",
   "下載列表": "التنزيلات",
   "清除已完成": "مسح الانتهاء",
   "等待中 · %@": "في انتظار · %@",
@@ -6809,7 +6807,9 @@
   "作品名稱": "عنوان العمل",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "اختر الترجمات التي تظهر في قوائم العمل والقارئ. تستخدم العناوين والملخصات لغة الترجمة المستهدفة؛ تستخدم الفاندومات والعلامات لغة الواجهة.",
   "譯文大小跟隨正文": "مطابقة حجم النص الأساسي",
-  "翻譯作品資訊": "ترجمة معلومات العمل"
+  "翻譯作品資訊": "ترجمة معلومات العمل",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "انقر على اسم حسابك في الجزء العلوي الأيمن ← \"معلومات الحساب\" ← \"الأمان\". ضمن \"إدارة تطبيقات الطرف الثالث\"، انقر على \"إضافة تطبيق\"، وقم بتسميته YAAO3R، ثم انقر على \"إنشاء كلمة مرور\".",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "اختر الأعمال في Batch Download لإضافتها هنا. تظهر الملفات التي تم تنزيلها أيضًا في مجلد YAAO3R في تطبيق الملفات."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -7253,7 +7253,6 @@
   "資料夾": "फ़ोल्डर",
   "儲存並測試連線": "कनेक्शन सहेजें और परीक्षण करें",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "साइन अप करें और वेब पर jianguoyun.com पर जियानगुओयुन (नटस्टोर) में लॉग इन करें। यह मुख्य भूमि चीन के अंदर और बाहर विश्वसनीय कनेक्शन के साथ मुफ्त WebDAV स्टोरेज प्रदान करता है, इसलिए यह अनुशंसित सिंक सेवा है।",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "ऊपर दाईं ओर अपने खाते के नाम → \"खाता जानकारी\" → \"सुरक्षा\" पर क्लिक करें। \"तृतीय-पक्ष ऐप प्रबंधन\" के अंतर्गत, \"ऐप जोड़ें\" पर क्लिक करें, इसे AO3 रीडर नाम दें, फिर \"पासवर्ड जेनरेट करें\" पर क्लिक करें।",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "सर्वर पते के रूप में https://dav.jianguoyun.com/dav/, खाते के रूप में अपना जियानगुओयुन लॉगिन ईमेल और ऐप पासवर्ड के रूप में जेनरेट किया गया पासवर्ड दर्ज करें (आपका लॉगिन पासवर्ड नहीं)।",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "आप AO3Reader को फ़ोल्डर के रूप में रख सकते हैं; ऐप इसे स्वचालित रूप से बनाता है। सफल होने पर \"सहेजें और परीक्षण कनेक्शन\" पर टैप करें, फिर \"अभी सिंक करें\" पर टैप करें।",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "अपने अन्य उपकरणों को सिंक करने के लिए वही सेटिंग्स दर्ज करें। कोई भी WebDAV सेवा भी काम करती है, जैसे Nextcloud या Synology NAS।",
@@ -7267,7 +7266,6 @@
   "鎖定": "पिन किया गया",
   "翻譯簡介與標籤": "सारांश और टैग का अनुवाद करें",
   "沒有下載項目": "कोई डाउनलोड नहीं",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "उन्हें यहां जोड़ने के लिए बैच डाउनलोड में कार्य चुनें। डाउनलोड की गई फ़ाइलें फ़ाइल ऐप में AO3 रीडर फ़ोल्डर में भी दिखाई देती हैं।",
   "下載列表": "डाउनलोड",
   "清除已完成": "साफ़ समाप्त",
   "等待中 · %@": "प्रतीक्षा · %@",
@@ -7333,7 +7331,9 @@
   "作品名稱": "कार्य शीर्षक",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "चुनें कि कौन से अनुवाद कार्य सूचियों और पाठक में दिखाई देंगे। शीर्षक और सारांश आपकी अनुवाद लक्ष्य भाषा का उपयोग करते हैं; प्रशंसक और टैग इंटरफ़ेस भाषा का उपयोग करते हैं।",
   "譯文大小跟隨正文": "बॉडी टेक्स्ट साइज का मिलान करें",
-  "翻譯作品資訊": "कार्य जानकारी का अनुवाद करें"
+  "翻譯作品資訊": "कार्य जानकारी का अनुवाद करें",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "ऊपर दाईं ओर अपने खाते के नाम → \"खाता जानकारी\" → \"सुरक्षा\" पर क्लिक करें। \"तृतीय-पक्ष ऐप प्रबंधन\" के अंतर्गत, \"ऐप जोड़ें\" पर क्लिक करें, इसे YAAO3R नाम दें, फिर \"पासवर्ड जेनरेट करें\" पर क्लिक करें।",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "उन्हें यहां जोड़ने के लिए बैच डाउनलोड में कार्य चुनें। डाउनलोड की गई फ़ाइलें फ़ाइलें ऐप में YAAO3R फ़ोल्डर में भी दिखाई देती हैं।"
  },
  "id": {
   "載入中": "Memuat",
@@ -7777,7 +7777,6 @@
   "資料夾": "Map",
   "儲存並測試連線": "Simpan dan Uji Koneksi",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Daftar dan masuk ke Jianguoyun (Nutstore) di web di jianguoyun.com. Ia menawarkan penyimpanan WebDAV gratis dengan koneksi yang andal baik di dalam maupun di luar Tiongkok daratan, sehingga ini adalah layanan sinkronisasi yang direkomendasikan.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Klik nama akun Anda di kanan atas → “Info Akun” → “Keamanan”. Di bawah “Manajemen Aplikasi Pihak Ketiga”, klik “Tambahkan Aplikasi”, beri nama AO3 Reader, lalu klik “Buat Kata Sandi”.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Masukkan https://dav.jianguoyun.com/dav/ sebagai alamat server, email login Jianguoyun Anda sebagai akun, dan kata sandi yang dibuat sebagai kata sandi aplikasi (bukan kata sandi login Anda).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Anda dapat menyimpan AO3Reader sebagai foldernya; aplikasi membuatnya secara otomatis. Ketuk “Simpan dan Uji Koneksi”, lalu “Sinkronkan Sekarang” setelah berhasil.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Masukkan pengaturan yang sama pada perangkat Anda yang lain untuk menyinkronkannya. Layanan WebDAV apa pun juga berfungsi, seperti Nextcloud atau Synology NAS.",
@@ -7791,7 +7790,6 @@
   "鎖定": "Disematkan",
   "翻譯簡介與標籤": "Terjemahkan Ringkasan & Tag",
   "沒有下載項目": "Tidak Ada Unduhan",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Pilih karya di Batch Download untuk menambahkannya di sini. File yang diunduh juga muncul di folder AO3 Reader di aplikasi Files.",
   "下載列表": "Unduhan",
   "清除已完成": "Selesai Selesai",
   "等待中 · %@": "Menunggu · %@",
@@ -7857,7 +7855,9 @@
   "作品名稱": "Judul Pekerjaan",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Pilih terjemahan mana yang muncul di daftar pekerjaan dan pembaca. Judul dan ringkasan menggunakan bahasa target terjemahan Anda; fandom dan tag menggunakan bahasa antarmuka.",
   "譯文大小跟隨正文": "Cocokkan Ukuran Teks Isi",
-  "翻譯作品資訊": "Terjemahkan Info Pekerjaan"
+  "翻譯作品資訊": "Terjemahkan Info Pekerjaan",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klik nama akun Anda di kanan atas → “Info Akun” → “Keamanan”. Di bawah “Manajemen Aplikasi Pihak Ketiga”, klik “Tambahkan Aplikasi”, beri nama YAAO3R, lalu klik “Buat Kata Sandi”.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Pilih karya di Batch Download untuk menambahkannya di sini. File yang diunduh juga muncul di folder YAAO3R di aplikasi Files."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -8301,7 +8301,6 @@
   "資料夾": "Thư mục",
   "儲存並測試連線": "Lưu và kiểm tra kết nối",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "Đăng ký và đăng nhập vào Jianguoyun (Nutstore) trên web tại jianguoyun.com. Nó cung cấp bộ lưu trữ WebDAV miễn phí với các kết nối đáng tin cậy cả trong và ngoài Trung Quốc đại lục, vì vậy đây là dịch vụ đồng bộ hóa được khuyên dùng.",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "Nhấp vào tên tài khoản của bạn ở trên cùng bên phải → “Thông tin tài khoản” → “Bảo mật”. Trong “Quản lý ứng dụng của bên thứ ba”, nhấp vào “Thêm ứng dụng”, đặt tên là AO3 Reader, sau đó nhấp vào “Tạo mật khẩu”.",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "Nhập https://dav.jianguoyun.com/dav/ làm địa chỉ máy chủ, email đăng nhập Jianguoyun của bạn làm tài khoản và mật khẩu được tạo làm mật khẩu ứng dụng (không phải mật khẩu đăng nhập của bạn).",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "Bạn có thể giữ AO3Reader làm thư mục; ứng dụng sẽ tự động tạo nó. Nhấn vào “Lưu và kiểm tra kết nối”, sau đó “Đồng bộ hóa ngay” sau khi thành công.",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Nhập các cài đặt tương tự trên các thiết bị khác của bạn để đồng bộ hóa chúng. Bất kỳ dịch vụ WebDAV nào cũng hoạt động, chẳng hạn như Nextcloud hoặc NAS Synology.",
@@ -8315,7 +8314,6 @@
   "鎖定": "Đã ghim",
   "翻譯簡介與標籤": "Dịch Tóm tắt & Thẻ",
   "沒有下載項目": "Không tải xuống",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "Chọn các tác phẩm trong Tải xuống hàng loạt để thêm chúng vào đây. Các tệp đã tải xuống cũng xuất hiện trong thư mục AO3 Reader trong ứng dụng Tệp.",
   "下載列表": "Tải xuống",
   "清除已完成": "Xóa xong",
   "等待中 · %@": "Chờ đợi · %@",
@@ -8381,7 +8379,9 @@
   "作品名稱": "Tiêu đề công việc",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Chọn bản dịch nào sẽ xuất hiện trong danh sách công việc và trình đọc. Tiêu đề và tóm tắt sử dụng ngôn ngữ đích dịch của bạn; fandom và thẻ sử dụng ngôn ngữ giao diện.",
   "譯文大小跟隨正文": "Khớp kích thước văn bản nội dung",
-  "翻譯作品資訊": "Dịch thông tin công việc"
+  "翻譯作品資訊": "Dịch thông tin công việc",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Nhấp vào tên tài khoản của bạn ở trên cùng bên phải → “Thông tin tài khoản” → “Bảo mật”. Trong “Quản lý ứng dụng của bên thứ ba”, hãy nhấp vào “Thêm ứng dụng”, đặt tên là YAAO3R, sau đó nhấp vào “Tạo mật khẩu”.",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Chọn các tác phẩm trong Tải xuống hàng loạt để thêm chúng vào đây. Các tệp đã tải xuống cũng xuất hiện trong thư mục YAAO3R trong ứng dụng Tệp."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8825,7 +8825,6 @@
   "資料夾": "โฟลเดอร์",
   "儲存並測試連線": "บันทึกและทดสอบการเชื่อมต่อ",
   "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": "ลงทะเบียนและเข้าสู่ระบบ Jianguoyun (Nutstore) บนเว็บที่ jianguoyun.com มีพื้นที่จัดเก็บข้อมูล WebDAV ฟรีพร้อมการเชื่อมต่อที่เชื่อถือได้ทั้งภายในและภายนอกจีนแผ่นดินใหญ่ ดังนั้นจึงเป็นบริการซิงค์ที่แนะนำ",
-  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 AO3 Reader，然後「生成密碼」。": "คลิกชื่อบัญชีของคุณที่มุมขวาบน → “ข้อมูลบัญชี” → “ความปลอดภัย” ใต้ \"การจัดการแอปบุคคลที่สาม\" คลิก \"เพิ่มแอป\" ตั้งชื่อเป็น AO3 Reader จากนั้นคลิก \"สร้างรหัสผ่าน\"",
   "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": "ป้อน https://dav.jianguoyun.com/dav/ เป็นที่อยู่เซิร์ฟเวอร์ อีเมลเข้าสู่ระบบ Jianguoyun ของคุณเป็นบัญชี และรหัสผ่านที่สร้างขึ้นเป็นรหัสผ่านสำหรับแอป (ไม่ใช่รหัสผ่านเข้าสู่ระบบของคุณ)",
   "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": "คุณสามารถเก็บ AO3Reader เป็นโฟลเดอร์ได้ แอปจะสร้างมันขึ้นมาโดยอัตโนมัติ แตะ \"บันทึกและทดสอบการเชื่อมต่อ\" จากนั้น \"ซิงค์ทันที\" เมื่อดำเนินการสำเร็จ",
   "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "ป้อนการตั้งค่าเดียวกันบนอุปกรณ์อื่นๆ ของคุณเพื่อซิงค์ บริการ WebDAV ใดๆ ก็ใช้งานได้ เช่น Nextcloud หรือ Synology NAS",
@@ -8839,7 +8838,6 @@
   "鎖定": "ปักหมุดแล้ว",
   "翻譯簡介與標籤": "แปลสรุปและแท็ก",
   "沒有下載項目": "ไม่มีการดาวน์โหลด",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 AO3 Reader 資料夾。": "เลือกผลงานแบบดาวน์โหลดเป็นชุดเพื่อเพิ่มที่นี่ ไฟล์ที่ดาวน์โหลดยังปรากฏในโฟลเดอร์ AO3 Reader ในแอพ Files อีกด้วย",
   "下載列表": "ดาวน์โหลด",
   "清除已完成": "ล้างเสร็จแล้ว",
   "等待中 · %@": "กำลังรอ · %@",
@@ -8905,6 +8903,8 @@
   "作品名稱": "ชื่องาน",
   "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "เลือกคำแปลที่จะปรากฏในรายการงานและเครื่องอ่าน ชื่อเรื่องและบทสรุปใช้ภาษาเป้าหมายการแปลของคุณ แฟนดอมและแท็กใช้ภาษาอินเทอร์เฟซ",
   "譯文大小跟隨正文": "จับคู่ขนาดข้อความเนื้อหา",
-  "翻譯作品資訊": "แปลข้อมูลงาน"
+  "翻譯作品資訊": "แปลข้อมูลงาน",
+  "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "คลิกชื่อบัญชีของคุณที่มุมขวาบน → “ข้อมูลบัญชี” → “ความปลอดภัย” ใต้ \"การจัดการแอปบุคคลที่สาม\" คลิก \"เพิ่มแอป\" ตั้งชื่อเป็น YAAO3R จากนั้นคลิก \"สร้างรหัสผ่าน\"",
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "เลือกผลงานแบบดาวน์โหลดเป็นชุดเพื่อเพิ่มที่นี่ ไฟล์ที่ดาวน์โหลดยังปรากฏในโฟลเดอร์ YAAO3R ในแอพ Files อีกด้วย"
  }
 }

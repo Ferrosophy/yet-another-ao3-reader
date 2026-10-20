@@ -712,7 +712,20 @@ struct ChapterListSheet: View {
                     dismiss()
                 } label: {
                     HStack {
-                        Text(chapter.title)
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text(chapter.title)
+                            // 開啟翻譯時，譯文顯示在原標題下方
+                            if model.isTranslationOn {
+                                switch model.translations[ReaderViewModel.chapterTitleID(chapter.id)] {
+                                case .done(let translated):
+                                    Text(translated).appFont(.subheadline).foregroundStyle(.secondary)
+                                case .loading:
+                                    ProgressView().controlSize(.mini)
+                                default:
+                                    EmptyView()
+                                }
+                            }
+                        }
                         Spacer()
                         if chapter.id == model.chapterIndex {
                             Image(systemName: "checkmark").foregroundStyle(.tint)
@@ -723,6 +736,7 @@ struct ChapterListSheet: View {
             }
             .navigationTitle("章節")
             .navigationBarTitleDisplayMode(.inline)
+            .task { await model.translateChapterTitles() }
         }
     }
 }

@@ -1,4 +1,4 @@
-# AO3 Reader for iOS — 開發規範（SPEC）
+# Yet another AO3 reader（YAAO3R）— 開發規範（SPEC）
 
 > 本文件約束 App 的功能範圍、設計語言、技術選型、隱私與驗收標準。所有開發工作（含 AI 輔助生成的程式碼）須以本文件為準；與本文件衝突的實作視為缺陷。
 >

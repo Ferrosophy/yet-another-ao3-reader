@@ -1,4 +1,6 @@
-# AO3 Reader（iOS 原生 · Liquid Glass · 沉浸式翻譯）
+# Yet another AO3 reader（YAAO3R）
+
+iOS 原生 · Liquid Glass · 沉浸式翻譯
 
 一個原生 SwiftUI 的 Archive of Our Own 閱讀器草案，採用 iOS 26 的 **Liquid Glass** 設計語言。
 
@@ -92,7 +94,7 @@ open AO3Reader.xcodeproj
 | Actions 頁面手動執行 | 輸入的版本號 | Artifact |
 | PR / 推送 main | `project.yml` 的 `MARKETING_VERSION` | Artifact |
 
-建置號（CFBundleVersion）一律為 Actions 的 `run_number`。IPA 檔名：`AO3Reader-<版本號>-<建置號>-unsigned.ipa`，App 內「設定 → 版本」也會顯示同樣的版本與建置號。
+建置號（CFBundleVersion）一律為 Actions 的 `run_number`。IPA 檔名：`YAAO3R-<版本號>-<建置號>-unsigned.ipa`，App 內「設定 → 應用版本」也會顯示同樣的版本與建置號。
 
 發佈新版本：
 

@@ -171,6 +171,25 @@ final class ReaderViewModel {
         for paragraph in currentMeta { visible.remove(paragraph.id) }
     }
 
+    /// 章節目錄：一次翻譯全部章節標題（譯文顯示在原標題下方）
+    func translateChapterTitles() async {
+        guard isTranslationOn, let detail, detail.chapters.count > 1 else { return }
+        let pending = detail.chapters.indices.map(Self.chapterTitleID)
+            .compactMap { id in translations[id] == nil ? lookup[id] : nil }
+        guard !pending.isEmpty, let provider = try? settings.makeProvider() else { return }
+        for paragraph in pending { translations[paragraph.id] = .loading }
+        let generation = generation
+        do {
+            let results = try await translator.translate(pending.map(\.text), provider: provider,
+                                                         source: settings.config.sourceLanguage, target: targetLanguage)
+            guard generation == self.generation else { return }
+            for (paragraph, text) in zip(pending, results) { translations[paragraph.id] = .done(text) }
+        } catch {
+            guard generation == self.generation else { return }
+            for paragraph in pending { translations[paragraph.id] = .failed(error.localizedDescription) }
+        }
+    }
+
     func retryMeta(_ id: String) {
         guard let paragraph = lookup[id] else { return }
         retry(paragraph)
