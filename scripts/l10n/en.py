@@ -603,6 +603,8 @@ EN = {
 "點「儲存並測試連線」，成功後點「立即同步」。": "Tap “Save and Test Connection”, then “Sync Now” once it succeeds.",
 "如何使用 WebDAV 同步": "How to Sync with WebDAV",
 "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Enter the same settings on your other devices to sync. Any WebDAV service works too, such as Nextcloud or Synology NAS.",
+"滾動與翻頁模式各自保存排版。": "Scroll and paged modes keep their own layout settings.",
+"「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” creates a light tint from the text color that blends with the reading background.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

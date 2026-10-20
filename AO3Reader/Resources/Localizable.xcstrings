@@ -3862,6 +3862,149 @@
         }
       }
     },
+    "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يقوم \"تلقائي\" بإنشاء لون فاتح من لون النص الذي يمتزج مع خلفية القراءة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Auto“ erzeugt einen hellen Farbton aus der Textfarbe, der mit dem Lesehintergrund verschmilzt."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Auto” creates a light tint from the text color that blends with the reading background."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\"Auto\" crea un matiz claro a partir del color del texto que se mezcla con el fondo de lectura."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Auto » crée une légère teinte à partir de la couleur du texte qui se fond dans l'arrière-plan de lecture."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\"ऑटो\" टेक्स्ट रंग से एक हल्का रंग बनाता है जो पढ़ने की पृष्ठभूमि के साथ मिश्रित होता है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Otomatis” menciptakan rona terang dari warna teks yang menyatu dengan latar belakang pembacaan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\"Auto\" crea una sfumatura chiara dal colore del testo che si fonde con lo sfondo della lettura."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「自動」では、テキストの色から明るい色合いが作成され、読書の背景と溶け合います。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\"자동\"은 읽기 배경과 혼합되는 텍스트 색상에서 밝은 색조를 만듭니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Auto” creëert een lichte tint van de tekstkleur die overvloeit met de leesachtergrond."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Auto” tworzy jasny odcień na podstawie koloru tekstu, który zlewa się z tłem czytania."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Auto” cria um tom claro a partir da cor do texto que combina com o fundo de leitura."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Авто» создает легкий оттенок цвета текста, который сливается с фоном чтения."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“อัตโนมัติ” สร้างสีอ่อนจากสีข้อความที่กลมกลืนกับพื้นหลังการอ่าน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Otomatik”, metin renginden okuma arka planıyla harmanlanan açık bir renk tonu oluşturur."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Авто» створює легкий відтінок кольору тексту, який зливається з фоном для читання."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Tự động” tạo ra tông màu sáng từ màu văn bản hòa với nền đọc."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「自动」会依正文颜色产生淡色底，与阅读背景融为一体。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。"
+          }
+        }
+      }
+    },
     "「自動」會依背景深淺選擇黑色或白色文字。": {
       "extractionState": "manual",
       "localizations": {
@@ -40184,149 +40327,6 @@
         }
       }
     },
-    "本應用沒有帳號系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中（不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "لا يحتوي هذا التطبيق على نظام حساب ولا خوادم خاصة به. يتم تخزين مفاتيح API فقط في سلسلة مفاتيح هذا الجهاز (لا تتم مزامنتها مطلقًا مع iCloud أو يتم نقلها مع النسخ الاحتياطية) ويتم إرسالها فقط إلى الموفر الذي تختاره عند الترجمة."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Diese App verfügt über kein Kontosystem und keine eigenen Server. API-Schlüssel werden nur im Schlüsselbund dieses Geräts gespeichert (nie mit iCloud synchronisiert oder mit Backups verschoben) und nur an den Anbieter gesendet, den Sie bei der Übersetzung auswählen."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "This app has no account system and no servers of its own. API keys are stored only in this device's keychain (never synced to iCloud or moved with backups) and are sent only to the provider you choose when translating."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Esta aplicación no tiene un sistema de cuentas ni servidores propios. Las claves API se almacenan únicamente en el llavero de este dispositivo (nunca se sincronizan con iCloud ni se mueven con copias de seguridad) y se envían únicamente al proveedor que elija al traducir."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cette application n'a pas de système de compte ni de serveurs propres. Les clés API sont stockées uniquement dans le trousseau de cet appareil (jamais synchronisées avec iCloud ni déplacées avec des sauvegardes) et sont envoyées uniquement au fournisseur que vous choisissez lors de la traduction."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "इस ऐप में कोई अकाउंट सिस्टम नहीं है और न ही अपना कोई सर्वर है। एपीआई कुंजियाँ केवल इस डिवाइस की कीचेन में संग्रहीत की जाती हैं (कभी भी iCloud से सिंक नहीं की जाती हैं या बैकअप के साथ स्थानांतरित नहीं की जाती हैं) और केवल उस प्रदाता को भेजी जाती हैं जिसे आप अनुवाद करते समय चुनते हैं।"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aplikasi ini tidak memiliki sistem akun dan tidak memiliki server sendiri. Kunci API hanya disimpan di gantungan kunci perangkat ini (tidak pernah disinkronkan ke iCloud atau dipindahkan dengan cadangan) dan hanya dikirimkan ke penyedia yang Anda pilih saat menerjemahkan."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Questa app non ha un sistema di account né server propri. Le chiavi API vengono archiviate solo nel portachiavi di questo dispositivo (mai sincronizzate con iCloud o spostate con i backup) e vengono inviate solo al provider scelto durante la traduzione."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "このアプリにはアカウント システムや独自のサーバーはありません。 API キーはこのデバイスのキーチェーンにのみ保存され (iCloud に同期されたり、バックアップとともに移動されることはありません)、翻訳時に選択したプロバイダーにのみ送信されます。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "이 앱에는 계정 시스템도 없고 자체 서버도 없습니다. API 키는 이 기기의 키체인에만 저장되며(iCloud와 동기화되거나 백업과 함께 이동되지 않음) 번역 시 선택한 제공자에게만 전송됩니다."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deze app heeft geen accountsysteem en geen eigen servers. API-sleutels worden alleen opgeslagen in de sleutelhanger van dit apparaat (nooit gesynchroniseerd met iCloud of verplaatst met back-ups) en worden alleen verzonden naar de provider die u kiest bij het vertalen."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ta aplikacja nie ma systemu kont ani własnych serwerów. Klucze API są przechowywane tylko w pęku kluczy tego urządzenia (nigdy nie są synchronizowane z iCloud ani przenoszone z kopiami zapasowymi) i wysyłane tylko do dostawcy wybranego podczas tłumaczenia."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Este aplicativo não possui sistema de contas nem servidores próprios. As chaves de API são armazenadas apenas nas chaves deste dispositivo (nunca sincronizadas com o iCloud ou movidas com backups) e são enviadas apenas para o provedor que você escolher durante a tradução."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Это приложение не имеет системы учетных записей и собственных серверов. Ключи API хранятся только в связке ключей этого устройства (никогда не синхронизируются с iCloud и не перемещаются вместе с резервными копиями) и отправляются только тому поставщику, которого вы выберете при переводе."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แอพนี้ไม่มีระบบบัญชีและไม่มีเซิร์ฟเวอร์ของตัวเอง คีย์ API จะถูกจัดเก็บไว้ในพวงกุญแจของอุปกรณ์นี้เท่านั้น (ไม่เคยซิงค์กับ iCloud หรือย้ายไปพร้อมกับข้อมูลสำรอง) และจะถูกส่งไปยังผู้ให้บริการที่คุณเลือกเมื่อแปลเท่านั้น"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bu uygulamanın hesap sistemi ve kendine ait sunucusu yoktur. API anahtarları yalnızca bu cihazın anahtarlığında saklanır (hiçbir zaman iCloud ile senkronize edilmez veya yedeklemelerle taşınmaz) ve yalnızca çeviri sırasında seçtiğiniz sağlayıcıya gönderilir."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ця програма не має системи облікових записів і власних серверів. Ключі API зберігаються лише у зв’язці ключів цього пристрою (ніколи не синхронізуються з iCloud і не переміщуються з резервними копіями) і надсилаються лише постачальнику, якого ви вибрали під час перекладу."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ứng dụng này không có hệ thống tài khoản và không có máy chủ riêng. Khóa API chỉ được lưu trữ trong chuỗi khóa của thiết bị này (không bao giờ được đồng bộ hóa với iCloud hoặc được di chuyển bằng bản sao lưu) và chỉ được gửi tới nhà cung cấp mà bạn chọn khi dịch."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "本应用没有账号系统，也没有自己的服务器。API Key 只保存在这台设备的钥匙圈中（不经 iCloud 同步、不随备份转移），仅在翻译时直接发送给你所选的服务商。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "本應用沒有帳號系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中（不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "本應用沒有帳戶系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中（不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "本應用沒有帳戶系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中（不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "本應用沒有帳號系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中（不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。"
-          }
-        }
-      }
-    },
     "本月": {
       "extractionState": "manual",
       "localizations": {
@@ -50051,145 +50051,145 @@
         }
       }
     },
-    "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": {
+    "滾動與翻頁模式各自保存排版。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "تحافظ أوضاع التمرير والصفحة على تخطيطات منفصلة؛ نفس القيم تبدو هي نفسها في كلا الوضعين."
+            "value": "تحتفظ أوضاع التمرير والمقسم إلى صفحات بإعدادات التخطيط الخاصة بها."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Scroll- und Seitenmodus behalten getrennte Layouts bei; Dieselben Werte sehen in beiden Modi gleich aus."
+            "value": "Der Scroll- und der Seitenmodus behalten ihre eigenen Layouteinstellungen."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Scroll and page modes keep separate layouts; the same values look the same in both modes."
+            "value": "Scroll and paged modes keep their own layout settings."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Los modos de desplazamiento y página mantienen diseños separados; los mismos valores se ven iguales en ambos modos."
+            "value": "Los modos de desplazamiento y paginación mantienen sus propias configuraciones de diseño."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les modes défilement et page conservent des mises en page distinctes ; les mêmes valeurs sont identiques dans les deux modes."
+            "value": "Les modes de défilement et paginé conservent leurs propres paramètres de mise en page."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "स्क्रॉल और पेज मोड अलग-अलग लेआउट रखते हैं; समान मान दोनों मोड में समान दिखते हैं।"
+            "value": "स्क्रॉल और पृष्ठांकित मोड अपनी स्वयं की लेआउट सेटिंग्स रखते हैं।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mode gulir dan halaman mempertahankan tata letak terpisah; nilai yang sama terlihat sama di kedua mode."
+            "value": "Mode gulir dan halaman mempertahankan pengaturan tata letaknya sendiri."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le modalità di scorrimento e pagina mantengono layout separati; gli stessi valori appaiono uguali in entrambe le modalità."
+            "value": "Le modalità di scorrimento e impaginazione mantengono le proprie impostazioni di layout."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "スクロール モードとページ モードでは別々のレイアウトが維持されます。同じ値はどちらのモードでも同じように見えます。"
+            "value": "スクロール モードとページ モードでは、独自のレイアウト設定が保持されます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "스크롤 및 페이지 모드는 별도의 레이아웃을 유지합니다. 두 모드 모두에서 동일한 값이 동일하게 보입니다."
+            "value": "스크롤 및 페이지 모드는 자체 레이아웃 설정을 유지합니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Scroll- en paginamodi behouden afzonderlijke lay-outs; dezelfde waarden zien er in beide modi hetzelfde uit."
+            "value": "De scroll- en paged-modi behouden hun eigen lay-outinstellingen."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tryby przewijania i stron zapewniają oddzielne układy; te same wartości wyglądają tak samo w obu trybach."
+            "value": "Tryby przewijania i stronicowania zachowują własne ustawienia układu."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os modos de rolagem e página mantêm layouts separados; os mesmos valores parecem iguais em ambos os modos."
+            "value": "Os modos de rolagem e paginação mantêm suas próprias configurações de layout."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Режимы прокрутки и страницы сохраняют отдельные макеты; одни и те же значения выглядят одинаково в обоих режимах."
+            "value": "Режимы прокрутки и постраничного просмотра сохраняют свои собственные настройки макета."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "โหมดเลื่อนและโหมดเพจมีเค้าโครงแยกกัน ค่าเดียวกันจะดูเหมือนกันในทั้งสองโหมด"
+            "value": "โหมดเลื่อนและเพจจะเก็บการตั้งค่าเค้าโครงของตัวเองไว้"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kaydırma ve sayfa modları ayrı düzenleri korur; aynı değerler her iki modda da aynı görünür."
+            "value": "Kaydırma ve sayfalı modlar kendi düzen ayarlarını korur."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Режими прокручування та сторінки зберігають окремі макети; однакові значення виглядають однаково в обох режимах."
+            "value": "У режимах прокручування та сторінках зберігаються власні налаштування макета."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Chế độ cuộn và trang giữ các bố cục riêng biệt; các giá trị giống nhau trông giống nhau ở cả hai chế độ."
+            "value": "Chế độ cuộn và phân trang giữ cài đặt bố cục của riêng chúng."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "滚动与翻页模式各自保存排版；相同的数值在两种模式下显示效果一致。"
+            "value": "滚动与翻页模式各自保存排版。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+            "value": "滾動與翻頁模式各自保存排版。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+            "value": "滾動與翻頁模式各自保存排版。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+            "value": "滾動與翻頁模式各自保存排版。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+            "value": "滾動與翻頁模式各自保存排版。"
           }
         }
       }
@@ -62774,149 +62774,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "自動翻譯離線內容"
-          }
-        }
-      }
-    },
-    "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تستخدم الألوان التلقائية صبغة خفيفة من لون النص بحيث تمتزج العلامات مع خلفية القراءة."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Automatische Farben verwenden einen leichten Farbton der Textfarbe, sodass Tags mit dem Lesehintergrund verschmelzen."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Automatic colors use a light tint of the text color so tags blend with the reading background."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Los colores automáticos utilizan un tono claro del color del texto para que las etiquetas se mezclen con el fondo de lectura."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Les couleurs automatiques utilisent une légère teinte de la couleur du texte afin que les balises se fondent dans l’arrière-plan de lecture."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "स्वचालित रंग टेक्स्ट रंग के हल्के रंग का उपयोग करते हैं ताकि टैग पढ़ने की पृष्ठभूमि के साथ मिश्रित हो जाएं।"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Warna otomatis menggunakan rona terang pada warna teks sehingga tag menyatu dengan latar belakang pembacaan."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "I colori automatici utilizzano una tonalità chiara del colore del testo in modo che i tag si fondano con lo sfondo di lettura."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "自動カラーではテキストの色の明るい色合いが使用されるため、タグが読書の背景に溶け込みます。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "자동 색상은 텍스트 색상의 밝은 색조를 사용하므로 태그가 읽기 배경과 혼합됩니다."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Automatische kleuren gebruiken een lichte tint van de tekstkleur, zodat tags opgaan in de leesachtergrond."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kolory automatyczne wykorzystują jasny odcień koloru tekstu, dzięki czemu znaczniki zlewają się z tłem do czytania."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "As cores automáticas usam um tom claro da cor do texto para que as tags se misturem ao fundo de leitura."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Автоматические цвета используют светлый оттенок цвета текста, поэтому теги сливаются с фоном чтения."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "สีอัตโนมัติจะใช้สีอ่อนของสีข้อความเพื่อให้แท็กผสมผสานกับพื้นหลังการอ่าน"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Otomatik renkler, metin renginin açık bir tonunu kullanır, böylece etiketler okuma arka planıyla karışır."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Автоматичні кольори використовують легкий відтінок кольору тексту, щоб теги зливалися з фоном читання."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Màu tự động sử dụng tông màu nhạt của màu văn bản để thẻ hòa hợp với nền đọc."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "自动配色会依正文颜色产生淡色底，与阅读背景融为一体。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。"
           }
         }
       }

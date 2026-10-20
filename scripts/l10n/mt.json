@@ -602,7 +602,9 @@
   "測試並同步": "テストと同期",
   "點「儲存並測試連線」，成功後點「立即同步」。": "「保存して接続をテスト」をタップし、成功したら「今すぐ同期」をタップします。",
   "如何使用 WebDAV 同步": "WebDAVと同期する方法",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "同期する他のデバイスにも同じ設定を入力します。 Nextcloud や Synology NAS などの WebDAV サービスも機能します。"
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "同期する他のデバイスにも同じ設定を入力します。 Nextcloud や Synology NAS などの WebDAV サービスも機能します。",
+  "滾動與翻頁模式各自保存排版。": "スクロール モードとページ モードでは、独自のレイアウト設定が保持されます。",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "「自動」では、テキストの色から明るい色合いが作成され、読書の背景と溶け合います。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1207,7 +1209,9 @@
   "測試並同步": "테스트 및 동기화",
   "點「儲存並測試連線」，成功後點「立即同步」。": "\"저장 및 연결 테스트\"를 누른 다음 성공하면 \"지금 동기화\"를 누릅니다.",
   "如何使用 WebDAV 同步": "WebDAV와 동기화하는 방법",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "동기화할 다른 장치에도 동일한 설정을 입력하세요. Nextcloud 또는 Synology NAS와 같은 모든 WebDAV 서비스도 작동합니다."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "동기화할 다른 장치에도 동일한 설정을 입력하세요. Nextcloud 또는 Synology NAS와 같은 모든 WebDAV 서비스도 작동합니다.",
+  "滾動與翻頁模式各自保存排版。": "스크롤 및 페이지 모드는 자체 레이아웃 설정을 유지합니다.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"자동\"은 읽기 배경과 혼합되는 텍스트 색상에서 밝은 색조를 만듭니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -1812,7 +1816,9 @@
   "測試並同步": "Prueba y sincronización",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Toque \"Guardar y probar conexión\", luego \"Sincronizar ahora\" una vez que tenga éxito.",
   "如何使用 WebDAV 同步": "Cómo sincronizar con WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Ingrese la misma configuración en sus otros dispositivos para sincronizar. Cualquier servicio WebDAV también funciona, como Nextcloud o Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Ingrese la misma configuración en sus otros dispositivos para sincronizar. Cualquier servicio WebDAV también funciona, como Nextcloud o Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Los modos de desplazamiento y paginación mantienen sus propias configuraciones de diseño.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"Auto\" crea un matiz claro a partir del color del texto que se mezcla con el fondo de lectura."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2417,7 +2423,9 @@
   "測試並同步": "Test et synchronisation",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Appuyez sur « Enregistrer et tester la connexion », puis sur « Synchroniser maintenant » une fois l'opération réussie.",
   "如何使用 WebDAV 同步": "Comment synchroniser avec WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Entrez les mêmes paramètres sur vos autres appareils à synchroniser. N'importe quel service WebDAV fonctionne également, comme Nextcloud ou Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Entrez les mêmes paramètres sur vos autres appareils à synchroniser. N'importe quel service WebDAV fonctionne également, comme Nextcloud ou Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Les modes de défilement et paginé conservent leurs propres paramètres de mise en page.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "« Auto » crée une légère teinte à partir de la couleur du texte qui se fond dans l'arrière-plan de lecture."
  },
  "de": {
   "載入中": "Laden",
@@ -3022,7 +3030,9 @@
   "測試並同步": "Testen und synchronisieren",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Tippen Sie auf „Verbindung speichern und testen“ und dann auf „Jetzt synchronisieren“, sobald der Vorgang erfolgreich war.",
   "如何使用 WebDAV 同步": "So synchronisieren Sie mit WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Geben Sie auf Ihren anderen zu synchronisierenden Geräten dieselben Einstellungen ein. Jeder WebDAV-Dienst funktioniert ebenfalls, z. B. Nextcloud oder Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Geben Sie auf Ihren anderen zu synchronisierenden Geräten dieselben Einstellungen ein. Jeder WebDAV-Dienst funktioniert ebenfalls, z. B. Nextcloud oder Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Der Scroll- und der Seitenmodus behalten ihre eigenen Layouteinstellungen.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "„Auto“ erzeugt einen hellen Farbton aus der Textfarbe, der mit dem Lesehintergrund verschmilzt."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3627,7 +3637,9 @@
   "測試並同步": "Teste e sincronize",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Toque em “Salvar e testar conexão” e depois em “Sincronizar agora” quando tiver sucesso.",
   "如何使用 WebDAV 同步": "Como sincronizar com WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Insira as mesmas configurações em seus outros dispositivos para sincronizar. Qualquer serviço WebDAV também funciona, como Nextcloud ou Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Insira as mesmas configurações em seus outros dispositivos para sincronizar. Qualquer serviço WebDAV também funciona, como Nextcloud ou Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Os modos de rolagem e paginação mantêm suas próprias configurações de layout.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” cria um tom claro a partir da cor do texto que combina com o fundo de leitura."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4232,7 +4244,9 @@
   "測試並同步": "Prova e sincronizza",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Tocca \"Salva e prova connessione\", quindi \"Sincronizza ora\" una volta completata l'operazione.",
   "如何使用 WebDAV 同步": "Come sincronizzarsi con WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Inserisci le stesse impostazioni sugli altri dispositivi da sincronizzare. Funziona anche qualsiasi servizio WebDAV, come Nextcloud o Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Inserisci le stesse impostazioni sugli altri dispositivi da sincronizzare. Funziona anche qualsiasi servizio WebDAV, come Nextcloud o Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Le modalità di scorrimento e impaginazione mantengono le proprie impostazioni di layout.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"Auto\" crea una sfumatura chiara dal colore del testo che si fonde con lo sfondo della lettura."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4837,7 +4851,9 @@
   "測試並同步": "Тестирование и синхронизация",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Нажмите «Сохранить и проверить соединение», затем «Синхронизировать сейчас», как только все получится.",
   "如何使用 WebDAV 同步": "Как синхронизировать с WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введите те же настройки на других устройствах для синхронизации. Также работает любая служба WebDAV, например Nextcloud или Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введите те же настройки на других устройствах для синхронизации. Также работает любая служба WebDAV, например Nextcloud или Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Режимы прокрутки и постраничного просмотра сохраняют свои собственные настройки макета.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "«Авто» создает легкий оттенок цвета текста, который сливается с фоном чтения."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5442,7 +5458,9 @@
   "測試並同步": "Тест і синхронізація",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Натисніть «Зберегти та перевірити з’єднання», а потім «Синхронізувати зараз», коли це вдасться.",
   "如何使用 WebDAV 同步": "Як синхронізувати з WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введіть ті самі налаштування на інших пристроях для синхронізації. Також працює будь-яка служба WebDAV, наприклад Nextcloud або Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введіть ті самі налаштування на інших пристроях для синхронізації. Також працює будь-яка служба WebDAV, наприклад Nextcloud або Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "У режимах прокручування та сторінках зберігаються власні налаштування макета.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "«Авто» створює легкий відтінок кольору тексту, який зливається з фоном для читання."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6047,7 +6065,9 @@
   "測試並同步": "Testuj i synchronizuj",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Kliknij „Zapisz i przetestuj połączenie”, a gdy się powiedzie, „Synchronizuj teraz”.",
   "如何使用 WebDAV 同步": "Jak synchronizować z WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Wprowadź te same ustawienia na innych urządzeniach, które chcesz zsynchronizować. Działa również każda usługa WebDAV, taka jak Nextcloud lub Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Wprowadź te same ustawienia na innych urządzeniach, które chcesz zsynchronizować. Działa również każda usługa WebDAV, taka jak Nextcloud lub Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Tryby przewijania i stronicowania zachowują własne ustawienia układu.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "„Auto” tworzy jasny odcień na podstawie koloru tekstu, który zlewa się z tłem czytania."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -6652,7 +6672,9 @@
   "測試並同步": "Test Et ve Senkronize Et",
   "點「儲存並測試連線」，成功後點「立即同步」。": "“Bağlantıyı Kaydet ve Test Et”e, ardından başarılı olduğunda “Şimdi Senkronize Et”e dokunun.",
   "如何使用 WebDAV 同步": "WebDAV ile Senkronizasyon Nasıl Yapılır?",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Senkronize etmek için diğer cihazlarınızda da aynı ayarları girin. Nextcloud veya Synology NAS gibi herhangi bir WebDAV hizmeti de çalışır."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Senkronize etmek için diğer cihazlarınızda da aynı ayarları girin. Nextcloud veya Synology NAS gibi herhangi bir WebDAV hizmeti de çalışır.",
+  "滾動與翻頁模式各自保存排版。": "Kaydırma ve sayfalı modlar kendi düzen ayarlarını korur.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Otomatik”, metin renginden okuma arka planıyla harmanlanan açık bir renk tonu oluşturur."
  },
  "nl": {
   "載入中": "Laden",
@@ -7257,7 +7279,9 @@
   "測試並同步": "Testen en synchroniseren",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Tik op 'Verbinding opslaan en testen' en vervolgens op 'Nu synchroniseren' zodra dit is gelukt.",
   "如何使用 WebDAV 同步": "Synchroniseren met WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Voer dezelfde instellingen in op uw andere apparaten om te synchroniseren. Elke WebDAV-service werkt ook, zoals Nextcloud of Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Voer dezelfde instellingen in op uw andere apparaten om te synchroniseren. Elke WebDAV-service werkt ook, zoals Nextcloud of Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "De scroll- en paged-modi behouden hun eigen lay-outinstellingen.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” creëert een lichte tint van de tekstkleur die overvloeit met de leesachtergrond."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -7862,7 +7886,9 @@
   "測試並同步": "الاختبار والمزامنة",
   "點「儲存並測試連線」，成功後點「立即同步」。": "اضغط على \"حفظ واختبار الاتصال\"، ثم \"المزامنة الآن\" بمجرد نجاحها.",
   "如何使用 WebDAV 同步": "كيفية المزامنة مع WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "أدخل نفس الإعدادات على أجهزتك الأخرى للمزامنة. تعمل أي خدمة WebDAV أيضًا، مثل Nextcloud أو Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "أدخل نفس الإعدادات على أجهزتك الأخرى للمزامنة. تعمل أي خدمة WebDAV أيضًا، مثل Nextcloud أو Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "تحتفظ أوضاع التمرير والمقسم إلى صفحات بإعدادات التخطيط الخاصة بها.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "يقوم \"تلقائي\" بإنشاء لون فاتح من لون النص الذي يمتزج مع خلفية القراءة."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -8467,7 +8493,9 @@
   "測試並同步": "परीक्षण और समन्वयन",
   "點「儲存並測試連線」，成功後點「立即同步」。": "सफल होने पर \"सहेजें और परीक्षण कनेक्शन\" पर टैप करें, फिर \"अभी सिंक करें\" पर टैप करें।",
   "如何使用 WebDAV 同步": "WebDAV के साथ कैसे सिंक करें",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "सिंक करने के लिए अपने अन्य डिवाइस पर समान सेटिंग्स दर्ज करें। कोई भी WebDAV सेवा भी काम करती है, जैसे Nextcloud या Synology NAS।"
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "सिंक करने के लिए अपने अन्य डिवाइस पर समान सेटिंग्स दर्ज करें। कोई भी WebDAV सेवा भी काम करती है, जैसे Nextcloud या Synology NAS।",
+  "滾動與翻頁模式各自保存排版。": "स्क्रॉल और पृष्ठांकित मोड अपनी स्वयं की लेआउट सेटिंग्स रखते हैं।",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"ऑटो\" टेक्स्ट रंग से एक हल्का रंग बनाता है जो पढ़ने की पृष्ठभूमि के साथ मिश्रित होता है।"
  },
  "id": {
   "載入中": "Memuat",
@@ -9072,7 +9100,9 @@
   "測試並同步": "Uji dan Sinkronisasi",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Ketuk “Simpan dan Uji Koneksi”, lalu “Sinkronkan Sekarang” setelah berhasil.",
   "如何使用 WebDAV 同步": "Cara Menyinkronkan dengan WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Masukkan pengaturan yang sama di perangkat Anda yang lain untuk disinkronkan. Layanan WebDAV apa pun juga berfungsi, seperti Nextcloud atau Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Masukkan pengaturan yang sama di perangkat Anda yang lain untuk disinkronkan. Layanan WebDAV apa pun juga berfungsi, seperti Nextcloud atau Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Mode gulir dan halaman mempertahankan pengaturan tata letaknya sendiri.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Otomatis” menciptakan rona terang dari warna teks yang menyatu dengan latar belakang pembacaan."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -9677,7 +9707,9 @@
   "測試並同步": "Kiểm tra và đồng bộ hóa",
   "點「儲存並測試連線」，成功後點「立即同步」。": "Nhấn vào “Lưu và kiểm tra kết nối”, sau đó “Đồng bộ hóa ngay” sau khi thành công.",
   "如何使用 WebDAV 同步": "Cách đồng bộ hóa với WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Nhập các cài đặt tương tự trên các thiết bị khác của bạn để đồng bộ hóa. Bất kỳ dịch vụ WebDAV nào cũng hoạt động, chẳng hạn như Nextcloud hoặc Synology NAS."
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Nhập các cài đặt tương tự trên các thiết bị khác của bạn để đồng bộ hóa. Bất kỳ dịch vụ WebDAV nào cũng hoạt động, chẳng hạn như Nextcloud hoặc Synology NAS.",
+  "滾動與翻頁模式各自保存排版。": "Chế độ cuộn và phân trang giữ cài đặt bố cục của riêng chúng.",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Tự động” tạo ra tông màu sáng từ màu văn bản hòa với nền đọc."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -10282,6 +10314,8 @@
   "測試並同步": "ทดสอบและซิงค์",
   "點「儲存並測試連線」，成功後點「立即同步」。": "แตะ \"บันทึกและทดสอบการเชื่อมต่อ\" จากนั้น \"ซิงค์ทันที\" เมื่อดำเนินการสำเร็จ",
   "如何使用 WebDAV 同步": "วิธีซิงค์กับ WebDAV",
-  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "ป้อนการตั้งค่าเดียวกันบนอุปกรณ์อื่นๆ ของคุณเพื่อซิงค์ บริการ WebDAV ใดๆ ก็ใช้งานได้เช่นกัน เช่น Nextcloud หรือ Synology NAS"
+  "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "ป้อนการตั้งค่าเดียวกันบนอุปกรณ์อื่นๆ ของคุณเพื่อซิงค์ บริการ WebDAV ใดๆ ก็ใช้งานได้เช่นกัน เช่น Nextcloud หรือ Synology NAS",
+  "滾動與翻頁模式各自保存排版。": "โหมดเลื่อนและเพจจะเก็บการตั้งค่าเค้าโครงของตัวเองไว้",
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“อัตโนมัติ” สร้างสีอ่อนจากสีข้อความที่กลมกลืนกับพื้นหลังการอ่าน"
  }
 }

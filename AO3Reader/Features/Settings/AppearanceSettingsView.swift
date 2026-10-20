@@ -212,7 +212,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
             }
             .pickerStyle(.segmented)
         } footer: {
-            Text("滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。")
+            Text("滾動與翻頁模式各自保存排版。")
         }
 
         Section("排版") {
@@ -338,7 +338,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
         } header: {
             Text("標籤與簡介背景")
         } footer: {
-            Text("自動配色會依正文顏色產生淡色底，與閱讀背景融為一體。")
+            Text("「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。")
         }
 
         Section {

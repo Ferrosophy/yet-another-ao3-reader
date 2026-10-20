@@ -118,11 +118,6 @@ struct SettingsView: View {
                 }
             } header: {
                 Text("隱私")
-            } footer: {
-                Text("""
-                本應用沒有帳號系統，也沒有自己的伺服器。API Key 只保存在這台裝置的鑰匙圈中\
-                （不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。
-                """)
             }
         }
         .navigationTitle("設定")
