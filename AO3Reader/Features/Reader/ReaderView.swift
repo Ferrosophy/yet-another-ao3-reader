@@ -7,6 +7,7 @@ struct ReaderView: View {
     @Environment(AppState.self) private var app
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
+    @AppStorage(DataSource.storageKey) private var dataSource: DataSource = .ao3
 
     @State private var showsChrome = true
     @State private var showsChapters = false
@@ -80,13 +81,19 @@ struct ReaderView: View {
                     }
                     WorkDownloadButton(detail: detail, client: model.client)
                 }
-                if app.auth.isLoggedIn { WorkActionsMenu(model: actions) }
+                if dataSource == .local, let detail = model.detail {
+                    LocalWorkActionsMenu(detail: detail)
+                } else if dataSource == .ao3, app.auth.isLoggedIn {
+                    WorkActionsMenu(model: actions)
+                }
             }
         }
         // 時長管理：閱讀頁在前景時計時，定期寫入並檢查休息提醒
         .task(id: model.detail?.id) {
             guard let detail = model.detail else { return }
             app.bookshelf.markRead(detail.id, info: detail.info)
+            // 本機模式自行記錄閱讀紀錄（AO3 帳號模式由 AO3 記錄）
+            if dataSource == .local { app.library.recordVisit(detail.summaryInfo) }
             startReadingTimer(detail)
             while !Task.isCancelled {
                 try? await Task.sleep(for: .seconds(30))

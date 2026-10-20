@@ -6,6 +6,8 @@ struct WorkListView: View {
     let model: PagedWorksModel
     /// 列表頂部、跟著內容一起捲動的區塊（例如首頁的榜單切換）
     var header: AnyView?
+    /// 指定時可向左滑移除（本機書籤、稍後閱讀、閱讀紀錄）
+    var onDelete: ((WorkSummary) -> Void)?
 
     var body: some View {
         List {
@@ -21,6 +23,11 @@ struct WorkListView: View {
                     }
                     .contextMenu {
                         BookshelfMenuButton(work: work)
+                    }
+                    .swipeActions {
+                        if let onDelete {
+                            Button("移除", systemImage: "trash", role: .destructive) { onDelete(work) }
+                        }
                     }
                     .task { await model.loadMoreIfNeeded(current: work) }
                 }

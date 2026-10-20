@@ -23,6 +23,9 @@ final class AppState {
     let downloads = DownloadManager()
     /// 個人資料同步（iCloud / WebDAV），與 AO3 帳號資料分開
     let sync: SyncService
+    /// 本機使用者資料（資料來源為「本機保存」時使用）與它的同步
+    let library: LocalLibraryStore
+    let librarySync: LibrarySyncService
 
     init() {
         let translation = TranslationSettings()
@@ -37,7 +40,11 @@ final class AppState {
         self.appearance = appearance
         self.bookshelf = bookshelf
         self.readingTime = readingTime
-        sync = SyncService(bookshelf: bookshelf, readingTime: readingTime, appearance: appearance, translation: translation)
+        let sync = SyncService(bookshelf: bookshelf, readingTime: readingTime, appearance: appearance, translation: translation)
+        let library = LocalLibraryStore()
+        self.sync = sync
+        self.library = library
+        librarySync = LibrarySyncService(library: library, shelfSync: sync)
     }
 
     /// 目前來源的客戶端；切換來源時自動跟著變更。

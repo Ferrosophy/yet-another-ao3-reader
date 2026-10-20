@@ -65,9 +65,9 @@ final class SyncService {
         }
     }
 
-    func testConnection() async throws {
-        guard let backend = makeBackend() else { return }
-        try await backend.test()
+    /// 測試 WebDAV 連線；書架與本機資料同步共用同一組伺服器設定
+    func testWebDAV() async throws {
+        try await WebDAVBackend(config: webDAV, password: webDAVPassword).test()
     }
 
     /// 資料變更後延遲同步，合併短時間內的多次變更

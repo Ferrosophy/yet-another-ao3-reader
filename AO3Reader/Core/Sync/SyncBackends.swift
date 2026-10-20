@@ -30,6 +30,8 @@ protocol SyncBackend: Sendable {
 struct WebDAVBackend: SyncBackend {
     let config: WebDAVConfig
     let password: String
+    /// 書架與本機使用者資料各用一個檔案
+    var fileName = SyncSnapshot.fileName
 
     private static let session: URLSession = {
         let configuration = URLSessionConfiguration.ephemeral
@@ -55,7 +57,7 @@ struct WebDAVBackend: SyncBackend {
     }
 
     private var fileURL: URL {
-        get throws { try folderURL.appending(path: SyncSnapshot.fileName) }
+        get throws { try folderURL.appending(path: fileName) }
     }
 
     private func request(_ url: URL, method: String) -> URLRequest {
@@ -105,6 +107,8 @@ struct WebDAVBackend: SyncBackend {
 
 /// iCloud 雲碟：存放在 App 的 iCloud 容器中（需要簽名時包含 iCloud Documents 能力）。
 struct ICloudBackend: SyncBackend {
+    var fileName = SyncSnapshot.fileName
+
     private func fileURL() async throws -> URL {
         guard FileManager.default.ubiquityIdentityToken != nil else { throw SyncError.iCloudUnavailable }
         // 第一次取得容器位址可能需要一些時間，不在主執行緒進行
@@ -112,7 +116,7 @@ struct ICloudBackend: SyncBackend {
         guard let container else { throw SyncError.iCloudUnavailable }
         let documents = container.appending(path: "Documents", directoryHint: .isDirectory)
         try FileManager.default.createDirectory(at: documents, withIntermediateDirectories: true)
-        return documents.appending(path: SyncSnapshot.fileName)
+        return documents.appending(path: fileName)
     }
 
     func read() async throws -> Data? {

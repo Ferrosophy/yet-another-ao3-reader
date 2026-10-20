@@ -1,55 +1,56 @@
 import SwiftUI
 
-/// 資料同步：AO3 帳號同步與個人資料同步（iCloud / WebDAV）分開，兩邊的資料互不重疊。
+/// 資料同步：書架與本機使用者資料各自選擇 iCloud 或 WebDAV，WebDAV 伺服器設定兩者共用。
+/// AO3 帳號資料直接讀寫 AO3，不經過這裡。
 struct SyncSettingsView: View {
     @Environment(AppState.self) private var app
+    @AppStorage(DataSource.storageKey) private var dataSource: DataSource = .ao3
     @State private var password = ""
     @State private var testResult: String?
     @State private var isTesting = false
 
     var body: some View {
         @Bindable var sync = app.sync
+        @Bindable var librarySync = app.librarySync
+        let usesICloud = sync.provider == .iCloud || librarySync.provider == .iCloud
+        let usesWebDAV = sync.provider == .webDAV || librarySync.provider == .webDAV
 
         Form {
-            Section {
-                LabeledContent("AO3 帳號", value: app.auth.username ?? String(localized: "未登入"))
-            } header: {
-                Text("AO3 帳號同步")
-            } footer: {
-                Text("書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號，登入後自動同步，不經過任何第三方服務。")
-            }
-
             Section {
                 Picker("同步服務", selection: $sync.provider) {
                     ForEach(SyncProvider.allCases) { Text($0.title).tag($0) }
                 }
                 if sync.provider != .off {
-                    Button {
-                        Task { await sync.syncNow() }
-                    } label: {
-                        HStack {
-                            Text("立即同步")
-                            Spacer()
-                            if sync.isSyncing { ProgressView() }
-                        }
-                    }
-                    .disabled(sync.isSyncing)
-                    if let last = sync.lastSyncAt {
-                        LabeledContent("上次同步", value: last.formatted(date: .abbreviated, time: .shortened))
-                    }
-                    if let error = sync.lastError {
-                        Label(error, systemImage: "exclamationmark.triangle.fill")
-                            .appFont(.footnote)
-                            .foregroundStyle(.red)
+                    status(isSyncing: sync.isSyncing, lastSyncAt: sync.lastSyncAt, error: sync.lastError) {
+                        await sync.syncNow()
                     }
                 }
             } header: {
-                Text("個人資料同步")
+                Text("書架同步")
             } footer: {
-                Text("同步書架（含自訂封面）、閱讀時長、閱讀進度，以及外觀與翻譯偏好。不包含 API Key、匯入的字體與背景圖片。這些資料與 AO3 帳號資料分開保存，不會互相覆蓋。")
+                Text("同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。")
             }
 
-            if sync.provider == .iCloud {
+            Section {
+                Picker("同步服務", selection: $librarySync.provider) {
+                    ForEach(SyncProvider.allCases) { Text($0.title).tag($0) }
+                }
+                if librarySync.provider != .off, dataSource == .local {
+                    status(isSyncing: librarySync.isSyncing, lastSyncAt: librarySync.lastSyncAt, error: librarySync.lastError) {
+                        await librarySync.syncNow()
+                    }
+                }
+            } header: {
+                Text("本機使用者資料同步")
+            } footer: {
+                if dataSource == .local {
+                    Text("同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。")
+                } else {
+                    Text("目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。")
+                }
+            }
+
+            if usesICloud {
                 Section {
                     Text("使用你的 iCloud 雲碟保存同步檔。需要在裝置上登入 iCloud 並開啟 iCloud 雲碟；自行簽名時須保留或加入 iCloud Documents 能力（容器為 iCloud.<Bundle ID>），否則無法使用。")
                         .appFont(.footnote)
@@ -57,7 +58,7 @@ struct SyncSettingsView: View {
                 }
             }
 
-            if sync.provider == .webDAV {
+            if usesWebDAV {
                 Section("WebDAV 伺服器") {
                     TextField("伺服器位址", text: $sync.webDAV.server, prompt: Text(verbatim: "https://dav.jianguoyun.com/dav/"))
                         .keyboardType(.URL)
@@ -108,6 +109,28 @@ struct SyncSettingsView: View {
         .onAppear { password = app.sync.webDAVPassword }
     }
 
+    @ViewBuilder
+    private func status(isSyncing: Bool, lastSyncAt: Date?, error: String?, action: @escaping () async -> Void) -> some View {
+        Button {
+            Task { await action() }
+        } label: {
+            HStack {
+                Text("立即同步")
+                Spacer()
+                if isSyncing { ProgressView() }
+            }
+        }
+        .disabled(isSyncing)
+        if let lastSyncAt {
+            LabeledContent("上次同步", value: lastSyncAt.formatted(date: .abbreviated, time: .shortened))
+        }
+        if let error {
+            Label(error, systemImage: "exclamationmark.triangle.fill")
+                .appFont(.footnote)
+                .foregroundStyle(.red)
+        }
+    }
+
     private func guideStep(_ number: Int, _ text: LocalizedStringKey) -> some View {
         HStack(alignment: .firstTextBaseline, spacing: 8) {
             Text(verbatim: "\(number)")
@@ -126,7 +149,7 @@ struct SyncSettingsView: View {
         Task {
             defer { isTesting = false }
             do {
-                try await app.sync.testConnection()
+                try await app.sync.testWebDAV()
                 testResult = String(localized: "連線成功")
             } catch {
                 testResult = error.localizedDescription

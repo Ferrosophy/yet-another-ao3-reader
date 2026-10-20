@@ -103,10 +103,24 @@ struct RootView: View {
             CloudflareChallengeView(url: page.url)
         }
         // 個人資料同步：開啟與回到前景時拉取、進入背景時上傳
-        .task { await app.sync.syncNow() }
+        .task {
+            await app.sync.syncNow()
+            await app.librarySync.syncNow()
+            await app.checkLocalSubscriptions()
+        }
         .onChange(of: scenePhase) { _, phase in
             switch phase {
-            case .active, .background: Task { await app.sync.syncNow() }
+            case .active:
+                Task {
+                    await app.sync.syncNow()
+                    await app.librarySync.syncNow()
+                    await app.checkLocalSubscriptions()
+                }
+            case .background:
+                Task {
+                    await app.sync.syncNow()
+                    await app.librarySync.syncNow()
+                }
             default: break
             }
         }
