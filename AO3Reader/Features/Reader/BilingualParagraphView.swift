@@ -14,27 +14,15 @@ struct ReaderStyle {
 
     // MARK: SwiftUI
 
-    func font(scale: Double = 1, weight: Font.Weight? = nil) -> Font {
-        let size = layout.fontSize * scale
-        let weight = weight ?? layout.fontWeight.font
-        if font.hasPrefix("custom:") {
-            return .custom(String(font.dropFirst("custom:".count)), size: size).weight(weight)
-        }
-        if font.hasPrefix("family:") {
-            return .custom(String(font.dropFirst("family:".count)), size: size).weight(weight)
-        }
-        let design: Font.Design = switch font {
-        case "serif": .serif
-        case "rounded": .rounded
-        default: .default
-        }
-        return .system(size: size, weight: weight, design: design)
+    /// 滾動模式直接使用與翻頁模式相同的 UIFont，確保兩種模式在同一排版數值下字形、字重完全一致
+    func font(scale: Double = 1, weight: UIFont.Weight? = nil, italic: Bool = false) -> Font {
+        Font(uiFont(scale: scale, weight: weight, italic: italic))
     }
 
     var bodyFont: Font { font() }
     var headingFont: Font { font(scale: 1.2, weight: .semibold) }
     var titleFont: Font { font(scale: 1.5, weight: .bold) }
-    var translationFont: Font { font(scale: translation.fontScale) }
+    var translationFont: Font { font(scale: translation.fontScale, italic: translation.italic) }
 
     /// nil 為次要文字色；跟隨正文時使用正文顏色
     var translationColor: Color? {
@@ -86,11 +74,11 @@ struct BilingualParagraphView: View {
     var body: some View {
         switch paragraph.kind {
         case .separator:
+            // 與翻頁模式相同的字型、顏色與間距
             Text("＊　＊　＊")
                 .font(.footnote)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(style.textColor.map { AnyShapeStyle($0.opacity(0.65)) } ?? AnyShapeStyle(.secondary))
                 .frame(maxWidth: .infinity)
-                .padding(.vertical, 8)
         case .body, .heading:
             VStack(alignment: .leading, spacing: style.layout.lineSpacing + 4) {
                 if showsOriginal {

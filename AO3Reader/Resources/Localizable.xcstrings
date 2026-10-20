@@ -45189,6 +45189,149 @@
         }
       }
     },
+    "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحافظ أوضاع التمرير والصفحة على تخطيطات منفصلة؛ نفس القيم تبدو هي نفسها في كلا الوضعين."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scroll- und Seitenmodus behalten getrennte Layouts bei; Dieselben Werte sehen in beiden Modi gleich aus."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scroll and page modes keep separate layouts; the same values look the same in both modes."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los modos de desplazamiento y página mantienen diseños separados; los mismos valores se ven iguales en ambos modos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les modes défilement et page conservent des mises en page distinctes ; les mêmes valeurs sont identiques dans les deux modes."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्क्रॉल और पेज मोड अलग-अलग लेआउट रखते हैं; समान मान दोनों मोड में समान दिखते हैं।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode gulir dan halaman mempertahankan tata letak terpisah; nilai yang sama terlihat sama di kedua mode."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le modalità di scorrimento e pagina mantengono layout separati; gli stessi valori appaiono uguali in entrambe le modalità."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スクロール モードとページ モードでは別々のレイアウトが維持されます。同じ値はどちらのモードでも同じように見えます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스크롤 및 페이지 모드는 별도의 레이아웃을 유지합니다. 두 모드 모두에서 동일한 값이 동일하게 보입니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scroll- en paginamodi behouden afzonderlijke lay-outs; dezelfde waarden zien er in beide modi hetzelfde uit."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryby przewijania i stron zapewniają oddzielne układy; te same wartości wyglądają tak samo w obu trybach."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os modos de rolagem e página mantêm layouts separados; os mesmos valores parecem iguais em ambos os modos."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режимы прокрутки и страницы сохраняют отдельные макеты; одни и те же значения выглядят одинаково в обоих режимах."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โหมดเลื่อนและโหมดเพจมีเค้าโครงแยกกัน ค่าเดียวกันจะดูเหมือนกันในทั้งสองโหมด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaydırma ve sayfa modları ayrı düzenleri korur; aynı değerler her iki modda da aynı görünür."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режими прокручування та сторінки зберігають окремі макети; однакові значення виглядають однаково в обох режимах."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chế độ cuộn và trang giữ các bố cục riêng biệt; các giá trị giống nhau trông giống nhau ở cả hai chế độ."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滚动与翻页模式各自保存排版；相同的数值在两种模式下显示效果一致。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。"
+          }
+        }
+      }
+    },
     "瀏覽": {
       "extractionState": "manual",
       "localizations": {

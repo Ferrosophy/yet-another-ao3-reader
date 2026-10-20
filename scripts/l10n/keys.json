@@ -314,6 +314,7 @@
  "模式": "AppearanceSettingsView.swift",
  "翻頁動畫": "AppearanceSettingsView.swift",
  "標題列與控制列": "AppearanceSettingsView.swift",
+ "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "AppearanceSettingsView.swift",
  "排版": "AppearanceSettingsView.swift",
  "字體大小": "AppearanceSettingsView.swift",
  "字重": "AppearanceSettingsView.swift",

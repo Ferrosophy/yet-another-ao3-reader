@@ -31,7 +31,8 @@ struct ReaderView: View {
     }
 
     private var appearance: AppearanceSettings { app.appearance }
-    private var layout: ReaderLayout { appearance.config.layout }
+    /// 滾動與翻頁各自保存排版數值
+    private var layout: ReaderLayout { appearance.readerLayout }
     private var chromeVisible: Bool { layout.chrome == .pinned || showsChrome }
 
     private var style: ReaderStyle {
@@ -327,7 +328,7 @@ struct ReaderView: View {
                 Text(detail.title)
                     .font(style.titleFont)
                 metaTranslation(ReaderViewModel.workTitleID,
-                                font: style.font(scale: 1.25 * style.translation.fontScale, weight: .semibold))
+                                font: style.font(scale: 1.25 * style.translation.fontScale, weight: .semibold, italic: style.translation.italic))
                 Text(detail.authors.joined(separator: ", "))
                     .foregroundStyle(bodyColor.opacity(0.7))
                 if !detail.series.isEmpty {
@@ -356,7 +357,7 @@ struct ReaderView: View {
                     Text(chapter.title)
                         .font(style.headingFont)
                     metaTranslation(ReaderViewModel.chapterTitleID(model.chapterIndex),
-                                    font: style.font(scale: 1.1 * style.translation.fontScale, weight: .semibold))
+                                    font: style.font(scale: 1.1 * style.translation.fontScale, weight: .semibold, italic: style.translation.italic))
                 }
                 .padding(.top, 8)
             }
@@ -389,7 +390,7 @@ struct ReaderView: View {
                 Text(text)
                     .appFont(.callout)
                     .foregroundStyle(cardForeground)
-                metaTranslation(id, font: style.font(scale: 0.9 * style.translation.fontScale))
+                metaTranslation(id, font: style.font(scale: 0.9 * style.translation.fontScale, italic: style.translation.italic))
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)

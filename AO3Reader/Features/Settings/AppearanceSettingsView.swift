@@ -116,6 +116,8 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
     @Environment(\.colorScheme) private var systemScheme
     @State private var tab: AppearanceTab
     @State private var editingScheme: ColorScheme?
+    /// 「字體與排版」正在編輯的模式；nil 為目前的閱讀模式
+    @State private var typographyMode: ReadingMode?
     @State private var photoItem: PhotosPickerItem?
     @State private var errorMessage: String?
 
@@ -152,7 +154,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                         LabeledContent("閱讀字體", value: appearance.fontDisplayName)
                     }
                 }
-                typographySections(layout: layout)
+                typographySections
             case .colors:
                 colorSections(theme: theme)
             case .tags:
@@ -202,8 +204,22 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
     }
 
     @ViewBuilder
-    private func typographySections(layout: Binding<ReaderLayout>) -> some View {
+    private var typographySections: some View {
         let appearance = app.appearance
+        let mode = typographyMode ?? appearance.config.layout.mode
+        let layout = Binding(
+            get: { appearance.layout(for: mode) },
+            set: { appearance.setLayout($0, for: mode) }
+        )
+        Section {
+            Picker("編輯", selection: Binding(get: { mode }, set: { typographyMode = $0 })) {
+                ForEach(ReadingMode.allCases) { Text($0.title).tag($0) }
+            }
+            .pickerStyle(.segmented)
+        } footer: {
+            Text("滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。")
+        }
+
         Section("排版") {
             slider("字體大小", value: layout.fontSize, in: 10...40, step: 1)
             Picker("字重", selection: layout.fontWeight) {
@@ -213,7 +229,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
             slider("段落間距", value: layout.paragraphSpacing, in: 0...40, step: 1)
             slider("字間距", value: layout.letterSpacing, in: -1...6, step: 0.1)
             slider("左右邊距", value: layout.horizontalMargin, in: 0...80, step: 1)
-            if appearance.config.layout.mode == .paged {
+            if mode == .paged {
                 slider("上下邊距", value: layout.verticalMargin, in: 0...120, step: 1)
             }
         }

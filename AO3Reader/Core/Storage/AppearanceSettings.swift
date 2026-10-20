@@ -165,7 +165,10 @@ struct AppearanceConfig: Codable, Equatable, Sendable {
     var tagBackgroundHex: String?
     var tagTextHex: String?
     var customFonts: [CustomFont] = []
+    /// 閱讀模式、翻頁動畫、控制列，以及滾動模式的排版
     var layout = ReaderLayout()
+    /// 翻頁模式自己的排版（字體大小、行距、邊距等）；nil 時沿用滾動模式的數值（Optional 讓舊設定可正常解碼）
+    var pagedLayout: ReaderLayout?
     var translation = TranslationAppearance()
 }
 
@@ -259,6 +262,25 @@ final class AppearanceSettings {
 
     func setAccentHex(_ hex: String, for scheme: ColorScheme) {
         if scheme == .dark { config.darkAccentHex = hex } else { config.accentHex = hex }
+    }
+
+    // MARK: - 排版
+
+    /// 指定閱讀模式的排版；模式、翻頁動畫與控制列設定一律取共用值
+    func layout(for mode: ReadingMode) -> ReaderLayout {
+        guard mode == .paged else { return config.layout }
+        var paged = config.pagedLayout ?? config.layout
+        paged.mode = config.layout.mode
+        paged.pageTransition = config.layout.pageTransition
+        paged.chrome = config.layout.chrome
+        return paged
+    }
+
+    /// 目前閱讀模式實際使用的排版
+    var readerLayout: ReaderLayout { layout(for: config.layout.mode) }
+
+    func setLayout(_ layout: ReaderLayout, for mode: ReadingMode) {
+        if mode == .paged { config.pagedLayout = layout } else { config.layout = layout }
     }
 
     // MARK: - Themes

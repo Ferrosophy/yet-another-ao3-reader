@@ -62,7 +62,8 @@ enum PagedTextBuilder {
         func paragraphStyle(after spacing: Double, indent: CGFloat = 0, alignment: NSTextAlignment = .natural) -> NSParagraphStyle {
             let paragraph = NSMutableParagraphStyle()
             paragraph.lineSpacing = layout.lineSpacing
-            paragraph.paragraphSpacing = spacing
+            // TextKit 在段落最後一行之後也會加上行距，SwiftUI 不會；扣掉以與滾動模式的段距一致
+            paragraph.paragraphSpacing = max(spacing - layout.lineSpacing, 0)
             paragraph.firstLineHeadIndent = indent
             paragraph.headIndent = indent
             paragraph.alignment = alignment
@@ -396,7 +397,7 @@ final class HeaderPageController: ReaderPage {
 }
 
 /// 翻頁控制器：仿真（UIPageViewController 捲頁，跟隨手指）、平滑（滑動）、
-/// 覆蓋（卡牌式：頁面像卡牌一樣被拖開，邊緣跟隨手指）、淡入淡出。
+/// 覆蓋（平移的卡片：上層頁面整張水平移動，邊緣跟隨手指）、淡入淡出。
 /// 點擊左側 / 右側三分之一翻頁，中間切換控制列；在章首 / 章末繼續翻頁時切換章節。
 final class PagerController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate,
     UIGestureRecognizerDelegate {
@@ -689,24 +690,19 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     private func applyCard(_ card: CardTransition, progress: CGFloat) {
         let width = view.bounds.width
         let p = min(max(progress, 0), 1)
-        func cardTransform(offset: CGFloat) -> CGAffineTransform {
-            // 拖動時略為旋轉，像從桌面抽起一張卡牌
-            CGAffineTransform(translationX: offset, y: abs(offset) * 0.03).rotated(by: offset / width * 0.08)
-        }
         guard let target = card.target else {
             // 章首 / 章末：只做阻尼位移提示
             let offset = (card.forward ? -1 : 1) * min(p * width, 60)
             card.current.view.transform = CGAffineTransform(translationX: offset * 0.5, y: 0)
             return
         }
+        // 平移的卡片：上層頁面整張水平移動，邊緣與手指位置同步；下層頁面保持不動
         if card.forward {
-            card.current.view.transform = cardTransform(offset: -width * p)
-            let scale = 0.94 + 0.06 * p
-            target.view.transform = CGAffineTransform(scaleX: scale, y: scale)
+            card.current.view.transform = CGAffineTransform(translationX: -width * p, y: 0)
+            target.view.transform = .identity
         } else {
-            target.view.transform = cardTransform(offset: -width * (1 - p))
-            let scale = 1 - 0.06 * p
-            card.current.view.transform = CGAffineTransform(scaleX: scale, y: scale)
+            target.view.transform = CGAffineTransform(translationX: -width * (1 - p), y: 0)
+            card.current.view.transform = .identity
         }
     }
 
