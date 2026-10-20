@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 建置未簽名的 IPA（簽名由使用者自行處理）。
 # 用法：scripts/build-unsigned-ipa.sh <版本號> <建置號>
-# 產物：build/YAAO3R-<版本號>-<建置號>-unsigned.ipa
+# 產物：build/YAAO3R-<版本號>-unsigned.ipa（版本號最後一位代表第幾次修改；建置號只寫入 CFBundleVersion）
 set -euo pipefail
 
 VERSION="${1:?需要版本號，例如 0.1.0}"
@@ -10,7 +10,7 @@ BUILD_NUMBER="${2:?需要建置號，例如 1}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD_DIR="$ROOT/build"
 ARCHIVE="$BUILD_DIR/AO3Reader.xcarchive"
-IPA_NAME="YAAO3R-${VERSION}-${BUILD_NUMBER}-unsigned.ipa"
+IPA_NAME="YAAO3R-${VERSION}-unsigned.ipa"
 
 cd "$ROOT"
 rm -rf "$BUILD_DIR"

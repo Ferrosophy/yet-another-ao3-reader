@@ -187,10 +187,14 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                 Picker("翻頁動畫", selection: layout.pageTransition) {
                     ForEach(PageTransition.allCases) { Text($0.title).tag($0) }
                 }
+                // 選單的值保持一般文字色，不隨選擇變成主題色
+                .tint(.primary)
             }
             Picker("標題列與控制列", selection: layout.chrome) {
                 ForEach(ChromeMode.allCases) { Text($0.title).tag($0) }
             }
+            // 選單的值保持一般文字色，不隨選擇變成主題色
+            .tint(.primary)
         }
     }
 
@@ -215,6 +219,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
             Picker("字體粗細", selection: layout.fontWeight) {
                 ForEach(ReaderFontWeight.allCases) { Text($0.title).tag($0) }
             }
+            .tint(.primary)
             slider("字體大小", value: layout.fontSize, in: 10...40, step: 1)
             slider("行距", value: layout.lineSpacing, in: 0...20, step: 1)
             slider("字間距", value: layout.letterSpacing, in: -1...6, step: 0.1)

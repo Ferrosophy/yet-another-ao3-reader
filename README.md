@@ -94,7 +94,7 @@ open AO3Reader.xcodeproj
 | Actions 頁面手動執行 | 輸入的版本號 | Artifact |
 | PR / 推送 main | `project.yml` 的 `MARKETING_VERSION` | Artifact |
 
-建置號（CFBundleVersion）一律為 Actions 的 `run_number`。IPA 檔名：`YAAO3R-<版本號>-<建置號>-unsigned.ipa`，App 內「設定 → 應用版本」也會顯示同樣的版本與建置號。
+建置號（CFBundleVersion）一律為 Actions 的 `run_number`。IPA 檔名：`YAAO3R-<版本號>-unsigned.ipa`，版本號最後一位代表第幾次修改（每次編譯遞增）。
 
 發佈新版本：
 
