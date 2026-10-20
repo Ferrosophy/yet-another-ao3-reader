@@ -18877,7 +18877,7 @@
         }
       }
     },
-    "升冪": {
+    "升序": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
@@ -18991,31 +18991,31 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "升幂"
+            "value": "升序"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "升冪"
+            "value": "升序"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "升冪"
+            "value": "升序"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "升冪"
+            "value": "升序"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "升冪"
+            "value": "升序"
           }
         }
       }
@@ -74647,7 +74647,7 @@
         }
       }
     },
-    "降冪": {
+    "降序": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
@@ -74683,7 +74683,7 @@
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "उतरता हुआ"
+            "value": "अवरोही"
           }
         },
         "id": {
@@ -74761,31 +74761,31 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "降幂"
+            "value": "降序"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "降冪"
+            "value": "降序"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "降冪"
+            "value": "降序"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "降冪"
+            "value": "降序"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "降冪"
+            "value": "降序"
           }
         }
       }

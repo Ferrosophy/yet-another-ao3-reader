@@ -10,6 +10,7 @@ struct FilterSheet: View {
     @Binding var query: WorkSearchQuery
     var mode: Mode = .search
     var onSearch: () -> Void
+    @Environment(AppState.self) private var app
 
     var body: some View {
         NavigationStack {
@@ -47,7 +48,9 @@ struct FilterSheet: View {
                     }
                     Picker("分級", selection: $query.rating) {
                         Text("不限").tag(WorkSearchQuery.Rating?.none)
-                        ForEach(WorkSearchQuery.Rating.allCases) { Text($0.title).tag(Optional($0)) }
+                        ForEach(WorkSearchQuery.Rating.allCases) {
+                            Text(app.tags.translation(for: $0.title) ?? $0.title).tag(Optional($0))
+                        }
                     }
                 } header: {
                     Text(mode == .search ? "作品標籤" : "包含 / 排除標籤")
@@ -55,16 +58,21 @@ struct FilterSheet: View {
                     Text("輸入至少兩個字會向 AO3 查找匹配的標籤，點選即可加入。")
                 }
 
-                Section("Archive Warnings") {
+                // 警告與分類譯成介面語言（內建固定標籤翻譯），下方保留 AO3 原文
+                Section {
                     ForEach(WorkSearchQuery.ArchiveWarning.allCases) { warning in
-                        Toggle(warning.title, isOn: membership(warning, in: $query.warnings))
+                        Toggle(isOn: membership(warning, in: $query.warnings)) { fixedTagLabel(warning.title) }
                     }
+                } header: {
+                    AO3TermLabel(title: "警告", english: "Archive Warnings")
                 }
 
-                Section("分類") {
+                Section {
                     ForEach(WorkSearchQuery.Category.allCases) { category in
-                        Toggle(category.title, isOn: membership(category, in: $query.categories))
+                        Toggle(isOn: membership(category, in: $query.categories)) { fixedTagLabel(category.title) }
                     }
+                } header: {
+                    AO3TermLabel(title: "分類", english: "Category")
                 }
 
                 if mode == .search {
@@ -104,6 +112,19 @@ struct FilterSheet: View {
                         .buttonStyle(.glassProminent)
                 }
             }
+        }
+    }
+
+    /// 固定標籤：介面語言的譯名，下方以小字附上 AO3 原文
+    @ViewBuilder
+    private func fixedTagLabel(_ title: String) -> some View {
+        if let translated = app.tags.translation(for: title) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(translated)
+                Text(verbatim: title).appFont(.caption).foregroundStyle(.secondary)
+            }
+        } else {
+            Text(verbatim: title)
         }
     }
 

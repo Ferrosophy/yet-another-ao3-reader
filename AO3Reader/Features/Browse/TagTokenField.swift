@@ -26,17 +26,19 @@ struct TagTokenField: View {
                         Button {
                             remove(token)
                         } label: {
+                            // 過長的標籤換行顯示，不超出畫面
                             HStack(spacing: 4) {
-                                Text(token).lineLimit(1)
+                                Text(token)
+                                    .multilineTextAlignment(.leading)
+                                    .fixedSize(horizontal: false, vertical: true)
                                 Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary)
                             }
                             .appFont(.footnote)
                             .padding(.horizontal, 10)
                             .padding(.vertical, 5)
-                            .fixedSize()
                         }
                         .buttonStyle(.borderless)
-                        .glassEffect(.regular.tint(.accentColor.opacity(0.15)).interactive(), in: .capsule)
+                        .glassEffect(.regular.tint(.accentColor.opacity(0.15)).interactive(), in: .rect(cornerRadius: 14))
                         .accessibilityLabel("移除 \(token)")
                     }
                 }

@@ -9,7 +9,7 @@ ZH = {
     "No Archive Warnings Apply": "無適用警告", "Graphic Depictions Of Violence": "露骨暴力描寫",
     "Major Character Death": "主要角色死亡", "Rape/Non-Con": "強暴／非自願", "Underage Sex": "未成年性行為",
     "Underage": "未成年性行為",
-    "F/F": "女女", "F/M": "男女", "M/M": "男男", "Gen": "無 CP", "Multi": "多元", "Other": "其他",
+    "F/F": "女/女", "F/M": "女/男", "M/M": "男/男", "Gen": "無 CP", "Multi": "多元", "Other": "其他",
 }
 ZH_HANS = {
     "General Audiences": "全年龄", "Teen And Up Audiences": "青少年及以上", "Mature": "成人", "Explicit": "限制级",
@@ -18,7 +18,7 @@ ZH_HANS = {
     "No Archive Warnings Apply": "无适用警告", "Graphic Depictions Of Violence": "露骨暴力描写",
     "Major Character Death": "主要角色死亡", "Rape/Non-Con": "强奸／非自愿", "Underage Sex": "未成年性行为",
     "Underage": "未成年性行为",
-    "F/F": "女女", "F/M": "男女", "M/M": "男男", "Gen": "无 CP", "Multi": "多元", "Other": "其他",
+    "F/F": "女/女", "F/M": "女/男", "M/M": "男/男", "Gen": "无 CP", "Multi": "多元", "Other": "其他",
 }
 # 分類標籤（F/F 等）在其他語言保留原文
 KEEP = {"F/F", "F/M", "M/M", "Gen"}

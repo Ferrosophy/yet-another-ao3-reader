@@ -203,6 +203,6 @@ extension WorkSearchQuery {
     enum SortDirection: String, CaseIterable, Codable, Sendable, Identifiable {
         case desc, asc
         var id: String { rawValue }
-        var title: String { self == .desc ? String(localized: "降冪") : String(localized: "升冪") }
+        var title: String { self == .desc ? String(localized: "降序") : String(localized: "升序") }
     }
 }

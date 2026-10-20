@@ -622,7 +622,9 @@
   "數值": "値",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "キーワードを入力するか、右上をタップしてAO3の詳細フィルターを使用します",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "リーダーで翻訳がオンになっているときに、これらが翻訳を表示するかどうか。タイトル、概要、メモはターゲット言語に翻訳されます。ファンダムとタグをアプリ言語に組み込みます。",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "サーバー: %@。アカウントは Jianguoyun のログインメールアドレスです。パスワードは、先ほど作成したアプリのパスワードです。"
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "サーバー: %@。アカウントは Jianguoyun のログインメールアドレスです。パスワードは、先ほど作成したアプリのパスワードです。",
+  "降序": "降順",
+  "升序": "昇順"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1247,7 +1249,9 @@
   "數值": "가치",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "키워드를 입력하거나 오른쪽 상단을 탭하여 AO3의 상세 필터를 사용하세요",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "리더에서 번역이 켜져 있을 때 번역을 표시할지 여부입니다. 제목, 요약 및 메모가 대상 언어로 번역됩니다. 팬덤과 태그를 앱 언어로 통합합니다.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "서버: %@. 계정은 Jianguoyun 로그인 이메일입니다. 비밀번호는 방금 생성한 앱 비밀번호입니다."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "서버: %@. 계정은 Jianguoyun 로그인 이메일입니다. 비밀번호는 방금 생성한 앱 비밀번호입니다.",
+  "降序": "내림차순",
+  "升序": "오름차순"
  },
  "es": {
   "載入中": "Cargando",
@@ -1872,7 +1876,9 @@
   "數值": "Valor",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Ingrese palabras clave o toque la parte superior derecha para usar los filtros detallados de AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Si estos muestran traducciones cuando la traducción está activada en el lector. El título, el resumen y las notas se traducen al idioma de destino; fandoms y etiquetas en el idioma de la aplicación.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Servidor: %@. La cuenta es su correo electrónico de inicio de sesión de Jianguoyun; la contraseña es la contraseña de la aplicación que acaba de crear."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Servidor: %@. La cuenta es su correo electrónico de inicio de sesión de Jianguoyun; la contraseña es la contraseña de la aplicación que acaba de crear.",
+  "降序": "Descendente",
+  "升序": "Ascendente"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2497,7 +2503,9 @@
   "數值": "Valeur",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Saisissez des mots-clés ou appuyez en haut à droite pour utiliser les filtres détaillés d'AO3.",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Indique si ceux-ci affichent les traductions lorsque la traduction est activée dans le lecteur. Le titre, le résumé et les notes sont traduits dans votre langue cible ; fandoms et tags dans la langue de l'application.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Serveur : %@. Le compte est votre e-mail de connexion Jianguoyun ; le mot de passe est le mot de passe de l'application que vous venez de créer."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Serveur : %@. Le compte est votre e-mail de connexion Jianguoyun ; le mot de passe est le mot de passe de l'application que vous venez de créer.",
+  "降序": "Décroissant",
+  "升序": "Ascendant"
  },
  "de": {
   "載入中": "Laden",
@@ -3122,7 +3130,9 @@
   "數值": "Wert",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Geben Sie Schlüsselwörter ein oder tippen Sie oben rechts, um die detaillierten Filter von AO3 zu verwenden",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Ob diese Übersetzungen anzeigen, wenn die Übersetzung im Reader aktiviert ist. Titel, Zusammenfassung und Notizen werden in Ihre Zielsprache übersetzt; Fandoms und Tags in die App-Sprache.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Das Konto ist Ihre Jianguoyun-Login-E-Mail-Adresse. Das Passwort ist das App-Passwort, das Sie gerade erstellt haben."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Das Konto ist Ihre Jianguoyun-Login-E-Mail-Adresse. Das Passwort ist das App-Passwort, das Sie gerade erstellt haben.",
+  "降序": "Absteigend",
+  "升序": "Aufsteigend"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3747,7 +3757,9 @@
   "數值": "Valor",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Insira palavras-chave ou toque no canto superior direito para usar os filtros detalhados do AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Se estes mostram traduções quando a tradução está ativada no leitor. Título, resumo e notas são traduzidos para o idioma de destino; fandoms e tags para o idioma do aplicativo.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Servidor: %@. A conta é o seu e-mail de login do Jianguoyun; a senha é a senha do aplicativo que você acabou de criar."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Servidor: %@. A conta é o seu e-mail de login do Jianguoyun; a senha é a senha do aplicativo que você acabou de criar.",
+  "降序": "Descendente",
+  "升序": "Ascendente"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4372,7 +4384,9 @@
   "數值": "Valore",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Inserisci le parole chiave o tocca in alto a destra per utilizzare i filtri dettagliati di AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Se mostrano le traduzioni quando la traduzione è attiva nel lettore. Titolo, riassunto e note sono tradotti nella lingua di destinazione; fandom e tag nella lingua dell'app.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. L'account è la tua email di accesso a Jianguoyun; la password è la password dell'app appena creata."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. L'account è la tua email di accesso a Jianguoyun; la password è la password dell'app appena creata.",
+  "降序": "Discendente",
+  "升序": "Ascendente"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4997,7 +5011,9 @@
   "數值": "Значение",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Введите ключевые слова или коснитесь верхнего правого угла, чтобы использовать подробные фильтры AO3.",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Покажут ли они переводы, когда перевод включен в программе чтения. Название, резюме и примечания переводятся на целевой язык; фандомы и теги на язык приложения.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Сервер: %@. Учетная запись — это ваш адрес электронной почты для входа в Jianguoyun; пароль — это только что созданный вами пароль приложения."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Сервер: %@. Учетная запись — это ваш адрес электронной почты для входа в Jianguoyun; пароль — это только что созданный вами пароль приложения.",
+  "降序": "По убыванию",
+  "升序": "восходящий"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5622,7 +5638,9 @@
   "數值": "Значення",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Введіть ключові слова або торкніться правого верхнього кута, щоб скористатися детальними фільтрами AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Чи показують переклади, коли переклад увімкнено в програмі для читання. Заголовок, резюме та примітки перекладаються на цільову мову; фандоми та теги на мову програми.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Сервер: %@. Обліковий запис — це ваша електронна адреса для входу в Jianguoyun; пароль – це пароль програми, який ви щойно створили."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Сервер: %@. Обліковий запис — це ваша електронна адреса для входу в Jianguoyun; пароль – це пароль програми, який ви щойно створили.",
+  "降序": "Спускається",
+  "升序": "Висхідний"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6247,7 +6265,9 @@
   "數值": "Wartość",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Wpisz słowa kluczowe lub dotknij prawego górnego rogu, aby skorzystać ze szczegółowych filtrów AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Określa, czy wyświetlają tłumaczenia, gdy w czytniku jest włączone tłumaczenie. Tytuł, streszczenie i notatki są tłumaczone na Twój język docelowy; fandomy i tagi na język aplikacji.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Serwer: %@. Konto to Twój adres e-mail logowania Jianguoyun; hasło to hasło do aplikacji, które właśnie utworzyłeś."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Serwer: %@. Konto to Twój adres e-mail logowania Jianguoyun; hasło to hasło do aplikacji, które właśnie utworzyłeś.",
+  "降序": "Malejąco",
+  "升序": "Rosnąco"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -6872,7 +6892,9 @@
   "數值": "Değer",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Anahtar kelimeleri girin veya AO3'ün ayrıntılı filtrelerini kullanmak için sağ üst köşeye dokunun",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Okuyucuda çeviri açıkken bunların çevirileri gösterip göstermeyeceği. Başlık, özet ve notlar hedef dilinize çevrilir; fandomları ve etiketleri uygulama diline aktarın.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Sunucu: %@. Hesap, Jianguoyun giriş e-postanızdır; şifre, az önce oluşturduğunuz uygulama şifresidir."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Sunucu: %@. Hesap, Jianguoyun giriş e-postanızdır; şifre, az önce oluşturduğunuz uygulama şifresidir.",
+  "降序": "Azalan",
+  "升序": "Artan"
  },
  "nl": {
   "載入中": "Laden",
@@ -7497,7 +7519,9 @@
   "數值": "Waarde",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Voer trefwoorden in of tik rechtsboven om de gedetailleerde filters van AO3 te gebruiken",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Of deze vertalingen tonen wanneer vertaling is ingeschakeld in de reader. Titel, samenvatting en notities worden vertaald in uw doeltaal; fandoms en tags in de app-taal.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Het account is uw Jianguoyun-inlog-e-mailadres; het wachtwoord is het app-wachtwoord dat u zojuist hebt gemaakt."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Het account is uw Jianguoyun-inlog-e-mailadres; het wachtwoord is het app-wachtwoord dat u zojuist hebt gemaakt.",
+  "降序": "Aflopend",
+  "升序": "Oplopend"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8122,7 +8146,9 @@
   "數值": "القيمة",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "أدخل الكلمات الرئيسية، أو اضغط على الجزء العلوي الأيمن لاستخدام مرشحات AO3 التفصيلية",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "ما إذا كانت هذه تظهر الترجمات عند تشغيل الترجمة في القارئ. تتم ترجمة العنوان والملخص والملاحظات إلى لغتك المستهدفة؛ fandoms والعلامات في لغة التطبيق.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "الخادم: %@. الحساب هو البريد الإلكتروني الخاص بك لتسجيل الدخول إلى Jianguoyun؛ كلمة المرور هي كلمة مرور التطبيق التي أنشأتها للتو."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "الخادم: %@. الحساب هو البريد الإلكتروني الخاص بك لتسجيل الدخول إلى Jianguoyun؛ كلمة المرور هي كلمة مرور التطبيق التي أنشأتها للتو.",
+  "降序": "تنازلي",
+  "升序": "تصاعدي"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -8747,7 +8773,9 @@
   "數值": "मूल्य",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "कीवर्ड दर्ज करें, या AO3 के विस्तृत फ़िल्टर का उपयोग करने के लिए शीर्ष दाईं ओर टैप करें",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "क्या ये रीडर में अनुवाद चालू होने पर अनुवाद दिखाते हैं। शीर्षक, सारांश और नोट्स का आपकी लक्षित भाषा में अनुवाद किया जाता है; ऐप भाषा में प्रशंसक और टैग।",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "सर्वर: %@। खाता आपका जियानगुओयुन लॉगिन ईमेल है; पासवर्ड वह ऐप पासवर्ड है जिसे आपने अभी बनाया है।"
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "सर्वर: %@। खाता आपका जियानगुओयुन लॉगिन ईमेल है; पासवर्ड वह ऐप पासवर्ड है जिसे आपने अभी बनाया है।",
+  "降序": "अवरोही",
+  "升序": "आरोही"
  },
  "id": {
   "載入中": "Memuat",
@@ -9372,7 +9400,9 @@
   "數值": "Nilai",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Masukkan kata kunci, atau ketuk kanan atas untuk menggunakan filter detail AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Apakah ini menampilkan terjemahan saat terjemahan aktif di pembaca. Judul, ringkasan dan catatan diterjemahkan ke dalam bahasa target Anda; fandom dan tag ke dalam bahasa aplikasi.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Akun tersebut adalah email login Jianguoyun Anda; kata sandinya adalah kata sandi aplikasi yang baru saja Anda buat."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Akun tersebut adalah email login Jianguoyun Anda; kata sandinya adalah kata sandi aplikasi yang baru saja Anda buat.",
+  "降序": "Menurun",
+  "升序": "Naik"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -9997,7 +10027,9 @@
   "數值": "Giá trị",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "Nhập từ khóa hoặc nhấn vào trên cùng bên phải để sử dụng bộ lọc chi tiết của AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Liệu những thông tin này có hiển thị bản dịch khi tính năng dịch được bật trong trình đọc hay không. Tiêu đề, tóm tắt và ghi chú được dịch sang ngôn ngữ mục tiêu của bạn; fandom và thẻ vào ngôn ngữ ứng dụng.",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Máy chủ: %@. Tài khoản là email đăng nhập Jianguoyun của bạn; mật khẩu là mật khẩu ứng dụng bạn vừa tạo."
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Máy chủ: %@. Tài khoản là email đăng nhập Jianguoyun của bạn; mật khẩu là mật khẩu ứng dụng bạn vừa tạo.",
+  "降序": "Giảm dần",
+  "升序": "Tăng dần"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -10622,6 +10654,8 @@
   "數值": "ความคุ้มค่า",
   "輸入關鍵字，或點右上角使用官網的詳細篩選": "ป้อนคำสำคัญหรือแตะด้านบนขวาเพื่อใช้ตัวกรองรายละเอียดของ AO3",
   "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "ไม่ว่าสิ่งเหล่านี้จะแสดงคำแปลเมื่อเปิดการแปลในโปรแกรมอ่านหรือไม่ ชื่อเรื่อง บทสรุป และหมายเหตุได้รับการแปลเป็นภาษาเป้าหมายของคุณ แฟนดอมและแท็กเป็นภาษาของแอป",
-  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "เซิร์ฟเวอร์: %@ บัญชีนี้คืออีเมลเข้าสู่ระบบ Jianguoyun ของคุณ รหัสผ่านคือรหัสผ่านสำหรับแอปที่คุณเพิ่งสร้างขึ้น"
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "เซิร์ฟเวอร์: %@ บัญชีนี้คืออีเมลเข้าสู่ระบบ Jianguoyun ของคุณ รหัสผ่านคือรหัสผ่านสำหรับแอปที่คุณเพิ่งสร้างขึ้น",
+  "降序": "จากมากไปน้อย",
+  "升序": "จากน้อยไปมาก"
  }
 }
