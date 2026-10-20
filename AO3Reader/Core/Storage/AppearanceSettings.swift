@@ -110,12 +110,37 @@ struct ReaderLayout: Codable, Hashable, Sendable {
     var lineSpacing = 6.0
     var paragraphSpacing = 14.0
     var letterSpacing = 0.0
+    /// 舊版的左右 / 上下邊距；四邊分開設定後作為未設定時的預設值
     var horizontalMargin = 20.0
     /// 翻頁模式的上下邊距
     var verticalMargin = 28.0
     var mode: ReadingMode = .scroll
     var pageTransition: PageTransition = .curl
     var chrome: ChromeMode = .floating
+    // 四邊分開的邊距（Optional 讓舊設定可正常解碼）
+    var leftMarginValue: Double?
+    var rightMarginValue: Double?
+    var topMarginValue: Double?
+    var bottomMarginValue: Double?
+
+    var leftMargin: Double {
+        get { leftMarginValue ?? horizontalMargin }
+        set { leftMarginValue = newValue }
+    }
+    var rightMargin: Double {
+        get { rightMarginValue ?? horizontalMargin }
+        set { rightMarginValue = newValue }
+    }
+    /// 翻頁模式的上邊距
+    var topMargin: Double {
+        get { topMarginValue ?? verticalMargin }
+        set { topMarginValue = newValue }
+    }
+    /// 翻頁模式的下邊距
+    var bottomMargin: Double {
+        get { bottomMarginValue ?? verticalMargin }
+        set { bottomMarginValue = newValue }
+    }
 }
 
 /// 譯文顯示外觀。
@@ -289,6 +314,10 @@ final class AppearanceSettings {
     static func defaultLayout(for mode: ReadingMode) -> ReaderLayout {
         var layout = ReaderLayout()
         if mode == .paged { layout.verticalMargin = 16 }
+        layout.leftMargin = layout.horizontalMargin
+        layout.rightMargin = layout.horizontalMargin
+        layout.topMargin = layout.verticalMargin
+        layout.bottomMargin = layout.verticalMargin
         return layout
     }
 

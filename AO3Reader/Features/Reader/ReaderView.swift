@@ -247,7 +247,8 @@ struct ReaderView: View {
             }
             // 上方段落高度變化（譯文載入）時，以頂端段落為錨點保持位置
             .scrollTargetLayout()
-            .padding(.horizontal, layout.horizontalMargin)
+            .padding(.leading, layout.leftMargin)
+            .padding(.trailing, layout.rightMargin)
             .foregroundStyle(style.textColor.map { AnyShapeStyle($0) } ?? AnyShapeStyle(.primary))
             // 點擊切換控制列時導覽列與狀態列會顯示 / 隱藏，安全區域改變會讓系統自動調整捲動內距，
             // 正文因此上下跳動、打斷捲動；停用自動調整，邊距只由下方的 contentMargins 決定
@@ -431,8 +432,10 @@ struct ReaderView: View {
     /// 翻頁模式的邊距：以裝置安全區域為基準；控制列鎖定時另外保留導覽列與控制列的空間
     private var pageMargins: PageMargins {
         PageMargins(
-            horizontal: layout.horizontalMargin,
-            vertical: layout.verticalMargin,
+            left: layout.leftMargin,
+            right: layout.rightMargin,
+            top: layout.topMargin,
+            bottom: layout.bottomMargin,
             extraTop: layout.chrome == .pinned ? 44 : 0,
             extraBottom: layout.chrome == .pinned ? 64 : 0
         )
@@ -451,7 +454,8 @@ struct ReaderView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.top, 8)
             }
-            .padding(.horizontal, insets.left)
+            .padding(.leading, insets.left)
+            .padding(.trailing, insets.right)
             .contentShape(.rect)
             .onTapGesture { withAnimation { toggleChrome() } }
         }

@@ -194,15 +194,17 @@ enum PagedTextBuilder {
 /// 翻頁模式的頁面邊距。上下邊距以裝置安全區域（瀏海 / 動態島、Home 指示條）為基準，
 /// 不受導覽列顯示與否影響，因此叫出控制列時正文不會上下移動。
 struct PageMargins: Equatable {
-    var horizontal: CGFloat
-    var vertical: CGFloat
+    var left: CGFloat
+    var right: CGFloat
+    var top: CGFloat
+    var bottom: CGFloat
     /// 控制列鎖定（常駐）時額外保留的空間
     var extraTop: CGFloat = 0
     var extraBottom: CGFloat = 0
 
     func insets(safeArea: UIEdgeInsets) -> UIEdgeInsets {
-        UIEdgeInsets(top: safeArea.top + vertical + extraTop, left: horizontal,
-                     bottom: safeArea.bottom + vertical + extraBottom, right: horizontal)
+        UIEdgeInsets(top: safeArea.top + top + extraTop, left: left,
+                     bottom: safeArea.bottom + bottom + extraBottom, right: right)
     }
 }
 
@@ -439,7 +441,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     /// 目前頁碼（含資訊頁；有資訊頁時第 0 頁為資訊頁）
     private var currentIndex = 0
     private var transition: PageTransition = .curl
-    private var margins = PageMargins(horizontal: 20, vertical: 20)
+    private var margins = PageMargins(left: 20, right: 20, top: 20, bottom: 20)
     private var background: PageBackground = .clear
     private var laidOutSize: CGSize = .zero
     private var laidOutSignature: Int?

@@ -648,7 +648,11 @@
   "最近 30 天": "過去 30 日間",
   "更早": "以前",
   "下載中斷：%@，稍後自動繼續": "ダウンロードが中断されました: %@。自動的に再開されます。",
-  "正在逐章下載原文 %lld/%lld": "チャプター%lld/%lldをダウンロード中"
+  "正在逐章下載原文 %lld/%lld": "チャプター%lld/%lldをダウンロード中",
+  "左邊距": "左マージン",
+  "右邊距": "右マージン",
+  "上邊距": "上マージン",
+  "下邊距": "下マージン"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1299,7 +1303,11 @@
   "最近 30 天": "지난 30일",
   "更早": "이전",
   "下載中斷：%@，稍後自動繼續": "다운로드가 중단되었습니다: %@. 자동으로 재개됩니다.",
-  "正在逐章下載原文 %lld/%lld": "챕터 %lld/%lld 다운로드 중"
+  "正在逐章下載原文 %lld/%lld": "챕터 %lld/%lld 다운로드 중",
+  "左邊距": "왼쪽 여백",
+  "右邊距": "오른쪽 여백",
+  "上邊距": "상단 여백",
+  "下邊距": "하단 여백"
  },
  "es": {
   "載入中": "Cargando",
@@ -1950,7 +1958,11 @@
   "最近 30 天": "Últimos 30 días",
   "更早": "Antes",
   "下載中斷：%@，稍後自動繼續": "Descarga interrumpida: %@. Se reanudará automáticamente.",
-  "正在逐章下載原文 %lld/%lld": "Descargando capítulos %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Descargando capítulos %lld/%lld",
+  "左邊距": "Margen izquierdo",
+  "右邊距": "Margen derecho",
+  "上邊距": "Margen superior",
+  "下邊距": "Margen inferior"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2601,7 +2613,11 @@
   "最近 30 天": "30 derniers jours",
   "更早": "Plus tôt",
   "下載中斷：%@，稍後自動繼續": "Téléchargement interrompu : %@. Il reprendra automatiquement.",
-  "正在逐章下載原文 %lld/%lld": "Téléchargement des chapitres %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Téléchargement des chapitres %lld/%lld",
+  "左邊距": "Marge gauche",
+  "右邊距": "Marge droite",
+  "上邊距": "Marge supérieure",
+  "下邊距": "Marge inférieure"
  },
  "de": {
   "載入中": "Laden",
@@ -3252,7 +3268,11 @@
   "最近 30 天": "Letzte 30 Tage",
   "更早": "Früher",
   "下載中斷：%@，稍後自動繼續": "Download unterbrochen: %@. Es wird automatisch fortgesetzt.",
-  "正在逐章下載原文 %lld/%lld": "Kapitel %lld/%lld herunterladen"
+  "正在逐章下載原文 %lld/%lld": "Kapitel %lld/%lld herunterladen",
+  "左邊距": "Linker Rand",
+  "右邊距": "Rechter Rand",
+  "上邊距": "Oberer Rand",
+  "下邊距": "Unterer Rand"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3903,7 +3923,11 @@
   "最近 30 天": "Últimos 30 dias",
   "更早": "Anteriormente",
   "下載中斷：%@，稍後自動繼續": "Download interrompido: %@. Ele será retomado automaticamente.",
-  "正在逐章下載原文 %lld/%lld": "Baixando capítulos %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Baixando capítulos %lld/%lld",
+  "左邊距": "Margem Esquerda",
+  "右邊距": "Margem Direita",
+  "上邊距": "Margem superior",
+  "下邊距": "Margem inferior"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4554,7 +4578,11 @@
   "最近 30 天": "Ultimi 30 giorni",
   "更早": "In precedenza",
   "下載中斷：%@，稍後自動繼續": "Download interrotto: %@. Riprenderà automaticamente.",
-  "正在逐章下載原文 %lld/%lld": "Download dei capitoli %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Download dei capitoli %lld/%lld",
+  "左邊距": "Margine sinistro",
+  "右邊距": "Margine destro",
+  "上邊距": "Margine superiore",
+  "下邊距": "Margine inferiore"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5205,7 +5233,11 @@
   "最近 30 天": "Последние 30 дней",
   "更早": "Ранее",
   "下載中斷：%@，稍後自動繼續": "Загрузка прервана: %@. Он возобновится автоматически.",
-  "正在逐章下載原文 %lld/%lld": "Загрузка глав %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Загрузка глав %lld/%lld",
+  "左邊距": "Левое поле",
+  "右邊距": "Правое поле",
+  "上邊距": "Верхняя маржа",
+  "下邊距": "Нижнее поле"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5856,7 +5888,11 @@
   "最近 30 天": "Останні 30 днів",
   "更早": "Раніше",
   "下載中斷：%@，稍後自動繼續": "Завантаження перервано: %@. Він відновиться автоматично.",
-  "正在逐章下載原文 %lld/%lld": "Завантаження розділів %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Завантаження розділів %lld/%lld",
+  "左邊距": "Ліве поле",
+  "右邊距": "Праве поле",
+  "上邊距": "Верхнє поле",
+  "下邊距": "Нижнє поле"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6507,7 +6543,11 @@
   "最近 30 天": "Ostatnie 30 dni",
   "更早": "Wcześniej",
   "下載中斷：%@，稍後自動繼續": "Pobieranie przerwane: %@. Zostanie wznowione automatycznie.",
-  "正在逐章下載原文 %lld/%lld": "Pobieranie rozdziałów %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Pobieranie rozdziałów %lld/%lld",
+  "左邊距": "Lewy margines",
+  "右邊距": "Prawy margines",
+  "上邊距": "Górny margines",
+  "下邊距": "Dolny margines"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7158,7 +7198,11 @@
   "最近 30 天": "Son 30 Gün",
   "更早": "Daha önce",
   "下載中斷：%@，稍後自動繼續": "İndirme kesintiye uğradı: %@. Otomatik olarak devam edecektir.",
-  "正在逐章下載原文 %lld/%lld": "%lld/%lld bölümleri indiriliyor"
+  "正在逐章下載原文 %lld/%lld": "%lld/%lld bölümleri indiriliyor",
+  "左邊距": "Sol Kenar Boşluğu",
+  "右邊距": "Sağ Kenar Boşluğu",
+  "上邊距": "Üst Marj",
+  "下邊距": "Alt Marj"
  },
  "nl": {
   "載入中": "Laden",
@@ -7809,7 +7853,11 @@
   "最近 30 天": "Laatste 30 dagen",
   "更早": "Eerder",
   "下載中斷：%@，稍後自動繼續": "Download onderbroken: %@. Het wordt automatisch hervat.",
-  "正在逐章下載原文 %lld/%lld": "Hoofdstukken downloaden %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Hoofdstukken downloaden %lld/%lld",
+  "左邊距": "Linkermarge",
+  "右邊距": "Rechter marge",
+  "上邊距": "Bovenste marge",
+  "下邊距": "Onderste marge"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8460,7 +8508,11 @@
   "最近 30 天": "آخر 30 يومًا",
   "更早": "في وقت سابق",
   "下載中斷：%@，稍後自動繼續": "تمت مقاطعة التنزيل: %@. وسوف تستأنف تلقائيا.",
-  "正在逐章下載原文 %lld/%lld": "تنزيل الفصول %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "تنزيل الفصول %lld/%lld",
+  "左邊距": "الهامش الأيسر",
+  "右邊距": "الهامش الأيمن",
+  "上邊距": "الهامش العلوي",
+  "下邊距": "الهامش السفلي"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -9111,7 +9163,11 @@
   "最近 30 天": "पिछले 30 दिन",
   "更早": "पहले",
   "下載中斷：%@，稍後自動繼續": "डाउनलोड बाधित: %@। यह स्वचालित रूप से फिर से शुरू हो जाएगा.",
-  "正在逐章下載原文 %lld/%lld": "अध्याय डाउनलोड हो रहा है %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "अध्याय डाउनलोड हो रहा है %lld/%lld",
+  "左邊距": "वाम हाशिया",
+  "右邊距": "सही मार्जिन",
+  "上邊距": "शीर्ष मार्जिन",
+  "下邊距": "निचला मार्जिन"
  },
  "id": {
   "載入中": "Memuat",
@@ -9762,7 +9818,11 @@
   "最近 30 天": "30 Hari Terakhir",
   "更早": "Sebelumnya",
   "下載中斷：%@，稍後自動繼續": "Pengunduhan terputus: %@. Ini akan dilanjutkan secara otomatis.",
-  "正在逐章下載原文 %lld/%lld": "Mengunduh bab %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Mengunduh bab %lld/%lld",
+  "左邊距": "Margin Kiri",
+  "右邊距": "Margin Kanan",
+  "上邊距": "Margin Atas",
+  "下邊距": "Margin Bawah"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10413,7 +10473,11 @@
   "最近 30 天": "30 ngày qua",
   "更早": "Trước đó",
   "下載中斷：%@，稍後自動繼續": "Tải xuống bị gián đoạn: %@. Nó sẽ tự động tiếp tục.",
-  "正在逐章下載原文 %lld/%lld": "Đang tải xuống các chương %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "Đang tải xuống các chương %lld/%lld",
+  "左邊距": "Lề trái",
+  "右邊距": "Lề phải",
+  "上邊距": "Ký quỹ trên cùng",
+  "下邊距": "Lề dưới"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -11064,6 +11128,10 @@
   "最近 30 天": "30 วันที่ผ่านมา",
   "更早": "ก่อนหน้านี้",
   "下載中斷：%@，稍後自動繼續": "การดาวน์โหลดถูกขัดจังหวะ: %@ มันจะดำเนินการต่อโดยอัตโนมัติ",
-  "正在逐章下載原文 %lld/%lld": "กำลังดาวน์โหลดบท %lld/%lld"
+  "正在逐章下載原文 %lld/%lld": "กำลังดาวน์โหลดบท %lld/%lld",
+  "左邊距": "ขอบซ้าย",
+  "右邊距": "ขอบขวา",
+  "上邊距": "ขอบบนสุด",
+  "下邊距": "ขอบล่าง"
  }
 }

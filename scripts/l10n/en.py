@@ -649,6 +649,10 @@ EN = {
 "更早": "Earlier",
 "下載中斷：%@，稍後自動繼續": "Download interrupted: %@. It will resume automatically.",
 "正在逐章下載原文 %lld/%lld": "Downloading chapters %lld/%lld",
+"左邊距": "Left Margin",
+"右邊距": "Right Margin",
+"上邊距": "Top Margin",
+"下邊距": "Bottom Margin",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}
