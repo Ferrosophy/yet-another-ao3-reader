@@ -152,6 +152,8 @@ final class OfflineManager {
 
     /// App 啟動時繼續上次未完成的作品（下載、翻譯或匯出中斷）
     func resumePending() {
+        // 離線頁只顯示離線內容：舊版「刪除離線內容但保留項目」的作品直接移除
+        for (id, record) in records where record.contentDeleted { bookshelf.remove(id) }
         reconcile()
         let target = settings.config.targetLanguageCode
         for (id, record) in records where !record.contentDeleted && activity[id] == nil {
@@ -292,9 +294,38 @@ final class OfflineManager {
         }
     }
 
+    /// 先處理還沒有原文的作品（全部原文都離線後才開始翻譯），翻譯較慢且較容易失敗，不會擋住其他作品的下載
     private func nextID() -> Int? {
         guard !queue.isEmpty else { return nil }
+        if let index = queue.firstIndex(where: needsDownload) { return queue.remove(at: index) }
         return queue.removeFirst()
+    }
+
+    private func needsDownload(_ id: Int) -> Bool {
+        records[id]?.downloadedAt == nil || refresh.contains(id)
+    }
+
+    /// 下載整部作品；網路錯誤或 AO3 限流時稍候重試（最多 3 次）
+    private func downloadWork(_ id: Int) async throws -> WorkDetail {
+        var attempt = 0
+        while true {
+            do {
+                return try await makeClient().work(id: id)
+            } catch let error as AO3Error {
+                attempt += 1
+                switch error {
+                case .rateLimited(let after) where attempt < 3:
+                    try await Task.sleep(for: .seconds(min(Double(after ?? "") ?? 30, 120)))
+                case .http(let code) where code >= 500 && attempt < 3:
+                    try await Task.sleep(for: .seconds(5 * attempt))
+                default:
+                    throw error
+                }
+            } catch let error as URLError where attempt < 2 && error.code != .cancelled {
+                attempt += 1
+                try await Task.sleep(for: .seconds(5 * attempt))
+            }
+        }
     }
 
     private func process(_ id: Int) async {
@@ -304,23 +335,33 @@ final class OfflineManager {
             return
         }
         do {
-            // 1. 原文
-            var work = Self.loadWork(id)
-            if work == nil || refresh.contains(id) {
+            // 1. 原文：下載後先匯出原文版本，再排到佇列後面等待翻譯
+            if Self.loadWork(id) == nil || refresh.contains(id) {
                 activity[id] = .downloading
-                let detail = try await makeClient().work(id: id)
+                let detail = try await downloadWork(id)
                 try Task.checkCancellation()
                 let downloaded = OfflineWork(detail: detail)
                 try write(downloaded, to: Self.workURL(id))
-                work = downloaded
                 refresh.remove(id)
                 records[id, default: OfflineRecord()].chapterCount = detail.chapters.count
                 records[id]?.downloadedAt = downloaded.downloadedAt
                 records[id]?.lastCheckedAt = Date()
                 records[id]?.hasUpdate = false
                 saveRecords()
+                activity[id] = .exporting
+                try await export(downloaded)
+                updateSize(id)
+                if autoTranslate {
+                    // 翻譯在所有原文都下載完之後進行
+                    activity[id] = .queued
+                    if !queue.contains(id) { queue.append(id) }
+                } else {
+                    activity[id] = nil
+                }
+                saveRecords()
+                return
             }
-            guard let work else { return }
+            guard let work = Self.loadWork(id) else { return }
 
             // 2. 翻譯（失敗時仍匯出原文，狀態顯示翻譯錯誤，可重試）
             var outcome: OfflineActivity?

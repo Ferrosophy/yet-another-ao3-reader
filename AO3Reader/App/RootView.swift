@@ -6,7 +6,7 @@ enum StartTab: String, CaseIterable, Identifiable {
     case bookshelf, browse
 
     var id: String { rawValue }
-    var title: String { self == .bookshelf ? String(localized: "書架") : String(localized: "瀏覽") }
+    var title: String { self == .bookshelf ? String(localized: "離線") : String(localized: "瀏覽") }
 
     static let storageKey = "app.startTab"
 }
@@ -41,7 +41,7 @@ struct RootView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            Tab("書架", systemImage: "books.vertical", value: TabID.bookshelf) {
+            Tab("離線", systemImage: "arrow.down.circle", value: TabID.bookshelf) {
                 NavigationStack(path: path(.bookshelf)) {
                     BookshelfView()
                         .withWorkNavigation()

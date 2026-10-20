@@ -625,6 +625,19 @@ EN = {
 "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. The account is your Jianguoyun login email; the password is the app password you just created.",
 "降序": "Descending",
 "升序": "Ascending",
+"離線": "Offline",
+"沒有離線作品": "No Offline Works",
+"在閱讀頁點擊離線保存按鈕，或在作品列表中長按作品，即可離線保存。會先下載原文，再自動翻譯。": "Tap the save-offline button in the reader, or long-press a work in any list, to save it offline. The original is downloaded first, then translated automatically.",
+"移除離線": "Remove Offline Copy",
+"離線保存": "Save Offline",
+"離線保存的作品會先下載原文，再自動翻譯，並以選擇的格式保存。": "Works saved offline are downloaded first, then translated automatically and saved in the chosen format.",
+"重新下載": "Download Again",
+"選取的作品會離線保存：先下載原文，再自動翻譯，並以選擇的格式保存。篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 %lld 部。": "Selected works are saved offline: the originals are downloaded first, then translated automatically and saved in the chosen format. Filters match AO3's work search, so you can combine fandom, rating, tags, word count, language and more. Select up to %lld works at a time.",
+"已離線保存：%lld 部": "Saved offline: %lld works",
+"可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Import font files from Files or a cloud drive. They're only used in this app; swipe left to delete.",
+"離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Works saved offline are downloaded into the app: originals first, then translations once all downloads finish. EPUB is a bilingual edition made by the app; other formats use AO3's own files. Exported files are in the Files app under YAAO3R › Bookshelf. You'll be asked before a paid translation API is used. After changing the target language, long-press a work in Offline and choose “Translate Again”.",
+"離線清單同步": "Offline List Sync",
+"同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Syncs the offline list (including custom covers), reading progress, reading time, and appearance and translation preferences. Each device downloads the offline files itself. API keys, imported fonts and background images are not included.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

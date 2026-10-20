@@ -35,7 +35,11 @@ struct AO3Client: Sendable {
     /// 與網頁登入（WKWebView）使用同一個 UA，避免 Cloudflare clearance cookie 失效。
     static let userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1"
 
-    static let session: URLSession = {
+    static let session = makeSession(timeout: 30)
+    /// 下載整部作品用：長篇作品的完整內容頁 AO3 可能要很久才開始回應
+    static let longSession = makeSession(timeout: 180)
+
+    private static func makeSession(timeout: TimeInterval) -> URLSession {
         let config = URLSessionConfiguration.default
         config.httpCookieStorage = .shared
         config.httpShouldSetCookies = true
@@ -44,9 +48,9 @@ struct AO3Client: Sendable {
             "User-Agent": userAgent,
             "Accept": "text/html,application/xhtml+xml",
         ]
-        config.timeoutIntervalForRequest = 30
+        config.timeoutIntervalForRequest = timeout
         return URLSession(configuration: config)
-    }()
+    }
 
     func url(_ path: String, query: [URLQueryItem] = []) -> URL {
         var components = URLComponents(url: baseURL.appending(path: path), resolvingAgainstBaseURL: false)!
@@ -76,8 +80,8 @@ struct AO3Client: Sendable {
         return (String(decoding: data, as: UTF8.self), http)
     }
 
-    private func send(_ request: URLRequest) async throws -> String {
-        let (data, response) = try await Self.session.data(for: request)
+    private func send(_ request: URLRequest, session: URLSession = AO3Client.session) async throws -> String {
+        let (data, response) = try await session.data(for: request)
         try validate(response as! HTTPURLResponse, data: data)
         return String(decoding: data, as: UTF8.self)
     }
@@ -115,10 +119,13 @@ struct AO3Client: Sendable {
     }
 
     func work(id: Int) async throws -> WorkDetail {
-        let html = try await get("/works/\(id)", query: [
+        var request = URLRequest(url: url("/works/\(id)", query: [
             URLQueryItem(name: "view_full_work", value: "true"),
             URLQueryItem(name: "view_adult", value: "true"),
-        ])
+        ]))
+        // 長篇作品的完整內容頁 AO3 可能要很久才開始回應，放寬逾時（一般頁面為 30 秒）
+        request.timeoutInterval = 180
+        let html = try await send(request, session: Self.longSession)
         return try AO3Parser.workDetail(html: html, id: id)
     }
 

@@ -3,29 +3,21 @@ import WebKit
 
 /// 可匯入字體的雲端硬碟。在網頁中登入並下載 TTF / OTF 檔即自動匯入。
 enum CloudDrive: String, CaseIterable, Identifiable {
-    case googleDrive, oneDrive, pikPak, baidu, quark, aliyun
+    case googleDrive, baidu
 
     var id: String { rawValue }
 
     var title: String {
         switch self {
         case .googleDrive: "Google Drive"
-        case .oneDrive: "OneDrive"
-        case .pikPak: "PikPak"
         case .baidu: String(localized: "百度網盤")
-        case .quark: String(localized: "夸克網盤")
-        case .aliyun: String(localized: "阿里雲盤")
         }
     }
 
     var url: URL {
         switch self {
         case .googleDrive: URL(string: "https://drive.google.com/drive/my-drive")!
-        case .oneDrive: URL(string: "https://onedrive.live.com/")!
-        case .pikPak: URL(string: "https://mypikpak.com/drive/all")!
         case .baidu: URL(string: "https://pan.baidu.com/")!
-        case .quark: URL(string: "https://pan.quark.cn/")!
-        case .aliyun: URL(string: "https://www.alipan.com/drive")!
         }
     }
 }

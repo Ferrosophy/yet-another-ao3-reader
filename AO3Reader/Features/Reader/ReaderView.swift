@@ -81,8 +81,8 @@ struct ReaderView: View {
                             app.offline.add(detail.summaryInfo)
                         }
                     } label: {
-                        Label(app.bookshelf.contains(detail.id) ? LocalizedStringKey("移出書架") : "加入書架",
-                              systemImage: app.bookshelf.contains(detail.id) ? "books.vertical.fill" : "books.vertical")
+                        Label(app.bookshelf.contains(detail.id) ? LocalizedStringKey("移除離線") : "離線保存",
+                              systemImage: app.bookshelf.contains(detail.id) ? "arrow.down.circle.fill" : "arrow.down.circle")
                     }
                 }
                 if dataSource == .local, let detail = model.detail {

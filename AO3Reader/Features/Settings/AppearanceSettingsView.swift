@@ -551,7 +551,7 @@ struct FontPickerView: View {
                 } header: {
                     Text("已匯入")
                 } footer: {
-                    Text("可從「檔案」或雲端硬碟（Google Drive、OneDrive、PikPak、百度網盤、夸克網盤、阿里雲盤）匯入字體檔，僅在本 App 內使用；向左滑可刪除。")
+                    Text("可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。")
                 }
             }
 

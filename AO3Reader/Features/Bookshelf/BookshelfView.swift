@@ -1,7 +1,7 @@
 import PhotosUI
 import SwiftUI
 
-/// 書架：本機收藏的作品，可切換列表（卡片）或網格（封面）顯示，支援多種排序與手動排序。
+/// 離線：離線保存的作品（只顯示本機內容），可切換列表或網格（封面）顯示，支援多種排序與手動排序。
 struct BookshelfView: View {
     @Environment(AppState.self) private var app
     @AppStorage("bookshelf.layout") private var layout: BookshelfLayout = .list
@@ -20,9 +20,9 @@ struct BookshelfView: View {
         Group {
             if app.bookshelf.items.isEmpty {
                 ContentUnavailableView {
-                    Label("書架是空的", systemImage: "books.vertical")
+                    Label("沒有離線作品", systemImage: "arrow.down.circle")
                 } description: {
-                    Text("在閱讀頁點擊書架或下載按鈕，或在作品列表中長按作品，即可加入書架。書架上的作品會自動下載原文與譯文，可離線閱讀。")
+                    Text("在閱讀頁點擊離線保存按鈕，或在作品列表中長按作品，即可離線保存。會先下載原文，再自動翻譯。")
                 }
             } else if layout == .list {
                 list
@@ -30,14 +30,9 @@ struct BookshelfView: View {
                 grid
             }
         }
-        .navigationTitle("書架")
+        .navigationTitle("離線")
         .toolbar {
             ToolbarItemGroup(placement: .topBarLeading) {
-                NavigationLink {
-                    ReadingStatsView()
-                } label: {
-                    Label("閱讀時長", systemImage: "chart.bar.xaxis")
-                }
                 NavigationLink {
                     DownloadsView()
                 } label: {
@@ -100,13 +95,14 @@ struct BookshelfView: View {
             ForEach(items) { item in
                 NavigationLink(value: WorkRoute(id: item.id, title: item.work.title)) {
                     VStack(alignment: .leading, spacing: 6) {
-                        WorkRow(work: item.work)
+                        // 離線列表不翻譯卡片內容（避免整頁同時翻譯造成卡頓）
+                        WorkRow(work: item.work, translationActive: false)
                         OfflineStatusView(id: item.id)
                     }
                 }
                 .contextMenu { itemMenu(item) }
                 .swipeActions {
-                    Button("移出書架", systemImage: "trash", role: .destructive) { app.bookshelf.remove(item.id) }
+                    Button("移除", systemImage: "trash", role: .destructive) { app.bookshelf.remove(item.id) }
                 }
             }
             .onMove(perform: moveHandler)
@@ -163,7 +159,7 @@ struct BookshelfView: View {
         if item.coverUpdatedAt != nil {
             Button("恢復預設封面", systemImage: "arrow.uturn.backward") { app.bookshelf.removeCover(for: item.id) }
         }
-        Button("移出書架", systemImage: "trash", role: .destructive) { app.bookshelf.remove(item.id) }
+        Button("移除", systemImage: "trash", role: .destructive) { app.bookshelf.remove(item.id) }
     }
 }
 

@@ -18,7 +18,7 @@ extension AO3Client {
                       directory: URL? = nil, fileName: String? = nil) async throws -> URL {
         let path = href ?? "/downloads/\(id)/work.\(format.rawValue)"
         guard let url = URL(string: path, relativeTo: baseURL)?.absoluteURL else { throw AO3Error.invalidSource }
-        let (data, response) = try await Self.session.data(from: url)
+        let (data, response) = try await Self.longSession.data(from: url)
         let status = (response as? HTTPURLResponse)?.statusCode ?? 0
         guard (200..<300).contains(status), !data.isEmpty else { throw AO3Error.http(status) }
 

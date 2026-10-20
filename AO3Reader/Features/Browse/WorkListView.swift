@@ -1,47 +1,17 @@
 import UIKit
 import SwiftUI
 
-/// 作品卡片列表，捲到底自動載入下一頁。
+/// 作品列表：左右滑動的卡片，滑到最後幾張時自動載入下一頁。
+/// 開啟翻譯時只翻譯目前顯示的那張卡片，避免整個列表同時排入大量翻譯而卡頓。
 struct WorkListView: View {
     let model: PagedWorksModel
-    /// 列表頂部、跟著內容一起捲動的區塊（例如首頁的榜單切換）
-    var header: AnyView?
-    /// 指定時可向左滑移除（本機書籤、稍後閱讀、閱讀紀錄）
+    /// 指定時長按卡片可移除（本機書籤、稍後閱讀、閱讀紀錄）
     var onDelete: ((WorkSummary) -> Void)?
+    /// 目前顯示的卡片；推入作品頁再返回時保留位置
+    @State private var currentIndex = 0
 
     var body: some View {
-        List {
-            if let header {
-                header
-                    .listRowSeparator(.hidden)
-                    .listRowBackground(Color.clear)
-            }
-            Section {
-                ForEach(model.works) { work in
-                    NavigationLink(value: WorkRoute(id: work.id, title: work.title)) {
-                        WorkRow(work: work)
-                    }
-                    .contextMenu {
-                        BookshelfMenuButton(work: work)
-                    }
-                    .swipeActions {
-                        if let onDelete {
-                            Button("移除", systemImage: "trash", role: .destructive) { onDelete(work) }
-                        }
-                    }
-                    .task { await model.loadMoreIfNeeded(current: work) }
-                }
-            }
-            .listSectionSeparator(.hidden)
-            // 第一頁載入時由下方 overlay 顯示大圖示，這裡只在載入下一頁時顯示
-            if model.isLoading, !model.works.isEmpty {
-                AO3LoadingView(compact: true)
-                    .listRowSeparator(.hidden)
-                    .listRowBackground(Color.clear)
-            }
-        }
-        .listStyle(.plain)
-        .overlay {
+        Group {
             if let error = model.error, model.works.isEmpty {
                 ContentUnavailableView {
                     Label("載入失敗", systemImage: "exclamationmark.triangle")
@@ -51,17 +21,47 @@ struct WorkListView: View {
                     Button("重試") { Task { await model.reload() } }
                         .buttonStyle(.glassProminent)
                 }
-            } else if model.isLoading, model.works.isEmpty {
-                AO3LoadingView()
-            } else if model.hasLoaded, !model.isLoading, model.works.isEmpty {
-                ContentUnavailableView("沒有作品", systemImage: "books.vertical")
+            } else if model.works.isEmpty {
+                if model.isLoading || !model.hasLoaded {
+                    AO3LoadingView()
+                } else {
+                    ContentUnavailableView("沒有作品", systemImage: "books.vertical")
+                }
+            } else {
+                WorkCardPager(works: model.works, currentIndex: $currentIndex, onDelete: onDelete) { last in
+                    await model.loadMoreIfNeeded(current: last)
+                }
+                .padding(.top, 8)
             }
         }
-        .refreshable { await model.reload() }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 SummaryTranslationToggle()
             }
+        }
+    }
+}
+
+/// 左右翻頁的作品卡片（瀏覽頁與所有作品列表共用）；只有目前的卡片會翻譯。
+struct WorkCardPager: View {
+    let works: [WorkSummary]
+    @Binding var currentIndex: Int
+    var onDelete: ((WorkSummary) -> Void)?
+    /// 接近最後幾張時呼叫，參數為目前最後一部作品
+    var loadMore: (WorkSummary) async -> Void
+
+    var body: some View {
+        TabView(selection: $currentIndex) {
+            ForEach(Array(works.enumerated()), id: \.element.id) { index, work in
+                BrowseCard(work: work, isCurrent: index == currentIndex, onDelete: onDelete)
+                    .tag(index)
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .task(id: "\(currentIndex)-\(works.count)") {
+            if currentIndex >= works.count, !works.isEmpty { currentIndex = works.count - 1 }
+            if currentIndex >= works.count - 3, let last = works.last { await loadMore(last) }
         }
     }
 }
@@ -121,9 +121,9 @@ struct BookshelfMenuButton: View {
 
     var body: some View {
         if app.bookshelf.contains(work.id) {
-            Button("移出書架", systemImage: "books.vertical.fill", role: .destructive) { app.bookshelf.remove(work.id) }
+            Button("移除離線", systemImage: "arrow.down.circle.fill", role: .destructive) { app.bookshelf.remove(work.id) }
         } else {
-            Button("加入書架", systemImage: "books.vertical") { app.offline.add(work) }
+            Button("離線保存", systemImage: "arrow.down.circle") { app.offline.add(work) }
         }
     }
 }

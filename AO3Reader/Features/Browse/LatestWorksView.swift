@@ -208,18 +208,8 @@ struct LatestWorksView: View {
                         .frame(maxHeight: .infinity)
                 }
             } else {
-                TabView(selection: $currentIndex) {
-                    ForEach(Array(model.works.enumerated()), id: \.element.id) { index, work in
-                        BrowseCard(work: work, isCurrent: index == currentIndex)
-                            .tag(index)
-                    }
-                }
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .onChange(of: currentIndex) {
-                    // 接近最後幾張時載入下一頁
-                    if currentIndex >= model.works.count - 3, let last = model.works.last {
-                        Task { await model.loadMoreIfNeeded(current: last) }
-                    }
+                WorkCardPager(works: model.works, currentIndex: $currentIndex) { last in
+                    await model.loadMoreIfNeeded(current: last)
                 }
             }
         } else {
@@ -333,6 +323,7 @@ struct BrowseFilterSheet: View {
 struct BrowseCard: View {
     let work: WorkSummary
     let isCurrent: Bool
+    var onDelete: ((WorkSummary) -> Void)?
 
     var body: some View {
         NavigationLink(value: WorkRoute(id: work.id, title: work.title)) {
@@ -347,7 +338,12 @@ struct BrowseCard: View {
             .contentShape(.rect(cornerRadius: 24))
         }
         .buttonStyle(.plain)
-        .contextMenu { BookshelfMenuButton(work: work) }
+        .contextMenu {
+            BookshelfMenuButton(work: work)
+            if let onDelete {
+                Button("移除", systemImage: "trash", role: .destructive) { onDelete(work) }
+            }
+        }
         .padding(.horizontal, 16)
         .padding(.bottom, 16)
     }

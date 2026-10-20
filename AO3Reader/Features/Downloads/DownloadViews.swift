@@ -14,7 +14,7 @@ struct DownloadsView: View {
         List {
             if active.isEmpty && done.isEmpty {
                 ContentUnavailableView("沒有下載項目", systemImage: "arrow.down.circle",
-                                       description: Text("加入書架的作品會自動下載原文與譯文，並以選擇的格式保存。"))
+                                       description: Text("離線保存的作品會先下載原文，再自動翻譯，並以選擇的格式保存。"))
                     .listRowBackground(Color.clear)
             }
             if !active.isEmpty {
@@ -138,8 +138,8 @@ struct OfflineMenu: View {
         case .awaitingConsent:
             Button("使用付費 API 翻譯", systemImage: "checkmark.circle") { offline.consent(id) }
         case nil:
-            if record?.downloadedAt == nil || record?.contentDeleted == true {
-                Button("下載離線內容", systemImage: "arrow.down.circle") { offline.update(id) }
+            if record?.downloadedAt == nil {
+                Button("重新下載", systemImage: "arrow.down.circle") { offline.update(id) }
             }
         }
         if offline.hasOfflineCopy(id) {
@@ -162,7 +162,6 @@ struct OfflineMenu: View {
                     }
                 }
             }
-            Button("刪除離線內容", systemImage: "trash", role: .destructive) { offline.deleteContent(id) }
         }
     }
 }
@@ -223,7 +222,7 @@ struct BatchDownloadView: View {
                     LabeledContent("下載列表", value: activeCount > 0 ? String(localized: "\(activeCount) 項進行中") : "")
                 }
             } footer: {
-                Text("選取的作品會加入書架，自動下載原文與譯文並以選擇的格式保存。篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 \(limit) 部。")
+                Text("選取的作品會離線保存：先下載原文，再自動翻譯，並以選擇的格式保存。篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 \(limit) 部。")
             }
 
             if let model {
@@ -337,7 +336,7 @@ struct BatchDownloadView: View {
     private func download() {
         let chosen = (model?.works ?? []).filter { selection.contains($0.id) }
         for work in chosen { app.offline.add(work, format: format ?? defaultFormat) }
-        message = String(localized: "已加入書架：\(chosen.count) 部")
+        message = String(localized: "已離線保存：\(chosen.count) 部")
         selection = []
     }
 }
