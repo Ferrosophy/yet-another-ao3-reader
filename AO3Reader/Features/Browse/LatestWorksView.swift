@@ -58,6 +58,8 @@ struct LatestWorksView: View {
     @State private var languages = LatestWorksView.cachedLanguages()
     @State private var showsLanguages = false
     @State private var showsGuide = false
+    /// 目前顯示的卡片
+    @State private var currentIndex = 0
 
     /// 特殊語言值：所有中文分支（普通話、粵語、吳語、閩南語、客家話、文言…）
     static let chineseAll = "@zh-all"
@@ -71,27 +73,27 @@ struct LatestWorksView: View {
     }
 
     var body: some View {
-        Group {
-            if let model { WorkListView(model: model, header: AnyView(boardPickers)) } else { AO3LoadingView() }
+        VStack(spacing: 0) {
+            // 固定在頂部的榜單與篩選，不隨卡片捲動
+            filterBar
+            cards
         }
         .navigationTitle(board == .latest ? "最新作品" : "\(board.title) 排行")
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("AO3 說明", systemImage: "info.circle") { showsGuide = true }
             }
             ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    showsLanguages = true
-                } label: {
-                    Label(filterSummary, systemImage: "line.3.horizontal.decrease.circle")
-                }
+                SummaryTranslationToggle()
             }
         }
         .sheet(isPresented: $showsGuide) {
             AO3GuideView()
         }
         .sheet(isPresented: $showsLanguages) {
-            BrowseFilterSheet(languages: languages, selection: $languageID, rating: $ratingID, chineseAll: Self.chineseAll)
+            BrowseFilterSheet(languages: languages, selection: $languageID, rating: $ratingID, chineseAll: Self.chineseAll,
+                              showsRating: false)
                 .presentationDetents([.medium, .large])
         }
         .task {
@@ -121,6 +123,7 @@ struct LatestWorksView: View {
             } else {
                 model = PagedWorksModel(loader: loader)
             }
+            currentIndex = 0
             await model?.reload()
         }
     }
@@ -131,25 +134,101 @@ struct LatestWorksView: View {
         return codes.count > 1 ? codes : ["zh", "yue", "wuu", "nan", "hak", "lzh"]
     }
 
-    private var boardPickers: some View {
-        VStack(spacing: 8) {
+    private var filterBar: some View {
+        VStack(spacing: 10) {
             Picker("榜單", selection: $board) {
                 ForEach(Board.allCases) { Text($0.title).tag($0) }
             }
             .pickerStyle(.segmented)
-            if board != .latest {
-                Picker("時間範圍", selection: $period) {
-                    ForEach(Period.allCases) { Text($0.title).tag($0) }
+            HStack(spacing: 8) {
+                Menu {
+                    Picker("分級", selection: $ratingID) {
+                        Text("全部分級").tag(0)
+                        ForEach(WorkSearchQuery.Rating.allCases) { rating in
+                            Text(app.tags.translation(for: rating.title) ?? rating.title).tag(rating.rawValue)
+                        }
+                    }
+                } label: {
+                    chip(ratingName, systemImage: "shield.lefthalf.filled")
                 }
-                .pickerStyle(.segmented)
+                Button {
+                    showsLanguages = true
+                } label: {
+                    chip(languageName, systemImage: "globe")
+                }
+                if board != .latest {
+                    Menu {
+                        Picker("時間範圍", selection: $period) {
+                            ForEach(Period.allCases) { Text($0.title).tag($0) }
+                        }
+                    } label: {
+                        chip(period.title, systemImage: "calendar")
+                    }
+                }
+                Spacer(minLength: 0)
+                if let model, !model.works.isEmpty {
+                    Text(verbatim: "\(min(currentIndex + 1, model.works.count)) / \(model.works.count)")
+                        .appFont(.caption)
+                        .monospacedDigit()
+                        .foregroundStyle(.secondary)
+                }
             }
+            .buttonStyle(.glass)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+    }
+
+    private func chip(_ title: String, systemImage: String) -> some View {
+        Label(title, systemImage: systemImage)
+            .appFont(.subheadline)
+            .lineLimit(1)
+    }
+
+    /// 左右滑動的作品卡片；只有目前顯示的卡片會翻譯
+    @ViewBuilder
+    private var cards: some View {
+        if let model {
+            if let error = model.error, model.works.isEmpty {
+                ContentUnavailableView {
+                    Label("載入失敗", systemImage: "exclamationmark.triangle")
+                } description: {
+                    Text(error)
+                } actions: {
+                    Button("重試") { Task { await model.reload() } }
+                        .buttonStyle(.glassProminent)
+                }
+                .frame(maxHeight: .infinity)
+            } else if model.works.isEmpty {
+                if model.isLoading || !model.hasLoaded {
+                    AO3LoadingView()
+                } else {
+                    ContentUnavailableView("沒有作品", systemImage: "books.vertical")
+                        .frame(maxHeight: .infinity)
+                }
+            } else {
+                TabView(selection: $currentIndex) {
+                    ForEach(Array(model.works.enumerated()), id: \.element.id) { index, work in
+                        BrowseCard(work: work, isCurrent: index == currentIndex)
+                            .tag(index)
+                    }
+                }
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                .onChange(of: currentIndex) {
+                    // 接近最後幾張時載入下一頁
+                    if currentIndex >= model.works.count - 3, let last = model.works.last {
+                        Task { await model.loadMoreIfNeeded(current: last) }
+                    }
+                }
+            }
+        } else {
+            AO3LoadingView()
         }
     }
 
-    /// 篩選按鈕的文字：語言，加上已選的分級
-    private var filterSummary: String {
-        guard let rating = WorkSearchQuery.Rating(rawValue: ratingID) else { return languageName }
-        return "\(languageName) · \(app.tags.translation(for: rating.title) ?? rating.title)"
+    private var ratingName: String {
+        guard let rating = WorkSearchQuery.Rating(rawValue: ratingID) else { return String(localized: "全部分級") }
+        return app.tags.translation(for: rating.title) ?? rating.title
     }
 
     private var languageName: String {
@@ -173,6 +252,8 @@ struct BrowseFilterSheet: View {
     /// 0 為全部分級，其餘為 AO3 的分級 ID
     @Binding var rating: Int
     var chineseAll: String?
+    /// 瀏覽頁的分級已有獨立選單，只顯示語言
+    var showsRating = true
     @Environment(AppState.self) private var app
     @Environment(\.dismiss) private var dismiss
     @State private var search = ""
@@ -187,7 +268,7 @@ struct BrowseFilterSheet: View {
     var body: some View {
         NavigationStack {
             List {
-                if search.isEmpty {
+                if search.isEmpty, showsRating {
                     Section("分級") {
                         ratingRow(0, title: String(localized: "全部分級"), english: nil)
                         ForEach(WorkSearchQuery.Rating.allCases) { item in
@@ -209,7 +290,7 @@ struct BrowseFilterSheet: View {
                 }
             }
             .searchable(text: $search, prompt: "搜尋語言")
-            .navigationTitle("篩選")
+            .navigationTitle(showsRating ? "篩選" : "作品語言")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) { Button("完成") { dismiss() } }
@@ -244,5 +325,28 @@ struct BrowseFilterSheet: View {
                 if selection == code { Image(systemName: "checkmark").foregroundStyle(.tint) }
             }
         }
+    }
+}
+
+/// 瀏覽頁的一張作品卡片：顯示完整簡介，內容過長時可在卡片內上下捲動；點擊進入作品。
+struct BrowseCard: View {
+    let work: WorkSummary
+    let isCurrent: Bool
+
+    var body: some View {
+        NavigationLink(value: WorkRoute(id: work.id, title: work.title)) {
+            ScrollView {
+                WorkRow(work: work, translationActive: isCurrent, compact: false)
+                    .padding(20)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .scrollIndicators(.hidden)
+            .background(Color(uiColor: .secondarySystemGroupedBackground), in: .rect(cornerRadius: 24))
+            .contentShape(.rect(cornerRadius: 24))
+        }
+        .buttonStyle(.plain)
+        .contextMenu { BookshelfMenuButton(work: work) }
+        .padding(.horizontal, 16)
+        .padding(.bottom, 16)
     }
 }

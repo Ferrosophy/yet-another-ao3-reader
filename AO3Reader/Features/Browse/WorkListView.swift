@@ -65,7 +65,8 @@ struct CardTranslationView: View {
     let key: String
     let text: String
     let font: Font.TextStyle
-    let lineLimit: Int
+    /// nil 為不限行數
+    let lineLimit: Int?
     @Environment(AppState.self) private var app
 
     var body: some View {
@@ -135,6 +136,10 @@ struct SummaryTranslationToggle: View {
 
 struct WorkRow: View {
     let work: WorkSummary
+    /// 是否翻譯這張卡片（瀏覽頁只翻譯目前顯示的卡片）
+    var translationActive = true
+    /// 列表中簡介只顯示前 3 行；瀏覽頁的大卡片顯示完整簡介
+    var compact = true
     @Environment(AppState.self) private var app
     @AppStorage(TranslationVisibility.titleKey) private var showsTitleTranslation = true
     @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
@@ -145,7 +150,7 @@ struct WorkRow: View {
 
     private static let summaryLineHeight = UIFont.preferredFont(forTextStyle: .callout).lineHeight
 
-    private var translates: Bool { app.summaries.isEnabled }
+    private var translates: Bool { app.summaries.isEnabled && translationActive }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -189,13 +194,13 @@ struct WorkRow: View {
                 // 卡片只顯示前 3 行；翻譯使用完整簡介，再以與原文相同的行數顯示
                 Text(work.summary)
                     .appFont(.callout)
-                    .lineLimit(3)
+                    .lineLimit(compact ? 3 : nil)
                     .onGeometryChange(for: Int.self, of: {
                         min(max(Int(($0.size.height / Self.summaryLineHeight).rounded()), 1), 3)
                     }) { summaryLines = $0 }
                 if translates, showsSummaryTranslation {
                     CardTranslationView(key: SummaryTranslator.summaryKey(work.id), text: work.summary,
-                                        font: .callout, lineLimit: summaryLines)
+                                        font: .callout, lineLimit: compact ? summaryLines : nil)
                 }
             }
             // 統計項目數量與長度不定（語言名稱可能很長），用自動換行排列，避免擠壓成直排
