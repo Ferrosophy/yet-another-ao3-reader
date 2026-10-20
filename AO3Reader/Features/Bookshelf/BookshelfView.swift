@@ -125,14 +125,16 @@ struct BookshelfView: View {
 
     private var grid: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 104, maximum: 160), spacing: 16)], spacing: 20) {
+            // 封面頂端對齊；標題固定保留兩行高度，下載狀態以封面右上角的小標記顯示
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 104, maximum: 160), spacing: 16, alignment: .top)], spacing: 20) {
                 ForEach(items) { item in
                     NavigationLink(value: WorkRoute(id: item.id, title: item.work.title)) {
                         VStack(alignment: .leading, spacing: 6) {
                             BookCoverView(work: item.work, image: app.bookshelf.covers[item.id])
+                                .overlay(alignment: .topTrailing) { OfflineBadge(id: item.id) }
                             Text(item.work.title)
                                 .appFont(.footnote, weight: .medium)
-                                .lineLimit(2)
+                                .lineLimit(2, reservesSpace: true)
                                 .multilineTextAlignment(.leading)
                             if let author = item.work.authors.first {
                                 Text(author)
@@ -140,8 +142,6 @@ struct BookshelfView: View {
                                     .foregroundStyle(.secondary)
                                     .lineLimit(1)
                             }
-                            OfflineStatusView(id: item.id)
-                                .lineLimit(1)
                         }
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                     }
@@ -155,7 +155,9 @@ struct BookshelfView: View {
 
     @ViewBuilder
     private func itemMenu(_ item: BookshelfItem) -> some View {
-        Section("離線內容") {
+        // 長按時在選單標題顯示詳細的離線狀態
+        Section(OfflineStatusView.describe(id: item.id, offline: app.offline,
+                                           targetLanguageCode: app.translation.config.targetLanguageCode)) {
             OfflineMenu(id: item.id, shared: $shared)
         }
         Button("更換封面", systemImage: "photo") {

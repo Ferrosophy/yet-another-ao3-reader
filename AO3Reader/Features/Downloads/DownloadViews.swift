@@ -89,8 +89,10 @@ struct OfflineStatusView: View {
         }
     }
 
-    private var text: String {
-        let offline = app.offline
+    private var text: String { Self.describe(id: id, offline: app.offline, targetLanguageCode: app.translation.config.targetLanguageCode) }
+
+    /// 離線狀態的文字說明（列表、卡片與長按選單共用）
+    static func describe(id: Int, offline: OfflineManager, targetLanguageCode: String) -> String {
         switch offline.activity[id] {
         case .queued: return String(localized: "等待中")
         case .downloading: return String(localized: "正在下載原文")
@@ -110,7 +112,7 @@ struct OfflineStatusView: View {
         if offline.isSameLanguage(record.originalLanguage) {
             parts.append(String(localized: "原文即目標語言"))
         } else if let language = record.translatedLanguage {
-            if language != app.translation.config.targetLanguageCode {
+            if language != targetLanguageCode {
                 parts.append(String(localized: "譯文為\(TranslationLanguage.named(language).displayName)"))
             } else if !record.isTranslationComplete {
                 parts.append(String(localized: "已翻譯 \(record.translatedCount)/\(record.translatableCount)"))
@@ -343,5 +345,39 @@ struct BatchDownloadView: View {
         for work in chosen { app.offline.add(work, format: format ?? defaultFormat) }
         message = String(localized: "已離線保存：\(chosen.count) 部")
         selection = []
+    }
+}
+
+/// 網格封面右上角的離線狀態標記：已離線為綠色勾，處理中為進度圈，暫停或等待為灰色，失敗為紅色驚嘆號。
+/// 詳細資訊在長按選單中顯示。
+struct OfflineBadge: View {
+    let id: Int
+    @Environment(AppState.self) private var app
+
+    var body: some View {
+        let offline = app.offline
+        Group {
+            switch offline.activity[id] {
+            case .some(let activity) where activity.isActive:
+                ProgressView().controlSize(.mini).tint(.white)
+                    .frame(width: 20, height: 20)
+                    .background(.black.opacity(0.45), in: .circle)
+            case .failed:
+                symbol("exclamationmark.circle.fill", .red)
+            case .paused, .waitingForWiFi, .awaitingConsent:
+                symbol("pause.circle.fill", .gray)
+            default:
+                if offline.hasOfflineCopy(id) { symbol("checkmark.circle.fill", .green) }
+            }
+        }
+        .padding(6)
+    }
+
+    private func symbol(_ name: String, _ color: Color) -> some View {
+        Image(systemName: name)
+            .font(.system(size: 18, weight: .semibold))
+            .symbolRenderingMode(.palette)
+            .foregroundStyle(.white, color)
+            .shadow(color: .black.opacity(0.25), radius: 2, y: 1)
     }
 }
