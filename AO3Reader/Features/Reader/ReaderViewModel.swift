@@ -21,7 +21,40 @@ final class ReaderViewModel {
     private(set) var loadError: String?
     private(set) var requiresLogin = false
     private(set) var chapterIndex = 0
-    private(set) var translations: [Paragraph.ID: ParagraphTranslation] = [:]
+    /// 所有段落的譯文。不直接被畫面觀察（避免一段譯文送達就重繪整章）：
+    /// 捲動模式每段只觀察自己的 `slot`；翻頁模式使用節流更新的 `renderedTranslations`。
+    @ObservationIgnored private(set) var translations: [Paragraph.ID: ParagraphTranslation] = [:] {
+        didSet {
+            for (id, slot) in slots where slot.value != translations[id] { slot.value = translations[id] }
+            scheduleRender()
+        }
+    }
+    /// 翻頁模式排版用的譯文快照，最多每 0.5 秒更新一次（每次更新都要重新分頁整章）
+    private(set) var renderedTranslations: [Paragraph.ID: ParagraphTranslation] = [:]
+    /// renderedTranslations 的版本號，用於翻頁內容的快取簽章（不必每次雜湊整個字典）
+    private(set) var renderVersion = 0
+    @ObservationIgnored private var slots: [Paragraph.ID: TranslationSlot] = [:]
+    @ObservationIgnored private var renderTask: Task<Void, Never>?
+
+    /// 單一段落的譯文狀態（畫面只觀察需要的段落）
+    func slot(_ id: Paragraph.ID) -> TranslationSlot {
+        if let slot = slots[id] { return slot }
+        let slot = TranslationSlot()
+        slot.value = translations[id]
+        slots[id] = slot
+        return slot
+    }
+
+    private func scheduleRender() {
+        guard renderTask == nil else { return }
+        renderTask = Task { [weak self] in
+            try? await Task.sleep(for: .milliseconds(500))
+            guard let self else { return }
+            self.renderTask = nil
+            self.renderedTranslations = self.translations
+            self.renderVersion += 1
+        }
+    }
     private(set) var translationError: String?
     /// 翻譯服務要求驗證（網頁驗證碼或 Apple 語言下載）時由閱讀頁彈出視窗
     var challenge: TranslationChallenge?

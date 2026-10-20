@@ -219,9 +219,10 @@ struct ReaderView: View {
                     .onAppear { model.headerAppeared() }
                     .onDisappear { model.headerDisappeared() }
                 ForEach(chapter.paragraphs) { paragraph in
-                    BilingualParagraphView(
+                    // 每段只觀察自己的譯文，譯文送達時不會重繪整章
+                    SlotParagraphView(
+                        slot: model.slot(paragraph.id),
                         paragraph: paragraph,
-                        translation: model.translations[paragraph.id],
                         showsTranslation: model.isTranslationOn,
                         mode: model.displayMode,
                         style: style,
@@ -232,8 +233,8 @@ struct ReaderView: View {
                         if model.isTranslationOn, paragraph.isTranslatable {
                             Button("重新翻譯此段", systemImage: "arrow.clockwise") { model.retranslate(paragraph) }
                             Button("複製原文", systemImage: "doc.on.doc") { UIPasteboard.general.string = paragraph.text }
-                            if case .done(let text) = model.translations[paragraph.id] {
-                                Button("複製譯文", systemImage: "doc.on.doc") { UIPasteboard.general.string = text }
+                            Button("複製譯文", systemImage: "doc.on.doc") {
+                                if case .done(let text) = model.slot(paragraph.id).value { UIPasteboard.general.string = text }
                             }
                         }
                     }
@@ -280,7 +281,7 @@ struct ReaderView: View {
         hasher.combine(model.chapterIndex)
         hasher.combine(model.isTranslationOn)
         hasher.combine(model.displayMode)
-        hasher.combine(model.translations)
+        hasher.combine(model.renderVersion)
         hasher.combine(layout)
         hasher.combine(appearance.config.translation)
         hasher.combine(appearance.config.readerFont)
@@ -305,7 +306,7 @@ struct ReaderView: View {
                               title: AO3Term.label(String(localized: "結尾作者註"), "End Notes"),
                               text: model.chapterIndex == detail.chapters.count - 1 ? detail.endNotes : ""),
                 ].filter { !$0.text.isEmpty },
-                translations: model.translations,
+                translations: model.renderedTranslations,
                 showsTranslation: model.isTranslationOn,
                 mode: model.displayMode,
                 style: style,
@@ -475,7 +476,7 @@ struct ReaderView: View {
     @ViewBuilder
     private func metaTranslation(_ id: String, visible: Bool = true, font: UIFont) -> some View {
         if model.isTranslationOn, visible {
-            ImmersiveTranslationView(translation: model.translations[id], style: style, font: font) {
+            SlotTranslationView(slot: model.slot(id), style: style, font: font) {
                 model.retryMeta(id)
             }
         }
@@ -757,7 +758,7 @@ struct ChapterListSheet: View {
                             Text(chapter.title)
                             // 開啟翻譯時，譯文顯示在原標題下方
                             if model.isTranslationOn {
-                                switch model.translations[ReaderViewModel.chapterTitleID(chapter.id)] {
+                                switch model.slot(ReaderViewModel.chapterTitleID(chapter.id)).value {
                                 case .done(let translated):
                                     Text(translated).appFont(.subheadline).foregroundStyle(.secondary)
                                 case .loading:
@@ -840,5 +841,32 @@ struct ParagraphRetranslateSheet: View {
                 }
             }
         }
+    }
+}
+
+/// 只觀察單一段落譯文的段落視圖（捲動模式）
+private struct SlotParagraphView: View {
+    let slot: TranslationSlot
+    let paragraph: Paragraph
+    let showsTranslation: Bool
+    let mode: BilingualDisplayMode
+    let style: ReaderStyle
+    var onRetry: () -> Void
+
+    var body: some View {
+        BilingualParagraphView(paragraph: paragraph, translation: slot.value, showsTranslation: showsTranslation,
+                               mode: mode, style: style, onRetry: onRetry)
+    }
+}
+
+/// 只觀察單一項目譯文的沉浸式譯文（標題、簡介、作者註）
+private struct SlotTranslationView: View {
+    let slot: TranslationSlot
+    let style: ReaderStyle
+    let font: UIFont
+    var onRetry: () -> Void
+
+    var body: some View {
+        ImmersiveTranslationView(translation: slot.value, style: style, font: font, onRetry: onRetry)
     }
 }

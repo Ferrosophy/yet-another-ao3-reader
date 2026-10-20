@@ -89,6 +89,8 @@ struct OfflineRecord: Codable, Sendable {
     var exportedChapterCount: Int?
     /// 使用者刪除了離線內容（保留書架項目，不再自動下載）
     var contentDeleted = false
+    /// 作品的原文語言（AO3 顯示名稱，例如 English）；與目標語言相同時不翻譯
+    var originalLanguage: String?
 
     var isTranslationComplete: Bool { translatableCount > 0 && translatedCount >= translatableCount }
 }

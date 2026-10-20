@@ -162,6 +162,7 @@ final class OfflineManager {
         let target = settings.config.targetLanguageCode
         for (id, record) in records where !record.contentDeleted && activity[id] == nil {
             let unfinishedTranslation = autoTranslate && !record.isTranslationComplete
+                && !isSameLanguage(record.originalLanguage)
                 && (record.translatedLanguage == nil || record.translatedLanguage == target)
             if record.downloadedAt == nil || record.exportFileName == nil || unfinishedTranslation {
                 enqueue(id)
@@ -391,6 +392,27 @@ final class OfflineManager {
         return false
     }
 
+    /// 作品的原文語言（AO3 的語言名稱）是否就是目前的目標語言（中文不分繁簡）
+    func isSameLanguage(_ languageName: String?) -> Bool {
+        guard let name = languageName?.trimmingCharacters(in: .whitespaces), !name.isEmpty else { return false }
+        let code = (LatestWorksView.cachedLanguages().first { $0.name == name }?.code ?? Self.commonLanguageCodes[name])?
+            .lowercased()
+        guard let code else { return false }
+        let target = settings.config.targetLanguageCode.lowercased()
+        let base = String(target.prefix { $0 != "-" })
+        // AO3 的葡萄牙語代碼為 ptBR / ptPT
+        return code == base || code == target.replacingOccurrences(of: "-", with: "")
+            || (base.count == 2 && code.count == 4 && code.hasPrefix(base))
+    }
+
+    /// 語言清單尚未從 AO3 讀取時使用的常見語言
+    private static let commonLanguageCodes: [String: String] = [
+        "English": "en", "中文-普通话 國語": "zh", "日本語": "ja", "한국어": "ko", "Español": "es", "Français": "fr",
+        "Deutsch": "de", "Русский": "ru", "Italiano": "it", "Português brasileiro": "ptBR", "Português europeu": "ptPT",
+        "Polski": "pl", "Türkçe": "tr", "Tiếng Việt": "vi", "ไทย": "th", "Bahasa Indonesia": "id", "العربية": "ar",
+        "Українська": "uk", "Nederlands": "nl",
+    ]
+
     /// 可以稍後自動重試的錯誤：連線問題或 AO3 限流
     private static func isRetryable(_ error: Error) -> Bool {
         if case AO3Error.rateLimited = error { return true }
@@ -441,7 +463,9 @@ final class OfflineManager {
                 activity[id] = .exporting
                 try await export(downloaded)
                 updateSize(id)
-                if autoTranslate {
+                records[id]?.originalLanguage = downloaded.info?.language
+                // 原文已經是目標語言時只下載原文，不翻譯
+                if autoTranslate, !isSameLanguage(downloaded.info?.language) {
                     // 翻譯在所有原文都下載完之後進行
                     activity[id] = .queued
                     if !queue.contains(id) { queue.append(id) }
@@ -491,6 +515,13 @@ final class OfflineManager {
         let target = settings.config.targetLanguageCode
         var translations = Self.loadTranslations(id) ?? OfflineTranslations(targetLanguageCode: target)
         records[id]?.translatableCount = paragraphs.count
+        records[id]?.originalLanguage = work.info?.language
+
+        // 原文與目標語言相同：不需要翻譯
+        if isSameLanguage(work.info?.language) {
+            records[id]?.translatedCount = 0
+            return nil
+        }
 
         // 已有其他語言的譯文時不自動覆蓋，由使用者手動「重新翻譯」
         guard autoTranslate, translations.targetLanguageCode == target else {

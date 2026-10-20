@@ -19020,6 +19020,149 @@
         }
       }
     },
+    "原文即目標語言": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بالفعل في اللغة الهدف"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bereits in der Zielsprache"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Already in target language"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ya en el idioma de destino"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déjà dans la langue cible"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "लक्ष्य भाषा में पहले से ही"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sudah dalam bahasa target"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Già nella lingua di destinazione"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すでにターゲット言語で書かれています"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이미 대상 언어로 되어 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al in de doeltaal"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Już w języku docelowym"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Já está no idioma alvo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уже на целевом языке"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เป็นภาษาเป้าหมายแล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaten hedef dilde"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уже на цільовій мові"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã có trong ngôn ngữ đích"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文即目标语言"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文即目標語言"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文即目標語言"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文即目標語言"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文即目標語言"
+          }
+        }
+      }
+    },
     "原文與譯文": {
       "extractionState": "manual",
       "localizations": {

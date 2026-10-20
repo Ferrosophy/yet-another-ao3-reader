@@ -107,7 +107,9 @@ struct OfflineStatusView: View {
         var parts = [String(localized: "已離線")]
         if let format = record.format { parts.append(format.title) }
         if let size = offline.sizes[id] { parts.append(ByteCountFormatter.string(fromByteCount: size, countStyle: .file)) }
-        if let language = record.translatedLanguage {
+        if offline.isSameLanguage(record.originalLanguage) {
+            parts.append(String(localized: "原文即目標語言"))
+        } else if let language = record.translatedLanguage {
             if language != app.translation.config.targetLanguageCode {
                 parts.append(String(localized: "譯文為\(TranslationLanguage.named(language).displayName)"))
             } else if !record.isTranslationComplete {
