@@ -42,3 +42,6 @@ _T = {
 }
 OVERRIDES = {lang: {k: v.split('|')[i] for k, v in _T.items()} for i, lang in enumerate(LANGS)}
 assert all(len(v.split('|')) == len(LANGS) for v in _T.values())
+
+# 簡體中文的個別用語
+OVERRIDES['zh-Hans'] = {"保存QR code到相簿": "保存二维码到相册"}

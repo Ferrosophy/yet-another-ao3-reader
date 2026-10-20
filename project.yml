@@ -45,6 +45,7 @@ targets:
         INFOPLIST_KEY_CFBundleDisplayName: YAAO3R
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: 選擇閱讀頁面的背景圖片
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: 保存 QR code 到相簿
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         # 下載的作品檔案顯示在「檔案」App 的「我的 iPhone › YAAO3R」

@@ -20,6 +20,7 @@ struct SettingsView: View {
     }()
 
     @State private var showsClearConfirm = false
+    @State private var showsDonate = false
     @AppStorage(StartTab.storageKey) private var startTab: StartTab = .browse
     @AppStorage(OfflineManager.autoTranslateKey) private var offlineTranslates = true
     @AppStorage(OfflineManager.wifiOnlyKey) private var offlineWiFiOnly = false
@@ -58,6 +59,14 @@ struct SettingsView: View {
                     openURL(Self.feedbackURL)
                 } label: {
                     Text("意見回饋")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                Button {
+                    showsDonate = true
+                } label: {
+                    Text("投喂開發者")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .contentShape(.rect)
                 }
@@ -121,6 +130,7 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("設定")
+        .sheet(isPresented: $showsDonate) { DonateView() }
         .confirmationDialog("刪除所有 API Key？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
             Button("刪除", role: .destructive) { KeychainStore.deleteAll() }
         }

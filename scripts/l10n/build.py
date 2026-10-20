@@ -27,6 +27,7 @@ for k in keys:
     zh_tw[k] = tw
     zh_hk[k] = apply(tw, HK_FIX)
 
+zh_hans.update(OVERRIDES.get('zh-Hans', {}))
 locales = {'en': EN, 'zh-Hans': zh_hans, 'zh-Hant': zh_tw, 'zh-Hant-TW': zh_tw, 'zh-Hant-HK': zh_hk, 'zh-Hant-MO': zh_hk}
 for lang, table in mt.items():
     merged = dict(table); merged.update(OVERRIDES.get(lang, {}))

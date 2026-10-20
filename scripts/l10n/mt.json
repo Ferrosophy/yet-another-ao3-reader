@@ -604,7 +604,14 @@
   "如何使用 WebDAV 同步": "WebDAVと同期する方法",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "同期する他のデバイスにも同じ設定を入力します。 Nextcloud や Synology NAS などの WebDAV サービスも機能します。",
   "滾動與翻頁模式各自保存排版。": "スクロール モードとページ モードでは、独自のレイアウト設定が保持されます。",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "「自動」では、テキストの色から明るい色合いが作成され、読書の背景と溶け合います。"
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "「自動」では、テキストの色から明るい色合いが作成され、読書の背景と溶け合います。",
+  "喜歡這個項目嗎？": "このプロジェクトを楽しんでいますか?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "少しでも気が楽になったら、遠慮なく私にコーヒーを買ってきてください。あなたのサポートは、プロジェクトの開発と維持に役立ちます。 ☕",
+  "保存QR code到相簿": "QRコードを写真に保存",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "写真にアクセスできません。 YAAO3R が設定で写真を追加できるようにします。",
+  "已保存到相簿": "写真に保存しました",
+  "無法保存：%@": "保存できませんでした: %@",
+  "投喂開發者": "開発者をサポートする"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1211,7 +1218,14 @@
   "如何使用 WebDAV 同步": "WebDAV와 동기화하는 방법",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "동기화할 다른 장치에도 동일한 설정을 입력하세요. Nextcloud 또는 Synology NAS와 같은 모든 WebDAV 서비스도 작동합니다.",
   "滾動與翻頁模式各自保存排版。": "스크롤 및 페이지 모드는 자체 레이아웃 설정을 유지합니다.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"자동\"은 읽기 배경과 혼합되는 텍스트 색상에서 밝은 색조를 만듭니다."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"자동\"은 읽기 배경과 혼합되는 텍스트 색상에서 밝은 색조를 만듭니다.",
+  "喜歡這個項目嗎？": "이 프로젝트가 마음에 드시나요?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "일이 조금 더 편해졌으면, 나에게 커피 한 잔 사주세요. 귀하의 지원은 프로젝트를 계속 개발하고 유지하는 데 도움이 됩니다. 찻잔",
+  "保存QR code到相簿": "사진에 QR 코드 저장",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "사진에 액세스할 수 없습니다. YAAO3R이 설정에서 사진을 추가하도록 허용하세요.",
+  "已保存到相簿": "포토에 저장됨",
+  "無法保存：%@": "저장할 수 없습니다: %@",
+  "投喂開發者": "개발자 지원"
  },
  "es": {
   "載入中": "Cargando",
@@ -1818,7 +1832,14 @@
   "如何使用 WebDAV 同步": "Cómo sincronizar con WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Ingrese la misma configuración en sus otros dispositivos para sincronizar. Cualquier servicio WebDAV también funciona, como Nextcloud o Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Los modos de desplazamiento y paginación mantienen sus propias configuraciones de diseño.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"Auto\" crea un matiz claro a partir del color del texto que se mezcla con el fondo de lectura."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"Auto\" crea un matiz claro a partir del color del texto que se mezcla con el fondo de lectura.",
+  "喜歡這個項目嗎？": "¿Disfrutas de este proyecto?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Si te ha facilitado un poco las cosas, no dudes en invitarme a un café. Su apoyo ayuda a mantener el proyecto desarrollado y mantenido. ☕",
+  "保存QR code到相簿": "Guardar código QR en fotos",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Sin acceso a Fotos. Permita que YAAO3R agregue fotos en Configuración.",
+  "已保存到相簿": "Guardado en fotos",
+  "無法保存：%@": "No se pudo guardar: %@",
+  "投喂開發者": "Apoye al desarrollador"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2425,7 +2446,14 @@
   "如何使用 WebDAV 同步": "Comment synchroniser avec WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Entrez les mêmes paramètres sur vos autres appareils à synchroniser. N'importe quel service WebDAV fonctionne également, comme Nextcloud ou Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Les modes de défilement et paginé conservent leurs propres paramètres de mise en page.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "« Auto » crée une légère teinte à partir de la couleur du texte qui se fond dans l'arrière-plan de lecture."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "« Auto » crée une légère teinte à partir de la couleur du texte qui se fond dans l'arrière-plan de lecture.",
+  "喜歡這個項目嗎？": "Vous appréciez ce projet ?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Si cela vous a rendu les choses un peu plus faciles, n'hésitez pas à m'offrir un café. Votre soutien aide à maintenir le projet développé et maintenu. ☕",
+  "保存QR code到相簿": "Enregistrer le code QR dans les photos",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Pas d'accès aux photos. Autorisez YAAO3R à ajouter des photos dans Paramètres.",
+  "已保存到相簿": "Enregistré dans les photos",
+  "無法保存：%@": "Impossible d'enregistrer : %@",
+  "投喂開發者": "Soutenir le développeur"
  },
  "de": {
   "載入中": "Laden",
@@ -3032,7 +3060,14 @@
   "如何使用 WebDAV 同步": "So synchronisieren Sie mit WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Geben Sie auf Ihren anderen zu synchronisierenden Geräten dieselben Einstellungen ein. Jeder WebDAV-Dienst funktioniert ebenfalls, z. B. Nextcloud oder Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Der Scroll- und der Seitenmodus behalten ihre eigenen Layouteinstellungen.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "„Auto“ erzeugt einen hellen Farbton aus der Textfarbe, der mit dem Lesehintergrund verschmilzt."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "„Auto“ erzeugt einen hellen Farbton aus der Textfarbe, der mit dem Lesehintergrund verschmilzt.",
+  "喜歡這個項目嗎？": "Gefällt Ihnen dieses Projekt?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Wenn es Ihnen die Sache etwas erleichtert hat, können Sie mir gerne einen Kaffee spendieren. Ihre Unterstützung trägt dazu bei, dass das Projekt weiterentwickelt und gepflegt wird. ☕",
+  "保存QR code到相簿": "QR-Code in Fotos speichern",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Kein Zugriff auf Fotos. Erlauben Sie YAAO3R, Fotos in den Einstellungen hinzuzufügen.",
+  "已保存到相簿": "Unter Fotos gespeichert",
+  "無法保存：%@": "Konnte nicht gespeichert werden: %@",
+  "投喂開發者": "Unterstützen Sie den Entwickler"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3639,7 +3674,14 @@
   "如何使用 WebDAV 同步": "Como sincronizar com WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Insira as mesmas configurações em seus outros dispositivos para sincronizar. Qualquer serviço WebDAV também funciona, como Nextcloud ou Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Os modos de rolagem e paginação mantêm suas próprias configurações de layout.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” cria um tom claro a partir da cor do texto que combina com o fundo de leitura."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” cria um tom claro a partir da cor do texto que combina com o fundo de leitura.",
+  "喜歡這個項目嗎？": "Gostando deste projeto?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Se isso tornou as coisas um pouco mais fáceis para você, fique à vontade para me pagar um café. Seu apoio ajuda a manter o projeto desenvolvido e mantido. ☕",
+  "保存QR code到相簿": "Salvar código QR em fotos",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Sem acesso às fotos. Permita que YAAO3R adicione fotos em Configurações.",
+  "已保存到相簿": "Salvo em fotos",
+  "無法保存：%@": "Não foi possível salvar: %@",
+  "投喂開發者": "Apoie o desenvolvedor"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4246,7 +4288,14 @@
   "如何使用 WebDAV 同步": "Come sincronizzarsi con WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Inserisci le stesse impostazioni sugli altri dispositivi da sincronizzare. Funziona anche qualsiasi servizio WebDAV, come Nextcloud o Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Le modalità di scorrimento e impaginazione mantengono le proprie impostazioni di layout.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"Auto\" crea una sfumatura chiara dal colore del testo che si fonde con lo sfondo della lettura."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"Auto\" crea una sfumatura chiara dal colore del testo che si fonde con lo sfondo della lettura.",
+  "喜歡這個項目嗎？": "Ti piace questo progetto?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Se ti ha reso le cose un po' più facili, sentiti libero di offrirmi un caffè. Il tuo supporto aiuta a mantenere il progetto sviluppato e mantenuto. ☕",
+  "保存QR code到相簿": "Salva il codice QR nelle foto",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Nessun accesso alle foto. Consenti a YAAO3R di aggiungere foto nelle Impostazioni.",
+  "已保存到相簿": "Salvato in Foto",
+  "無法保存：%@": "Impossibile salvare: %@",
+  "投喂開發者": "Supporta lo sviluppatore"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4853,7 +4902,14 @@
   "如何使用 WebDAV 同步": "Как синхронизировать с WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введите те же настройки на других устройствах для синхронизации. Также работает любая служба WebDAV, например Nextcloud или Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Режимы прокрутки и постраничного просмотра сохраняют свои собственные настройки макета.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "«Авто» создает легкий оттенок цвета текста, который сливается с фоном чтения."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "«Авто» создает легкий оттенок цвета текста, который сливается с фоном чтения.",
+  "喜歡這個項目嗎？": "Нравится этот проект?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Если вам это немного облегчило задачу, не стесняйтесь угостить меня кофе. Ваша поддержка помогает проекту развиваться и поддерживаться. ☕",
+  "保存QR code到相簿": "Сохранить QR-код в фотографиях",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Нет доступа к фотографиям. Разрешите YAAO3R добавлять фотографии в настройках.",
+  "已保存到相簿": "Сохранено в фотографиях",
+  "無法保存：%@": "Не удалось сохранить: %@",
+  "投喂開發者": "Поддержите разработчика"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5460,7 +5516,14 @@
   "如何使用 WebDAV 同步": "Як синхронізувати з WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Введіть ті самі налаштування на інших пристроях для синхронізації. Також працює будь-яка служба WebDAV, наприклад Nextcloud або Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "У режимах прокручування та сторінках зберігаються власні налаштування макета.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "«Авто» створює легкий відтінок кольору тексту, який зливається з фоном для читання."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "«Авто» створює легкий відтінок кольору тексту, який зливається з фоном для читання.",
+  "喜歡這個項目嗎？": "Подобається цей проект?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Якщо це полегшило вам справи, не соромтеся купити мені кави. Ваша підтримка допомагає розвивати та підтримувати проект. ☕",
+  "保存QR code到相簿": "Збережіть QR-код у Фото",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Немає доступу до фотографій. Дозвольте YAAO3R додавати фотографії в налаштуваннях.",
+  "已保存到相簿": "Збережено у фото",
+  "無法保存：%@": "Не вдалося зберегти: %@",
+  "投喂開發者": "Підтримайте розробника"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6067,7 +6130,14 @@
   "如何使用 WebDAV 同步": "Jak synchronizować z WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Wprowadź te same ustawienia na innych urządzeniach, które chcesz zsynchronizować. Działa również każda usługa WebDAV, taka jak Nextcloud lub Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Tryby przewijania i stronicowania zachowują własne ustawienia układu.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "„Auto” tworzy jasny odcień na podstawie koloru tekstu, który zlewa się z tłem czytania."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "„Auto” tworzy jasny odcień na podstawie koloru tekstu, który zlewa się z tłem czytania.",
+  "喜歡這個項目嗎？": "Podoba Ci się ten projekt?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Jeśli to ci choć trochę ułatwiło sprawę, nie wahaj się postawić mi kawy. Twoje wsparcie pomoże w dalszym rozwoju i utrzymaniu projektu. ☕",
+  "保存QR code到相簿": "Zapisz kod QR na zdjęciach",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Brak dostępu do zdjęć. Zezwól YAAO3R na dodawanie zdjęć w Ustawieniach.",
+  "已保存到相簿": "Zapisano w Zdjęciach",
+  "無法保存：%@": "Nie udało się zapisać: %@",
+  "投喂開發者": "Wesprzyj Dewelopera"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -6674,7 +6744,14 @@
   "如何使用 WebDAV 同步": "WebDAV ile Senkronizasyon Nasıl Yapılır?",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Senkronize etmek için diğer cihazlarınızda da aynı ayarları girin. Nextcloud veya Synology NAS gibi herhangi bir WebDAV hizmeti de çalışır.",
   "滾動與翻頁模式各自保存排版。": "Kaydırma ve sayfalı modlar kendi düzen ayarlarını korur.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Otomatik”, metin renginden okuma arka planıyla harmanlanan açık bir renk tonu oluşturur."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Otomatik”, metin renginden okuma arka planıyla harmanlanan açık bir renk tonu oluşturur.",
+  "喜歡這個項目嗎？": "Bu Projeden memnun musunuz?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Eğer bu senin için işleri biraz kolaylaştırdıysa bana bir kahve ısmarlamaktan çekinme. Desteğiniz projenin geliştirilmesine ve sürdürülmesine yardımcı olur. ☕",
+  "保存QR code到相簿": "QR Kodunu Fotoğraflara Kaydet",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Fotoğraflar'a erişim yok. YAAO3R'nin Ayarlar'da fotoğraf eklemesine izin verin.",
+  "已保存到相簿": "Fotoğraflar'a kaydedildi",
+  "無法保存：%@": "Kaydedilemedi: %@",
+  "投喂開發者": "Geliştiriciyi Destekleyin"
  },
  "nl": {
   "載入中": "Laden",
@@ -7281,7 +7358,14 @@
   "如何使用 WebDAV 同步": "Synchroniseren met WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Voer dezelfde instellingen in op uw andere apparaten om te synchroniseren. Elke WebDAV-service werkt ook, zoals Nextcloud of Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "De scroll- en paged-modi behouden hun eigen lay-outinstellingen.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” creëert een lichte tint van de tekstkleur die overvloeit met de leesachtergrond."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” creëert een lichte tint van de tekstkleur die overvloeit met de leesachtergrond.",
+  "喜歡這個項目嗎？": "Geniet je van dit project?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Als het de zaken wat makkelijker voor je heeft gemaakt, trakteer me dan gerust op een kopje koffie. Uw steun helpt het project ontwikkeld en onderhouden te houden. ☕",
+  "保存QR code到相簿": "Sla QR-code op in foto's",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Geen toegang tot Foto's. Sta YAAO3R toe om foto's toe te voegen in Instellingen.",
+  "已保存到相簿": "Opgeslagen in Foto's",
+  "無法保存：%@": "Kon niet opslaan: %@",
+  "投喂開發者": "Ondersteun de ontwikkelaar"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -7888,7 +7972,14 @@
   "如何使用 WebDAV 同步": "كيفية المزامنة مع WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "أدخل نفس الإعدادات على أجهزتك الأخرى للمزامنة. تعمل أي خدمة WebDAV أيضًا، مثل Nextcloud أو Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "تحتفظ أوضاع التمرير والمقسم إلى صفحات بإعدادات التخطيط الخاصة بها.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "يقوم \"تلقائي\" بإنشاء لون فاتح من لون النص الذي يمتزج مع خلفية القراءة."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "يقوم \"تلقائي\" بإنشاء لون فاتح من لون النص الذي يمتزج مع خلفية القراءة.",
+  "喜歡這個項目嗎？": "هل تستمتع بهذا المشروع؟",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "إذا كان هذا قد جعل الأمور أسهل بالنسبة لك، فلا تتردد في شراء القهوة لي. يساعد دعمك في الحفاظ على تطوير المشروع وصيانته. ☕",
+  "保存QR code到相簿": "حفظ رمز الاستجابة السريعة للصور",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "لا يمكن الوصول إلى الصور. اسمح لـ YAAO3R بإضافة الصور في الإعدادات.",
+  "已保存到相簿": "تم الحفظ في الصور",
+  "無法保存：%@": "لا يمكن الحفظ: %@",
+  "投喂開發者": "دعم المطور"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -8495,7 +8586,14 @@
   "如何使用 WebDAV 同步": "WebDAV के साथ कैसे सिंक करें",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "सिंक करने के लिए अपने अन्य डिवाइस पर समान सेटिंग्स दर्ज करें। कोई भी WebDAV सेवा भी काम करती है, जैसे Nextcloud या Synology NAS।",
   "滾動與翻頁模式各自保存排版。": "स्क्रॉल और पृष्ठांकित मोड अपनी स्वयं की लेआउट सेटिंग्स रखते हैं।",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"ऑटो\" टेक्स्ट रंग से एक हल्का रंग बनाता है जो पढ़ने की पृष्ठभूमि के साथ मिश्रित होता है।"
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "\"ऑटो\" टेक्स्ट रंग से एक हल्का रंग बनाता है जो पढ़ने की पृष्ठभूमि के साथ मिश्रित होता है।",
+  "喜歡這個項目嗎？": "इस प्रोजेक्ट का आनंद ले रहे हैं?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "यदि इससे आपके लिए चीज़ें थोड़ी आसान हो गई हैं, तो बेझिझक मेरे लिए एक कॉफ़ी खरीदें। आपका समर्थन परियोजना को विकसित और बनाए रखने में मदद करता है। ☕",
+  "保存QR code到相簿": "फ़ोटो में QR कोड सहेजें",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "फ़ोटो तक पहुंच नहीं. YAAO3R को सेटिंग्स में फ़ोटो जोड़ने की अनुमति दें।",
+  "已保存到相簿": "फ़ोटो में सहेजा गया",
+  "無法保存：%@": "सहेजा नहीं जा सका: %@",
+  "投喂開發者": "डेवलपर का समर्थन करें"
  },
  "id": {
   "載入中": "Memuat",
@@ -9102,7 +9200,14 @@
   "如何使用 WebDAV 同步": "Cara Menyinkronkan dengan WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Masukkan pengaturan yang sama di perangkat Anda yang lain untuk disinkronkan. Layanan WebDAV apa pun juga berfungsi, seperti Nextcloud atau Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Mode gulir dan halaman mempertahankan pengaturan tata letaknya sendiri.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Otomatis” menciptakan rona terang dari warna teks yang menyatu dengan latar belakang pembacaan."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Otomatis” menciptakan rona terang dari warna teks yang menyatu dengan latar belakang pembacaan.",
+  "喜歡這個項目嗎？": "Menikmati Proyek Ini?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Jika ini membuat segalanya lebih mudah bagi Anda, silakan belikan saya kopi. Dukungan Anda membantu menjaga proyek tetap berkembang dan dipelihara. ☕",
+  "保存QR code到相簿": "Simpan Kode QR ke Foto",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Tidak ada akses ke Foto. Izinkan YAAO3R menambahkan foto di Pengaturan.",
+  "已保存到相簿": "Disimpan ke Foto",
+  "無法保存：%@": "Tidak dapat menyimpan: %@",
+  "投喂開發者": "Dukung Pengembang"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -9709,7 +9814,14 @@
   "如何使用 WebDAV 同步": "Cách đồng bộ hóa với WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Nhập các cài đặt tương tự trên các thiết bị khác của bạn để đồng bộ hóa. Bất kỳ dịch vụ WebDAV nào cũng hoạt động, chẳng hạn như Nextcloud hoặc Synology NAS.",
   "滾動與翻頁模式各自保存排版。": "Chế độ cuộn và phân trang giữ cài đặt bố cục của riêng chúng.",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Tự động” tạo ra tông màu sáng từ màu văn bản hòa với nền đọc."
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Tự động” tạo ra tông màu sáng từ màu văn bản hòa với nền đọc.",
+  "喜歡這個項目嗎？": "Bạn thích dự án này?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "Nếu nó giúp mọi việc dễ dàng hơn một chút với bạn, vui lòng mua cho tôi một ly cà phê. Sự hỗ trợ của bạn giúp dự án được phát triển và duy trì. ☕",
+  "保存QR code到相簿": "Lưu mã QR vào ảnh",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Không có quyền truy cập vào Ảnh. Cho phép YAAO3R thêm ảnh trong Cài đặt.",
+  "已保存到相簿": "Đã lưu vào Ảnh",
+  "無法保存：%@": "Không thể lưu: %@",
+  "投喂開發者": "Hỗ trợ nhà phát triển"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -10316,6 +10428,13 @@
   "如何使用 WebDAV 同步": "วิธีซิงค์กับ WebDAV",
   "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "ป้อนการตั้งค่าเดียวกันบนอุปกรณ์อื่นๆ ของคุณเพื่อซิงค์ บริการ WebDAV ใดๆ ก็ใช้งานได้เช่นกัน เช่น Nextcloud หรือ Synology NAS",
   "滾動與翻頁模式各自保存排版。": "โหมดเลื่อนและเพจจะเก็บการตั้งค่าเค้าโครงของตัวเองไว้",
-  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“อัตโนมัติ” สร้างสีอ่อนจากสีข้อความที่กลมกลืนกับพื้นหลังการอ่าน"
+  "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“อัตโนมัติ” สร้างสีอ่อนจากสีข้อความที่กลมกลืนกับพื้นหลังการอ่าน",
+  "喜歡這個項目嗎？": "สนุกกับโปรเจ็กต์นี้ไหม?",
+  "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "ถ้ามันทำให้ทุกอย่างง่ายขึ้นสำหรับคุณ อย่าลังเลที่จะซื้อกาแฟให้ฉัน การสนับสนุนของคุณช่วยให้โครงการพัฒนาและบำรุงรักษา ☕",
+  "保存QR code到相簿": "บันทึกรหัส QR ลงในรูปภาพ",
+  "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "ไม่สามารถเข้าถึงรูปถ่าย อนุญาตให้ YAAO3R เพิ่มรูปภาพในการตั้งค่า",
+  "已保存到相簿": "บันทึกลงในรูปภาพแล้ว",
+  "無法保存：%@": "ไม่สามารถบันทึก: %@",
+  "投喂開發者": "สนับสนุนนักพัฒนา"
  }
 }

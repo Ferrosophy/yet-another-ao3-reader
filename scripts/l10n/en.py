@@ -605,6 +605,13 @@ EN = {
 "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Enter the same settings on your other devices to sync. Any WebDAV service works too, such as Nextcloud or Synology NAS.",
 "滾動與翻頁模式各自保存排版。": "Scroll and paged modes keep their own layout settings.",
 "「自動」會依正文顏色產生淡色底，與閱讀背景融為一體。": "“Auto” creates a light tint from the text color that blends with the reading background.",
+"喜歡這個項目嗎？": "Enjoying This Project?",
+"如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": "If it has made things a little easier for you, feel free to buy me a coffee. Your support helps keep the project developed and maintained. ☕",
+"保存QR code到相簿": "Save QR Code to Photos",
+"沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "No access to Photos. Allow YAAO3R to add photos in Settings.",
+"已保存到相簿": "Saved to Photos",
+"無法保存：%@": "Couldn't save: %@",
+"投喂開發者": "Support the Developer",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}
