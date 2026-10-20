@@ -33,8 +33,9 @@ enum BookshelfSort: String, CaseIterable, Codable, Identifiable, Sendable {
 enum BookshelfLayout: String, CaseIterable, Codable, Identifiable, Sendable {
     case list, grid
     var id: String { rawValue }
-    var title: String { self == .list ? String(localized: "列表") : String(localized: "網格") }
-    var systemImage: String { self == .list ? "list.bullet" : "square.grid.2x2" }
+    /// list 顯示為左右滑動的卡片（沿用舊的儲存值）
+    var title: String { self == .list ? String(localized: "卡片") : String(localized: "網格") }
+    var systemImage: String { self == .list ? "rectangle.stack" : "square.grid.2x2" }
 }
 
 /// 書架的可同步狀態

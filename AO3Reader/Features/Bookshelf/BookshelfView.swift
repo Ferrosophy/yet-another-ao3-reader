@@ -13,6 +13,8 @@ struct BookshelfView: View {
     @State private var showsReorder = false
     @State private var errorMessage: String?
     @State private var shared: DownloadedFile?
+    /// 卡片顯示時目前的卡片；進入作品再返回時保留位置
+    @State private var currentIndex = 0
 
     private var items: [BookshelfItem] { app.bookshelf.sorted(by: sort, ascending: ascending) }
 
@@ -90,31 +92,35 @@ struct BookshelfView: View {
         }
     }
 
+    /// 列表顯示：左右滑動的卡片（與瀏覽頁相同），卡片下方顯示離線狀態；只翻譯目前的卡片
     private var list: some View {
-        List {
-            ForEach(items) { item in
+        let items = items
+        return TabView(selection: $currentIndex) {
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 NavigationLink(value: WorkRoute(id: item.id, title: item.work.title)) {
-                    VStack(alignment: .leading, spacing: 6) {
-                        // 離線列表不翻譯卡片內容（避免整頁同時翻譯造成卡頓）
-                        WorkRow(work: item.work, translationActive: false)
-                        OfflineStatusView(id: item.id)
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 12) {
+                            WorkRow(work: item.work, translationActive: index == currentIndex, compact: false)
+                            OfflineStatusView(id: item.id)
+                        }
+                        .padding(20)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
+                    .scrollIndicators(.hidden)
+                    .glassEffect(.clear, in: .rect(cornerRadius: 24))
+                    .contentShape(.rect(cornerRadius: 24))
                 }
+                .buttonStyle(.plain)
                 .contextMenu { itemMenu(item) }
-                .swipeActions {
-                    Button("移除", systemImage: "trash", role: .destructive) { app.bookshelf.remove(item.id) }
-                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 8)
+                .tag(index)
             }
-            .onMove(perform: moveHandler)
         }
-        .listStyle(.plain)
-    }
-
-    /// 手動排序時可在列表中長按拖動調整順序
-    private var moveHandler: ((IndexSet, Int) -> Void)? {
-        guard sort == .manual else { return nil }
-        let bookshelf = app.bookshelf
-        return { bookshelf.move(fromOffsets: $0, toOffset: $1) }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .onChange(of: items.count) {
+            if currentIndex >= items.count { currentIndex = max(items.count - 1, 0) }
+        }
     }
 
     private var grid: some View {

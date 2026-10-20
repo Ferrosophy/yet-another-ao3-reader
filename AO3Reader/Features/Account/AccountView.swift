@@ -23,6 +23,15 @@ struct AccountView: View {
         }
         .navigationTitle("帳號")
         .navigationBarTitleDisplayMode(.inline)
+        // 子頁面以值推入導覽路徑：子頁面再推入作品或作者時不會被彈回
+        // （以閉包推入的頁面不在路徑中，列表資料變動或路徑改變時會被移除）
+        .navigationDestination(for: AccountRoute.self) { route in
+            switch route {
+            case .ao3(let entry, let username): entry.destination(username: username)
+            case .local(let entry): entry.localDestination
+            case .sync: SyncSettingsView()
+            }
+        }
         .toolbar {
             // 使用者資料只能二選一：AO3 帳號，或本機保存（可經 iCloud / WebDAV 同步）。
             // 放在導覽列中間，不另外疊一層背景（避免與大標題的模糊背景重疊）
@@ -64,9 +73,7 @@ struct AccountView: View {
 
             Section {
                 ForEach(entries) { entry in
-                    NavigationLink {
-                        entry.destination(username: username)
-                    } label: {
+                    NavigationLink(value: AccountRoute.ao3(entry, username: username)) {
                         Label(entry.title, systemImage: entry.systemImage)
                     }
                 }
@@ -102,6 +109,13 @@ struct AccountView: View {
     }
 
     private var entries: [AccountEntry] { AccountEntry.decode(entryOrder) }
+}
+
+/// 帳號頁的子頁面（以值推入導覽路徑）
+enum AccountRoute: Hashable {
+    case ao3(AccountEntry, username: String)
+    case local(AccountEntry)
+    case sync
 }
 
 /// 「我的 AO3」的項目，順序可由使用者自訂。
@@ -225,9 +239,7 @@ struct LocalAccountView: View {
         List {
             Section {
                 ForEach(entries) { entry in
-                    NavigationLink {
-                        entry.localDestination
-                    } label: {
+                    NavigationLink(value: AccountRoute.local(entry)) {
                         HStack {
                             Label(entry.title, systemImage: entry.systemImage)
                             Spacer()
@@ -258,7 +270,7 @@ struct LocalAccountView: View {
             }
 
             Section {
-                NavigationLink("資料同步") { SyncSettingsView() }
+                NavigationLink("資料同步", value: AccountRoute.sync)
             } footer: {
                 Text("本機資料只保存在這台裝置，可在「資料同步」選擇用 iCloud 或 WebDAV 同步到其他裝置。")
             }
