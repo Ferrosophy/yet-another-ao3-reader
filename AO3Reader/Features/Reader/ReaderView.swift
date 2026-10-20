@@ -13,6 +13,7 @@ struct ReaderView: View {
     @State private var showsAppearance = false
     @State private var showsTranslationSettings = false
     @State private var showsSourcePicker = false
+    @State private var showsTargetPicker = false
     /// 換章方向（決定捲動模式的推入方向）
     @State private var chapterForward = true
     /// 標題頁的系列與標籤連結：推入目前分頁的導覽路徑（翻頁模式的資訊頁在 UIKit 容器中，無法使用 NavigationLink）
@@ -129,6 +130,11 @@ struct ReaderView: View {
         }
         .sheet(item: $model.challenge, onDismiss: { model.resetTranslations() }) { challenge in
             TranslationChallengeView(challenge: challenge)
+        }
+        .sheet(isPresented: $showsTargetPicker) {
+            TranslationLanguageSheet(title: "目標語言", languages: TranslationLanguage.all,
+                                     selection: Binding(get: { Optional(model.targetLanguage.code) },
+                                                        set: { if let code = $0 { model.setTargetLanguage(code) } }))
         }
         .sheet(isPresented: $showsSourcePicker) {
             TranslationLanguageSheet(title: "原文語言", languages: app.translation.config.provider.sourceLanguages, allowsAutomatic: true,
@@ -553,12 +559,20 @@ struct ReaderView: View {
                 Label("原文語言", systemImage: "character.book.closed")
                 Text(verbatim: model.sourceLanguage?.displayName ?? String(localized: "自動偵測"))
             }
-            Picker("目標語言", selection: Binding(get: { model.targetLanguage.code }, set: { model.setTargetLanguage($0) })) {
-                ForEach(TranslationLanguage.all) { Text($0.name).tag($0.code) }
+            // 每一項都有圖示與目前的值，樣式一致
+            Button {
+                showsTargetPicker = true
+            } label: {
+                Label("目標語言", systemImage: "globe")
+                Text(verbatim: model.targetLanguage.displayName)
             }
-            .pickerStyle(.menu)
-            Picker("顯示方式", selection: Binding(get: { model.displayMode }, set: { model.setDisplayMode($0) })) {
-                ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
+            Menu {
+                Picker("顯示方式", selection: Binding(get: { model.displayMode }, set: { model.setDisplayMode($0) })) {
+                    ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
+                }
+            } label: {
+                Label("顯示方式", systemImage: "text.below.photo")
+                Text(model.displayMode.title)
             }
             Button("重新翻譯本章", systemImage: "arrow.clockwise") { model.resetTranslations() }
             Button("翻譯設定", systemImage: "gearshape") { showsTranslationSettings = true }

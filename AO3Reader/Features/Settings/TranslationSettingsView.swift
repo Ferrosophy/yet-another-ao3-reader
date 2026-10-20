@@ -19,9 +19,9 @@ struct TranslationSettingsView: View {
                 }
                 LanguageListRow(title: "原文語言", languages: kind.sourceLanguages, allowsAutomatic: true,
                                 selection: $settings.config.sourceLanguageCode)
-                Picker("目標語言", selection: $settings.config.targetLanguageCode) {
-                    ForEach(TranslationLanguage.all) { Text($0.name).tag($0.code) }
-                }
+                LanguageListRow(title: "目標語言", languages: TranslationLanguage.all,
+                                selection: Binding(get: { Optional(settings.config.targetLanguageCode) },
+                                                   set: { if let code = $0 { settings.config.targetLanguageCode = code } }))
                 Picker("顯示方式", selection: $settings.config.displayMode) {
                     ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
                 }
