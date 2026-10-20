@@ -271,7 +271,8 @@ struct SearchView: View {
             return
         }
         let client = app.client
-        let model = PagedWorksModel { page in try await client.searchWorks(snapshot, page: page) }
+        let search = snapshot
+        let model = PagedWorksModel { page in try await client.searchWorks(search, page: page) }
         works = model
         Task { await model.reload() }
         searched[.works] = text
