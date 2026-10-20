@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(AppState.self) private var app
+    @Environment(\.openURL) private var openURL
 
     /// CI 建置時寫入：版本號來自 tag 或 project.yml，建置號為 GitHub Actions run number
     private static let versionString: String = {
@@ -54,9 +55,15 @@ struct SettingsView: View {
                         ? String(localized: "每 \(app.readingTime.reminderMinutes) 分鐘提醒") : "")
                 }
                 // 直接在瀏覽器開啟 GitHub Issues，已附上版本資訊
-                Link(destination: Self.feedbackURL) {
-                    Text("意見回饋").foregroundStyle(.primary)
+                // 以一般按鈕外觀呈現（Link 在列表中會套用主題色）
+                Button {
+                    openURL(Self.feedbackURL)
+                } label: {
+                    Text("意見回饋")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(.rect)
                 }
+                .buttonStyle(.plain)
                 LabeledContent("應用版本", value: Self.versionString)
             }
 
