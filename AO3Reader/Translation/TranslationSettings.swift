@@ -38,7 +38,7 @@ enum BilingualDisplayMode: String, CaseIterable, Codable, Identifiable, Sendable
     case bilingual, translationOnly
 
     var id: String { rawValue }
-    var title: String { self == .bilingual ? String(localized: "原文 + 譯文") : String(localized: "僅譯文") }
+    var title: String { self == .bilingual ? String(localized: "原文與譯文") : String(localized: "僅譯文") }
 }
 
 /// 除 API Key 以外的翻譯設定（Key 只存在鑰匙圈）。

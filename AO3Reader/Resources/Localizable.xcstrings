@@ -14444,6 +14444,149 @@
         }
       }
     },
+    "全部分級": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جميع التقييمات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Bewertungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All Ratings"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas las calificaciones"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toutes les notes"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सभी रेटिंग"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua Peringkat"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le valutazioni"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべての評価"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 평가"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle beoordelingen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszystkie oceny"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as avaliações"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все рейтинги"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การให้คะแนนทั้งหมด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm Derecelendirmeler"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Усі рейтинги"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tất cả xếp hạng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部分级"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部分級"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部分級"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部分級"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部分級"
+          }
+        }
+      }
+    },
     "全部語言": {
       "extractionState": "manual",
       "localizations": {
@@ -17876,145 +18019,145 @@
         }
       }
     },
-    "原文 + 譯文": {
+    "原文與譯文": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "الأصل + الترجمة"
+            "value": "الأصل والترجمة"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Original + Übersetzung"
+            "value": "Original & Übersetzung"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Original + Translation"
+            "value": "Original & Translation"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Original + Traducción"
+            "value": "Original y traducción"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Original + Traduction"
+            "value": "Original et traduction"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "मूल + अनुवाद"
+            "value": "मूल एवं अनुवाद"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Asli + Terjemahan"
+            "value": "Asli & Terjemahan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Originale + Traduzione"
+            "value": "Originale e traduzione"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "原文+翻訳"
+            "value": "原文と翻訳"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "원본 + 번역"
+            "value": "원본 및 번역"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Origineel + vertaling"
+            "value": "Origineel en vertaling"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oryginał + tłumaczenie"
+            "value": "Oryginał i tłumaczenie"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Original + Tradução"
+            "value": "Original e Tradução"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Оригинал + Перевод"
+            "value": "Оригинал и перевод"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ต้นฉบับ + การแปล"
+            "value": "ต้นฉบับและการแปล"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Orijinal + Çeviri"
+            "value": "Orijinal ve Çeviri"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Оригінал + переклад"
+            "value": "Оригінал і переклад"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bản gốc + Bản dịch"
+            "value": "Bản gốc & bản dịch"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "原文 + 译文"
+            "value": "原文与译文"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "原文 + 譯文"
+            "value": "原文與譯文"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "原文 + 譯文"
+            "value": "原文與譯文"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "原文 + 譯文"
+            "value": "原文與譯文"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "原文 + 譯文"
+            "value": "原文與譯文"
           }
         }
       }

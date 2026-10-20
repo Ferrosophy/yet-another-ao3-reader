@@ -52,6 +52,8 @@ struct LatestWorksView: View {
     @AppStorage("latest.languageID") private var languageID = ""
     @AppStorage("latest.board") private var board: Board = .latest
     @AppStorage("latest.period") private var period: Period = .week
+    /// 0 為全部分級
+    @AppStorage("latest.rating") private var ratingID = 0
     @State private var model: PagedWorksModel?
     @State private var languages = LatestWorksView.cachedLanguages()
     @State private var showsLanguages = false
@@ -65,6 +67,7 @@ struct LatestWorksView: View {
         var languageCount: Int
         var board: Board
         var period: Period
+        var rating: Int
     }
 
     var body: some View {
@@ -80,7 +83,7 @@ struct LatestWorksView: View {
                 Button {
                     showsLanguages = true
                 } label: {
-                    Label(languageName, systemImage: "globe")
+                    Label(filterSummary, systemImage: "line.3.horizontal.decrease.circle")
                 }
             }
         }
@@ -88,7 +91,7 @@ struct LatestWorksView: View {
             AO3GuideView()
         }
         .sheet(isPresented: $showsLanguages) {
-            LanguagePickerSheet(languages: languages, selection: $languageID, chineseAll: Self.chineseAll)
+            BrowseFilterSheet(languages: languages, selection: $languageID, rating: $ratingID, chineseAll: Self.chineseAll)
                 .presentationDetents([.medium, .large])
         }
         .task {
@@ -98,7 +101,7 @@ struct LatestWorksView: View {
                 UserDefaults.standard.set(try? JSONEncoder().encode(loaded), forKey: Self.languagesKey)
             }
         }
-        .task(id: LoadKey(language: languageID, languageCount: languages.count, board: board, period: period)) {
+        .task(id: LoadKey(language: languageID, languageCount: languages.count, board: board, period: period, rating: ratingID)) {
             let client = app.client
             var query = WorkSearchQuery()
             query.sortColumn = board.sort
@@ -110,6 +113,7 @@ struct LatestWorksView: View {
                 query.languageID = languageID
             }
             if board != .latest { query.revisedAt = period.revisedAt }
+            query.rating = WorkSearchQuery.Rating(rawValue: ratingID)
             let snapshot = query
             let loader: PagedWorksModel.Loader = { page in try await client.searchWorks(snapshot, page: page) }
             if let model {
@@ -142,6 +146,12 @@ struct LatestWorksView: View {
         }
     }
 
+    /// 篩選按鈕的文字：語言，加上已選的分級
+    private var filterSummary: String {
+        guard let rating = WorkSearchQuery.Rating(rawValue: ratingID) else { return languageName }
+        return "\(languageName) · \(app.tags.translation(for: rating.title) ?? rating.title)"
+    }
+
     private var languageName: String {
         if languageID == Self.chineseAll { return String(localized: "中文（全部分支）") }
         return languageID.isEmpty ? String(localized: "全部語言") : (languages.first { $0.code == languageID }?.name ?? languageID)
@@ -156,11 +166,14 @@ struct LatestWorksView: View {
     }
 }
 
-/// 語言選擇（可搜尋），選項與 AO3 搜尋表單相同。
-struct LanguagePickerSheet: View {
+/// 瀏覽頁的篩選：分級與作品語言放在同一個頁面（語言可搜尋，選項與 AO3 搜尋表單相同）。
+struct BrowseFilterSheet: View {
     let languages: [AO3Language]
     @Binding var selection: String
+    /// 0 為全部分級，其餘為 AO3 的分級 ID
+    @Binding var rating: Int
     var chineseAll: String?
+    @Environment(AppState.self) private var app
     @Environment(\.dismiss) private var dismiss
     @State private var search = ""
 
@@ -175,25 +188,55 @@ struct LanguagePickerSheet: View {
         NavigationStack {
             List {
                 if search.isEmpty {
-                    row(code: "", name: "全部語言")
-                    if let chineseAll {
-                        row(code: chineseAll, name: "中文（全部分支：普通話、粵語、吳語、閩南語等）")
+                    Section("分級") {
+                        ratingRow(0, title: String(localized: "全部分級"), english: nil)
+                        ForEach(WorkSearchQuery.Rating.allCases) { item in
+                            ratingRow(item.rawValue, title: app.tags.translation(for: item.title) ?? item.title,
+                                      english: app.tags.translation(for: item.title) == nil ? nil : item.title)
+                        }
                     }
                 }
-                ForEach(filtered) { language in
-                    row(code: language.code, name: LocalizedStringKey(language.name))
+                Section("作品語言") {
+                    if search.isEmpty {
+                        languageRow(code: "", name: "全部語言")
+                        if let chineseAll {
+                            languageRow(code: chineseAll, name: "中文（全部分支：普通話、粵語、吳語、閩南語等）")
+                        }
+                    }
+                    ForEach(filtered) { language in
+                        languageRow(code: language.code, name: LocalizedStringKey(language.name))
+                    }
                 }
             }
             .searchable(text: $search, prompt: "搜尋語言")
-            .navigationTitle("作品語言")
+            .navigationTitle("篩選")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) { Button("完成") { dismiss() } }
+            }
         }
     }
 
-    private func row(code: String, name: LocalizedStringKey) -> some View {
+    private func ratingRow(_ id: Int, title: String, english: String?) -> some View {
+        Button {
+            rating = id
+        } label: {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title).foregroundStyle(.primary)
+                    if let english {
+                        Text(verbatim: english).appFont(.caption).foregroundStyle(.secondary)
+                    }
+                }
+                Spacer()
+                if rating == id { Image(systemName: "checkmark").foregroundStyle(.tint) }
+            }
+        }
+    }
+
+    private func languageRow(code: String, name: LocalizedStringKey) -> some View {
         Button {
             selection = code
-            dismiss()
         } label: {
             HStack {
                 Text(name).foregroundStyle(.primary)

@@ -81,11 +81,11 @@ enum AccountEntry: String, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .bookmarks: AO3Term.label(UserListKind.bookmarks.title, "Bookmarks")
-        case .markedForLater: AO3Term.label(UserListKind.markedForLater.title, "Marked for Later")
-        case .history: AO3Term.label(UserListKind.history.title, "History")
-        case .subscriptions: AO3Term.label(String(localized: "訂閱"), "Subscriptions")
-        case .inbox: AO3Term.label(String(localized: "收件匣"), "Inbox")
+        case .bookmarks: UserListKind.bookmarks.title
+        case .markedForLater: UserListKind.markedForLater.title
+        case .history: UserListKind.history.title
+        case .subscriptions: String(localized: "訂閱")
+        case .inbox: String(localized: "收件匣")
         }
     }
 

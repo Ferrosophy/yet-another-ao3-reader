@@ -184,9 +184,11 @@
  "時間範圍": "LatestWorksView.swift",
  "中文（全部分支）": "LatestWorksView.swift",
  "全部語言": "LatestWorksView.swift",
+ "全部分級": "LatestWorksView.swift",
+ "作品語言": "LatestWorksView.swift",
  "中文（全部分支：普通話、粵語、吳語、閩南語等）": "LatestWorksView.swift",
  "搜尋語言": "LatestWorksView.swift",
- "作品語言": "LatestWorksView.swift",
+ "篩選": "LatestWorksView.swift",
  "沒有結果": "PagedListModel.swift",
  "載入失敗": "PagedListModel.swift",
  "重試": "PagedListModel.swift",
@@ -198,7 +200,6 @@
  "標籤名稱": "SearchView.swift",
  "用戶名稱": "SearchView.swift",
  "合集標題": "SearchView.swift",
- "篩選": "SearchView.swift",
  "標籤類型": "SearchView.swift",
  "搜尋作品": "SearchView.swift",
  "輸入關鍵字，或點右上角使用官網的進階篩選": "SearchView.swift",
@@ -494,6 +495,6 @@
  "百度翻譯（網頁版）": "TranslationSettings.swift",
  "有道翻譯（網頁版）": "TranslationSettings.swift",
  "搜狗翻譯（網頁版）": "TranslationSettings.swift",
- "原文 + 譯文": "TranslationSettings.swift",
+ "原文與譯文": "TranslationSettings.swift",
  "僅譯文": "TranslationSettings.swift"
 }

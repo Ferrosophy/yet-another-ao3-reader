@@ -571,7 +571,7 @@ struct ReaderView: View {
                 .padding(.horizontal, 14)
                 .frame(height: 48)
         }
-        // 控制列在底部，選單向上展開時系統預設會倒轉項目順序；固定順序讓「原文 + 譯文」在「僅譯文」前面
+        // 控制列在底部，選單向上展開時系統預設會倒轉項目順序；固定順序讓「原文與譯文」在「僅譯文」前面
         .menuOrder(.fixed)
         .glassEffect(.regular.interactive(), in: .capsule)
     }

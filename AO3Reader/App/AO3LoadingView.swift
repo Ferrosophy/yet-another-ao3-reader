@@ -1,22 +1,29 @@
 import SwiftUI
 
-/// 載入動畫：AO3 標誌循環淡入淡出。`compact` 用於列表底部的分頁載入。
+/// 載入動畫：AO3 標誌原地循環淡入淡出。`compact` 用於列表底部的分頁載入。
+///
+/// 透明度由 TimelineView 依時間計算，不使用 SwiftUI 動畫；並停用外層傳入的動畫，
+/// 避免標誌出現時跟著版面變化從上方滑下來。
 struct AO3LoadingView: View {
     var compact = false
 
+    /// 一次淡入加淡出的時間（秒）
+    private static let period = 1.8
+
     var body: some View {
-        Image("AO3Logo")
-            .resizable()
-            .scaledToFit()
-            .frame(width: compact ? 34 : 76)
-            .phaseAnimator([false, true]) { content, visible in
-                content.opacity(visible ? 1 : 0.15)
-            } animation: { _ in
-                .easeInOut(duration: 0.9)
-            }
-            .padding(compact ? 8 : 0)
-            .frame(maxWidth: .infinity, maxHeight: compact ? nil : .infinity)
-            .accessibilityElement()
-            .accessibilityLabel("載入中")
+        TimelineView(.animation) { context in
+            let phase = context.date.timeIntervalSinceReferenceDate.truncatingRemainder(dividingBy: Self.period) / Self.period
+            let opacity = 0.15 + 0.85 * (0.5 - 0.5 * cos(phase * 2 * .pi))
+            Image("AO3Logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: compact ? 34 : 76)
+                .opacity(opacity)
+        }
+        .padding(compact ? 8 : 0)
+        .frame(maxWidth: .infinity, maxHeight: compact ? nil : .infinity)
+        .transaction { $0.animation = nil }
+        .accessibilityElement()
+        .accessibilityLabel("載入中")
     }
 }
