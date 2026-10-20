@@ -646,7 +646,9 @@
   "昨天": "昨日",
   "最近 7 天": "過去 7 日間",
   "最近 30 天": "過去 30 日間",
-  "更早": "以前"
+  "更早": "以前",
+  "下載中斷：%@，稍後自動繼續": "ダウンロードが中断されました: %@。自動的に再開されます。",
+  "正在逐章下載原文 %lld/%lld": "チャプター%lld/%lldをダウンロード中"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1295,7 +1297,9 @@
   "昨天": "어제",
   "最近 7 天": "지난 7일",
   "最近 30 天": "지난 30일",
-  "更早": "이전"
+  "更早": "이전",
+  "下載中斷：%@，稍後自動繼續": "다운로드가 중단되었습니다: %@. 자동으로 재개됩니다.",
+  "正在逐章下載原文 %lld/%lld": "챕터 %lld/%lld 다운로드 중"
  },
  "es": {
   "載入中": "Cargando",
@@ -1944,7 +1948,9 @@
   "昨天": "ayer",
   "最近 7 天": "Últimos 7 días",
   "最近 30 天": "Últimos 30 días",
-  "更早": "Antes"
+  "更早": "Antes",
+  "下載中斷：%@，稍後自動繼續": "Descarga interrumpida: %@. Se reanudará automáticamente.",
+  "正在逐章下載原文 %lld/%lld": "Descargando capítulos %lld/%lld"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2593,7 +2599,9 @@
   "昨天": "Hier",
   "最近 7 天": "7 derniers jours",
   "最近 30 天": "30 derniers jours",
-  "更早": "Plus tôt"
+  "更早": "Plus tôt",
+  "下載中斷：%@，稍後自動繼續": "Téléchargement interrompu : %@. Il reprendra automatiquement.",
+  "正在逐章下載原文 %lld/%lld": "Téléchargement des chapitres %lld/%lld"
  },
  "de": {
   "載入中": "Laden",
@@ -3242,7 +3250,9 @@
   "昨天": "Gestern",
   "最近 7 天": "Letzte 7 Tage",
   "最近 30 天": "Letzte 30 Tage",
-  "更早": "Früher"
+  "更早": "Früher",
+  "下載中斷：%@，稍後自動繼續": "Download unterbrochen: %@. Es wird automatisch fortgesetzt.",
+  "正在逐章下載原文 %lld/%lld": "Kapitel %lld/%lld herunterladen"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3891,7 +3901,9 @@
   "昨天": "Ontem",
   "最近 7 天": "Últimos 7 dias",
   "最近 30 天": "Últimos 30 dias",
-  "更早": "Anteriormente"
+  "更早": "Anteriormente",
+  "下載中斷：%@，稍後自動繼續": "Download interrompido: %@. Ele será retomado automaticamente.",
+  "正在逐章下載原文 %lld/%lld": "Baixando capítulos %lld/%lld"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4540,7 +4552,9 @@
   "昨天": "Ieri",
   "最近 7 天": "Ultimi 7 giorni",
   "最近 30 天": "Ultimi 30 giorni",
-  "更早": "In precedenza"
+  "更早": "In precedenza",
+  "下載中斷：%@，稍後自動繼續": "Download interrotto: %@. Riprenderà automaticamente.",
+  "正在逐章下載原文 %lld/%lld": "Download dei capitoli %lld/%lld"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5189,7 +5203,9 @@
   "昨天": "Вчера",
   "最近 7 天": "Последние 7 дней",
   "最近 30 天": "Последние 30 дней",
-  "更早": "Ранее"
+  "更早": "Ранее",
+  "下載中斷：%@，稍後自動繼續": "Загрузка прервана: %@. Он возобновится автоматически.",
+  "正在逐章下載原文 %lld/%lld": "Загрузка глав %lld/%lld"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5838,7 +5854,9 @@
   "昨天": "вчора",
   "最近 7 天": "Останні 7 днів",
   "最近 30 天": "Останні 30 днів",
-  "更早": "Раніше"
+  "更早": "Раніше",
+  "下載中斷：%@，稍後自動繼續": "Завантаження перервано: %@. Він відновиться автоматично.",
+  "正在逐章下載原文 %lld/%lld": "Завантаження розділів %lld/%lld"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6487,7 +6505,9 @@
   "昨天": "Wczoraj",
   "最近 7 天": "Ostatnie 7 dni",
   "最近 30 天": "Ostatnie 30 dni",
-  "更早": "Wcześniej"
+  "更早": "Wcześniej",
+  "下載中斷：%@，稍後自動繼續": "Pobieranie przerwane: %@. Zostanie wznowione automatycznie.",
+  "正在逐章下載原文 %lld/%lld": "Pobieranie rozdziałów %lld/%lld"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7136,7 +7156,9 @@
   "昨天": "Dün",
   "最近 7 天": "Son 7 Gün",
   "最近 30 天": "Son 30 Gün",
-  "更早": "Daha önce"
+  "更早": "Daha önce",
+  "下載中斷：%@，稍後自動繼續": "İndirme kesintiye uğradı: %@. Otomatik olarak devam edecektir.",
+  "正在逐章下載原文 %lld/%lld": "%lld/%lld bölümleri indiriliyor"
  },
  "nl": {
   "載入中": "Laden",
@@ -7785,7 +7807,9 @@
   "昨天": "Gisteren",
   "最近 7 天": "Laatste 7 dagen",
   "最近 30 天": "Laatste 30 dagen",
-  "更早": "Eerder"
+  "更早": "Eerder",
+  "下載中斷：%@，稍後自動繼續": "Download onderbroken: %@. Het wordt automatisch hervat.",
+  "正在逐章下載原文 %lld/%lld": "Hoofdstukken downloaden %lld/%lld"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8434,7 +8458,9 @@
   "昨天": "أمس",
   "最近 7 天": "آخر 7 أيام",
   "最近 30 天": "آخر 30 يومًا",
-  "更早": "في وقت سابق"
+  "更早": "في وقت سابق",
+  "下載中斷：%@，稍後自動繼續": "تمت مقاطعة التنزيل: %@. وسوف تستأنف تلقائيا.",
+  "正在逐章下載原文 %lld/%lld": "تنزيل الفصول %lld/%lld"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -9083,7 +9109,9 @@
   "昨天": "कल",
   "最近 7 天": "पिछले 7 दिन",
   "最近 30 天": "पिछले 30 दिन",
-  "更早": "पहले"
+  "更早": "पहले",
+  "下載中斷：%@，稍後自動繼續": "डाउनलोड बाधित: %@। यह स्वचालित रूप से फिर से शुरू हो जाएगा.",
+  "正在逐章下載原文 %lld/%lld": "अध्याय डाउनलोड हो रहा है %lld/%lld"
  },
  "id": {
   "載入中": "Memuat",
@@ -9732,7 +9760,9 @@
   "昨天": "Kemarin",
   "最近 7 天": "7 Hari Terakhir",
   "最近 30 天": "30 Hari Terakhir",
-  "更早": "Sebelumnya"
+  "更早": "Sebelumnya",
+  "下載中斷：%@，稍後自動繼續": "Pengunduhan terputus: %@. Ini akan dilanjutkan secara otomatis.",
+  "正在逐章下載原文 %lld/%lld": "Mengunduh bab %lld/%lld"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10381,7 +10411,9 @@
   "昨天": "Hôm qua",
   "最近 7 天": "7 ngày qua",
   "最近 30 天": "30 ngày qua",
-  "更早": "Trước đó"
+  "更早": "Trước đó",
+  "下載中斷：%@，稍後自動繼續": "Tải xuống bị gián đoạn: %@. Nó sẽ tự động tiếp tục.",
+  "正在逐章下載原文 %lld/%lld": "Đang tải xuống các chương %lld/%lld"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -11030,6 +11062,8 @@
   "昨天": "เมื่อวาน",
   "最近 7 天": "7 วันที่ผ่านมา",
   "最近 30 天": "30 วันที่ผ่านมา",
-  "更早": "ก่อนหน้านี้"
+  "更早": "ก่อนหน้านี้",
+  "下載中斷：%@，稍後自動繼續": "การดาวน์โหลดถูกขัดจังหวะ: %@ มันจะดำเนินการต่อโดยอัตโนมัติ",
+  "正在逐章下載原文 %lld/%lld": "กำลังดาวน์โหลดบท %lld/%lld"
  }
 }

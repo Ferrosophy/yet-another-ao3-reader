@@ -98,7 +98,8 @@ enum AO3Parser {
 
     // MARK: - Work content
 
-    static func workDetail(html: String, id: Int) throws -> WorkDetail {
+    /// `chapterOffset`：分章下載時，這一頁第一章在整部作品中的索引（段落 ID 以整部作品為準）
+    static func workDetail(html: String, id: Int, chapterOffset: Int = 0) throws -> WorkDetail {
         let doc = try SwiftSoup.parse(html)
         guard let container = try doc.select("#chapters").first() else {
             if html.contains("only available to registered users") || (try? doc.select("form#new_user").isEmpty()) == false {
@@ -121,9 +122,10 @@ enum AO3Parser {
         if chapterDivs.isEmpty {
             // 單章作品：#chapters > div.userstuff
             let content = children.first { $0.hasClass("userstuff") } ?? container
-            chapters.append(Chapter(id: 0, title: title, paragraphs: try paragraphs(in: content, chapter: 0)))
+            chapters.append(Chapter(id: chapterOffset, title: title, paragraphs: try paragraphs(in: content, chapter: chapterOffset)))
         } else {
-            for (index, div) in chapterDivs.enumerated() {
+            for (position, div) in chapterDivs.enumerated() {
+                let index = chapterOffset + position
                 let chapterTitle = try div.select("h3.title").first()?.text() ?? "Chapter \(index + 1)"
                 guard let content = try div.select("div.userstuff[role=article], div.userstuff.module").first()
                     ?? div.select("div.userstuff").first()
@@ -143,6 +145,13 @@ enum AO3Parser {
             downloads: try workDownloads(doc),
             info: try workInfo(doc, id: id, title: title, authors: authors, summary: summary)
         )
+    }
+
+    /// 作品目錄頁（/works/<id>/navigate）的章節 ID，依章節順序
+    static func chapterIDs(html: String) throws -> [Int] {
+        try SwiftSoup.parse(html).select("ol.chapter.index li a[href*=/chapters/]").array().compactMap {
+            Int(try $0.attr("href").split(separator: "/").last.map { String($0.prefix(while: \.isNumber)) } ?? "")
+        }
     }
 
     /// 把正文切成段落；`<br>` 保留為換行，`<hr>` 轉為分隔線。

@@ -62,6 +62,8 @@ struct OfflineStatusView: View {
         VStack(alignment: .leading, spacing: 4) {
             if case .translating(let done, let total) = offline.activity[id], total > 0 {
                 ProgressView(value: Double(done), total: Double(total))
+            } else if case .downloadingChapters(let done, let total) = offline.activity[id], total > 0 {
+                ProgressView(value: Double(done), total: Double(total))
             }
             HStack(spacing: 6) {
                 if offline.activity[id]?.isActive == true {
@@ -92,6 +94,7 @@ struct OfflineStatusView: View {
         switch offline.activity[id] {
         case .queued: return String(localized: "等待中")
         case .downloading: return String(localized: "正在下載原文")
+        case .downloadingChapters(let done, let total): return String(localized: "正在逐章下載原文 \(done)/\(total)")
         case .translating(let done, let total): return String(localized: "正在翻譯 \(done)/\(total)")
         case .exporting: return String(localized: "正在匯出")
         case .paused: return String(localized: "已暫停")
@@ -129,7 +132,7 @@ struct OfflineMenu: View {
         let offline = app.offline
         let record = offline.records[id]
         switch offline.activity[id] {
-        case .queued, .downloading, .translating, .exporting:
+        case .queued, .downloading, .downloadingChapters, .translating, .exporting:
             Button("暫停", systemImage: "pause") { offline.pause(id) }
         case .paused, .waitingForWiFi:
             Button("繼續", systemImage: "play") { offline.resume(id) }

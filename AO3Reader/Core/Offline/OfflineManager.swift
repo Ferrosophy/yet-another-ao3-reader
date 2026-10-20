@@ -20,6 +20,7 @@ final class OfflineManager {
     /// 每部作品的離線內容大小（位元組）
     private(set) var sizes: [Int: Int64] = [:]
     private(set) var isOnWiFi = true
+    private var isOnline = true
 
     /// 批次下載每次最多選取的作品數
     static let batchLimit = 25
@@ -40,6 +41,8 @@ final class OfflineManager {
     /// 目前處理中的作品；暫停只取消這一部，不影響佇列
     private var job: Task<Void, Never>?
     private var currentID: Int?
+    /// 每部作品連續下載失敗的次數（自動重試的間隔依此加長）
+    private var failures: [Int: Int] = [:]
     private var observer: NSObjectProtocol?
     private let monitor = NWPathMonitor()
 
@@ -64,8 +67,9 @@ final class OfflineManager {
             MainActor.assumeIsolated { self?.reconcile() }
         }
         monitor.pathUpdateHandler = { [weak self] path in
-            let wifi = path.status == .satisfied && !path.isExpensive
-            Task { @MainActor in self?.networkChanged(wifi: wifi) }
+            let online = path.status == .satisfied
+            let wifi = online && !path.isExpensive
+            Task { @MainActor in self?.networkChanged(wifi: wifi, online: online) }
         }
         monitor.start(queue: DispatchQueue(label: "OfflineManager.network"))
     }
@@ -271,10 +275,18 @@ final class OfflineManager {
         run()
     }
 
-    private func networkChanged(wifi: Bool) {
+    private func networkChanged(wifi: Bool, online: Bool) {
+        let wasOnline = isOnline
         isOnWiFi = wifi
+        isOnline = online
         if wifi {
             for (id, state) in activity where state == .waitingForWiFi { enqueue(id) }
+        }
+        // 網路恢復：下載中斷的作品立即從斷點繼續
+        if online, !wasOnline {
+            for (id, state) in activity where needsDownload(id) {
+                if case .failed = state { enqueue(id) }
+            }
         }
     }
 
@@ -305,12 +317,56 @@ final class OfflineManager {
         records[id]?.downloadedAt == nil || refresh.contains(id)
     }
 
-    /// 下載整部作品；網路錯誤或 AO3 限流時稍候重試（最多 3 次）
+    /// 下載整部作品。先嘗試一次取得完整內容頁；逾時或網路中斷時改為逐章下載，
+    /// 每章下載完就存到作品資料夾，失敗或中斷後從下一章繼續（斷點續傳）。
     private func downloadWork(_ id: Int) async throws -> WorkDetail {
+        if let partial = Self.loadPartial(id) {
+            return try await downloadByChapters(id, resume: partial)
+        }
+        do {
+            return try await withRetry { try await makeClient().work(id: id) }
+        } catch let error where Self.isConnectionError(error) {
+            return try await downloadByChapters(id, resume: nil)
+        }
+    }
+
+    private func downloadByChapters(_ id: Int, resume: OfflinePartial?) async throws -> WorkDetail {
+        let client = makeClient()
+        var partial: OfflinePartial
+        if let resume {
+            partial = resume
+        } else {
+            partial = OfflinePartial(chapterIDs: try await withRetry { try await client.chapterIDs(workID: id) })
+        }
+        guard !partial.chapterIDs.isEmpty else { throw AO3Error.parse(String(localized: "作品沒有章節")) }
+        let total = partial.chapterIDs.count
+        for index in partial.downloadedCount..<total {
+            try Task.checkCancellation()
+            activity[id] = .downloadingChapters(done: index, total: total)
+            let chapterID = partial.chapterIDs[index]
+            let page = try await withRetry { try await client.chapter(workID: id, chapterID: chapterID, index: index) }
+            if var work = partial.work {
+                work.chapters += page.chapters
+                // 作品結尾註在最後一章的頁面
+                if index == total - 1, !page.endNotes.isEmpty { work.endNotes = page.endNotes }
+                partial.work = work
+            } else {
+                partial.work = OfflineWork(detail: page)
+            }
+            try write(partial, to: Self.partialURL(id))
+            if index < total - 1 { try await Task.sleep(for: .seconds(1)) }
+        }
+        try? FileManager.default.removeItem(at: Self.partialURL(id))
+        guard let work = partial.work else { throw AO3Error.parse(String(localized: "作品沒有章節")) }
+        return work.detail
+    }
+
+    /// AO3 限流、伺服器錯誤或網路錯誤時稍候重試（最多 3 次）
+    private func withRetry<T>(_ operation: () async throws -> T) async throws -> T {
         var attempt = 0
         while true {
             do {
-                return try await makeClient().work(id: id)
+                return try await operation()
             } catch let error as AO3Error {
                 attempt += 1
                 switch error {
@@ -325,6 +381,39 @@ final class OfflineManager {
                 attempt += 1
                 try await Task.sleep(for: .seconds(5 * attempt))
             }
+        }
+    }
+
+    /// 逾時、斷線或伺服器暫時錯誤（改用逐章下載、或稍後自動重試的情況）
+    private static func isConnectionError(_ error: Error) -> Bool {
+        if let error = error as? URLError { return error.code != .cancelled }
+        if case AO3Error.http(let code) = error { return code >= 500 }
+        return false
+    }
+
+    /// 可以稍後自動重試的錯誤：連線問題或 AO3 限流
+    private static func isRetryable(_ error: Error) -> Bool {
+        if case AO3Error.rateLimited = error { return true }
+        return isConnectionError(error)
+    }
+
+    nonisolated private static func partialURL(_ id: Int) -> URL { workDirectory(id).appending(path: "partial.json") }
+
+    nonisolated private static func loadPartial(_ id: Int) -> OfflinePartial? {
+        guard let data = try? Data(contentsOf: partialURL(id)) else { return nil }
+        return try? JSONDecoder().decode(OfflinePartial.self, from: data)
+    }
+
+    /// 下載失敗後自動重試：等待時間逐次加長（30 秒、1、2、4、8 分鐘），網路恢復時立即重試
+    private func scheduleAutoRetry(_ id: Int) {
+        let count = (failures[id] ?? 0) + 1
+        failures[id] = count
+        guard count <= 5 else { return }
+        let delay = 30.0 * pow(2, Double(count - 1))
+        Task { [weak self] in
+            try? await Task.sleep(for: .seconds(delay))
+            guard let self, case .failed = self.activity[id] else { return }
+            self.enqueue(id)
         }
     }
 
@@ -343,6 +432,7 @@ final class OfflineManager {
                 let downloaded = OfflineWork(detail: detail)
                 try write(downloaded, to: Self.workURL(id))
                 refresh.remove(id)
+                failures[id] = nil
                 records[id, default: OfflineRecord()].chapterCount = detail.chapters.count
                 records[id]?.downloadedAt = downloaded.downloadedAt
                 records[id]?.lastCheckedAt = Date()
@@ -383,6 +473,10 @@ final class OfflineManager {
         } catch {
             if Task.isCancelled {
                 if activity[id] != nil { activity[id] = .paused }
+            } else if needsDownload(id), Self.isRetryable(error) {
+                // 下載失敗：已下載的章節保留，稍後自動從斷點繼續
+                activity[id] = .failed(String(localized: "下載中斷：\(error.localizedDescription)，稍後自動繼續"))
+                scheduleAutoRetry(id)
             } else {
                 activity[id] = .failed(String(localized: "失敗：\(error.localizedDescription)"))
             }
@@ -512,6 +606,18 @@ final class OfflineManager {
 }
 
 extension AO3Client {
+    /// 作品各章的 ID（目錄頁 /works/<id>/navigate），供逐章下載
+    func chapterIDs(workID: Int) async throws -> [Int] {
+        let html = try await get("/works/\(workID)/navigate", query: [URLQueryItem(name: "view_adult", value: "true")])
+        return try AO3Parser.chapterIDs(html: html)
+    }
+
+    /// 單章頁面；`index` 為這一章在整部作品中的索引（段落 ID 與完整內容頁一致）
+    func chapter(workID: Int, chapterID: Int, index: Int) async throws -> WorkDetail {
+        let html = try await get("/works/\(workID)/chapters/\(chapterID)", query: [URLQueryItem(name: "view_adult", value: "true")])
+        return try AO3Parser.workDetail(html: html, id: workID, chapterOffset: index)
+    }
+
     /// 作品目前已發布的章節數（作品頁統計列「3/10」的前半）
     func publishedChapterCount(id: Int) async throws -> Int? {
         let html = try await get("/works/\(id)", query: [URLQueryItem(name: "view_adult", value: "true")])

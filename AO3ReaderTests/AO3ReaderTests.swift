@@ -432,3 +432,29 @@ struct VisitedDateTests {
         #expect(parts.year == 2026 && parts.month == 10 && parts.day == 20)
     }
 }
+
+struct ChapterDownloadTests {
+    @Test func parsesChapterIndex() throws {
+        let html = """
+        <ol class="chapter index group">
+          <li><a href="/works/9/chapters/101">1. Start</a></li>
+          <li><a href="/works/9/chapters/205#workskin">2. Next</a></li>
+        </ol>
+        """
+        #expect(try AO3Parser.chapterIDs(html: html) == [101, 205])
+    }
+
+    @Test func singleChapterPageUsesWorkIndex() throws {
+        let html = """
+        <div id="workskin"><div class="preface group"><h2 class="title heading">T</h2></div>
+          <div id="chapters"><div class="chapter" id="chapter-3">
+            <div class="chapter preface group"><h3 class="title">Chapter 3</h3></div>
+            <div class="userstuff module" role="article"><p>Hello</p></div>
+          </div></div>
+        </div>
+        """
+        let detail = try AO3Parser.workDetail(html: html, id: 9, chapterOffset: 2)
+        #expect(detail.chapters.first?.id == 2)
+        #expect(detail.chapters.first?.paragraphs.first?.id.hasPrefix("c2-") == true)
+    }
+}

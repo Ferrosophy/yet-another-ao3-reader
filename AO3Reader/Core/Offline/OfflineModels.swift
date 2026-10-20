@@ -97,6 +97,8 @@ struct OfflineRecord: Codable, Sendable {
 enum OfflineActivity: Equatable, Sendable {
     case queued
     case downloading
+    /// 分章下載（斷點續傳）中：已完成章數 / 總章數
+    case downloadingChapters(done: Int, total: Int)
     case translating(done: Int, total: Int)
     case exporting
     case paused
@@ -109,8 +111,17 @@ enum OfflineActivity: Equatable, Sendable {
     /// 排隊或處理中
     var isActive: Bool {
         switch self {
-        case .queued, .downloading, .translating, .exporting: true
+        case .queued, .downloading, .downloadingChapters, .translating, .exporting: true
         default: false
         }
     }
+}
+
+/// 分章下載的進度（斷點續傳）：已下載的章節存在作品資料夾，失敗或中斷後從下一章繼續。
+struct OfflinePartial: Codable, Sendable {
+    var chapterIDs: [Int]
+    /// 已下載的部分（作品資訊取自第一章頁面）
+    var work: OfflineWork?
+
+    var downloadedCount: Int { work?.chapters.count ?? 0 }
 }
