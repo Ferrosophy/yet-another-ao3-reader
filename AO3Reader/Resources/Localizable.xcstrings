@@ -32608,6 +32608,114 @@
     "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": {
       "extractionState": "manual",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل: لم يقبل AO3 تغيير الاشتراك هذا. يرجى المحاولة مرة أخرى لاحقا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fehlgeschlagen: AO3 hat diese Abonnementänderung nicht akzeptiert. Bitte versuchen Sie es später noch einmal."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed: AO3 did not accept this subscription change. Please try again later."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error: AO3 no aceptó este cambio de suscripción. Inténtelo de nuevo más tarde."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec : AO3 n'a pas accepté cette modification d'abonnement. Veuillez réessayer plus tard."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "विफल: AO3 ने इस सदस्यता परिवर्तन को स्वीकार नहीं किया। कृपया बाद में पुन: प्रयास करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagal: AO3 tidak menerima perubahan langganan ini. Silakan coba lagi nanti."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non riuscito: AO3 non ha accettato questa modifica dell'abbonamento. Per favore riprova più tardi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "失敗: AO3 はこのサブスクリプションの変更を受け入れませんでした。後でもう一度試してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실패: AO3가 이 구독 변경을 수락하지 않았습니다. 나중에 다시 시도해 주세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mislukt: AO3 heeft deze abonnementswijziging niet geaccepteerd. Probeer het later opnieuw."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niepowodzenie: AO3 nie zaakceptował tej zmiany subskrypcji. Spróbuj ponownie później."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha: o AO3 não aceitou esta alteração de assinatura. Por favor, tente novamente mais tarde."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось: AO3 не принял это изменение подписки. Пожалуйста, повторите попытку позже."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ล้มเหลว: AO3 ไม่ยอมรับการเปลี่ยนแปลงการสมัครรับข้อมูลนี้ โปรดลองอีกครั้งในภายหลัง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başarısız: AO3 bu abonelik değişikliğini kabul etmedi. Lütfen daha sonra tekrar deneyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Помилка: AO3 не прийняв цю зміну підписки. Спробуйте пізніше."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thành công: AO3 không chấp nhận thay đổi đăng ký này. Vui lòng thử lại sau."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",

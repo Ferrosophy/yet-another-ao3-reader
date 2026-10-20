@@ -521,7 +521,8 @@
   "譯文大小跟隨正文": "本文のテキストサイズを一致させる",
   "翻譯作品資訊": "翻訳作品情報",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "右上のアカウント名→「アカウント情報」→「セキュリティ」をクリックします。 [サードパーティ アプリの管理] で、[アプリの追加] をクリックし、YAAO3R という名前を付けて、[パスワードの生成] をクリックします。",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "一括ダウンロードで作品を選択してここに追加します。ダウンロードしたファイルは、ファイル アプリの YAAO3R フォルダーにも表示されます。"
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "一括ダウンロードで作品を選択してここに追加します。ダウンロードしたファイルは、ファイル アプリの YAAO3R フォルダーにも表示されます。",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "失敗: AO3 はこのサブスクリプションの変更を受け入れませんでした。後でもう一度試してください。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1045,7 +1046,8 @@
   "譯文大小跟隨正文": "본문 텍스트 크기 일치",
   "翻譯作品資訊": "업무 정보 번역",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "오른쪽 상단의 계정 이름 → “계정 정보” → “보안”을 클릭하세요. \"타사 앱 관리\"에서 \"앱 추가\"를 클릭하고 이름을 YAAO3R로 지정한 다음 \"비밀번호 생성\"을 클릭합니다.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "여기에 추가하려면 일괄 다운로드에서 작품을 선택하세요. 다운로드한 파일은 파일 앱의 YAAO3R 폴더에도 나타납니다."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "여기에 추가하려면 일괄 다운로드에서 작품을 선택하세요. 다운로드한 파일은 파일 앱의 YAAO3R 폴더에도 나타납니다.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "실패: AO3가 이 구독 변경을 수락하지 않았습니다. 나중에 다시 시도해 주세요."
  },
  "es": {
   "載入中": "Cargando",
@@ -1569,7 +1571,8 @@
   "譯文大小跟隨正文": "Coincidir con el tamaño del texto del cuerpo",
   "翻譯作品資訊": "Traducir información de trabajo",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Haga clic en el nombre de su cuenta en la parte superior derecha → “Información de cuenta” → “Seguridad”. En \"Administración de aplicaciones de terceros\", haga clic en \"Agregar aplicación\", asígnele el nombre YAAO3R y luego haga clic en \"Generar contraseña\".",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Elija obras en Descarga por lotes para agregarlas aquí. Los archivos descargados también aparecen en la carpeta YAAO3R en la aplicación Archivos."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Elija obras en Descarga por lotes para agregarlas aquí. Los archivos descargados también aparecen en la carpeta YAAO3R en la aplicación Archivos.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Error: AO3 no aceptó este cambio de suscripción. Inténtelo de nuevo más tarde."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2093,7 +2096,8 @@
   "譯文大小跟隨正文": "Faire correspondre la taille du corps du texte",
   "翻譯作品資訊": "Traduire les informations de travail",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Cliquez sur le nom de votre compte en haut à droite → « Informations sur le compte » → « Sécurité ». Sous « Gestion des applications tierces », cliquez sur « Ajouter une application », nommez-la YAAO3R, puis cliquez sur « Générer un mot de passe ».",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Choisissez les œuvres en téléchargement par lots pour les ajouter ici. Les fichiers téléchargés apparaissent également dans le dossier YAAO3R de l'application Fichiers."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Choisissez les œuvres en téléchargement par lots pour les ajouter ici. Les fichiers téléchargés apparaissent également dans le dossier YAAO3R de l'application Fichiers.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Échec : AO3 n'a pas accepté cette modification d'abonnement. Veuillez réessayer plus tard."
  },
  "de": {
   "載入中": "Laden",
@@ -2617,7 +2621,8 @@
   "譯文大小跟隨正文": "Passen Sie die Größe des Textkörpers an",
   "翻譯作品資訊": "Arbeitsinformationen übersetzen",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klicken Sie oben rechts auf Ihren Kontonamen → „Kontoinformationen“ → „Sicherheit“. Klicken Sie unter „Drittanbieter-App-Verwaltung“ auf „App hinzufügen“, nennen Sie sie YAAO3R und klicken Sie dann auf „Passwort generieren“.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wählen Sie Werke im Batch-Download aus, um sie hier hinzuzufügen. Heruntergeladene Dateien werden auch im Ordner YAAO3R in der Dateien-App angezeigt."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wählen Sie Werke im Batch-Download aus, um sie hier hinzuzufügen. Heruntergeladene Dateien werden auch im Ordner YAAO3R in der Dateien-App angezeigt.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Fehlgeschlagen: AO3 hat diese Abonnementänderung nicht akzeptiert. Bitte versuchen Sie es später noch einmal."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3141,7 +3146,8 @@
   "譯文大小跟隨正文": "Corresponder ao tamanho do texto do corpo",
   "翻譯作品資訊": "Traduzir informações de trabalho",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Clique no nome da sua conta no canto superior direito → “Informações da conta” → “Segurança”. Em “Gerenciamento de aplicativos de terceiros”, clique em “Adicionar aplicativo”, nomeie-o YAAO3R e clique em “Gerar senha”.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Escolha trabalhos em download em lote para adicioná-los aqui. Os arquivos baixados também aparecem na pasta YAAO3R no aplicativo Arquivos."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Escolha trabalhos em download em lote para adicioná-los aqui. Os arquivos baixados também aparecem na pasta YAAO3R no aplicativo Arquivos.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Falha: o AO3 não aceitou esta alteração de assinatura. Por favor, tente novamente mais tarde."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3665,7 +3671,8 @@
   "譯文大小跟隨正文": "Corrisponde alla dimensione del corpo del testo",
   "翻譯作品資訊": "Traduci informazioni di lavoro",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Fai clic sul nome del tuo account in alto a destra → “Informazioni sull'account” → “Sicurezza”. In \"Gestione app di terze parti\", fai clic su \"Aggiungi app\", chiamala YAAO3R, quindi fai clic su \"Genera password\".",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Scegli le opere in Download batch per aggiungerle qui. I file scaricati vengono visualizzati anche nella cartella YAAO3R nell'app File."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Scegli le opere in Download batch per aggiungerle qui. I file scaricati vengono visualizzati anche nella cartella YAAO3R nell'app File.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Non riuscito: AO3 non ha accettato questa modifica dell'abbonamento. Per favore riprova più tardi."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4189,7 +4196,8 @@
   "譯文大小跟隨正文": "Соответствие размеру основного текста",
   "翻譯作品資訊": "Перевести информацию о работе",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Нажмите имя своей учетной записи в правом верхнем углу → «Информация об учетной записи» → «Безопасность». В разделе «Управление сторонними приложениями» нажмите «Добавить приложение», назовите его YAAO3R, затем нажмите «Создать пароль».",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Выберите работы в пакетной загрузке, чтобы добавить их сюда. Загруженные файлы также появляются в папке YAAO3R в приложении «Файлы»."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Выберите работы в пакетной загрузке, чтобы добавить их сюда. Загруженные файлы также появляются в папке YAAO3R в приложении «Файлы».",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Не удалось: AO3 не принял это изменение подписки. Пожалуйста, повторите попытку позже."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4713,7 +4721,8 @@
   "譯文大小跟隨正文": "Відповідність розміру основного тексту",
   "翻譯作品資訊": "Перекласти робочу інформацію",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Натисніть назву свого облікового запису вгорі праворуч → «Інформація про обліковий запис» → «Безпека». У розділі «Керування сторонніми програмами» натисніть «Додати програму», назвіть її YAAO3R, а потім натисніть «Створити пароль».",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Виберіть роботи в пакетному завантаженні, щоб додати їх сюди. Завантажені файли також відображаються в папці YAAO3R у програмі Файли."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Виберіть роботи в пакетному завантаженні, щоб додати їх сюди. Завантажені файли також відображаються в папці YAAO3R у програмі Файли.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Помилка: AO3 не прийняв цю зміну підписки. Спробуйте пізніше."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5237,7 +5246,8 @@
   "譯文大小跟隨正文": "Dopasuj rozmiar tekstu głównego",
   "翻譯作品資訊": "Przetłumacz informacje o pracy",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Kliknij nazwę swojego konta w prawym górnym rogu → „Informacje o koncie” → „Bezpieczeństwo”. W sekcji „Zarządzanie aplikacjami innych firm” kliknij „Dodaj aplikację”, nadaj jej nazwę YAAO3R, a następnie kliknij „Wygeneruj hasło”.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wybierz prace w trybie pobierania zbiorczego, aby je tutaj dodać. Pobrane pliki pojawiają się także w folderze YAAO3R w aplikacji Pliki."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wybierz prace w trybie pobierania zbiorczego, aby je tutaj dodać. Pobrane pliki pojawiają się także w folderze YAAO3R w aplikacji Pliki.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Niepowodzenie: AO3 nie zaakceptował tej zmiany subskrypcji. Spróbuj ponownie później."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5761,7 +5771,8 @@
   "譯文大小跟隨正文": "Gövde Metni Boyutunu Eşleştir",
   "翻譯作品資訊": "Çalışma Bilgilerini Çevir",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Sağ üstteki hesap adınıza → “Hesap Bilgileri” → “Güvenlik”e tıklayın. “Üçüncü Taraf Uygulama Yönetimi” altında, “Uygulama Ekle”ye tıklayın, uygulamaya YAAO3R adını verin ve ardından “Şifre Oluştur”a tıklayın.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Buraya eklemek için Toplu İndirme'deki çalışmaları seçin. İndirilen dosyalar ayrıca Dosyalar uygulamasındaki YAAO3R klasöründe de görünür."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Buraya eklemek için Toplu İndirme'deki çalışmaları seçin. İndirilen dosyalar ayrıca Dosyalar uygulamasındaki YAAO3R klasöründe de görünür.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Başarısız: AO3 bu abonelik değişikliğini kabul etmedi. Lütfen daha sonra tekrar deneyin."
  },
  "nl": {
   "載入中": "Laden",
@@ -6285,7 +6296,8 @@
   "譯文大小跟隨正文": "Overeenkomen met de grootte van de hoofdtekst",
   "翻譯作品資訊": "Vertaal werkinformatie",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klik rechtsboven op uw accountnaam → “Accountinfo” → “Beveiliging”. Klik onder “App-beheer van derden” op “App toevoegen”, noem deze YAAO3R en klik vervolgens op “Wachtwoord genereren”.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Kies werken in Batchdownload om ze hier toe te voegen. Gedownloade bestanden verschijnen ook in de map YAAO3R in de app Bestanden."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Kies werken in Batchdownload om ze hier toe te voegen. Gedownloade bestanden verschijnen ook in de map YAAO3R in de app Bestanden.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Mislukt: AO3 heeft deze abonnementswijziging niet geaccepteerd. Probeer het later opnieuw."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6809,7 +6821,8 @@
   "譯文大小跟隨正文": "مطابقة حجم النص الأساسي",
   "翻譯作品資訊": "ترجمة معلومات العمل",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "انقر على اسم حسابك في الجزء العلوي الأيمن ← \"معلومات الحساب\" ← \"الأمان\". ضمن \"إدارة تطبيقات الطرف الثالث\"، انقر على \"إضافة تطبيق\"، وقم بتسميته YAAO3R، ثم انقر على \"إنشاء كلمة مرور\".",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "اختر الأعمال في Batch Download لإضافتها هنا. تظهر الملفات التي تم تنزيلها أيضًا في مجلد YAAO3R في تطبيق الملفات."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "اختر الأعمال في Batch Download لإضافتها هنا. تظهر الملفات التي تم تنزيلها أيضًا في مجلد YAAO3R في تطبيق الملفات.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "فشل: لم يقبل AO3 تغيير الاشتراك هذا. يرجى المحاولة مرة أخرى لاحقا."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -7333,7 +7346,8 @@
   "譯文大小跟隨正文": "बॉडी टेक्स्ट साइज का मिलान करें",
   "翻譯作品資訊": "कार्य जानकारी का अनुवाद करें",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "ऊपर दाईं ओर अपने खाते के नाम → \"खाता जानकारी\" → \"सुरक्षा\" पर क्लिक करें। \"तृतीय-पक्ष ऐप प्रबंधन\" के अंतर्गत, \"ऐप जोड़ें\" पर क्लिक करें, इसे YAAO3R नाम दें, फिर \"पासवर्ड जेनरेट करें\" पर क्लिक करें।",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "उन्हें यहां जोड़ने के लिए बैच डाउनलोड में कार्य चुनें। डाउनलोड की गई फ़ाइलें फ़ाइलें ऐप में YAAO3R फ़ोल्डर में भी दिखाई देती हैं।"
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "उन्हें यहां जोड़ने के लिए बैच डाउनलोड में कार्य चुनें। डाउनलोड की गई फ़ाइलें फ़ाइलें ऐप में YAAO3R फ़ोल्डर में भी दिखाई देती हैं।",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "विफल: AO3 ने इस सदस्यता परिवर्तन को स्वीकार नहीं किया। कृपया बाद में पुन: प्रयास करें।"
  },
  "id": {
   "載入中": "Memuat",
@@ -7857,7 +7871,8 @@
   "譯文大小跟隨正文": "Cocokkan Ukuran Teks Isi",
   "翻譯作品資訊": "Terjemahkan Info Pekerjaan",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klik nama akun Anda di kanan atas → “Info Akun” → “Keamanan”. Di bawah “Manajemen Aplikasi Pihak Ketiga”, klik “Tambahkan Aplikasi”, beri nama YAAO3R, lalu klik “Buat Kata Sandi”.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Pilih karya di Batch Download untuk menambahkannya di sini. File yang diunduh juga muncul di folder YAAO3R di aplikasi Files."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Pilih karya di Batch Download untuk menambahkannya di sini. File yang diunduh juga muncul di folder YAAO3R di aplikasi Files.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Gagal: AO3 tidak menerima perubahan langganan ini. Silakan coba lagi nanti."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -8381,7 +8396,8 @@
   "譯文大小跟隨正文": "Khớp kích thước văn bản nội dung",
   "翻譯作品資訊": "Dịch thông tin công việc",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Nhấp vào tên tài khoản của bạn ở trên cùng bên phải → “Thông tin tài khoản” → “Bảo mật”. Trong “Quản lý ứng dụng của bên thứ ba”, hãy nhấp vào “Thêm ứng dụng”, đặt tên là YAAO3R, sau đó nhấp vào “Tạo mật khẩu”.",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Chọn các tác phẩm trong Tải xuống hàng loạt để thêm chúng vào đây. Các tệp đã tải xuống cũng xuất hiện trong thư mục YAAO3R trong ứng dụng Tệp."
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Chọn các tác phẩm trong Tải xuống hàng loạt để thêm chúng vào đây. Các tệp đã tải xuống cũng xuất hiện trong thư mục YAAO3R trong ứng dụng Tệp.",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Không thành công: AO3 không chấp nhận thay đổi đăng ký này. Vui lòng thử lại sau."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8905,6 +8921,7 @@
   "譯文大小跟隨正文": "จับคู่ขนาดข้อความเนื้อหา",
   "翻譯作品資訊": "แปลข้อมูลงาน",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "คลิกชื่อบัญชีของคุณที่มุมขวาบน → “ข้อมูลบัญชี” → “ความปลอดภัย” ใต้ \"การจัดการแอปบุคคลที่สาม\" คลิก \"เพิ่มแอป\" ตั้งชื่อเป็น YAAO3R จากนั้นคลิก \"สร้างรหัสผ่าน\"",
-  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "เลือกผลงานแบบดาวน์โหลดเป็นชุดเพื่อเพิ่มที่นี่ ไฟล์ที่ดาวน์โหลดยังปรากฏในโฟลเดอร์ YAAO3R ในแอพ Files อีกด้วย"
+  "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "เลือกผลงานแบบดาวน์โหลดเป็นชุดเพื่อเพิ่มที่นี่ ไฟล์ที่ดาวน์โหลดยังปรากฏในโฟลเดอร์ YAAO3R ในแอพ Files อีกด้วย",
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "ล้มเหลว: AO3 ไม่ยอมรับการเปลี่ยนแปลงการสมัครรับข้อมูลนี้ โปรดลองอีกครั้งในภายหลัง"
  }
 }
