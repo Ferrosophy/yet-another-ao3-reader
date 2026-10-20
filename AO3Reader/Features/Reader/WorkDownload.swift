@@ -142,3 +142,40 @@ struct SwipeBackDisabler: UIViewControllerRepresentable {
         }
     }
 }
+
+/// 放在 SwiftUI ScrollView 內容中，找到底層的 UIScrollView 並停用依安全區域自動調整內距，
+/// 讓導覽列或狀態列顯示 / 隱藏時內容不會移動。
+struct ScrollInsetLock: UIViewRepresentable {
+    func makeUIView(context: Context) -> LockView { LockView() }
+    func updateUIView(_ view: LockView, context: Context) { view.apply() }
+
+    final class LockView: UIView {
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            isUserInteractionEnabled = false
+            backgroundColor = .clear
+        }
+
+        @available(*, unavailable)
+        required init?(coder: NSCoder) { fatalError() }
+
+        override func didMoveToWindow() {
+            super.didMoveToWindow()
+            apply()
+        }
+
+        func apply() {
+            var view = superview
+            while let current = view {
+                if let scrollView = current as? UIScrollView {
+                    if scrollView.contentInsetAdjustmentBehavior != .never {
+                        scrollView.contentInsetAdjustmentBehavior = .never
+                        scrollView.automaticallyAdjustsScrollIndicatorInsets = false
+                    }
+                    return
+                }
+                view = current.superview
+            }
+        }
+    }
+}

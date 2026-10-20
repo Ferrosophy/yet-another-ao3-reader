@@ -227,6 +227,9 @@ struct ReaderView: View {
             .scrollTargetLayout()
             .padding(.horizontal, layout.horizontalMargin)
             .foregroundStyle(style.textColor.map { AnyShapeStyle($0) } ?? AnyShapeStyle(.primary))
+            // 點擊切換控制列時導覽列與狀態列會顯示 / 隱藏，安全區域改變會讓系統自動調整捲動內距，
+            // 正文因此上下跳動、打斷捲動；停用自動調整，邊距只由下方的 contentMargins 決定
+            .background(ScrollInsetLock())
         }
         .scrollPosition(id: $model.scrollAnchor, anchor: .top)
         .contentMargins(.top, topInset + 12, for: .scrollContent)
