@@ -28,6 +28,8 @@ permissions:
 jobs:
   test:
     name: Unit tests
+    # 推送時只編譯 IPA，避免同時搶兩台 macOS 機器；單元測試在 PR 與手動執行時跑
+    if: github.event_name != 'push'
     runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
