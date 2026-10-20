@@ -1,18 +1,23 @@
 import Foundation
 import Observation
 
-/// 列表卡片的翻譯開關（設定 › 一般）：作品名稱、Fandom、標籤、簡介可分別決定是否顯示譯文。
+/// 顯示譯文的開關（設定 › 一般）：作品名稱、Fandom、標籤、簡介可分別決定是否顯示譯文，
+/// 瀏覽（作品列表與卡片）與閱讀頁各自一組。
 enum TranslationVisibility {
+    // 瀏覽頁與作品列表
     static let titleKey = "translate.show.title"
     static let fandomKey = "translate.show.fandom"
     static let tagsKey = "translate.show.tags"
     static let summaryKey = "translate.show.summary"
+    // 閱讀頁
+    static let readerTitleKey = "translate.reader.show.title"
+    static let readerFandomKey = "translate.reader.show.fandom"
+    static let readerTagsKey = "translate.reader.show.tags"
+    static let readerSummaryKey = "translate.reader.show.summary"
 
     private static func value(_ key: String) -> Bool { UserDefaults.standard.object(forKey: key) as? Bool ?? true }
-    static var title: Bool { value(titleKey) }
-    static var fandom: Bool { value(fandomKey) }
-    static var tags: Bool { value(tagsKey) }
-    static var summary: Bool { value(summaryKey) }
+    static var readerTitle: Bool { value(readerTitleKey) }
+    static var readerSummary: Bool { value(readerSummaryKey) }
 }
 
 /// 單一卡片欄位的翻譯狀態。每個欄位各自被觀察，譯文送達時只重繪對應的卡片，

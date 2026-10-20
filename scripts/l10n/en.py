@@ -523,6 +523,10 @@ EN = {
 '譯文大小跟隨正文': 'Match Body Text Size',
 '翻譯作品資訊': 'Translate Work Info',
 '操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試': 'Failed: AO3 did not accept this subscription change. Please try again later.',
+'瀏覽頁顯示譯文': 'Translations in Browse',
+'閱讀頁顯示譯文': 'Translations in Reader',
+'瀏覽頁的作品卡片與各作品列表。': 'Work cards in Browse and all work lists.',
+'閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。': 'When translation is on in the reader, whether these items on the title page show translations. Titles and summaries use your translation target language; fandoms and tags use the interface language.',
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

@@ -660,8 +660,8 @@ private struct WorkTagsView: View {
     var showsTranslation = false
     var onOpen: (WorkListRoute) -> Void
     @Environment(AppState.self) private var app
-    @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
-    @AppStorage(TranslationVisibility.tagsKey) private var showsTagTranslation = true
+    @AppStorage(TranslationVisibility.readerFandomKey) private var showsFandomTranslation = true
+    @AppStorage(TranslationVisibility.readerTagsKey) private var showsTagTranslation = true
     @State private var expanded = false
 
     /// 這個分組是否顯示譯文（設定 › 一般 › 顯示譯文）

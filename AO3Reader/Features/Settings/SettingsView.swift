@@ -26,6 +26,10 @@ struct SettingsView: View {
     @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
     @AppStorage(TranslationVisibility.tagsKey) private var showsTagTranslation = true
     @AppStorage(TranslationVisibility.summaryKey) private var showsSummaryTranslation = true
+    @AppStorage(TranslationVisibility.readerTitleKey) private var readerShowsTitle = true
+    @AppStorage(TranslationVisibility.readerFandomKey) private var readerShowsFandom = true
+    @AppStorage(TranslationVisibility.readerTagsKey) private var readerShowsTags = true
+    @AppStorage(TranslationVisibility.readerSummaryKey) private var readerShowsSummary = true
 
     var body: some View {
         List {
@@ -73,9 +77,20 @@ struct SettingsView: View {
                 Toggle("標籤", isOn: $showsTagTranslation)
                 Toggle("簡介", isOn: $showsSummaryTranslation)
             } header: {
-                Text("顯示譯文")
+                Text("瀏覽頁顯示譯文")
             } footer: {
-                Text("決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。")
+                Text("瀏覽頁的作品卡片與各作品列表。")
+            }
+
+            Section {
+                Toggle("作品名稱", isOn: $readerShowsTitle)
+                Toggle("Fandom", isOn: $readerShowsFandom)
+                Toggle("標籤", isOn: $readerShowsTags)
+                Toggle("簡介", isOn: $readerShowsSummary)
+            } header: {
+                Text("閱讀頁顯示譯文")
+            } footer: {
+                Text("閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。")
             }
 
             Section("下載") {

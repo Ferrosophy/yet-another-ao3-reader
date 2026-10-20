@@ -522,7 +522,11 @@
   "翻譯作品資訊": "翻訳作品情報",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "右上のアカウント名→「アカウント情報」→「セキュリティ」をクリックします。 [サードパーティ アプリの管理] で、[アプリの追加] をクリックし、YAAO3R という名前を付けて、[パスワードの生成] をクリックします。",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "一括ダウンロードで作品を選択してここに追加します。ダウンロードしたファイルは、ファイル アプリの YAAO3R フォルダーにも表示されます。",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "失敗: AO3 はこのサブスクリプションの変更を受け入れませんでした。後でもう一度試してください。"
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "失敗: AO3 はこのサブスクリプションの変更を受け入れませんでした。後でもう一度試してください。",
+  "瀏覽頁顯示譯文": "ブラウズでの翻訳",
+  "閱讀頁顯示譯文": "Reader での翻訳",
+  "瀏覽頁的作品卡片與各作品列表。": "参照内のワーク カードとすべてのワーク リスト。",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "リーダーで翻訳がオンになっている場合、タイトル ページのこれらの項目に翻訳が表示されるかどうか。タイトルと概要には翻訳対象言語が使用されます。ファンダムとタグはインターフェース言語を使用します。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1047,7 +1051,11 @@
   "翻譯作品資訊": "업무 정보 번역",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "오른쪽 상단의 계정 이름 → “계정 정보” → “보안”을 클릭하세요. \"타사 앱 관리\"에서 \"앱 추가\"를 클릭하고 이름을 YAAO3R로 지정한 다음 \"비밀번호 생성\"을 클릭합니다.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "여기에 추가하려면 일괄 다운로드에서 작품을 선택하세요. 다운로드한 파일은 파일 앱의 YAAO3R 폴더에도 나타납니다.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "실패: AO3가 이 구독 변경을 수락하지 않았습니다. 나중에 다시 시도해 주세요."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "실패: AO3가 이 구독 변경을 수락하지 않았습니다. 나중에 다시 시도해 주세요.",
+  "瀏覽頁顯示譯文": "찾아보기의 번역",
+  "閱讀頁顯示譯文": "리더의 번역",
+  "瀏覽頁的作品卡片與各作品列表。": "찾아보기 및 모든 작업 목록의 작업 카드.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "리더에서 번역이 켜져 있을 때 제목 페이지의 이러한 항목에 번역이 표시되는지 여부입니다. 제목과 요약은 번역 대상 언어를 사용합니다. 팬덤과 태그는 인터페이스 언어를 사용합니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -1572,7 +1580,11 @@
   "翻譯作品資訊": "Traducir información de trabajo",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Haga clic en el nombre de su cuenta en la parte superior derecha → “Información de cuenta” → “Seguridad”. En \"Administración de aplicaciones de terceros\", haga clic en \"Agregar aplicación\", asígnele el nombre YAAO3R y luego haga clic en \"Generar contraseña\".",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Elija obras en Descarga por lotes para agregarlas aquí. Los archivos descargados también aparecen en la carpeta YAAO3R en la aplicación Archivos.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Error: AO3 no aceptó este cambio de suscripción. Inténtelo de nuevo más tarde."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Error: AO3 no aceptó este cambio de suscripción. Inténtelo de nuevo más tarde.",
+  "瀏覽頁顯示譯文": "Traducciones en Explorar",
+  "閱讀頁顯示譯文": "Traducciones en Lector",
+  "瀏覽頁的作品卡片與各作品列表。": "Tarjetas de trabajo en Explorar y todas las listas de trabajo.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Cuando la traducción está activada en el lector, si estos elementos en la página de título muestran traducciones. Los títulos y resúmenes utilizan el idioma de destino de la traducción; Los fandoms y las etiquetas utilizan el idioma de la interfaz."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2097,7 +2109,11 @@
   "翻譯作品資訊": "Traduire les informations de travail",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Cliquez sur le nom de votre compte en haut à droite → « Informations sur le compte » → « Sécurité ». Sous « Gestion des applications tierces », cliquez sur « Ajouter une application », nommez-la YAAO3R, puis cliquez sur « Générer un mot de passe ».",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Choisissez les œuvres en téléchargement par lots pour les ajouter ici. Les fichiers téléchargés apparaissent également dans le dossier YAAO3R de l'application Fichiers.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Échec : AO3 n'a pas accepté cette modification d'abonnement. Veuillez réessayer plus tard."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Échec : AO3 n'a pas accepté cette modification d'abonnement. Veuillez réessayer plus tard.",
+  "瀏覽頁顯示譯文": "Traductions dans Parcourir",
+  "閱讀頁顯示譯文": "Traductions dans Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "Cartes de travail dans Parcourir et toutes les listes de travail.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Lorsque la traduction est activée dans le lecteur, indique si ces éléments de la page de titre affichent des traductions. Les titres et les résumés utilisent la langue cible de votre traduction ; les fandoms et les tags utilisent le langage de l'interface."
  },
  "de": {
   "載入中": "Laden",
@@ -2622,7 +2638,11 @@
   "翻譯作品資訊": "Arbeitsinformationen übersetzen",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klicken Sie oben rechts auf Ihren Kontonamen → „Kontoinformationen“ → „Sicherheit“. Klicken Sie unter „Drittanbieter-App-Verwaltung“ auf „App hinzufügen“, nennen Sie sie YAAO3R und klicken Sie dann auf „Passwort generieren“.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wählen Sie Werke im Batch-Download aus, um sie hier hinzuzufügen. Heruntergeladene Dateien werden auch im Ordner YAAO3R in der Dateien-App angezeigt.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Fehlgeschlagen: AO3 hat diese Abonnementänderung nicht akzeptiert. Bitte versuchen Sie es später noch einmal."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Fehlgeschlagen: AO3 hat diese Abonnementänderung nicht akzeptiert. Bitte versuchen Sie es später noch einmal.",
+  "瀏覽頁顯示譯文": "Übersetzungen in Durchsuchen",
+  "閱讀頁顯示譯文": "Übersetzungen im Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "Arbeitskarten in Durchsuchen und alle Arbeitslisten.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Wenn die Übersetzung im Reader aktiviert ist, wird angezeigt, ob für diese Elemente auf der Titelseite Übersetzungen angezeigt werden. Titel und Zusammenfassungen verwenden die Zielsprache Ihrer Übersetzung; Fandoms und Tags verwenden die Schnittstellensprache."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3147,7 +3167,11 @@
   "翻譯作品資訊": "Traduzir informações de trabalho",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Clique no nome da sua conta no canto superior direito → “Informações da conta” → “Segurança”. Em “Gerenciamento de aplicativos de terceiros”, clique em “Adicionar aplicativo”, nomeie-o YAAO3R e clique em “Gerar senha”.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Escolha trabalhos em download em lote para adicioná-los aqui. Os arquivos baixados também aparecem na pasta YAAO3R no aplicativo Arquivos.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Falha: o AO3 não aceitou esta alteração de assinatura. Por favor, tente novamente mais tarde."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Falha: o AO3 não aceitou esta alteração de assinatura. Por favor, tente novamente mais tarde.",
+  "瀏覽頁顯示譯文": "Traduções em Navegar",
+  "閱讀頁顯示譯文": "Traduções no Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "Cartões de trabalho em Navegar e todas as listas de trabalho.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Quando a tradução está ativada no leitor, se esses itens na página de título mostram traduções. Títulos e resumos usam o idioma de destino da tradução; fandoms e tags usam o idioma da interface."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3672,7 +3696,11 @@
   "翻譯作品資訊": "Traduci informazioni di lavoro",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Fai clic sul nome del tuo account in alto a destra → “Informazioni sull'account” → “Sicurezza”. In \"Gestione app di terze parti\", fai clic su \"Aggiungi app\", chiamala YAAO3R, quindi fai clic su \"Genera password\".",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Scegli le opere in Download batch per aggiungerle qui. I file scaricati vengono visualizzati anche nella cartella YAAO3R nell'app File.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Non riuscito: AO3 non ha accettato questa modifica dell'abbonamento. Per favore riprova più tardi."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Non riuscito: AO3 non ha accettato questa modifica dell'abbonamento. Per favore riprova più tardi.",
+  "瀏覽頁顯示譯文": "Traduzioni in Sfoglia",
+  "閱讀頁顯示譯文": "Traduzioni in Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "Schede di lavoro in Sfoglia e in tutte le liste di lavoro.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Quando la traduzione è attiva nel lettore, indica se questi elementi nel frontespizio mostrano le traduzioni. I titoli e i riassunti utilizzano la lingua di destinazione della traduzione; fandom e tag utilizzano il linguaggio dell'interfaccia."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4197,7 +4225,11 @@
   "翻譯作品資訊": "Перевести информацию о работе",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Нажмите имя своей учетной записи в правом верхнем углу → «Информация об учетной записи» → «Безопасность». В разделе «Управление сторонними приложениями» нажмите «Добавить приложение», назовите его YAAO3R, затем нажмите «Создать пароль».",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Выберите работы в пакетной загрузке, чтобы добавить их сюда. Загруженные файлы также появляются в папке YAAO3R в приложении «Файлы».",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Не удалось: AO3 не принял это изменение подписки. Пожалуйста, повторите попытку позже."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Не удалось: AO3 не принял это изменение подписки. Пожалуйста, повторите попытку позже.",
+  "瀏覽頁顯示譯文": "Переводы в обзоре",
+  "閱讀頁顯示譯文": "Переводы в Ридере",
+  "瀏覽頁的作品卡片與各作品列表。": "Рабочие карточки в разделе «Обзор» и все рабочие списки.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "При включенном переводе в читалке отображаются ли переводы этих элементов на титульной странице. В заголовках и аннотациях используется целевой язык вашего перевода; фандомы и теги используют язык интерфейса."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4722,7 +4754,11 @@
   "翻譯作品資訊": "Перекласти робочу інформацію",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Натисніть назву свого облікового запису вгорі праворуч → «Інформація про обліковий запис» → «Безпека». У розділі «Керування сторонніми програмами» натисніть «Додати програму», назвіть її YAAO3R, а потім натисніть «Створити пароль».",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Виберіть роботи в пакетному завантаженні, щоб додати їх сюди. Завантажені файли також відображаються в папці YAAO3R у програмі Файли.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Помилка: AO3 не прийняв цю зміну підписки. Спробуйте пізніше."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Помилка: AO3 не прийняв цю зміну підписки. Спробуйте пізніше.",
+  "瀏覽頁顯示譯文": "Переклади в Огляді",
+  "閱讀頁顯示譯文": "Переклади в Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "Робочі картки в Огляді та всі списки робіт.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Коли переклад увімкнено в програмі для читання, чи відображаються переклади цих елементів на титульній сторінці. У заголовках і резюме використовується цільова мова перекладу; фандоми та теги використовують мову інтерфейсу."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5247,7 +5283,11 @@
   "翻譯作品資訊": "Przetłumacz informacje o pracy",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Kliknij nazwę swojego konta w prawym górnym rogu → „Informacje o koncie” → „Bezpieczeństwo”. W sekcji „Zarządzanie aplikacjami innych firm” kliknij „Dodaj aplikację”, nadaj jej nazwę YAAO3R, a następnie kliknij „Wygeneruj hasło”.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Wybierz prace w trybie pobierania zbiorczego, aby je tutaj dodać. Pobrane pliki pojawiają się także w folderze YAAO3R w aplikacji Pliki.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Niepowodzenie: AO3 nie zaakceptował tej zmiany subskrypcji. Spróbuj ponownie później."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Niepowodzenie: AO3 nie zaakceptował tej zmiany subskrypcji. Spróbuj ponownie później.",
+  "瀏覽頁顯示譯文": "Tłumaczenia w Przeglądaj",
+  "閱讀頁顯示譯文": "Tłumaczenia w Czytniku",
+  "瀏覽頁的作品卡片與各作品列表。": "Karty pracy w Przeglądaj i wszystkie listy prac.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Gdy w czytniku włączone jest tłumaczenie, czy te pozycje na stronie tytułowej pokazują tłumaczenia. Tytuły i streszczenia korzystają z języka docelowego tłumaczenia; fandomy i tagi używają języka interfejsu."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5772,7 +5812,11 @@
   "翻譯作品資訊": "Çalışma Bilgilerini Çevir",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Sağ üstteki hesap adınıza → “Hesap Bilgileri” → “Güvenlik”e tıklayın. “Üçüncü Taraf Uygulama Yönetimi” altında, “Uygulama Ekle”ye tıklayın, uygulamaya YAAO3R adını verin ve ardından “Şifre Oluştur”a tıklayın.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Buraya eklemek için Toplu İndirme'deki çalışmaları seçin. İndirilen dosyalar ayrıca Dosyalar uygulamasındaki YAAO3R klasöründe de görünür.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Başarısız: AO3 bu abonelik değişikliğini kabul etmedi. Lütfen daha sonra tekrar deneyin."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Başarısız: AO3 bu abonelik değişikliğini kabul etmedi. Lütfen daha sonra tekrar deneyin.",
+  "瀏覽頁顯示譯文": "Gözat'taki çeviriler",
+  "閱讀頁顯示譯文": "Reader'daki çeviriler",
+  "瀏覽頁的作品卡片與各作品列表。": "Gözat'taki ve tüm çalışma listelerindeki çalışma kartları.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Okuyucuda çeviri açıkken, başlık sayfasındaki bu öğelerin çevirileri gösterip göstermediği. Başlıklar ve özetler çeviri hedef dilinizi kullanır; fandomlar ve etiketler arayüz dilini kullanır."
  },
  "nl": {
   "載入中": "Laden",
@@ -6297,7 +6341,11 @@
   "翻譯作品資訊": "Vertaal werkinformatie",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klik rechtsboven op uw accountnaam → “Accountinfo” → “Beveiliging”. Klik onder “App-beheer van derden” op “App toevoegen”, noem deze YAAO3R en klik vervolgens op “Wachtwoord genereren”.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Kies werken in Batchdownload om ze hier toe te voegen. Gedownloade bestanden verschijnen ook in de map YAAO3R in de app Bestanden.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Mislukt: AO3 heeft deze abonnementswijziging niet geaccepteerd. Probeer het later opnieuw."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Mislukt: AO3 heeft deze abonnementswijziging niet geaccepteerd. Probeer het later opnieuw.",
+  "瀏覽頁顯示譯文": "Vertalingen in Bladeren",
+  "閱讀頁顯示譯文": "Vertalingen in Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "Werkkaarten in Bladeren en alle werklijsten.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Wanneer vertalingen zijn ingeschakeld in de reader, of deze items op de titelpagina vertalingen tonen. Titels en samenvattingen gebruiken uw vertalingsdoeltaal; fandoms en tags gebruiken de interfacetaal."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6822,7 +6870,11 @@
   "翻譯作品資訊": "ترجمة معلومات العمل",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "انقر على اسم حسابك في الجزء العلوي الأيمن ← \"معلومات الحساب\" ← \"الأمان\". ضمن \"إدارة تطبيقات الطرف الثالث\"، انقر على \"إضافة تطبيق\"، وقم بتسميته YAAO3R، ثم انقر على \"إنشاء كلمة مرور\".",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "اختر الأعمال في Batch Download لإضافتها هنا. تظهر الملفات التي تم تنزيلها أيضًا في مجلد YAAO3R في تطبيق الملفات.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "فشل: لم يقبل AO3 تغيير الاشتراك هذا. يرجى المحاولة مرة أخرى لاحقا."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "فشل: لم يقبل AO3 تغيير الاشتراك هذا. يرجى المحاولة مرة أخرى لاحقا.",
+  "瀏覽頁顯示譯文": "الترجمات في التصفح",
+  "閱讀頁顯示譯文": "الترجمات في القارئ",
+  "瀏覽頁的作品卡片與各作品列表。": "بطاقات العمل في التصفح وجميع قوائم العمل.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "عندما تكون الترجمة قيد التشغيل في القارئ، ما إذا كانت هذه العناصر الموجودة في صفحة العنوان تعرض الترجمات أم لا. تستخدم العناوين والملخصات لغة الترجمة المستهدفة؛ تستخدم الفاندومات والعلامات لغة الواجهة."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -7347,7 +7399,11 @@
   "翻譯作品資訊": "कार्य जानकारी का अनुवाद करें",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "ऊपर दाईं ओर अपने खाते के नाम → \"खाता जानकारी\" → \"सुरक्षा\" पर क्लिक करें। \"तृतीय-पक्ष ऐप प्रबंधन\" के अंतर्गत, \"ऐप जोड़ें\" पर क्लिक करें, इसे YAAO3R नाम दें, फिर \"पासवर्ड जेनरेट करें\" पर क्लिक करें।",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "उन्हें यहां जोड़ने के लिए बैच डाउनलोड में कार्य चुनें। डाउनलोड की गई फ़ाइलें फ़ाइलें ऐप में YAAO3R फ़ोल्डर में भी दिखाई देती हैं।",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "विफल: AO3 ने इस सदस्यता परिवर्तन को स्वीकार नहीं किया। कृपया बाद में पुन: प्रयास करें।"
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "विफल: AO3 ने इस सदस्यता परिवर्तन को स्वीकार नहीं किया। कृपया बाद में पुन: प्रयास करें।",
+  "瀏覽頁顯示譯文": "ब्राउज में अनुवाद",
+  "閱讀頁顯示譯文": "रीडर में अनुवाद",
+  "瀏覽頁的作品卡片與各作品列表。": "ब्राउज़ में कार्य कार्ड और सभी कार्य सूचियाँ।",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "जब रीडर में अनुवाद चालू होता है, तो क्या शीर्षक पृष्ठ पर ये आइटम अनुवाद दिखाते हैं। शीर्षक और सारांश आपकी अनुवाद लक्ष्य भाषा का उपयोग करते हैं; प्रशंसक और टैग इंटरफ़ेस भाषा का उपयोग करते हैं।"
  },
  "id": {
   "載入中": "Memuat",
@@ -7872,7 +7928,11 @@
   "翻譯作品資訊": "Terjemahkan Info Pekerjaan",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Klik nama akun Anda di kanan atas → “Info Akun” → “Keamanan”. Di bawah “Manajemen Aplikasi Pihak Ketiga”, klik “Tambahkan Aplikasi”, beri nama YAAO3R, lalu klik “Buat Kata Sandi”.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Pilih karya di Batch Download untuk menambahkannya di sini. File yang diunduh juga muncul di folder YAAO3R di aplikasi Files.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Gagal: AO3 tidak menerima perubahan langganan ini. Silakan coba lagi nanti."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Gagal: AO3 tidak menerima perubahan langganan ini. Silakan coba lagi nanti.",
+  "瀏覽頁顯示譯文": "Terjemahan di Telusuri",
+  "閱讀頁顯示譯文": "Terjemahan di Pembaca",
+  "瀏覽頁的作品卡片與各作品列表。": "Kartu kerja di Telusuri dan semua daftar pekerjaan.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Saat terjemahan aktif di pembaca, apakah item di halaman judul ini menampilkan terjemahan. Judul dan ringkasan menggunakan bahasa target terjemahan Anda; fandom dan tag menggunakan bahasa antarmuka."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -8397,7 +8457,11 @@
   "翻譯作品資訊": "Dịch thông tin công việc",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "Nhấp vào tên tài khoản của bạn ở trên cùng bên phải → “Thông tin tài khoản” → “Bảo mật”. Trong “Quản lý ứng dụng của bên thứ ba”, hãy nhấp vào “Thêm ứng dụng”, đặt tên là YAAO3R, sau đó nhấp vào “Tạo mật khẩu”.",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "Chọn các tác phẩm trong Tải xuống hàng loạt để thêm chúng vào đây. Các tệp đã tải xuống cũng xuất hiện trong thư mục YAAO3R trong ứng dụng Tệp.",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Không thành công: AO3 không chấp nhận thay đổi đăng ký này. Vui lòng thử lại sau."
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "Không thành công: AO3 không chấp nhận thay đổi đăng ký này. Vui lòng thử lại sau.",
+  "瀏覽頁顯示譯文": "Bản dịch trong Duyệt",
+  "閱讀頁顯示譯文": "Bản dịch trong Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "Thẻ công việc trong Duyệt và tất cả danh sách công việc.",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Khi bản dịch được bật trong trình đọc, liệu các mục này trên trang tiêu đề có hiển thị bản dịch hay không. Tiêu đề và tóm tắt sử dụng ngôn ngữ đích dịch của bạn; fandom và thẻ sử dụng ngôn ngữ giao diện."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8922,6 +8986,10 @@
   "翻譯作品資訊": "แปลข้อมูลงาน",
   "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": "คลิกชื่อบัญชีของคุณที่มุมขวาบน → “ข้อมูลบัญชี” → “ความปลอดภัย” ใต้ \"การจัดการแอปบุคคลที่สาม\" คลิก \"เพิ่มแอป\" ตั้งชื่อเป็น YAAO3R จากนั้นคลิก \"สร้างรหัสผ่าน\"",
   "在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。": "เลือกผลงานแบบดาวน์โหลดเป็นชุดเพื่อเพิ่มที่นี่ ไฟล์ที่ดาวน์โหลดยังปรากฏในโฟลเดอร์ YAAO3R ในแอพ Files อีกด้วย",
-  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "ล้มเหลว: AO3 ไม่ยอมรับการเปลี่ยนแปลงการสมัครรับข้อมูลนี้ โปรดลองอีกครั้งในภายหลัง"
+  "操作失敗：AO3 沒有接受這次訂閱變更，請稍後再試": "ล้มเหลว: AO3 ไม่ยอมรับการเปลี่ยนแปลงการสมัครรับข้อมูลนี้ โปรดลองอีกครั้งในภายหลัง",
+  "瀏覽頁顯示譯文": "การแปลในการเรียกดู",
+  "閱讀頁顯示譯文": "การแปลใน Reader",
+  "瀏覽頁的作品卡片與各作品列表。": "บัตรงานในการเรียกดูและรายการงานทั้งหมด",
+  "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "เมื่อเปิดการแปลในโปรแกรมอ่าน ไม่ว่ารายการเหล่านี้ในหน้าชื่อเรื่องจะแสดงคำแปลหรือไม่ ชื่อเรื่องและบทสรุปใช้ภาษาเป้าหมายการแปลของคุณ แฟนดอมและแท็กใช้ภาษาอินเทอร์เฟซ"
  }
 }

@@ -40899,149 +40899,6 @@
         }
       }
     },
-    "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "اختر الترجمات التي تظهر في قوائم العمل والقارئ. تستخدم العناوين والملخصات لغة الترجمة المستهدفة؛ تستخدم الفاندومات والعلامات لغة الواجهة."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wählen Sie aus, welche Übersetzungen in den Arbeitslisten und im Reader angezeigt werden sollen. Titel und Zusammenfassungen verwenden die Zielsprache Ihrer Übersetzung; Fandoms und Tags verwenden die Schnittstellensprache."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Choose which translations appear in work lists and the reader. Titles and summaries use your translation target language; fandoms and tags use the interface language."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elija qué traducciones aparecen en las listas de trabajo y en el lector. Los títulos y resúmenes utilizan el idioma de destino de la traducción; Los fandoms y las etiquetas utilizan el idioma de la interfaz."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Choisissez quelles traductions apparaissent dans les listes de travail et dans le lecteur. Les titres et les résumés utilisent la langue cible de votre traduction ; les fandoms et les tags utilisent le langage de l'interface."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "चुनें कि कौन से अनुवाद कार्य सूचियों और पाठक में दिखाई देंगे। शीर्षक और सारांश आपकी अनुवाद लक्ष्य भाषा का उपयोग करते हैं; प्रशंसक और टैग इंटरफ़ेस भाषा का उपयोग करते हैं।"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pilih terjemahan mana yang muncul di daftar pekerjaan dan pembaca. Judul dan ringkasan menggunakan bahasa target terjemahan Anda; fandom dan tag menggunakan bahasa antarmuka."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scegli quali traduzioni visualizzare negli elenchi di lavoro e nel lettore. I titoli e i riassunti utilizzano la lingua di destinazione della traduzione; fandom e tag utilizzano il linguaggio dell'interfaccia."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "作品リストとリーダーに表示する翻訳を選択します。タイトルと概要には翻訳対象言語が使用されます。ファンダムとタグはインターフェース言語を使用します。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "작업 목록과 독자에 표시되는 번역을 선택합니다. 제목과 요약은 번역 대상 언어를 사용합니다. 팬덤과 태그는 인터페이스 언어를 사용합니다."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kies welke vertalingen in werklijsten en in de reader verschijnen. Titels en samenvattingen gebruiken uw vertalingsdoeltaal; fandoms en tags gebruiken de interfacetaal."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wybierz, które tłumaczenia mają się pojawiać na listach zadań i w czytniku. Tytuły i streszczenia korzystają z języka docelowego tłumaczenia; fandomy i tagi używają języka interfejsu."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Escolha quais traduções aparecem nas listas de trabalho e no leitor. Títulos e resumos usam o idioma de destino da tradução; fandoms e tags usam o idioma da interface."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Выберите, какие переводы будут отображаться в рабочих списках и программе чтения. В заголовках и аннотациях используется целевой язык вашего перевода; фандомы и теги используют язык интерфейса."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "เลือกคำแปลที่จะปรากฏในรายการงานและเครื่องอ่าน ชื่อเรื่องและบทสรุปใช้ภาษาเป้าหมายการแปลของคุณ แฟนดอมและแท็กใช้ภาษาอินเทอร์เฟซ"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Çalışma listelerinde ve okuyucuda hangi çevirilerin görüneceğini seçin. Başlıklar ve özetler çeviri hedef dilinizi kullanır; fandomlar ve etiketler arayüz dilini kullanır."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Виберіть, які переклади відображатимуться в списках робіт і читанні. У заголовках і резюме використовується цільова мова перекладу; фандоми та теги використовують мову інтерфейсу."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chọn bản dịch nào sẽ xuất hiện trong danh sách công việc và trình đọc. Tiêu đề và tóm tắt sử dụng ngôn ngữ đích dịch của bạn; fandom và thẻ sử dụng ngôn ngữ giao diện."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "决定作品列表与阅读页是否显示这些内容的译文。作品名称与简介译成翻译设置的目标语言，Fandom 与标签译成界面语言。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
-          }
-        }
-      }
-    },
     "沉浸式翻譯：譯文顯示在每段原文下方，不會取代原文。": {
       "extractionState": "manual",
       "localizations": {
@@ -45900,6 +45757,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "瀏覽"
+          }
+        }
+      }
+    },
+    "瀏覽頁的作品卡片與各作品列表。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بطاقات العمل في التصفح وجميع قوائم العمل."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitskarten in Durchsuchen und alle Arbeitslisten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work cards in Browse and all work lists."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarjetas de trabajo en Explorar y todas las listas de trabajo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cartes de travail dans Parcourir et toutes les listes de travail."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ब्राउज़ में कार्य कार्ड और सभी कार्य सूचियाँ।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kartu kerja di Telusuri dan semua daftar pekerjaan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schede di lavoro in Sfoglia e in tutte le liste di lavoro."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "参照内のワーク カードとすべてのワーク リスト。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "찾아보기 및 모든 작업 목록의 작업 카드."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werkkaarten in Bladeren en alle werklijsten."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karty pracy w Przeglądaj i wszystkie listy prac."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cartões de trabalho em Navegar e todas as listas de trabalho."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рабочие карточки в разделе «Обзор» и все рабочие списки."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "บัตรงานในการเรียกดูและรายการงานทั้งหมด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gözat'taki ve tüm çalışma listelerindeki çalışma kartları."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Робочі картки в Огляді та всі списки робіт."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thẻ công việc trong Duyệt và tất cả danh sách công việc."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "浏览页的作品卡片与各作品列表。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁的作品卡片與各作品列表。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁的作品卡片與各作品列表。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁的作品卡片與各作品列表。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁的作品卡片與各作品列表。"
+          }
+        }
+      }
+    },
+    "瀏覽頁顯示譯文": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الترجمات في التصفح"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetzungen in Durchsuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translations in Browse"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducciones en Explorar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traductions dans Parcourir"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ब्राउज में अनुवाद"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan di Telusuri"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduzioni in Sfoglia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ブラウズでの翻訳"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "찾아보기의 번역"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertalingen in Bladeren"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumaczenia w Przeglądaj"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduções em Navegar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переводы в обзоре"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การแปลในการเรียกดู"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gözat'taki çeviriler"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переклади в Огляді"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bản dịch trong Duyệt"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "浏览页显示译文"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁顯示譯文"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁顯示譯文"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁顯示譯文"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁顯示譯文"
           }
         }
       }
@@ -65924,6 +66067,292 @@
         }
       }
     },
+    "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عندما تكون الترجمة قيد التشغيل في القارئ، ما إذا كانت هذه العناصر الموجودة في صفحة العنوان تعرض الترجمات أم لا. تستخدم العناوين والملخصات لغة الترجمة المستهدفة؛ تستخدم الفاندومات والعلامات لغة الواجهة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn die Übersetzung im Reader aktiviert ist, wird angezeigt, ob für diese Elemente auf der Titelseite Übersetzungen angezeigt werden. Titel und Zusammenfassungen verwenden die Zielsprache Ihrer Übersetzung; Fandoms und Tags verwenden die Schnittstellensprache."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When translation is on in the reader, whether these items on the title page show translations. Titles and summaries use your translation target language; fandoms and tags use the interface language."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando la traducción está activada en el lector, si estos elementos en la página de título muestran traducciones. Los títulos y resúmenes utilizan el idioma de destino de la traducción; Los fandoms y las etiquetas utilizan el idioma de la interfaz."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque la traduction est activée dans le lecteur, indique si ces éléments de la page de titre affichent des traductions. Les titres et les résumés utilisent la langue cible de votre traduction ; les fandoms et les tags utilisent le langage de l'interface."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जब रीडर में अनुवाद चालू होता है, तो क्या शीर्षक पृष्ठ पर ये आइटम अनुवाद दिखाते हैं। शीर्षक और सारांश आपकी अनुवाद लक्ष्य भाषा का उपयोग करते हैं; प्रशंसक और टैग इंटरफ़ेस भाषा का उपयोग करते हैं।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saat terjemahan aktif di pembaca, apakah item di halaman judul ini menampilkan terjemahan. Judul dan ringkasan menggunakan bahasa target terjemahan Anda; fandom dan tag menggunakan bahasa antarmuka."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando la traduzione è attiva nel lettore, indica se questi elementi nel frontespizio mostrano le traduzioni. I titoli e i riassunti utilizzano la lingua di destinazione della traduzione; fandom e tag utilizzano il linguaggio dell'interfaccia."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リーダーで翻訳がオンになっている場合、タイトル ページのこれらの項目に翻訳が表示されるかどうか。タイトルと概要には翻訳対象言語が使用されます。ファンダムとタグはインターフェース言語を使用します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리더에서 번역이 켜져 있을 때 제목 페이지의 이러한 항목에 번역이 표시되는지 여부입니다. 제목과 요약은 번역 대상 언어를 사용합니다. 팬덤과 태그는 인터페이스 언어를 사용합니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer vertalingen zijn ingeschakeld in de reader, of deze items op de titelpagina vertalingen tonen. Titels en samenvattingen gebruiken uw vertalingsdoeltaal; fandoms en tags gebruiken de interfacetaal."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gdy w czytniku włączone jest tłumaczenie, czy te pozycje na stronie tytułowej pokazują tłumaczenia. Tytuły i streszczenia korzystają z języka docelowego tłumaczenia; fandomy i tagi używają języka interfejsu."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando a tradução está ativada no leitor, se esses itens na página de título mostram traduções. Títulos e resumos usam o idioma de destino da tradução; fandoms e tags usam o idioma da interface."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При включенном переводе в читалке отображаются ли переводы этих элементов на титульной странице. В заголовках и аннотациях используется целевой язык вашего перевода; фандомы и теги используют язык интерфейса."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อเปิดการแปลในโปรแกรมอ่าน ไม่ว่ารายการเหล่านี้ในหน้าชื่อเรื่องจะแสดงคำแปลหรือไม่ ชื่อเรื่องและบทสรุปใช้ภาษาเป้าหมายการแปลของคุณ แฟนดอมและแท็กใช้ภาษาอินเทอร์เฟซ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Okuyucuda çeviri açıkken, başlık sayfasındaki bu öğelerin çevirileri gösterip göstermediği. Başlıklar ve özetler çeviri hedef dilinizi kullanır; fandomlar ve etiketler arayüz dilini kullanır."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Коли переклад увімкнено в програмі для читання, чи відображаються переклади цих елементів на титульній сторінці. У заголовках і резюме використовується цільова мова перекладу; фандоми та теги використовують мову інтерфейсу."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi bản dịch được bật trong trình đọc, liệu các mục này trên trang tiêu đề có hiển thị bản dịch hay không. Tiêu đề và tóm tắt sử dụng ngôn ngữ đích dịch của bạn; fandom và thẻ sử dụng ngôn ngữ giao diện."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阅读页打开翻译时，标题页上的这些内容是否显示译文。作品名称与简介译成翻译设置的目标语言，Fandom 与标签译成界面语言。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
+          }
+        }
+      }
+    },
+    "閱讀頁顯示譯文": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الترجمات في القارئ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetzungen im Reader"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translations in Reader"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducciones en Lector"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traductions dans Reader"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "रीडर में अनुवाद"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan di Pembaca"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduzioni in Reader"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reader での翻訳"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리더의 번역"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vertalingen in Reader"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumaczenia w Czytniku"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduções no Reader"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переводы в Ридере"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การแปลใน Reader"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reader'daki çeviriler"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переклади в Reader"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bản dịch trong Reader"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阅读页显示译文"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁顯示譯文"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁顯示譯文"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁顯示譯文"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁顯示譯文"
+          }
+        }
+      }
+    },
     "關鍵字": {
       "extractionState": "manual",
       "localizations": {
@@ -68351,149 +68780,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "顯示與排序"
-          }
-        }
-      }
-    },
-    "顯示譯文": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "عرض الترجمات"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Übersetzungen anzeigen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show Translations"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar traducciones"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher les traductions"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "अनुवाद दिखाएँ"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tampilkan Terjemahan"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra traduzioni"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "翻訳を表示"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "번역 표시"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vertalingen weergeven"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokaż tłumaczenia"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar traduções"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показать переводы"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แสดงคำแปล"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Çevirileri Göster"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показати переклади"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hiển thị bản dịch"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "显示译文"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "顯示譯文"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "顯示譯文"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "顯示譯文"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "顯示譯文"
           }
         }
       }

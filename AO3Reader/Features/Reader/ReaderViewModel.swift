@@ -141,8 +141,8 @@ final class ReaderViewModel {
             let chapter = detail.chapters[index]
             if index == 0 {
                 // 設定 › 一般 › 顯示譯文
-                if TranslationVisibility.title { add(workTitleID, detail.title, kind: .heading) }
-                if TranslationVisibility.summary { add(summaryID, detail.summary) }
+                if TranslationVisibility.readerTitle { add(workTitleID, detail.title, kind: .heading) }
+                if TranslationVisibility.readerSummary { add(summaryID, detail.summary) }
                 add(notesID, detail.notes)
             }
             if detail.chapters.count > 1 { add(chapterTitleID(index), chapter.title, kind: .heading) }
