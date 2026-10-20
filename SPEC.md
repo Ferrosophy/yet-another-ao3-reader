@@ -327,3 +327,5 @@ AO3Reader/
 - 離線下載作品（含譯文）
 - 自動把作品語境（Fandom、角色）加入 AI 提示詞
 - 段落級閱讀進度、iPad 雙欄對照排版
+
+正式版發行時的待辦（GitHub 頁面、圖示、宣傳圖、上架、Android 版）見 `RELEASE_PLAN.md`。
