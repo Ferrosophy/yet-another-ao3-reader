@@ -504,6 +504,7 @@ EN = {
 '跟隨正文': 'Match Text',
 '「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。': '“Default” uses a lighter secondary text color; “Match Text” uses the same color as the body text in the current reading colors.',
 '滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。': 'Scroll and page modes keep separate layouts; the same values look the same in both modes.',
+'字體粗細': 'Font Weight',
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

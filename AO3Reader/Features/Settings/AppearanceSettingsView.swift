@@ -211,13 +211,13 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
         }
 
         Section("排版") {
-            slider("字體大小", value: layout.fontSize, in: 10...40, step: 1)
-            Picker("字重", selection: layout.fontWeight) {
+            Picker("字體粗細", selection: layout.fontWeight) {
                 ForEach(ReaderFontWeight.allCases) { Text($0.title).tag($0) }
             }
+            slider("字體大小", value: layout.fontSize, in: 10...40, step: 1)
             slider("行距", value: layout.lineSpacing, in: 0...20, step: 1)
-            slider("段落間距", value: layout.paragraphSpacing, in: 0...40, step: 1)
             slider("字間距", value: layout.letterSpacing, in: -1...6, step: 0.1)
+            slider("段落間距", value: layout.paragraphSpacing, in: 0...40, step: 1)
             slider("左右邊距", value: layout.horizontalMargin, in: 0...80, step: 1)
             if mode == .paged {
                 slider("上下邊距", value: layout.verticalMargin, in: 0...120, step: 1)

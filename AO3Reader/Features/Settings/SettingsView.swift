@@ -32,25 +32,16 @@ struct SettingsView: View {
                 Picker("啟動頁面", selection: $startTab) {
                     ForEach(StartTab.allCases) { Text($0.title).tag($0) }
                 }
-                Picker("預設下載格式", selection: $downloadFormat) {
-                    ForEach(DownloadFormat.allCases) { Text(verbatim: $0.title).tag($0) }
-                }
-            }
-
-            Section {
                 NavigationLink {
-                    BatchDownloadView()
+                    InterfaceLanguageView()
                 } label: {
-                    Label("批次下載", systemImage: "square.and.arrow.down.on.square")
+                    LabeledContent("語言", value: InterfaceLanguage.all.first { $0.code == InterfaceLanguage.selectedCode }?.name ?? String(localized: "跟隨系統"))
                 }
                 NavigationLink {
-                    DownloadsView()
+                    SourcesView()
                 } label: {
-                    Label("下載列表", systemImage: "arrow.down.circle")
+                    LabeledContent("內容來源", value: app.sources.selected.name)
                 }
-            }
-
-            Section {
                 NavigationLink {
                     SyncSettingsView()
                 } label: {
@@ -63,21 +54,17 @@ struct SettingsView: View {
                         ? String(localized: "每 \(app.readingTime.reminderMinutes) 分鐘提醒")
                         : String(localized: "未開啟提醒"))
                 }
-            }
-
-            Section("內容來源") {
-                NavigationLink {
-                    SourcesView()
-                } label: {
-                    LabeledContent("目前來源", value: app.sources.selected.name)
+                NavigationLink("意見回饋") {
+                    FeedbackView(bugURL: Self.feedbackURL(kind: "bug"), ideaURL: Self.feedbackURL(kind: "idea"))
                 }
+                LabeledContent("版本", value: Self.versionString)
             }
 
-            Section("介面語言") {
-                NavigationLink {
-                    InterfaceLanguageView()
-                } label: {
-                    LabeledContent("語言", value: InterfaceLanguage.all.first { $0.code == InterfaceLanguage.selectedCode }?.name ?? String(localized: "跟隨系統"))
+            Section("下載") {
+                NavigationLink("批次下載") { BatchDownloadView() }
+                NavigationLink("下載列表") { DownloadsView() }
+                Picker("預設下載格式", selection: $downloadFormat) {
+                    ForEach(DownloadFormat.allCases) { Text(verbatim: $0.title).tag($0) }
                 }
             }
 
@@ -115,30 +102,32 @@ struct SettingsView: View {
                 （不經 iCloud 同步、不隨備份轉移），僅在翻譯時直接傳送給你所選的服務商。
                 """)
             }
-
-            Section {
-                Link(destination: Self.feedbackURL(kind: "bug")) {
-                    Label("回報問題", systemImage: "ladybug")
-                }
-                Link(destination: Self.feedbackURL(kind: "idea")) {
-                    Label("功能建議", systemImage: "lightbulb")
-                }
-                Link(destination: URL(string: "https://github.com/Ferrosophy/AO3-ios-translator/issues")!) {
-                    Label("查看所有回饋", systemImage: "bubble.left.and.text.bubble.right")
-                }
-            } header: {
-                Text("意見回饋")
-            } footer: {
-                Text("回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。")
-            }
-
-            Section {
-                LabeledContent("版本", value: Self.versionString)
-            }
         }
         .navigationTitle("設定")
         .confirmationDialog("刪除所有 API Key？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
             Button("刪除", role: .destructive) { KeychainStore.deleteAll() }
         }
+    }
+}
+
+/// 意見回饋：在瀏覽器開啟 GitHub Issues，並預先填入版本資訊。
+private struct FeedbackView: View {
+    let bugURL: URL
+    let ideaURL: URL
+
+    var body: some View {
+        List {
+            Section {
+                // 與其他設定列相同的文字顏色
+                Link(destination: bugURL) { Text("回報問題").foregroundStyle(.primary) }
+                Link(destination: ideaURL) { Text("功能建議").foregroundStyle(.primary) }
+                Link(destination: URL(string: "https://github.com/Ferrosophy/AO3-ios-translator/issues")!) {
+                    Text("查看所有回饋").foregroundStyle(.primary)
+                }
+            } footer: {
+                Text("回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。")
+            }
+        }
+        .navigationTitle("意見回饋")
     }
 }
