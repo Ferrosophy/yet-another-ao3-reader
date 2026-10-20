@@ -48,7 +48,8 @@ enum AO3Parser {
         }
         let hasNext = try !doc.select("ol.pagination li.next a").isEmpty()
         let heading = try doc.select("#main h3.heading, #main h2.heading").first()?.text()
-        return WorkPage(works: works, page: page, hasNextPage: hasNext, heading: heading)
+        let filterable = try !doc.select("form#work-filters").isEmpty()
+        return WorkPage(works: works, page: page, hasNextPage: hasNext, heading: heading, filterable: filterable)
     }
 
     private static func workSummary(_ blurb: Element) throws -> WorkSummary? {

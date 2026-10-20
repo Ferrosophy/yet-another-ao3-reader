@@ -458,3 +458,21 @@ struct ChapterDownloadTests {
         #expect(detail.chapters.first?.paragraphs.first?.id.hasPrefix("c2-") == true)
     }
 }
+
+struct LocalFilterTests {
+    @Test func matchesBasicConditions() {
+        var work = WorkSummary(id: 1, title: "Rain")
+        work.rating = "Explicit"
+        work.freeforms = ["Fluff"]
+        work.chapters = "3/3"
+        work.words = "12,000"
+        var query = WorkSearchQuery(sortColumn: .dateUpdated)
+        query.rating = .explicit
+        query.freeformNames = "fluff"
+        query.completion = .yes
+        query.wordsFrom = "10000"
+        #expect(query.matches(work, languageCodes: [:]))
+        query.excludedTagNames = "Fluff"
+        #expect(!query.matches(work, languageCodes: [:]))
+    }
+}

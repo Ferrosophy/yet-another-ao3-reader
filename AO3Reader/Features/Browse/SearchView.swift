@@ -38,14 +38,20 @@ struct SearchView: View {
                 // 合集可不輸入關鍵字直接瀏覽；其他範圍有關鍵字時自動重新搜尋
                 if scope == .collections || !query.query.isEmpty { submit() }
             }
+            // 搜尋範圍固定顯示在頂部（不只在輸入時出現）；標題保持小標題，取消搜尋時不會消失
+            .safeAreaBar(edge: .top) {
+                Picker("搜尋範圍", selection: $scope) {
+                    ForEach(Scope.allCases) { Text($0.title).tag($0) }
+                }
+                .pickerStyle(.segmented)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 8)
+            }
             .toolbar {
-                // 搜尋範圍固定顯示在頂部（不只在輸入時出現）
-                ToolbarItem(placement: .principal) {
-                    Picker("搜尋範圍", selection: $scope) {
-                        ForEach(Scope.allCases) { Text($0.title).tag($0) }
+                if hasContent {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button("清空搜尋", systemImage: "xmark.circle") { clear() }
                     }
-                    .pickerStyle(.segmented)
-                    .fixedSize()
                 }
                 if scope == .works {
                     ToolbarItem(placement: .topBarTrailing) {
@@ -64,7 +70,20 @@ struct SearchView: View {
             }
     }
 
-    private var prompt: String {
+    private var hasContent: Bool {
+        !query.isEmpty || works != nil || tags != nil || people != nil
+    }
+
+    /// 清空關鍵字、篩選條件與搜尋結果
+    private func clear() {
+        query = WorkSearchQuery()
+        works = nil
+        tags = nil
+        people = nil
+        if scope == .collections { submit() }
+    }
+
+        private var prompt: String {
         switch scope {
         case .works: String(localized: "標題、作者、標籤、關鍵字")
         case .tags: String(localized: "標籤名稱")

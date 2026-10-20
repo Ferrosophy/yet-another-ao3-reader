@@ -784,63 +784,84 @@ struct ChapterListSheet: View {
 }
 
 /// 選擇段落重新翻譯：列出本章段落（原文與目前譯文），勾選後一次重新翻譯，結果覆蓋舊譯文。
+/// 使用 ScrollView + LazyVStack 並以 scrollPosition 定位到目前段落（List 在剛出現時捲動到指定列可能閃退）。
 struct ParagraphRetranslateSheet: View {
     let model: ReaderViewModel
     @Environment(\.dismiss) private var dismiss
     @State private var selection: Set<Paragraph.ID> = []
-
-    private var paragraphs: [Paragraph] { model.chapter?.paragraphs.filter(\.isTranslatable) ?? [] }
+    @State private var position: Paragraph.ID?
+    @State private var paragraphs: [Paragraph] = []
 
     var body: some View {
         NavigationStack {
-            ScrollViewReader { proxy in
-                List(paragraphs) { paragraph in
-                    Button {
-                        if selection.contains(paragraph.id) { selection.remove(paragraph.id) } else { selection.insert(paragraph.id) }
-                    } label: {
-                        HStack(alignment: .top, spacing: 12) {
-                            Image(systemName: selection.contains(paragraph.id) ? "checkmark.circle.fill" : "circle")
-                                .foregroundStyle(selection.contains(paragraph.id) ? AnyShapeStyle(.tint) : AnyShapeStyle(.secondary))
-                                .imageScale(.large)
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(paragraph.text)
-                                    .lineLimit(4)
-                                    .foregroundStyle(.primary)
-                                if case .done(let text) = model.translations[paragraph.id] {
-                                    Text(text)
-                                        .appFont(.footnote)
-                                        .lineLimit(3)
-                                        .foregroundStyle(.secondary)
-                                }
-                            }
+            ScrollView {
+                LazyVStack(alignment: .leading, spacing: 0) {
+                    ForEach(paragraphs) { paragraph in
+                        ParagraphChoiceRow(paragraph: paragraph, slot: model.slot(paragraph.id),
+                                           isSelected: selection.contains(paragraph.id)) {
+                            if selection.contains(paragraph.id) { selection.remove(paragraph.id) } else { selection.insert(paragraph.id) }
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .contentShape(.rect)
-                    }
-                    .buttonStyle(.plain)
-                    .id(paragraph.id)
-                }
-                .onAppear {
-                    // 從目前閱讀到的段落開始
-                    if let anchor = model.scrollAnchor, paragraphs.contains(where: { $0.id == anchor }) {
-                        proxy.scrollTo(anchor, anchor: .top)
+                        .id(paragraph.id)
+                        Divider().padding(.leading, 52)
                     }
                 }
+                .scrollTargetLayout()
             }
+            .scrollPosition(id: $position, anchor: .top)
             .navigationTitle("選擇段落")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("重新翻譯（\(selection.count)）") {
-                        model.retranslate(paragraphs.filter { selection.contains($0.id) })
+                        let chosen = paragraphs.filter { selection.contains($0.id) }
                         dismiss()
+                        model.retranslate(chosen)
                     }
                     .buttonStyle(.glassProminent)
                     .disabled(selection.isEmpty)
                 }
             }
+            .onAppear {
+                guard paragraphs.isEmpty else { return }
+                paragraphs = model.chapter?.paragraphs.filter(\.isTranslatable) ?? []
+                // 從目前閱讀到的段落開始
+                if let anchor = model.scrollAnchor, paragraphs.contains(where: { $0.id == anchor }) { position = anchor }
+            }
         }
+    }
+}
+
+private struct ParagraphChoiceRow: View {
+    let paragraph: Paragraph
+    let slot: TranslationSlot
+    let isSelected: Bool
+    var onToggle: () -> Void
+
+    var body: some View {
+        Button(action: onToggle) {
+            HStack(alignment: .top, spacing: 12) {
+                Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(isSelected ? AnyShapeStyle(.tint) : AnyShapeStyle(.secondary))
+                    .imageScale(.large)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(paragraph.text)
+                        .lineLimit(4)
+                        .foregroundStyle(.primary)
+                    if case .done(let text) = slot.value {
+                        Text(text)
+                            .appFont(.footnote)
+                            .lineLimit(3)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .contentShape(.rect)
+        }
+        .buttonStyle(.plain)
     }
 }
 

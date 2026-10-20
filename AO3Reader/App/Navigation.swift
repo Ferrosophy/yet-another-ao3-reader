@@ -37,11 +37,11 @@ struct WorkListRoute: Hashable {
     }
 
     static func person(name: String, path: String) -> WorkListRoute {
-        WorkListRoute(title: name, path: path.hasSuffix("/works") ? path : path + "/works")
+        WorkListRoute(title: name, path: path.hasSuffix("/works") ? path : path + "/works", filterable: true)
     }
 
     static func series(name: String, path: String) -> WorkListRoute {
-        WorkListRoute(title: name, path: path)
+        WorkListRoute(title: name, path: path, filterable: true)
     }
 }
 

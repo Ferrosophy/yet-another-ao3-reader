@@ -5,35 +5,41 @@ struct SubscriptionsView: View {
     let username: String
     @Environment(AppState.self) private var app
     @State private var kind: SubscriptionItem.Kind = .works
-    @State private var model: PagedListModel<SubscriptionItem>?
+    /// 每種類型各自保留一個列表，切換時立即顯示已載入的內容
+    @State private var models: [SubscriptionItem.Kind: PagedListModel<SubscriptionItem>] = [:]
 
     var body: some View {
         Group {
-            if let model {
-                PagedListView(model: model, emptyTitle: "沒有\(kind.title)訂閱", header: AnyView(kindPicker)) { item in
+            if let model = models[kind] {
+                PagedListView(model: model, emptyTitle: "沒有\(kind.title)訂閱") { item in
                     link(item)
                 }
+                .id(kind)
             } else {
                 AO3LoadingView()
             }
         }
         .navigationTitle("訂閱")
+        .navigationBarTitleDisplayMode(.inline)
+        // 類型切換固定在頂部，不放進列表（列表重建時切換器也會被重建，點擊容易失效）
+        .safeAreaBar(edge: .top) {
+            Picker("類型", selection: $kind) {
+                ForEach(SubscriptionItem.Kind.allCases) { Text($0.title).tag($0) }
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+        }
         .task(id: kind) {
+            guard models[kind] == nil else { return }
             let client = app.client
             let username = username, kind = kind
             let model = PagedListModel<SubscriptionItem> { page in
                 try await client.subscriptions(username: username, kind: kind, page: page)
             }
-            self.model = model
+            models[kind] = model
             await model.reload()
         }
-    }
-
-    private var kindPicker: some View {
-        Picker("類型", selection: $kind) {
-            ForEach(SubscriptionItem.Kind.allCases) { Text($0.title).tag($0) }
-        }
-        .pickerStyle(.segmented)
     }
 
     /// 不同類型導向不同的 route 型別，NavigationLink 需各自宣告才能對應 navigationDestination。

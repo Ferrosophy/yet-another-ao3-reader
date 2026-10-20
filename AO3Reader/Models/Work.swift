@@ -30,6 +30,8 @@ struct WorkPage: Sendable {
     var hasNextPage: Bool
     /// 例如 "1 - 20 of 12,345 Works"
     var heading: String?
+    /// 頁面是否有官網的「Sort and Filter」表單（未整理的小標籤、系列等沒有，篩選參數會被忽略）
+    var filterable = true
 }
 
 /// 完整作品內容（`?view_full_work=true`）。

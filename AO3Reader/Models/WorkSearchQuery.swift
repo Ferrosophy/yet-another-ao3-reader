@@ -206,3 +206,51 @@ extension WorkSearchQuery {
         var title: String { self == .desc ? String(localized: "降序") : String(localized: "升序") }
     }
 }
+
+extension WorkSearchQuery {
+    /// 在本機判斷作品是否符合篩選條件（官網無法篩選的列表使用）
+    func matches(_ work: WorkSummary, languageCodes: [String: String]) -> Bool {
+        func number(_ text: String?) -> Int? { Int((text ?? "").filter(\.isNumber)) }
+        func names(_ text: String) -> [String] {
+            text.split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces).lowercased() }.filter { !$0.isEmpty }
+        }
+        let tags = Set((work.fandoms + work.relationships + work.characters + work.freeforms + work.warnings
+            + work.categories).map { $0.lowercased() })
+
+        let included = [fandomNames, characterNames, relationshipNames, freeformNames].flatMap(names)
+        guard included.allSatisfy(tags.contains) else { return false }
+        guard !names(excludedTagNames).contains(where: tags.contains) else { return false }
+        if let rating, work.rating != rating.title { return false }
+        if !warnings.isEmpty, !warnings.contains(where: { work.warnings.contains($0.title) }) { return false }
+        if !categories.isEmpty, !categories.contains(where: { work.categories.contains($0.title) }) { return false }
+        if completion != .any {
+            let parts = (work.chapters ?? "").split(separator: "/").map(String.init)
+            let complete = parts.count == 2 && parts[0] == parts[1]
+            if (completion == .yes) != complete { return false }
+        }
+        if crossover != .any, (crossover == .yes) != (work.fandoms.count > 1) { return false }
+        let words = number(work.words) ?? 0
+        if let minimum = Int(wordsFrom), words < minimum { return false }
+        if let maximum = Int(wordsTo), words > maximum { return false }
+        if !languageID.isEmpty, let language = work.language, languageCodes[language] != languageID { return false }
+        let keyword = query.trimmingCharacters(in: .whitespaces)
+        if !keyword.isEmpty {
+            let haystack = ([work.title, work.summary] + work.authors + Array(tags)).joined(separator: "\n")
+            if !haystack.localizedCaseInsensitiveContains(keyword) { return false }
+        }
+        return true
+    }
+
+    /// 依排序欄位在本機排序（官網的排序方式；無法在本機判斷的欄位保持原順序）
+    func sorted(_ works: [WorkSummary]) -> [WorkSummary] {
+        func number(_ text: String?) -> Int { Int((text ?? "").filter(\.isNumber)) ?? 0 }
+        switch sortColumn {
+        case .wordCount: return works.sorted { number($0.words) > number($1.words) }
+        case .hits: return works.sorted { number($0.hits) > number($1.hits) }
+        case .kudos: return works.sorted { number($0.kudos) > number($1.kudos) }
+        case .title: return works.sorted { $0.title.localizedStandardCompare($1.title) == .orderedAscending }
+        case .author: return works.sorted { ($0.authors.first ?? "").localizedStandardCompare($1.authors.first ?? "") == .orderedAscending }
+        default: return works
+        }
+    }
+}

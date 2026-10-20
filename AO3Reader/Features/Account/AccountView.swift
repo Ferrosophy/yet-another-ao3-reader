@@ -30,6 +30,7 @@ struct AccountView: View {
             case .ao3(let entry, let username): entry.destination(username: username)
             case .local(let entry): entry.localDestination
             case .sync: SyncSettingsView()
+            case .localSubscription(let item): LocalSubscriptionDestination(item: item)
             }
         }
         .toolbar {
@@ -116,6 +117,8 @@ enum AccountRoute: Hashable {
     case ao3(AccountEntry, username: String)
     case local(AccountEntry)
     case sync
+    /// 本機訂閱的目標（作品、系列或作者）；打開時清除「有更新」標記
+    case localSubscription(LocalSubscription)
 }
 
 /// 「我的 AO3」的項目，順序可由使用者自訂。
@@ -416,7 +419,6 @@ struct LocalSubscriptionsView: View {
                         }
                     }
                 }
-                .simultaneousGesture(TapGesture().onEnded { app.library.markSubscriptionSeen(item.path) })
                 .swipeActions {
                     Button("取消訂閱", systemImage: "bell.slash", role: .destructive) {
                         app.library.toggleSubscription(kind: item.kind, path: item.path, name: item.name)
@@ -441,16 +443,9 @@ struct LocalSubscriptionsView: View {
         }
     }
 
-    @ViewBuilder
+    /// 以值推入；目標頁出現時清除「有更新」標記（不在列表上疊加點擊手勢，避免點擊延遲或需要點多次）
     private func link<Content: View>(_ item: LocalSubscription, @ViewBuilder label: () -> Content) -> some View {
-        switch item.kind {
-        case .work:
-            NavigationLink(value: WorkRoute(id: AO3Paths.workID(fromPath: item.path) ?? 0, title: item.name), label: label)
-        case .series:
-            NavigationLink(value: WorkListRoute.series(name: item.name, path: item.path), label: label)
-        case .user:
-            NavigationLink(value: WorkListRoute.person(name: item.name, path: item.path), label: label)
-        }
+        NavigationLink(value: AccountRoute.localSubscription(item), label: label)
     }
 
     private func icon(_ kind: LocalSubscription.Kind) -> String {
@@ -459,5 +454,25 @@ struct LocalSubscriptionsView: View {
         case .series: "books.vertical"
         case .user: "person"
         }
+    }
+}
+
+/// 本機訂閱的目標頁：作品進入閱讀頁，系列與作者進入作品列表；出現時清除「有更新」標記。
+struct LocalSubscriptionDestination: View {
+    let item: LocalSubscription
+    @Environment(AppState.self) private var app
+
+    var body: some View {
+        Group {
+            switch item.kind {
+            case .work:
+                ReaderView(model: ReaderViewModel(route: WorkRoute(id: AO3Paths.workID(fromPath: item.path) ?? 0, title: item.name), app: app))
+            case .series:
+                WorkListScreen(route: .series(name: item.name, path: item.path))
+            case .user:
+                WorkListScreen(route: .person(name: item.name, path: item.path))
+            }
+        }
+        .onAppear { app.library.markSubscriptionSeen(item.path) }
     }
 }
