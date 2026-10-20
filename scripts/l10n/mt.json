@@ -510,7 +510,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "システムダイアログでダウンロードを確認します。ダウンロード中はこの画面を離れても構いません。翻訳が完了すると、自動的に翻訳が開始されます。詳しい進行状況については、「設定」 > 「アプリ」 > 「翻訳」 > 「ダウンロードした言語」を参照してください。",
   "下載完成": "ダウンロード完了",
   "下載未完成：%@": "ダウンロードが完了していません: %@",
-  "下載中… 已經過 %lld 秒": "ダウンロード中…%lld秒経過"
+  "下載中… 已經過 %lld 秒": "ダウンロード中…%lld秒経過",
+  "恢復預設排版": "デフォルトのレイアウトの復元",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "編集中のモード (スクロールまたはページ) のレイアウト値のみを復元します。フォントやその他の設定は変わりません。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1023,7 +1025,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "시스템 대화상자에서 다운로드를 확인하세요. 다운로드하는 동안 이 화면을 떠날 수 있습니다. 번역이 완료되면 자동으로 번역이 시작됩니다. 자세한 진행 상황은 설정 › 앱 › 번역 › 다운로드한 언어를 참조하세요.",
   "下載完成": "다운로드 완료",
   "下載未完成：%@": "다운로드가 완료되지 않았습니다: %@",
-  "下載中… 已經過 %lld 秒": "다운로드 중… %lld초 경과"
+  "下載中… 已經過 %lld 秒": "다운로드 중… %lld초 경과",
+  "恢復預設排版": "기본 레이아웃 복원",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "편집 중인 모드(스크롤 또는 페이지)의 레이아웃 값만 복원합니다. 글꼴 및 기타 설정은 동일하게 유지됩니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -1536,7 +1540,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Confirme la descarga en el cuadro de diálogo del sistema. Puedes salir de esta pantalla mientras se descarga; La traducción comienza automáticamente cuando termina. Para conocer el progreso detallado, consulte Configuración > Aplicaciones > Traducir > ​​Idiomas descargados.",
   "下載完成": "Descarga completa",
   "下載未完成：%@": "Descarga no finalizada: %@",
-  "下載中… 已經過 %lld 秒": "Descargando… %lld s transcurridos"
+  "下載中… 已經過 %lld 秒": "Descargando… %lld s transcurridos",
+  "恢復預設排版": "Restaurar diseño predeterminado",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Restaura solo los valores de diseño del modo que se está editando (desplazamiento o página). La fuente y otras configuraciones permanecen iguales."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2049,7 +2055,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Confirmez le téléchargement dans la boîte de dialogue système. Vous pouvez quitter cet écran pendant le téléchargement ; la traduction démarre automatiquement une fois terminée. Pour une progression détaillée, voir Paramètres > Applications > Traduire > Langues téléchargées.",
   "下載完成": "Téléchargement terminé",
   "下載未完成：%@": "Téléchargement non terminé : %@",
-  "下載中… 已經過 %lld 秒": "Téléchargement… %lld s écoulées"
+  "下載中… 已經過 %lld 秒": "Téléchargement… %lld s écoulées",
+  "恢復預設排版": "Restaurer la mise en page par défaut",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Restaure uniquement les valeurs de mise en page du mode en cours d'édition (défilement ou page). La police et les autres paramètres restent les mêmes."
  },
  "de": {
   "載入中": "Laden",
@@ -2562,7 +2570,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Bestätigen Sie den Download im Systemdialog. Sie können diesen Bildschirm während des Downloads verlassen; Die Übersetzung beginnt automatisch, wenn sie abgeschlossen ist. Detaillierte Informationen zum Fortschritt finden Sie unter Einstellungen › Apps › Übersetzen › Heruntergeladene Sprachen.",
   "下載完成": "Download abgeschlossen",
   "下載未完成：%@": "Download nicht abgeschlossen: %@",
-  "下載中… 已經過 %lld 秒": "Der Download erfolgt… %lld s sind vergangen"
+  "下載中… 已經過 %lld 秒": "Der Download erfolgt… %lld s sind vergangen",
+  "恢復預設排版": "Standardlayout wiederherstellen",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Stellt nur die Layoutwerte des Modus wieder her, der bearbeitet wird (Bildlauf oder Seite). Schriftart und andere Einstellungen bleiben gleich."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3075,7 +3085,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Confirme o download na caixa de diálogo do sistema. Você pode sair desta tela durante o download; a tradução começa automaticamente quando termina. Para ver o progresso detalhado, consulte Configurações › Aplicativos › Traduzir › Idiomas baixados.",
   "下載完成": "Download completo",
   "下載未完成：%@": "Download não concluído: %@",
-  "下載中… 已經過 %lld 秒": "Baixando… %lld segundos decorridos"
+  "下載中… 已經過 %lld 秒": "Baixando… %lld segundos decorridos",
+  "恢復預設排版": "Restaurar layout padrão",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Restaura apenas os valores de layout do modo que está sendo editado (rolagem ou página). A fonte e outras configurações permanecem as mesmas."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3588,7 +3600,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Conferma il download nella finestra di dialogo del sistema. Puoi lasciare questa schermata durante il download; la traduzione si avvia automaticamente al termine. Per i progressi dettagliati, consulta Impostazioni › App › Traduttore › Lingue scaricate.",
   "下載完成": "Scarica completo",
   "下載未完成：%@": "Download non terminato: %@",
-  "下載中… 已經過 %lld 秒": "Download in corso… %lld s trascorsi"
+  "下載中… 已經過 %lld 秒": "Download in corso… %lld s trascorsi",
+  "恢復預設排版": "Ripristina il layout predefinito",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Ripristina solo i valori di layout della modalità in corso di modifica (scorrimento o pagina). Il carattere e le altre impostazioni rimangono invariate."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4101,7 +4115,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Подтвердите загрузку в системном диалоге. Вы можете покинуть этот экран во время загрузки; перевод начинается автоматически после завершения. Подробную информацию о ходе работы см. в разделе «Настройки» > «Приложения» > «Переводчик» > «Загруженные языки».",
   "下載完成": "Загрузка завершена",
   "下載未完成：%@": "Загрузка не завершена: %@",
-  "下載中… 已經過 %lld 秒": "Загрузка… Прошло %lld с."
+  "下載中… 已經過 %lld 秒": "Загрузка… Прошло %lld с.",
+  "恢復預設排版": "Восстановить макет по умолчанию",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Восстанавливает только значения макета редактируемого режима (прокрутки или страницы). Шрифт и другие настройки остаются прежними."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4614,7 +4630,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Підтвердьте завантаження в системному діалоговому вікні. Ви можете залишити цей екран під час завантаження; переклад починається автоматично, коли він закінчується. Щоб отримати докладні відомості про прогрес, перегляньте Налаштування › Програми › Перекладач › Завантажені мови.",
   "下載完成": "Завантаження завершено",
   "下載未完成：%@": "Завантаження не завершено: %@",
-  "下載中… 已經過 %lld 秒": "Завантаження… Минуло %lld с"
+  "下載中… 已經過 %lld 秒": "Завантаження… Минуло %lld с",
+  "恢復預設排版": "Відновити макет за замовчуванням",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Відновлює лише значення макета режиму, який редагується (прокрутка або сторінка). Шрифт та інші налаштування залишаються незмінними."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5127,7 +5145,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Potwierdź pobieranie w oknie systemowym. Możesz opuścić ten ekran podczas pobierania; tłumaczenie rozpoczyna się automatycznie po jego zakończeniu. Aby uzyskać szczegółowy postęp, zobacz Ustawienia > Aplikacje > Tłumacz > Pobrane języki.",
   "下載完成": "Pobierz ukończono",
   "下載未完成：%@": "Pobieranie nie zostało zakończone: %@",
-  "下載中… 已經過 %lld 秒": "Pobieranie… Upłynęło %lld."
+  "下載中… 已經過 %lld 秒": "Pobieranie… Upłynęło %lld.",
+  "恢復預設排版": "Przywróć domyślny układ",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Przywraca tylko wartości układu edytowanego trybu (przewijania lub strony). Czcionka i inne ustawienia pozostają takie same."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5640,7 +5660,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Sistem iletişim kutusunda indirmeyi onaylayın. İndirilirken bu ekrandan ayrılabilirsiniz; çeviri bittiğinde otomatik olarak başlar. Ayrıntılı ilerleme için bkz. Ayarlar › Uygulamalar › Çeviri › İndirilen Diller.",
   "下載完成": "İndirme Tamamlandı",
   "下載未完成：%@": "İndirme tamamlanmadı: %@",
-  "下載中… 已經過 %lld 秒": "İndiriliyor… %lld saniye geçti"
+  "下載中… 已經過 %lld 秒": "İndiriliyor… %lld saniye geçti",
+  "恢復預設排版": "Varsayılan Düzeni Geri Yükle",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Yalnızca düzenlenmekte olan modun (kaydırma veya sayfa) düzen değerlerini geri yükler. Yazı tipi ve diğer ayarlar aynı kalır."
  },
  "nl": {
   "載入中": "Laden",
@@ -6153,7 +6175,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Bevestig de download in het systeemdialoogvenster. Je kunt dit scherm verlaten terwijl het downloadt; De vertaling start automatisch wanneer deze klaar is. Voor gedetailleerde voortgang, zie Instellingen › Apps › Vertalen › Gedownloade talen.",
   "下載完成": "Downloaden voltooid",
   "下載未完成：%@": "Download niet voltooid: %@",
-  "下載中… 已經過 %lld 秒": "Bezig met downloaden... %lld s verstreken"
+  "下載中… 已經過 %lld 秒": "Bezig met downloaden... %lld s verstreken",
+  "恢復預設排版": "Standaardlay-out herstellen",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Herstelt alleen de lay-outwaarden van de modus die wordt bewerkt (scrollen of pagina). Het lettertype en andere instellingen blijven hetzelfde."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6666,7 +6690,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "قم بتأكيد التنزيل في مربع حوار النظام. يمكنك ترك هذه الشاشة أثناء التنزيل؛ تبدأ الترجمة تلقائيًا عند الانتهاء. للحصول على تقدم تفصيلي، راجع الإعدادات › التطبيقات › الترجمة › اللغات التي تم تنزيلها.",
   "下載完成": "اكتمل التنزيل",
   "下載未完成：%@": "لم ينته التحميل: %@",
-  "下載中… 已經過 %lld 秒": "جارٍ التحميل... انقضت %lld ثانية"
+  "下載中… 已經過 %lld 秒": "جارٍ التحميل... انقضت %lld ثانية",
+  "恢復預設排版": "استعادة التخطيط الافتراضي",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "يستعيد فقط قيم التخطيط للوضع الذي يتم تحريره (التمرير أو الصفحة). يبقى الخط والإعدادات الأخرى كما هي."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -7179,7 +7205,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "सिस्टम डायलॉग में डाउनलोड की पुष्टि करें। डाउनलोड होने के दौरान आप इस स्क्रीन को छोड़ सकते हैं; अनुवाद समाप्त होने पर स्वचालित रूप से प्रारंभ हो जाता है। विस्तृत प्रगति के लिए, सेटिंग्स › ऐप्स › अनुवाद › डाउनलोड की गई भाषाएँ देखें।",
   "下載完成": "पूर्ण डाउनलोड करें",
   "下載未完成：%@": "डाउनलोड समाप्त नहीं हुआ: %@",
-  "下載中… 已經過 %lld 秒": "डाउनलोड हो रहा है… %lld बीत गया"
+  "下載中… 已經過 %lld 秒": "डाउनलोड हो रहा है… %lld बीत गया",
+  "恢復預設排版": "डिफ़ॉल्ट लेआउट पुनर्स्थापित करें",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "संपादित किए जा रहे मोड (स्क्रॉल या पेज) के केवल लेआउट मानों को पुनर्स्थापित करता है। फ़ॉन्ट और अन्य सेटिंग्स वही रहती हैं."
  },
  "id": {
   "載入中": "Memuat",
@@ -7692,7 +7720,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Konfirmasikan pengunduhan dalam dialog sistem. Anda dapat meninggalkan layar ini saat sedang mengunduh; terjemahan dimulai secara otomatis ketika selesai. Untuk rincian kemajuan, lihat Pengaturan › Aplikasi › Terjemahan › Bahasa yang Diunduh.",
   "下載完成": "Unduh Selesai",
   "下載未完成：%@": "Pengunduhan belum selesai: %@",
-  "下載中… 已經過 %lld 秒": "Pengunduhan… %lld telah berlalu"
+  "下載中… 已經過 %lld 秒": "Pengunduhan… %lld telah berlalu",
+  "恢復預設排版": "Kembalikan Tata Letak Default",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Hanya mengembalikan nilai tata letak mode yang sedang diedit (gulir atau halaman). Font dan pengaturan lainnya tetap sama."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -8205,7 +8235,9 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Xác nhận tải xuống trong hộp thoại hệ thống. Bạn có thể rời khỏi màn hình này trong khi tải xuống; bản dịch bắt đầu tự động khi nó kết thúc. Để biết tiến trình chi tiết, hãy xem Cài đặt > Ứng dụng > Dịch > Ngôn ngữ đã tải xuống.",
   "下載完成": "Tải xuống hoàn tất",
   "下載未完成：%@": "Tải xuống chưa hoàn tất: %@",
-  "下載中… 已經過 %lld 秒": "Đang tải xuống… %lld giây đã trôi qua"
+  "下載中… 已經過 %lld 秒": "Đang tải xuống… %lld giây đã trôi qua",
+  "恢復預設排版": "Khôi phục bố cục mặc định",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Chỉ khôi phục các giá trị bố cục của chế độ đang được chỉnh sửa (cuộn hoặc trang). Phông chữ và các cài đặt khác vẫn giữ nguyên."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8718,6 +8750,8 @@
   "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "ยืนยันการดาวน์โหลดในกล่องโต้ตอบของระบบ คุณสามารถออกจากหน้าจอนี้ขณะดาวน์โหลดได้ การแปลจะเริ่มโดยอัตโนมัติเมื่อเสร็จสิ้น สำหรับความคืบหน้าโดยละเอียด โปรดดูการตั้งค่า › แอป › แปล › ภาษาที่ดาวน์โหลด",
   "下載完成": "ดาวน์โหลดเสร็จสมบูรณ์",
   "下載未完成：%@": "ดาวน์โหลดไม่เสร็จ: %@",
-  "下載中… 已經過 %lld 秒": "กำลังดาวน์โหลด… ผ่านไปแล้ว %lld วินาที"
+  "下載中… 已經過 %lld 秒": "กำลังดาวน์โหลด… ผ่านไปแล้ว %lld วินาที",
+  "恢復預設排版": "คืนค่าเค้าโครงเริ่มต้น",
+  "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "คืนค่าเฉพาะค่าโครงร่างของโหมดที่กำลังแก้ไข (เลื่อนหรือหน้า) แบบอักษรและการตั้งค่าอื่นๆ ยังคงเหมือนเดิม"
  }
 }

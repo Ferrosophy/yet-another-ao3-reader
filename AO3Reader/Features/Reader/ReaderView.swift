@@ -15,8 +15,8 @@ struct ReaderView: View {
     @State private var showsSourcePicker = false
     /// 換章方向（決定捲動模式的推入方向）
     @State private var chapterForward = true
-    /// 標題頁的系列與標籤連結（翻頁模式的資訊頁在 UIKit 容器中，無法使用 NavigationLink）
-    @State private var openedList: WorkListRoute?
+    /// 標題頁的系列與標籤連結：推入目前分頁的導覽路徑（翻頁模式的資訊頁在 UIKit 容器中，無法使用 NavigationLink）
+    @Environment(\.openWorkList) private var openWorkList
     /// 翻頁模式往前翻到上一章時，從該章最後一頁開始
     @State private var startAtEnd = false
     /// 顯示控制列時量到的安全區域；內容以固定邊距排版，控制列出現 / 隱藏不會推動正文
@@ -102,7 +102,6 @@ struct ReaderView: View {
         } message: {
             Text("你已連續閱讀 \(app.readingTime.reminderMinutes) 分鐘，讓眼睛休息一下。")
         }
-        .navigationDestination(item: $openedList) { WorkListScreen(route: $0) }
         .task { await model.load() }
         .task(id: model.detail?.id) {
             if let detail = model.detail { await actions.load(from: detail) }
@@ -334,7 +333,7 @@ struct ReaderView: View {
                 if !detail.series.isEmpty {
                     ForEach(detail.series, id: \.path) { series in
                         Button {
-                            openedList = .series(name: series.name, path: series.path)
+                            openWorkList(.series(name: series.name, path: series.path))
                         } label: {
                             Label(series.name, systemImage: "books.vertical")
                                 .appFont(.subheadline)
@@ -346,7 +345,7 @@ struct ReaderView: View {
                 if !detail.tagGroups.isEmpty {
                     WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground,
                                  showsTranslation: model.isTranslationOn) {
-                        openedList = $0
+                        openWorkList($0)
                     }
                 }
                 noteCard("簡介", english: "Summary", text: detail.summary, id: ReaderViewModel.summaryID)
@@ -431,6 +430,7 @@ struct ReaderView: View {
         .scrollIndicators(.hidden)
         .foregroundStyle(bodyColor)
         .environment(app)
+        .environment(\.openWorkList, openWorkList)
         .tint(appearance.accentColor)
         .environment(\.interfaceFont, appearance.interfaceFontChoice)
         .environment(\.locale, InterfaceLanguage.selectedCode.map(Locale.init(identifier:)) ?? .autoupdatingCurrent)

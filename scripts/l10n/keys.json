@@ -321,6 +321,8 @@
  "段落間距": "AppearanceSettingsView.swift",
  "左右邊距": "AppearanceSettingsView.swift",
  "上下邊距": "AppearanceSettingsView.swift",
+ "恢復預設排版": "AppearanceSettingsView.swift",
+ "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "AppearanceSettingsView.swift",
  "配色": "AppearanceSettingsView.swift",
  "淺色與深色模式各自保存背景與文字顏色，跟隨系統切換。": "AppearanceSettingsView.swift",
  "背景": "AppearanceSettingsView.swift",

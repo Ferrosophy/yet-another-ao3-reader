@@ -19163,6 +19163,149 @@
         }
       }
     },
+    "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستعيد فقط قيم التخطيط للوضع الذي يتم تحريره (التمرير أو الصفحة). يبقى الخط والإعدادات الأخرى كما هي."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stellt nur die Layoutwerte des Modus wieder her, der bearbeitet wird (Bildlauf oder Seite). Schriftart und andere Einstellungen bleiben gleich."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restores only the layout values of the mode being edited (scroll or page). Font and other settings stay the same."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaura solo los valores de diseño del modo que se está editando (desplazamiento o página). La fuente y otras configuraciones permanecen iguales."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaure uniquement les valeurs de mise en page du mode en cours d'édition (défilement ou page). La police et les autres paramètres restent les mêmes."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "संपादित किए जा रहे मोड (स्क्रॉल या पेज) के केवल लेआउट मानों को पुनर्स्थापित करता है। फ़ॉन्ट और अन्य सेटिंग्स वही रहती हैं."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya mengembalikan nilai tata letak mode yang sedang diedit (gulir atau halaman). Font dan pengaturan lainnya tetap sama."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina solo i valori di layout della modalità in corso di modifica (scorrimento o pagina). Il carattere e le altre impostazioni rimangono invariate."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "編集中のモード (スクロールまたはページ) のレイアウト値のみを復元します。フォントやその他の設定は変わりません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "편집 중인 모드(스크롤 또는 페이지)의 레이아웃 값만 복원합니다. 글꼴 및 기타 설정은 동일하게 유지됩니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herstelt alleen de lay-outwaarden van de modus die wordt bewerkt (scrollen of pagina). Het lettertype en andere instellingen blijven hetzelfde."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przywraca tylko wartości układu edytowanego trybu (przewijania lub strony). Czcionka i inne ustawienia pozostają takie same."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaura apenas os valores de layout do modo que está sendo editado (rolagem ou página). A fonte e outras configurações permanecem as mesmas."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Восстанавливает только значения макета редактируемого режима (прокрутки или страницы). Шрифт и другие настройки остаются прежними."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คืนค่าเฉพาะค่าโครงร่างของโหมดที่กำลังแก้ไข (เลื่อนหรือหน้า) แบบอักษรและการตั้งค่าอื่นๆ ยังคงเหมือนเดิม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca düzenlenmekte olan modun (kaydırma veya sayfa) düzen değerlerini geri yükler. Yazı tipi ve diğer ayarlar aynı kalır."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відновлює лише значення макета режиму, який редагується (прокрутка або сторінка). Шрифт та інші налаштування залишаються незмінними."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ khôi phục các giá trị bố cục của chế độ đang được chỉnh sửa (cuộn hoặc trang). Phông chữ và các cài đặt khác vẫn giữ nguyên."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只恢复目前编辑的模式（滚动或翻页）的排版数值，字体与其他设置不变。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字型與其他設定不變。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字型與其他設定不變。"
+          }
+        }
+      }
+    },
     "可從「檔案」或雲端硬碟（Google Drive、OneDrive、PikPak、百度網盤、夸克網盤、阿里雲盤）匯入字體檔，僅在本 App 內使用；向左滑可刪除。": {
       "extractionState": "manual",
       "localizations": {
@@ -28740,6 +28883,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "恢復預設封面"
+          }
+        }
+      }
+    },
+    "恢復預設排版": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استعادة التخطيط الافتراضي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standardlayout wiederherstellen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore Default Layout"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar diseño predeterminado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurer la mise en page par défaut"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डिफ़ॉल्ट लेआउट पुनर्स्थापित करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kembalikan Tata Letak Default"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina il layout predefinito"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デフォルトのレイアウトの復元"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기본 레이아웃 복원"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standaardlay-out herstellen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przywróć domyślny układ"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restaurar layout padrão"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Восстановить макет по умолчанию"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คืนค่าเค้าโครงเริ่มต้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varsayılan Düzeni Geri Yükle"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відновити макет за замовчуванням"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khôi phục bố cục mặc định"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复默认排版"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢復預設排版"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢復預設排版"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢復預設排版"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢復預設排版"
           }
         }
       }

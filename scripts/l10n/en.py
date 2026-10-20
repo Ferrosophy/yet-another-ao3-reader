@@ -511,6 +511,8 @@ EN = {
 '下載完成': 'Download Complete',
 '下載未完成：%@': 'Download not finished: %@',
 '下載中… 已經過 %lld 秒': 'Downloading… %lld s elapsed',
+'恢復預設排版': 'Restore Default Layout',
+'只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。': 'Restores only the layout values of the mode being edited (scroll or page). Font and other settings stay the same.',
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

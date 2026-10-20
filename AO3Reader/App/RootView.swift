@@ -23,49 +23,64 @@ struct RootView: View {
         return start == .bookshelf ? .bookshelf : .browse
     }()
     @State private var challenge: ChallengePage?
+    /// 各分頁的導覽路徑
+    @State private var paths: [TabID: NavigationPath] = [:]
 
     private struct ChallengePage: Identifiable {
         let url: URL
         var id: String { url.absoluteString }
     }
 
+    private func path(_ tab: TabID) -> Binding<NavigationPath> {
+        Binding(get: { paths[tab] ?? NavigationPath() }, set: { paths[tab] = $0 })
+    }
+
+    private func openWorkList(_ tab: TabID) -> OpenWorkListAction {
+        OpenWorkListAction { route in paths[tab, default: NavigationPath()].append(route) }
+    }
+
     var body: some View {
         TabView(selection: $selection) {
             Tab("書架", systemImage: "books.vertical", value: TabID.bookshelf) {
-                NavigationStack {
+                NavigationStack(path: path(.bookshelf)) {
                     BookshelfView()
                         .withWorkNavigation()
                 }
+                .environment(\.openWorkList, openWorkList(.bookshelf))
             }
             Tab("瀏覽", systemImage: "sparkles.rectangle.stack", value: TabID.browse) {
-                NavigationStack {
+                NavigationStack(path: path(.browse)) {
                     LatestWorksView()
                         .withWorkNavigation()
                         // 切換來源（官網 ↔ 鏡像）時以新來源重新載入
                         .id(app.sources.selectedID)
                 }
+                .environment(\.openWorkList, openWorkList(.browse))
             }
             Tab("帳號", systemImage: "person.crop.circle", value: TabID.account) {
-                NavigationStack {
+                NavigationStack(path: path(.account)) {
                     AccountView()
                         .withWorkNavigation()
                         // 切換來源（官網 ↔ 鏡像）時以新來源重新載入
                         .id(app.sources.selectedID)
                 }
+                .environment(\.openWorkList, openWorkList(.account))
             }
             Tab("設定", systemImage: "gearshape", value: TabID.settings) {
-                NavigationStack {
+                NavigationStack(path: path(.settings)) {
                     SettingsView()
                         .withWorkNavigation()
                 }
+                .environment(\.openWorkList, openWorkList(.settings))
             }
             Tab(value: TabID.search, role: .search) {
-                NavigationStack {
+                NavigationStack(path: path(.search)) {
                     SearchView()
                         .withWorkNavigation()
                         // 切換來源（官網 ↔ 鏡像）時以新來源重新載入
                         .id(app.sources.selectedID)
                 }
+                .environment(\.openWorkList, openWorkList(.search))
             }
         }
         .tabBarMinimizeBehavior(.onScrollDown)

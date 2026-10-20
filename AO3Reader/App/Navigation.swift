@@ -62,3 +62,16 @@ private struct WorkNavigation: ViewModifier {
 extension View {
     func withWorkNavigation() -> some View { modifier(WorkNavigation()) }
 }
+
+/// 以程式推入作品列表（標籤、系列）。各分頁的 NavigationStack 使用明確的路徑，
+/// 推入的頁面與 NavigationLink(value:) 在同一條路徑上，返回時只退一層。
+/// 翻頁模式的資訊頁放在 UIKit 容器中無法使用 NavigationLink，也透過它推入。
+struct OpenWorkListAction: @unchecked Sendable {
+    var handler: @MainActor (WorkListRoute) -> Void = { _ in }
+
+    @MainActor func callAsFunction(_ route: WorkListRoute) { handler(route) }
+}
+
+extension EnvironmentValues {
+    @Entry var openWorkList = OpenWorkListAction()
+}

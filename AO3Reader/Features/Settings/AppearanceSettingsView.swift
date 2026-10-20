@@ -224,6 +224,13 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                 slider("上下邊距", value: layout.verticalMargin, in: 0...120, step: 1)
             }
         }
+
+        Section {
+            Button("恢復預設排版") { appearance.resetLayout(for: mode) }
+                .disabled(appearance.isDefaultLayout(for: mode))
+        } footer: {
+            Text("只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。")
+        }
     }
 
     @ViewBuilder

@@ -279,6 +279,32 @@ final class AppearanceSettings {
     /// 目前閱讀模式實際使用的排版
     var readerLayout: ReaderLayout { layout(for: config.layout.mode) }
 
+    /// 預設排版：18pt、標準粗細、行距 6、字間距 0、段落間距 14、左右邊距 20；
+    /// 翻頁模式的上下邊距已另外包含瀏海與 Home 指示條的安全區域，所以預設 16 即可
+    static func defaultLayout(for mode: ReadingMode) -> ReaderLayout {
+        var layout = ReaderLayout()
+        if mode == .paged { layout.verticalMargin = 16 }
+        return layout
+    }
+
+    /// 指定模式的預設排版，保留目前的閱讀模式、翻頁動畫與控制列設定
+    private func defaultsKeepingMode(for mode: ReadingMode) -> ReaderLayout {
+        var layout = Self.defaultLayout(for: mode)
+        layout.mode = config.layout.mode
+        layout.pageTransition = config.layout.pageTransition
+        layout.chrome = config.layout.chrome
+        return layout
+    }
+
+    func isDefaultLayout(for mode: ReadingMode) -> Bool {
+        layout(for: mode) == defaultsKeepingMode(for: mode)
+    }
+
+    /// 把指定模式的排版恢復預設（不影響閱讀模式、翻頁動畫與控制列設定）
+    func resetLayout(for mode: ReadingMode) {
+        setLayout(defaultsKeepingMode(for: mode), for: mode)
+    }
+
     func setLayout(_ layout: ReaderLayout, for mode: ReadingMode) {
         if mode == .paged { config.pagedLayout = layout } else { config.layout = layout }
     }
