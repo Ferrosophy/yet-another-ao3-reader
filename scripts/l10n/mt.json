@@ -506,7 +506,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "スクロール モードとページ モードでは別々のレイアウトが維持されます。同じ値はどちらのモードでも同じように見えます。",
   "字體粗細": "フォントの太さ",
   "原文與譯文": "原文と翻訳",
-  "全部分級": "すべての評価"
+  "全部分級": "すべての評価",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "システムダイアログでダウンロードを確認します。ダウンロード中はこの画面を離れても構いません。翻訳が完了すると、自動的に翻訳が開始されます。詳しい進行状況については、「設定」 > 「アプリ」 > 「翻訳」 > 「ダウンロードした言語」を参照してください。",
+  "下載完成": "ダウンロード完了",
+  "下載未完成：%@": "ダウンロードが完了していません: %@",
+  "下載中… 已經過 %lld 秒": "ダウンロード中…%lld秒経過"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1015,7 +1019,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "스크롤 및 페이지 모드는 별도의 레이아웃을 유지합니다. 두 모드 모두에서 동일한 값이 동일하게 보입니다.",
   "字體粗細": "글꼴 두께",
   "原文與譯文": "원본 및 번역",
-  "全部分級": "모든 평가"
+  "全部分級": "모든 평가",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "시스템 대화상자에서 다운로드를 확인하세요. 다운로드하는 동안 이 화면을 떠날 수 있습니다. 번역이 완료되면 자동으로 번역이 시작됩니다. 자세한 진행 상황은 설정 › 앱 › 번역 › 다운로드한 언어를 참조하세요.",
+  "下載完成": "다운로드 완료",
+  "下載未完成：%@": "다운로드가 완료되지 않았습니다: %@",
+  "下載中… 已經過 %lld 秒": "다운로드 중… %lld초 경과"
  },
  "es": {
   "載入中": "Cargando",
@@ -1524,7 +1532,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Los modos de desplazamiento y página mantienen diseños separados; los mismos valores se ven iguales en ambos modos.",
   "字體粗細": "Peso de fuente",
   "原文與譯文": "Original y traducción",
-  "全部分級": "Todas las calificaciones"
+  "全部分級": "Todas las calificaciones",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Confirme la descarga en el cuadro de diálogo del sistema. Puedes salir de esta pantalla mientras se descarga; La traducción comienza automáticamente cuando termina. Para conocer el progreso detallado, consulte Configuración > Aplicaciones > Traducir > ​​Idiomas descargados.",
+  "下載完成": "Descarga completa",
+  "下載未完成：%@": "Descarga no finalizada: %@",
+  "下載中… 已經過 %lld 秒": "Descargando… %lld s transcurridos"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2033,7 +2045,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Les modes défilement et page conservent des mises en page distinctes ; les mêmes valeurs sont identiques dans les deux modes.",
   "字體粗細": "Poids de la police",
   "原文與譯文": "Original et traduction",
-  "全部分級": "Toutes les notes"
+  "全部分級": "Toutes les notes",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Confirmez le téléchargement dans la boîte de dialogue système. Vous pouvez quitter cet écran pendant le téléchargement ; la traduction démarre automatiquement une fois terminée. Pour une progression détaillée, voir Paramètres > Applications > Traduire > Langues téléchargées.",
+  "下載完成": "Téléchargement terminé",
+  "下載未完成：%@": "Téléchargement non terminé : %@",
+  "下載中… 已經過 %lld 秒": "Téléchargement… %lld s écoulées"
  },
  "de": {
   "載入中": "Laden",
@@ -2542,7 +2558,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Scroll- und Seitenmodus behalten getrennte Layouts bei; Dieselben Werte sehen in beiden Modi gleich aus.",
   "字體粗細": "Schriftstärke",
   "原文與譯文": "Original & Übersetzung",
-  "全部分級": "Alle Bewertungen"
+  "全部分級": "Alle Bewertungen",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Bestätigen Sie den Download im Systemdialog. Sie können diesen Bildschirm während des Downloads verlassen; Die Übersetzung beginnt automatisch, wenn sie abgeschlossen ist. Detaillierte Informationen zum Fortschritt finden Sie unter Einstellungen › Apps › Übersetzen › Heruntergeladene Sprachen.",
+  "下載完成": "Download abgeschlossen",
+  "下載未完成：%@": "Download nicht abgeschlossen: %@",
+  "下載中… 已經過 %lld 秒": "Der Download erfolgt… %lld s sind vergangen"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3051,7 +3071,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Os modos de rolagem e página mantêm layouts separados; os mesmos valores parecem iguais em ambos os modos.",
   "字體粗細": "Peso da fonte",
   "原文與譯文": "Original e Tradução",
-  "全部分級": "Todas as avaliações"
+  "全部分級": "Todas as avaliações",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Confirme o download na caixa de diálogo do sistema. Você pode sair desta tela durante o download; a tradução começa automaticamente quando termina. Para ver o progresso detalhado, consulte Configurações › Aplicativos › Traduzir › Idiomas baixados.",
+  "下載完成": "Download completo",
+  "下載未完成：%@": "Download não concluído: %@",
+  "下載中… 已經過 %lld 秒": "Baixando… %lld segundos decorridos"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3560,7 +3584,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Le modalità di scorrimento e pagina mantengono layout separati; gli stessi valori appaiono uguali in entrambe le modalità.",
   "字體粗細": "Peso del carattere",
   "原文與譯文": "Originale e traduzione",
-  "全部分級": "Tutte le valutazioni"
+  "全部分級": "Tutte le valutazioni",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Conferma il download nella finestra di dialogo del sistema. Puoi lasciare questa schermata durante il download; la traduzione si avvia automaticamente al termine. Per i progressi dettagliati, consulta Impostazioni › App › Traduttore › Lingue scaricate.",
+  "下載完成": "Scarica completo",
+  "下載未完成：%@": "Download non terminato: %@",
+  "下載中… 已經過 %lld 秒": "Download in corso… %lld s trascorsi"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4069,7 +4097,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Режимы прокрутки и страницы сохраняют отдельные макеты; одни и те же значения выглядят одинаково в обоих режимах.",
   "字體粗細": "Вес шрифта",
   "原文與譯文": "Оригинал и перевод",
-  "全部分級": "Все рейтинги"
+  "全部分級": "Все рейтинги",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Подтвердите загрузку в системном диалоге. Вы можете покинуть этот экран во время загрузки; перевод начинается автоматически после завершения. Подробную информацию о ходе работы см. в разделе «Настройки» > «Приложения» > «Переводчик» > «Загруженные языки».",
+  "下載完成": "Загрузка завершена",
+  "下載未完成：%@": "Загрузка не завершена: %@",
+  "下載中… 已經過 %lld 秒": "Загрузка… Прошло %lld с."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4578,7 +4610,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Режими прокручування та сторінки зберігають окремі макети; однакові значення виглядають однаково в обох режимах.",
   "字體粗細": "Товщина шрифту",
   "原文與譯文": "Оригінал і переклад",
-  "全部分級": "Усі рейтинги"
+  "全部分級": "Усі рейтинги",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Підтвердьте завантаження в системному діалоговому вікні. Ви можете залишити цей екран під час завантаження; переклад починається автоматично, коли він закінчується. Щоб отримати докладні відомості про прогрес, перегляньте Налаштування › Програми › Перекладач › Завантажені мови.",
+  "下載完成": "Завантаження завершено",
+  "下載未完成：%@": "Завантаження не завершено: %@",
+  "下載中… 已經過 %lld 秒": "Завантаження… Минуло %lld с"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5087,7 +5123,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Tryby przewijania i stron zapewniają oddzielne układy; te same wartości wyglądają tak samo w obu trybach.",
   "字體粗細": "Waga czcionki",
   "原文與譯文": "Oryginał i tłumaczenie",
-  "全部分級": "Wszystkie oceny"
+  "全部分級": "Wszystkie oceny",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Potwierdź pobieranie w oknie systemowym. Możesz opuścić ten ekran podczas pobierania; tłumaczenie rozpoczyna się automatycznie po jego zakończeniu. Aby uzyskać szczegółowy postęp, zobacz Ustawienia > Aplikacje > Tłumacz > Pobrane języki.",
+  "下載完成": "Pobierz ukończono",
+  "下載未完成：%@": "Pobieranie nie zostało zakończone: %@",
+  "下載中… 已經過 %lld 秒": "Pobieranie… Upłynęło %lld."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5596,7 +5636,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Kaydırma ve sayfa modları ayrı düzenleri korur; aynı değerler her iki modda da aynı görünür.",
   "字體粗細": "Yazı Tipi Ağırlığı",
   "原文與譯文": "Orijinal ve Çeviri",
-  "全部分級": "Tüm Derecelendirmeler"
+  "全部分級": "Tüm Derecelendirmeler",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Sistem iletişim kutusunda indirmeyi onaylayın. İndirilirken bu ekrandan ayrılabilirsiniz; çeviri bittiğinde otomatik olarak başlar. Ayrıntılı ilerleme için bkz. Ayarlar › Uygulamalar › Çeviri › İndirilen Diller.",
+  "下載完成": "İndirme Tamamlandı",
+  "下載未完成：%@": "İndirme tamamlanmadı: %@",
+  "下載中… 已經過 %lld 秒": "İndiriliyor… %lld saniye geçti"
  },
  "nl": {
   "載入中": "Laden",
@@ -6105,7 +6149,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Scroll- en paginamodi behouden afzonderlijke lay-outs; dezelfde waarden zien er in beide modi hetzelfde uit.",
   "字體粗細": "Lettertype gewicht",
   "原文與譯文": "Origineel en vertaling",
-  "全部分級": "Alle beoordelingen"
+  "全部分級": "Alle beoordelingen",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Bevestig de download in het systeemdialoogvenster. Je kunt dit scherm verlaten terwijl het downloadt; De vertaling start automatisch wanneer deze klaar is. Voor gedetailleerde voortgang, zie Instellingen › Apps › Vertalen › Gedownloade talen.",
+  "下載完成": "Downloaden voltooid",
+  "下載未完成：%@": "Download niet voltooid: %@",
+  "下載中… 已經過 %lld 秒": "Bezig met downloaden... %lld s verstreken"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6614,7 +6662,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "تحافظ أوضاع التمرير والصفحة على تخطيطات منفصلة؛ نفس القيم تبدو هي نفسها في كلا الوضعين.",
   "字體粗細": "وزن الخط",
   "原文與譯文": "الأصل والترجمة",
-  "全部分級": "جميع التقييمات"
+  "全部分級": "جميع التقييمات",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "قم بتأكيد التنزيل في مربع حوار النظام. يمكنك ترك هذه الشاشة أثناء التنزيل؛ تبدأ الترجمة تلقائيًا عند الانتهاء. للحصول على تقدم تفصيلي، راجع الإعدادات › التطبيقات › الترجمة › اللغات التي تم تنزيلها.",
+  "下載完成": "اكتمل التنزيل",
+  "下載未完成：%@": "لم ينته التحميل: %@",
+  "下載中… 已經過 %lld 秒": "جارٍ التحميل... انقضت %lld ثانية"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -7123,7 +7175,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "स्क्रॉल और पेज मोड अलग-अलग लेआउट रखते हैं; समान मान दोनों मोड में समान दिखते हैं।",
   "字體粗細": "फ़ॉन्ट वजन",
   "原文與譯文": "मूल एवं अनुवाद",
-  "全部分級": "सभी रेटिंग"
+  "全部分級": "सभी रेटिंग",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "सिस्टम डायलॉग में डाउनलोड की पुष्टि करें। डाउनलोड होने के दौरान आप इस स्क्रीन को छोड़ सकते हैं; अनुवाद समाप्त होने पर स्वचालित रूप से प्रारंभ हो जाता है। विस्तृत प्रगति के लिए, सेटिंग्स › ऐप्स › अनुवाद › डाउनलोड की गई भाषाएँ देखें।",
+  "下載完成": "पूर्ण डाउनलोड करें",
+  "下載未完成：%@": "डाउनलोड समाप्त नहीं हुआ: %@",
+  "下載中… 已經過 %lld 秒": "डाउनलोड हो रहा है… %lld बीत गया"
  },
  "id": {
   "載入中": "Memuat",
@@ -7632,7 +7688,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Mode gulir dan halaman mempertahankan tata letak terpisah; nilai yang sama terlihat sama di kedua mode.",
   "字體粗細": "Berat Font",
   "原文與譯文": "Asli & Terjemahan",
-  "全部分級": "Semua Peringkat"
+  "全部分級": "Semua Peringkat",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Konfirmasikan pengunduhan dalam dialog sistem. Anda dapat meninggalkan layar ini saat sedang mengunduh; terjemahan dimulai secara otomatis ketika selesai. Untuk rincian kemajuan, lihat Pengaturan › Aplikasi › Terjemahan › Bahasa yang Diunduh.",
+  "下載完成": "Unduh Selesai",
+  "下載未完成：%@": "Pengunduhan belum selesai: %@",
+  "下載中… 已經過 %lld 秒": "Pengunduhan… %lld telah berlalu"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -8141,7 +8201,11 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "Chế độ cuộn và trang giữ các bố cục riêng biệt; các giá trị giống nhau trông giống nhau ở cả hai chế độ.",
   "字體粗細": "Trọng lượng phông chữ",
   "原文與譯文": "Bản gốc & bản dịch",
-  "全部分級": "Tất cả xếp hạng"
+  "全部分級": "Tất cả xếp hạng",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "Xác nhận tải xuống trong hộp thoại hệ thống. Bạn có thể rời khỏi màn hình này trong khi tải xuống; bản dịch bắt đầu tự động khi nó kết thúc. Để biết tiến trình chi tiết, hãy xem Cài đặt > Ứng dụng > Dịch > Ngôn ngữ đã tải xuống.",
+  "下載完成": "Tải xuống hoàn tất",
+  "下載未完成：%@": "Tải xuống chưa hoàn tất: %@",
+  "下載中… 已經過 %lld 秒": "Đang tải xuống… %lld giây đã trôi qua"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8650,6 +8714,10 @@
   "滾動與翻頁模式各自保存排版；相同的數值在兩種模式下顯示效果一致。": "โหมดเลื่อนและโหมดเพจมีเค้าโครงแยกกัน ค่าเดียวกันจะดูเหมือนกันในทั้งสองโหมด",
   "字體粗細": "น้ำหนักตัวอักษร",
   "原文與譯文": "ต้นฉบับและการแปล",
-  "全部分級": "การให้คะแนนทั้งหมด"
+  "全部分級": "การให้คะแนนทั้งหมด",
+  "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": "ยืนยันการดาวน์โหลดในกล่องโต้ตอบของระบบ คุณสามารถออกจากหน้าจอนี้ขณะดาวน์โหลดได้ การแปลจะเริ่มโดยอัตโนมัติเมื่อเสร็จสิ้น สำหรับความคืบหน้าโดยละเอียด โปรดดูการตั้งค่า › แอป › แปล › ภาษาที่ดาวน์โหลด",
+  "下載完成": "ดาวน์โหลดเสร็จสมบูรณ์",
+  "下載未完成：%@": "ดาวน์โหลดไม่เสร็จ: %@",
+  "下載中… 已經過 %lld 秒": "กำลังดาวน์โหลด… ผ่านไปแล้ว %lld วินาที"
  }
 }

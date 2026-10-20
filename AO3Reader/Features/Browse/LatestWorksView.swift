@@ -153,7 +153,7 @@ struct LatestWorksView: View {
     }
 
     private var languageName: String {
-        if languageID == Self.chineseAll { return String(localized: "中文（全部分支）") }
+        if languageID == Self.chineseAll { return String(localized: "中文") }
         return languageID.isEmpty ? String(localized: "全部語言") : (languages.first { $0.code == languageID }?.name ?? languageID)
     }
 
@@ -200,7 +200,7 @@ struct BrowseFilterSheet: View {
                     if search.isEmpty {
                         languageRow(code: "", name: "全部語言")
                         if let chineseAll {
-                            languageRow(code: chineseAll, name: "中文（全部分支：普通話、粵語、吳語、閩南語等）")
+                            languageRow(code: chineseAll, name: "中文")
                         }
                     }
                     ForEach(filtered) { language in

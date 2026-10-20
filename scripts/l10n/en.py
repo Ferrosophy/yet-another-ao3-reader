@@ -507,6 +507,10 @@ EN = {
 '字體粗細': 'Font Weight',
 '原文與譯文': 'Original & Translation',
 '全部分級': 'All Ratings',
+'請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。': 'Confirm the download in the system dialog. You can leave this screen while it downloads; translation starts automatically when it finishes. For detailed progress, see Settings › Apps › Translate › Downloaded Languages.',
+'下載完成': 'Download Complete',
+'下載未完成：%@': 'Download not finished: %@',
+'下載中… 已經過 %lld 秒': 'Downloading… %lld s elapsed',
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

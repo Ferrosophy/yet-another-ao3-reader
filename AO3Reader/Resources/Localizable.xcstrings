@@ -5721,6 +5721,149 @@
         }
       }
     },
+    "下載中… 已經過 %lld 秒": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ التحميل... انقضت %lld ثانية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Download erfolgt… %lld s sind vergangen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloading… %lld s elapsed"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descargando… %lld s transcurridos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Téléchargement… %lld s écoulées"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डाउनलोड हो रहा है… %lld बीत गया"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengunduhan… %lld telah berlalu"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download in corso… %lld s trascorsi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロード中…%lld秒経過"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다운로드 중… %lld초 경과"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bezig met downloaden... %lld s verstreken"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pobieranie… Upłynęło %lld."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baixando… %lld segundos decorridos"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Загрузка… Прошло %lld с."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กำลังดาวน์โหลด… ผ่านไปแล้ว %lld วินาที"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İndiriliyor… %lld saniye geçti"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завантаження… Минуло %lld с"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang tải xuống… %lld giây đã trôi qua"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载中… 已经过 %lld 秒"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載中… 已經過 %lld 秒"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載中… 已經過 %lld 秒"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載中… 已經過 %lld 秒"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載中… 已經過 %lld 秒"
+          }
+        }
+      }
+    },
     "下載列表": {
       "extractionState": "manual",
       "localizations": {
@@ -6003,6 +6146,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "下載失敗"
+          }
+        }
+      }
+    },
+    "下載完成": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتمل التنزيل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download abgeschlossen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download Complete"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descarga completa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Téléchargement terminé"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "पूर्ण डाउनलोड करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unduh Selesai"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scarica completo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロード完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다운로드 완료"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Downloaden voltooid"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pobierz ukończono"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download completo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Загрузка завершена"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดาวน์โหลดเสร็จสมบูรณ์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İndirme Tamamlandı"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завантаження завершено"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tải xuống hoàn tất"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载完成"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載完成"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載完成"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載完成"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載完成"
+          }
+        }
+      }
+    },
+    "下載未完成：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم ينته التحميل: %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download nicht abgeschlossen: %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download not finished: %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descarga no finalizada: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Téléchargement non terminé : %@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डाउनलोड समाप्त नहीं हुआ: %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengunduhan belum selesai: %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download non terminato: %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロードが完了していません: %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다운로드가 완료되지 않았습니다: %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download niet voltooid: %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pobieranie nie zostało zakończone: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download não concluído: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Загрузка не завершена: %@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดาวน์โหลดไม่เสร็จ: %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İndirme tamamlanmadı: %@"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завантаження не завершено: %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tải xuống chưa hoàn tất: %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载未完成：%@"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載未完成：%@"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載未完成：%@"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載未完成：%@"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下載未完成：%@"
           }
         }
       }
@@ -7147,292 +7576,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "中"
-          }
-        }
-      }
-    },
-    "中文（全部分支）": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "صيني (جميع الأصناف)"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinesisch (alle Sorten)"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinese (All Varieties)"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chino (todas las variedades)"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinois (toutes les variétés)"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "चीनी (सभी प्रकार)"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cina (Semua Varietas)"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cinese (tutte le varietà)"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中華料理（全種類）"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "중국어 (모든 품종)"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinees (alle variëteiten)"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chiński (wszystkie odmiany)"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinês (todas as variedades)"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Китайский (все разновидности)"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "จีน (ทุกพันธุ์)"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Çince (Tüm Çeşitler)"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "китайська (всі різновиди)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tiếng Trung (Tất cả các loại)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支）"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支）"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支）"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支）"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支）"
-          }
-        }
-      }
-    },
-    "中文（全部分支：普通話、粵語、吳語、閩南語等）": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الصينية (جميع الأصناف: الماندرين، الكانتونية، وو، مين نان…)"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinesisch (alle Varianten: Mandarin, Kantonesisch, Wu, Min Nan…)"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinese (all varieties: Mandarin, Cantonese, Wu, Min Nan…)"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chino (todas las variedades: mandarín, cantonés, wu, min nan…)"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinois (toutes variétés : Mandarin, Cantonais, Wu, Min Nan…)"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "चीनी (सभी किस्में: मंदारिन, कैंटोनीज़, वू, मिन नेन...)"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mandarin (semua variasi: Mandarin, Kanton, Wu, Min Nan…)"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cinese (tutte le varietà: mandarino, cantonese, Wu, Min Nan...)"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中国語 (すべての種類: 北京語、広東語、呉語、閩南語など)"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "중국어(모든 종류: 북경어, 광둥어, 우어, 민난…)"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinees (alle varianten: Mandarijn, Kantonees, Wu, Min Nan…)"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chiński (wszystkie odmiany: mandaryński, kantoński, Wu, Min Nan…)"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chinês (todas as variedades: mandarim, cantonês, Wu, Min Nan…)"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Китайский (все разновидности: мандаринский, кантонский, у, миньнан…)"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "จีน (ทุกพันธุ์: จีนกลาง, กวางตุ้ง, อู๋, มินหนาน…)"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Çince (tüm çeşitler: Mandarin, Kanton Çincesi, Wu, Min Nan…)"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "китайська (усі варіанти: мандарин, кантонська, ву, міннань…)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tiếng Trung (tất cả các loại: tiếng Quan Thoại, tiếng Quảng Đông, tiếng Ngô, tiếng Mân Nam…)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支：普通话、粤语、吴语、闽南语等）"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支：普通話、粵語、吳語、閩南語等）"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支：普通話、粵語、吳語、閩南語等）"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支：普通話、粵語、吳語、閩南語等）"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "中文（全部分支：普通話、粵語、吳語、閩南語等）"
           }
         }
       }
@@ -59199,6 +59342,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "調整手動排序…"
+          }
+        }
+      }
+    },
+    "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قم بتأكيد التنزيل في مربع حوار النظام. يمكنك ترك هذه الشاشة أثناء التنزيل؛ تبدأ الترجمة تلقائيًا عند الانتهاء. للحصول على تقدم تفصيلي، راجع الإعدادات › التطبيقات › الترجمة › اللغات التي تم تنزيلها."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestätigen Sie den Download im Systemdialog. Sie können diesen Bildschirm während des Downloads verlassen; Die Übersetzung beginnt automatisch, wenn sie abgeschlossen ist. Detaillierte Informationen zum Fortschritt finden Sie unter Einstellungen › Apps › Übersetzen › Heruntergeladene Sprachen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm the download in the system dialog. You can leave this screen while it downloads; translation starts automatically when it finishes. For detailed progress, see Settings › Apps › Translate › Downloaded Languages."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirme la descarga en el cuadro de diálogo del sistema. Puedes salir de esta pantalla mientras se descarga; La traducción comienza automáticamente cuando termina. Para conocer el progreso detallado, consulte Configuración > Aplicaciones > Traducir > ​​Idiomas descargados."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirmez le téléchargement dans la boîte de dialogue système. Vous pouvez quitter cet écran pendant le téléchargement ; la traduction démarre automatiquement une fois terminée. Pour une progression détaillée, voir Paramètres > Applications > Traduire > Langues téléchargées."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सिस्टम डायलॉग में डाउनलोड की पुष्टि करें। डाउनलोड होने के दौरान आप इस स्क्रीन को छोड़ सकते हैं; अनुवाद समाप्त होने पर स्वचालित रूप से प्रारंभ हो जाता है। विस्तृत प्रगति के लिए, सेटिंग्स › ऐप्स › अनुवाद › डाउनलोड की गई भाषाएँ देखें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konfirmasikan pengunduhan dalam dialog sistem. Anda dapat meninggalkan layar ini saat sedang mengunduh; terjemahan dimulai secara otomatis ketika selesai. Untuk rincian kemajuan, lihat Pengaturan › Aplikasi › Terjemahan › Bahasa yang Diunduh."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conferma il download nella finestra di dialogo del sistema. Puoi lasciare questa schermata durante il download; la traduzione si avvia automaticamente al termine. Per i progressi dettagliati, consulta Impostazioni › App › Traduttore › Lingue scaricate."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムダイアログでダウンロードを確認します。ダウンロード中はこの画面を離れても構いません。翻訳が完了すると、自動的に翻訳が開始されます。詳しい進行状況については、「設定」 > 「アプリ」 > 「翻訳」 > 「ダウンロードした言語」を参照してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 대화상자에서 다운로드를 확인하세요. 다운로드하는 동안 이 화면을 떠날 수 있습니다. 번역이 완료되면 자동으로 번역이 시작됩니다. 자세한 진행 상황은 설정 › 앱 › 번역 › 다운로드한 언어를 참조하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bevestig de download in het systeemdialoogvenster. Je kunt dit scherm verlaten terwijl het downloadt; De vertaling start automatisch wanneer deze klaar is. Voor gedetailleerde voortgang, zie Instellingen › Apps › Vertalen › Gedownloade talen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potwierdź pobieranie w oknie systemowym. Możesz opuścić ten ekran podczas pobierania; tłumaczenie rozpoczyna się automatycznie po jego zakończeniu. Aby uzyskać szczegółowy postęp, zobacz Ustawienia > Aplikacje > Tłumacz > Pobrane języki."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirme o download na caixa de diálogo do sistema. Você pode sair desta tela durante o download; a tradução começa automaticamente quando termina. Para ver o progresso detalhado, consulte Configurações › Aplicativos › Traduzir › Idiomas baixados."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подтвердите загрузку в системном диалоге. Вы можете покинуть этот экран во время загрузки; перевод начинается автоматически после завершения. Подробную информацию о ходе работы см. в разделе «Настройки» > «Приложения» > «Переводчик» > «Загруженные языки»."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ยืนยันการดาวน์โหลดในกล่องโต้ตอบของระบบ คุณสามารถออกจากหน้าจอนี้ขณะดาวน์โหลดได้ การแปลจะเริ่มโดยอัตโนมัติเมื่อเสร็จสิ้น สำหรับความคืบหน้าโดยละเอียด โปรดดูการตั้งค่า › แอป › แปล › ภาษาที่ดาวน์โหลด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistem iletişim kutusunda indirmeyi onaylayın. İndirilirken bu ekrandan ayrılabilirsiniz; çeviri bittiğinde otomatik olarak başlar. Ayrıntılı ilerleme için bkz. Ayarlar › Uygulamalar › Çeviri › İndirilen Diller."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Підтвердьте завантаження в системному діалоговому вікні. Ви можете залишити цей екран під час завантаження; переклад починається автоматично, коли він закінчується. Щоб отримати докладні відомості про прогрес, перегляньте Налаштування › Програми › Перекладач › Завантажені мови."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xác nhận tải xuống trong hộp thoại hệ thống. Bạn có thể rời khỏi màn hình này trong khi tải xuống; bản dịch bắt đầu tự động khi nó kết thúc. Để biết tiến trình chi tiết, hãy xem Cài đặt > Ứng dụng > Dịch > Ngôn ngữ đã tải xuống."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请在系统窗口中确认下载。下载期间可以离开这个画面，完成后会自动开始翻译；详细进度可到「设置 › App › 翻译 › 已下载的语言」查看。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請在系統視窗中確認下載。下載期間可以離開這個畫面，完成後會自動開始翻譯；詳細進度可到「設定 › App › 翻譯 › 已下載的語言」查看。"
           }
         }
       }
