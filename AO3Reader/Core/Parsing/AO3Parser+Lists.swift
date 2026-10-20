@@ -145,7 +145,7 @@ extension AO3Parser {
             let tags = try doc.select("dl.work.meta \(css) a.tag").array().map {
                 WorkTag(name: try $0.text(), path: AO3Paths.path(fromHref: try $0.attr("href")))
             }
-            if !tags.isEmpty { result.append(WorkTagGroup(title: title, tags: tags)) }
+            if !tags.isEmpty { result.append(WorkTagGroup(title: title, tags: tags, isFandom: css == "dd.fandom")) }
         }
         return result
     }

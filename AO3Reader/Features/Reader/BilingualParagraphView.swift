@@ -19,10 +19,13 @@ struct ReaderStyle {
         Font(uiFont(scale: scale, weight: weight, italic: italic))
     }
 
+    /// 使用者匯入的字體（SwiftUI Text 套用時會退回系統字體，改由 UIKit 繪製）
+    var usesImportedFont: Bool { font.hasPrefix("custom:") }
+
     var bodyFont: Font { font() }
     var headingFont: Font { font(scale: 1.2, weight: .semibold) }
     var titleFont: Font { font(scale: 1.5, weight: .bold) }
-    var translationFont: Font { font(scale: translation.fontScale, italic: translation.italic) }
+    var translationFont: Font { font(scale: translation.scale, italic: translation.italic) }
 
     /// nil 為次要文字色；跟隨正文時使用正文顏色
     var translationColor: Color? {
@@ -82,10 +85,9 @@ struct BilingualParagraphView: View {
         case .body, .heading:
             VStack(alignment: .leading, spacing: style.layout.lineSpacing + 4) {
                 if showsOriginal {
-                    Text(paragraph.text)
-                        .font(paragraph.kind == .heading ? style.headingFont : style.bodyFont)
-                        .tracking(style.layout.letterSpacing)
-                        .lineSpacing(style.layout.lineSpacing)
+                    ReaderTextView(text: paragraph.text,
+                                   font: paragraph.kind == .heading ? style.uiFont(scale: 1.2, weight: .semibold) : style.uiFont(),
+                                   style: style)
                 }
                 if showsTranslation {
                     translationView
@@ -105,10 +107,7 @@ struct BilingualParagraphView: View {
     @ViewBuilder
     private var translationView: some View {
         if mode == .translationOnly, case .done(let text) = translation {
-            Text(text)
-                .font(style.bodyFont)
-                .tracking(style.layout.letterSpacing)
-                .lineSpacing(style.layout.lineSpacing)
+            ReaderTextView(text: text, font: style.uiFont(), style: style)
         } else {
             ImmersiveTranslationView(translation: translation, style: style, onRetry: onRetry)
         }
@@ -121,7 +120,7 @@ struct ImmersiveTranslationView: View {
     let translation: ParagraphTranslation?
     let style: ReaderStyle
     /// 指定時取代譯文字型（例如章節標題使用較大的字）
-    var font: Font?
+    var font: UIFont?
     var onRetry: () -> Void
 
     var body: some View {
@@ -149,18 +148,13 @@ struct ImmersiveTranslationView: View {
 
     @ViewBuilder
     private func styledTranslation(_ text: String) -> some View {
-        let base = Text(text)
-            .font(font ?? style.translationFont)
-            .italic(style.translation.italic)
-            .tracking(style.layout.letterSpacing)
-            .lineSpacing(style.layout.lineSpacing)
-        let colored = Group {
-            if let color = style.translationColor {
-                base.foregroundStyle(color)
-            } else {
-                base.foregroundStyle(.secondary)
-            }
-        }
+        let colored = ReaderTextView(
+            text: text,
+            font: font ?? style.uiFont(scale: style.translation.scale, italic: style.translation.italic),
+            style: style,
+            color: style.translationColor,
+            secondary: style.translationColor == nil
+        )
         switch style.translation.style {
         case .bar:
             colored
@@ -179,5 +173,79 @@ struct ImmersiveTranslationView: View {
         case .plain:
             colored
         }
+    }
+}
+
+/// 閱讀頁的文字。系統與內建字族用 SwiftUI Text（保留文字選取）；
+/// 匯入的字體在 SwiftUI Text 中會退回系統字體，改用與翻頁模式相同的 UIKit 繪製，確保字體生效。
+struct ReaderTextView: View {
+    let text: String
+    let font: UIFont
+    let style: ReaderStyle
+    /// nil 時沿用上層文字顏色（正文）或次要文字色（`secondary`）
+    var color: Color?
+    var secondary = false
+
+    var body: some View {
+        if style.usesImportedFont {
+            ReaderLabel(text: text, font: font, color: labelColor,
+                        lineSpacing: style.layout.lineSpacing, kern: style.layout.letterSpacing)
+        } else if let color {
+            styledText.foregroundStyle(color)
+        } else if secondary {
+            styledText.foregroundStyle(.secondary)
+        } else {
+            styledText
+        }
+    }
+
+    private var styledText: Text {
+        Text(text)
+            .font(Font(font))
+            .tracking(style.layout.letterSpacing)
+            .lineSpacing(style.layout.lineSpacing)
+    }
+
+    private var labelColor: UIColor {
+        if let color { return UIColor(color) }
+        let base = style.textColor.map(UIColor.init) ?? .label
+        return secondary ? base.withAlphaComponent(0.6) : base
+    }
+}
+
+/// 以 UILabel 繪製的多行文字，高度依寬度自動計算。
+struct ReaderLabel: UIViewRepresentable {
+    let text: String
+    let font: UIFont
+    let color: UIColor
+    let lineSpacing: CGFloat
+    let kern: CGFloat
+
+    private var attributed: NSAttributedString {
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.lineSpacing = lineSpacing
+        return NSAttributedString(string: text, attributes: [
+            .font: font, .foregroundColor: color, .paragraphStyle: paragraph, .kern: kern,
+        ])
+    }
+
+    func makeUIView(context: Context) -> UILabel {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.isUserInteractionEnabled = false
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        return label
+    }
+
+    func updateUIView(_ label: UILabel, context: Context) {
+        label.attributedText = attributed
+    }
+
+    func sizeThatFits(_ proposal: ProposedViewSize, uiView: UILabel, context: Context) -> CGSize? {
+        guard let width = proposal.width, width.isFinite, width > 0 else { return nil }
+        let bounds = attributed.boundingRect(with: CGSize(width: width, height: .greatestFiniteMagnitude),
+                                             options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
+        return CGSize(width: width, height: ceil(bounds.height))
     }
 }

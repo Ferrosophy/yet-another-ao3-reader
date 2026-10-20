@@ -324,10 +324,9 @@ struct ReaderView: View {
     private func header(detail: WorkDetail, chapter: Chapter, includesChapterTitle: Bool = true) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             if model.chapterIndex == 0 {
-                Text(detail.title)
-                    .font(style.titleFont)
+                ReaderTextView(text: detail.title, font: style.uiFont(scale: 1.5, weight: .bold), style: style)
                 metaTranslation(ReaderViewModel.workTitleID,
-                                font: style.font(scale: 1.25 * style.translation.fontScale, weight: .semibold, italic: style.translation.italic))
+                                font: style.uiFont(scale: 1.25 * style.translation.scale, weight: .semibold, italic: style.translation.italic))
                 Text(detail.authors.joined(separator: ", "))
                     .foregroundStyle(bodyColor.opacity(0.7))
                 if !detail.series.isEmpty {
@@ -353,10 +352,9 @@ struct ReaderView: View {
             }
             if includesChapterTitle, detail.chapters.count > 1 {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(chapter.title)
-                        .font(style.headingFont)
+                    ReaderTextView(text: chapter.title, font: style.uiFont(scale: 1.2, weight: .semibold), style: style)
                     metaTranslation(ReaderViewModel.chapterTitleID(model.chapterIndex),
-                                    font: style.font(scale: 1.1 * style.translation.fontScale, weight: .semibold, italic: style.translation.italic))
+                                    font: style.uiFont(scale: 1.1 * style.translation.scale, weight: .semibold, italic: style.translation.italic))
                 }
                 .padding(.top, 8)
             }
@@ -389,7 +387,7 @@ struct ReaderView: View {
                 Text(text)
                     .appFont(.callout)
                     .foregroundStyle(cardForeground)
-                metaTranslation(id, font: style.font(scale: 0.9 * style.translation.fontScale, italic: style.translation.italic))
+                metaTranslation(id, font: style.uiFont(scale: 0.9 * style.translation.scale, italic: style.translation.italic))
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -439,7 +437,7 @@ struct ReaderView: View {
 
     /// 標題與簡介的沉浸式譯文（顯示在原文下方，不取代原文）
     @ViewBuilder
-    private func metaTranslation(_ id: String, font: Font) -> some View {
+    private func metaTranslation(_ id: String, font: UIFont) -> some View {
         if model.isTranslationOn {
             ImmersiveTranslationView(translation: model.translations[id], style: style, font: font) {
                 model.retryMeta(id)
@@ -645,7 +643,14 @@ private struct WorkTagsView: View {
     var showsTranslation = false
     var onOpen: (WorkListRoute) -> Void
     @Environment(AppState.self) private var app
+    @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
+    @AppStorage(TranslationVisibility.tagsKey) private var showsTagTranslation = true
     @State private var expanded = false
+
+    /// 這個分組是否顯示譯文（設定 › 一般 › 顯示譯文）
+    private func translates(_ group: WorkTagGroup) -> Bool {
+        showsTranslation && (group.isFandom ? showsFandomTranslation : showsTagTranslation)
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -663,7 +668,7 @@ private struct WorkTagsView: View {
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text(tag.name)
                                         .appFont(.caption)
-                                    if showsTranslation, let translated = app.tags.translation(for: tag.name) {
+                                    if translates(group), let translated = app.tags.translation(for: tag.name) {
                                         Text(translated)
                                             .appFont(.caption2)
                                             .opacity(0.7)
@@ -687,8 +692,8 @@ private struct WorkTagsView: View {
                 .appFont(.caption)
             }
         }
-        .task(id: showsTranslation) {
-            if showsTranslation { app.tags.request(groups.flatMap { $0.tags.map(\.name) }) }
+        .task(id: [showsTranslation, showsFandomTranslation, showsTagTranslation]) {
+            app.tags.request(groups.filter(translates).flatMap { $0.tags.map(\.name) })
         }
     }
 }

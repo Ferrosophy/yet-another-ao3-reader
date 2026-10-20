@@ -368,7 +368,13 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                 ForEach(TranslationAppearance.Style.allCases) { Text($0.title).tag($0) }
             }
             .pickerStyle(.segmented)
-            slider("譯文大小", value: $appearance.config.translation.fontScale, in: 0.6...1.3, step: 0.01, percent: true)
+            Toggle("譯文大小跟隨正文", isOn: Binding(
+                get: { appearance.config.translation.followsFontSize == true },
+                set: { appearance.config.translation.followsFontSize = $0 }
+            ))
+            if appearance.config.translation.followsFontSize != true {
+                slider("譯文大小", value: $appearance.config.translation.fontScale, in: 0.6...1.3, step: 0.01, percent: true)
+            }
             Toggle("斜體", isOn: $appearance.config.translation.italic)
         }
 

@@ -97,7 +97,7 @@ enum PagedTextBuilder {
         func appendMetaTranslation(_ id: String, scale: Double, weight: UIFont.Weight? = nil) {
             guard showsTranslation, case .done(let text) = translations[id] else { return }
             append(text,
-                   font: style.uiFont(scale: scale * style.translation.fontScale, weight: weight, italic: style.translation.italic),
+                   font: style.uiFont(scale: scale * style.translation.scale, weight: weight, italic: style.translation.italic),
                    color: translationColor,
                    paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5, indent: translationIndent),
                    decoration: decoration)
@@ -143,7 +143,7 @@ enum PagedTextBuilder {
                         if mode == .bilingual {
                             let indent = translationIndent
                             append(text,
-                                   font: style.uiFont(scale: style.translation.fontScale, italic: style.translation.italic),
+                                   font: style.uiFont(scale: style.translation.scale, italic: style.translation.italic),
                                    color: translationColor,
                                    paragraph: paragraphStyle(after: layout.paragraphSpacing, indent: indent),
                                    decoration: decoration)

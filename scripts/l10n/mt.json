@@ -515,7 +515,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "編集中のモード (スクロールまたはページ) のレイアウト値のみを復元します。フォントやその他の設定は変わりません。",
   "按作品": "仕事別",
   "按標籤": "タグ別",
-  "其他（%lld）": "その他 (%lld)"
+  "其他（%lld）": "その他 (%lld)",
+  "應用版本": "アプリのバージョン",
+  "顯示譯文": "翻訳を表示",
+  "作品名稱": "作品名",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "作品リストとリーダーに表示する翻訳を選択します。タイトルと概要には翻訳対象言語が使用されます。ファンダムとタグはインターフェース言語を使用します。",
+  "譯文大小跟隨正文": "本文のテキストサイズを一致させる",
+  "翻譯作品資訊": "翻訳作品情報"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1033,7 +1039,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "편집 중인 모드(스크롤 또는 페이지)의 레이아웃 값만 복원합니다. 글꼴 및 기타 설정은 동일하게 유지됩니다.",
   "按作品": "직장별",
   "按標籤": "태그별",
-  "其他（%lld）": "기타 (%lld)"
+  "其他（%lld）": "기타 (%lld)",
+  "應用版本": "앱 버전",
+  "顯示譯文": "번역 표시",
+  "作品名稱": "작품명",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "작업 목록과 독자에 표시되는 번역을 선택합니다. 제목과 요약은 번역 대상 언어를 사용합니다. 팬덤과 태그는 인터페이스 언어를 사용합니다.",
+  "譯文大小跟隨正文": "본문 텍스트 크기 일치",
+  "翻譯作品資訊": "업무 정보 번역"
  },
  "es": {
   "載入中": "Cargando",
@@ -1551,7 +1563,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Restaura solo los valores de diseño del modo que se está editando (desplazamiento o página). La fuente y otras configuraciones permanecen iguales.",
   "按作品": "Por trabajo",
   "按標籤": "Por etiqueta",
-  "其他（%lld）": "Otros (%lld)"
+  "其他（%lld）": "Otros (%lld)",
+  "應用版本": "Versión de la aplicación",
+  "顯示譯文": "Mostrar traducciones",
+  "作品名稱": "Título del trabajo",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Elija qué traducciones aparecen en las listas de trabajo y en el lector. Los títulos y resúmenes utilizan el idioma de destino de la traducción; Los fandoms y las etiquetas utilizan el idioma de la interfaz.",
+  "譯文大小跟隨正文": "Coincidir con el tamaño del texto del cuerpo",
+  "翻譯作品資訊": "Traducir información de trabajo"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2069,7 +2087,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Restaure uniquement les valeurs de mise en page du mode en cours d'édition (défilement ou page). La police et les autres paramètres restent les mêmes.",
   "按作品": "Par travail",
   "按標籤": "Par balise",
-  "其他（%lld）": "Autres (%lld)"
+  "其他（%lld）": "Autres (%lld)",
+  "應用版本": "Version de l'application",
+  "顯示譯文": "Afficher les traductions",
+  "作品名稱": "Titre du travail",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Choisissez quelles traductions apparaissent dans les listes de travail et dans le lecteur. Les titres et les résumés utilisent la langue cible de votre traduction ; les fandoms et les tags utilisent le langage de l'interface.",
+  "譯文大小跟隨正文": "Faire correspondre la taille du corps du texte",
+  "翻譯作品資訊": "Traduire les informations de travail"
  },
  "de": {
   "載入中": "Laden",
@@ -2587,7 +2611,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Stellt nur die Layoutwerte des Modus wieder her, der bearbeitet wird (Bildlauf oder Seite). Schriftart und andere Einstellungen bleiben gleich.",
   "按作品": "Durch die Arbeit",
   "按標籤": "Nach Tag",
-  "其他（%lld）": "Andere (%lld)"
+  "其他（%lld）": "Andere (%lld)",
+  "應用版本": "App-Version",
+  "顯示譯文": "Übersetzungen anzeigen",
+  "作品名稱": "Arbeitstitel",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Wählen Sie aus, welche Übersetzungen in den Arbeitslisten und im Reader angezeigt werden sollen. Titel und Zusammenfassungen verwenden die Zielsprache Ihrer Übersetzung; Fandoms und Tags verwenden die Schnittstellensprache.",
+  "譯文大小跟隨正文": "Passen Sie die Größe des Textkörpers an",
+  "翻譯作品資訊": "Arbeitsinformationen übersetzen"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3105,7 +3135,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Restaura apenas os valores de layout do modo que está sendo editado (rolagem ou página). A fonte e outras configurações permanecem as mesmas.",
   "按作品": "Por trabalho",
   "按標籤": "Por etiqueta",
-  "其他（%lld）": "Outros (%lld)"
+  "其他（%lld）": "Outros (%lld)",
+  "應用版本": "Versão do aplicativo",
+  "顯示譯文": "Mostrar traduções",
+  "作品名稱": "Título do Trabalho",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Escolha quais traduções aparecem nas listas de trabalho e no leitor. Títulos e resumos usam o idioma de destino da tradução; fandoms e tags usam o idioma da interface.",
+  "譯文大小跟隨正文": "Corresponder ao tamanho do texto do corpo",
+  "翻譯作品資訊": "Traduzir informações de trabalho"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3623,7 +3659,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Ripristina solo i valori di layout della modalità in corso di modifica (scorrimento o pagina). Il carattere e le altre impostazioni rimangono invariate.",
   "按作品": "Per lavoro",
   "按標籤": "Per etichetta",
-  "其他（%lld）": "Altri (%lld)"
+  "其他（%lld）": "Altri (%lld)",
+  "應用版本": "Versione dell'app",
+  "顯示譯文": "Mostra traduzioni",
+  "作品名稱": "Titolo dell'opera",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Scegli quali traduzioni visualizzare negli elenchi di lavoro e nel lettore. I titoli e i riassunti utilizzano la lingua di destinazione della traduzione; fandom e tag utilizzano il linguaggio dell'interfaccia.",
+  "譯文大小跟隨正文": "Corrisponde alla dimensione del corpo del testo",
+  "翻譯作品資訊": "Traduci informazioni di lavoro"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4141,7 +4183,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Восстанавливает только значения макета редактируемого режима (прокрутки или страницы). Шрифт и другие настройки остаются прежними.",
   "按作品": "По работе",
   "按標籤": "По тегу",
-  "其他（%lld）": "Другие (%lld)"
+  "其他（%lld）": "Другие (%lld)",
+  "應用版本": "Версия приложения",
+  "顯示譯文": "Показать переводы",
+  "作品名稱": "Название работы",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Выберите, какие переводы будут отображаться в рабочих списках и программе чтения. В заголовках и аннотациях используется целевой язык вашего перевода; фандомы и теги используют язык интерфейса.",
+  "譯文大小跟隨正文": "Соответствие размеру основного текста",
+  "翻譯作品資訊": "Перевести информацию о работе"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4659,7 +4707,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Відновлює лише значення макета режиму, який редагується (прокрутка або сторінка). Шрифт та інші налаштування залишаються незмінними.",
   "按作品": "По роботі",
   "按標籤": "За тегом",
-  "其他（%lld）": "Інші (%lld)"
+  "其他（%lld）": "Інші (%lld)",
+  "應用版本": "Версія програми",
+  "顯示譯文": "Показати переклади",
+  "作品名稱": "Назва роботи",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Виберіть, які переклади відображатимуться в списках робіт і читанні. У заголовках і резюме використовується цільова мова перекладу; фандоми та теги використовують мову інтерфейсу.",
+  "譯文大小跟隨正文": "Відповідність розміру основного тексту",
+  "翻譯作品資訊": "Перекласти робочу інформацію"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5177,7 +5231,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Przywraca tylko wartości układu edytowanego trybu (przewijania lub strony). Czcionka i inne ustawienia pozostają takie same.",
   "按作品": "Przez pracę",
   "按標籤": "Według tagu",
-  "其他（%lld）": "Inne (%lld)"
+  "其他（%lld）": "Inne (%lld)",
+  "應用版本": "Wersja aplikacji",
+  "顯示譯文": "Pokaż tłumaczenia",
+  "作品名稱": "Tytuł pracy",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Wybierz, które tłumaczenia mają się pojawiać na listach zadań i w czytniku. Tytuły i streszczenia korzystają z języka docelowego tłumaczenia; fandomy i tagi używają języka interfejsu.",
+  "譯文大小跟隨正文": "Dopasuj rozmiar tekstu głównego",
+  "翻譯作品資訊": "Przetłumacz informacje o pracy"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5695,7 +5755,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Yalnızca düzenlenmekte olan modun (kaydırma veya sayfa) düzen değerlerini geri yükler. Yazı tipi ve diğer ayarlar aynı kalır.",
   "按作品": "İşe göre",
   "按標籤": "Etikete göre",
-  "其他（%lld）": "Diğerleri (%lld)"
+  "其他（%lld）": "Diğerleri (%lld)",
+  "應用版本": "Uygulama Sürümü",
+  "顯示譯文": "Çevirileri Göster",
+  "作品名稱": "İşin Başlığı",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Çalışma listelerinde ve okuyucuda hangi çevirilerin görüneceğini seçin. Başlıklar ve özetler çeviri hedef dilinizi kullanır; fandomlar ve etiketler arayüz dilini kullanır.",
+  "譯文大小跟隨正文": "Gövde Metni Boyutunu Eşleştir",
+  "翻譯作品資訊": "Çalışma Bilgilerini Çevir"
  },
  "nl": {
   "載入中": "Laden",
@@ -6213,7 +6279,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Herstelt alleen de lay-outwaarden van de modus die wordt bewerkt (scrollen of pagina). Het lettertype en andere instellingen blijven hetzelfde.",
   "按作品": "Door werk",
   "按標籤": "Op tag",
-  "其他（%lld）": "Anderen (%lld)"
+  "其他（%lld）": "Anderen (%lld)",
+  "應用版本": "App-versie",
+  "顯示譯文": "Vertalingen weergeven",
+  "作品名稱": "Werktitel",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Kies welke vertalingen in werklijsten en in de reader verschijnen. Titels en samenvattingen gebruiken uw vertalingsdoeltaal; fandoms en tags gebruiken de interfacetaal.",
+  "譯文大小跟隨正文": "Overeenkomen met de grootte van de hoofdtekst",
+  "翻譯作品資訊": "Vertaal werkinformatie"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6731,7 +6803,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "يستعيد فقط قيم التخطيط للوضع الذي يتم تحريره (التمرير أو الصفحة). يبقى الخط والإعدادات الأخرى كما هي.",
   "按作品": "بالعمل",
   "按標籤": "بواسطة العلامة",
-  "其他（%lld）": "أخرى (%lld)"
+  "其他（%lld）": "أخرى (%lld)",
+  "應用版本": "إصدار التطبيق",
+  "顯示譯文": "عرض الترجمات",
+  "作品名稱": "عنوان العمل",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "اختر الترجمات التي تظهر في قوائم العمل والقارئ. تستخدم العناوين والملخصات لغة الترجمة المستهدفة؛ تستخدم الفاندومات والعلامات لغة الواجهة.",
+  "譯文大小跟隨正文": "مطابقة حجم النص الأساسي",
+  "翻譯作品資訊": "ترجمة معلومات العمل"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -7249,7 +7327,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "संपादित किए जा रहे मोड (स्क्रॉल या पेज) के केवल लेआउट मानों को पुनर्स्थापित करता है। फ़ॉन्ट और अन्य सेटिंग्स वही रहती हैं.",
   "按作品": "काम से",
   "按標籤": "टैग द्वारा",
-  "其他（%lld）": "अन्य (%lld)"
+  "其他（%lld）": "अन्य (%lld)",
+  "應用版本": "ऐप संस्करण",
+  "顯示譯文": "अनुवाद दिखाएँ",
+  "作品名稱": "कार्य शीर्षक",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "चुनें कि कौन से अनुवाद कार्य सूचियों और पाठक में दिखाई देंगे। शीर्षक और सारांश आपकी अनुवाद लक्ष्य भाषा का उपयोग करते हैं; प्रशंसक और टैग इंटरफ़ेस भाषा का उपयोग करते हैं।",
+  "譯文大小跟隨正文": "बॉडी टेक्स्ट साइज का मिलान करें",
+  "翻譯作品資訊": "कार्य जानकारी का अनुवाद करें"
  },
  "id": {
   "載入中": "Memuat",
@@ -7767,7 +7851,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Hanya mengembalikan nilai tata letak mode yang sedang diedit (gulir atau halaman). Font dan pengaturan lainnya tetap sama.",
   "按作品": "Oleh Pekerjaan",
   "按標籤": "Berdasarkan Tag",
-  "其他（%lld）": "Lainnya (%lld)"
+  "其他（%lld）": "Lainnya (%lld)",
+  "應用版本": "Versi Aplikasi",
+  "顯示譯文": "Tampilkan Terjemahan",
+  "作品名稱": "Judul Pekerjaan",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Pilih terjemahan mana yang muncul di daftar pekerjaan dan pembaca. Judul dan ringkasan menggunakan bahasa target terjemahan Anda; fandom dan tag menggunakan bahasa antarmuka.",
+  "譯文大小跟隨正文": "Cocokkan Ukuran Teks Isi",
+  "翻譯作品資訊": "Terjemahkan Info Pekerjaan"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -8285,7 +8375,13 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "Chỉ khôi phục các giá trị bố cục của chế độ đang được chỉnh sửa (cuộn hoặc trang). Phông chữ và các cài đặt khác vẫn giữ nguyên.",
   "按作品": "theo công việc",
   "按標籤": "Theo thẻ",
-  "其他（%lld）": "Khác (%lld)"
+  "其他（%lld）": "Khác (%lld)",
+  "應用版本": "Phiên bản ứng dụng",
+  "顯示譯文": "Hiển thị bản dịch",
+  "作品名稱": "Tiêu đề công việc",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "Chọn bản dịch nào sẽ xuất hiện trong danh sách công việc và trình đọc. Tiêu đề và tóm tắt sử dụng ngôn ngữ đích dịch của bạn; fandom và thẻ sử dụng ngôn ngữ giao diện.",
+  "譯文大小跟隨正文": "Khớp kích thước văn bản nội dung",
+  "翻譯作品資訊": "Dịch thông tin công việc"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8803,6 +8899,12 @@
   "只恢復目前編輯的模式（滾動或翻頁）的排版數值，字體與其他設定不變。": "คืนค่าเฉพาะค่าโครงร่างของโหมดที่กำลังแก้ไข (เลื่อนหรือหน้า) แบบอักษรและการตั้งค่าอื่นๆ ยังคงเหมือนเดิม",
   "按作品": "โดยการทำงาน",
   "按標籤": "โดยแท็ก",
-  "其他（%lld）": "อื่นๆ (%lld)"
+  "其他（%lld）": "อื่นๆ (%lld)",
+  "應用版本": "เวอร์ชันของแอป",
+  "顯示譯文": "แสดงคำแปล",
+  "作品名稱": "ชื่องาน",
+  "決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": "เลือกคำแปลที่จะปรากฏในรายการงานและเครื่องอ่าน ชื่อเรื่องและบทสรุปใช้ภาษาเป้าหมายการแปลของคุณ แฟนดอมและแท็กใช้ภาษาอินเทอร์เฟซ",
+  "譯文大小跟隨正文": "จับคู่ขนาดข้อความเนื้อหา",
+  "翻譯作品資訊": "แปลข้อมูลงาน"
  }
 }

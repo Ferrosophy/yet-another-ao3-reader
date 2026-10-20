@@ -21,6 +21,10 @@ struct SettingsView: View {
     @State private var showsClearConfirm = false
     @AppStorage(StartTab.storageKey) private var startTab: StartTab = .browse
     @AppStorage(DownloadFormat.storageKey) private var downloadFormat: DownloadFormat = .epub
+    @AppStorage(TranslationVisibility.titleKey) private var showsTitleTranslation = true
+    @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
+    @AppStorage(TranslationVisibility.tagsKey) private var showsTagTranslation = true
+    @AppStorage(TranslationVisibility.summaryKey) private var showsSummaryTranslation = true
 
     var body: some View {
         List {
@@ -31,7 +35,7 @@ struct SettingsView: View {
                 NavigationLink {
                     InterfaceLanguageView()
                 } label: {
-                    LabeledContent("語言", value: InterfaceLanguage.all.first { $0.code == InterfaceLanguage.selectedCode }?.name ?? String(localized: "跟隨系統"))
+                    LabeledContent("介面語言", value: InterfaceLanguage.all.first { $0.code == InterfaceLanguage.selectedCode }?.name ?? String(localized: "跟隨系統"))
                 }
                 NavigationLink {
                     SourcesView()
@@ -47,14 +51,24 @@ struct SettingsView: View {
                     ReadingStatsView()
                 } label: {
                     LabeledContent("時長管理", value: app.readingTime.reminderEnabled
-                        ? String(localized: "每 \(app.readingTime.reminderMinutes) 分鐘提醒")
-                        : String(localized: "未開啟提醒"))
+                        ? String(localized: "每 \(app.readingTime.reminderMinutes) 分鐘提醒") : "")
                 }
                 // 直接在瀏覽器開啟 GitHub Issues，已附上版本資訊
                 Link(destination: Self.feedbackURL) {
                     Text("意見回饋").foregroundStyle(.primary)
                 }
-                LabeledContent("版本", value: Self.versionString)
+                LabeledContent("應用版本", value: Self.versionString)
+            }
+
+            Section {
+                Toggle("作品名稱", isOn: $showsTitleTranslation)
+                Toggle("Fandom", isOn: $showsFandomTranslation)
+                Toggle("標籤", isOn: $showsTagTranslation)
+                Toggle("簡介", isOn: $showsSummaryTranslation)
+            } header: {
+                Text("顯示譯文")
+            } footer: {
+                Text("決定作品列表與閱讀頁是否顯示這些內容的譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。")
             }
 
             Section("下載") {

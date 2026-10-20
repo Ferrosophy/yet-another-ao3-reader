@@ -68,6 +68,53 @@ struct WorkListView: View {
     }
 }
 
+/// 卡片上單一欄位（作品名稱或簡介）的沉浸式譯文。只觀察自己的翻譯狀態，
+/// 出現時排入翻譯、離開畫面時取消尚未送出的請求。
+struct CardTranslationView: View {
+    let key: String
+    let text: String
+    let font: Font.TextStyle
+    let lineLimit: Int
+    @Environment(AppState.self) private var app
+
+    var body: some View {
+        let slot = app.summaries.slot(key)
+        Group {
+            switch slot.value {
+            case .done(let translated):
+                Text(translated)
+                    .appFont(font)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(lineLimit)
+                    .padding(.leading, 10)
+                    .overlay(alignment: .leading) {
+                        Capsule().fill(.tint.opacity(0.55)).frame(width: 3)
+                    }
+            case .failed(let message):
+                Button {
+                    app.summaries.retry(key, text: text)
+                } label: {
+                    Label("翻譯失敗：\(message)　點擊重試", systemImage: "arrow.clockwise")
+                        .appFont(.caption)
+                        .lineLimit(2)
+                }
+                .buttonStyle(.borderless)
+                .foregroundStyle(.red)
+            case .loading, nil:
+                HStack(spacing: 6) {
+                    ProgressView().controlSize(.mini)
+                    Text("翻譯中…")
+                }
+                .appFont(.caption)
+                .foregroundStyle(.tertiary)
+                .padding(.leading, 10)
+            }
+        }
+        .task(id: app.summaries.currentSignature) { app.summaries.request(key, text: text) }
+        .onDisappear { app.summaries.cancel(key) }
+    }
+}
+
 /// 長按作品卡片：加入或移出書架
 struct BookshelfMenuButton: View {
     let work: WorkSummary
@@ -89,7 +136,7 @@ struct SummaryTranslationToggle: View {
     var body: some View {
         @Bindable var summaries = app.summaries
         Toggle(isOn: $summaries.isEnabled) {
-            Label("翻譯簡介與標籤", systemImage: "translate")
+            Label("翻譯作品資訊", systemImage: "translate")
         }
         .toggleStyle(.button)
     }
@@ -98,10 +145,16 @@ struct SummaryTranslationToggle: View {
 struct WorkRow: View {
     let work: WorkSummary
     @Environment(AppState.self) private var app
+    @AppStorage(TranslationVisibility.titleKey) private var showsTitleTranslation = true
+    @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
+    @AppStorage(TranslationVisibility.tagsKey) private var showsTagTranslation = true
+    @AppStorage(TranslationVisibility.summaryKey) private var showsSummaryTranslation = true
     /// 簡介原文實際顯示的行數（最多 3 行），譯文顯示相同行數
     @State private var summaryLines = 3
 
     private static let summaryLineHeight = UIFont.preferredFont(forTextStyle: .callout).lineHeight
+
+    private var translates: Bool { app.summaries.isEnabled }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
@@ -114,6 +167,10 @@ struct WorkRow: View {
                     RatingBadge(rating: rating)
                 }
             }
+            if translates, showsTitleTranslation {
+                CardTranslationView(key: SummaryTranslator.titleKey(work.id), text: work.title,
+                                    font: .subheadline, lineLimit: 2)
+            }
             if !work.authors.isEmpty {
                 Text(work.authors.joined(separator: ", "))
                     .appFont(.subheadline)
@@ -121,33 +178,33 @@ struct WorkRow: View {
             }
             // 標籤過長時換行完整顯示，不截斷
             if !work.fandoms.isEmpty {
+                let translatesFandoms = translates && showsFandomTranslation
                 Text(work.fandoms.joined(separator: " · "))
                     .appFont(.caption)
                     .foregroundStyle(.tint)
-                    .task(id: app.summaries.isEnabled) { if app.summaries.isEnabled { app.tags.request(work.fandoms) } }
-                if app.summaries.isEnabled { tagTranslation(work.fandoms) }
+                    .task(id: translatesFandoms) { if translatesFandoms { app.tags.request(work.fandoms) } }
+                if translatesFandoms { tagTranslation(work.fandoms) }
             }
             let tags = work.relationships + work.characters.prefix(3) + work.freeforms.prefix(4)
             if !tags.isEmpty {
+                let translatesTags = translates && showsTagTranslation
                 Text(tags.joined(separator: " · "))
                     .appFont(.caption)
                     .foregroundStyle(.secondary)
-                    .task(id: app.summaries.isEnabled) { if app.summaries.isEnabled { app.tags.request(tags) } }
-                if app.summaries.isEnabled { tagTranslation(tags) }
+                    .task(id: translatesTags) { if translatesTags { app.tags.request(tags) } }
+                if translatesTags { tagTranslation(tags) }
             }
             if !work.summary.isEmpty {
                 // 卡片只顯示前 3 行；翻譯使用完整簡介，再以與原文相同的行數顯示
                 Text(work.summary)
                     .appFont(.callout)
                     .lineLimit(3)
-                    .onGeometryChange(for: CGFloat.self, of: { $0.size.height }) { height in
-                        summaryLines = min(max(Int((height / Self.summaryLineHeight).rounded()), 1), 3)
-                    }
-                if app.summaries.isEnabled {
-                    summaryTranslation
-                        .task(id: app.summaries.currentSignature) {
-                            app.summaries.request(id: work.id, summary: work.summary)
-                        }
+                    .onGeometryChange(for: Int.self, of: {
+                        min(max(Int(($0.size.height / Self.summaryLineHeight).rounded()), 1), 3)
+                    }) { summaryLines = $0 }
+                if translates, showsSummaryTranslation {
+                    CardTranslationView(key: SummaryTranslator.summaryKey(work.id), text: work.summary,
+                                        font: .callout, lineLimit: summaryLines)
                 }
             }
             // 統計項目數量與長度不定（語言名稱可能很長），用自動換行排列，避免擠壓成直排
@@ -163,39 +220,6 @@ struct WorkRow: View {
             .foregroundStyle(.secondary)
         }
         .padding(.vertical, 4)
-    }
-
-    @ViewBuilder
-    private var summaryTranslation: some View {
-        switch app.summaries.translation(for: work.id) {
-        case .done(let text):
-            Text(text)
-                .appFont(.callout)
-                .foregroundStyle(.secondary)
-                .lineLimit(summaryLines)
-                .padding(.leading, 10)
-                .overlay(alignment: .leading) {
-                    Capsule().fill(.tint.opacity(0.55)).frame(width: 3)
-                }
-        case .failed(let message):
-            Button {
-                app.summaries.retry(id: work.id, summary: work.summary)
-            } label: {
-                Label("翻譯失敗：\(message)　點擊重試", systemImage: "arrow.clockwise")
-                    .appFont(.caption)
-                    .lineLimit(2)
-            }
-            .buttonStyle(.borderless)
-            .foregroundStyle(.red)
-        case .loading, nil:
-            HStack(spacing: 6) {
-                ProgressView().controlSize(.mini)
-                Text("翻譯中…")
-            }
-            .appFont(.caption)
-            .foregroundStyle(.tertiary)
-            .padding(.leading, 10)
-        }
     }
 
     /// 標籤譯文（目標語言跟隨介面語言），顯示在原標籤下方

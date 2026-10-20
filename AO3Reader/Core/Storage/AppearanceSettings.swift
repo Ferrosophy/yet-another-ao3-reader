@@ -138,6 +138,11 @@ struct TranslationAppearance: Codable, Hashable, Sendable {
     var colorHex: String?
     /// 譯文與正文同色（Optional 讓舊設定可正常解碼）
     var followsTextColor: Bool?
+    /// 譯文與正文字體大小相同（忽略 fontScale）
+    var followsFontSize: Bool?
+
+    /// 實際使用的譯文字級倍率
+    var scale: Double { followsFontSize == true ? 1 : fontScale }
     var italic = false
 }
 

@@ -1,9 +1,33 @@
 import Foundation
 import Observation
 
-/// 作品卡片的簡介翻譯（沉浸式：譯文顯示在簡介下方）。
-/// 卡片出現時排入佇列，短暫防抖後合併成批次送出，結果依作品 ID 保存；
-/// 換服務或語言後自動清空舊譯文。
+/// 列表卡片的翻譯開關（設定 › 一般）：作品名稱、Fandom、標籤、簡介可分別決定是否顯示譯文。
+enum TranslationVisibility {
+    static let titleKey = "translate.show.title"
+    static let fandomKey = "translate.show.fandom"
+    static let tagsKey = "translate.show.tags"
+    static let summaryKey = "translate.show.summary"
+
+    private static func value(_ key: String) -> Bool { UserDefaults.standard.object(forKey: key) as? Bool ?? true }
+    static var title: Bool { value(titleKey) }
+    static var fandom: Bool { value(fandomKey) }
+    static var tags: Bool { value(tagsKey) }
+    static var summary: Bool { value(summaryKey) }
+}
+
+/// 單一卡片欄位的翻譯狀態。每個欄位各自被觀察，譯文送達時只重繪對應的卡片，
+/// 不會讓整個列表一起重繪（快速捲動時不卡頓）。
+@MainActor
+@Observable
+final class TranslationSlot {
+    var value: ParagraphTranslation?
+}
+
+/// 作品卡片的作品名稱與簡介翻譯（沉浸式：譯文顯示在原文下方，目標語言跟隨翻譯設定）。
+///
+/// 策略：
+/// - 卡片出現時排入佇列，短暫防抖後合併成批次送出；卡片捲出畫面時，尚未送出的項目會取消
+/// - 結果依欄位保存，換服務或語言後自動清空
 @MainActor
 @Observable
 final class SummaryTranslator {
@@ -11,14 +35,13 @@ final class SummaryTranslator {
         didSet { UserDefaults.standard.set(isEnabled, forKey: Self.enabledKey) }
     }
 
-    private(set) var results: [Int: ParagraphTranslation] = [:]
-
-    private let settings: TranslationSettings
-    private let translator: TranslationService
-    private var texts: [Int: String] = [:]
-    private var queue: [Int] = []
-    private var flushTask: Task<Void, Never>?
-    private var signature = ""
+    @ObservationIgnored private var slots: [String: TranslationSlot] = [:]
+    @ObservationIgnored private let settings: TranslationSettings
+    @ObservationIgnored private let translator: TranslationService
+    @ObservationIgnored private var texts: [String: String] = [:]
+    @ObservationIgnored private var queue: [String] = []
+    @ObservationIgnored private var flushTask: Task<Void, Never>?
+    @ObservationIgnored private var signature = ""
 
     private static let enabledKey = "cards.translateSummary"
 
@@ -28,24 +51,38 @@ final class SummaryTranslator {
         self.isEnabled = UserDefaults.standard.bool(forKey: Self.enabledKey)
     }
 
-    /// 設定已變更（尚未重新請求）時不回傳舊譯文
-    func translation(for id: Int) -> ParagraphTranslation? {
-        signature == currentSignature ? results[id] : nil
+    static func summaryKey(_ id: Int) -> String { "s\(id)" }
+    static func titleKey(_ id: Int) -> String { "t\(id)" }
+
+    /// 取得欄位的翻譯狀態（不存在時建立；建立不會觸發重繪）
+    func slot(_ key: String) -> TranslationSlot {
+        if let slot = slots[key] { return slot }
+        let slot = TranslationSlot()
+        slots[key] = slot
+        return slot
     }
 
-    func request(id: Int, summary: String) {
-        guard isEnabled, !summary.isEmpty else { return }
+    func request(_ key: String, text: String) {
+        guard isEnabled, !text.isEmpty else { return }
         resetIfConfigChanged()
-        guard results[id] == nil else { return }
-        texts[id] = summary
-        results[id] = .loading
-        queue.append(id)
+        let slot = slot(key)
+        guard slot.value == nil else { return }
+        texts[key] = text
+        slot.value = .loading
+        queue.append(key)
         scheduleFlush()
     }
 
-    func retry(id: Int, summary: String) {
-        results[id] = nil
-        request(id: id, summary: summary)
+    /// 卡片離開畫面：尚未送出的請求取消，下次出現時再排入
+    func cancel(_ key: String) {
+        guard let index = queue.firstIndex(of: key) else { return }
+        queue.remove(at: index)
+        slots[key]?.value = nil
+    }
+
+    func retry(_ key: String, text: String) {
+        slots[key]?.value = nil
+        request(key, text: text)
     }
 
     /// 卡片以此作為重新請求的依據（換服務或語言時改變）
@@ -58,14 +95,14 @@ final class SummaryTranslator {
         let current = currentSignature
         guard current != signature else { return }
         signature = current
-        results.removeAll()
+        for slot in slots.values { slot.value = nil }
         queue.removeAll()
     }
 
     private func scheduleFlush() {
         guard flushTask == nil else { return }
         flushTask = Task { [weak self] in
-            try? await Task.sleep(for: .milliseconds(300))
+            try? await Task.sleep(for: .milliseconds(350))
             await self?.flush()
         }
     }
@@ -76,22 +113,22 @@ final class SummaryTranslator {
         do {
             provider = try settings.makeProvider()
         } catch {
-            for id in queue { results[id] = .failed(error.localizedDescription) }
+            for key in queue { slots[key]?.value = .failed(error.localizedDescription) }
             queue.removeAll()
             flushTask = nil
             return
         }
 
-        var batch: [(Int, String)] = []
+        var batch: [(String, String)] = []
         var characters = 0
-        while let id = queue.first {
+        while let key = queue.first {
             queue.removeFirst()
-            guard let text = texts[id] else { continue }
+            guard let text = texts[key] else { continue }
             if !batch.isEmpty, characters + text.count > provider.maxBatchCharacters {
-                queue.insert(id, at: 0)
+                queue.insert(key, at: 0)
                 break
             }
-            batch.append((id, text))
+            batch.append((key, text))
             characters += text.count
         }
 
@@ -101,11 +138,11 @@ final class SummaryTranslator {
                                                                 source: settings.config.sourceLanguage,
                                                                 target: settings.config.targetLanguage)
                 if signature == self.signature {
-                    for ((id, _), text) in zip(batch, translated) { results[id] = .done(text) }
+                    for ((key, _), text) in zip(batch, translated) { slots[key]?.value = .done(text) }
                 }
             } catch {
                 if signature == self.signature {
-                    for (id, _) in batch { results[id] = .failed(error.localizedDescription) }
+                    for (key, _) in batch { slots[key]?.value = .failed(error.localizedDescription) }
                 }
             }
         }

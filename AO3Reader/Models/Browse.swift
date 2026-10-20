@@ -80,6 +80,8 @@ struct InboxComment: Identifiable, Hashable, Sendable {
 struct WorkTagGroup: Hashable, Sendable {
     var title: String
     var tags: [WorkTag]
+    /// Fandom 分組（翻譯開關與其他標籤分開）
+    var isFandom = false
 }
 
 struct WorkTag: Hashable, Sendable {
