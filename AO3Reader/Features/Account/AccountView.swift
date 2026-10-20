@@ -404,7 +404,7 @@ struct LocalSubscriptionsView: View {
     }
 
     @ViewBuilder
-    private func link(_ item: LocalSubscription, @ViewBuilder label: () -> some View) -> some View {
+    private func link<Content: View>(_ item: LocalSubscription, @ViewBuilder label: () -> Content) -> some View {
         switch item.kind {
         case .work:
             NavigationLink(value: WorkRoute(id: AO3Paths.workID(fromPath: item.path) ?? 0, title: item.name), label: label)
