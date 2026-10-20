@@ -653,7 +653,8 @@
   "右邊距": "右マージン",
   "上邊距": "上マージン",
   "下邊距": "下マージン",
-  "原文即目標語言": "すでにターゲット言語で書かれています"
+  "原文即目標語言": "すでにターゲット言語で書かれています",
+  "搜尋範圍": "検索範囲"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1309,7 +1310,8 @@
   "右邊距": "오른쪽 여백",
   "上邊距": "상단 여백",
   "下邊距": "하단 여백",
-  "原文即目標語言": "이미 대상 언어로 되어 있습니다."
+  "原文即目標語言": "이미 대상 언어로 되어 있습니다.",
+  "搜尋範圍": "검색범위"
  },
  "es": {
   "載入中": "Cargando",
@@ -1965,7 +1967,8 @@
   "右邊距": "Margen derecho",
   "上邊距": "Margen superior",
   "下邊距": "Margen inferior",
-  "原文即目標語言": "Ya en el idioma de destino"
+  "原文即目標語言": "Ya en el idioma de destino",
+  "搜尋範圍": "Alcance de la búsqueda"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2621,7 +2624,8 @@
   "右邊距": "Marge droite",
   "上邊距": "Marge supérieure",
   "下邊距": "Marge inférieure",
-  "原文即目標語言": "Déjà dans la langue cible"
+  "原文即目標語言": "Déjà dans la langue cible",
+  "搜尋範圍": "Portée de la recherche"
  },
  "de": {
   "載入中": "Laden",
@@ -3277,7 +3281,8 @@
   "右邊距": "Rechter Rand",
   "上邊距": "Oberer Rand",
   "下邊距": "Unterer Rand",
-  "原文即目標語言": "Bereits in der Zielsprache"
+  "原文即目標語言": "Bereits in der Zielsprache",
+  "搜尋範圍": "Suchbereich"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3933,7 +3938,8 @@
   "右邊距": "Margem Direita",
   "上邊距": "Margem superior",
   "下邊距": "Margem inferior",
-  "原文即目標語言": "Já está no idioma alvo"
+  "原文即目標語言": "Já está no idioma alvo",
+  "搜尋範圍": "Escopo da pesquisa"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4589,7 +4595,8 @@
   "右邊距": "Margine destro",
   "上邊距": "Margine superiore",
   "下邊距": "Margine inferiore",
-  "原文即目標語言": "Già nella lingua di destinazione"
+  "原文即目標語言": "Già nella lingua di destinazione",
+  "搜尋範圍": "Ambito di ricerca"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5245,7 +5252,8 @@
   "右邊距": "Правое поле",
   "上邊距": "Верхняя маржа",
   "下邊距": "Нижнее поле",
-  "原文即目標語言": "Уже на целевом языке"
+  "原文即目標語言": "Уже на целевом языке",
+  "搜尋範圍": "Область поиска"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5901,7 +5909,8 @@
   "右邊距": "Праве поле",
   "上邊距": "Верхнє поле",
   "下邊距": "Нижнє поле",
-  "原文即目標語言": "Уже на цільовій мові"
+  "原文即目標語言": "Уже на цільовій мові",
+  "搜尋範圍": "Область пошуку"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6557,7 +6566,8 @@
   "右邊距": "Prawy margines",
   "上邊距": "Górny margines",
   "下邊距": "Dolny margines",
-  "原文即目標語言": "Już w języku docelowym"
+  "原文即目標語言": "Już w języku docelowym",
+  "搜尋範圍": "Zakres wyszukiwania"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7213,7 +7223,8 @@
   "右邊距": "Sağ Kenar Boşluğu",
   "上邊距": "Üst Marj",
   "下邊距": "Alt Marj",
-  "原文即目標語言": "Zaten hedef dilde"
+  "原文即目標語言": "Zaten hedef dilde",
+  "搜尋範圍": "Arama Kapsamı"
  },
  "nl": {
   "載入中": "Laden",
@@ -7869,7 +7880,8 @@
   "右邊距": "Rechter marge",
   "上邊距": "Bovenste marge",
   "下邊距": "Onderste marge",
-  "原文即目標語言": "Al in de doeltaal"
+  "原文即目標語言": "Al in de doeltaal",
+  "搜尋範圍": "Zoekbereik"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8525,7 +8537,8 @@
   "右邊距": "الهامش الأيمن",
   "上邊距": "الهامش العلوي",
   "下邊距": "الهامش السفلي",
-  "原文即目標語言": "بالفعل في اللغة الهدف"
+  "原文即目標語言": "بالفعل في اللغة الهدف",
+  "搜尋範圍": "نطاق البحث"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -9181,7 +9194,8 @@
   "右邊距": "सही मार्जिन",
   "上邊距": "शीर्ष मार्जिन",
   "下邊距": "निचला मार्जिन",
-  "原文即目標語言": "लक्ष्य भाषा में पहले से ही"
+  "原文即目標語言": "लक्ष्य भाषा में पहले से ही",
+  "搜尋範圍": "खोज का दायरा"
  },
  "id": {
   "載入中": "Memuat",
@@ -9837,7 +9851,8 @@
   "右邊距": "Margin Kanan",
   "上邊距": "Margin Atas",
   "下邊距": "Margin Bawah",
-  "原文即目標語言": "Sudah dalam bahasa target"
+  "原文即目標語言": "Sudah dalam bahasa target",
+  "搜尋範圍": "Lingkup Pencarian"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10493,7 +10508,8 @@
   "右邊距": "Lề phải",
   "上邊距": "Ký quỹ trên cùng",
   "下邊距": "Lề dưới",
-  "原文即目標語言": "Đã có trong ngôn ngữ đích"
+  "原文即目標語言": "Đã có trong ngôn ngữ đích",
+  "搜尋範圍": "Phạm vi tìm kiếm"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -11149,6 +11165,7 @@
   "右邊距": "ขอบขวา",
   "上邊距": "ขอบบนสุด",
   "下邊距": "ขอบล่าง",
-  "原文即目標語言": "เป็นภาษาเป้าหมายแล้ว"
+  "原文即目標語言": "เป็นภาษาเป้าหมายแล้ว",
+  "搜尋範圍": "ขอบเขตการค้นหา"
  }
 }

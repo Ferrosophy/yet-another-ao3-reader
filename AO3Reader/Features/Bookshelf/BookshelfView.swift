@@ -1,6 +1,11 @@
 import PhotosUI
 import SwiftUI
 
+/// 離線頁的子頁面
+enum OfflineRoute: Hashable {
+    case downloads
+}
+
 /// 離線：離線保存的作品（只顯示本機內容），可切換列表或網格（封面）顯示，支援多種排序與手動排序。
 struct BookshelfView: View {
     @Environment(AppState.self) private var app
@@ -33,11 +38,15 @@ struct BookshelfView: View {
             }
         }
         .navigationTitle("離線")
+        .navigationDestination(for: OfflineRoute.self) { route in
+            switch route {
+            case .downloads: DownloadsView()
+            }
+        }
         .toolbar {
             ToolbarItemGroup(placement: .topBarLeading) {
-                NavigationLink {
-                    DownloadsView()
-                } label: {
+                // 以值推入導覽路徑（工具列中以閉包推入的頁面會與路徑互相干擾而卡住）
+                NavigationLink(value: OfflineRoute.downloads) {
                     Label("下載列表", systemImage: "arrow.down.circle")
                 }
             }

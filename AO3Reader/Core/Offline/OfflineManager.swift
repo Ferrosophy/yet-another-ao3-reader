@@ -395,14 +395,22 @@ final class OfflineManager {
     /// 作品的原文語言（AO3 的語言名稱）是否就是目前的目標語言（中文不分繁簡）
     func isSameLanguage(_ languageName: String?) -> Bool {
         guard let name = languageName?.trimmingCharacters(in: .whitespaces), !name.isEmpty else { return false }
-        let code = (LatestWorksView.cachedLanguages().first { $0.name == name }?.code ?? Self.commonLanguageCodes[name])?
-            .lowercased()
+        let code = (languageCodes[name] ?? Self.commonLanguageCodes[name])?.lowercased()
         guard let code else { return false }
         let target = settings.config.targetLanguageCode.lowercased()
         let base = String(target.prefix { $0 != "-" })
         // AO3 的葡萄牙語代碼為 ptBR / ptPT
         return code == base || code == target.replacingOccurrences(of: "-", with: "")
             || (base.count == 2 && code.count == 4 && code.hasPrefix(base))
+    }
+
+    /// AO3 語言名稱 → 代碼（只建立一次：每次都解碼語言清單會讓狀態列表重繪變得很慢）
+    @ObservationIgnored private var languageCodeCache: [String: String]?
+    private var languageCodes: [String: String] {
+        if let cache = languageCodeCache { return cache }
+        let map = Dictionary(LatestWorksView.cachedLanguages().map { ($0.name, $0.code) }, uniquingKeysWith: { first, _ in first })
+        languageCodeCache = map
+        return map
     }
 
     /// 語言清單尚未從 AO3 讀取時使用的常見語言

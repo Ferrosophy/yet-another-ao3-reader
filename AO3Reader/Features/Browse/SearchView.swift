@@ -19,7 +19,8 @@ struct SearchView: View {
     @Environment(AppState.self) private var app
     @State private var scope: Scope = .works
     @State private var query = WorkSearchQuery()
-    @State private var tagType: TagSearchType = .any
+    /// 標籤搜尋不限類型
+    private let tagType: TagSearchType = .any
     @State private var showsFilters = false
 
     @State private var works: PagedWorksModel?
@@ -30,18 +31,29 @@ struct SearchView: View {
     var body: some View {
         content
             .navigationTitle("搜尋")
+            .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $query.query, prompt: Text(prompt))
-            .searchScopes($scope) {
-                ForEach(Scope.allCases) { Text($0.title).tag($0) }
-            }
             .onSubmit(of: .search) { submit() }
             .onChange(of: scope) {
                 // 合集可不輸入關鍵字直接瀏覽；其他範圍有關鍵字時自動重新搜尋
                 if scope == .collections || !query.query.isEmpty { submit() }
             }
-            .onChange(of: tagType) { if scope == .tags { submit() } }
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) { toolbarButton }
+                // 搜尋範圍固定顯示在頂部（不只在輸入時出現）
+                ToolbarItem(placement: .principal) {
+                    Picker("搜尋範圍", selection: $scope) {
+                        ForEach(Scope.allCases) { Text($0.title).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                    .fixedSize()
+                }
+                if scope == .works {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("篩選", systemImage: query.isEmpty ? "line.3.horizontal.decrease" : "line.3.horizontal.decrease.circle.fill") {
+                            showsFilters = true
+                        }
+                    }
+                }
             }
             .sheet(isPresented: $showsFilters) {
                 FilterSheet(query: $query, mode: .search) {
@@ -58,26 +70,6 @@ struct SearchView: View {
         case .tags: String(localized: "標籤名稱")
         case .people: String(localized: "用戶名稱")
         case .collections: String(localized: "合集標題")
-        }
-    }
-
-    @ViewBuilder
-    private var toolbarButton: some View {
-        switch scope {
-        case .works:
-            Button("篩選", systemImage: query.isEmpty ? "line.3.horizontal.decrease" : "line.3.horizontal.decrease.circle.fill") {
-                showsFilters = true
-            }
-        case .tags:
-            Menu {
-                Picker("標籤類型", selection: $tagType) {
-                    ForEach(TagSearchType.allCases) { Text($0.title).tag($0) }
-                }
-            } label: {
-                Label("標籤類型", systemImage: "tag")
-            }
-        case .people, .collections:
-            EmptyView()
         }
     }
 
