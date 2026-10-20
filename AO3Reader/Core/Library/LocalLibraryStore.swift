@@ -62,8 +62,8 @@ struct LocalLibrary: Codable, Equatable, Sendable {
     var removed: [String: Date] = [:]
 
     static let fileName = "yaao3r-library.json"
-    /// 閱讀紀錄最多保留筆數
-    static let historyLimit = 2000
+    /// 閱讀紀錄最多保留筆數（AO3 帳號的閱讀紀錄也只顯示最近這麼多部）
+    static let historyLimit = 100
 
     func merged(with other: LocalLibrary) -> LocalLibrary {
         let removed = self.removed.merging(other.removed) { max($0, $1) }

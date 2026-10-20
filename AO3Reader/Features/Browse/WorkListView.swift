@@ -36,10 +36,53 @@ struct WorkListView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .toolbar {
+            if !jumpTargets.isEmpty {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Menu {
+                        ForEach(jumpTargets) { target in
+                            Button(target.title) { currentIndex = target.index }
+                        }
+                    } label: {
+                        Label("依時間跳轉", systemImage: "calendar.badge.clock")
+                    }
+                }
+            }
             ToolbarItem(placement: .topBarTrailing) {
                 SummaryTranslationToggle()
             }
         }
+    }
+
+    /// 閱讀紀錄依閱讀時間分段（今天、昨天、本週、本月、更早），各段第一部作品的位置
+    private struct JumpTarget: Identifiable {
+        let title: LocalizedStringKey
+        let index: Int
+        var id: Int { index }
+    }
+
+    private var jumpTargets: [JumpTarget] {
+        let works = model.works
+        guard works.contains(where: { $0.visitedAt != nil }) else { return [] }
+        let calendar = Calendar.current
+        let now = Date()
+        func bucket(_ date: Date) -> Int {
+            if calendar.isDateInToday(date) { return 0 }
+            if calendar.isDateInYesterday(date) { return 1 }
+            if let days = calendar.dateComponents([.day], from: date, to: now).day {
+                if days < 7 { return 2 }
+                if days < 30 { return 3 }
+            }
+            return 4
+        }
+        let titles: [LocalizedStringKey] = ["今天", "昨天", "最近 7 天", "最近 30 天", "更早"]
+        var seen: Set<Int> = []
+        var result: [JumpTarget] = []
+        for (index, work) in works.enumerated() {
+            guard let date = work.visitedAt else { continue }
+            let key = bucket(date)
+            if seen.insert(key).inserted { result.append(JumpTarget(title: titles[key], index: index)) }
+        }
+        return result
     }
 }
 

@@ -19,6 +19,8 @@ struct WorkSummary: Identifiable, Hashable, Codable, Sendable {
     var kudos: String?
     var hits: String?
     var updated: String?
+    /// 閱讀紀錄的最後閱讀時間（只有閱讀紀錄列表有值）
+    var visitedAt: Date?
 }
 
 /// 一頁作品列表與分頁資訊。

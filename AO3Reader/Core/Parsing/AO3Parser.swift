@@ -82,8 +82,18 @@ enum AO3Parser {
             chapters: try text("dl.stats dd.chapters"),
             kudos: try text("dl.stats dd.kudos"),
             hits: try text("dl.stats dd.hits"),
-            updated: try text("p.datetime")
+            updated: try text("p.datetime"),
+            visitedAt: try text("h4.viewed").flatMap(visitedDate)
         )
+    }
+
+    /// 閱讀紀錄的「Last visited: 20 Oct 2026」
+    static func visitedDate(_ text: String) -> Date? {
+        guard let match = text.firstMatch(of: /(\d{1,2} [A-Za-z]{3} \d{4})/) else { return nil }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "d MMM yyyy"
+        return formatter.date(from: String(match.1))
     }
 
     // MARK: - Work content

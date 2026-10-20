@@ -157,7 +157,7 @@ struct ComparisonField: View {
     static let timeUnits: [Unit] = [
         Unit(value: "days", title: "天"),
         Unit(value: "weeks", title: "週"),
-        Unit(value: "months", title: "個月"),
+        Unit(value: "months", title: "月"),
         Unit(value: "years", title: "年"),
     ]
 

@@ -640,7 +640,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "オフライン リスト (カスタム カバーを含む)、読書の進行状況、読書時間、外観と翻訳の設定を同期します。各デバイス自体がオフライン ファイルをダウンロードします。 API キー、インポートされたフォント、背景画像は含まれません。",
   "選擇段落重新翻譯": "再翻訳する段落を選択してください",
   "選擇段落": "段落の選択",
-  "重新翻譯（%lld）": "再翻訳 (%lld)"
+  "重新翻譯（%lld）": "再翻訳 (%lld)",
+  "月": "月",
+  "依時間跳轉": "日付でジャンプ",
+  "昨天": "昨日",
+  "最近 7 天": "過去 7 日間",
+  "最近 30 天": "過去 30 日間",
+  "更早": "以前"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1283,7 +1289,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "오프라인 목록(맞춤 표지 포함), 읽기 진행 상황, 읽기 시간, 모양 및 번역 기본 설정을 동기화합니다. 각 장치는 오프라인 파일 자체를 다운로드합니다. API 키, 가져온 글꼴 및 배경 이미지는 포함되지 않습니다.",
   "選擇段落重新翻譯": "재번역할 단락 선택",
   "選擇段落": "단락 선택",
-  "重新翻譯（%lld）": "재번역(%lld)"
+  "重新翻譯（%lld）": "재번역(%lld)",
+  "月": "개월",
+  "依時間跳轉": "날짜별 점프",
+  "昨天": "어제",
+  "最近 7 天": "지난 7일",
+  "最近 30 天": "지난 30일",
+  "更早": "이전"
  },
  "es": {
   "載入中": "Cargando",
@@ -1926,7 +1938,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincroniza la lista sin conexión (incluidas las portadas personalizadas), el progreso de la lectura, el tiempo de lectura y las preferencias de apariencia y traducción. Cada dispositivo descarga los archivos sin conexión. Las claves API, las fuentes importadas y las imágenes de fondo no están incluidas.",
   "選擇段落重新翻譯": "Elija párrafos para retraducir",
   "選擇段落": "Elija párrafos",
-  "重新翻譯（%lld）": "Retraducir (%lld)"
+  "重新翻譯（%lld）": "Retraducir (%lld)",
+  "月": "meses",
+  "依時間跳轉": "Saltar por fecha",
+  "昨天": "ayer",
+  "最近 7 天": "Últimos 7 días",
+  "最近 30 天": "Últimos 30 días",
+  "更早": "Antes"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2569,7 +2587,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronise la liste hors ligne (y compris les couvertures personnalisées), la progression de la lecture, le temps de lecture et les préférences d'apparence et de traduction. Chaque appareil télécharge lui-même les fichiers hors ligne. Les clés API, les polices importées et les images d'arrière-plan ne sont pas incluses.",
   "選擇段落重新翻譯": "Choisissez les paragraphes à retraduire",
   "選擇段落": "Choisir des paragraphes",
-  "重新翻譯（%lld）": "Retraduire (%lld)"
+  "重新翻譯（%lld）": "Retraduire (%lld)",
+  "月": "mois",
+  "依時間跳轉": "Sauter par date",
+  "昨天": "Hier",
+  "最近 7 天": "7 derniers jours",
+  "最近 30 天": "30 derniers jours",
+  "更早": "Plus tôt"
  },
  "de": {
   "載入中": "Laden",
@@ -3212,7 +3236,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronisiert die Offline-Liste (einschließlich benutzerdefinierter Cover), den Lesefortschritt, die Lesezeit sowie die Darstellungs- und Übersetzungseinstellungen. Jedes Gerät lädt die Offlinedateien selbst herunter. API-Schlüssel, importierte Schriftarten und Hintergrundbilder sind nicht enthalten.",
   "選擇段落重新翻譯": "Wählen Sie „Absätze zur Neuübersetzung“ aus",
   "選擇段落": "Wählen Sie „Absätze“.",
-  "重新翻譯（%lld）": "Neu übersetzen (%lld)"
+  "重新翻譯（%lld）": "Neu übersetzen (%lld)",
+  "月": "Monate",
+  "依時間跳轉": "Nach Datum springen",
+  "昨天": "Gestern",
+  "最近 7 天": "Letzte 7 Tage",
+  "最近 30 天": "Letzte 30 Tage",
+  "更早": "Früher"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3855,7 +3885,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincroniza a lista offline (incluindo capas personalizadas), progresso de leitura, tempo de leitura e preferências de aparência e tradução. Cada dispositivo baixa os arquivos offline. Chaves de API, fontes importadas e imagens de fundo não estão incluídas.",
   "選擇段落重新翻譯": "Escolha parágrafos para retraduzir",
   "選擇段落": "Escolha parágrafos",
-  "重新翻譯（%lld）": "Retraduzir (%lld)"
+  "重新翻譯（%lld）": "Retraduzir (%lld)",
+  "月": "meses",
+  "依時間跳轉": "Pular por data",
+  "昨天": "Ontem",
+  "最近 7 天": "Últimos 7 dias",
+  "最近 30 天": "Últimos 30 dias",
+  "更早": "Anteriormente"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4498,7 +4534,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincronizza l'elenco offline (comprese le copertine personalizzate), l'avanzamento della lettura, il tempo di lettura e le preferenze di aspetto e traduzione. Ogni dispositivo scarica autonomamente i file offline. Le chiavi API, i caratteri importati e le immagini di sfondo non sono inclusi.",
   "選擇段落重新翻譯": "Scegli i paragrafi da ritradurre",
   "選擇段落": "Scegli Paragrafi",
-  "重新翻譯（%lld）": "Ritradurre (%lld)"
+  "重新翻譯（%lld）": "Ritradurre (%lld)",
+  "月": "mesi",
+  "依時間跳轉": "Salta per data",
+  "昨天": "Ieri",
+  "最近 7 天": "Ultimi 7 giorni",
+  "最近 30 天": "Ultimi 30 giorni",
+  "更早": "In precedenza"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5141,7 +5183,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Синхронизирует автономный список (включая пользовательские обложки), ход чтения, время чтения, а также настройки внешнего вида и перевода. Каждое устройство само загружает автономные файлы. Ключи API, импортированные шрифты и фоновые изображения не включены.",
   "選擇段落重新翻譯": "Выберите абзацы для повторного перевода",
   "選擇段落": "Выберите абзацы",
-  "重新翻譯（%lld）": "Повторно перевести (%lld)"
+  "重新翻譯（%lld）": "Повторно перевести (%lld)",
+  "月": "месяцы",
+  "依時間跳轉": "Перейти по дате",
+  "昨天": "Вчера",
+  "最近 7 天": "Последние 7 дней",
+  "最近 30 天": "Последние 30 дней",
+  "更早": "Ранее"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5784,7 +5832,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Синхронізує офлайн-список (включаючи спеціальні обкладинки), прогрес читання, час читання, а також параметри зовнішнього вигляду та перекладу. Кожен пристрій самостійно завантажує офлайн-файли. Ключі API, імпортовані шрифти та фонові зображення не включені.",
   "選擇段落重新翻譯": "Виберіть Абзаци для повторного перекладу",
   "選擇段落": "Виберіть «Абзаци».",
-  "重新翻譯（%lld）": "Перекласти (%lld)"
+  "重新翻譯（%lld）": "Перекласти (%lld)",
+  "月": "місяців",
+  "依時間跳轉": "Перейти за датою",
+  "昨天": "вчора",
+  "最近 7 天": "Останні 7 днів",
+  "最近 30 天": "Останні 30 днів",
+  "更早": "Раніше"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6427,7 +6481,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronizuje listę offline (w tym niestandardowe okładki), postęp czytania, czas czytania oraz preferencje dotyczące wyglądu i tłumaczenia. Każde urządzenie samodzielnie pobiera pliki offline. Klucze API, importowane czcionki i obrazy tła nie są uwzględniane.",
   "選擇段落重新翻譯": "Wybierz akapity do ponownego przetłumaczenia",
   "選擇段落": "Wybierz Akapity",
-  "重新翻譯（%lld）": "Przetłumacz ponownie (%lld)"
+  "重新翻譯（%lld）": "Przetłumacz ponownie (%lld)",
+  "月": "miesiące",
+  "依時間跳轉": "Przeskocz według daty",
+  "昨天": "Wczoraj",
+  "最近 7 天": "Ostatnie 7 dni",
+  "最近 30 天": "Ostatnie 30 dni",
+  "更早": "Wcześniej"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7070,7 +7130,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Çevrimdışı listeyi (özel kapaklar dahil), okuma ilerlemesini, okuma süresini, görünüm ve çeviri tercihlerini senkronize eder. Her cihaz çevrimdışı dosyaları kendisi indirir. API anahtarları, içe aktarılan yazı tipleri ve arka plan resimleri dahil değildir.",
   "選擇段落重新翻譯": "Yeniden Çevrilecek Paragrafları Seçin",
   "選擇段落": "Paragrafları Seçin",
-  "重新翻譯（%lld）": "Yeniden çevir (%lld)"
+  "重新翻譯（%lld）": "Yeniden çevir (%lld)",
+  "月": "aylar",
+  "依時間跳轉": "Tarihe Göre Atla",
+  "昨天": "Dün",
+  "最近 7 天": "Son 7 Gün",
+  "最近 30 天": "Son 30 Gün",
+  "更早": "Daha önce"
  },
  "nl": {
   "載入中": "Laden",
@@ -7713,7 +7779,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchroniseert de offline lijst (inclusief aangepaste omslagen), leesvoortgang, leestijd en weergave- en vertaalvoorkeuren. Elk apparaat downloadt de offline bestanden zelf. API-sleutels, geïmporteerde lettertypen en achtergrondafbeeldingen zijn niet inbegrepen.",
   "選擇段落重新翻譯": "Kies Alinea's om opnieuw te vertalen",
   "選擇段落": "Kies Alinea's",
-  "重新翻譯（%lld）": "Opnieuw vertalen (%lld)"
+  "重新翻譯（%lld）": "Opnieuw vertalen (%lld)",
+  "月": "maanden",
+  "依時間跳轉": "Spring op datum",
+  "昨天": "Gisteren",
+  "最近 7 天": "Laatste 7 dagen",
+  "最近 30 天": "Laatste 30 dagen",
+  "更早": "Eerder"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8356,7 +8428,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "يقوم بمزامنة القائمة غير المتصلة بالإنترنت (بما في ذلك الأغلفة المخصصة)، وتقدم القراءة، ووقت القراءة، وتفضيلات المظهر والترجمة. يقوم كل جهاز بتنزيل الملفات غير المتصلة بالإنترنت بنفسه. لا يتم تضمين مفاتيح API والخطوط المستوردة وصور الخلفية.",
   "選擇段落重新翻譯": "اختر الفقرات لإعادة ترجمتها",
   "選擇段落": "اختر الفقرات",
-  "重新翻譯（%lld）": "إعادة الترجمة (%lld)"
+  "重新翻譯（%lld）": "إعادة الترجمة (%lld)",
+  "月": "أشهر",
+  "依時間跳轉": "القفز حسب التاريخ",
+  "昨天": "أمس",
+  "最近 7 天": "آخر 7 أيام",
+  "最近 30 天": "آخر 30 يومًا",
+  "更早": "في وقت سابق"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -8999,7 +9077,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "ऑफ़लाइन सूची (कस्टम कवर सहित), पढ़ने की प्रगति, पढ़ने का समय, और उपस्थिति और अनुवाद प्राथमिकताओं को सिंक करता है। प्रत्येक डिवाइस ऑफ़लाइन फ़ाइलें स्वयं डाउनलोड करता है। एपीआई कुंजियाँ, आयातित फ़ॉन्ट और पृष्ठभूमि छवियां शामिल नहीं हैं।",
   "選擇段落重新翻譯": "दोबारा अनुवाद करने के लिए पैराग्राफ चुनें",
   "選擇段落": "अनुच्छेद चुनें",
-  "重新翻譯（%lld）": "पुनः अनुवाद करें (%lld)"
+  "重新翻譯（%lld）": "पुनः अनुवाद करें (%lld)",
+  "月": "महीने",
+  "依時間跳轉": "तिथि के अनुसार आगे बढ़ें",
+  "昨天": "कल",
+  "最近 7 天": "पिछले 7 दिन",
+  "最近 30 天": "पिछले 30 दिन",
+  "更早": "पहले"
  },
  "id": {
   "載入中": "Memuat",
@@ -9642,7 +9726,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Menyinkronkan daftar offline (termasuk sampul khusus), kemajuan membaca, waktu membaca, serta preferensi tampilan dan terjemahan. Setiap perangkat mengunduh file offline itu sendiri. Kunci API, font yang diimpor, dan gambar latar belakang tidak disertakan.",
   "選擇段落重新翻譯": "Pilih Paragraf untuk Diterjemahkan Ulang",
   "選擇段落": "Pilih Paragraf",
-  "重新翻譯（%lld）": "Terjemahkan ulang (%lld)"
+  "重新翻譯（%lld）": "Terjemahkan ulang (%lld)",
+  "月": "bulan",
+  "依時間跳轉": "Lompat berdasarkan Tanggal",
+  "昨天": "Kemarin",
+  "最近 7 天": "7 Hari Terakhir",
+  "最近 30 天": "30 Hari Terakhir",
+  "更早": "Sebelumnya"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10285,7 +10375,13 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Đồng bộ hóa danh sách ngoại tuyến (bao gồm bìa tùy chỉnh), tiến trình đọc, thời gian đọc cũng như các tùy chọn dịch và giao diện. Mỗi thiết bị sẽ tự tải xuống các tệp ngoại tuyến. Không bao gồm khóa API, phông chữ đã nhập và hình nền.",
   "選擇段落重新翻譯": "Chọn đoạn văn để dịch lại",
   "選擇段落": "Chọn đoạn văn",
-  "重新翻譯（%lld）": "Dịch lại (%lld)"
+  "重新翻譯（%lld）": "Dịch lại (%lld)",
+  "月": "tháng",
+  "依時間跳轉": "Nhảy theo ngày",
+  "昨天": "Hôm qua",
+  "最近 7 天": "7 ngày qua",
+  "最近 30 天": "30 ngày qua",
+  "更早": "Trước đó"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -10928,6 +11024,12 @@
   "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "ซิงค์รายการออฟไลน์ (รวมถึงปกแบบกำหนดเอง) ความคืบหน้าในการอ่าน เวลาในการอ่าน และการตั้งค่ารูปลักษณ์และการแปล อุปกรณ์แต่ละเครื่องจะดาวน์โหลดไฟล์ออฟไลน์ด้วยตัวเอง ไม่รวมคีย์ API แบบอักษรที่นำเข้าและภาพพื้นหลัง",
   "選擇段落重新翻譯": "เลือกย่อหน้าที่จะแปลใหม่",
   "選擇段落": "เลือกย่อหน้า",
-  "重新翻譯（%lld）": "แปลซ้ำ (%lld)"
+  "重新翻譯（%lld）": "แปลซ้ำ (%lld)",
+  "月": "เดือน",
+  "依時間跳轉": "ข้ามตามวันที่",
+  "昨天": "เมื่อวาน",
+  "最近 7 天": "7 วันที่ผ่านมา",
+  "最近 30 天": "30 วันที่ผ่านมา",
+  "更早": "ก่อนหน้านี้"
  }
 }

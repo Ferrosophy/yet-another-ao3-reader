@@ -424,3 +424,11 @@ struct NotesPlacementTests {
         #expect(detail.chapters[1].endNotes.isEmpty)
     }
 }
+
+struct VisitedDateTests {
+    @Test func parsesLastVisited() throws {
+        let date = try #require(AO3Parser.visitedDate("Last visited: 20 Oct 2026 (Update available.) Visited 3 times"))
+        let parts = Calendar(identifier: .gregorian).dateComponents([.year, .month, .day], from: date)
+        #expect(parts.year == 2026 && parts.month == 10 && parts.day == 20)
+    }
+}

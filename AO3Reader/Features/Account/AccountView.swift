@@ -199,7 +199,12 @@ struct UserWorkListView: View {
             guard model == nil else { return }
             let client = app.client
             let kind = kind, username = username
-            let model = PagedWorksModel { page in try await client.userList(kind, username: username, page: page) }
+            let model = PagedWorksModel { page in
+                var result = try await client.userList(kind, username: username, page: page)
+                // 閱讀紀錄只顯示最近 100 部（AO3 每頁 20 部）
+                if kind == .history, page * 20 >= LocalLibrary.historyLimit { result.hasNextPage = false }
+                return result
+            }
             self.model = model
             await model.reload()
         }
@@ -347,7 +352,13 @@ struct LocalWorkListView: View {
         switch kind {
         case .bookmarks: app.library.library.bookmarks.map(\.work)
         case .markedForLater: app.library.library.later.map(\.work)
-        case .history: app.library.library.history.map(\.work)
+        case .history:
+            // 列表帶上本機的閱讀時間，供「依時間跳轉」使用
+            app.library.library.history.prefix(LocalLibrary.historyLimit).map { entry in
+                var work = entry.work
+                work.visitedAt = entry.date
+                return work
+            }
         }
     }
 
