@@ -220,11 +220,11 @@ enum TagSearchType: String, CaseIterable, Identifiable, Sendable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .any: String(localized: "全部類型")
-        case .fandom: "Fandom"
+        case .any: String(localized: "全部")
+        case .fandom: String(localized: "原作")
         case .character: String(localized: "角色")
         case .relationship: String(localized: "配對")
-        case .freeform: String(localized: "其他標籤")
+        case .freeform: String(localized: "其他")
         }
     }
 }
@@ -232,6 +232,8 @@ enum TagSearchType: String, CaseIterable, Identifiable, Sendable {
 /// /autocomplete/<kind> 端點。
 enum AutocompleteKind: String, Sendable {
     case tag, fandom, character, relationship, freeform
+    /// 用戶（pseud），名稱格式為「pseud (user)」
+    case pseud
 }
 
 enum FormEncoding {

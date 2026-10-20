@@ -656,6 +656,13 @@ EN = {
 "原文即目標語言": "Already in target language",
 "搜尋範圍": "Search Scope",
 "清空搜尋": "Clear Search",
+"其他": "Other",
+"輸入關鍵字，或點左上角使用官網的詳細搜尋": "Enter keywords, or tap the top left for AO3's detailed search",
+"搜尋合集": "Search Collections",
+"輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Enter a collection title, or search with nothing entered to browse all collections",
+"最近搜尋": "Recent Searches",
+"清除": "Clear",
+"排除 ": "Exclude ",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

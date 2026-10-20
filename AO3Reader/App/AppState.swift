@@ -24,6 +24,8 @@ final class AppState {
     /// 本機使用者資料（資料來源為「本機保存」時使用）與它的同步
     let library: LocalLibraryStore
     let librarySync: LibrarySyncService
+    /// 搜尋紀錄（與離線清單、閱讀時長一起同步）
+    let searchHistory: SearchHistoryStore
     /// 書架的離線內容（原文、譯文與匯出檔）
     let offline: OfflineManager
 
@@ -42,7 +44,10 @@ final class AppState {
         self.appearance = appearance
         self.bookshelf = bookshelf
         self.readingTime = readingTime
-        let sync = SyncService(bookshelf: bookshelf, readingTime: readingTime, appearance: appearance, translation: translation)
+        let searchHistory = SearchHistoryStore()
+        self.searchHistory = searchHistory
+        let sync = SyncService(bookshelf: bookshelf, readingTime: readingTime, appearance: appearance, translation: translation,
+                               searchHistory: searchHistory)
         let library = LocalLibraryStore()
         self.sync = sync
         self.library = library

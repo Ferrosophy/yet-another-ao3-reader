@@ -26,6 +26,7 @@ final class SyncService {
     private let readingTime: ReadingTimeStore
     private let appearance: AppearanceSettings
     private let translation: TranslationSettings
+    private let searchHistory: SearchHistoryStore
     private var pending: Task<Void, Never>?
     private var observer: NSObjectProtocol?
 
@@ -36,7 +37,9 @@ final class SyncService {
     private static let prefsModifiedKey = "sync.preferencesModifiedAt"
     private static let passwordAccount = "webdav.password"
 
-    init(bookshelf: BookshelfStore, readingTime: ReadingTimeStore, appearance: AppearanceSettings, translation: TranslationSettings) {
+    init(bookshelf: BookshelfStore, readingTime: ReadingTimeStore, appearance: AppearanceSettings, translation: TranslationSettings,
+         searchHistory: SearchHistoryStore) {
+        self.searchHistory = searchHistory
         self.bookshelf = bookshelf
         self.readingTime = readingTime
         self.appearance = appearance
@@ -145,6 +148,7 @@ final class SyncService {
         snapshot.reading = readingTime.log
         snapshot.progress = ReadingProgress.allLocal()
         snapshot.preferences = currentPreferences()
+        snapshot.searchHistory = searchHistory.history
         return snapshot
     }
 
@@ -163,6 +167,7 @@ final class SyncService {
         }
         merged.reading = local.reading.merged(with: remote.reading)
         merged.progress = SyncMerge.progress(local.progress, remote.progress)
+        merged.searchHistory = (local.searchHistory ?? SearchHistory()).merged(with: remote.searchHistory ?? SearchHistory())
         switch (local.preferences, remote.preferences) {
         case let (mine?, theirs?): merged.preferences = theirs.modifiedAt > mine.modifiedAt ? theirs : mine
         case let (mine, theirs): merged.preferences = mine ?? theirs
@@ -180,6 +185,7 @@ final class SyncService {
             bookshelf.apply(merged.bookshelf, covers: newCovers)
         }
         readingTime.apply(merged.reading)
+        if let history = merged.searchHistory { searchHistory.apply(history) }
         for (id, progress) in merged.progress where local.progress[id] != progress {
             progress.apply(workID: id)
         }

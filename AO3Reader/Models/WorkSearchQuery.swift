@@ -73,6 +73,7 @@ struct WorkSearchQuery: Hashable, Codable, Sendable {
         add("kudos_count", kudosCount)
         add("comments_count", commentsCount)
         add("bookmarks_count", bookmarksCount)
+        add("excluded_tag_names", excludedTagNames)
         add("sort_column", sortColumn.rawValue)
         add("sort_direction", sortDirection.rawValue)
         items.append(URLQueryItem(name: "commit", value: "Search"))
@@ -101,10 +102,17 @@ extension WorkSearchQuery {
         add("excluded_tag_names", excludedTagNames)
         add("crossover", crossover.rawValue)
         add("complete", completion.rawValue)
-        add("words_from", wordsFrom)
-        add("words_to", wordsTo)
-        add("query", query)
+        // 與詳細搜尋相同的欄位：字數與更新時間換成篩選表單的範圍參數，
+        // 篩選表單沒有的欄位（標題、作者、統計數字、單章）以 AO3 的欄位語法併入「在結果中搜尋」
+        let words = Self.range(wordCount)
+        add("words_from", words.from ?? wordsFrom)
+        add("words_to", words.to ?? wordsTo)
+        let dates = Self.dateRange(revisedAt)
+        add("date_from", dates.from ?? "")
+        add("date_to", dates.to ?? "")
+        add("query", filterQuery)
         add("language_id", languageID)
+        add("sort_direction", sortDirection.rawValue)
         if let rating {
             items.append(URLQueryItem(name: "include_work_search[rating_ids][]", value: String(rating.rawValue)))
         }
@@ -119,6 +127,60 @@ extension WorkSearchQuery {
             items.append(URLQueryItem(name: "page", value: String(page)))
         }
         return items
+    }
+
+    /// 「在結果中搜尋」：關鍵字加上篩選表單沒有的欄位
+    private var filterQuery: String {
+        var parts = [query.trimmingCharacters(in: .whitespaces)]
+        func quoted(_ text: String) -> String { "\"" + text.replacingOccurrences(of: "\"", with: "") + "\"" }
+        if !title.isEmpty { parts.append("title:" + quoted(title)) }
+        if !creators.isEmpty { parts.append("creators:" + quoted(creators)) }
+        for (field, value) in [("hits", hits), ("kudos_count", kudosCount), ("comments_count", commentsCount),
+                               ("bookmarks_count", bookmarksCount)] {
+            if let condition = Self.fieldCondition(value) { parts.append("\(field):\(condition)") }
+        }
+        if singleChapter { parts.append("expected_number_of_chapters:1") }
+        return parts.filter { !$0.isEmpty }.joined(separator: " ")
+    }
+
+    /// 「> 1000」「< 50」「100-500」→ 搜尋語法 >1000、<50、[100 TO 500]
+    static func fieldCondition(_ text: String) -> String? {
+        let trimmed = text.replacingOccurrences(of: " ", with: "")
+        guard !trimmed.isEmpty else { return nil }
+        let parts = trimmed.split(separator: "-")
+        if parts.count == 2, Int(parts[0]) != nil, Int(parts[1]) != nil { return "[\(parts[0]) TO \(parts[1])]" }
+        return trimmed
+    }
+
+    /// 「> 1000」「< 5000」「1000-5000」→ 字數範圍（from / to）
+    static func range(_ text: String) -> (from: String?, to: String?) {
+        let trimmed = text.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: ",", with: "")
+        guard !trimmed.isEmpty else { return (nil, nil) }
+        if trimmed.hasPrefix(">"), let value = Int(trimmed.dropFirst()) { return (String(value + 1), nil) }
+        if trimmed.hasPrefix("<"), let value = Int(trimmed.dropFirst()) { return (nil, String(max(value - 1, 0))) }
+        let parts = trimmed.split(separator: "-")
+        if parts.count == 2 { return (String(parts[0]), String(parts[1])) }
+        if let value = Int(trimmed) { return (String(value), String(value)) }
+        return (nil, nil)
+    }
+
+    /// 「< 7 days」（最近 7 天內更新）→ date_from；「> 1 years」（超過一年未更新）→ date_to
+    static func dateRange(_ text: String, now: Date = Date()) -> (from: String?, to: String?) {
+        let trimmed = text.trimmingCharacters(in: .whitespaces)
+        guard let match = trimmed.wholeMatch(of: /([<>])\s*(\d+)\s*(day|week|month|year)s?/),
+              let amount = Int(match.2) else { return (nil, nil) }
+        let component: Calendar.Component = switch match.3 {
+        case "week": .weekOfYear
+        case "month": .month
+        case "year": .year
+        default: .day
+        }
+        guard let date = Calendar(identifier: .gregorian).date(byAdding: component, value: -amount, to: now) else { return (nil, nil) }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd"
+        let day = formatter.string(from: date)
+        return match.1 == "<" ? (day, nil) : (nil, day)
     }
 
     enum TriState: String, CaseIterable, Codable, Sendable, Identifiable {
@@ -229,9 +291,33 @@ extension WorkSearchQuery {
             if (completion == .yes) != complete { return false }
         }
         if crossover != .any, (crossover == .yes) != (work.fandoms.count > 1) { return false }
+        func within(_ value: Int, _ condition: String) -> Bool {
+            let range = Self.range(condition)
+            if let from = range.from.flatMap(Int.init), value < from { return false }
+            if let to = range.to.flatMap(Int.init), value > to { return false }
+            return true
+        }
         let words = number(work.words) ?? 0
+        guard within(words, wordCount) else { return false }
         if let minimum = Int(wordsFrom), words < minimum { return false }
         if let maximum = Int(wordsTo), words > maximum { return false }
+        guard within(number(work.hits) ?? 0, hits), within(number(work.kudos) ?? 0, kudosCount) else { return false }
+        if !title.isEmpty, !work.title.localizedCaseInsensitiveContains(title) { return false }
+        if !creators.isEmpty, !work.authors.contains(where: { $0.localizedCaseInsensitiveContains(creators) }) { return false }
+        if singleChapter, !(work.chapters ?? "").hasPrefix("1/") { return false }
+        let dates = Self.dateRange(revisedAt)
+        if dates.from != nil || dates.to != nil, let updated = work.updated {
+            let formatter = DateFormatter()
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.dateFormat = "d MMM yyyy"
+            let output = DateFormatter()
+            output.locale = Locale(identifier: "en_US_POSIX")
+            output.dateFormat = "yyyy-MM-dd"
+            if let date = formatter.date(from: updated).map(output.string(from:)) {
+                if let from = dates.from, date < from { return false }
+                if let to = dates.to, date > to { return false }
+            }
+        }
         if !languageID.isEmpty, let language = work.language, languageCodes[language] != languageID { return false }
         let keyword = query.trimmingCharacters(in: .whitespaces)
         if !keyword.isEmpty {

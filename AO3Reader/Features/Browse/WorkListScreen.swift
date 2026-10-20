@@ -18,7 +18,7 @@ struct WorkListScreen: View {
         .toolbar {
             if route.filterable {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("篩選", systemImage: "line.3.horizontal.decrease") { showsFilters = true }
+                    Button("詳細篩選", systemImage: filter == Self.defaultFilter ? "line.3.horizontal.decrease" : "line.3.horizontal.decrease.circle.fill") { showsFilters = true }
                 }
             }
         }

@@ -655,7 +655,14 @@
   "下邊距": "下マージン",
   "原文即目標語言": "すでにターゲット言語で書かれています",
   "搜尋範圍": "検索範囲",
-  "清空搜尋": "検索をクリア"
+  "清空搜尋": "検索をクリア",
+  "其他": "その他",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "キーワードを入力するか、左上をタップするとAO3の詳細検索ができます",
+  "搜尋合集": "コレクションの検索",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "コレクションのタイトルを入力するか、何も入力せずに検索してすべてのコレクションを参照します",
+  "最近搜尋": "最近の検索",
+  "清除": "クリア",
+  "排除 ": "除外する"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1313,7 +1320,14 @@
   "下邊距": "하단 여백",
   "原文即目標語言": "이미 대상 언어로 되어 있습니다.",
   "搜尋範圍": "검색범위",
-  "清空搜尋": "검색 지우기"
+  "清空搜尋": "검색 지우기",
+  "其他": "기타",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "키워드를 입력하거나, 왼쪽 상단을 탭하시면 AO3의 상세 검색이 가능합니다",
+  "搜尋合集": "컬렉션 검색",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "컬렉션 제목을 입력하거나, 아무것도 입력하지 않고 검색하여 모든 컬렉션을 찾아보세요.",
+  "最近搜尋": "최근 검색",
+  "清除": "지우기",
+  "排除 ": "제외"
  },
  "es": {
   "載入中": "Cargando",
@@ -1971,7 +1985,14 @@
   "下邊距": "Margen inferior",
   "原文即目標語言": "Ya en el idioma de destino",
   "搜尋範圍": "Alcance de la búsqueda",
-  "清空搜尋": "Borrar búsqueda"
+  "清空搜尋": "Borrar búsqueda",
+  "其他": "Otro",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Ingrese palabras clave o toque la parte superior izquierda para la búsqueda detallada de AO3",
+  "搜尋合集": "Buscar colecciones",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Ingrese el título de una colección o busque sin ingresar nada para explorar todas las colecciones.",
+  "最近搜尋": "Búsquedas recientes",
+  "清除": "Borrar",
+  "排除 ": "excluir"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2629,7 +2650,14 @@
   "下邊距": "Marge inférieure",
   "原文即目標語言": "Déjà dans la langue cible",
   "搜尋範圍": "Portée de la recherche",
-  "清空搜尋": "Effacer la recherche"
+  "清空搜尋": "Effacer la recherche",
+  "其他": "Autre",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Saisissez des mots-clés ou appuyez en haut à gauche pour la recherche détaillée d'AO3",
+  "搜尋合集": "Rechercher des collections",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Entrez un titre de collection ou effectuez une recherche sans rien saisir pour parcourir toutes les collections",
+  "最近搜尋": "Recherches récentes",
+  "清除": "Effacer",
+  "排除 ": "Exclure"
  },
  "de": {
   "載入中": "Laden",
@@ -3287,7 +3315,14 @@
   "下邊距": "Unterer Rand",
   "原文即目標語言": "Bereits in der Zielsprache",
   "搜尋範圍": "Suchbereich",
-  "清空搜尋": "Suche löschen"
+  "清空搜尋": "Suche löschen",
+  "其他": "Andere",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Geben Sie Schlüsselwörter ein oder tippen Sie oben links für die detaillierte Suche von AO3",
+  "搜尋合集": "Sammlungen durchsuchen",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Geben Sie einen Sammlungstitel ein oder suchen Sie ohne Eingaben, um alle Sammlungen zu durchsuchen",
+  "最近搜尋": "Aktuelle Suchanfragen",
+  "清除": "Klar",
+  "排除 ": "Ausschließen"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3945,7 +3980,14 @@
   "下邊距": "Margem inferior",
   "原文即目標語言": "Já está no idioma alvo",
   "搜尋範圍": "Escopo da pesquisa",
-  "清空搜尋": "Limpar pesquisa"
+  "清空搜尋": "Limpar pesquisa",
+  "其他": "Outro",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Insira palavras-chave ou toque no canto superior esquerdo para a pesquisa detalhada do AO3",
+  "搜尋合集": "Pesquisar coleções",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Insira um título de coleção ou pesquise sem inserir nada para navegar por todas as coleções",
+  "最近搜尋": "Pesquisas recentes",
+  "清除": "Limpar",
+  "排除 ": "Excluir"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4603,7 +4645,14 @@
   "下邊距": "Margine inferiore",
   "原文即目標語言": "Già nella lingua di destinazione",
   "搜尋範圍": "Ambito di ricerca",
-  "清空搜尋": "Cancella ricerca"
+  "清空搜尋": "Cancella ricerca",
+  "其他": "Altro",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Inserisci le parole chiave o tocca in alto a sinistra per la ricerca dettagliata di AO3",
+  "搜尋合集": "Cerca raccolte",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Inserisci il titolo di una raccolta o esegui una ricerca senza inserire nulla per sfogliare tutte le raccolte",
+  "最近搜尋": "Ricerche recenti",
+  "清除": "Chiaro",
+  "排除 ": "Escludere"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5261,7 +5310,14 @@
   "下邊距": "Нижнее поле",
   "原文即目標語言": "Уже на целевом языке",
   "搜尋範圍": "Область поиска",
-  "清空搜尋": "Очистить поиск"
+  "清空搜尋": "Очистить поиск",
+  "其他": "Другое",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Введите ключевые слова или коснитесь верхнего левого угла для подробного поиска AO3.",
+  "搜尋合集": "Поиск в коллекциях",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Введите название коллекции или выполните поиск, ничего не вводя, чтобы просмотреть все коллекции.",
+  "最近搜尋": "Недавние поиски",
+  "清除": "Очистить",
+  "排除 ": "Исключить"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5919,7 +5975,14 @@
   "下邊距": "Нижнє поле",
   "原文即目標語言": "Уже на цільовій мові",
   "搜尋範圍": "Область пошуку",
-  "清空搜尋": "Очистити пошук"
+  "清空搜尋": "Очистити пошук",
+  "其他": "інше",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Введіть ключові слова або торкніться верхнього лівого кута для детального пошуку AO3",
+  "搜尋合集": "Пошук колекцій",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Введіть назву колекції або здійсніть пошук, не ввівши нічого, щоб переглянути всі колекції",
+  "最近搜尋": "Останні пошуки",
+  "清除": "ясно",
+  "排除 ": "Виключити"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6577,7 +6640,14 @@
   "下邊距": "Dolny margines",
   "原文即目標語言": "Już w języku docelowym",
   "搜尋範圍": "Zakres wyszukiwania",
-  "清空搜尋": "Wyczyść wyszukiwanie"
+  "清空搜尋": "Wyczyść wyszukiwanie",
+  "其他": "Inne",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Wprowadź słowa kluczowe lub dotknij lewego górnego rogu, aby uzyskać szczegółowe wyszukiwanie AO3",
+  "搜尋合集": "Przeszukaj kolekcje",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Wprowadź tytuł kolekcji lub wyszukaj bez wpisania, aby przeglądać wszystkie kolekcje",
+  "最近搜尋": "Ostatnie wyszukiwania",
+  "清除": "Jasne",
+  "排除 ": "Wyklucz"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7235,7 +7305,14 @@
   "下邊距": "Alt Marj",
   "原文即目標語言": "Zaten hedef dilde",
   "搜尋範圍": "Arama Kapsamı",
-  "清空搜尋": "Aramayı Temizle"
+  "清空搜尋": "Aramayı Temizle",
+  "其他": "Diğer",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "AO3'ün ayrıntılı araması için anahtar kelimeleri girin veya sol üst köşeye dokunun",
+  "搜尋合集": "Koleksiyonlarda Ara",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Bir koleksiyon başlığı girin veya tüm koleksiyonlara göz atmak için hiçbir şey girmeden arama yapın",
+  "最近搜尋": "Son Aramalar",
+  "清除": "Temizle",
+  "排除 ": "Hariç tut"
  },
  "nl": {
   "載入中": "Laden",
@@ -7893,7 +7970,14 @@
   "下邊距": "Onderste marge",
   "原文即目標語言": "Al in de doeltaal",
   "搜尋範圍": "Zoekbereik",
-  "清空搜尋": "Zoekopdracht wissen"
+  "清空搜尋": "Zoekopdracht wissen",
+  "其他": "Anders",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Voer trefwoorden in, of tik linksboven voor de gedetailleerde zoekopdracht van AO3",
+  "搜尋合集": "Zoek collecties",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Voer een collectietitel in of zoek zonder iets in te voeren om door alle collecties te bladeren",
+  "最近搜尋": "Recente zoekopdrachten",
+  "清除": "Duidelijk",
+  "排除 ": "Uitsluiten"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8551,7 +8635,14 @@
   "下邊距": "الهامش السفلي",
   "原文即目標語言": "بالفعل في اللغة الهدف",
   "搜尋範圍": "نطاق البحث",
-  "清空搜尋": "مسح البحث"
+  "清空搜尋": "مسح البحث",
+  "其他": "أخرى",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "أدخل الكلمات الرئيسية، أو اضغط على الجزء العلوي الأيسر للبحث التفصيلي في AO3",
+  "搜尋合集": "بحث في المجموعات",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "أدخل عنوان المجموعة، أو ابحث بدون إدخال أي شيء لتصفح جميع المجموعات",
+  "最近搜尋": "عمليات البحث الأخيرة",
+  "清除": "واضح",
+  "排除 ": "استبعاد"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -9209,7 +9300,14 @@
   "下邊距": "निचला मार्जिन",
   "原文即目標語言": "लक्ष्य भाषा में पहले से ही",
   "搜尋範圍": "खोज का दायरा",
-  "清空搜尋": "स्पष्ट खोज"
+  "清空搜尋": "स्पष्ट खोज",
+  "其他": "अन्य",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "कीवर्ड दर्ज करें, या AO3 की विस्तृत खोज के लिए ऊपर बाईं ओर टैप करें",
+  "搜尋合集": "संग्रह खोजें",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "एक संग्रह शीर्षक दर्ज करें, या सभी संग्रह ब्राउज़ करने के लिए कुछ भी दर्ज किए बिना खोजें",
+  "最近搜尋": "हाल की खोजें",
+  "清除": "स्पष्ट",
+  "排除 ": "बहिष्कृत करें"
  },
  "id": {
   "載入中": "Memuat",
@@ -9867,7 +9965,14 @@
   "下邊距": "Margin Bawah",
   "原文即目標語言": "Sudah dalam bahasa target",
   "搜尋範圍": "Lingkup Pencarian",
-  "清空搜尋": "Hapus Pencarian"
+  "清空搜尋": "Hapus Pencarian",
+  "其他": "Lainnya",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Masukkan kata kunci, atau ketuk kiri atas untuk pencarian detail AO3",
+  "搜尋合集": "Koleksi Pencarian",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Masukkan judul koleksi, atau cari tanpa memasukkan apa pun untuk menelusuri semua koleksi",
+  "最近搜尋": "Pencarian Terbaru",
+  "清除": "Jelas",
+  "排除 ": "Kecualikan"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10525,7 +10630,14 @@
   "下邊距": "Lề dưới",
   "原文即目標語言": "Đã có trong ngôn ngữ đích",
   "搜尋範圍": "Phạm vi tìm kiếm",
-  "清空搜尋": "Xóa tìm kiếm"
+  "清空搜尋": "Xóa tìm kiếm",
+  "其他": "Khác",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "Nhập từ khóa hoặc nhấn vào trên cùng bên trái để tìm kiếm chi tiết của AO3",
+  "搜尋合集": "Tìm kiếm bộ sưu tập",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Nhập tiêu đề bộ sưu tập hoặc tìm kiếm không nhập gì để duyệt tất cả các bộ sưu tập",
+  "最近搜尋": "Tìm kiếm gần đây",
+  "清除": "Xóa",
+  "排除 ": "Loại trừ"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -11183,6 +11295,13 @@
   "下邊距": "ขอบล่าง",
   "原文即目標語言": "เป็นภาษาเป้าหมายแล้ว",
   "搜尋範圍": "ขอบเขตการค้นหา",
-  "清空搜尋": "ล้างการค้นหา"
+  "清空搜尋": "ล้างการค้นหา",
+  "其他": "อื่นๆ",
+  "輸入關鍵字，或點左上角使用官網的詳細搜尋": "ป้อนคำสำคัญหรือแตะด้านซ้ายบนเพื่อดูการค้นหาโดยละเอียดของ AO3",
+  "搜尋合集": "ค้นหาคอลเลกชัน",
+  "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "ป้อนชื่อคอลเลกชันหรือค้นหาโดยไม่ป้อนข้อมูลเลยเพื่อเรียกดูคอลเลกชันทั้งหมด",
+  "最近搜尋": "การค้นหาล่าสุด",
+  "清除": "ชัดเจน",
+  "排除 ": "ไม่รวม"
  }
 }

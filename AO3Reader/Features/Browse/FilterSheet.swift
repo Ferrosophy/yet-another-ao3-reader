@@ -1,8 +1,8 @@
 import SwiftUI
 
-/// 篩選表單，有兩種模式：
-/// - `.search`：對應官網「Work Search」（/works/search）全部欄位
-/// - `.filter`：對應標籤 / 合集作品頁右側的「Sort and Filter」（可包含 / 排除標籤）
+/// 篩選表單。兩種模式欄位完全相同（作品列表的篩選與詳細搜尋一致）：
+/// - `.search`：搜尋頁的詳細搜尋，關鍵字由搜尋框輸入
+/// - `.filter`：標籤 / 用戶 / 系列 / 合集作品列表的篩選，多一個「在結果中搜尋」
 /// 標籤欄位以 AO3 自動完成查找正式標籤後填入；數值欄位沿用官網語法（如 "> 1000"、"< 7 days"）。
 struct FilterSheet: View {
     enum Mode { case search, filter }
@@ -16,21 +16,16 @@ struct FilterSheet: View {
         NavigationStack {
             Form {
                 Section("作品資訊") {
-                    TextField(mode == .search ? "關鍵字" : "在結果中搜尋", text: $query.query)
-                    if mode == .search {
-                        TextField("標題", text: $query.title)
-                        TextField("作者 / 創作者", text: $query.creators)
-                        ComparisonField(title: "更新時間", value: $query.revisedAt, units: ComparisonField.timeUnits)
+                    if mode == .filter {
+                        TextField("在結果中搜尋", text: $query.query)
                     }
+                    TextField("標題", text: $query.title)
+                    TextField("作者 / 創作者", text: $query.creators)
+                    ComparisonField(title: "更新時間", value: $query.revisedAt, units: ComparisonField.timeUnits)
                     triStatePicker("完結狀態", selection: $query.completion, yes: "僅完結", no: "僅連載")
                     triStatePicker("Crossover", selection: $query.crossover, yes: "僅 Crossover", no: "排除 Crossover")
-                    if mode == .search {
-                        Toggle("僅單章作品", isOn: $query.singleChapter)
-                        ComparisonField(title: "字數", value: $query.wordCount)
-                    } else {
-                        TextField("最少字數", text: $query.wordsFrom).keyboardType(.numberPad)
-                        TextField("最多字數", text: $query.wordsTo).keyboardType(.numberPad)
-                    }
+                    Toggle("僅單章作品", isOn: $query.singleChapter)
+                    ComparisonField(title: "字數", value: $query.wordCount)
                     NavigationLink {
                         AO3LanguagePickerPage(selection: $query.languageID)
                     } label: {
@@ -43,9 +38,7 @@ struct FilterSheet: View {
                     TagTokenField(title: "角色", text: $query.characterNames, kind: .character)
                     TagTokenField(title: "配對 / 關係", text: $query.relationshipNames, kind: .relationship)
                     TagTokenField(title: "其他標籤", text: $query.freeformNames, kind: .freeform)
-                    if mode == .filter {
-                        TagTokenField(title: "排除標籤", text: $query.excludedTagNames, kind: .tag)
-                    }
+                    TagTokenField(title: "排除標籤", text: $query.excludedTagNames, kind: .tag)
                     Picker("分級", selection: $query.rating) {
                         Text("不限").tag(WorkSearchQuery.Rating?.none)
                         ForEach(WorkSearchQuery.Rating.allCases) {
@@ -53,7 +46,7 @@ struct FilterSheet: View {
                         }
                     }
                 } header: {
-                    Text(mode == .search ? "作品標籤" : "包含 / 排除標籤")
+                    Text("作品標籤")
                 } footer: {
                     Text("輸入至少兩個字會向 AO3 查找匹配的標籤，點選即可加入。")
                 }
@@ -75,14 +68,11 @@ struct FilterSheet: View {
                     AO3TermLabel(title: "分類", english: "Category")
                 }
 
-                if mode == .search {
-                    Section("作品統計") {
-                        TextField("點擊數", text: $query.hits)
-                        TextField("Kudos", text: $query.kudosCount)
-                        TextField("評論數", text: $query.commentsCount)
-                        TextField("書籤數", text: $query.bookmarksCount)
-                    }
-                    .keyboardType(.numbersAndPunctuation)
+                Section("作品統計") {
+                    ComparisonField(title: "點擊數", value: $query.hits)
+                    ComparisonField(title: "Kudos", value: $query.kudosCount)
+                    ComparisonField(title: "評論數", value: $query.commentsCount)
+                    ComparisonField(title: "書籤數", value: $query.bookmarksCount)
                 }
 
                 Section("排序") {
@@ -91,12 +81,10 @@ struct FilterSheet: View {
                             Text($0.title).tag($0)
                         }
                     }
-                    if mode == .search {
-                        Picker("方向", selection: $query.sortDirection) {
-                            ForEach(WorkSearchQuery.SortDirection.allCases) { Text($0.title).tag($0) }
-                        }
-                        .pickerStyle(.segmented)
+                    Picker("方向", selection: $query.sortDirection) {
+                        ForEach(WorkSearchQuery.SortDirection.allCases) { Text($0.title).tag($0) }
                     }
+                    .pickerStyle(.segmented)
                 }
             }
             .navigationTitle(mode == .search ? "詳細搜尋" : "詳細篩選")

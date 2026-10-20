@@ -476,3 +476,23 @@ struct LocalFilterTests {
         #expect(!query.matches(work, languageCodes: [:]))
     }
 }
+
+struct FilterConversionTests {
+    @Test func convertsComparisons() {
+        #expect(WorkSearchQuery.range("> 1000").from == "1001")
+        #expect(WorkSearchQuery.range("< 500").to == "499")
+        #expect(WorkSearchQuery.fieldCondition("100-500") == "[100 TO 500]")
+        let now = Date(timeIntervalSince1970: 1_800_000_000)
+        #expect(WorkSearchQuery.dateRange("< 7 days", now: now).from != nil)
+        #expect(WorkSearchQuery.dateRange("> 1 years", now: now).to != nil)
+    }
+
+    @Test func mergesSearchHistory() {
+        let old = Date(timeIntervalSince1970: 100)
+        let new = Date(timeIntervalSince1970: 200)
+        let a = SearchHistory(entries: [.init(scope: "tags", term: "Xu Mo", date: old)])
+        var b = SearchHistory()
+        b.removed["tags:xu mo"] = new
+        #expect(a.merged(with: b).entries.isEmpty)
+    }
+}

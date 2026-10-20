@@ -96,6 +96,8 @@ struct SyncSnapshot: Codable, Sendable {
     var reading = ReadingLog()
     var progress: [String: ReadingProgress] = [:]
     var preferences: SyncedPreferences?
+    /// 搜尋紀錄（Optional 讓舊的同步檔可正常解碼）
+    var searchHistory: SearchHistory?
 
     static let fileName = "ao3reader-sync.json"
 }

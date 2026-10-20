@@ -15016,149 +15016,6 @@
         }
       }
     },
-    "全部類型": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "جميع الأنواع"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle Typen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "All Types"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Todos los tipos"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tous types"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "सभी प्रकार"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Semua Jenis"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tutti i tipi"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "全種類"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "모든 유형"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle soorten"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wszystkie typy"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Todos os tipos"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Все типы"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ทุกประเภท"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tüm Türler"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Всі типи"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tất cả các loại"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "全部类型"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "全部類型"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "全部類型"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "全部類型"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "全部類型"
-          }
-        }
-      }
-    },
     "共 %@": {
       "extractionState": "manual",
       "localizations": {
@@ -15298,6 +15155,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "共 %@"
+          }
+        }
+      }
+    },
+    "其他": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أخرى"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andere"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otro"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autre"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अन्य"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lainnya"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "その他"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기타"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anders"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inne"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Outro"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Другое"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อื่นๆ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diğer"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "інше"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khác"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
           }
         }
       }
@@ -17586,149 +17586,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "加暗"
-          }
-        }
-      }
-    },
-    "包含 / 排除標籤": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تضمين / استبعاد العلامات"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tags einschließen/ausschließen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Include / Exclude Tags"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Incluir/excluir etiquetas"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Inclure/exclure des balises"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "टैग शामिल करें/बहिष्कृत करें"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sertakan / Kecualikan Tag"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Includi/Escludi tag"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "タグを含める/除外する"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "태그 포함/제외"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tags opnemen/uitsluiten"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dołącz/wyklucz tagi"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Incluir/Excluir Tags"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Включить/исключить теги"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "รวม / ไม่รวมแท็ก"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Etiketleri Dahil Et / Hariç Tut"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Включити/виключити теги"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bao gồm / Loại trừ thẻ"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "包含 / 排除标签"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "包含 / 排除標籤"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "包含 / 排除標籤"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "包含 / 排除標籤"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "包含 / 排除標籤"
           }
         }
       }
@@ -33892,6 +33749,149 @@
         }
       }
     },
+    "排除 ": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبعاد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausschließen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exclude "
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "excluir"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exclure"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बहिष्कृत करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kecualikan"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escludere"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "除外する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제외"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uitsluiten"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyklucz"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Исключить"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่รวม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hariç tut"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Виключити"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loại trừ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "排除 "
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "排除 "
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "排除 "
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "排除 "
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "排除 "
+          }
+        }
+      }
+    },
     "排除 Crossover": {
       "extractionState": "manual",
       "localizations": {
@@ -34460,6 +34460,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "搜尋作品"
+          }
+        }
+      }
+    },
+    "搜尋合集": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بحث في المجموعات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sammlungen durchsuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search Collections"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar colecciones"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechercher des collections"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "संग्रह खोजें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koleksi Pencarian"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerca raccolte"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コレクションの検索"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "컬렉션 검색"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoek collecties"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeszukaj kolekcje"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesquisar coleções"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поиск в коллекциях"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ค้นหาคอลเลกชัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koleksiyonlarda Ara"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пошук колекцій"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tìm kiếm bộ sưu tập"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜索合集"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋合集"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋合集"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋合集"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋合集"
           }
         }
       }
@@ -39183,292 +39326,6 @@
         }
       }
     },
-    "最多字數": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الحد الأقصى من الكلمات"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Maximale Wörter"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Maximum words"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palabras máximas"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nombre maximum de mots"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "अधिकतम शब्द"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kata-kata maksimal"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Parole massime"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最大単語数"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "최대 단어"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Maximale woorden"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Maksymalnie słowa"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Máximo de palavras"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Максимум слов"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "คำสูงสุด"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Maksimum kelime"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Максимум слів"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Số từ tối đa"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最多字数"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最多字數"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最多字數"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最多字數"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最多字數"
-          }
-        }
-      }
-    },
-    "最少字數": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الحد الأدنى من الكلمات"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Minimale Wörter"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Minimum words"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palabras mínimas"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mots minimum"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "न्यूनतम शब्द"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Minimal kata-kata"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Parole minime"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最低限の単語"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "최소 단어"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Minimale woorden"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Minimum słów"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palavras mínimas"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Минимум слов"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "คำขั้นต่ำ"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Asgari kelimeler"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Мінімум слів"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Số từ tối thiểu"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最少字数"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最少字數"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最少字數"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最少字數"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最少字數"
-          }
-        }
-      }
-    },
     "最新": {
       "extractionState": "manual",
       "localizations": {
@@ -40037,6 +39894,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "最近 7 天"
+          }
+        }
+      }
+    },
+    "最近搜尋": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عمليات البحث الأخيرة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuelle Suchanfragen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent Searches"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Búsquedas recientes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recherches récentes"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हाल की खोजें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pencarian Terbaru"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricerche recenti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近の検索"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최근 검색"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recente zoekopdrachten"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatnie wyszukiwania"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesquisas recentes"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недавние поиски"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การค้นหาล่าสุด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son Aramalar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Останні пошуки"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tìm kiếm gần đây"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近搜索"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近搜尋"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近搜尋"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近搜尋"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近搜尋"
           }
         }
       }
@@ -50480,145 +50480,145 @@
         }
       }
     },
-    "清空搜尋": {
+    "清除": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "مسح البحث"
+            "value": "واضح"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Suche löschen"
+            "value": "Klar"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clear Search"
+            "value": "Clear"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Borrar búsqueda"
+            "value": "Borrar"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Effacer la recherche"
+            "value": "Effacer"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "स्पष्ट खोज"
+            "value": "स्पष्ट"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Hapus Pencarian"
+            "value": "Jelas"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cancella ricerca"
+            "value": "Chiaro"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "検索をクリア"
+            "value": "クリア"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "검색 지우기"
+            "value": "지우기"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zoekopdracht wissen"
+            "value": "Duidelijk"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wyczyść wyszukiwanie"
+            "value": "Jasne"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Limpar pesquisa"
+            "value": "Limpar"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Очистить поиск"
+            "value": "Очистить"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ล้างการค้นหา"
+            "value": "ชัดเจน"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Aramayı Temizle"
+            "value": "Temizle"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Очистити пошук"
+            "value": "ясно"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xóa tìm kiếm"
+            "value": "Xóa"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "清空搜索"
+            "value": "清除"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "清空搜尋"
+            "value": "清除"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "清空搜尋"
+            "value": "清除"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "清空搜尋"
+            "value": "清除"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "清空搜尋"
+            "value": "清除"
           }
         }
       }
@@ -69785,6 +69785,149 @@
         }
       }
     },
+    "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل عنوان المجموعة، أو ابحث بدون إدخال أي شيء لتصفح جميع المجموعات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geben Sie einen Sammlungstitel ein oder suchen Sie ohne Eingaben, um alle Sammlungen zu durchsuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a collection title, or search with nothing entered to browse all collections"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingrese el título de una colección o busque sin ingresar nada para explorar todas las colecciones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrez un titre de collection ou effectuez une recherche sans rien saisir pour parcourir toutes les collections"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "एक संग्रह शीर्षक दर्ज करें, या सभी संग्रह ब्राउज़ करने के लिए कुछ भी दर्ज किए बिना खोजें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masukkan judul koleksi, atau cari tanpa memasukkan apa pun untuk menelusuri semua koleksi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inserisci il titolo di una raccolta o esegui una ricerca senza inserire nulla per sfogliare tutte le raccolte"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コレクションのタイトルを入力するか、何も入力せずに検索してすべてのコレクションを参照します"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "컬렉션 제목을 입력하거나, 아무것도 입력하지 않고 검색하여 모든 컬렉션을 찾아보세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voer een collectietitel in of zoek zonder iets in te voeren om door alle collecties te bladeren"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wprowadź tytuł kolekcji lub wyszukaj bez wpisania, aby przeglądać wszystkie kolekcje"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insira um título de coleção ou pesquise sem inserir nada para navegar por todas as coleções"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите название коллекции или выполните поиск, ничего не вводя, чтобы просмотреть все коллекции."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ป้อนชื่อคอลเลกชันหรือค้นหาโดยไม่ป้อนข้อมูลเลยเพื่อเรียกดูคอลเลกชันทั้งหมด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir koleksiyon başlığı girin veya tüm koleksiyonlara göz atmak için hiçbir şey girmeden arama yapın"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введіть назву колекції або здійсніть пошук, не ввівши нічого, щоб переглянути всі колекції"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nhập tiêu đề bộ sưu tập hoặc tìm kiếm không nhập gì để duyệt tất cả các bộ sưu tập"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入合集标题；不输入直接按搜索可浏览全部合集"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集"
+          }
+        }
+      }
+    },
     "輸入至少兩個字會向 AO3 查找匹配的標籤，點選即可加入。": {
       "extractionState": "manual",
       "localizations": {
@@ -69928,145 +70071,145 @@
         }
       }
     },
-    "輸入關鍵字，或點右上角使用官網的詳細篩選": {
+    "輸入關鍵字，或點左上角使用官網的詳細搜尋": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "أدخل الكلمات الرئيسية، أو اضغط على الجزء العلوي الأيمن لاستخدام مرشحات AO3 التفصيلية"
+            "value": "أدخل الكلمات الرئيسية، أو اضغط على الجزء العلوي الأيسر للبحث التفصيلي في AO3"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Geben Sie Schlüsselwörter ein oder tippen Sie oben rechts, um die detaillierten Filter von AO3 zu verwenden"
+            "value": "Geben Sie Schlüsselwörter ein oder tippen Sie oben links für die detaillierte Suche von AO3"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter keywords, or tap the top right to use AO3's detailed filters"
+            "value": "Enter keywords, or tap the top left for AO3's detailed search"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ingrese palabras clave o toque la parte superior derecha para usar los filtros detallados de AO3"
+            "value": "Ingrese palabras clave o toque la parte superior izquierda para la búsqueda detallada de AO3"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Saisissez des mots-clés ou appuyez en haut à droite pour utiliser les filtres détaillés d'AO3."
+            "value": "Saisissez des mots-clés ou appuyez en haut à gauche pour la recherche détaillée d'AO3"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "कीवर्ड दर्ज करें, या AO3 के विस्तृत फ़िल्टर का उपयोग करने के लिए शीर्ष दाईं ओर टैप करें"
+            "value": "कीवर्ड दर्ज करें, या AO3 की विस्तृत खोज के लिए ऊपर बाईं ओर टैप करें"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Masukkan kata kunci, atau ketuk kanan atas untuk menggunakan filter detail AO3"
+            "value": "Masukkan kata kunci, atau ketuk kiri atas untuk pencarian detail AO3"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inserisci le parole chiave o tocca in alto a destra per utilizzare i filtri dettagliati di AO3"
+            "value": "Inserisci le parole chiave o tocca in alto a sinistra per la ricerca dettagliata di AO3"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "キーワードを入力するか、右上をタップしてAO3の詳細フィルターを使用します"
+            "value": "キーワードを入力するか、左上をタップするとAO3の詳細検索ができます"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "키워드를 입력하거나 오른쪽 상단을 탭하여 AO3의 상세 필터를 사용하세요"
+            "value": "키워드를 입력하거나, 왼쪽 상단을 탭하시면 AO3의 상세 검색이 가능합니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Voer trefwoorden in of tik rechtsboven om de gedetailleerde filters van AO3 te gebruiken"
+            "value": "Voer trefwoorden in, of tik linksboven voor de gedetailleerde zoekopdracht van AO3"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wpisz słowa kluczowe lub dotknij prawego górnego rogu, aby skorzystać ze szczegółowych filtrów AO3"
+            "value": "Wprowadź słowa kluczowe lub dotknij lewego górnego rogu, aby uzyskać szczegółowe wyszukiwanie AO3"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Insira palavras-chave ou toque no canto superior direito para usar os filtros detalhados do AO3"
+            "value": "Insira palavras-chave ou toque no canto superior esquerdo para a pesquisa detalhada do AO3"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Введите ключевые слова или коснитесь верхнего правого угла, чтобы использовать подробные фильтры AO3."
+            "value": "Введите ключевые слова или коснитесь верхнего левого угла для подробного поиска AO3."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ป้อนคำสำคัญหรือแตะด้านบนขวาเพื่อใช้ตัวกรองรายละเอียดของ AO3"
+            "value": "ป้อนคำสำคัญหรือแตะด้านซ้ายบนเพื่อดูการค้นหาโดยละเอียดของ AO3"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Anahtar kelimeleri girin veya AO3'ün ayrıntılı filtrelerini kullanmak için sağ üst köşeye dokunun"
+            "value": "AO3'ün ayrıntılı araması için anahtar kelimeleri girin veya sol üst köşeye dokunun"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Введіть ключові слова або торкніться правого верхнього кута, щоб скористатися детальними фільтрами AO3"
+            "value": "Введіть ключові слова або торкніться верхнього лівого кута для детального пошуку AO3"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nhập từ khóa hoặc nhấn vào trên cùng bên phải để sử dụng bộ lọc chi tiết của AO3"
+            "value": "Nhập từ khóa hoặc nhấn vào trên cùng bên trái để tìm kiếm chi tiết của AO3"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "输入关键字，或点右上角使用官网的详细筛选"
+            "value": "输入关键字，或点左上角使用官网的详细搜索"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "輸入關鍵字，或點右上角使用官網的詳細篩選"
+            "value": "輸入關鍵字，或點左上角使用官網的詳細搜尋"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "輸入關鍵字，或點右上角使用官網的詳細篩選"
+            "value": "輸入關鍵字，或點左上角使用官網的詳細搜尋"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "輸入關鍵字，或點右上角使用官網的詳細篩選"
+            "value": "輸入關鍵字，或點左上角使用官網的詳細搜尋"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "輸入關鍵字，或點右上角使用官網的詳細篩選"
+            "value": "輸入關鍵字，或點左上角使用官網的詳細搜尋"
           }
         }
       }
@@ -74643,149 +74786,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。"
-          }
-        }
-      }
-    },
-    "關鍵字": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "كلمات مفتاحية"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Stichwörter"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Any field"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palabras clave"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mots-clés"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "कीवर्ड"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kata kunci"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Parole chiave"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "キーワード"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "키워드"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Trefwoorden"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Słowa kluczowe"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Palavras-chave"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ключевые слова"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "คำค้น"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Anahtar kelimeler"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ключові слова"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Từ khóa"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "关键字"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "關鍵字"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "關鍵字"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "關鍵字"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "關鍵字"
           }
         }
       }
