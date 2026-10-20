@@ -100,7 +100,9 @@ enum AO3Parser {
         let title = try doc.select("#workskin h2.title.heading").first()?.text() ?? "Work \(id)"
         let authors = try doc.select("#workskin h3.byline a[rel=author]").array().map { try $0.text() }
         let summary = try doc.select("#workskin > div.preface div.summary blockquote.userstuff").first().map(richText) ?? ""
-        let notes = try doc.select("#workskin > div.preface div.notes blockquote.userstuff").first().map(richText) ?? ""
+        // AO3 的文末註（div.end.notes）也帶有 notes 類別，且位於同樣是 preface 的 afterword 中；
+        // 排除 .end，只有文末註的作品才不會被當成文首註顯示在開頭
+        let notes = try doc.select("#workskin > div.preface div.notes:not(.end) blockquote.userstuff").first().map(richText) ?? ""
         let endNotes = try doc.select("#work_endnotes blockquote.userstuff").first().map(richText) ?? ""
 
         var chapters: [Chapter] = []
@@ -116,7 +118,7 @@ enum AO3Parser {
                 guard let content = try div.select("div.userstuff[role=article], div.userstuff.module").first()
                     ?? div.select("div.userstuff").first()
                 else { continue }
-                let chapterNotes = try div.select("div.chapter.preface div.notes blockquote.userstuff").first().map(richText) ?? ""
+                let chapterNotes = try div.select("div.chapter.preface div.notes:not(.end) blockquote.userstuff").first().map(richText) ?? ""
                 let chapterEndNotes = try div.select("div.end.notes blockquote.userstuff").first().map(richText) ?? ""
                 chapters.append(Chapter(id: index, title: chapterTitle, paragraphs: try paragraphs(in: content, chapter: index),
                                         notes: chapterNotes, endNotes: chapterEndNotes))

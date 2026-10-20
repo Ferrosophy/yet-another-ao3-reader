@@ -389,3 +389,38 @@ struct ChapterNumberTests {
         #expect(TranslationService.localChapterNumber("Prologue", target: .named("zh-CN")) == nil)
     }
 }
+
+struct NotesPlacementTests {
+    @Test func endOnlyNotesStayAtTheEnd() throws {
+        let html = """
+        <div id="workskin">
+          <div class="preface group"><h2 class="title heading">T</h2></div>
+          <div id="chapters">
+            <div class="chapter" id="chapter-1">
+              <div class="chapter preface group"><h3 class="title">Chapter 1</h3></div>
+              <div class="userstuff module" role="article"><p>Body</p></div>
+              <div class="chapter preface group">
+                <div id="chapter_1_endnotes" class="end notes module"><blockquote class="userstuff"><p>Chapter end</p></blockquote></div>
+              </div>
+            </div>
+            <div class="chapter" id="chapter-2">
+              <div class="chapter preface group"><h3 class="title">Chapter 2</h3>
+                <div class="notes module"><blockquote class="userstuff"><p>Chapter top</p></blockquote></div>
+              </div>
+              <div class="userstuff module" role="article"><p>More</p></div>
+            </div>
+          </div>
+          <div class="afterword preface group">
+            <div id="work_endnotes" class="end notes module"><blockquote class="userstuff"><p>Work end</p></blockquote></div>
+          </div>
+        </div>
+        """
+        let detail = try AO3Parser.workDetail(html: html, id: 7)
+        #expect(detail.notes.isEmpty)
+        #expect(detail.endNotes == "Work end")
+        #expect(detail.chapters[0].notes.isEmpty)
+        #expect(detail.chapters[0].endNotes == "Chapter end")
+        #expect(detail.chapters[1].notes == "Chapter top")
+        #expect(detail.chapters[1].endNotes.isEmpty)
+    }
+}
