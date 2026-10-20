@@ -199,7 +199,7 @@ struct ReaderTextView: View {
         }
     }
 
-    private var styledText: Text {
+    private var styledText: some View {
         Text(text)
             .font(Font(font))
             .tracking(style.layout.letterSpacing)
