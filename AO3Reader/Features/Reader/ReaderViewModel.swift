@@ -139,11 +139,15 @@ final class ReaderViewModel {
 
     // MARK: - Chapters
 
-    func goToChapter(_ index: Int) {
+    /// 第一章章節標題（作品資訊之後）的捲動 ID；翻頁模式以它表示「第一個正文頁」
+    static func chapterTextID(_ chapter: Int) -> String { "chaptertext-\(chapter)" }
+
+    /// `skipWorkInfo`：從目錄選章時跳過第一章前面的作品資訊，直接到章節開頭
+    func goToChapter(_ index: Int, skipWorkInfo: Bool = false) {
         guard let detail, detail.chapters.indices.contains(index) else { return }
         chapterIndex = index
         visible.removeAll()
-        scrollAnchor = Self.headerID(index)
+        scrollAnchor = skipWorkInfo && index == 0 ? Self.chapterTextID(index) : Self.headerID(index)
         UserDefaults.standard.set(index, forKey: positionKey)
         ReadingProgress.touch(route.id)
     }
@@ -174,12 +178,14 @@ final class ReaderViewModel {
                 // 設定 › 一般 › 顯示譯文
                 if includeAll || TranslationVisibility.readerTitle { add(workTitleID, detail.title, kind: .heading) }
                 if includeAll || TranslationVisibility.readerSummary { add(summaryID, detail.summary) }
-                add(notesID, detail.notes)
+                if includeAll || TranslationVisibility.readerNotes { add(notesID, detail.notes) }
             }
             if detail.chapters.count > 1 { add(chapterTitleID(index), chapter.title, kind: .heading) }
-            add(chapterNotesID(index), chapter.notes)
-            add(chapterEndNotesID(index), chapter.endNotes)
-            if index == detail.chapters.count - 1 { add(endNotesID, detail.endNotes) }
+            if includeAll || TranslationVisibility.readerNotes {
+                add(chapterNotesID(index), chapter.notes)
+                add(chapterEndNotesID(index), chapter.endNotes)
+                if index == detail.chapters.count - 1 { add(endNotesID, detail.endNotes) }
+            }
         }
         return result
     }

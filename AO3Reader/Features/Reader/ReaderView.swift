@@ -214,8 +214,14 @@ struct ReaderView: View {
     private func scrollContent(detail: WorkDetail, chapter: Chapter) -> some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: layout.paragraphSpacing) {
-                header(detail: detail, chapter: chapter)
-                    .id(ReaderViewModel.headerID(model.chapterIndex))
+                // 第一章的作品資訊與章節標題分成兩塊，目錄選第一章時直接定位到章節標題
+                if model.chapterIndex == 0 {
+                    header(detail: detail, chapter: chapter, includesChapterTitle: false)
+                        .id(ReaderViewModel.headerID(0))
+                        .onAppear { model.headerAppeared() }
+                }
+                header(detail: detail, chapter: chapter, includesWorkInfo: false)
+                    .id(model.chapterIndex == 0 ? ReaderViewModel.chapterTextID(0) : ReaderViewModel.headerID(model.chapterIndex))
                     .onAppear { model.headerAppeared() }
                     .onDisappear { model.headerDisappeared() }
                 ForEach(chapter.paragraphs) { paragraph in
@@ -353,9 +359,10 @@ struct ReaderView: View {
         .ignoresSafeArea()
     }
 
-    private func header(detail: WorkDetail, chapter: Chapter, includesChapterTitle: Bool = true) -> some View {
+    private func header(detail: WorkDetail, chapter: Chapter, includesWorkInfo: Bool = true,
+                        includesChapterTitle: Bool = true) -> some View {
         VStack(alignment: .leading, spacing: 10) {
-            if model.chapterIndex == 0 {
+            if includesWorkInfo, model.chapterIndex == 0 {
                 ReaderTextView(text: detail.title, font: style.uiFont(scale: 1.5, weight: .bold), style: style)
                 metaTranslation(ReaderViewModel.workTitleID,
                                 font: style.uiFont(scale: 1.25 * style.translation.scale, weight: .semibold, italic: style.translation.italic))
@@ -417,7 +424,8 @@ struct ReaderView: View {
                     .foregroundStyle(cardForeground.opacity(0.7))
                 // 簡介與作者註使用與正文相同的閱讀字體
                 ReaderTextView(text: text, font: style.uiFont(), style: style, color: cardForeground)
-                metaTranslation(id, font: style.uiFont(scale: style.translation.scale, italic: style.translation.italic))
+                metaTranslation(id, visible: id == ReaderViewModel.summaryID ? TranslationVisibility.readerSummary : TranslationVisibility.readerNotes,
+                                font: style.uiFont(scale: style.translation.scale, italic: style.translation.italic))
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -467,8 +475,8 @@ struct ReaderView: View {
 
     /// 標題與簡介的沉浸式譯文（顯示在原文下方，不取代原文）
     @ViewBuilder
-    private func metaTranslation(_ id: String, font: UIFont) -> some View {
-        if model.isTranslationOn {
+    private func metaTranslation(_ id: String, visible: Bool = true, font: UIFont) -> some View {
+        if model.isTranslationOn, visible {
             ImmersiveTranslationView(translation: model.translations[id], style: style, font: font) {
                 model.retryMeta(id)
             }
@@ -692,13 +700,11 @@ private struct WorkTagsView: View {
     /// 開啟翻譯時，在標籤下方顯示譯文（目標語言跟隨介面語言）
     var showsTranslation = false
     @Environment(AppState.self) private var app
-    @AppStorage(TranslationVisibility.readerFandomKey) private var showsFandomTranslation = true
-    @AppStorage(TranslationVisibility.readerTagsKey) private var showsTagTranslation = true
     @State private var expanded = false
 
-    /// 這個分組是否顯示譯文（設定 › 一般 › 顯示譯文）
+    /// 這個分組是否顯示譯文（設定 › 譯文顯示 › 閱讀頁，每種標籤各自一個開關）
     private func translates(_ group: WorkTagGroup) -> Bool {
-        showsTranslation && (group.isFandom ? showsFandomTranslation : showsTagTranslation)
+        showsTranslation && TranslationVisibility.reader(group)
     }
 
     var body: some View {
@@ -737,7 +743,7 @@ private struct WorkTagsView: View {
                 .font(Font(style.uiFont(scale: 0.85)))
             }
         }
-        .task(id: [showsTranslation, showsFandomTranslation, showsTagTranslation]) {
+        .task(id: showsTranslation) {
             app.tags.request(groups.filter(translates).flatMap { $0.tags.map(\.name) })
         }
     }
@@ -753,7 +759,7 @@ struct ChapterListSheet: View {
         NavigationStack {
             List(model.detail?.chapters ?? []) { chapter in
                 Button {
-                    model.goToChapter(chapter.id)
+                    model.goToChapter(chapter.id, skipWorkInfo: true)
                     dismiss()
                 } label: {
                     HStack {

@@ -48,11 +48,31 @@ struct WebDAVBackend: SyncBackend {
         }
     }
 
+    /// 資料夾路徑的每一層。留空時使用 AO3Reader：堅果雲等服務不允許把檔案直接放在 WebDAV 根目錄（PUT 會回 409）
+    private var folderComponents: [String] {
+        let components = config.folder.split(separator: "/").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
+        return components.isEmpty ? ["AO3Reader"] : components
+    }
+
     private var folderURL: URL {
         get throws {
-            let folder = config.folder.trimmingCharacters(in: CharacterSet(charactersIn: "/ "))
-            let base = try serverURL
-            return folder.isEmpty ? base : base.appending(path: folder + "/", directoryHint: .isDirectory)
+            var url = try serverURL
+            for component in folderComponents { url = url.appending(path: component + "/", directoryHint: .isDirectory) }
+            return url
+        }
+    }
+
+    /// 逐層建立資料夾（已存在時伺服器回 405，視為成功）
+    private func createFolders() async throws {
+        var url = try serverURL
+        for component in folderComponents {
+            url = url.appending(path: component + "/", directoryHint: .isDirectory)
+            let (_, response) = try await Self.session.data(for: request(url, method: "MKCOL"))
+            switch status(response) {
+            case 200..<300, 405: continue
+            case 401, 403: throw SyncError.unauthorized
+            case let code: throw SyncError.http(code)
+            }
         }
     }
 
@@ -81,11 +101,14 @@ struct WebDAVBackend: SyncBackend {
     }
 
     func write(_ data: Data) async throws {
-        // 建立資料夾（已存在時伺服器回 405，忽略即可）
-        _ = try? await Self.session.data(for: request(try folderURL, method: "MKCOL"))
         var put = request(try fileURL, method: "PUT")
         put.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let (_, response) = try await Self.session.upload(for: put, from: data)
+        var (_, response) = try await Self.session.upload(for: put, from: data)
+        if status(response) == 409 {
+            // 409：上層資料夾不存在，建立後重試一次
+            try await createFolders()
+            (_, response) = try await Self.session.upload(for: put, from: data)
+        }
         switch status(response) {
         case 200..<300: return
         case 401, 403: throw SyncError.unauthorized
@@ -93,8 +116,10 @@ struct WebDAVBackend: SyncBackend {
         }
     }
 
+    /// 測試連線：確認帳號密碼，並建立同步用的資料夾（同步時才不會因資料夾不存在而失敗）
     func test() async throws {
-        var propfind = request(try serverURL, method: "PROPFIND")
+        try await createFolders()
+        var propfind = request(try folderURL, method: "PROPFIND")
         propfind.setValue("0", forHTTPHeaderField: "Depth")
         let (_, response) = try await Self.session.data(for: propfind)
         switch status(response) {

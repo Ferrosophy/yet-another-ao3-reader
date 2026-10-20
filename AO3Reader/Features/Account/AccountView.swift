@@ -5,15 +5,20 @@ struct AccountView: View {
     @AppStorage("account.entryOrder") private var entryOrder = ""
     @AppStorage(DataSource.storageKey) private var dataSource: DataSource = .ao3
     @State private var editMode: EditMode = .inactive
+    /// 切換器自己的選擇：先讓切換動畫跑完，再淡入另一邊的內容，避免整頁重建打斷動畫
+    @State private var pickerSource: DataSource = DataSource.current
 
     var body: some View {
         Group {
             if dataSource == .local {
                 LocalAccountView()
+                    .transition(.opacity)
             } else if let username = app.auth.username {
                 loggedIn(username)
+                    .transition(.opacity)
             } else {
                 LoginView()
+                    .transition(.opacity)
             }
         }
         .navigationTitle("帳號")
@@ -22,14 +27,22 @@ struct AccountView: View {
             // 使用者資料只能二選一：AO3 帳號，或本機保存（可經 iCloud / WebDAV 同步）。
             // 放在導覽列中間，不另外疊一層背景（避免與大標題的模糊背景重疊）
             ToolbarItem(placement: .principal) {
-                Picker("使用者資料", selection: $dataSource) {
+                Picker("使用者資料", selection: $pickerSource) {
                     ForEach(DataSource.allCases) { Text($0.title).tag($0) }
                 }
                 .pickerStyle(.segmented)
                 .fixedSize()
             }
         }
+        .onChange(of: pickerSource) { _, source in
+            guard source != dataSource else { return }
+            Task {
+                try? await Task.sleep(for: .milliseconds(250))
+                withAnimation(.easeInOut(duration: 0.25)) { dataSource = source }
+            }
+        }
         .onChange(of: dataSource) { _, source in
+            if pickerSource != source { pickerSource = source }
             if source == .local { Task { await app.librarySync.syncNow() } }
         }
     }

@@ -108,7 +108,7 @@ enum PagedTextBuilder {
         }
         if let summary {
             append(summary, font: style.uiFont(), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
-            appendMetaTranslation(ReaderViewModel.summaryID, scale: 1)
+            if TranslationVisibility.readerSummary { appendMetaTranslation(ReaderViewModel.summaryID, scale: 1) }
         }
         if let chapterTitle {
             append(chapterTitle, font: style.uiFont(scale: 1.2, weight: .semibold), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5))
@@ -119,7 +119,7 @@ enum PagedTextBuilder {
                    paragraph: paragraphStyle(after: 4))
             // 作者註與正文使用相同字體
             append(note.text, font: style.uiFont(), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
-            appendMetaTranslation(note.id, scale: 1)
+            if TranslationVisibility.readerNotes { appendMetaTranslation(note.id, scale: 1) }
         }
         /// 作者註與正文之間的分隔線，避免分不清哪裡是註、哪裡是正文
         func appendDivider() {
@@ -524,6 +524,12 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
             // 換章與章內翻頁使用同樣的翻頁動畫
             if let old = self.content?.chapterIndex, transition == self.transition { pendingChapterDirection = content.chapterIndex > old }
         }
+        // 停在第一章的作品資訊頁時從目錄再選第一章：跳到第一個正文頁
+        var jumpToText = false
+        if !chapterChanged, let anchor = anchorParagraphID, anchor.hasPrefix("chaptertext-"), currentIndex < headerOffset {
+            pendingAnchor = anchor
+            jumpToText = true
+        }
         self.content = content
         self.header = header
         self.transition = transition
@@ -534,7 +540,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         }
         if transitionChanged { rebuildContainer() }
         if chapterChanged || headerChanged || content.signature != laidOutSignature || insets != laidOutInsets
-            || transitionChanged || backgroundChanged {
+            || transitionChanged || backgroundChanged || jumpToText {
             relayout()
         }
     }
@@ -571,6 +577,9 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
 
         if pendingStartAtEnd {
             currentIndex = pageCount - 1
+        } else if let anchor, anchor.id.hasPrefix("chaptertext-") {
+            // 目錄選第一章：跳過作品資訊頁，從第一個正文頁開始
+            currentIndex = headerOffset
         } else if onHeader {
             currentIndex = 0
         } else if let anchor, let span = content.spans.first(where: { $0.paragraph.id == anchor.id }) {

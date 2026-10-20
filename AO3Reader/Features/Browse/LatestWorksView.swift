@@ -171,8 +171,8 @@ struct LatestWorksView: View {
                         chip(period.title, systemImage: "calendar")
                     }
                 }
-                Spacer(minLength: 0)
             }
+            // 篩選按鈕平分整列寬度，與上方榜單左右對齊
             .buttonStyle(.glass)
         }
         .padding(.horizontal, 16)
@@ -183,6 +183,7 @@ struct LatestWorksView: View {
         Label(title, systemImage: systemImage)
             .appFont(.subheadline)
             .lineLimit(1)
+            .frame(maxWidth: .infinity)
     }
 
     /// 左右滑動的作品卡片；只有目前顯示的卡片會翻譯
@@ -236,9 +237,9 @@ struct LatestWorksView: View {
         return languageID.isEmpty ? String(localized: "全部語言") : (languages.first { $0.code == languageID }?.name ?? languageID)
     }
 
-    private static let languagesKey = "ao3.languages"
+    static let languagesKey = "ao3.languages"
 
-    private static func cachedLanguages() -> [AO3Language] {
+    static func cachedLanguages() -> [AO3Language] {
         UserDefaults.standard.data(forKey: languagesKey)
             .flatMap { try? JSONDecoder().decode([AO3Language].self, from: $0) }
             .map(AO3Language.bySpeakers) ?? AO3Language.bySpeakers(AO3Language.fallback)
@@ -341,8 +342,8 @@ struct BrowseCard: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .scrollIndicators(.hidden)
-            // 透明底的磨砂玻璃卡片
-            .glassEffect(.regular, in: .rect(cornerRadius: 24))
+            // 液態玻璃卡片：透明、不加底色
+            .glassEffect(.clear, in: .rect(cornerRadius: 24))
             .contentShape(.rect(cornerRadius: 24))
         }
         .buttonStyle(.plain)

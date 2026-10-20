@@ -380,3 +380,12 @@ struct ChapterTitleTests {
         #expect(TranslationService.splitChapterTitle("Chapter 4") == nil)
     }
 }
+
+struct ChapterNumberTests {
+    @Test func usesArabicNumerals() {
+        #expect(TranslationService.arabicNumerals("第二十三章") == "第23章")
+        #expect(TranslationService.arabicNumerals("第一百零五部分") == "第105部分")
+        #expect(TranslationService.localChapterNumber("Chapter 24", target: .named("zh-CN")) == "第24章")
+        #expect(TranslationService.localChapterNumber("Prologue", target: .named("zh-CN")) == nil)
+    }
+}

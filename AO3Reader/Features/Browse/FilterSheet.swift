@@ -19,23 +19,26 @@ struct FilterSheet: View {
                     if mode == .search {
                         TextField("標題", text: $query.title)
                         TextField("作者 / 創作者", text: $query.creators)
-                        TextField("更新時間（如 < 7 days）", text: $query.revisedAt)
+                        ComparisonField(title: "更新時間", value: $query.revisedAt, units: ComparisonField.timeUnits)
                     }
                     triStatePicker("完結狀態", selection: $query.completion, yes: "僅完結", no: "僅連載")
                     triStatePicker("Crossover", selection: $query.crossover, yes: "僅 Crossover", no: "排除 Crossover")
                     if mode == .search {
                         Toggle("僅單章作品", isOn: $query.singleChapter)
-                        TextField("字數（如 > 10000、1000-5000）", text: $query.wordCount)
+                        ComparisonField(title: "字數", value: $query.wordCount)
                     } else {
                         TextField("最少字數", text: $query.wordsFrom).keyboardType(.numberPad)
                         TextField("最多字數", text: $query.wordsTo).keyboardType(.numberPad)
                     }
-                    TextField("語言代碼（如 en、zh、ja）", text: $query.languageID)
-                        .textInputAutocapitalization(.never)
+                    NavigationLink {
+                        AO3LanguagePickerPage(selection: $query.languageID)
+                    } label: {
+                        LabeledContent("語言", value: AO3LanguagePickerPage.name(for: query.languageID))
+                    }
                 }
 
                 Section {
-                    TagTokenField(title: "Fandoms", text: $query.fandomNames, kind: .fandom)
+                    TagTokenField(title: "原作", text: $query.fandomNames, kind: .fandom)
                     TagTokenField(title: "角色", text: $query.characterNames, kind: .character)
                     TagTokenField(title: "配對 / 關係", text: $query.relationshipNames, kind: .relationship)
                     TagTokenField(title: "其他標籤", text: $query.freeformNames, kind: .freeform)
@@ -88,7 +91,7 @@ struct FilterSheet: View {
                     }
                 }
             }
-            .navigationTitle(mode == .search ? "進階搜尋" : "篩選作品")
+            .navigationTitle(mode == .search ? "詳細搜尋" : "詳細篩選")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -117,6 +120,122 @@ struct FilterSheet: View {
             set.wrappedValue.contains(element)
         } set: { isOn in
             if isOn { set.wrappedValue.insert(element) } else { set.wrappedValue.remove(element) }
+        }
+    }
+}
+
+/// 「大於 / 小於」加數值（可選單位）的篩選欄位，組成官網語法，例如「> 10000」「< 7 days」。
+struct ComparisonField: View {
+    struct Unit: Hashable {
+        let value: String
+        let title: LocalizedStringKey
+        static func == (lhs: Unit, rhs: Unit) -> Bool { lhs.value == rhs.value }
+        func hash(into hasher: inout Hasher) { hasher.combine(value) }
+    }
+
+    static let timeUnits: [Unit] = [
+        Unit(value: "days", title: "天"),
+        Unit(value: "weeks", title: "週"),
+        Unit(value: "months", title: "個月"),
+        Unit(value: "years", title: "年"),
+    ]
+
+    let title: LocalizedStringKey
+    @Binding var value: String
+    var units: [Unit] = []
+
+    @State private var comparator = ">"
+    @State private var number = ""
+    @State private var unit = "days"
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Text(title)
+            Spacer(minLength: 8)
+            Picker("", selection: $comparator) {
+                Text(verbatim: ">").tag(">")
+                Text(verbatim: "<").tag("<")
+            }
+            .pickerStyle(.segmented)
+            .fixedSize()
+            TextField("數值", text: $number)
+                .keyboardType(.numberPad)
+                .multilineTextAlignment(.trailing)
+                .frame(maxWidth: 90)
+            if !units.isEmpty {
+                Picker("", selection: $unit) {
+                    ForEach(units, id: \.value) { Text($0.title).tag($0.value) }
+                }
+                .labelsHidden()
+                .fixedSize()
+                .tint(.primary)
+            }
+        }
+        .onAppear(perform: parse)
+        .onChange(of: comparator) { compose() }
+        .onChange(of: number) { compose() }
+        .onChange(of: unit) { compose() }
+        .onChange(of: value) { if value.isEmpty, !number.isEmpty { number = "" } }
+    }
+
+    /// 讀回已有的條件（例如「< 7 days」）
+    private func parse() {
+        let trimmed = value.trimmingCharacters(in: .whitespaces)
+        if trimmed.hasPrefix("<") { comparator = "<" } else if trimmed.hasPrefix(">") { comparator = ">" }
+        number = trimmed.filter(\.isNumber)
+        if let match = units.first(where: { trimmed.contains($0.value.dropLast()) }) { unit = match.value }
+    }
+
+    private func compose() {
+        let digits = number.filter(\.isNumber)
+        guard !digits.isEmpty else {
+            value = ""
+            return
+        }
+        value = units.isEmpty ? "\(comparator) \(digits)" : "\(comparator) \(digits) \(unit)"
+    }
+}
+
+/// 作品語言選擇：AO3 官網支援的全部語言，可搜尋；選擇後返回。
+struct AO3LanguagePickerPage: View {
+    @Binding var selection: String
+    @Environment(\.dismiss) private var dismiss
+    @State private var search = ""
+
+    private var languages: [AO3Language] { LatestWorksView.cachedLanguages() }
+
+    static func name(for code: String) -> String {
+        guard !code.isEmpty else { return String(localized: "全部語言") }
+        return LatestWorksView.cachedLanguages().first { $0.code == code }?.name ?? code
+    }
+
+    private var filtered: [AO3Language] {
+        guard !search.isEmpty else { return languages }
+        return languages.filter {
+            $0.name.localizedCaseInsensitiveContains(search) || $0.code.localizedCaseInsensitiveContains(search)
+        }
+    }
+
+    var body: some View {
+        List {
+            if search.isEmpty { row(code: "", name: String(localized: "全部語言")) }
+            ForEach(filtered) { language in row(code: language.code, name: language.name) }
+        }
+        .searchable(text: $search, prompt: "搜尋語言")
+        .navigationTitle("語言")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func row(code: String, name: String) -> some View {
+        Button {
+            selection = code
+            dismiss()
+        } label: {
+            HStack {
+                Text(verbatim: name).foregroundStyle(.primary)
+                Spacer()
+                if selection == code { Image(systemName: "checkmark").foregroundStyle(.tint) }
+            }
         }
     }
 }

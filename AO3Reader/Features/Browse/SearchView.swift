@@ -85,7 +85,7 @@ struct SearchView: View {
     private var content: some View {
         switch scope {
         case .works:
-            if let works { WorkListView(model: works) } else { placeholder("搜尋作品", "輸入關鍵字，或點右上角使用官網的進階篩選") }
+            if let works { WorkListView(model: works) } else { placeholder("搜尋作品", "輸入關鍵字，或點右上角使用官網的詳細篩選") }
         case .tags:
             if let tags {
                 PagedListView(model: tags) { tag in

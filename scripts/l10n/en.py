@@ -612,6 +612,17 @@ EN = {
 "已保存到相簿": "Saved to Photos",
 "無法保存：%@": "Couldn't save: %@",
 "投喂開發者": "Support the Developer",
+"更新時間": "Updated",
+"詳細搜尋": "Detailed Search",
+"詳細篩選": "Detailed Filters",
+"天": "days",
+"週": "weeks",
+"個月": "months",
+"年": "years",
+"數值": "Value",
+"輸入關鍵字，或點右上角使用官網的詳細篩選": "Enter keywords, or tap the top right to use AO3's detailed filters",
+"閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Whether these show translations when translation is on in the reader. Title, summary and notes are translated into your target language; fandoms and tags into the app language.",
+"伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. The account is your Jianguoyun login email; the password is the app password you just created.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
-SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}
+SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

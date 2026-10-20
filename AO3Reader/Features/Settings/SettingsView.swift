@@ -74,6 +74,15 @@ struct SettingsView: View {
                 LabeledContent("應用版本", value: Self.versionString)
             }
 
+            Section("翻譯") {
+                NavigationLink {
+                    TranslationSettingsView()
+                } label: {
+                    LabeledContent("翻譯服務", value: app.translation.config.provider.title)
+                }
+                LabeledContent("目標語言", value: app.translation.config.targetLanguage.name)
+            }
+
             Section("譯文顯示") {
                 NavigationLink("瀏覽頁") { TranslationVisibilityView(scope: .browse) }
                 NavigationLink("閱讀頁") { TranslationVisibilityView(scope: .reader) }
@@ -109,15 +118,6 @@ struct SettingsView: View {
                 }
             }
 
-            Section("翻譯") {
-                NavigationLink {
-                    TranslationSettingsView()
-                } label: {
-                    LabeledContent("翻譯服務", value: app.translation.config.provider.title)
-                }
-                LabeledContent("目標語言", value: app.translation.config.targetLanguage.name)
-            }
-
             Section {
                 Button("清除翻譯快取", role: .destructive) {
                     Task { await app.translator.clearCache() }
@@ -148,7 +148,13 @@ struct TranslationVisibilityView: View {
     @AppStorage(TranslationVisibility.summaryKey) private var browseSummary = true
     @AppStorage(TranslationVisibility.readerTitleKey) private var readerTitle = true
     @AppStorage(TranslationVisibility.readerFandomKey) private var readerFandom = true
-    @AppStorage(TranslationVisibility.readerTagsKey) private var readerTags = true
+    @AppStorage(TranslationVisibility.readerRatingKey) private var readerRating = true
+    @AppStorage(TranslationVisibility.readerWarningKey) private var readerWarning = true
+    @AppStorage(TranslationVisibility.readerCategoryKey) private var readerCategory = true
+    @AppStorage(TranslationVisibility.readerRelationshipKey) private var readerRelationship = true
+    @AppStorage(TranslationVisibility.readerCharacterKey) private var readerCharacter = true
+    @AppStorage(TranslationVisibility.readerFreeformKey) private var readerFreeform = true
+    @AppStorage(TranslationVisibility.readerNotesKey) private var readerNotes = true
     @AppStorage(TranslationVisibility.readerSummaryKey) private var readerSummary = true
 
     var body: some View {
@@ -156,20 +162,27 @@ struct TranslationVisibilityView: View {
             Section {
                 if scope == .browse {
                     Toggle("作品名稱", isOn: $browseTitle)
-                    Toggle("Fandom", isOn: $browseFandom)
+                    Toggle("原作", isOn: $browseFandom)
                     Toggle("標籤", isOn: $browseTags)
                     Toggle("簡介", isOn: $browseSummary)
                 } else {
+                    // 依 AO3 作品頁的標籤順序
                     Toggle("作品名稱", isOn: $readerTitle)
-                    Toggle("Fandom", isOn: $readerFandom)
-                    Toggle("標籤", isOn: $readerTags)
+                    Toggle("分級", isOn: $readerRating)
+                    Toggle("警告", isOn: $readerWarning)
+                    Toggle("分類", isOn: $readerCategory)
+                    Toggle("原作", isOn: $readerFandom)
+                    Toggle("配對", isOn: $readerRelationship)
+                    Toggle("角色", isOn: $readerCharacter)
+                    Toggle("其他標籤", isOn: $readerFreeform)
                     Toggle("簡介", isOn: $readerSummary)
+                    Toggle("作者註", isOn: $readerNotes)
                 }
             } footer: {
                 if scope == .browse {
                     Text("瀏覽頁的作品卡片與各作品列表。")
                 } else {
-                    Text("閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。")
+                    Text("閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。")
                 }
             }
         }

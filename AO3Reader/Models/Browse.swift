@@ -82,6 +82,8 @@ struct WorkTagGroup: Hashable, Codable, Sendable {
     var tags: [WorkTag]
     /// Fandom 分組（翻譯開關與其他標籤分開）
     var isFandom = false
+    /// 分組類型：rating、warning、category、fandom、relationship、character、freeform（決定閱讀頁的譯文開關）
+    var kind: String?
 }
 
 struct WorkTag: Hashable, Codable, Sendable {

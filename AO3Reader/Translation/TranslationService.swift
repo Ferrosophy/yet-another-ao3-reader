@@ -56,33 +56,59 @@ actor TranslationService {
 
 extension TranslationService {
     /// 翻譯段落。章節標題（例如「Chapter 3: History and Objectivity」）拆成編號與標題分別翻譯，
-    /// 再以冒號接回，避免翻譯服務偶爾吃掉冒號（「第三章历史与客观性」）。
+    /// 再以冒號接回，避免翻譯服務偶爾吃掉冒號（「第三章历史与客观性」）；章節編號一律使用阿拉伯數字。
     func translate(paragraphs: [Paragraph], provider: any TranslationProvider, source: TranslationLanguage?,
                    target: TranslationLanguage, bypassCache: Bool = false) async throws -> [String] {
+        enum Part { case plain, split(local: String?), localOnly(String) }
         var texts: [String] = []
-        var parts: [Int] = []
+        var parts: [Part] = []
         for paragraph in paragraphs {
-            if paragraph.id.hasPrefix("meta-title-c"), case let (number, title)? = Self.splitChapterTitle(paragraph.text) {
-                texts += [number, title]
-                parts.append(2)
+            guard paragraph.id.hasPrefix("meta-title-c") else {
+                texts.append(paragraph.text)
+                parts.append(.plain)
+                continue
+            }
+            if case let (number, title)? = Self.splitChapterTitle(paragraph.text) {
+                // 「Chapter 3」在中日韓語直接組成「第3章」，不交給翻譯服務
+                let local = Self.localChapterNumber(number, target: target)
+                if local == nil { texts.append(number) }
+                texts.append(title)
+                parts.append(.split(local: local))
+            } else if let local = Self.localChapterNumber(paragraph.text, target: target) {
+                parts.append(.localOnly(local))
             } else {
                 texts.append(paragraph.text)
-                parts.append(1)
+                parts.append(.plain)
             }
         }
-        let translated = try await translate(texts, provider: provider, source: source, target: target, bypassCache: bypassCache)
+        let translated = texts.isEmpty ? [] : try await translate(texts, provider: provider, source: source, target: target,
+                                                                  bypassCache: bypassCache)
         let separator = ["zh", "ja"].contains { target.code.hasPrefix($0) } ? "：" : ": "
         var results: [String] = []
         var index = 0
-        for count in parts {
-            guard index + count <= translated.count else { break }
-            if count == 2 {
-                let number = translated[index].trimmingCharacters(in: CharacterSet(charactersIn: ":： ").union(.whitespaces))
-                results.append(number + separator + translated[index + 1].trimmingCharacters(in: .whitespaces))
-            } else {
-                results.append(translated[index])
+        func next() -> String? {
+            guard index < translated.count else { return nil }
+            defer { index += 1 }
+            return translated[index]
+        }
+        for part in parts {
+            switch part {
+            case .plain:
+                guard let text = next() else { return results }
+                results.append(text)
+            case .localOnly(let local):
+                results.append(local)
+            case .split(let local):
+                let number: String
+                if let local {
+                    number = local
+                } else {
+                    guard let text = next() else { return results }
+                    number = Self.arabicNumerals(text.trimmingCharacters(in: CharacterSet(charactersIn: ":：").union(.whitespaces)))
+                }
+                guard let title = next() else { return results }
+                results.append(number + separator + title.trimmingCharacters(in: .whitespaces))
             }
-            index += count
         }
         return results
     }
@@ -94,5 +120,49 @@ extension TranslationService {
         let title = String(match.2).trimmingCharacters(in: .whitespaces)
         guard !number.isEmpty, !title.isEmpty else { return nil }
         return (number, title)
+    }
+
+    /// 「Chapter 3」「Ch. 3」在中文、日文、韓文直接組成「第3章」「第3章」「제3장」；其他情況回傳 nil
+    static func localChapterNumber(_ text: String, target: TranslationLanguage) -> String? {
+        guard let match = text.trimmingCharacters(in: .whitespaces)
+            .wholeMatch(of: /(?i)(?:chapter|chap\.?|ch\.?)\s*(\d+)/) else { return nil }
+        let number = String(match.1)
+        if target.code.hasPrefix("zh") || target.code.hasPrefix("ja") { return "第\(number)章" }
+        if target.code.hasPrefix("ko") { return "제\(number)장" }
+        return nil
+    }
+
+    /// 把中文數字（三、二十三、一百零五）換成阿拉伯數字，只用於章節編號
+    static func arabicNumerals(_ text: String) -> String {
+        let digits: [Character: Int] = ["零": 0, "〇": 0, "一": 1, "二": 2, "两": 2, "兩": 2, "三": 3, "四": 4,
+                                        "五": 5, "六": 6, "七": 7, "八": 8, "九": 9]
+        let units: [Character: Int] = ["十": 10, "百": 100, "千": 1000]
+        var result = ""
+        var run = ""
+        func flush() {
+            guard !run.isEmpty else { return }
+            var total = 0
+            var digit = 0
+            for character in run {
+                if let value = digits[character] {
+                    digit = value
+                } else if let unit = units[character] {
+                    total += (digit == 0 ? 1 : digit) * unit
+                    digit = 0
+                }
+            }
+            result += String(total + digit)
+            run = ""
+        }
+        for character in text {
+            if digits[character] != nil || units[character] != nil {
+                run.append(character)
+            } else {
+                flush()
+                result.append(character)
+            }
+        }
+        flush()
+        return result
     }
 }

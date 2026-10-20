@@ -12,12 +12,33 @@ enum TranslationVisibility {
     // 閱讀頁
     static let readerTitleKey = "translate.reader.show.title"
     static let readerFandomKey = "translate.reader.show.fandom"
-    static let readerTagsKey = "translate.reader.show.tags"
     static let readerSummaryKey = "translate.reader.show.summary"
+    static let readerRatingKey = "translate.reader.show.rating"
+    static let readerWarningKey = "translate.reader.show.warning"
+    static let readerCategoryKey = "translate.reader.show.category"
+    static let readerRelationshipKey = "translate.reader.show.relationship"
+    static let readerCharacterKey = "translate.reader.show.character"
+    static let readerFreeformKey = "translate.reader.show.freeform"
+    static let readerNotesKey = "translate.reader.show.notes"
 
     private static func value(_ key: String) -> Bool { UserDefaults.standard.object(forKey: key) as? Bool ?? true }
     static var readerTitle: Bool { value(readerTitleKey) }
     static var readerSummary: Bool { value(readerSummaryKey) }
+    static var readerNotes: Bool { value(readerNotesKey) }
+
+    /// 閱讀頁某個標籤分組是否顯示譯文
+    static func reader(_ group: WorkTagGroup) -> Bool {
+        switch group.kind {
+        case "rating": value(readerRatingKey)
+        case "warning": value(readerWarningKey)
+        case "category": value(readerCategoryKey)
+        case "relationship": value(readerRelationshipKey)
+        case "character": value(readerCharacterKey)
+        case "freeform": value(readerFreeformKey)
+        case "fandom": value(readerFandomKey)
+        default: group.isFandom ? value(readerFandomKey) : value(readerFreeformKey)
+        }
+    }
 }
 
 /// 單一卡片欄位的翻譯狀態。每個欄位各自被觀察，譯文送達時只重繪對應的卡片，

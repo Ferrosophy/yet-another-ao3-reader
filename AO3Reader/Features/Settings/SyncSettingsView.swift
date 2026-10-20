@@ -91,23 +91,10 @@ struct SyncSettingsView: View {
                 }
 
                 Section {
-                    guideStep(1, "註冊堅果雲", detail: "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。")
-                    guideStep(2, "生成應用密碼", detail: "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。")
-                    guideStep(3, "填寫上方設定", detail: "帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。")
-                    HStack {
-                        Text(verbatim: Self.jianguoyunURL)
-                            .font(.footnote.monospaced())
-                            .foregroundStyle(.secondary)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.8)
-                        Spacer()
-                        Button("填入", systemImage: "arrow.up.doc") { sync.webDAV.server = Self.jianguoyunURL }
-                            .labelStyle(.titleOnly)
-                            .buttonStyle(.bordered)
-                            .controlSize(.small)
-                    }
-                    .padding(.leading, 32)
-                    guideStep(4, "測試並同步", detail: "點「儲存並測試連線」，成功後點「立即同步」。")
+                    guideStep(1, "註冊堅果雲", detail: String(localized: "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。"))
+                    guideStep(2, "生成應用密碼", detail: String(localized: "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"))
+                    guideStep(3, "填寫上方設定", detail: String(localized: "伺服器位址填 \(Self.jianguoyunURL)，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。"))
+                    guideStep(4, "測試並同步", detail: String(localized: "點「儲存並測試連線」，成功後點「立即同步」。"))
                 } header: {
                     Text("如何使用 WebDAV 同步")
                 } footer: {
@@ -143,7 +130,8 @@ struct SyncSettingsView: View {
 
     private static let jianguoyunURL = "https://dav.jianguoyun.com/dav/"
 
-    private func guideStep(_ number: Int, _ title: LocalizedStringKey, detail: LocalizedStringKey) -> some View {
+    /// detail 以純文字顯示（不解析 Markdown，網址不會變成連結）
+    private func guideStep(_ number: Int, _ title: LocalizedStringKey, detail: String) -> some View {
         HStack(alignment: .firstTextBaseline, spacing: 12) {
             Text(verbatim: "\(number)")
                 .appFont(.caption, weight: .bold)

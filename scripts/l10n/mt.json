@@ -611,7 +611,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "写真にアクセスできません。 YAAO3R が設定で写真を追加できるようにします。",
   "已保存到相簿": "写真に保存しました",
   "無法保存：%@": "保存できませんでした: %@",
-  "投喂開發者": "開発者をサポートする"
+  "投喂開發者": "開発者をサポートする",
+  "更新時間": "更新されました",
+  "詳細搜尋": "詳細検索",
+  "詳細篩選": "詳細フィルター",
+  "天": "日",
+  "週": "週",
+  "個月": "月",
+  "年": "年",
+  "數值": "値",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "キーワードを入力するか、右上をタップしてAO3の詳細フィルターを使用します",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "リーダーで翻訳がオンになっているときに、これらが翻訳を表示するかどうか。タイトル、概要、メモはターゲット言語に翻訳されます。ファンダムとタグをアプリ言語に組み込みます。",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "サーバー: %@。アカウントは Jianguoyun のログインメールアドレスです。パスワードは、先ほど作成したアプリのパスワードです。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1225,7 +1236,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "사진에 액세스할 수 없습니다. YAAO3R이 설정에서 사진을 추가하도록 허용하세요.",
   "已保存到相簿": "포토에 저장됨",
   "無法保存：%@": "저장할 수 없습니다: %@",
-  "投喂開發者": "개발자 지원"
+  "投喂開發者": "개발자 지원",
+  "更新時間": "업데이트됨",
+  "詳細搜尋": "상세검색",
+  "詳細篩選": "상세 필터",
+  "天": "일",
+  "週": "주",
+  "個月": "개월",
+  "年": "년",
+  "數值": "가치",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "키워드를 입력하거나 오른쪽 상단을 탭하여 AO3의 상세 필터를 사용하세요",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "리더에서 번역이 켜져 있을 때 번역을 표시할지 여부입니다. 제목, 요약 및 메모가 대상 언어로 번역됩니다. 팬덤과 태그를 앱 언어로 통합합니다.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "서버: %@. 계정은 Jianguoyun 로그인 이메일입니다. 비밀번호는 방금 생성한 앱 비밀번호입니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -1839,7 +1861,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Sin acceso a Fotos. Permita que YAAO3R agregue fotos en Configuración.",
   "已保存到相簿": "Guardado en fotos",
   "無法保存：%@": "No se pudo guardar: %@",
-  "投喂開發者": "Apoye al desarrollador"
+  "投喂開發者": "Apoye al desarrollador",
+  "更新時間": "Actualizado",
+  "詳細搜尋": "Búsqueda detallada",
+  "詳細篩選": "Filtros detallados",
+  "天": "dias",
+  "週": "semanas",
+  "個月": "meses",
+  "年": "años",
+  "數值": "Valor",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Ingrese palabras clave o toque la parte superior derecha para usar los filtros detallados de AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Si estos muestran traducciones cuando la traducción está activada en el lector. El título, el resumen y las notas se traducen al idioma de destino; fandoms y etiquetas en el idioma de la aplicación.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Servidor: %@. La cuenta es su correo electrónico de inicio de sesión de Jianguoyun; la contraseña es la contraseña de la aplicación que acaba de crear."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2453,7 +2486,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Pas d'accès aux photos. Autorisez YAAO3R à ajouter des photos dans Paramètres.",
   "已保存到相簿": "Enregistré dans les photos",
   "無法保存：%@": "Impossible d'enregistrer : %@",
-  "投喂開發者": "Soutenir le développeur"
+  "投喂開發者": "Soutenir le développeur",
+  "更新時間": "Mis à jour",
+  "詳細搜尋": "Recherche détaillée",
+  "詳細篩選": "Filtres détaillés",
+  "天": "jours",
+  "週": "semaines",
+  "個月": "mois",
+  "年": "années",
+  "數值": "Valeur",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Saisissez des mots-clés ou appuyez en haut à droite pour utiliser les filtres détaillés d'AO3.",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Indique si ceux-ci affichent les traductions lorsque la traduction est activée dans le lecteur. Le titre, le résumé et les notes sont traduits dans votre langue cible ; fandoms et tags dans la langue de l'application.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Serveur : %@. Le compte est votre e-mail de connexion Jianguoyun ; le mot de passe est le mot de passe de l'application que vous venez de créer."
  },
  "de": {
   "載入中": "Laden",
@@ -3067,7 +3111,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Kein Zugriff auf Fotos. Erlauben Sie YAAO3R, Fotos in den Einstellungen hinzuzufügen.",
   "已保存到相簿": "Unter Fotos gespeichert",
   "無法保存：%@": "Konnte nicht gespeichert werden: %@",
-  "投喂開發者": "Unterstützen Sie den Entwickler"
+  "投喂開發者": "Unterstützen Sie den Entwickler",
+  "更新時間": "Aktualisiert",
+  "詳細搜尋": "Detaillierte Suche",
+  "詳細篩選": "Detaillierte Filter",
+  "天": "Tage",
+  "週": "Wochen",
+  "個月": "Monate",
+  "年": "Jahre",
+  "數值": "Wert",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Geben Sie Schlüsselwörter ein oder tippen Sie oben rechts, um die detaillierten Filter von AO3 zu verwenden",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Ob diese Übersetzungen anzeigen, wenn die Übersetzung im Reader aktiviert ist. Titel, Zusammenfassung und Notizen werden in Ihre Zielsprache übersetzt; Fandoms und Tags in die App-Sprache.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Das Konto ist Ihre Jianguoyun-Login-E-Mail-Adresse. Das Passwort ist das App-Passwort, das Sie gerade erstellt haben."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3681,7 +3736,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Sem acesso às fotos. Permita que YAAO3R adicione fotos em Configurações.",
   "已保存到相簿": "Salvo em fotos",
   "無法保存：%@": "Não foi possível salvar: %@",
-  "投喂開發者": "Apoie o desenvolvedor"
+  "投喂開發者": "Apoie o desenvolvedor",
+  "更新時間": "Atualizado",
+  "詳細搜尋": "Pesquisa detalhada",
+  "詳細篩選": "Filtros detalhados",
+  "天": "dias",
+  "週": "semanas",
+  "個月": "meses",
+  "年": "anos",
+  "數值": "Valor",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Insira palavras-chave ou toque no canto superior direito para usar os filtros detalhados do AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Se estes mostram traduções quando a tradução está ativada no leitor. Título, resumo e notas são traduzidos para o idioma de destino; fandoms e tags para o idioma do aplicativo.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Servidor: %@. A conta é o seu e-mail de login do Jianguoyun; a senha é a senha do aplicativo que você acabou de criar."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4295,7 +4361,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Nessun accesso alle foto. Consenti a YAAO3R di aggiungere foto nelle Impostazioni.",
   "已保存到相簿": "Salvato in Foto",
   "無法保存：%@": "Impossibile salvare: %@",
-  "投喂開發者": "Supporta lo sviluppatore"
+  "投喂開發者": "Supporta lo sviluppatore",
+  "更新時間": "Aggiornato",
+  "詳細搜尋": "Ricerca dettagliata",
+  "詳細篩選": "Filtri dettagliati",
+  "天": "giorni",
+  "週": "settimane",
+  "個月": "mesi",
+  "年": "anni",
+  "數值": "Valore",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Inserisci le parole chiave o tocca in alto a destra per utilizzare i filtri dettagliati di AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Se mostrano le traduzioni quando la traduzione è attiva nel lettore. Titolo, riassunto e note sono tradotti nella lingua di destinazione; fandom e tag nella lingua dell'app.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. L'account è la tua email di accesso a Jianguoyun; la password è la password dell'app appena creata."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4909,7 +4986,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Нет доступа к фотографиям. Разрешите YAAO3R добавлять фотографии в настройках.",
   "已保存到相簿": "Сохранено в фотографиях",
   "無法保存：%@": "Не удалось сохранить: %@",
-  "投喂開發者": "Поддержите разработчика"
+  "投喂開發者": "Поддержите разработчика",
+  "更新時間": "Обновлено",
+  "詳細搜尋": "Детальный поиск",
+  "詳細篩選": "Подробные фильтры",
+  "天": "дни",
+  "週": "недели",
+  "個月": "месяцы",
+  "年": "годы",
+  "數值": "Значение",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Введите ключевые слова или коснитесь верхнего правого угла, чтобы использовать подробные фильтры AO3.",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Покажут ли они переводы, когда перевод включен в программе чтения. Название, резюме и примечания переводятся на целевой язык; фандомы и теги на язык приложения.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Сервер: %@. Учетная запись — это ваш адрес электронной почты для входа в Jianguoyun; пароль — это только что созданный вами пароль приложения."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5523,7 +5611,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Немає доступу до фотографій. Дозвольте YAAO3R додавати фотографії в налаштуваннях.",
   "已保存到相簿": "Збережено у фото",
   "無法保存：%@": "Не вдалося зберегти: %@",
-  "投喂開發者": "Підтримайте розробника"
+  "投喂開發者": "Підтримайте розробника",
+  "更新時間": "Оновлено",
+  "詳細搜尋": "Детальний пошук",
+  "詳細篩選": "Детальні фільтри",
+  "天": "днів",
+  "週": "тижнів",
+  "個月": "місяців",
+  "年": "років",
+  "數值": "Значення",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Введіть ключові слова або торкніться правого верхнього кута, щоб скористатися детальними фільтрами AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Чи показують переклади, коли переклад увімкнено в програмі для читання. Заголовок, резюме та примітки перекладаються на цільову мову; фандоми та теги на мову програми.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Сервер: %@. Обліковий запис — це ваша електронна адреса для входу в Jianguoyun; пароль – це пароль програми, який ви щойно створили."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6137,7 +6236,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Brak dostępu do zdjęć. Zezwól YAAO3R na dodawanie zdjęć w Ustawieniach.",
   "已保存到相簿": "Zapisano w Zdjęciach",
   "無法保存：%@": "Nie udało się zapisać: %@",
-  "投喂開發者": "Wesprzyj Dewelopera"
+  "投喂開發者": "Wesprzyj Dewelopera",
+  "更新時間": "Zaktualizowano",
+  "詳細搜尋": "Szczegółowe wyszukiwanie",
+  "詳細篩選": "Szczegółowe filtry",
+  "天": "dni",
+  "週": "tygodnie",
+  "個月": "miesiące",
+  "年": "lata",
+  "數值": "Wartość",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Wpisz słowa kluczowe lub dotknij prawego górnego rogu, aby skorzystać ze szczegółowych filtrów AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Określa, czy wyświetlają tłumaczenia, gdy w czytniku jest włączone tłumaczenie. Tytuł, streszczenie i notatki są tłumaczone na Twój język docelowy; fandomy i tagi na język aplikacji.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Serwer: %@. Konto to Twój adres e-mail logowania Jianguoyun; hasło to hasło do aplikacji, które właśnie utworzyłeś."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -6751,7 +6861,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Fotoğraflar'a erişim yok. YAAO3R'nin Ayarlar'da fotoğraf eklemesine izin verin.",
   "已保存到相簿": "Fotoğraflar'a kaydedildi",
   "無法保存：%@": "Kaydedilemedi: %@",
-  "投喂開發者": "Geliştiriciyi Destekleyin"
+  "投喂開發者": "Geliştiriciyi Destekleyin",
+  "更新時間": "Güncellendi",
+  "詳細搜尋": "Detaylı Arama",
+  "詳細篩選": "Ayrıntılı Filtreler",
+  "天": "günler",
+  "週": "haftalar",
+  "個月": "aylar",
+  "年": "yıllar",
+  "數值": "Değer",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Anahtar kelimeleri girin veya AO3'ün ayrıntılı filtrelerini kullanmak için sağ üst köşeye dokunun",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Okuyucuda çeviri açıkken bunların çevirileri gösterip göstermeyeceği. Başlık, özet ve notlar hedef dilinize çevrilir; fandomları ve etiketleri uygulama diline aktarın.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Sunucu: %@. Hesap, Jianguoyun giriş e-postanızdır; şifre, az önce oluşturduğunuz uygulama şifresidir."
  },
  "nl": {
   "載入中": "Laden",
@@ -7365,7 +7486,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Geen toegang tot Foto's. Sta YAAO3R toe om foto's toe te voegen in Instellingen.",
   "已保存到相簿": "Opgeslagen in Foto's",
   "無法保存：%@": "Kon niet opslaan: %@",
-  "投喂開發者": "Ondersteun de ontwikkelaar"
+  "投喂開發者": "Ondersteun de ontwikkelaar",
+  "更新時間": "Bijgewerkt",
+  "詳細搜尋": "Gedetailleerd zoeken",
+  "詳細篩選": "Gedetailleerde filters",
+  "天": "dagen",
+  "週": "weken",
+  "個月": "maanden",
+  "年": "jaren",
+  "數值": "Waarde",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Voer trefwoorden in of tik rechtsboven om de gedetailleerde filters van AO3 te gebruiken",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Of deze vertalingen tonen wanneer vertaling is ingeschakeld in de reader. Titel, samenvatting en notities worden vertaald in uw doeltaal; fandoms en tags in de app-taal.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Het account is uw Jianguoyun-inlog-e-mailadres; het wachtwoord is het app-wachtwoord dat u zojuist hebt gemaakt."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -7979,7 +8111,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "لا يمكن الوصول إلى الصور. اسمح لـ YAAO3R بإضافة الصور في الإعدادات.",
   "已保存到相簿": "تم الحفظ في الصور",
   "無法保存：%@": "لا يمكن الحفظ: %@",
-  "投喂開發者": "دعم المطور"
+  "投喂開發者": "دعم المطور",
+  "更新時間": "تم التحديث",
+  "詳細搜尋": "بحث تفصيلي",
+  "詳細篩選": "مرشحات مفصلة",
+  "天": "أيام",
+  "週": "أسابيع",
+  "個月": "أشهر",
+  "年": "سنوات",
+  "數值": "القيمة",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "أدخل الكلمات الرئيسية، أو اضغط على الجزء العلوي الأيمن لاستخدام مرشحات AO3 التفصيلية",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "ما إذا كانت هذه تظهر الترجمات عند تشغيل الترجمة في القارئ. تتم ترجمة العنوان والملخص والملاحظات إلى لغتك المستهدفة؛ fandoms والعلامات في لغة التطبيق.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "الخادم: %@. الحساب هو البريد الإلكتروني الخاص بك لتسجيل الدخول إلى Jianguoyun؛ كلمة المرور هي كلمة مرور التطبيق التي أنشأتها للتو."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -8593,7 +8736,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "फ़ोटो तक पहुंच नहीं. YAAO3R को सेटिंग्स में फ़ोटो जोड़ने की अनुमति दें।",
   "已保存到相簿": "फ़ोटो में सहेजा गया",
   "無法保存：%@": "सहेजा नहीं जा सका: %@",
-  "投喂開發者": "डेवलपर का समर्थन करें"
+  "投喂開發者": "डेवलपर का समर्थन करें",
+  "更新時間": "अद्यतन किया गया",
+  "詳細搜尋": "विस्तृत खोज",
+  "詳細篩選": "विस्तृत फ़िल्टर",
+  "天": "दिन",
+  "週": "सप्ताह",
+  "個月": "महीने",
+  "年": "साल",
+  "數值": "मूल्य",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "कीवर्ड दर्ज करें, या AO3 के विस्तृत फ़िल्टर का उपयोग करने के लिए शीर्ष दाईं ओर टैप करें",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "क्या ये रीडर में अनुवाद चालू होने पर अनुवाद दिखाते हैं। शीर्षक, सारांश और नोट्स का आपकी लक्षित भाषा में अनुवाद किया जाता है; ऐप भाषा में प्रशंसक और टैग।",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "सर्वर: %@। खाता आपका जियानगुओयुन लॉगिन ईमेल है; पासवर्ड वह ऐप पासवर्ड है जिसे आपने अभी बनाया है।"
  },
  "id": {
   "載入中": "Memuat",
@@ -9207,7 +9361,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Tidak ada akses ke Foto. Izinkan YAAO3R menambahkan foto di Pengaturan.",
   "已保存到相簿": "Disimpan ke Foto",
   "無法保存：%@": "Tidak dapat menyimpan: %@",
-  "投喂開發者": "Dukung Pengembang"
+  "投喂開發者": "Dukung Pengembang",
+  "更新時間": "Diperbarui",
+  "詳細搜尋": "Pencarian Terperinci",
+  "詳細篩選": "Filter Terperinci",
+  "天": "hari",
+  "週": "minggu",
+  "個月": "bulan",
+  "年": "tahun",
+  "數值": "Nilai",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Masukkan kata kunci, atau ketuk kanan atas untuk menggunakan filter detail AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Apakah ini menampilkan terjemahan saat terjemahan aktif di pembaca. Judul, ringkasan dan catatan diterjemahkan ke dalam bahasa target Anda; fandom dan tag ke dalam bahasa aplikasi.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Server: %@. Akun tersebut adalah email login Jianguoyun Anda; kata sandinya adalah kata sandi aplikasi yang baru saja Anda buat."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -9821,7 +9986,18 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "Không có quyền truy cập vào Ảnh. Cho phép YAAO3R thêm ảnh trong Cài đặt.",
   "已保存到相簿": "Đã lưu vào Ảnh",
   "無法保存：%@": "Không thể lưu: %@",
-  "投喂開發者": "Hỗ trợ nhà phát triển"
+  "投喂開發者": "Hỗ trợ nhà phát triển",
+  "更新時間": "Đã cập nhật",
+  "詳細搜尋": "Tìm kiếm chi tiết",
+  "詳細篩選": "Bộ lọc chi tiết",
+  "天": "ngày",
+  "週": "tuần",
+  "個月": "tháng",
+  "年": "năm",
+  "數值": "Giá trị",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "Nhập từ khóa hoặc nhấn vào trên cùng bên phải để sử dụng bộ lọc chi tiết của AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "Liệu những thông tin này có hiển thị bản dịch khi tính năng dịch được bật trong trình đọc hay không. Tiêu đề, tóm tắt và ghi chú được dịch sang ngôn ngữ mục tiêu của bạn; fandom và thẻ vào ngôn ngữ ứng dụng.",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "Máy chủ: %@. Tài khoản là email đăng nhập Jianguoyun của bạn; mật khẩu là mật khẩu ứng dụng bạn vừa tạo."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -10435,6 +10611,17 @@
   "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": "ไม่สามารถเข้าถึงรูปถ่าย อนุญาตให้ YAAO3R เพิ่มรูปภาพในการตั้งค่า",
   "已保存到相簿": "บันทึกลงในรูปภาพแล้ว",
   "無法保存：%@": "ไม่สามารถบันทึก: %@",
-  "投喂開發者": "สนับสนุนนักพัฒนา"
+  "投喂開發者": "สนับสนุนนักพัฒนา",
+  "更新時間": "อัปเดตแล้ว",
+  "詳細搜尋": "ค้นหาโดยละเอียด",
+  "詳細篩選": "ตัวกรองโดยละเอียด",
+  "天": "วัน",
+  "週": "สัปดาห์",
+  "個月": "เดือน",
+  "年": "ปี",
+  "數值": "ความคุ้มค่า",
+  "輸入關鍵字，或點右上角使用官網的詳細篩選": "ป้อนคำสำคัญหรือแตะด้านบนขวาเพื่อใช้ตัวกรองรายละเอียดของ AO3",
+  "閱讀頁開啟翻譯時，這些內容是否顯示譯文。作品名稱、簡介與作者註譯成翻譯設定的目標語言，原作與各類標籤譯成介面語言。": "ไม่ว่าสิ่งเหล่านี้จะแสดงคำแปลเมื่อเปิดการแปลในโปรแกรมอ่านหรือไม่ ชื่อเรื่อง บทสรุป และหมายเหตุได้รับการแปลเป็นภาษาเป้าหมายของคุณ แฟนดอมและแท็กเป็นภาษาของแอป",
+  "伺服器位址填 %@，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "เซิร์ฟเวอร์: %@ บัญชีนี้คืออีเมลเข้าสู่ระบบ Jianguoyun ของคุณ รหัสผ่านคือรหัสผ่านสำหรับแอปที่คุณเพิ่งสร้างขึ้น"
  }
 }
