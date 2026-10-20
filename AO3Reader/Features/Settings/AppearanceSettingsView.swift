@@ -177,6 +177,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
 
     @ViewBuilder
     private func modeSections(layout: Binding<ReaderLayout>) -> some View {
+        let appearance = app.appearance
         Section("閱讀模式") {
             Picker("模式", selection: layout.mode) {
                 ForEach(ReadingMode.allCases) { Text($0.title).tag($0) }
