@@ -190,13 +190,20 @@ extension TranslationProviderKind {
 
     /// 原文語言選單的選項：常用語言在前，其餘依介面語言的名稱排序
     var sourceLanguages: [TranslationLanguage] {
-        let pool = TranslationLanguage.sourceCatalog.filter { supportedSourceCodes?.contains($0.code) ?? true }
-        let common = Set(TranslationLanguage.all.map(\.code))
-        let head = pool.filter { common.contains($0.code) }
-        let tail = pool.filter { !common.contains($0.code) }
-            .sorted { $0.displayName.localizedStandardCompare($1.displayName) == .orderedAscending }
-        return head + tail
+        guard let codes = supportedSourceCodes else { return Self.sortedSourceCatalog }
+        return Self.sortedSourceCatalog.filter { codes.contains($0.code) }
     }
+
+    /// 排序好的完整原文目錄只計算一次（名稱排序需要逐一查詢語系名稱，每次重繪都重算會造成明顯延遲）
+    private static let sortedSourceCatalog: [TranslationLanguage] = {
+        let common = Set(TranslationLanguage.all.map(\.code))
+        let head = TranslationLanguage.sourceCatalog.filter { common.contains($0.code) }
+        let tail = TranslationLanguage.sourceCatalog.filter { !common.contains($0.code) }
+            .map { ($0, $0.displayName) }
+            .sorted { $0.1.localizedStandardCompare($1.1) == .orderedAscending }
+            .map(\.0)
+        return head + tail
+    }()
 
     func supportsSource(_ code: String) -> Bool {
         code != "zh-HK" && (supportedSourceCodes?.contains(code) ?? (TranslationLanguage.lookup(code) != nil))

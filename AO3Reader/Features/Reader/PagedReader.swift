@@ -107,8 +107,8 @@ enum PagedTextBuilder {
             append(title, font: style.uiFont(scale: 1.5, weight: .bold), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5))
         }
         if let summary {
-            append(summary, font: style.uiFont(scale: 0.9), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
-            appendMetaTranslation(ReaderViewModel.summaryID, scale: 0.9)
+            append(summary, font: style.uiFont(), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
+            appendMetaTranslation(ReaderViewModel.summaryID, scale: 1)
         }
         if let chapterTitle {
             append(chapterTitle, font: style.uiFont(scale: 1.2, weight: .semibold), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing * 1.5))
@@ -117,8 +117,9 @@ enum PagedTextBuilder {
         func appendNote(_ note: PagedNote) {
             append(note.title, font: style.uiFont(scale: 0.8, weight: .semibold), color: secondaryColor,
                    paragraph: paragraphStyle(after: 4))
-            append(note.text, font: style.uiFont(scale: 0.9), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
-            appendMetaTranslation(note.id, scale: 0.9)
+            // 作者註與正文使用相同字體
+            append(note.text, font: style.uiFont(), color: textColor, paragraph: paragraphStyle(after: layout.paragraphSpacing))
+            appendMetaTranslation(note.id, scale: 1)
         }
         for note in leadingNotes { appendNote(note) }
 

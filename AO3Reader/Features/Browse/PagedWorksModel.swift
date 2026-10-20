@@ -15,6 +15,8 @@ final class PagedWorksModel {
     var error: String?
 
     private var page = 0
+    /// 每次重新載入遞增，用來丟棄過期的請求結果
+    private var generation = 0
     private var loader: Loader
 
     init(loader: @escaping Loader) {
@@ -25,9 +27,19 @@ final class PagedWorksModel {
         self.loader = loader
     }
 
-    func reload() async {
+    /// 重新載入第一頁。`clear` 為 true 時（篩選條件改變）立即清空舊結果並顯示載入中；
+    /// 進行中的舊請求結果會被丟棄，不會擋住或覆蓋這次載入。
+    func reload(clear: Bool = false) async {
+        generation += 1
         page = 0
         hasNextPage = false
+        isLoading = false
+        if clear {
+            works = []
+            heading = nil
+            error = nil
+            hasLoaded = false
+        }
         await loadNext(reset: true)
     }
 
@@ -38,10 +50,17 @@ final class PagedWorksModel {
 
     private func loadNext(reset: Bool) async {
         guard !isLoading else { return }
+        let generation = generation
         isLoading = true
-        defer { isLoading = false; hasLoaded = true }
+        defer {
+            if generation == self.generation {
+                isLoading = false
+                hasLoaded = true
+            }
+        }
         do {
             let result = try await loader(page + 1)
+            guard generation == self.generation else { return }
             page = result.page
             hasNextPage = result.hasNextPage
             heading = result.heading
@@ -51,6 +70,7 @@ final class PagedWorksModel {
             works = reset ? fresh : works + fresh
             error = nil
         } catch {
+            guard generation == self.generation else { return }
             self.error = error.localizedDescription
         }
     }

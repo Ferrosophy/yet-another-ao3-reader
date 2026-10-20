@@ -124,7 +124,8 @@ struct LatestWorksView: View {
                 model = PagedWorksModel(loader: loader)
             }
             currentIndex = 0
-            await model?.reload()
+            // 篩選改變後立即清空舊卡片並重新載入
+            await model?.reload(clear: true)
         }
     }
 

@@ -406,10 +406,9 @@ struct ReaderView: View {
                 AO3TermLabel(title: title, english: english)
                     .appFont(.caption, weight: .semibold)
                     .foregroundStyle(cardForeground.opacity(0.7))
-                Text(text)
-                    .appFont(.callout)
-                    .foregroundStyle(cardForeground)
-                metaTranslation(id, font: style.uiFont(scale: 0.9 * style.translation.scale, italic: style.translation.italic))
+                // 簡介與作者註使用與正文相同的閱讀字體
+                ReaderTextView(text: text, font: style.uiFont(), style: style, color: cardForeground)
+                metaTranslation(id, font: style.uiFont(scale: style.translation.scale, italic: style.translation.italic))
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -519,39 +518,49 @@ struct ReaderView: View {
                         changeChapter(forward: false)
                     }
 
-                    HStack(spacing: 18) {
+                    // 每個按鈕的點擊範圍填滿膠囊的一半，不只圖示本身
+                    HStack(spacing: 0) {
                         Button { showsChapters = true } label: {
                             Image(systemName: "list.bullet")
+                                .frame(width: 52, height: 48)
+                                .contentShape(.rect)
                         }
                         .accessibilityLabel("章節")
                         Button { showsAppearance = true } label: {
                             Image(systemName: "textformat.size")
+                                .frame(width: 52, height: 48)
+                                .contentShape(.rect)
                         }
                         .accessibilityLabel("閱讀設定")
                     }
                     .appFont(.title3)
-                    .padding(.horizontal, 18)
-                    .frame(height: 48)
+                    .padding(.horizontal, 4)
                     .glassEffect(.regular.interactive(), in: .capsule)
 
-                    Button {
-                        withAnimation(.bouncy) { model.isTranslationOn.toggle() }
-                    } label: {
-                        Image(systemName: "translate")
-                            .appFont(.title3)
-                            .foregroundStyle(model.isTranslationOn ? .white : .primary)
-                            .frame(width: 48, height: 48)
-                    }
-                    .glassEffect(
-                        model.isTranslationOn ? .regular.tint(.accentColor).interactive() : .regular.interactive(),
-                        in: .circle
-                    )
-                    .glassEffectID("translate", in: glass)
-                    .contextMenu {
-                        Button("翻譯設定", systemImage: "gearshape") { showsTranslationSettings = true }
-                    }
-                    .accessibilityLabel(model.isTranslationOn ? "關閉翻譯" : "開啟翻譯")
-                    .accessibilityHint("長按開啟翻譯設定")
+                    // 點擊切換翻譯；長按直接開啟翻譯設定（不經過內容選單，避免預覽動畫的延遲）
+                    Image(systemName: "translate")
+                        .appFont(.title3)
+                        .foregroundStyle(model.isTranslationOn ? .white : .primary)
+                        .frame(width: 48, height: 48)
+                        .contentShape(.circle)
+                        .glassEffect(
+                            model.isTranslationOn ? .regular.tint(.accentColor).interactive() : .regular.interactive(),
+                            in: .circle
+                        )
+                        .glassEffectID("translate", in: glass)
+                        .onTapGesture {
+                            withAnimation(.bouncy) { model.isTranslationOn.toggle() }
+                        }
+                        .onLongPressGesture(minimumDuration: 0.35) {
+                            showsTranslationSettings = true
+                        }
+                        .sensoryFeedback(.impact, trigger: showsTranslationSettings) { _, new in new }
+                        .accessibilityElement()
+                        .accessibilityAddTraits(.isButton)
+                        .accessibilityLabel(model.isTranslationOn ? "關閉翻譯" : "開啟翻譯")
+                        .accessibilityHint("長按開啟翻譯設定")
+                        .accessibilityAction { withAnimation(.bouncy) { model.isTranslationOn.toggle() } }
+                        .accessibilityAction(named: "翻譯設定") { showsTranslationSettings = true }
 
                     if model.isTranslationOn {
                         languageMenu
