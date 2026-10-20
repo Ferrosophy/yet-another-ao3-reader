@@ -97,7 +97,7 @@ struct OfflineStatusView: View {
         case .paused: return String(localized: "已暫停")
         case .waitingForWiFi: return String(localized: "等待 Wi-Fi 連線")
         case .awaitingConsent: return String(localized: "翻譯會使用付費 API，長按確認後開始")
-        case .failed(let message): return String(localized: "失敗：\(message)")
+        case .failed(let message): return message
         case nil: break
         }
         guard let record = offline.records[id], record.downloadedAt != nil else { return String(localized: "未離線") }
@@ -121,6 +121,10 @@ struct OfflineMenu: View {
     @Binding var shared: DownloadedFile?
     @Environment(AppState.self) private var app
 
+    private func share(bilingual: Bool) {
+        if let url = app.offline.shareFile(id, bilingual: bilingual) { shared = DownloadedFile(url: url) }
+    }
+
     var body: some View {
         let offline = app.offline
         let record = offline.records[id]
@@ -139,8 +143,9 @@ struct OfflineMenu: View {
             }
         }
         if offline.hasOfflineCopy(id) {
-            if let url = offline.exportURL(id) {
-                Button("分享匯出檔", systemImage: "square.and.arrow.up") { shared = DownloadedFile(url: url) }
+            Menu("分享", systemImage: "square.and.arrow.up") {
+                Button("原文") { share(bilingual: false) }
+                Button("原文與譯文") { share(bilingual: true) }
             }
             Button("檢查新章節", systemImage: "arrow.triangle.2.circlepath") { offline.update(id) }
             Button("重新翻譯", systemImage: "translate") { offline.retranslate(id) }

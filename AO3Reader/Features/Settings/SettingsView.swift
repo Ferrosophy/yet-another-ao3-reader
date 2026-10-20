@@ -24,14 +24,6 @@ struct SettingsView: View {
     @AppStorage(OfflineManager.autoTranslateKey) private var offlineTranslates = true
     @AppStorage(OfflineManager.wifiOnlyKey) private var offlineWiFiOnly = false
     @AppStorage(DownloadFormat.storageKey) private var downloadFormat: DownloadFormat = .epub
-    @AppStorage(TranslationVisibility.titleKey) private var showsTitleTranslation = true
-    @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
-    @AppStorage(TranslationVisibility.tagsKey) private var showsTagTranslation = true
-    @AppStorage(TranslationVisibility.summaryKey) private var showsSummaryTranslation = true
-    @AppStorage(TranslationVisibility.readerTitleKey) private var readerShowsTitle = true
-    @AppStorage(TranslationVisibility.readerFandomKey) private var readerShowsFandom = true
-    @AppStorage(TranslationVisibility.readerTagsKey) private var readerShowsTags = true
-    @AppStorage(TranslationVisibility.readerSummaryKey) private var readerShowsSummary = true
 
     var body: some View {
         List {
@@ -73,26 +65,9 @@ struct SettingsView: View {
                 LabeledContent("應用版本", value: Self.versionString)
             }
 
-            Section {
-                Toggle("作品名稱", isOn: $showsTitleTranslation)
-                Toggle("Fandom", isOn: $showsFandomTranslation)
-                Toggle("標籤", isOn: $showsTagTranslation)
-                Toggle("簡介", isOn: $showsSummaryTranslation)
-            } header: {
-                Text("瀏覽頁顯示譯文")
-            } footer: {
-                Text("瀏覽頁的作品卡片與各作品列表。")
-            }
-
-            Section {
-                Toggle("作品名稱", isOn: $readerShowsTitle)
-                Toggle("Fandom", isOn: $readerShowsFandom)
-                Toggle("標籤", isOn: $readerShowsTags)
-                Toggle("簡介", isOn: $readerShowsSummary)
-            } header: {
-                Text("閱讀頁顯示譯文")
-            } footer: {
-                Text("閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。")
+            Section("譯文顯示") {
+                NavigationLink("瀏覽頁") { TranslationVisibilityView(scope: .browse) }
+                NavigationLink("閱讀頁") { TranslationVisibilityView(scope: .reader) }
             }
 
             Section {
@@ -154,5 +129,45 @@ struct SettingsView: View {
         .confirmationDialog("刪除所有 API Key？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
             Button("刪除", role: .destructive) { KeychainStore.deleteAll() }
         }
+    }
+}
+
+/// 設定 › 譯文顯示：瀏覽頁或閱讀頁分別決定作品名稱、Fandom、標籤、簡介是否顯示譯文。
+struct TranslationVisibilityView: View {
+    enum Scope { case browse, reader }
+    let scope: Scope
+
+    @AppStorage(TranslationVisibility.titleKey) private var browseTitle = true
+    @AppStorage(TranslationVisibility.fandomKey) private var browseFandom = true
+    @AppStorage(TranslationVisibility.tagsKey) private var browseTags = true
+    @AppStorage(TranslationVisibility.summaryKey) private var browseSummary = true
+    @AppStorage(TranslationVisibility.readerTitleKey) private var readerTitle = true
+    @AppStorage(TranslationVisibility.readerFandomKey) private var readerFandom = true
+    @AppStorage(TranslationVisibility.readerTagsKey) private var readerTags = true
+    @AppStorage(TranslationVisibility.readerSummaryKey) private var readerSummary = true
+
+    var body: some View {
+        Form {
+            Section {
+                if scope == .browse {
+                    Toggle("作品名稱", isOn: $browseTitle)
+                    Toggle("Fandom", isOn: $browseFandom)
+                    Toggle("標籤", isOn: $browseTags)
+                    Toggle("簡介", isOn: $browseSummary)
+                } else {
+                    Toggle("作品名稱", isOn: $readerTitle)
+                    Toggle("Fandom", isOn: $readerFandom)
+                    Toggle("標籤", isOn: $readerTags)
+                    Toggle("簡介", isOn: $readerSummary)
+                }
+            } footer: {
+                if scope == .browse {
+                    Text("瀏覽頁的作品卡片與各作品列表。")
+                } else {
+                    Text("閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。")
+                }
+            }
+        }
+        .navigationTitle(scope == .browse ? "瀏覽頁" : "閱讀頁")
     }
 }

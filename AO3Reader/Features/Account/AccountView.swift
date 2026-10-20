@@ -17,15 +17,17 @@ struct AccountView: View {
             }
         }
         .navigationTitle("帳號")
-        .safeAreaInset(edge: .top, spacing: 0) {
-            // 使用者資料只能二選一：AO3 帳號，或本機保存（可經 iCloud / WebDAV 同步）
-            Picker("使用者資料", selection: $dataSource) {
-                ForEach(DataSource.allCases) { Text($0.title).tag($0) }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            // 使用者資料只能二選一：AO3 帳號，或本機保存（可經 iCloud / WebDAV 同步）。
+            // 放在導覽列中間，不另外疊一層背景（避免與大標題的模糊背景重疊）
+            ToolbarItem(placement: .principal) {
+                Picker("使用者資料", selection: $dataSource) {
+                    ForEach(DataSource.allCases) { Text($0.title).tag($0) }
+                }
+                .pickerStyle(.segmented)
+                .fixedSize()
             }
-            .pickerStyle(.segmented)
-            .padding(.horizontal, 16)
-            .padding(.vertical, 8)
-            .background(.bar)
         }
         .onChange(of: dataSource) { _, source in
             if source == .local { Task { await app.librarySync.syncNow() } }

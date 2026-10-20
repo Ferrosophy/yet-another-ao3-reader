@@ -107,6 +107,24 @@ final class OfflineManager {
 
     var totalSize: Int64 { sizes.values.reduce(0, +) }
 
+    /// 分享用的檔案：原文或原文與譯文。
+    /// - 原文：匯出格式為官網格式時直接用匯出檔，否則（EPUB）另外產生只有原文的 EPUB。
+    /// - 原文與譯文：匯出格式為 EPUB 時直接用匯出檔，否則另外產生雙語 EPUB。
+    func shareFile(_ id: Int, bilingual: Bool) -> URL? {
+        let format = records[id]?.format ?? .epub
+        if (format == .epub) == bilingual, let url = exportURL(id) { return url }
+        guard let work = Self.loadWork(id) else { return nil }
+        let data = BilingualEPUB.make(work: work, translations: bilingual ? Self.loadTranslations(id) : nil)
+        let suffix = bilingual ? String(localized: "原文與譯文") : String(localized: "原文")
+        let url = URL.temporaryDirectory.appending(path: "\(AO3Client.fileName(work.title)) (\(suffix)).epub")
+        do {
+            try data.write(to: url, options: .atomic)
+            return url
+        } catch {
+            return nil
+        }
+    }
+
     // MARK: 操作
 
     /// 加入書架時呼叫：設定匯出格式並開始離線處理
@@ -325,7 +343,7 @@ final class OfflineManager {
             if Task.isCancelled {
                 if activity[id] != nil { activity[id] = .paused }
             } else {
-                activity[id] = .failed(error.localizedDescription)
+                activity[id] = .failed(String(localized: "失敗：\(error.localizedDescription)"))
             }
         }
         saveRecords()

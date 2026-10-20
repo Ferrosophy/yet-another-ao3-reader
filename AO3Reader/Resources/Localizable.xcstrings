@@ -2117,7 +2117,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple 翻译需要先下载这组语言才能在设备上翻译。下载后可脱机使用。"
+            "value": "Apple 翻译需要先下载这组语言才能在设备上翻译。下载后可离线使用。"
           }
         },
         "zh-Hant": {
@@ -6407,7 +6407,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "下载脱机内容"
+            "value": "下载离线内容"
           }
         },
         "zh-Hant": {
@@ -8434,149 +8434,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "伺服器位址"
-          }
-        }
-      }
-    },
-    "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "أدخل https://dav.jianguoyun.com/dav/ كعنوان الخادم، والبريد الإلكتروني لتسجيل الدخول إلى Jianguoyun كحساب، وكلمة المرور التي تم إنشاؤها ككلمة مرور التطبيق (وليس كلمة مرور تسجيل الدخول الخاصة بك)."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geben Sie https://dav.jianguoyun.com/dav/ als Serveradresse, Ihre Jianguoyun-Login-E-Mail-Adresse als Konto und das generierte Passwort als App-Passwort ein (nicht Ihr Login-Passwort)."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Enter https://dav.jianguoyun.com/dav/ as the server address, your Jianguoyun login email as the account, and the generated password as the app password (not your login password)."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ingrese https://dav.jianguoyun.com/dav/ como dirección del servidor, su correo electrónico de inicio de sesión de Jianguoyun como cuenta y la contraseña generada como contraseña de la aplicación (no su contraseña de inicio de sesión)."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Entrez https://dav.jianguoyun.com/dav/ comme adresse du serveur, votre e-mail de connexion Jianguoyun comme compte et le mot de passe généré comme mot de passe de l'application (pas votre mot de passe de connexion)."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "सर्वर पते के रूप में https://dav.jianguoyun.com/dav/, खाते के रूप में अपना जियानगुओयुन लॉगिन ईमेल और ऐप पासवर्ड के रूप में जेनरेट किया गया पासवर्ड दर्ज करें (आपका लॉगिन पासवर्ड नहीं)।"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Masukkan https://dav.jianguoyun.com/dav/ sebagai alamat server, email login Jianguoyun Anda sebagai akun, dan kata sandi yang dibuat sebagai kata sandi aplikasi (bukan kata sandi login Anda)."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Inserisci https://dav.jianguoyun.com/dav/ come indirizzo del server, l'e-mail di accesso a Jianguoyun come account e la password generata come password dell'app (non la password di accesso)."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "サーバー アドレスとして https://dav.jianguoyun.com/dav/ を入力し、アカウントとして Jianguoyun ログイン メールアドレスを入力し、アプリ パスワード (ログイン パスワードではありません) として生成されたパスワードを入力します。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "https://dav.jianguoyun.com/dav/를 서버 주소로, Jianguoyun 로그인 이메일을 계정으로, 생성된 비밀번호를 앱 비밀번호(로그인 비밀번호 아님)로 입력하세요."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Voer https://dav.jianguoyun.com/dav/ in als serveradres, uw Jianguoyun-inlog-e-mailadres als account en het gegenereerde wachtwoord als app-wachtwoord (niet uw inlogwachtwoord)."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wpisz https://dav.jianguoyun.com/dav/ jako adres serwera, swój adres e-mail logowania Jianguoyun jako konto i wygenerowane hasło jako hasło do aplikacji (nie hasło logowania)."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Digite https://dav.jianguoyun.com/dav/ como endereço do servidor, seu e-mail de login do Jianguoyun como conta e a senha gerada como senha do aplicativo (não sua senha de login)."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Введите https://dav.jianguoyun.com/dav/ в качестве адреса сервера, свой адрес электронной почты для входа в Jianguoyun в качестве учетной записи и сгенерированный пароль в качестве пароля приложения (а не вашего пароля для входа)."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ป้อน https://dav.jianguoyun.com/dav/ เป็นที่อยู่เซิร์ฟเวอร์ อีเมลเข้าสู่ระบบ Jianguoyun ของคุณเป็นบัญชี และรหัสผ่านที่สร้างขึ้นเป็นรหัสผ่านสำหรับแอป (ไม่ใช่รหัสผ่านเข้าสู่ระบบของคุณ)"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunucu adresi olarak https://dav.jianguoyun.com/dav/ adresini, hesap olarak Jianguoyun giriş e-postanızı ve uygulama şifresi olarak oluşturulan şifreyi (giriş şifreniz değil) girin."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Введіть https://dav.jianguoyun.com/dav/ як адресу сервера, свою електронну адресу для входу в Jianguoyun як обліковий запис і згенерований пароль як пароль програми (не ваш пароль для входу)."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nhập https://dav.jianguoyun.com/dav/ làm địa chỉ máy chủ, email đăng nhập Jianguoyun của bạn làm tài khoản và mật khẩu được tạo làm mật khẩu ứng dụng (không phải mật khẩu đăng nhập của bạn)."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "服务器地址填 https://dav.jianguoyun.com/dav/，账号填坚果云的登录信箱，应用密码填刚才生成的密码（不是登录密码）。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "伺服器位址填 https://dav.jianguoyun.com/dav/，帳戶填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "伺服器位址填 https://dav.jianguoyun.com/dav/，帳戶填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。"
           }
         }
       }
@@ -14873,6 +14730,149 @@
         }
       }
     },
+    "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل نفس الإعدادات على أجهزتك الأخرى للمزامنة. تعمل أي خدمة WebDAV أيضًا، مثل Nextcloud أو Synology NAS."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geben Sie auf Ihren anderen zu synchronisierenden Geräten dieselben Einstellungen ein. Jeder WebDAV-Dienst funktioniert ebenfalls, z. B. Nextcloud oder Synology NAS."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter the same settings on your other devices to sync. Any WebDAV service works too, such as Nextcloud or Synology NAS."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingrese la misma configuración en sus otros dispositivos para sincronizar. Cualquier servicio WebDAV también funciona, como Nextcloud o Synology NAS."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrez les mêmes paramètres sur vos autres appareils à synchroniser. N'importe quel service WebDAV fonctionne également, comme Nextcloud ou Synology NAS."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सिंक करने के लिए अपने अन्य डिवाइस पर समान सेटिंग्स दर्ज करें। कोई भी WebDAV सेवा भी काम करती है, जैसे Nextcloud या Synology NAS।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masukkan pengaturan yang sama di perangkat Anda yang lain untuk disinkronkan. Layanan WebDAV apa pun juga berfungsi, seperti Nextcloud atau Synology NAS."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inserisci le stesse impostazioni sugli altri dispositivi da sincronizzare. Funziona anche qualsiasi servizio WebDAV, come Nextcloud o Synology NAS."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同期する他のデバイスにも同じ設定を入力します。 Nextcloud や Synology NAS などの WebDAV サービスも機能します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "동기화할 다른 장치에도 동일한 설정을 입력하세요. Nextcloud 또는 Synology NAS와 같은 모든 WebDAV 서비스도 작동합니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voer dezelfde instellingen in op uw andere apparaten om te synchroniseren. Elke WebDAV-service werkt ook, zoals Nextcloud of Synology NAS."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wprowadź te same ustawienia na innych urządzeniach, które chcesz zsynchronizować. Działa również każda usługa WebDAV, taka jak Nextcloud lub Synology NAS."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insira as mesmas configurações em seus outros dispositivos para sincronizar. Qualquer serviço WebDAV também funciona, como Nextcloud ou Synology NAS."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введите те же настройки на других устройствах для синхронизации. Также работает любая служба WebDAV, например Nextcloud или Synology NAS."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ป้อนการตั้งค่าเดียวกันบนอุปกรณ์อื่นๆ ของคุณเพื่อซิงค์ บริการ WebDAV ใดๆ ก็ใช้งานได้เช่นกัน เช่น Nextcloud หรือ Synology NAS"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senkronize etmek için diğer cihazlarınızda da aynı ayarları girin. Nextcloud veya Synology NAS gibi herhangi bir WebDAV hizmeti de çalışır."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Введіть ті самі налаштування на інших пристроях для синхронізації. Також працює будь-яка служба WebDAV, наприклад Nextcloud або Synology NAS."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nhập các cài đặt tương tự trên các thiết bị khác của bạn để đồng bộ hóa. Bất kỳ dịch vụ WebDAV nào cũng hoạt động, chẳng hạn như Nextcloud hoặc Synology NAS."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他设备填入相同设置即可同步。也可使用 Nextcloud、群晖 NAS 等任何 WebDAV 服务。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+          }
+        }
+      }
+    },
     "其他（%lld）": {
       "extractionState": "manual",
       "localizations": {
@@ -15155,149 +15155,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "分享"
-          }
-        }
-      }
-    },
-    "分享匯出檔": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مشاركة الملف الذي تم تصديره"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Exportierte Datei teilen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Share Exported File"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Compartir archivo exportado"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Partager le fichier exporté"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "निर्यात की गई फ़ाइल साझा करें"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bagikan File yang Diekspor"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Condividi file esportato"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "エクスポートされたファイルを共有する"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "내보낸 파일 공유"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Geëxporteerd bestand delen"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Udostępnij wyeksportowany plik"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Compartilhar arquivo exportado"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Поделиться экспортированным файлом"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แชร์ไฟล์ที่ส่งออก"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dışa Aktarılan Dosyayı Paylaş"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Поділитися експортованим файлом"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chia sẻ tệp đã xuất"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享导出档"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享匯出檔"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享匯出檔"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享匯出檔"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "分享匯出檔"
           }
         }
       }
@@ -16703,7 +16560,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "删除脱机内容"
+            "value": "删除离线内容"
           }
         },
         "zh-Hant": {
@@ -17275,7 +17132,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "加入书架的作品会自动下载到 App 内，可脱机阅读。EPUB 为 App 产生的双语版本，其他格式使用 AO3 官网文件；导出档可在「文件」App 的 YAAO3R › Bookshelf 中找到。使用付费翻译 API 时会先询问；更换目标语言后可在书架长按作品「重新翻译」。"
+            "value": "加入书架的作品会自动下载到 App 内，可离线阅读。EPUB 为 App 产生的双语版本，其他格式使用 AO3 官网文件；导出文件可在「文件」App 的 YAAO3R › Bookshelf 中找到。使用付费翻译 API 时会先询问；更换目标语言后可在书架长按作品「重新翻译」。"
           }
         },
         "zh-Hant": {
@@ -19016,6 +18873,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "原作"
+          }
+        }
+      }
+    },
+    "原文": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أصلي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Original"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Originales"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Originale"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "मौलिक"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asli"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Originale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オリジナル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Origineel"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oryginał"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Originais"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оригинал"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ต้นฉบับ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orijinal"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оригінал"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bản gốc"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文"
           }
         }
       }
@@ -21422,7 +21422,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "同步书架（含自订封面）、阅读进度、阅读时长，以及外观与翻译偏好。不包含脱机内容、API Key、导入的字体与背景图片。"
+            "value": "同步书架（含自订封面）、阅读进度、阅读时长，以及外观与翻译偏好。不包含离线内容、API Key、导入的字体与背景图片。"
           }
         },
         "zh-Hant": {
@@ -22452,145 +22452,145 @@
         }
       }
     },
-    "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": {
+    "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "أدخل نفس الإعدادات على أجهزتك الأخرى لمزامنتها. تعمل أيضًا أي خدمة WebDAV، مثل Nextcloud أو Synology NAS."
+            "value": "قم بالتسجيل وتسجيل الدخول على jianguoyun.com. تخزين WebDAV مجاني."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Geben Sie auf Ihren anderen Geräten dieselben Einstellungen ein, um sie zu synchronisieren. Es funktioniert auch jeder WebDAV-Dienst, etwa Nextcloud oder ein Synology NAS."
+            "value": "Registrieren Sie sich und melden Sie sich unter jianguoyun.com an. Der WebDAV-Speicher ist kostenlos."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter the same settings on your other devices to sync them. Any WebDAV service also works, such as Nextcloud or a Synology NAS."
+            "value": "Sign up and log in at jianguoyun.com. WebDAV storage is free."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ingrese la misma configuración en sus otros dispositivos para sincronizarlos. También funciona cualquier servicio WebDAV, como Nextcloud o un Synology NAS."
+            "value": "Regístrese e inicie sesión en jianguoyun.com. El almacenamiento WebDAV es gratuito."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Entrez les mêmes paramètres sur vos autres appareils pour les synchroniser. N'importe quel service WebDAV fonctionne également, comme Nextcloud ou un Synology NAS."
+            "value": "Inscrivez-vous et connectez-vous sur jianguoyun.com. Le stockage WebDAV est gratuit."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "अपने अन्य उपकरणों को सिंक करने के लिए वही सेटिंग्स दर्ज करें। कोई भी WebDAV सेवा भी काम करती है, जैसे Nextcloud या Synology NAS।"
+            "value": "jianguoyun.com पर साइन अप करें और लॉग इन करें। WebDAV भंडारण निःशुल्क है."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Masukkan pengaturan yang sama pada perangkat Anda yang lain untuk menyinkronkannya. Layanan WebDAV apa pun juga berfungsi, seperti Nextcloud atau Synology NAS."
+            "value": "Daftar dan masuk di jianguoyun.com. Penyimpanan WebDAV gratis."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inserisci le stesse impostazioni sugli altri dispositivi per sincronizzarli. Funziona anche qualsiasi servizio WebDAV, come Nextcloud o Synology NAS."
+            "value": "Iscriviti e accedi su jianguoyun.com. L'archiviazione WebDAV è gratuita."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "他のデバイスに同じ設定を入力して同期します。 Nextcloud や Synology NAS などの WebDAV サービスも機能します。"
+            "value": "jianguoyun.com にサインアップしてログインします。 WebDAVストレージは無料です。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다른 장치에도 동일한 설정을 입력하여 동기화하세요. Nextcloud 또는 Synology NAS와 같은 모든 WebDAV 서비스도 작동합니다."
+            "value": "jianguoyun.com에 가입하고 로그인하세요. WebDAV 저장소는 무료입니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Voer dezelfde instellingen in op uw andere apparaten om ze te synchroniseren. Elke WebDAV-service werkt ook, zoals Nextcloud of een Synology NAS."
+            "value": "Meld u aan en log in op jianguoyun.com. WebDAV-opslag is gratis."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wprowadź te same ustawienia na innych urządzeniach, aby je zsynchronizować. Działa również dowolna usługa WebDAV, taka jak Nextcloud lub Synology NAS."
+            "value": "Zarejestruj się i zaloguj na jianguoyun.com. Pamięć WebDAV jest bezpłatna."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Insira as mesmas configurações em seus outros dispositivos para sincronizá-los. Qualquer serviço WebDAV também funciona, como Nextcloud ou Synology NAS."
+            "value": "Cadastre-se e faça login em jianguoyun.com. O armazenamento WebDAV é gratuito."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Введите те же настройки на других устройствах, чтобы синхронизировать их. Также работает любая служба WebDAV, например Nextcloud или Synology NAS."
+            "value": "Зарегистрируйтесь и войдите на сайт jianguoyun.com. Хранилище WebDAV бесплатно."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ป้อนการตั้งค่าเดียวกันบนอุปกรณ์อื่นๆ ของคุณเพื่อซิงค์ บริการ WebDAV ใดๆ ก็ใช้งานได้ เช่น Nextcloud หรือ Synology NAS"
+            "value": "ลงทะเบียนและเข้าสู่ระบบที่ jianguoyun.com พื้นที่เก็บข้อมูล WebDAV ฟรี"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Senkronize etmek için diğer cihazlarınıza da aynı ayarları girin. Nextcloud veya Synology NAS gibi herhangi bir WebDAV hizmeti de çalışır."
+            "value": "Jianguoyun.com'a üye olun ve giriş yapın. WebDAV depolama alanı ücretsizdir."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Введіть ті самі налаштування на інших пристроях, щоб синхронізувати їх. Будь-яка служба WebDAV також працює, наприклад Nextcloud або Synology NAS."
+            "value": "Зареєструйтеся та увійдіть на jianguoyun.com. Зберігання WebDAV безкоштовне."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nhập các cài đặt tương tự trên các thiết bị khác của bạn để đồng bộ hóa chúng. Bất kỳ dịch vụ WebDAV nào cũng hoạt động, chẳng hạn như Nextcloud hoặc NAS Synology."
+            "value": "Đăng ký và đăng nhập tại jianguoyun.com. Lưu trữ WebDAV là miễn phí."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在其他设备上填入相同设置即可同步。也可使用 Nextcloud、群晖 NAS 等任何 WebDAV 服务。"
+            "value": "在 jianguoyun.com 注册并登录，免费提供 WebDAV 空间。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+            "value": "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+            "value": "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+            "value": "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。"
+            "value": "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。"
           }
         }
       }
@@ -22852,7 +22852,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在设备上翻译，免密钥、可脱机。首次使用某组语言时会弹出下载窗口。原文语言为自动侦测时，会先在本机判断语言。"
+            "value": "在设备上翻译，免密钥、可离线。首次使用某组语言时会弹出下载窗口。原文语言为自动侦测时，会先在本机判断语言。"
           }
         },
         "zh-Hant": {
@@ -23138,7 +23138,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在阅读页点击书架或下载按钮，或在作品列表中长按作品，即可加入书架。书架上的作品会自动下载原文与译文，可脱机阅读。"
+            "value": "在阅读页点击书架或下载按钮，或在作品列表中长按作品，即可加入书架。书架上的作品会自动下载原文与译文，可离线阅读。"
           }
         },
         "zh-Hant": {
@@ -23163,6 +23163,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "在閱讀頁點擊書架或下載按鈕，或在作品列表中長按作品，即可加入書架。書架上的作品會自動下載原文與譯文，可離線閱讀。"
+          }
+        }
+      }
+    },
+    "填入": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "املأ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausfüllen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill In"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remplissez"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "भरें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compila"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記入してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "작성"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vul in"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wypełnij"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preencha"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заполните"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กรอก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doldur"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заповнити"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điền vào"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填入"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填入"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填入"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填入"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填入"
+          }
+        }
+      }
+    },
+    "填寫上方設定": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "املأ الإعدادات أعلاه"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Füllen Sie die Einstellungen oben aus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill In the Settings Above"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete la configuración de arriba"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remplissez les paramètres ci-dessus"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "उपरोक्त सेटिंग्स भरें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isi Pengaturan Di Atas"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compila le impostazioni sopra"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上記の設定を入力します"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "위의 설정을 입력하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vul de bovenstaande instellingen in"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wypełnij powyższe ustawienia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preencha as configurações acima"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заполните настройки выше"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กรอกการตั้งค่าด้านบน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yukarıdaki Ayarları Doldurun"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заповніть параметри вище"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điền vào cài đặt ở trên"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填写上方设置"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填寫上方設定"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填寫上方設定"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填寫上方設定"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填寫上方設定"
           }
         }
       }
@@ -24454,145 +24740,145 @@
         }
       }
     },
-    "如何使用 WebDAV 同步（推薦堅果雲）": {
+    "如何使用 WebDAV 同步": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "كيفية المزامنة مع WebDAV (يوصى باستخدام Jianguoyun)"
+            "value": "كيفية المزامنة مع WebDAV"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "So synchronisieren Sie mit WebDAV (Jianguoyun empfohlen)"
+            "value": "So synchronisieren Sie mit WebDAV"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "How to Sync with WebDAV (Jianguoyun Recommended)"
+            "value": "How to Sync with WebDAV"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cómo sincronizar con WebDAV (recomendado por Jianguoyun)"
+            "value": "Cómo sincronizar con WebDAV"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comment synchroniser avec WebDAV (recommandé par Jianguoyun)"
+            "value": "Comment synchroniser avec WebDAV"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "WebDAV के साथ कैसे सिंक करें (Jianguoyun अनुशंसित)"
+            "value": "WebDAV के साथ कैसे सिंक करें"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cara Menyinkronkan dengan WebDAV (Disarankan Jianguoyun)"
+            "value": "Cara Menyinkronkan dengan WebDAV"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Come sincronizzarsi con WebDAV (consigliato Jianguoyun)"
+            "value": "Come sincronizzarsi con WebDAV"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "WebDAV と同期する方法 (Jianguoyun 推奨)"
+            "value": "WebDAVと同期する方法"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "WebDAV와 동기화하는 방법(Jianguoyun 권장)"
+            "value": "WebDAV와 동기화하는 방법"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Synchroniseren met WebDAV (Jianguoyun aanbevolen)"
+            "value": "Synchroniseren met WebDAV"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jak synchronizować z WebDAV (zalecane przez Jianguoyun)"
+            "value": "Jak synchronizować z WebDAV"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Como sincronizar com WebDAV (recomendado Jianguoyun)"
+            "value": "Como sincronizar com WebDAV"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Как синхронизировать с WebDAV (рекомендуется Jianguoyun)"
+            "value": "Как синхронизировать с WebDAV"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "วิธีซิงค์กับ WebDAV (แนะนำ Jianguoyun)"
+            "value": "วิธีซิงค์กับ WebDAV"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "WebDAV ile Senkronizasyon Nasıl Yapılır (Jianguoyun Önerilir)"
+            "value": "WebDAV ile Senkronizasyon Nasıl Yapılır?"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Як синхронізувати з WebDAV (рекомендовано Jianguoyun)"
+            "value": "Як синхронізувати з WebDAV"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cách đồng bộ hóa với WebDAV (Khuyến nghị của Jianguoyun)"
+            "value": "Cách đồng bộ hóa với WebDAV"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "如何使用 WebDAV 同步（推荐坚果云）"
+            "value": "如何使用 WebDAV 同步"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "如何使用 WebDAV 同步（推薦堅果雲）"
+            "value": "如何使用 WebDAV 同步"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "如何使用 WebDAV 同步（推薦堅果雲）"
+            "value": "如何使用 WebDAV 同步"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "如何使用 WebDAV 同步（推薦堅果雲）"
+            "value": "如何使用 WebDAV 同步"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "如何使用 WebDAV 同步（推薦堅果雲）"
+            "value": "如何使用 WebDAV 同步"
           }
         }
       }
@@ -28858,7 +29144,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "已脱机"
+            "value": "已离线"
           }
         },
         "zh-Hant": {
@@ -28883,6 +29169,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "已離線"
+          }
+        }
+      }
+    },
+    "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معلومات الحساب › الأمان › تطبيقات الطرف الثالث › أضف تطبيقًا، وقم بتسميته YAAO3R."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontoinformationen › Sicherheit › Drittanbieter-Apps › App hinzufügen und nennen Sie sie YAAO3R."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account Info › Security › Third-Party Apps › Add App, and name it YAAO3R."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Información de cuenta › Seguridad › Aplicaciones de terceros › Agregar aplicación y asígnele el nombre YAAO3R."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informations sur le compte › Sécurité › Applications tierces › Ajoutez une application et nommez-la YAAO3R."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खाता जानकारी › सुरक्षा › तृतीय-पक्ष ऐप्स › ऐप जोड़ें, और इसे YAAO3R नाम दें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info Akun › Keamanan › Aplikasi Pihak Ketiga › Tambah Aplikasi, dan beri nama YAAO3R."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informazioni sull'account › Sicurezza › App di terze parti › Aggiungi app e chiamala YAAO3R."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アカウント情報 › セキュリティ › サードパーティ アプリ › アプリを追加し、YAAO3R という名前を付けます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계정 정보 › 보안 › 타사 앱 › 앱을 추가하고 이름을 YAAO3R로 지정합니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accountinfo › Beveiliging › Apps van derden › App toevoegen en deze YAAO3R noemen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacje o koncie > Bezpieczeństwo > Aplikacje innych firm > Dodaj aplikację i nadaj jej nazwę YAAO3R."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informações da conta › Segurança › Aplicativos de terceiros › Adicionar aplicativo e nomeie-o como YAAO3R."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информация об учетной записи › Безопасность › Сторонние приложения › Добавьте приложение и назовите его YAAO3R."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ข้อมูลบัญชี › ความปลอดภัย › แอปของบุคคลที่สาม › เพิ่มแอป และตั้งชื่อเป็น YAAO3R"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesap Bilgileri › Güvenlik › Üçüncü Taraf Uygulamalar › Uygulamayı ekleyin ve YAAO3R olarak adlandırın."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Інформація про обліковий запис › Безпека › Програми сторонніх розробників › Додайте програму та назвіть її YAAO3R."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông tin tài khoản > Bảo mật > Ứng dụng của bên thứ ba > Thêm ứng dụng và đặt tên là YAAO3R."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "账户信息 › 安全选项 › 第三方应用管理 › 添加应用，名称填 YAAO3R。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
           }
         }
       }
@@ -29169,6 +29598,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "帳號操作"
+          }
+        }
+      }
+    },
+    "帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحساب هو البريد الإلكتروني الخاص بك لتسجيل الدخول إلى Jianguoyun؛ كلمة المرور هي كلمة مرور التطبيق التي أنشأتها للتو."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Konto ist Ihre Jianguoyun-Login-E-Mail-Adresse. Das Passwort ist das App-Passwort, das Sie gerade erstellt haben."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The account is your Jianguoyun login email; the password is the app password you just created."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La cuenta es su correo electrónico de inicio de sesión de Jianguoyun; la contraseña es la contraseña de la aplicación que acaba de crear."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le compte est votre e-mail de connexion Jianguoyun ; le mot de passe est le mot de passe de l'application que vous venez de créer."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खाता आपका जियानगुओयुन लॉगिन ईमेल है; पासवर्ड वह ऐप पासवर्ड है जिसे आपने अभी बनाया है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akun tersebut adalah email login Jianguoyun Anda; kata sandinya adalah kata sandi aplikasi yang baru saja Anda buat."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'account è la tua email di accesso a Jianguoyun; la password è la password dell'app appena creata."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アカウントは Jianguoyun のログインメールアドレスです。パスワードは、先ほど作成したアプリのパスワードです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계정은 Jianguoyun 로그인 이메일입니다. 비밀번호는 방금 생성한 앱 비밀번호입니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het account is uw Jianguoyun-inlog-e-mailadres; het wachtwoord is het app-wachtwoord dat u zojuist hebt gemaakt."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konto to Twój adres e-mail logowania Jianguoyun; hasło to hasło do aplikacji, które właśnie utworzyłeś."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A conta é o seu e-mail de login do Jianguoyun; a senha é a senha do aplicativo que você acabou de criar."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учетная запись — это ваш адрес электронной почты для входа в Jianguoyun; пароль — это только что созданный вами пароль приложения."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "บัญชีนี้คืออีเมลเข้าสู่ระบบ Jianguoyun ของคุณ รหัสผ่านคือรหัสผ่านสำหรับแอปที่คุณเพิ่งสร้างขึ้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesap, Jianguoyun giriş e-postanızdır; şifre, az önce oluşturduğunuz uygulama şifresidir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обліковий запис — це ваша електронна адреса для входу в Jianguoyun; пароль – це пароль програми, який ви щойно створили."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tài khoản là email đăng nhập Jianguoyun của bạn; mật khẩu là mật khẩu ứng dụng bạn vừa tạo."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "账号是坚果云的登录信箱，密码是刚生成的应用密码。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳戶是堅果雲的登入信箱，密碼是剛生成的應用密碼。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳戶是堅果雲的登入信箱，密碼是剛生成的應用密碼。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。"
           }
         }
       }
@@ -39583,7 +40155,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "未脱机"
+            "value": "未离线"
           }
         },
         "zh-Hant": {
@@ -48907,6 +49479,149 @@
         }
       }
     },
+    "測試並同步": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاختبار والمزامنة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testen und synchronisieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test and Sync"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prueba y sincronización"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test et synchronisation"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "परीक्षण और समन्वयन"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uji dan Sinkronisasi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prova e sincronizza"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テストと同期"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "테스트 및 동기화"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testen en synchroniseren"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testuj i synchronizuj"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teste e sincronize"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тестирование и синхронизация"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทดสอบและซิงค์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test Et ve Senkronize Et"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тест і синхронізація"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiểm tra và đồng bộ hóa"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试并同步"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並同步"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並同步"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並同步"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並同步"
+          }
+        }
+      }
+    },
     "測試翻譯": {
       "extractionState": "manual",
       "localizations": {
@@ -49622,6 +50337,149 @@
         }
       }
     },
+    "瀏覽頁": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصفح"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durchsuchen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Browse"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navegar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parcourir"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ब्राउज़ करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jelajahi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sfoglia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閲覧する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "찾아보기"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blader"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeglądaj"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navegar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обзор"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เรียกดู"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Göz at"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "переглядати"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duyệt qua"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "浏览页"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽頁"
+          }
+        }
+      }
+    },
     "瀏覽頁的作品卡片與各作品列表。": {
       "extractionState": "manual",
       "localizations": {
@@ -49761,149 +50619,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "瀏覽頁的作品卡片與各作品列表。"
-          }
-        }
-      }
-    },
-    "瀏覽頁顯示譯文": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الترجمات في التصفح"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Übersetzungen in Durchsuchen"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Translations in Browse"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traducciones en Explorar"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traductions dans Parcourir"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ब्राउज में अनुवाद"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Terjemahan di Telusuri"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traduzioni in Sfoglia"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ブラウズでの翻訳"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "찾아보기의 번역"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vertalingen in Bladeren"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tłumaczenia w Przeglądaj"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traduções em Navegar"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Переводы в обзоре"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "การแปลในการเรียกดู"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gözat'taki çeviriler"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Переклади в Огляді"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bản dịch trong Duyệt"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "浏览页显示译文"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "瀏覽頁顯示譯文"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "瀏覽頁顯示譯文"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "瀏覽頁顯示譯文"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "瀏覽頁顯示譯文"
           }
         }
       }
@@ -51763,6 +52478,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "燈塔金"
+          }
+        }
+      }
+    },
+    "生成應用密碼": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إنشاء كلمة مرور التطبيق"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erstellen Sie ein App-Passwort"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create an App Password"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crear una contraseña de aplicación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Créer un mot de passe d'application"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "एक ऐप पासवर्ड बनाएं"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buat Kata Sandi Aplikasi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea una password per l'app"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリのパスワードを作成する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 비밀번호 만들기"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maak een app-wachtwoord"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utwórz hasło do aplikacji"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie uma senha de aplicativo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создайте пароль приложения"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สร้างรหัสผ่านสำหรับแอป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama Şifresi Oluşturun"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Створіть пароль програми"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tạo mật khẩu ứng dụng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成应用密码"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成應用密碼"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成應用密碼"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成應用密碼"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成應用密碼"
           }
         }
       }
@@ -61891,7 +62749,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "自动翻译脱机内容"
+            "value": "自动翻译离线内容"
           }
         },
         "zh-Hant": {
@@ -63779,145 +64637,145 @@
         }
       }
     },
-    "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。": {
+    "註冊堅果雲": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "قم بالتسجيل وتسجيل الدخول إلى Jianguoyun (Nutstore) على الويب على jianguoyun.com. فهو يوفر تخزين WebDAV مجانيًا مع اتصالات موثوقة داخل وخارج الصين القارية، لذا فهي خدمة المزامنة الموصى بها."
+            "value": "قم بالتسجيل في Jianguoyun"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Registrieren Sie sich und melden Sie sich bei Jianguoyun (Nutstore) im Internet unter jianguoyun.com an. Es bietet kostenlosen WebDAV-Speicher mit zuverlässigen Verbindungen sowohl innerhalb als auch außerhalb des chinesischen Festlandes und ist daher der empfohlene Synchronisierungsdienst."
+            "value": "Melden Sie sich für Jianguoyun an"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sign up and log in to Jianguoyun (Nutstore) on the web at jianguoyun.com. It offers free WebDAV storage with reliable connections both inside and outside mainland China, so it is the recommended sync service."
+            "value": "Sign Up for Jianguoyun"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Regístrese e inicie sesión en Jianguoyun (Nutstore) en la web en jianguoyun.com. Ofrece almacenamiento WebDAV gratuito con conexiones confiables tanto dentro como fuera de China continental, por lo que es el servicio de sincronización recomendado."
+            "value": "Regístrate en Jianguoyun"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inscrivez-vous et connectez-vous à Jianguoyun (Nutstore) sur le Web à l'adresse jianguoyun.com. Il offre un stockage WebDAV gratuit avec des connexions fiables à l'intérieur et à l'extérieur de la Chine continentale, c'est donc le service de synchronisation recommandé."
+            "value": "Inscrivez-vous à Jianguoyun"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "साइन अप करें और वेब पर jianguoyun.com पर जियानगुओयुन (नटस्टोर) में लॉग इन करें। यह मुख्य भूमि चीन के अंदर और बाहर विश्वसनीय कनेक्शन के साथ मुफ्त WebDAV स्टोरेज प्रदान करता है, इसलिए यह अनुशंसित सिंक सेवा है।"
+            "value": "जियानगुओयुन के लिए साइन अप करें"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Daftar dan masuk ke Jianguoyun (Nutstore) di web di jianguoyun.com. Ia menawarkan penyimpanan WebDAV gratis dengan koneksi yang andal baik di dalam maupun di luar Tiongkok daratan, sehingga ini adalah layanan sinkronisasi yang direkomendasikan."
+            "value": "Mendaftar ke Jianguoyun"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Iscriviti e accedi a Jianguoyun (Nutstore) sul Web all'indirizzo jianguoyun.com. Offre spazio di archiviazione WebDAV gratuito con connessioni affidabili sia all'interno che all'esterno della Cina continentale, quindi è il servizio di sincronizzazione consigliato."
+            "value": "Iscriviti a Jianguoyun"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Web jianguoyun.com で Jianguoyun (Nutstore) にサインアップしてログインします。中国本土の内外で信頼性の高い接続を備えた無料の WebDAV ストレージを提供するため、推奨される同期サービスです。"
+            "value": "建国雲に登録する"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "jianguoyun.com 웹에서 Jianguoyun(Nutstore)에 가입하고 로그인하세요. 중국 본토 내부와 외부 모두 안정적인 연결을 갖춘 무료 WebDAV 저장소를 제공하므로 권장되는 동기화 서비스입니다."
+            "value": "Jianguoyun에 가입하세요"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Meld u aan en log in bij Jianguoyun (Nutstore) op internet op jianguoyun.com. Het biedt gratis WebDAV-opslag met betrouwbare verbindingen zowel binnen als buiten het vasteland van China, dus het is de aanbevolen synchronisatieservice."
+            "value": "Meld u aan voor Jianguoyun"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zarejestruj się i zaloguj do Jianguoyun (Nutstore) w Internecie pod adresem jianguoyun.com. Oferuje bezpłatną pamięć masową WebDAV z niezawodnymi połączeniami zarówno w Chinach kontynentalnych, jak i poza nimi, dlatego jest zalecaną usługą synchronizacji."
+            "value": "Zarejestruj się w Jianguoyun"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cadastre-se e faça login em Jianguoyun (Nutstore) na web em jianguoyun.com. Oferece armazenamento WebDAV gratuito com conexões confiáveis ​​dentro e fora da China continental, por isso é o serviço de sincronização recomendado."
+            "value": "Inscreva-se no Jianguoyun"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Зарегистрируйтесь и войдите в систему Jianguoyun (Nutstore) на сайте jianguoyun.com. Он предлагает бесплатное хранилище WebDAV с надежным соединением как внутри, так и за пределами материкового Китая, поэтому это рекомендуемая служба синхронизации."
+            "value": "Зарегистрируйтесь на Цзяньгоюнь"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ลงทะเบียนและเข้าสู่ระบบ Jianguoyun (Nutstore) บนเว็บที่ jianguoyun.com มีพื้นที่จัดเก็บข้อมูล WebDAV ฟรีพร้อมการเชื่อมต่อที่เชื่อถือได้ทั้งภายในและภายนอกจีนแผ่นดินใหญ่ ดังนั้นจึงเป็นบริการซิงค์ที่แนะนำ"
+            "value": "ลงทะเบียนเพื่อ Jianguoyun"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jianguoyun.com adresinden Jianguoyun'a (Nutstore) kaydolun ve oturum açın. Çin anakarasının hem içinde hem de dışında güvenilir bağlantılarla ücretsiz WebDAV depolama alanı sunar, dolayısıyla önerilen senkronizasyon hizmetidir."
+            "value": "Jianguoyun'a kaydolun"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Зареєструйтеся та увійдіть у Jianguoyun (Nutstore) в Інтернеті за адресою jianguoyun.com. Він пропонує безкоштовне сховище WebDAV із надійним з’єднанням як усередині, так і за межами материкового Китаю, тому це рекомендована служба синхронізації."
+            "value": "Зареєструйтеся в Jianguoyun"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Đăng ký và đăng nhập vào Jianguoyun (Nutstore) trên web tại jianguoyun.com. Nó cung cấp bộ lưu trữ WebDAV miễn phí với các kết nối đáng tin cậy cả trong và ngoài Trung Quốc đại lục, vì vậy đây là dịch vụ đồng bộ hóa được khuyên dùng."
+            "value": "Đăng ký Jianguoyun"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "注册并登录坚果云网页版（jianguoyun.com）。坚果云提供免费的 WebDAV 空间，国内外都能稳定连接，推荐作为同步服务。"
+            "value": "注册坚果云"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。"
+            "value": "註冊堅果雲"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。"
+            "value": "註冊堅果雲"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。"
+            "value": "註冊堅果雲"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。"
+            "value": "註冊堅果雲"
           }
         }
       }
@@ -66778,149 +67636,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "資料夾"
-          }
-        }
-      }
-    },
-    "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "يمكنك الاحتفاظ بـ AO3Reader كمجلد؛ يقوم التطبيق بإنشائه تلقائيًا. اضغط على \"حفظ واختبار الاتصال\"، ثم \"المزامنة الآن\" بمجرد نجاحها."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sie können AO3Reader als Ordner behalten; Die App erstellt es automatisch. Tippen Sie auf „Verbindung speichern und testen“ und dann auf „Jetzt synchronisieren“, sobald der Vorgang erfolgreich war."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "You can keep AO3Reader as the folder; the app creates it automatically. Tap “Save and Test Connection”, then “Sync Now” once it succeeds."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Puede mantener AO3Reader como carpeta; la aplicación lo crea automáticamente. Toque \"Guardar y probar conexión\", luego \"Sincronizar ahora\" una vez que tenga éxito."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vous pouvez conserver AO3Reader comme dossier ; l'application le crée automatiquement. Appuyez sur « Enregistrer et tester la connexion », puis sur « Synchroniser maintenant » une fois l'opération réussie."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "आप AO3Reader को फ़ोल्डर के रूप में रख सकते हैं; ऐप इसे स्वचालित रूप से बनाता है। सफल होने पर \"सहेजें और परीक्षण कनेक्शन\" पर टैप करें, फिर \"अभी सिंक करें\" पर टैप करें।"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Anda dapat menyimpan AO3Reader sebagai foldernya; aplikasi membuatnya secara otomatis. Ketuk “Simpan dan Uji Koneksi”, lalu “Sinkronkan Sekarang” setelah berhasil."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Puoi mantenere AO3Reader come cartella; l'app lo crea automaticamente. Tocca \"Salva e prova connessione\", quindi \"Sincronizza ora\" una volta completata l'operazione."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3Reader をフォルダーとして保持できます。アプリが自動的に作成します。 「保存して接続をテスト」をタップし、成功したら「今すぐ同期」をタップします。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3Reader를 폴더로 유지할 수 있습니다. 앱이 자동으로 생성합니다. \"저장 및 연결 테스트\"를 누른 다음 성공하면 \"지금 동기화\"를 누릅니다."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "U kunt AO3Reader als map behouden; de app maakt het automatisch aan. Tik op 'Verbinding opslaan en testen' en vervolgens op 'Nu synchroniseren' zodra dit is gelukt."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Możesz zachować AO3Reader jako folder; aplikacja tworzy je automatycznie. Kliknij „Zapisz i przetestuj połączenie”, a gdy się powiedzie, „Synchronizuj teraz”."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Você pode manter AO3Reader como pasta; o aplicativo o cria automaticamente. Toque em “Salvar e testar conexão” e depois em “Sincronizar agora” quando tiver sucesso."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Вы можете сохранить AO3Reader в качестве папки; приложение создает его автоматически. Нажмите «Сохранить и проверить соединение», затем «Синхронизировать сейчас», как только все получится."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "คุณสามารถเก็บ AO3Reader เป็นโฟลเดอร์ได้ แอปจะสร้างมันขึ้นมาโดยอัตโนมัติ แตะ \"บันทึกและทดสอบการเชื่อมต่อ\" จากนั้น \"ซิงค์ทันที\" เมื่อดำเนินการสำเร็จ"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3Reader'ı klasör olarak tutabilirsiniz; uygulama bunu otomatik olarak oluşturur. “Bağlantıyı Kaydet ve Test Et”e, ardından başarılı olduğunda “Şimdi Senkronize Et”e dokunun."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ви можете зберегти AO3Reader як папку; програма створює його автоматично. Натисніть «Зберегти та перевірити з’єднання», а потім «Синхронізувати зараз», коли це вдасться."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bạn có thể giữ AO3Reader làm thư mục; ứng dụng sẽ tự động tạo nó. Nhấn vào “Lưu và kiểm tra kết nối”, sau đó “Đồng bộ hóa ngay” sau khi thành công."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "文件夹可保留 AO3Reader，App 会自动创建。点「保存并测试连接」，成功后点「立即同步」。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "文件夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "文件夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。"
           }
         }
       }
@@ -71787,6 +72502,149 @@
         }
       }
     },
+    "閱讀頁": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القارئ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leser"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reader"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lector"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lecteur"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "पाठक"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pembaca"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lettore"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リーダー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리더"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lezer"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czytelnik"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leitor"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Читатель"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ผู้อ่าน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Okuyucu"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "читач"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "đầu đọc"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阅读页"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀頁"
+          }
+        }
+      }
+    },
     "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。": {
       "extractionState": "manual",
       "localizations": {
@@ -71926,149 +72784,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。"
-          }
-        }
-      }
-    },
-    "閱讀頁顯示譯文": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الترجمات في القارئ"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Übersetzungen im Reader"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Translations in Reader"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traducciones en Lector"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traductions dans Reader"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "रीडर में अनुवाद"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Terjemahan di Pembaca"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traduzioni in Reader"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reader での翻訳"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "리더의 번역"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vertalingen in Reader"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tłumaczenia w Czytniku"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traduções no Reader"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Переводы в Ридере"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "การแปลใน Reader"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reader'daki çeviriler"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Переклади в Reader"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bản dịch trong Reader"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "阅读页显示译文"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "閱讀頁顯示譯文"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "閱讀頁顯示譯文"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "閱讀頁顯示譯文"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "閱讀頁顯示譯文"
           }
         }
       }
@@ -73045,7 +73760,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "脱机内容"
+            "value": "离线内容"
           }
         },
         "zh-Hant": {
@@ -75076,145 +75791,145 @@
         }
       }
     },
-    "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。": {
+    "點「儲存並測試連線」，成功後點「立即同步」。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "انقر على اسم حسابك في الجزء العلوي الأيمن ← \"معلومات الحساب\" ← \"الأمان\". ضمن \"إدارة تطبيقات الطرف الثالث\"، انقر على \"إضافة تطبيق\"، وقم بتسميته YAAO3R، ثم انقر على \"إنشاء كلمة مرور\"."
+            "value": "اضغط على \"حفظ واختبار الاتصال\"، ثم \"المزامنة الآن\" بمجرد نجاحها."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klicken Sie oben rechts auf Ihren Kontonamen → „Kontoinformationen“ → „Sicherheit“. Klicken Sie unter „Drittanbieter-App-Verwaltung“ auf „App hinzufügen“, nennen Sie sie YAAO3R und klicken Sie dann auf „Passwort generieren“."
+            "value": "Tippen Sie auf „Verbindung speichern und testen“ und dann auf „Jetzt synchronisieren“, sobald der Vorgang erfolgreich war."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Click your account name at the top right → “Account Info” → “Security”. Under “Third-party App Management”, click “Add App”, name it YAAO3R, then click “Generate Password”."
+            "value": "Tap “Save and Test Connection”, then “Sync Now” once it succeeds."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Haga clic en el nombre de su cuenta en la parte superior derecha → “Información de cuenta” → “Seguridad”. En \"Administración de aplicaciones de terceros\", haga clic en \"Agregar aplicación\", asígnele el nombre YAAO3R y luego haga clic en \"Generar contraseña\"."
+            "value": "Toque \"Guardar y probar conexión\", luego \"Sincronizar ahora\" una vez que tenga éxito."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cliquez sur le nom de votre compte en haut à droite → « Informations sur le compte » → « Sécurité ». Sous « Gestion des applications tierces », cliquez sur « Ajouter une application », nommez-la YAAO3R, puis cliquez sur « Générer un mot de passe »."
+            "value": "Appuyez sur « Enregistrer et tester la connexion », puis sur « Synchroniser maintenant » une fois l'opération réussie."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "ऊपर दाईं ओर अपने खाते के नाम → \"खाता जानकारी\" → \"सुरक्षा\" पर क्लिक करें। \"तृतीय-पक्ष ऐप प्रबंधन\" के अंतर्गत, \"ऐप जोड़ें\" पर क्लिक करें, इसे YAAO3R नाम दें, फिर \"पासवर्ड जेनरेट करें\" पर क्लिक करें।"
+            "value": "सफल होने पर \"सहेजें और परीक्षण कनेक्शन\" पर टैप करें, फिर \"अभी सिंक करें\" पर टैप करें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klik nama akun Anda di kanan atas → “Info Akun” → “Keamanan”. Di bawah “Manajemen Aplikasi Pihak Ketiga”, klik “Tambahkan Aplikasi”, beri nama YAAO3R, lalu klik “Buat Kata Sandi”."
+            "value": "Ketuk “Simpan dan Uji Koneksi”, lalu “Sinkronkan Sekarang” setelah berhasil."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fai clic sul nome del tuo account in alto a destra → “Informazioni sull'account” → “Sicurezza”. In \"Gestione app di terze parti\", fai clic su \"Aggiungi app\", chiamala YAAO3R, quindi fai clic su \"Genera password\"."
+            "value": "Tocca \"Salva e prova connessione\", quindi \"Sincronizza ora\" una volta completata l'operazione."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "右上のアカウント名→「アカウント情報」→「セキュリティ」をクリックします。 [サードパーティ アプリの管理] で、[アプリの追加] をクリックし、YAAO3R という名前を付けて、[パスワードの生成] をクリックします。"
+            "value": "「保存して接続をテスト」をタップし、成功したら「今すぐ同期」をタップします。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오른쪽 상단의 계정 이름 → “계정 정보” → “보안”을 클릭하세요. \"타사 앱 관리\"에서 \"앱 추가\"를 클릭하고 이름을 YAAO3R로 지정한 다음 \"비밀번호 생성\"을 클릭합니다."
+            "value": "\"저장 및 연결 테스트\"를 누른 다음 성공하면 \"지금 동기화\"를 누릅니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klik rechtsboven op uw accountnaam → “Accountinfo” → “Beveiliging”. Klik onder “App-beheer van derden” op “App toevoegen”, noem deze YAAO3R en klik vervolgens op “Wachtwoord genereren”."
+            "value": "Tik op 'Verbinding opslaan en testen' en vervolgens op 'Nu synchroniseren' zodra dit is gelukt."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kliknij nazwę swojego konta w prawym górnym rogu → „Informacje o koncie” → „Bezpieczeństwo”. W sekcji „Zarządzanie aplikacjami innych firm” kliknij „Dodaj aplikację”, nadaj jej nazwę YAAO3R, a następnie kliknij „Wygeneruj hasło”."
+            "value": "Kliknij „Zapisz i przetestuj połączenie”, a gdy się powiedzie, „Synchronizuj teraz”."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Clique no nome da sua conta no canto superior direito → “Informações da conta” → “Segurança”. Em “Gerenciamento de aplicativos de terceiros”, clique em “Adicionar aplicativo”, nomeie-o YAAO3R e clique em “Gerar senha”."
+            "value": "Toque em “Salvar e testar conexão” e depois em “Sincronizar agora” quando tiver sucesso."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Нажмите имя своей учетной записи в правом верхнем углу → «Информация об учетной записи» → «Безопасность». В разделе «Управление сторонними приложениями» нажмите «Добавить приложение», назовите его YAAO3R, затем нажмите «Создать пароль»."
+            "value": "Нажмите «Сохранить и проверить соединение», затем «Синхронизировать сейчас», как только все получится."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "คลิกชื่อบัญชีของคุณที่มุมขวาบน → “ข้อมูลบัญชี” → “ความปลอดภัย” ใต้ \"การจัดการแอปบุคคลที่สาม\" คลิก \"เพิ่มแอป\" ตั้งชื่อเป็น YAAO3R จากนั้นคลิก \"สร้างรหัสผ่าน\""
+            "value": "แตะ \"บันทึกและทดสอบการเชื่อมต่อ\" จากนั้น \"ซิงค์ทันที\" เมื่อดำเนินการสำเร็จ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sağ üstteki hesap adınıza → “Hesap Bilgileri” → “Güvenlik”e tıklayın. “Üçüncü Taraf Uygulama Yönetimi” altında, “Uygulama Ekle”ye tıklayın, uygulamaya YAAO3R adını verin ve ardından “Şifre Oluştur”a tıklayın."
+            "value": "“Bağlantıyı Kaydet ve Test Et”e, ardından başarılı olduğunda “Şimdi Senkronize Et”e dokunun."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Натисніть назву свого облікового запису вгорі праворуч → «Інформація про обліковий запис» → «Безпека». У розділі «Керування сторонніми програмами» натисніть «Додати програму», назвіть її YAAO3R, а потім натисніть «Створити пароль»."
+            "value": "Натисніть «Зберегти та перевірити з’єднання», а потім «Синхронізувати зараз», коли це вдасться."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nhấp vào tên tài khoản của bạn ở trên cùng bên phải → “Thông tin tài khoản” → “Bảo mật”. Trong “Quản lý ứng dụng của bên thứ ba”, hãy nhấp vào “Thêm ứng dụng”, đặt tên là YAAO3R, sau đó nhấp vào “Tạo mật khẩu”."
+            "value": "Nhấn vào “Lưu và kiểm tra kết nối”, sau đó “Đồng bộ hóa ngay” sau khi thành công."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "点右上角账号名称 →「账户信息」→「安全选项」，在「第三方应用管理」中点「添加应用」，名称填 YAAO3R，然后「生成密码」。"
+            "value": "点「保存并测试连接」，成功后点「立即同步」。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
+            "value": "點「儲存並測試連線」，成功後點「立即同步」。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳戶名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
+            "value": "點「儲存並測試連線」，成功後點「立即同步」。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳戶名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
+            "value": "點「儲存並測試連線」，成功後點「立即同步」。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。"
+            "value": "點「儲存並測試連線」，成功後點「立即同步」。"
           }
         }
       }

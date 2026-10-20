@@ -589,6 +589,20 @@ EN = {
 "重新翻譯此段": "Translate This Paragraph Again",
 "複製原文": "Copy Original",
 "複製譯文": "Copy Translation",
+"原文": "Original",
+"瀏覽頁": "Browse",
+"閱讀頁": "Reader",
+"註冊堅果雲": "Sign Up for Jianguoyun",
+"在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。": "Sign up and log in at jianguoyun.com. WebDAV storage is free.",
+"生成應用密碼": "Create an App Password",
+"帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。": "Account Info › Security › Third-Party Apps › Add App, and name it YAAO3R.",
+"填寫上方設定": "Fill In the Settings Above",
+"帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。": "The account is your Jianguoyun login email; the password is the app password you just created.",
+"填入": "Fill In",
+"測試並同步": "Test and Sync",
+"點「儲存並測試連線」，成功後點「立即同步」。": "Tap “Save and Test Connection”, then “Sync Now” once it succeeds.",
+"如何使用 WebDAV 同步": "How to Sync with WebDAV",
+"其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。": "Enter the same settings on your other devices to sync. Any WebDAV service works too, such as Nextcloud or Synology NAS.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

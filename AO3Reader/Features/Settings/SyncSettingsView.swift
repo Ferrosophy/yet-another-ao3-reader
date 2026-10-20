@@ -91,17 +91,27 @@ struct SyncSettingsView: View {
                 }
 
                 Section {
-                    VStack(alignment: .leading, spacing: 10) {
-                        guideStep(1, "註冊並登入堅果雲網頁版（jianguoyun.com）。堅果雲提供免費的 WebDAV 空間，國內外都能穩定連線，推薦作為同步服務。")
-                        guideStep(2, "點右上角帳號名稱 →「帳戶資訊」→「安全選項」，在「第三方應用管理」中點「添加應用」，名稱填 YAAO3R，然後「生成密碼」。")
-                        guideStep(3, "伺服器位址填 https://dav.jianguoyun.com/dav/，帳號填堅果雲的登入信箱，應用密碼填剛才生成的密碼（不是登入密碼）。")
-                        guideStep(4, "資料夾可保留 AO3Reader，App 會自動建立。點「儲存並測試連線」，成功後點「立即同步」。")
-                        guideStep(5, "在其他裝置上填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。")
+                    guideStep(1, "註冊堅果雲", detail: "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。")
+                    guideStep(2, "生成應用密碼", detail: "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。")
+                    guideStep(3, "填寫上方設定", detail: "帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。")
+                    HStack {
+                        Text(verbatim: Self.jianguoyunURL)
+                            .font(.footnote.monospaced())
+                            .foregroundStyle(.secondary)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.8)
+                        Spacer()
+                        Button("填入", systemImage: "arrow.up.doc") { sync.webDAV.server = Self.jianguoyunURL }
+                            .labelStyle(.titleOnly)
+                            .buttonStyle(.bordered)
+                            .controlSize(.small)
                     }
-                    .appFont(.footnote)
-                    .padding(.vertical, 4)
+                    .padding(.leading, 32)
+                    guideStep(4, "測試並同步", detail: "點「儲存並測試連線」，成功後點「立即同步」。")
                 } header: {
-                    Text("如何使用 WebDAV 同步（推薦堅果雲）")
+                    Text("如何使用 WebDAV 同步")
+                } footer: {
+                    Text("其他裝置填入相同設定即可同步。也可使用 Nextcloud、群暉 NAS 等任何 WebDAV 服務。")
                 }
             }
         }
@@ -131,16 +141,24 @@ struct SyncSettingsView: View {
         }
     }
 
-    private func guideStep(_ number: Int, _ text: LocalizedStringKey) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: 8) {
+    private static let jianguoyunURL = "https://dav.jianguoyun.com/dav/"
+
+    private func guideStep(_ number: Int, _ title: LocalizedStringKey, detail: LocalizedStringKey) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 12) {
             Text(verbatim: "\(number)")
                 .appFont(.caption, weight: .bold)
                 .foregroundStyle(.white)
                 .frame(width: 20, height: 20)
                 .background(.tint, in: .circle)
-            Text(text)
-                .fixedSize(horizontal: false, vertical: true)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title).appFont(.subheadline, weight: .semibold)
+                Text(detail)
+                    .appFont(.footnote)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
         }
+        .padding(.vertical, 2)
     }
 
     private func test() {
