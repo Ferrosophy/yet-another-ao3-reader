@@ -38,56 +38,6 @@ extension AO3Client {
     }
 }
 
-/// 閱讀頁工具列的下載按鈕：點擊以預設格式加入書架並離線（原文、譯文與匯出檔直接存到 App 資料夾），
-/// 長按選擇其他格式。進度顯示在書架。
-struct WorkDownloadButton: View {
-    let detail: WorkDetail
-    @Environment(AppState.self) private var app
-    @AppStorage(DownloadFormat.storageKey) private var defaultFormat: DownloadFormat = .epub
-    @State private var message: String?
-
-    var body: some View {
-        let offline = app.offline
-        let current = offline.records[detail.id]?.format
-        Menu {
-            Section("離線格式") {
-                ForEach(DownloadFormat.allCases) { format in
-                    Button {
-                        download(format)
-                    } label: {
-                        if format == (current ?? defaultFormat) {
-                            Label(format.title, systemImage: "checkmark")
-                        } else {
-                            Text(verbatim: format.title)
-                        }
-                    }
-                }
-            }
-        } label: {
-            if offline.activity[detail.id]?.isActive == true {
-                ProgressView()
-            } else {
-                Label("下載", systemImage: offline.hasOfflineCopy(detail.id) ? "arrow.down.circle.fill" : "arrow.down.circle")
-            }
-        } primaryAction: {
-            download(current ?? defaultFormat)
-        }
-        .alert("已加入書架", isPresented: Binding(get: { message != nil }, set: { if !$0 { message = nil } })) {
-            Button("好") { message = nil }
-        } message: {
-            Text(message ?? "")
-        }
-    }
-
-    private func download(_ format: DownloadFormat) {
-        let wasOffline = app.offline.hasOfflineCopy(detail.id)
-        app.offline.add(detail.summaryInfo, format: format)
-        if !wasOffline {
-            message = String(localized: "正在下載原文並翻譯，完成後以 \(format.title) 格式保存。可在書架查看進度。")
-        }
-    }
-}
-
 struct DownloadedFile: Identifiable {
     let url: URL
     var id: String { url.absoluteString }

@@ -60,6 +60,8 @@ struct LatestWorksView: View {
     @State private var showsGuide = false
     /// 目前顯示的卡片
     @State private var currentIndex = 0
+    /// 上次載入的篩選條件；從作品頁返回時條件沒變就不重新載入，保留目前的卡片位置
+    @State private var loadedKey: LoadKey?
 
     /// 特殊語言值：所有中文分支（普通話、粵語、吳語、閩南語、客家話、文言…）
     static let chineseAll = "@zh-all"
@@ -104,6 +106,9 @@ struct LatestWorksView: View {
             }
         }
         .task(id: LoadKey(language: languageID, languageCount: languages.count, board: board, period: period, rating: ratingID)) {
+            let key = LoadKey(language: languageID, languageCount: languages.count, board: board, period: period, rating: ratingID)
+            guard key != loadedKey || model == nil else { return }
+            loadedKey = key
             let client = app.client
             var query = WorkSearchQuery()
             query.sortColumn = board.sort
@@ -167,12 +172,6 @@ struct LatestWorksView: View {
                     }
                 }
                 Spacer(minLength: 0)
-                if let model, !model.works.isEmpty {
-                    Text(verbatim: "\(min(currentIndex + 1, model.works.count)) / \(model.works.count)")
-                        .appFont(.caption)
-                        .monospacedDigit()
-                        .foregroundStyle(.secondary)
-                }
             }
             .buttonStyle(.glass)
         }
@@ -342,7 +341,8 @@ struct BrowseCard: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .scrollIndicators(.hidden)
-            .background(Color(uiColor: .secondarySystemGroupedBackground), in: .rect(cornerRadius: 24))
+            // 透明底的磨砂玻璃卡片
+            .glassEffect(.regular, in: .rect(cornerRadius: 24))
             .contentShape(.rect(cornerRadius: 24))
         }
         .buttonStyle(.plain)

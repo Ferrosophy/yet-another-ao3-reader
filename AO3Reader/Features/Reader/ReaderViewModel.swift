@@ -211,7 +211,7 @@ final class ReaderViewModel {
         for paragraph in pending { translations[paragraph.id] = .loading }
         let generation = generation
         do {
-            let results = try await translator.translate(pending.map(\.text), provider: provider,
+            let results = try await translator.translate(paragraphs: pending, provider: provider,
                                                          source: settings.config.sourceLanguage, target: targetLanguage)
             guard generation == self.generation else { return }
             for (paragraph, text) in zip(pending, results) { translations[paragraph.id] = .done(text) }
@@ -277,6 +277,29 @@ final class ReaderViewModel {
         translationError = nil
         if keepOffline { applyOfflineTranslations() }
         if isTranslationOn { enqueueVisible() }
+    }
+
+    /// 使用者選擇的段落重新翻譯：略過翻譯快取，結果覆蓋舊譯文（含書架的離線譯文）
+    func retranslate(_ paragraph: Paragraph) {
+        guard paragraph.isTranslatable else { return }
+        translations[paragraph.id] = .loading
+        let generation = generation
+        let workID = route.id
+        let target = targetLanguage
+        Task {
+            do {
+                let provider = try settings.makeProvider()
+                let results = try await translator.translate(paragraphs: [paragraph], provider: provider,
+                                                             source: settings.config.sourceLanguage, target: target,
+                                                             bypassCache: true)
+                guard generation == self.generation, let text = results.first else { return }
+                translations[paragraph.id] = .done(text)
+                OfflineManager.saveTranslation(text, for: paragraph, workID: workID, targetLanguageCode: target.code)
+            } catch {
+                guard generation == self.generation else { return }
+                translations[paragraph.id] = .failed(error.localizedDescription)
+            }
+        }
     }
 
     func retry(_ paragraph: Paragraph) {
@@ -360,7 +383,7 @@ final class ReaderViewModel {
 
         if !batch.isEmpty {
             do {
-                let results = try await translator.translate(batch.map(\.text), provider: provider, source: settings.config.sourceLanguage, target: targetLanguage)
+                let results = try await translator.translate(paragraphs: batch, provider: provider, source: settings.config.sourceLanguage, target: targetLanguage)
                 guard generation == self.generation else { return }
                 for (paragraph, text) in zip(batch, results) {
                     translations[paragraph.id] = .done(text)

@@ -585,7 +585,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "本棚 (カスタム カバーを含む)、読書の進行状況、読書時間、外観と翻訳の設定を同期します。オフライン コンテンツ、API キー、インポートされたフォント、背景画像は含まれません。",
   "本機使用者資料同步": "ローカルユーザーデータ同期",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "このデバイスに保存されているブックマーク、後でマーク、履歴、サブスクリプションを同期します。",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "AO3 アカウント データを使用しています。ブックマーク、後でマーク、履歴、購読、受信トレイが AO3 アカウントから読み取られ、AO3 アカウントに書き込まれます。これは、My AO3 で [このデバイス上] に切り替えた後にのみ同期されます。"
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "AO3 アカウント データを使用しています。ブックマーク、後でマーク、履歴、購読、受信トレイが AO3 アカウントから読み取られ、AO3 アカウントに書き込まれます。これは、My AO3 で [このデバイス上] に切り替えた後にのみ同期されます。",
+  "重新翻譯此段": "この段落を再度翻訳する",
+  "複製原文": "オリジナルをコピー",
+  "複製譯文": "翻訳をコピーする"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1173,7 +1176,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "책장(맞춤 표지 포함), 읽기 진행 상황, 읽기 시간, 모양 및 번역 기본 설정을 동기화합니다. 오프라인 콘텐츠, API 키, 가져온 글꼴 및 배경 이미지는 포함되지 않습니다.",
   "本機使用者資料同步": "로컬 사용자 데이터 동기화",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "이 기기에 저장된 북마크, 나중에 표시, 기록 및 구독을 동기화합니다.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "귀하는 AO3 계정 데이터를 사용하고 있습니다: 북마크, 나중에 표시, 기록, 구독 및 받은 편지함을 귀하의 AO3 계정에서 읽고 씁니다. 이는 My AO3에서 On This Device로 전환한 후에만 동기화됩니다."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "귀하는 AO3 계정 데이터를 사용하고 있습니다: 북마크, 나중에 표시, 기록, 구독 및 받은 편지함을 귀하의 AO3 계정에서 읽고 씁니다. 이는 My AO3에서 On This Device로 전환한 후에만 동기화됩니다.",
+  "重新翻譯此段": "이 단락을 다시 번역하세요",
+  "複製原文": "원본 복사",
+  "複製譯文": "번역 복사"
  },
  "es": {
   "載入中": "Cargando",
@@ -1761,7 +1767,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Sincroniza la estantería (incluidas las portadas personalizadas), el progreso de la lectura, el tiempo de lectura y las preferencias de apariencia y traducción. El contenido sin conexión, las claves API, las fuentes importadas y las imágenes de fondo no están incluidos.",
   "本機使用者資料同步": "Sincronización de datos de usuario local",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Sincroniza marcadores, Marcado para más tarde, historial y suscripciones almacenados en este dispositivo.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Estás utilizando datos de la cuenta AO3: los marcadores, Marcado para más tarde, el historial, las suscripciones y la bandeja de entrada se leen y escriben en tu cuenta AO3. Esto se sincroniza solo después de cambiar a En este dispositivo en Mi AO3."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Estás utilizando datos de la cuenta AO3: los marcadores, Marcado para más tarde, el historial, las suscripciones y la bandeja de entrada se leen y escriben en tu cuenta AO3. Esto se sincroniza solo después de cambiar a En este dispositivo en Mi AO3.",
+  "重新翻譯此段": "Traduzca este párrafo nuevamente",
+  "複製原文": "Copiar original",
+  "複製譯文": "Copiar traducción"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2349,7 +2358,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Synchronise la bibliothèque (y compris les couvertures personnalisées), la progression de la lecture, le temps de lecture et les préférences d'apparence et de traduction. Le contenu hors ligne, les clés API, les polices importées et les images d'arrière-plan ne sont pas inclus.",
   "本機使用者資料同步": "Synchronisation des données utilisateur locales",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Synchronise les favoris, Marqué pour plus tard, l'historique et les abonnements stockés sur cet appareil.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Vous utilisez les données de votre compte AO3 : les signets, Marqués pour plus tard, l'historique, les abonnements et la boîte de réception sont lus et écrits sur votre compte AO3. Cela se synchronise uniquement après avoir basculé sur Sur cet appareil dans Mon AO3."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Vous utilisez les données de votre compte AO3 : les signets, Marqués pour plus tard, l'historique, les abonnements et la boîte de réception sont lus et écrits sur votre compte AO3. Cela se synchronise uniquement après avoir basculé sur Sur cet appareil dans Mon AO3.",
+  "重新翻譯此段": "Traduire à nouveau ce paragraphe",
+  "複製原文": "Copier l'original",
+  "複製譯文": "Copier la traduction"
  },
  "de": {
   "載入中": "Laden",
@@ -2937,7 +2949,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Synchronisiert das Bücherregal (einschließlich benutzerdefinierter Cover), den Lesefortschritt, die Lesezeit sowie Darstellungs- und Übersetzungseinstellungen. Offline-Inhalte, API-Schlüssel, importierte Schriftarten und Hintergrundbilder sind nicht enthalten.",
   "本機使用者資料同步": "Lokale Benutzerdatensynchronisierung",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Synchronisiert Lesezeichen, „Für später markiert“, Verlauf und Abonnements, die auf diesem Gerät gespeichert sind.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Sie verwenden AO3-Kontodaten: Lesezeichen, „Für später markiert“, Verlauf, Abonnements und Posteingang werden aus Ihrem AO3-Konto gelesen und in dieses geschrieben. Die Synchronisierung erfolgt erst, nachdem Sie in „Mein AO3“ zu „Auf diesem Gerät“ wechseln."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Sie verwenden AO3-Kontodaten: Lesezeichen, „Für später markiert“, Verlauf, Abonnements und Posteingang werden aus Ihrem AO3-Konto gelesen und in dieses geschrieben. Die Synchronisierung erfolgt erst, nachdem Sie in „Mein AO3“ zu „Auf diesem Gerät“ wechseln.",
+  "重新翻譯此段": "Übersetzen Sie diesen Absatz noch einmal",
+  "複製原文": "Original kopieren",
+  "複製譯文": "Übersetzung kopieren"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3525,7 +3540,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Sincroniza a estante (incluindo capas personalizadas), progresso de leitura, tempo de leitura e preferências de aparência e tradução. Conteúdo offline, chaves de API, fontes importadas e imagens de fundo não estão incluídos.",
   "本機使用者資料同步": "Sincronização de dados de usuários locais",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Sincroniza marcadores, Marcados para Mais Tarde, histórico e assinaturas armazenadas neste dispositivo.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Você está usando dados da conta AO3: favoritos, Marcados para Mais Tarde, histórico, assinaturas e caixa de entrada são lidos e gravados em sua conta AO3. Isso só será sincronizado depois que você mudar para Neste Dispositivo em Meu AO3."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Você está usando dados da conta AO3: favoritos, Marcados para Mais Tarde, histórico, assinaturas e caixa de entrada são lidos e gravados em sua conta AO3. Isso só será sincronizado depois que você mudar para Neste Dispositivo em Meu AO3.",
+  "重新翻譯此段": "Traduza este parágrafo novamente",
+  "複製原文": "Copiar Original",
+  "複製譯文": "Copiar Tradução"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4113,7 +4131,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Sincronizza lo scaffale (comprese le copertine personalizzate), l'avanzamento della lettura, il tempo di lettura e le preferenze di aspetto e traduzione. I contenuti offline, le chiavi API, i caratteri importati e le immagini di sfondo non sono inclusi.",
   "本機使用者資料同步": "Sincronizzazione dei dati dell'utente locale",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Sincronizza i segnalibri, Contrassegnati per dopo, la cronologia e gli abbonamenti archiviati su questo dispositivo.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Stai utilizzando i dati dell'account AO3: segnalibri, Contrassegnati per dopo, cronologia, iscrizioni e posta in arrivo vengono letti e scritti sul tuo account AO3. Questo si sincronizza solo dopo che passi a Su questo dispositivo in Il mio AO3."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Stai utilizzando i dati dell'account AO3: segnalibri, Contrassegnati per dopo, cronologia, iscrizioni e posta in arrivo vengono letti e scritti sul tuo account AO3. Questo si sincronizza solo dopo che passi a Su questo dispositivo in Il mio AO3.",
+  "重新翻譯此段": "Traduci di nuovo questo paragrafo",
+  "複製原文": "Copia originale",
+  "複製譯文": "Copia traduzione"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4701,7 +4722,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Синхронизирует книжную полку (включая пользовательские обложки), ход чтения, время чтения, а также настройки внешнего вида и перевода. Автономный контент, ключи API, импортированные шрифты и фоновые изображения не включены.",
   "本機使用者資料同步": "Синхронизация локальных пользовательских данных",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Синхронизирует закладки, «Отмечено для дальнейшего», историю и подписки, хранящиеся на этом устройстве.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Вы используете данные учетной записи AO3: закладки, «Отмечено для дальнейшего», история, подписки и почтовый ящик считываются и записываются в вашу учетную запись AO3. Это синхронизируется только после того, как вы переключитесь на «На этом устройстве» в «Моем AO3»."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Вы используете данные учетной записи AO3: закладки, «Отмечено для дальнейшего», история, подписки и почтовый ящик считываются и записываются в вашу учетную запись AO3. Это синхронизируется только после того, как вы переключитесь на «На этом устройстве» в «Моем AO3».",
+  "重新翻譯此段": "Переведите этот абзац еще раз",
+  "複製原文": "Копировать оригинал",
+  "複製譯文": "Копировать перевод"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5289,7 +5313,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Синхронізує книжкову полицю (включно зі спеціальними обкладинками), прогрес читання, час читання, зовнішній вигляд і налаштування перекладу. Офлайн-вміст, ключі API, імпортовані шрифти та фонові зображення не включені.",
   "本機使用者資料同步": "Синхронізація даних локального користувача",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Синхронізує закладки, позначені на потім, історію та підписки, що зберігаються на цьому пристрої.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Ви використовуєте дані облікового запису AO3: закладки, «Позначено на потім», історію, підписки та вхідні зчитуються з вашого облікового запису AO3 і записуються в нього. Це синхронізується лише після перемикання на «На цьому пристрої» в «Мій AO3»."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Ви використовуєте дані облікового запису AO3: закладки, «Позначено на потім», історію, підписки та вхідні зчитуються з вашого облікового запису AO3 і записуються в нього. Це синхронізується лише після перемикання на «На цьому пристрої» в «Мій AO3».",
+  "重新翻譯此段": "Перекладіть цей абзац ще раз",
+  "複製原文": "Копія Оригінал",
+  "複製譯文": "Копіювати переклад"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5877,7 +5904,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Synchronizuje półkę z książkami (w tym niestandardowe okładki), postęp czytania, czas czytania oraz preferencje dotyczące wyglądu i tłumaczenia. Treści offline, klucze API, importowane czcionki i obrazy tła nie są uwzględniane.",
   "本機使用者資料同步": "Lokalna synchronizacja danych użytkownika",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Synchronizuje zakładki, zaznaczone na później, historię i subskrypcje zapisane na tym urządzeniu.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Używasz danych konta AO3: zakładki, zaznaczone na później, historia, subskrypcje i skrzynka odbiorcza są odczytywane i zapisywane na Twoim koncie AO3. Synchronizacja następuje dopiero po przełączeniu na opcję Na tym urządzeniu w Moim AO3."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Używasz danych konta AO3: zakładki, zaznaczone na później, historia, subskrypcje i skrzynka odbiorcza są odczytywane i zapisywane na Twoim koncie AO3. Synchronizacja następuje dopiero po przełączeniu na opcję Na tym urządzeniu w Moim AO3.",
+  "重新翻譯此段": "Przetłumacz ten akapit ponownie",
+  "複製原文": "Kopiuj oryginał",
+  "複製譯文": "Kopiuj tłumaczenie"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -6465,7 +6495,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Kitap rafını (özel kapaklar dahil), okuma ilerlemesini, okuma süresini, görünüm ve çeviri tercihlerini senkronize eder. Çevrimdışı içerik, API anahtarları, içe aktarılan yazı tipleri ve arka plan resimleri dahil değildir.",
   "本機使用者資料同步": "Yerel Kullanıcı Veri Senkronizasyonu",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Bu cihazda depolanan yer imlerini, Daha Sonra İşaretlendi'yi, geçmişi ve abonelikleri senkronize eder.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "AO3 hesap verilerini kullanıyorsunuz: yer imleri, Daha Sonra İşaretlendi, geçmiş, abonelikler ve gelen kutusu AO3 hesabınızdan okunur ve ona yazılır. Bu, yalnızca AO3'ümde Bu Cihazda seçeneğine geçiş yaptığınızda senkronize edilir."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "AO3 hesap verilerini kullanıyorsunuz: yer imleri, Daha Sonra İşaretlendi, geçmiş, abonelikler ve gelen kutusu AO3 hesabınızdan okunur ve ona yazılır. Bu, yalnızca AO3'ümde Bu Cihazda seçeneğine geçiş yaptığınızda senkronize edilir.",
+  "重新翻譯此段": "Bu Paragrafı Tekrar Çevir",
+  "複製原文": "Orijinali Kopyala",
+  "複製譯文": "Çeviriyi Kopyala"
  },
  "nl": {
   "載入中": "Laden",
@@ -7053,7 +7086,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Synchroniseert de boekenplank (inclusief aangepaste omslagen), leesvoortgang, leestijd en weergave- en vertaalvoorkeuren. Offline inhoud, API-sleutels, geïmporteerde lettertypen en achtergrondafbeeldingen zijn niet inbegrepen.",
   "本機使用者資料同步": "Synchronisatie van lokale gebruikersgegevens",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Synchroniseert bladwijzers, Gemarkeerd voor later, geschiedenis en abonnementen die op dit apparaat zijn opgeslagen.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Je gebruikt AO3-accountgegevens: bladwijzers, Gemarkeerd voor later, geschiedenis, abonnementen en inbox worden gelezen van en geschreven naar je AO3-account. Dit wordt pas gesynchroniseerd nadat u naar Op dit apparaat in Mijn AO3 bent overgeschakeld."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Je gebruikt AO3-accountgegevens: bladwijzers, Gemarkeerd voor later, geschiedenis, abonnementen en inbox worden gelezen van en geschreven naar je AO3-account. Dit wordt pas gesynchroniseerd nadat u naar Op dit apparaat in Mijn AO3 bent overgeschakeld.",
+  "重新翻譯此段": "Vertaal deze paragraaf opnieuw",
+  "複製原文": "Kopieer origineel",
+  "複製譯文": "Kopieer vertaling"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -7641,7 +7677,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "يقوم بمزامنة رف الكتب (بما في ذلك الأغلفة المخصصة)، وتقدم القراءة، ووقت القراءة، وتفضيلات المظهر والترجمة. لا يتم تضمين المحتوى غير المتصل ومفاتيح API والخطوط المستوردة وصور الخلفية.",
   "本機使用者資料同步": "مزامنة بيانات المستخدم المحلي",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "مزامنة الإشارات المرجعية، والتي تم وضع علامة عليها لاحقًا، والتاريخ والاشتراكات المخزنة على هذا الجهاز.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "أنت تستخدم بيانات حساب AO3: تتم قراءة الإشارات المرجعية، والعلامات المحددة لوقت لاحق، والسجل، والاشتراكات، وصندوق الوارد من حساب AO3 الخاص بك وكتابتها فيه. تتم مزامنة هذا فقط بعد التبديل إلى On This Device في My AO3."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "أنت تستخدم بيانات حساب AO3: تتم قراءة الإشارات المرجعية، والعلامات المحددة لوقت لاحق، والسجل، والاشتراكات، وصندوق الوارد من حساب AO3 الخاص بك وكتابتها فيه. تتم مزامنة هذا فقط بعد التبديل إلى On This Device في My AO3.",
+  "重新翻譯此段": "ترجمة هذه الفقرة مرة أخرى",
+  "複製原文": "نسخ الأصل",
+  "複製譯文": "نسخ الترجمة"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -8229,7 +8268,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "बुकशेल्फ़ (कस्टम कवर सहित), पढ़ने की प्रगति, पढ़ने का समय, और उपस्थिति और अनुवाद प्राथमिकताओं को सिंक करता है। ऑफ़लाइन सामग्री, एपीआई कुंजियाँ, आयातित फ़ॉन्ट और पृष्ठभूमि छवियां शामिल नहीं हैं।",
   "本機使用者資料同步": "स्थानीय उपयोगकर्ता डेटा सिंक",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "इस डिवाइस पर संग्रहीत बुकमार्क, बाद के लिए चिह्नित, इतिहास और सदस्यता को सिंक करता है।",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "आप AO3 खाता डेटा का उपयोग कर रहे हैं: बुकमार्क, बाद के लिए चिह्नित, इतिहास, सदस्यता और इनबॉक्स आपके AO3 खाते से पढ़े और लिखे जाते हैं। यह आपके द्वारा My AO3 में इस डिवाइस पर स्विच करने के बाद ही सिंक होता है।"
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "आप AO3 खाता डेटा का उपयोग कर रहे हैं: बुकमार्क, बाद के लिए चिह्नित, इतिहास, सदस्यता और इनबॉक्स आपके AO3 खाते से पढ़े और लिखे जाते हैं। यह आपके द्वारा My AO3 में इस डिवाइस पर स्विच करने के बाद ही सिंक होता है।",
+  "重新翻譯此段": "इस अनुच्छेद का दोबारा अनुवाद करें",
+  "複製原文": "मूल कॉपी करें",
+  "複製譯文": "अनुवाद की प्रतिलिपि बनाएँ"
  },
  "id": {
   "載入中": "Memuat",
@@ -8817,7 +8859,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Menyinkronkan rak buku (termasuk sampul khusus), kemajuan membaca, waktu membaca, serta preferensi tampilan dan terjemahan. Konten offline, kunci API, font yang diimpor, dan gambar latar belakang tidak disertakan.",
   "本機使用者資料同步": "Sinkronisasi Data Pengguna Lokal",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Menyinkronkan bookmark, Ditandai untuk Nanti, riwayat dan langganan yang disimpan di perangkat ini.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Anda menggunakan data akun AO3: penanda, Ditandai untuk Nanti, riwayat, langganan, dan kotak masuk dibaca dan ditulis ke akun AO3 Anda. Ini disinkronkan hanya setelah Anda beralih ke Di Perangkat Ini di AO3 Saya."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Anda menggunakan data akun AO3: penanda, Ditandai untuk Nanti, riwayat, langganan, dan kotak masuk dibaca dan ditulis ke akun AO3 Anda. Ini disinkronkan hanya setelah Anda beralih ke Di Perangkat Ini di AO3 Saya.",
+  "重新翻譯此段": "Terjemahkan Paragraf Ini Lagi",
+  "複製原文": "Salin Asli",
+  "複製譯文": "Salin Terjemahan"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -9405,7 +9450,10 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "Đồng bộ hóa giá sách (bao gồm bìa tùy chỉnh), tiến trình đọc, thời gian đọc cũng như các tùy chọn về hình thức và bản dịch. Không bao gồm nội dung ngoại tuyến, khóa API, phông chữ đã nhập và hình nền.",
   "本機使用者資料同步": "Đồng bộ hóa dữ liệu người dùng cục bộ",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Đồng bộ hóa dấu trang, Đánh dấu để sau, lịch sử và đăng ký được lưu trữ trên thiết bị này.",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Bạn đang sử dụng dữ liệu tài khoản AO3: dấu trang, Đánh dấu để sau, lịch sử, đăng ký và hộp thư đến được đọc và ghi vào tài khoản AO3 của bạn. Điều này chỉ đồng bộ hóa sau khi bạn chuyển sang Bật thiết bị này trong AO3 của tôi."
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "Bạn đang sử dụng dữ liệu tài khoản AO3: dấu trang, Đánh dấu để sau, lịch sử, đăng ký và hộp thư đến được đọc và ghi vào tài khoản AO3 của bạn. Điều này chỉ đồng bộ hóa sau khi bạn chuyển sang Bật thiết bị này trong AO3 của tôi.",
+  "重新翻譯此段": "Dịch lại đoạn này",
+  "複製原文": "Sao chép bản gốc",
+  "複製譯文": "Sao chép bản dịch"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -9993,6 +10041,9 @@
   "同步書架（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。不包含離線內容、API Key、匯入的字體與背景圖片。": "ซิงค์ชั้นวางหนังสือ (รวมถึงปกแบบกำหนดเอง) ความคืบหน้าในการอ่าน เวลาในการอ่าน และการตั้งค่ารูปลักษณ์และการแปล ไม่รวมเนื้อหาออฟไลน์ คีย์ API แบบอักษรที่นำเข้า และรูปภาพพื้นหลัง",
   "本機使用者資料同步": "การซิงโครไนซ์ข้อมูลผู้ใช้ภายในเครื่อง",
   "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "ซิงค์บุ๊กมาร์ก ทำเครื่องหมายไว้สำหรับภายหลัง ประวัติและการสมัครรับข้อมูลที่จัดเก็บไว้ในอุปกรณ์นี้",
-  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "คุณกำลังใช้ข้อมูลบัญชี AO3: บุ๊กมาร์ก ทำเครื่องหมายไว้สำหรับภายหลัง ประวัติ การสมัครรับข้อมูล และกล่องจดหมายจะถูกอ่านและเขียนไปยังบัญชี AO3 ของคุณ การซิงค์นี้จะซิงค์หลังจากที่คุณสลับไปที่บนอุปกรณ์นี้ใน My AO3 เท่านั้น"
+  "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "คุณกำลังใช้ข้อมูลบัญชี AO3: บุ๊กมาร์ก ทำเครื่องหมายไว้สำหรับภายหลัง ประวัติ การสมัครรับข้อมูล และกล่องจดหมายจะถูกอ่านและเขียนไปยังบัญชี AO3 ของคุณ การซิงค์นี้จะซิงค์หลังจากที่คุณสลับไปที่บนอุปกรณ์นี้ใน My AO3 เท่านั้น",
+  "重新翻譯此段": "แปลย่อหน้านี้อีกครั้ง",
+  "複製原文": "คัดลอกต้นฉบับ",
+  "複製譯文": "คัดลอกคำแปล"
  }
 }

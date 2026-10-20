@@ -84,7 +84,6 @@ struct ReaderView: View {
                         Label(app.bookshelf.contains(detail.id) ? LocalizedStringKey("移出書架") : "加入書架",
                               systemImage: app.bookshelf.contains(detail.id) ? "books.vertical.fill" : "books.vertical")
                     }
-                    WorkDownloadButton(detail: detail)
                 }
                 if dataSource == .local, let detail = model.detail {
                     LocalWorkActionsMenu(detail: detail)
@@ -228,6 +227,16 @@ struct ReaderView: View {
                         style: style,
                         onRetry: { model.retry(paragraph) }
                     )
+                    // 長按段落：重新翻譯此段（開啟翻譯時）
+                    .contextMenu {
+                        if model.isTranslationOn, paragraph.isTranslatable {
+                            Button("重新翻譯此段", systemImage: "arrow.clockwise") { model.retranslate(paragraph) }
+                            Button("複製原文", systemImage: "doc.on.doc") { UIPasteboard.general.string = paragraph.text }
+                            if case .done(let text) = model.translations[paragraph.id] {
+                                Button("複製譯文", systemImage: "doc.on.doc") { UIPasteboard.general.string = text }
+                            }
+                        }
+                    }
                     .onAppear { model.paragraphAppeared(paragraph) }
                     .onDisappear { model.paragraphDisappeared(paragraph) }
                 }
@@ -338,7 +347,8 @@ struct ReaderView: View {
                     startAtEnd = true
                     model.previousChapter()
                 }
-            }
+            },
+            onRetranslate: model.isTranslationOn ? { model.retranslate($0) } : nil
         )
         .ignoresSafeArea()
     }
@@ -349,15 +359,16 @@ struct ReaderView: View {
                 ReaderTextView(text: detail.title, font: style.uiFont(scale: 1.5, weight: .bold), style: style)
                 metaTranslation(ReaderViewModel.workTitleID,
                                 font: style.uiFont(scale: 1.25 * style.translation.scale, weight: .semibold, italic: style.translation.italic))
-                Text(detail.authors.joined(separator: ", "))
-                    .foregroundStyle(bodyColor.opacity(0.7))
+                // 標題頁所有文字以正文字體大小為基礎
+                ReaderTextView(text: detail.authors.joined(separator: ", "), font: style.uiFont(scale: 0.95), style: style,
+                               color: bodyColor.opacity(0.7))
                 if !detail.series.isEmpty {
                     ForEach(detail.series, id: \.path) { series in
                         Button {
                             openWorkList(.series(name: series.name, path: series.path))
                         } label: {
                             Label(series.name, systemImage: "books.vertical")
-                                .appFont(.subheadline)
+                                .font(Font(style.uiFont(scale: 0.9)))
                                 .foregroundStyle(bodyColor)
                         }
                         .buttonStyle(.plain)
@@ -365,9 +376,7 @@ struct ReaderView: View {
                 }
                 if !detail.tagGroups.isEmpty {
                     WorkTagsView(groups: detail.tagGroups, background: cardBackground, foreground: cardForeground,
-                                 showsTranslation: model.isTranslationOn) {
-                        openWorkList($0)
-                    }
+                                 style: style, showsTranslation: model.isTranslationOn)
                 }
                 noteCard("簡介", english: "Summary", text: detail.summary, id: ReaderViewModel.summaryID)
                 noteCard("作者註", english: "Notes", text: detail.notes, id: ReaderViewModel.notesID)
@@ -404,7 +413,7 @@ struct ReaderView: View {
         if !text.isEmpty {
             VStack(alignment: .leading, spacing: 8) {
                 AO3TermLabel(title: title, english: english)
-                    .appFont(.caption, weight: .semibold)
+                    .font(Font(style.uiFont(scale: 0.8, weight: .semibold)))
                     .foregroundStyle(cardForeground.opacity(0.7))
                 // 簡介與作者註使用與正文相同的閱讀字體
                 ReaderTextView(text: text, font: style.uiFont(), style: style, color: cardForeground)
@@ -435,7 +444,7 @@ struct ReaderView: View {
             VStack(alignment: .leading, spacing: 20) {
                 header(detail: detail, chapter: chapter, includesChapterTitle: false)
                 Label("向左翻頁開始閱讀", systemImage: "chevron.right.2")
-                    .appFont(.footnote)
+                    .font(Font(style.uiFont(scale: 0.8)))
                     .foregroundStyle(bodyColor.opacity(0.5))
                     .frame(maxWidth: .infinity)
                     .padding(.top, 8)
@@ -678,9 +687,10 @@ private struct WorkTagsView: View {
     let groups: [WorkTagGroup]
     let background: Color
     let foreground: Color
+    /// 字體大小以正文為基礎
+    let style: ReaderStyle
     /// 開啟翻譯時，在標籤下方顯示譯文（目標語言跟隨介面語言）
     var showsTranslation = false
-    var onOpen: (WorkListRoute) -> Void
     @Environment(AppState.self) private var app
     @AppStorage(TranslationVisibility.readerFandomKey) private var showsFandomTranslation = true
     @AppStorage(TranslationVisibility.readerTagsKey) private var showsTagTranslation = true
@@ -696,30 +706,26 @@ private struct WorkTagsView: View {
             ForEach(expanded ? groups : Array(groups.prefix(4)), id: \.title) { group in
                 VStack(alignment: .leading, spacing: 4) {
                     Text(group.title)
-                        .appFont(.caption, weight: .semibold)
+                        .font(Font(style.uiFont(scale: 0.8, weight: .semibold)))
                         .foregroundStyle(foreground.opacity(0.65))
                     FlowLayout(horizontalSpacing: 6, verticalSpacing: 6) {
+                        // 標籤只顯示，不再點擊跳轉到篩選列表
                         ForEach(group.tags, id: \.path) { tag in
-                            Button {
-                                onOpen(.tag(name: tag.name, path: tag.path))
-                            } label: {
-                                // 過長的標籤換行完整顯示
-                                VStack(alignment: .leading, spacing: 2) {
-                                    Text(tag.name)
-                                        .appFont(.caption)
-                                    if translates(group), let translated = app.tags.translation(for: tag.name) {
-                                        Text(translated)
-                                            .appFont(.caption2)
-                                            .opacity(0.7)
-                                    }
+                            // 過長的標籤換行完整顯示
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(tag.name)
+                                    .font(Font(style.uiFont(scale: 0.85)))
+                                if translates(group), let translated = app.tags.translation(for: tag.name) {
+                                    Text(translated)
+                                        .font(Font(style.uiFont(scale: 0.75)))
+                                        .opacity(0.7)
                                 }
-                                .multilineTextAlignment(.leading)
-                                .foregroundStyle(foreground)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 4)
-                                .background(background, in: .rect(cornerRadius: 12))
                             }
-                            .buttonStyle(.plain)
+                            .multilineTextAlignment(.leading)
+                            .foregroundStyle(foreground)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 4)
+                            .background(background, in: .rect(cornerRadius: 12))
                         }
                     }
                 }
@@ -728,7 +734,7 @@ private struct WorkTagsView: View {
                 Button(expanded ? "收起標籤" : "顯示全部標籤") {
                     withAnimation { expanded.toggle() }
                 }
-                .appFont(.caption)
+                .font(Font(style.uiFont(scale: 0.85)))
             }
         }
         .task(id: [showsTranslation, showsFandomTranslation, showsTagTranslation]) {

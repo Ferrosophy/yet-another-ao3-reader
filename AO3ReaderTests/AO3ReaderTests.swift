@@ -371,3 +371,12 @@ struct LocalLibraryTests {
         #expect(merged == b.merged(with: a))
     }
 }
+
+struct ChapterTitleTests {
+    @Test func splitsNumberedChapterTitles() {
+        #expect(TranslationService.splitChapterTitle("Chapter 3: History and Objectivity")! == ("Chapter 3", "History and Objectivity"))
+        #expect(TranslationService.splitChapterTitle("第2章：重逢")! == ("第2章", "重逢"))
+        #expect(TranslationService.splitChapterTitle("Prologue: Start") == nil)
+        #expect(TranslationService.splitChapterTitle("Chapter 4") == nil)
+    }
+}

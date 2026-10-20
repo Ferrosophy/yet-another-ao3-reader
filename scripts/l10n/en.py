@@ -586,6 +586,9 @@ EN = {
 "本機使用者資料同步": "Local User Data Sync",
 "同步本機保存的書籤、稍後閱讀、閱讀紀錄與訂閱。": "Syncs bookmarks, Marked for Later, history and subscriptions stored on this device.",
 "目前使用 AO3 帳號資料，書籤、稍後閱讀、閱讀紀錄、訂閱與收件匣直接讀寫你的 AO3 帳號。在「我的 AO3」切換為本機保存後才會同步。": "You're using AO3 account data: bookmarks, Marked for Later, history, subscriptions and inbox are read from and written to your AO3 account. This syncs only after you switch to On This Device in My AO3.",
+"重新翻譯此段": "Translate This Paragraph Again",
+"複製原文": "Copy Original",
+"複製譯文": "Copy Translation",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}
