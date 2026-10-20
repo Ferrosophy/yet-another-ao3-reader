@@ -137,7 +137,7 @@ struct BatchDownloadView: View {
                         Text("沒有符合條件的作品").foregroundStyle(.secondary)
                     }
                 } header: {
-                    Text(model.heading ?? String(localized: "搜尋結果"))
+                    Text("搜尋結果")
                 }
             }
         }

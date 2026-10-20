@@ -72,7 +72,7 @@ struct LatestWorksView: View {
 
     var body: some View {
         Group {
-            if let model { WorkListView(model: model, showsHeading: false, header: AnyView(boardPickers)) } else { AO3LoadingView() }
+            if let model { WorkListView(model: model, header: AnyView(boardPickers)) } else { AO3LoadingView() }
         }
         .navigationTitle(board == .latest ? "最新作品" : "\(board.title) 排行")
         .toolbar {

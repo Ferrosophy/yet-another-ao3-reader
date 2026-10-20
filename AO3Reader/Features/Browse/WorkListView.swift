@@ -4,8 +4,6 @@ import SwiftUI
 /// 作品卡片列表，捲到底自動載入下一頁。
 struct WorkListView: View {
     let model: PagedWorksModel
-    /// 是否顯示 AO3 的結果數標題（如 "1 - 20 of 12,345 Works"）
-    var showsHeading = true
     /// 列表頂部、跟著內容一起捲動的區塊（例如首頁的榜單切換）
     var header: AnyView?
 
@@ -13,13 +11,6 @@ struct WorkListView: View {
         List {
             if let header {
                 header
-                    .listRowSeparator(.hidden)
-                    .listRowBackground(Color.clear)
-            }
-            if showsHeading, let heading = model.heading {
-                Text(heading)
-                    .appFont(.footnote)
-                    .foregroundStyle(.secondary)
                     .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
             }
