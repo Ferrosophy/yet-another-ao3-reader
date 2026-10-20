@@ -10,17 +10,13 @@ struct SettingsView: View {
         let build = info?["CFBundleVersion"] as? String ?? "?"
         return "\(version) (\(build))"
     }()
-    /// GitHub Issues 的新回饋網址，預先填入版本與系統資訊
-    private static func feedbackURL(kind: String) -> URL {
+    /// GitHub Issues 的新回饋網址，預先填入版本與系統資訊（不含帳號或閱讀資料）
+    private static let feedbackURL: URL = {
         let system = "iOS \(ProcessInfo.processInfo.operatingSystemVersionString)"
-        let title = kind == "bug" ? "[Bug] " : "[Idea] "
-        let body = kind == "bug"
-            ? "**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp \(versionString) · \(system)"
-            : "**建議 / Suggestion**\n\n\n---\nApp \(versionString) · \(system)"
         var components = URLComponents(string: "https://github.com/Ferrosophy/AO3-ios-translator/issues/new")!
-        components.queryItems = [URLQueryItem(name: "title", value: title), URLQueryItem(name: "body", value: body)]
+        components.queryItems = [URLQueryItem(name: "body", value: "\n\n---\nApp \(versionString) · \(system)")]
         return components.url!
-    }
+    }()
 
     @State private var showsClearConfirm = false
     @AppStorage(StartTab.storageKey) private var startTab: StartTab = .browse
@@ -54,8 +50,9 @@ struct SettingsView: View {
                         ? String(localized: "每 \(app.readingTime.reminderMinutes) 分鐘提醒")
                         : String(localized: "未開啟提醒"))
                 }
-                NavigationLink("意見回饋") {
-                    FeedbackView(bugURL: Self.feedbackURL(kind: "bug"), ideaURL: Self.feedbackURL(kind: "idea"))
+                // 直接在瀏覽器開啟 GitHub Issues，已附上版本資訊
+                Link(destination: Self.feedbackURL) {
+                    Text("意見回饋").foregroundStyle(.primary)
                 }
                 LabeledContent("版本", value: Self.versionString)
             }
@@ -107,27 +104,5 @@ struct SettingsView: View {
         .confirmationDialog("刪除所有 API Key？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
             Button("刪除", role: .destructive) { KeychainStore.deleteAll() }
         }
-    }
-}
-
-/// 意見回饋：在瀏覽器開啟 GitHub Issues，並預先填入版本資訊。
-private struct FeedbackView: View {
-    let bugURL: URL
-    let ideaURL: URL
-
-    var body: some View {
-        List {
-            Section {
-                // 與其他設定列相同的文字顏色
-                Link(destination: bugURL) { Text("回報問題").foregroundStyle(.primary) }
-                Link(destination: ideaURL) { Text("功能建議").foregroundStyle(.primary) }
-                Link(destination: URL(string: "https://github.com/Ferrosophy/AO3-ios-translator/issues")!) {
-                    Text("查看所有回饋").foregroundStyle(.primary)
-                }
-            } footer: {
-                Text("回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。")
-            }
-        }
-        .navigationTitle("意見回饋")
     }
 }
