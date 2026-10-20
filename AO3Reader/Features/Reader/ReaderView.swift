@@ -11,6 +11,7 @@ struct ReaderView: View {
 
     @State private var showsChrome = true
     @State private var showsChapters = false
+    @State private var showsParagraphPicker = false
     @State private var showsAppearance = false
     @State private var showsSourcePicker = false
     @State private var showsTargetPicker = false
@@ -117,6 +118,10 @@ struct ReaderView: View {
         // 離線閱讀時帳號操作稍後才在背景讀到，讀到後重新載入
         .task(id: "\(model.detail?.id ?? 0)-\(model.detail?.actions != nil)") {
             if let detail = model.detail { await actions.load(from: detail) }
+        }
+        .sheet(isPresented: $showsParagraphPicker) {
+            ParagraphRetranslateSheet(model: model)
+                .presentationDetents([.large])
         }
         .sheet(isPresented: $showsChapters) {
             ChapterListSheet(model: model)
@@ -597,6 +602,7 @@ struct ReaderView: View {
                 Label("顯示方式", systemImage: "text.below.photo")
                 Text(model.displayMode.title)
             }
+            Button("選擇段落重新翻譯", systemImage: "checklist") { showsParagraphPicker = true }
             Button("重新翻譯本章", systemImage: "arrow.clockwise") { model.resetTranslations() }
         } label: {
             Text(model.targetLanguage.name)
@@ -768,6 +774,67 @@ struct ChapterListSheet: View {
             .navigationTitle("章節")
             .navigationBarTitleDisplayMode(.inline)
             .task { await model.translateChapterTitles() }
+        }
+    }
+}
+
+/// 選擇段落重新翻譯：列出本章段落（原文與目前譯文），勾選後一次重新翻譯，結果覆蓋舊譯文。
+struct ParagraphRetranslateSheet: View {
+    let model: ReaderViewModel
+    @Environment(\.dismiss) private var dismiss
+    @State private var selection: Set<Paragraph.ID> = []
+
+    private var paragraphs: [Paragraph] { model.chapter?.paragraphs.filter(\.isTranslatable) ?? [] }
+
+    var body: some View {
+        NavigationStack {
+            ScrollViewReader { proxy in
+                List(paragraphs) { paragraph in
+                    Button {
+                        if selection.contains(paragraph.id) { selection.remove(paragraph.id) } else { selection.insert(paragraph.id) }
+                    } label: {
+                        HStack(alignment: .top, spacing: 12) {
+                            Image(systemName: selection.contains(paragraph.id) ? "checkmark.circle.fill" : "circle")
+                                .foregroundStyle(selection.contains(paragraph.id) ? AnyShapeStyle(.tint) : AnyShapeStyle(.secondary))
+                                .imageScale(.large)
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(paragraph.text)
+                                    .lineLimit(4)
+                                    .foregroundStyle(.primary)
+                                if case .done(let text) = model.translations[paragraph.id] {
+                                    Text(text)
+                                        .appFont(.footnote)
+                                        .lineLimit(3)
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                    .id(paragraph.id)
+                }
+                .onAppear {
+                    // 從目前閱讀到的段落開始
+                    if let anchor = model.scrollAnchor, paragraphs.contains(where: { $0.id == anchor }) {
+                        proxy.scrollTo(anchor, anchor: .top)
+                    }
+                }
+            }
+            .navigationTitle("選擇段落")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("重新翻譯（\(selection.count)）") {
+                        model.retranslate(paragraphs.filter { selection.contains($0.id) })
+                        dismiss()
+                    }
+                    .buttonStyle(.glassProminent)
+                    .disabled(selection.isEmpty)
+                }
+            }
         }
     }
 }

@@ -637,7 +637,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "ファイルまたはクラウドドライブからフォントファイルをインポートします。これらはこのアプリでのみ使用されます。左にスワイプして削除します。",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "オフラインで保存された作品はアプリにダウンロードされます。最初にオリジナルがあり、すべてのダウンロードが完了すると翻訳が続きます。 EPUB はアプリによって作成されたバイリンガル版です。他の形式は AO3 独自のファイルを使用します。エクスポートされたファイルは、ファイル アプリの YAAO3R › Bookshelf にあります。有料の翻訳 API を使用する前に質問されます。翻訳言語を変更した後、オフラインで作品を長押しし、「再翻訳」を選択します。",
   "離線清單同步": "オフラインリスト同期",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "オフライン リスト (カスタム カバーを含む)、読書の進行状況、読書時間、外観と翻訳の設定を同期します。各デバイス自体がオフライン ファイルをダウンロードします。 API キー、インポートされたフォント、背景画像は含まれません。"
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "オフライン リスト (カスタム カバーを含む)、読書の進行状況、読書時間、外観と翻訳の設定を同期します。各デバイス自体がオフライン ファイルをダウンロードします。 API キー、インポートされたフォント、背景画像は含まれません。",
+  "選擇段落重新翻譯": "再翻訳する段落を選択してください",
+  "選擇段落": "段落の選択",
+  "重新翻譯（%lld）": "再翻訳 (%lld)"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1277,7 +1280,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "파일 또는 클라우드 드라이브에서 글꼴 파일을 가져옵니다. 이 앱에서만 사용됩니다. 삭제하려면 왼쪽으로 스와이프하세요.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "오프라인으로 저장된 작품은 앱에 다운로드됩니다. 먼저 원본을 다운로드한 다음 모든 다운로드가 완료되면 번역을 다운로드합니다. EPUB는 앱에서 만든 이중 언어 버전입니다. 다른 형식은 AO3 자체 파일을 사용합니다. 내보낸 파일은 YAAO3R › Bookshelf 아래의 파일 앱에 있습니다. 유료 번역 API를 사용하기 전에 묻는 메시지가 표시됩니다. 대상 언어를 변경한 후 오프라인에서 작품을 길게 누르고 '다시 번역'을 선택하세요.",
   "離線清單同步": "오프라인 목록 동기화",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "오프라인 목록(맞춤 표지 포함), 읽기 진행 상황, 읽기 시간, 모양 및 번역 기본 설정을 동기화합니다. 각 장치는 오프라인 파일 자체를 다운로드합니다. API 키, 가져온 글꼴 및 배경 이미지는 포함되지 않습니다."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "오프라인 목록(맞춤 표지 포함), 읽기 진행 상황, 읽기 시간, 모양 및 번역 기본 설정을 동기화합니다. 각 장치는 오프라인 파일 자체를 다운로드합니다. API 키, 가져온 글꼴 및 배경 이미지는 포함되지 않습니다.",
+  "選擇段落重新翻譯": "재번역할 단락 선택",
+  "選擇段落": "단락 선택",
+  "重新翻譯（%lld）": "재번역(%lld)"
  },
  "es": {
   "載入中": "Cargando",
@@ -1917,7 +1923,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Importe archivos de fuentes desde Archivos o una unidad en la nube. Sólo se utilizan en esta aplicación; desliza hacia la izquierda para eliminar.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Los trabajos guardados sin conexión se descargan en la aplicación: primero los originales y luego las traducciones una vez finalizadas todas las descargas. EPUB es una edición bilingüe realizada por la aplicación; otros formatos utilizan archivos propios de AO3. Los archivos exportados se encuentran en la aplicación Archivos en YAAO3R › Bookshelf. Se le preguntará antes de utilizar una API de traducción paga. Después de cambiar el idioma de destino, mantenga presionada una obra sin conexión y elija \"Traducir nuevamente\".",
   "離線清單同步": "Sincronización de lista sin conexión",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincroniza la lista sin conexión (incluidas las portadas personalizadas), el progreso de la lectura, el tiempo de lectura y las preferencias de apariencia y traducción. Cada dispositivo descarga los archivos sin conexión. Las claves API, las fuentes importadas y las imágenes de fondo no están incluidas."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincroniza la lista sin conexión (incluidas las portadas personalizadas), el progreso de la lectura, el tiempo de lectura y las preferencias de apariencia y traducción. Cada dispositivo descarga los archivos sin conexión. Las claves API, las fuentes importadas y las imágenes de fondo no están incluidas.",
+  "選擇段落重新翻譯": "Elija párrafos para retraducir",
+  "選擇段落": "Elija párrafos",
+  "重新翻譯（%lld）": "Retraducir (%lld)"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2557,7 +2566,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Importez des fichiers de polices à partir de Fichiers ou d'un lecteur cloud. Ils ne sont utilisés que dans cette application ; balayez vers la gauche pour supprimer.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Les œuvres enregistrées hors ligne sont téléchargées dans l'application : les originaux d'abord, puis les traductions une fois tous les téléchargements terminés. EPUB est une édition bilingue réalisée par l'application ; d'autres formats utilisent les propres fichiers d'AO3. Les fichiers exportés se trouvent dans l'application Fichiers sous YAAO3R › Bookshelf. Vous serez invité à utiliser une API de traduction payante. Après avoir changé la langue cible, appuyez longuement sur une œuvre hors ligne et choisissez « Traduire à nouveau ».",
   "離線清單同步": "Synchronisation de liste hors ligne",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronise la liste hors ligne (y compris les couvertures personnalisées), la progression de la lecture, le temps de lecture et les préférences d'apparence et de traduction. Chaque appareil télécharge lui-même les fichiers hors ligne. Les clés API, les polices importées et les images d'arrière-plan ne sont pas incluses."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronise la liste hors ligne (y compris les couvertures personnalisées), la progression de la lecture, le temps de lecture et les préférences d'apparence et de traduction. Chaque appareil télécharge lui-même les fichiers hors ligne. Les clés API, les polices importées et les images d'arrière-plan ne sont pas incluses.",
+  "選擇段落重新翻譯": "Choisissez les paragraphes à retraduire",
+  "選擇段落": "Choisir des paragraphes",
+  "重新翻譯（%lld）": "Retraduire (%lld)"
  },
  "de": {
   "載入中": "Laden",
@@ -3197,7 +3209,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Importieren Sie Schriftartdateien aus Dateien oder einem Cloud-Laufwerk. Sie werden nur in dieser App verwendet; Zum Löschen nach links wischen.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Offline gespeicherte Werke werden in die App heruntergeladen: zuerst die Originale, dann die Übersetzungen, sobald alle Downloads abgeschlossen sind. EPUB ist eine zweisprachige Ausgabe, die von der App erstellt wird; andere Formate verwenden AO3-eigene Dateien. Exportierte Dateien befinden sich in der Dateien-App unter YAAO3R › Bookshelf. Sie werden gefragt, bevor eine kostenpflichtige Übersetzungs-API verwendet wird. Nachdem Sie die Zielsprache geändert haben, drücken Sie lange auf ein Werk im Offline-Modus und wählen Sie „Erneut übersetzen“.",
   "離線清單同步": "Offline-Listensynchronisierung",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronisiert die Offline-Liste (einschließlich benutzerdefinierter Cover), den Lesefortschritt, die Lesezeit sowie die Darstellungs- und Übersetzungseinstellungen. Jedes Gerät lädt die Offlinedateien selbst herunter. API-Schlüssel, importierte Schriftarten und Hintergrundbilder sind nicht enthalten."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronisiert die Offline-Liste (einschließlich benutzerdefinierter Cover), den Lesefortschritt, die Lesezeit sowie die Darstellungs- und Übersetzungseinstellungen. Jedes Gerät lädt die Offlinedateien selbst herunter. API-Schlüssel, importierte Schriftarten und Hintergrundbilder sind nicht enthalten.",
+  "選擇段落重新翻譯": "Wählen Sie „Absätze zur Neuübersetzung“ aus",
+  "選擇段落": "Wählen Sie „Absätze“.",
+  "重新翻譯（%lld）": "Neu übersetzen (%lld)"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3837,7 +3852,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Importe arquivos de fontes de Arquivos ou de uma unidade na nuvem. Eles são usados ​​apenas neste aplicativo; deslize para a esquerda para excluir.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "As obras salvas off-line são baixadas no aplicativo: primeiro os originais e depois as traduções quando todos os downloads terminarem. EPUB é uma edição bilíngue feita pelo app; outros formatos usam arquivos próprios do AO3. Os arquivos exportados estão no aplicativo Arquivos em YAAO3R › Bookshelf. Você será questionado antes de uma API de tradução paga ser usada. Após alterar o idioma de destino, mantenha uma obra pressionada no Offline e escolha “Traduzir novamente”.",
   "離線清單同步": "Sincronização de lista offline",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincroniza a lista offline (incluindo capas personalizadas), progresso de leitura, tempo de leitura e preferências de aparência e tradução. Cada dispositivo baixa os arquivos offline. Chaves de API, fontes importadas e imagens de fundo não estão incluídas."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincroniza a lista offline (incluindo capas personalizadas), progresso de leitura, tempo de leitura e preferências de aparência e tradução. Cada dispositivo baixa os arquivos offline. Chaves de API, fontes importadas e imagens de fundo não estão incluídas.",
+  "選擇段落重新翻譯": "Escolha parágrafos para retraduzir",
+  "選擇段落": "Escolha parágrafos",
+  "重新翻譯（%lld）": "Retraduzir (%lld)"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4477,7 +4495,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Importa file di caratteri da File o da un'unità cloud. Vengono utilizzati solo in questa app; scorri verso sinistra per eliminare.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Le opere salvate offline vengono scaricate nell'app: prima gli originali, poi le traduzioni una volta terminati tutti i download. EPUB è un'edizione bilingue realizzata dall'app; altri formati utilizzano i file di AO3. I file esportati si trovano nell'app File in YAAO3R › Libreria. Ti verrà chiesto prima di utilizzare un'API di traduzione a pagamento. Dopo aver cambiato la lingua di destinazione, premi a lungo un'opera in offline e scegli \"Traduci di nuovo\".",
   "離線清單同步": "Sincronizzazione elenco offline",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincronizza l'elenco offline (comprese le copertine personalizzate), l'avanzamento della lettura, il tempo di lettura e le preferenze di aspetto e traduzione. Ogni dispositivo scarica autonomamente i file offline. Le chiavi API, i caratteri importati e le immagini di sfondo non sono inclusi."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Sincronizza l'elenco offline (comprese le copertine personalizzate), l'avanzamento della lettura, il tempo di lettura e le preferenze di aspetto e traduzione. Ogni dispositivo scarica autonomamente i file offline. Le chiavi API, i caratteri importati e le immagini di sfondo non sono inclusi.",
+  "選擇段落重新翻譯": "Scegli i paragrafi da ritradurre",
+  "選擇段落": "Scegli Paragrafi",
+  "重新翻譯（%lld）": "Ritradurre (%lld)"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5117,7 +5138,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Импортируйте файлы шрифтов из файлов или облачного диска. Они используются только в этом приложении; проведите пальцем влево, чтобы удалить.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Работы, сохраненные в автономном режиме, загружаются в приложение: сначала оригиналы, затем переводы, как только все загрузки завершатся. EPUB — двуязычное издание, созданное приложением; другие форматы используют собственные файлы AO3. Экспортированные файлы находятся в приложении «Файлы» в разделе YAAO3R › Книжная полка. Перед использованием API платного перевода вас спросят. После изменения целевого языка нажмите и удерживайте произведение в автономном режиме и выберите «Перевести еще раз».",
   "離線清單同步": "Синхронизация автономного списка",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Синхронизирует автономный список (включая пользовательские обложки), ход чтения, время чтения, а также настройки внешнего вида и перевода. Каждое устройство само загружает автономные файлы. Ключи API, импортированные шрифты и фоновые изображения не включены."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Синхронизирует автономный список (включая пользовательские обложки), ход чтения, время чтения, а также настройки внешнего вида и перевода. Каждое устройство само загружает автономные файлы. Ключи API, импортированные шрифты и фоновые изображения не включены.",
+  "選擇段落重新翻譯": "Выберите абзацы для повторного перевода",
+  "選擇段落": "Выберите абзацы",
+  "重新翻譯（%lld）": "Повторно перевести (%lld)"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5757,7 +5781,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Імпорт файлів шрифтів із файлів або хмарного диска. Вони використовуються лише в цьому додатку; проведіть ліворуч, щоб видалити.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Твори, збережені офлайн, завантажуються в додаток: спочатку оригінали, а потім переклади, коли всі завантаження закінчаться. EPUB – це двомовне видання, створене програмою; інші формати використовують власні файли AO3. Експортовані файли знаходяться в програмі Файли в YAAO3R › Книжкова полиця. Вам буде запропоновано перед використанням платного API перекладу. Після зміни цільової мови натисніть і утримуйте твір у режимі офлайн і виберіть «Перекласти ще раз».",
   "離線清單同步": "Синхронізація офлайнового списку",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Синхронізує офлайн-список (включаючи спеціальні обкладинки), прогрес читання, час читання, а також параметри зовнішнього вигляду та перекладу. Кожен пристрій самостійно завантажує офлайн-файли. Ключі API, імпортовані шрифти та фонові зображення не включені."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Синхронізує офлайн-список (включаючи спеціальні обкладинки), прогрес читання, час читання, а також параметри зовнішнього вигляду та перекладу. Кожен пристрій самостійно завантажує офлайн-файли. Ключі API, імпортовані шрифти та фонові зображення не включені.",
+  "選擇段落重新翻譯": "Виберіть Абзаци для повторного перекладу",
+  "選擇段落": "Виберіть «Абзаци».",
+  "重新翻譯（%lld）": "Перекласти (%lld)"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6397,7 +6424,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Importuj pliki czcionek z plików lub dysku w chmurze. Są używane tylko w tej aplikacji; przesuń w lewo, aby usunąć.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Prace zapisane w trybie offline są pobierane do aplikacji: najpierw oryginały, a po zakończeniu pobierania wszystkich tłumaczeń. EPUB to dwujęzyczna edycja stworzona przez aplikację; inne formaty korzystają z własnych plików AO3. Wyeksportowane pliki znajdują się w aplikacji Pliki w sekcji YAAO3R › Półka na książki. Przed użyciem płatnego interfejsu API tłumaczenia zostaniesz zapytany. Po zmianie języka docelowego naciśnij i przytrzymaj utwór w trybie offline i wybierz „Przetłumacz ponownie”.",
   "離線清單同步": "Synchronizacja list offline",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronizuje listę offline (w tym niestandardowe okładki), postęp czytania, czas czytania oraz preferencje dotyczące wyglądu i tłumaczenia. Każde urządzenie samodzielnie pobiera pliki offline. Klucze API, importowane czcionki i obrazy tła nie są uwzględniane."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchronizuje listę offline (w tym niestandardowe okładki), postęp czytania, czas czytania oraz preferencje dotyczące wyglądu i tłumaczenia. Każde urządzenie samodzielnie pobiera pliki offline. Klucze API, importowane czcionki i obrazy tła nie są uwzględniane.",
+  "選擇段落重新翻譯": "Wybierz akapity do ponownego przetłumaczenia",
+  "選擇段落": "Wybierz Akapity",
+  "重新翻譯（%lld）": "Przetłumacz ponownie (%lld)"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7037,7 +7067,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Yazı tipi dosyalarını Dosyalardan veya bir bulut sürücüsünden içe aktarın. Yalnızca bu uygulamada kullanılırlar; Silmek için sola kaydırın.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Çevrimdışı kaydedilen çalışmalar uygulamaya indirilir: önce orijinaller, ardından tüm indirmeler bittiğinde çeviriler. EPUB, uygulama tarafından hazırlanan iki dilli bir sürümdür; diğer formatlar AO3'ün kendi dosyalarını kullanır. Dışa aktarılan dosyalar YAAO3R › Kitaplık altındaki Dosyalar uygulamasındadır. Ücretli bir çeviri API'si kullanılmadan önce size sorulacaktır. Hedef dili değiştirdikten sonra Çevrimdışında bir çalışmaya uzun basın ve “Yeniden Çevir”i seçin.",
   "離線清單同步": "Çevrimdışı Liste Senkronizasyonu",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Çevrimdışı listeyi (özel kapaklar dahil), okuma ilerlemesini, okuma süresini, görünüm ve çeviri tercihlerini senkronize eder. Her cihaz çevrimdışı dosyaları kendisi indirir. API anahtarları, içe aktarılan yazı tipleri ve arka plan resimleri dahil değildir."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Çevrimdışı listeyi (özel kapaklar dahil), okuma ilerlemesini, okuma süresini, görünüm ve çeviri tercihlerini senkronize eder. Her cihaz çevrimdışı dosyaları kendisi indirir. API anahtarları, içe aktarılan yazı tipleri ve arka plan resimleri dahil değildir.",
+  "選擇段落重新翻譯": "Yeniden Çevrilecek Paragrafları Seçin",
+  "選擇段落": "Paragrafları Seçin",
+  "重新翻譯（%lld）": "Yeniden çevir (%lld)"
  },
  "nl": {
   "載入中": "Laden",
@@ -7677,7 +7710,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Importeer lettertypebestanden vanuit Bestanden of een clouddrive. Ze worden alleen in deze app gebruikt; veeg naar links om te verwijderen.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Offline opgeslagen werken worden naar de app gedownload: eerst de originelen, daarna de vertalingen zodra alle downloads zijn voltooid. EPUB is een tweetalige editie gemaakt door de app; andere formaten gebruiken de eigen bestanden van AO3. Geëxporteerde bestanden bevinden zich in de app Bestanden onder YAAO3R ›Boekenplank. U wordt gevraagd voordat een betaalde vertaal-API wordt gebruikt. Nadat u de doeltaal heeft gewijzigd, drukt u lang op een werk in Offline en kiest u “Opnieuw vertalen”.",
   "離線清單同步": "Offline lijstsynchronisatie",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchroniseert de offline lijst (inclusief aangepaste omslagen), leesvoortgang, leestijd en weergave- en vertaalvoorkeuren. Elk apparaat downloadt de offline bestanden zelf. API-sleutels, geïmporteerde lettertypen en achtergrondafbeeldingen zijn niet inbegrepen."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Synchroniseert de offline lijst (inclusief aangepaste omslagen), leesvoortgang, leestijd en weergave- en vertaalvoorkeuren. Elk apparaat downloadt de offline bestanden zelf. API-sleutels, geïmporteerde lettertypen en achtergrondafbeeldingen zijn niet inbegrepen.",
+  "選擇段落重新翻譯": "Kies Alinea's om opnieuw te vertalen",
+  "選擇段落": "Kies Alinea's",
+  "重新翻譯（%lld）": "Opnieuw vertalen (%lld)"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8317,7 +8353,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "استيراد ملفات الخطوط من الملفات أو محرك الأقراص السحابي. يتم استخدامها فقط في هذا التطبيق؛ اسحب لليسار للحذف.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "يتم تنزيل الأعمال المحفوظة في وضع عدم الاتصال إلى التطبيق: النسخ الأصلية أولاً، ثم الترجمات بمجرد انتهاء جميع التنزيلات. EPUB هو إصدار ثنائي اللغة تم إنشاؤه بواسطة التطبيق؛ تستخدم التنسيقات الأخرى ملفات AO3 الخاصة. الملفات المصدرة موجودة في تطبيق الملفات ضمن YAAO3R ›Bookshelf. سيتم سؤالك قبل استخدام واجهة برمجة تطبيقات الترجمة المدفوعة. بعد تغيير اللغة المستهدفة، اضغط لفترة طويلة على العمل في وضع عدم الاتصال واختر \"ترجمة مرة أخرى\".",
   "離線清單同步": "مزامنة القائمة دون اتصال",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "يقوم بمزامنة القائمة غير المتصلة بالإنترنت (بما في ذلك الأغلفة المخصصة)، وتقدم القراءة، ووقت القراءة، وتفضيلات المظهر والترجمة. يقوم كل جهاز بتنزيل الملفات غير المتصلة بالإنترنت بنفسه. لا يتم تضمين مفاتيح API والخطوط المستوردة وصور الخلفية."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "يقوم بمزامنة القائمة غير المتصلة بالإنترنت (بما في ذلك الأغلفة المخصصة)، وتقدم القراءة، ووقت القراءة، وتفضيلات المظهر والترجمة. يقوم كل جهاز بتنزيل الملفات غير المتصلة بالإنترنت بنفسه. لا يتم تضمين مفاتيح API والخطوط المستوردة وصور الخلفية.",
+  "選擇段落重新翻譯": "اختر الفقرات لإعادة ترجمتها",
+  "選擇段落": "اختر الفقرات",
+  "重新翻譯（%lld）": "إعادة الترجمة (%lld)"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -8957,7 +8996,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "फ़ाइलों या क्लाउड ड्राइव से फ़ॉन्ट फ़ाइलें आयात करें। उनका उपयोग केवल इस ऐप में किया जाता है; हटाने के लिए बाएं स्वाइप करें.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "ऑफ़लाइन सहेजे गए कार्यों को ऐप में डाउनलोड किया जाता है: पहले मूल, फिर सभी डाउनलोड समाप्त होने पर अनुवाद। EPUB ऐप द्वारा बनाया गया एक द्विभाषी संस्करण है; अन्य प्रारूप AO3 की अपनी फ़ाइलों का उपयोग करते हैं। निर्यात की गई फ़ाइलें YAAO3R › बुकशेल्फ़ के अंतर्गत फ़ाइलें ऐप में हैं। सशुल्क अनुवाद एपीआई का उपयोग करने से पहले आपसे पूछा जाएगा। लक्ष्य भाषा बदलने के बाद, ऑफ़लाइन में किसी कार्य को देर तक दबाकर रखें और \"फिर से अनुवाद करें\" चुनें।",
   "離線清單同步": "ऑफ़लाइन सूची समन्वयन",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "ऑफ़लाइन सूची (कस्टम कवर सहित), पढ़ने की प्रगति, पढ़ने का समय, और उपस्थिति और अनुवाद प्राथमिकताओं को सिंक करता है। प्रत्येक डिवाइस ऑफ़लाइन फ़ाइलें स्वयं डाउनलोड करता है। एपीआई कुंजियाँ, आयातित फ़ॉन्ट और पृष्ठभूमि छवियां शामिल नहीं हैं।"
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "ऑफ़लाइन सूची (कस्टम कवर सहित), पढ़ने की प्रगति, पढ़ने का समय, और उपस्थिति और अनुवाद प्राथमिकताओं को सिंक करता है। प्रत्येक डिवाइस ऑफ़लाइन फ़ाइलें स्वयं डाउनलोड करता है। एपीआई कुंजियाँ, आयातित फ़ॉन्ट और पृष्ठभूमि छवियां शामिल नहीं हैं।",
+  "選擇段落重新翻譯": "दोबारा अनुवाद करने के लिए पैराग्राफ चुनें",
+  "選擇段落": "अनुच्छेद चुनें",
+  "重新翻譯（%lld）": "पुनः अनुवाद करें (%lld)"
  },
  "id": {
   "載入中": "Memuat",
@@ -9597,7 +9639,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Impor file font dari File atau drive cloud. Mereka hanya digunakan di aplikasi ini; geser ke kiri untuk menghapus.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Karya yang disimpan secara offline diunduh ke dalam aplikasi: karya asli terlebih dahulu, kemudian terjemahan setelah semua unduhan selesai. EPUB adalah edisi bilingual yang dibuat oleh aplikasi; format lain menggunakan file AO3 sendiri. File yang diekspor ada di aplikasi Files pada YAAO3R › Bookshelf. Anda akan ditanya sebelum API terjemahan berbayar digunakan. Setelah mengubah bahasa target, tekan lama sebuah karya dalam mode Offline dan pilih “Terjemahkan Lagi”.",
   "離線清單同步": "Sinkronisasi Daftar Offline",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Menyinkronkan daftar offline (termasuk sampul khusus), kemajuan membaca, waktu membaca, serta preferensi tampilan dan terjemahan. Setiap perangkat mengunduh file offline itu sendiri. Kunci API, font yang diimpor, dan gambar latar belakang tidak disertakan."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Menyinkronkan daftar offline (termasuk sampul khusus), kemajuan membaca, waktu membaca, serta preferensi tampilan dan terjemahan. Setiap perangkat mengunduh file offline itu sendiri. Kunci API, font yang diimpor, dan gambar latar belakang tidak disertakan.",
+  "選擇段落重新翻譯": "Pilih Paragraf untuk Diterjemahkan Ulang",
+  "選擇段落": "Pilih Paragraf",
+  "重新翻譯（%lld）": "Terjemahkan ulang (%lld)"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10237,7 +10282,10 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "Nhập tệp phông chữ từ Tệp hoặc ổ đĩa đám mây. Chúng chỉ được sử dụng trong ứng dụng này; vuốt sang trái để xóa.",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "Các tác phẩm được lưu ngoại tuyến sẽ được tải xuống ứng dụng: bản gốc trước, sau đó là bản dịch sau khi tất cả quá trình tải xuống hoàn tất. EPUB là phiên bản song ngữ do ứng dụng tạo ra; các định dạng khác sử dụng tệp riêng của AO3. Các tệp đã xuất nằm trong ứng dụng Tệp trong YAAO3R > Giá sách. Bạn sẽ được hỏi trước khi sử dụng API dịch thuật trả phí. Sau khi thay đổi ngôn ngữ đích, hãy nhấn và giữ một tác phẩm ở chế độ Ngoại tuyến và chọn “Dịch lại”.",
   "離線清單同步": "Đồng bộ danh sách ngoại tuyến",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Đồng bộ hóa danh sách ngoại tuyến (bao gồm bìa tùy chỉnh), tiến trình đọc, thời gian đọc cũng như các tùy chọn dịch và giao diện. Mỗi thiết bị sẽ tự tải xuống các tệp ngoại tuyến. Không bao gồm khóa API, phông chữ đã nhập và hình nền."
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "Đồng bộ hóa danh sách ngoại tuyến (bao gồm bìa tùy chỉnh), tiến trình đọc, thời gian đọc cũng như các tùy chọn dịch và giao diện. Mỗi thiết bị sẽ tự tải xuống các tệp ngoại tuyến. Không bao gồm khóa API, phông chữ đã nhập và hình nền.",
+  "選擇段落重新翻譯": "Chọn đoạn văn để dịch lại",
+  "選擇段落": "Chọn đoạn văn",
+  "重新翻譯（%lld）": "Dịch lại (%lld)"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -10877,6 +10925,9 @@
   "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": "นำเข้าไฟล์ฟอนต์จาก Files หรือคลาวด์ไดรฟ์ ใช้ในแอพนี้เท่านั้น ปัดไปทางซ้ายเพื่อลบ",
   "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": "งานที่บันทึกไว้แบบออฟไลน์จะถูกดาวน์โหลดลงในแอป: ต้นฉบับก่อน จากนั้นจึงแปลเมื่อการดาวน์โหลดทั้งหมดเสร็จสิ้น EPUB เป็นฉบับสองภาษาที่สร้างโดยแอป รูปแบบอื่นใช้ไฟล์ของ AO3 เอง ไฟล์ที่ส่งออกจะอยู่ในแอป Files ภายใต้ YAAO3R › Bookshelf คุณจะถูกถามก่อนที่จะใช้ API การแปลแบบชำระเงิน หลังจากเปลี่ยนภาษาเป้าหมายแล้ว ให้กดงานที่ออฟไลน์ค้างไว้แล้วเลือก \"แปลอีกครั้ง\"",
   "離線清單同步": "การซิงค์รายการออฟไลน์",
-  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "ซิงค์รายการออฟไลน์ (รวมถึงปกแบบกำหนดเอง) ความคืบหน้าในการอ่าน เวลาในการอ่าน และการตั้งค่ารูปลักษณ์และการแปล อุปกรณ์แต่ละเครื่องจะดาวน์โหลดไฟล์ออฟไลน์ด้วยตัวเอง ไม่รวมคีย์ API แบบอักษรที่นำเข้าและภาพพื้นหลัง"
+  "同步離線清單（含自訂封面）、閱讀進度、閱讀時長，以及外觀與翻譯偏好。離線檔案由每台裝置自行下載；不包含 API Key、匯入的字體與背景圖片。": "ซิงค์รายการออฟไลน์ (รวมถึงปกแบบกำหนดเอง) ความคืบหน้าในการอ่าน เวลาในการอ่าน และการตั้งค่ารูปลักษณ์และการแปล อุปกรณ์แต่ละเครื่องจะดาวน์โหลดไฟล์ออฟไลน์ด้วยตัวเอง ไม่รวมคีย์ API แบบอักษรที่นำเข้าและภาพพื้นหลัง",
+  "選擇段落重新翻譯": "เลือกย่อหน้าที่จะแปลใหม่",
+  "選擇段落": "เลือกย่อหน้า",
+  "重新翻譯（%lld）": "แปลซ้ำ (%lld)"
  }
 }

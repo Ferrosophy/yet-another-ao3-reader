@@ -287,23 +287,49 @@ final class ReaderViewModel {
 
     /// 使用者選擇的段落重新翻譯：略過翻譯快取，結果覆蓋舊譯文（含書架的離線譯文）
     func retranslate(_ paragraph: Paragraph) {
-        guard paragraph.isTranslatable else { return }
-        translations[paragraph.id] = .loading
+        retranslate([paragraph])
+    }
+
+    /// 重新翻譯使用者選擇的段落：略過翻譯快取並依服務的批次大小分批送出，結果覆蓋舊譯文（含離線譯文）
+    func retranslate(_ paragraphs: [Paragraph]) {
+        let paragraphs = paragraphs.filter(\.isTranslatable)
+        guard !paragraphs.isEmpty else { return }
+        for paragraph in paragraphs { translations[paragraph.id] = .loading }
         let generation = generation
         let workID = route.id
         let target = targetLanguage
         Task {
+            let provider: any TranslationProvider
             do {
-                let provider = try settings.makeProvider()
-                let results = try await translator.translate(paragraphs: [paragraph], provider: provider,
-                                                             source: settings.config.sourceLanguage, target: target,
-                                                             bypassCache: true)
-                guard generation == self.generation, let text = results.first else { return }
-                translations[paragraph.id] = .done(text)
-                OfflineManager.saveTranslation(text, for: paragraph, workID: workID, targetLanguageCode: target.code)
+                provider = try settings.makeProvider()
             } catch {
-                guard generation == self.generation else { return }
-                translations[paragraph.id] = .failed(error.localizedDescription)
+                for paragraph in paragraphs { translations[paragraph.id] = .failed(error.localizedDescription) }
+                return
+            }
+            var index = 0
+            while index < paragraphs.count {
+                var batch: [Paragraph] = []
+                var characters = 0
+                while index < paragraphs.count {
+                    let paragraph = paragraphs[index]
+                    if !batch.isEmpty, characters + paragraph.text.count > provider.maxBatchCharacters { break }
+                    batch.append(paragraph)
+                    characters += paragraph.text.count
+                    index += 1
+                }
+                do {
+                    let results = try await translator.translate(paragraphs: batch, provider: provider,
+                                                                 source: settings.config.sourceLanguage, target: target,
+                                                                 bypassCache: true)
+                    guard generation == self.generation else { return }
+                    for (paragraph, text) in zip(batch, results) {
+                        translations[paragraph.id] = .done(text)
+                        OfflineManager.saveTranslation(text, for: paragraph, workID: workID, targetLanguageCode: target.code)
+                    }
+                } catch {
+                    guard generation == self.generation else { return }
+                    for paragraph in batch { translations[paragraph.id] = .failed(error.localizedDescription) }
+                }
             }
         }
     }
