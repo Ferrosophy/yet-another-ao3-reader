@@ -326,6 +326,8 @@ struct ReaderView: View {
             if model.chapterIndex == 0 {
                 Text(detail.title)
                     .font(style.titleFont)
+                metaTranslation(ReaderViewModel.workTitleID,
+                                font: style.font(scale: 1.25 * style.translation.fontScale, weight: .semibold))
                 Text(detail.authors.joined(separator: ", "))
                     .foregroundStyle(bodyColor.opacity(0.7))
                 if !detail.series.isEmpty {

@@ -368,9 +368,6 @@ final class PageTextView: UIView {
     }
 }
 
-/// 仿真翻頁時頁面的背面：與閱讀背景同色（跟隨淺色 / 深色模式），不顯示文字。
-final class BackPageController: ReaderPage {}
-
 /// 作品資訊頁（第一頁）：SwiftUI 內容，可上下捲動。
 final class HeaderPageController: ReaderPage {
     let hosting: UIHostingController<AnyView>
@@ -435,7 +432,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     private var insets: UIEdgeInsets { margins.insets(safeArea: view.window?.safeAreaInsets ?? DeviceInsets.current) }
 
     private var visiblePage: ReaderPage? {
-        (pageViewController?.viewControllers?.first(where: { !($0 is BackPageController) }) as? ReaderPage) ?? currentPage
+        (pageViewController?.viewControllers?.first as? ReaderPage) ?? currentPage
     }
 
     override func viewDidLoad() {
@@ -584,7 +581,8 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
             )
             controller.dataSource = self
             controller.delegate = self
-            controller.isDoubleSided = transition == .curl
+            // 單面翻頁：翻起的頁面背面由系統以頁面本身（與閱讀背景同色，跟隨淺色 / 深色模式）繪製
+            controller.isDoubleSided = false
             addChild(controller)
             controller.view.frame = view.bounds
             controller.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -609,10 +607,15 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         guard let page = makePage(index) else { return }
         if let pageViewController {
             currentIndex = index
-            // 仿真為雙面：每頁背後是一張依淺色 / 深色模式著色的背頁
-            let controllers: [UIViewController] = pageViewController.isDoubleSided
-                ? [page, BackPageController(index: index, background: background)] : [page]
-            pageViewController.setViewControllers(controllers, direction: forward ? .forward : .reverse, animated: animated)
+            if animated {
+                // 動畫中不得再次 setViewControllers（UIPageViewController 會丟出例外而閃退）
+                isAnimating = true
+                pageViewController.setViewControllers([page], direction: forward ? .forward : .reverse, animated: true) { [weak self] _ in
+                    self?.animationDidEnd()
+                }
+            } else {
+                pageViewController.setViewControllers([page], direction: .forward, animated: false)
+            }
             notifyPageChange()
         } else if animated, currentPage != nil {
             transitionTo(page, forward: forward)
@@ -858,27 +861,26 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
 
     // MARK: UIPageViewController
 
-    // 雙面仿真的順序：第 i 頁正面 → 第 i 頁背面 → 第 i+1 頁正面
-
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if let back = viewController as? BackPageController { return makePage(back.index) }
-        guard let page = viewController as? ReaderPage, page.index > 0 else { return nil }
-        if pageViewController.isDoubleSided { return BackPageController(index: page.index - 1, background: background) }
+        guard let page = viewController as? ReaderPage else { return nil }
         return makePage(page.index - 1)
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if let back = viewController as? BackPageController { return makePage(back.index + 1) }
-        guard let page = viewController as? ReaderPage, page.index + 1 < pageCount else { return nil }
-        if pageViewController.isDoubleSided { return BackPageController(index: page.index, background: background) }
+        guard let page = viewController as? ReaderPage else { return nil }
         return makePage(page.index + 1)
+    }
+
+    /// 手勢翻頁開始：期間收到的新內容延後到翻頁結束再排版
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            willTransitionTo pendingViewControllers: [UIViewController]) {
+        isAnimating = true
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool,
                             previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        guard completed,
-              let page = pageViewController.viewControllers?.first(where: { !($0 is BackPageController) }) as? ReaderPage
-        else { return }
+        defer { animationDidEnd() }
+        guard completed, let page = pageViewController.viewControllers?.first as? ReaderPage else { return }
         currentIndex = page.index
         notifyPageChange()
     }

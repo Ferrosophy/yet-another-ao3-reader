@@ -125,6 +125,7 @@ final class ReaderViewModel {
 
     /// 簡介與章節標題也以段落形式排入同一個翻譯佇列（ID 以 meta- 開頭，不會與正文衝突）
     static let summaryID = "meta-summary"
+    static let workTitleID = "meta-worktitle"
     static let notesID = "meta-notes"
     static let endNotesID = "meta-endnotes"
     static func chapterTitleID(_ chapter: Int) -> String { "meta-title-c\(chapter)" }
@@ -139,6 +140,7 @@ final class ReaderViewModel {
         for index in chapters where detail.chapters.indices.contains(index) {
             let chapter = detail.chapters[index]
             if index == 0 {
+                add(workTitleID, detail.title, kind: .heading)
                 add(summaryID, detail.summary)
                 add(notesID, detail.notes)
             }
