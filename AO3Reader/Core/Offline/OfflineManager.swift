@@ -66,7 +66,8 @@ final class OfflineManager {
         observer = NotificationCenter.default.addObserver(forName: .personalDataChanged, object: nil, queue: .main) { [weak self] _ in
             MainActor.assumeIsolated { self?.reconcile() }
         }
-        monitor.pathUpdateHandler = { [weak self] path in
+        // 明確標為 @Sendable：這個閉包在背景佇列執行，不能被推斷為主執行緒專用
+        monitor.pathUpdateHandler = { @Sendable [weak self] path in
             let online = path.status == .satisfied
             let wifi = online && !path.isExpensive
             Task { @MainActor in self?.networkChanged(wifi: wifi, online: online) }

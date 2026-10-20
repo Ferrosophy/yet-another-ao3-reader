@@ -2,7 +2,7 @@ import Photos
 import SwiftUI
 import UIKit
 
-/// 設定 › 投喂開發者：顯示支付寶收款碼，可保存到相簿。內容全部在本機，不連網。
+/// 設定 › 支持贊助：顯示支付寶收款碼，可保存到相簿。內容全部在本機，不連網。
 struct DonateView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var message: String?
@@ -49,7 +49,7 @@ struct DonateView: View {
     }
 
     private func save() {
-        guard let image = UIImage(named: "DonateQRCode") else { return }
+        guard let data = UIImage(named: "DonateQRCode")?.pngData() else { return }
         Task {
             let status = await PHPhotoLibrary.requestAuthorization(for: .addOnly)
             guard status == .authorized || status == .limited else {
@@ -57,13 +57,19 @@ struct DonateView: View {
                 return
             }
             do {
-                try await PHPhotoLibrary.shared().performChanges {
-                    _ = PHAssetChangeRequest.creationRequestForAsset(from: image)
-                }
+                try await Self.addToPhotos(data)
                 message = String(localized: "已保存到相簿")
             } catch {
                 message = String(localized: "無法保存：\(error.localizedDescription)")
             }
+        }
+    }
+
+    /// 寫入相簿。必須是 nonisolated：照片庫在背景佇列執行這個閉包，
+    /// 若閉包被推斷為主執行緒專用，執行時的隔離檢查會讓 App 閃退。
+    nonisolated private static func addToPhotos(_ data: Data) async throws {
+        try await PHPhotoLibrary.shared().performChanges {
+            PHAssetCreationRequest.forAsset().addResource(with: .photo, data: data, options: nil)
         }
     }
 }

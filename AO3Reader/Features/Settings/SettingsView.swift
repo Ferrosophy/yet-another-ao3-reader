@@ -66,7 +66,7 @@ struct SettingsView: View {
                 Button {
                     showsDonate = true
                 } label: {
-                    Text("投喂開發者")
+                    Text("支持贊助")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .contentShape(.rect)
                 }
