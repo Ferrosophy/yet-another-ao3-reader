@@ -76,15 +76,27 @@ struct VerificationWebView: UIViewRepresentable {
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             Task {
                 await syncCookiesNow(from: webView)
-                guard let onPassed, !passed else { return }
-                let title = (try? await webView.evaluateJavaScript("document.title") as? String) ?? ""
-                let isChallenge = ["Just a moment", "Attention Required", "請稍候", "请稍候", "しばらくお待ち"]
-                    .contains { title.localizedCaseInsensitiveContains($0) }
-                if !isChallenge, !title.isEmpty {
-                    passed = true
-                    onPassed()
-                }
+                guard onPassed != nil, !passed else { return }
+                // 驗證頁可能在通過前重新載入好幾次，等頁面穩定後再判斷
+                try? await Task.sleep(for: .milliseconds(800))
+                guard !webView.isLoading, await Self.isPassed(webView) else { return }
+                await syncCookiesNow(from: webView)
+                passed = true
+                onPassed?()
             }
+        }
+
+        /// 以頁面內容判斷是否已通過：沒有 Cloudflare 驗證元素，而且出現 AO3 的頁面結構。
+        /// 不看標題：新版 Cloudflare 驗證頁的標題可能就是網站網域，會被誤判為已通過而提早關閉。
+        private static func isPassed(_ webView: WKWebView) async -> Bool {
+            let script = """
+            (function() {
+              var challenge = !!(window._cf_chl_opt || document.querySelector('#challenge-form, #challenge-stage, #challenge-running, #cf-wrapper, .cf-turnstile, #turnstile-wrapper'));
+              var ao3 = !!document.querySelector('#outer #main, #outer #header, #footer .group');
+              return !challenge && ao3;
+            })()
+            """
+            return (try? await webView.evaluateJavaScript(script) as? Bool) == true
         }
 
         func syncCookies(from webView: WKWebView) {
@@ -108,7 +120,7 @@ struct CloudflareChallengeView: View {
             VerificationWebView(url: url) {
                 // 稍等一下讓 Cookie 寫入後再關閉
                 Task {
-                    try? await Task.sleep(for: .milliseconds(600))
+                    try? await Task.sleep(for: .seconds(1))
                     dismiss()
                 }
             }

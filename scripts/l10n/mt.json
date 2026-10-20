@@ -662,7 +662,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "コレクションのタイトルを入力するか、何も入力せずに検索してすべてのコレクションを参照します",
   "最近搜尋": "最近の検索",
   "清除": "クリア",
-  "排除 ": "除外する"
+  "排除 ": "除外する",
+  "AO3 一直要求人機驗證": "AO3 は検証を求め続けます",
+  "開啟驗證頁": "確認ページを開く",
+  "稍後再試": "後で試してください",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "数回の検証の後もリクエストはブロックされます。 AO3 は今のところ保護を強化している可能性があります。後でもう一度試すか、[設定] › [コンテンツ ソース] で別のミラーに切り替えてください。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1327,7 +1331,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "컬렉션 제목을 입력하거나, 아무것도 입력하지 않고 검색하여 모든 컬렉션을 찾아보세요.",
   "最近搜尋": "최근 검색",
   "清除": "지우기",
-  "排除 ": "제외"
+  "排除 ": "제외",
+  "AO3 一直要求人機驗證": "AO3가 계속해서 인증을 요청하고 있습니다",
+  "開啟驗證頁": "확인 페이지 열기",
+  "稍後再試": "나중에 시도",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "여러 번의 확인 후에도 요청이 계속 차단됩니다. AO3는 현재로서는 보호를 강화했을 수 있습니다. 나중에 다시 시도하거나 설정 > 콘텐츠 소스에서 다른 미러로 전환하세요."
  },
  "es": {
   "載入中": "Cargando",
@@ -1992,7 +2000,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Ingrese el título de una colección o busque sin ingresar nada para explorar todas las colecciones.",
   "最近搜尋": "Búsquedas recientes",
   "清除": "Borrar",
-  "排除 ": "excluir"
+  "排除 ": "excluir",
+  "AO3 一直要求人機驗證": "AO3 sigue pidiendo verificación",
+  "開啟驗證頁": "Abrir página de verificación",
+  "稍後再試": "Inténtalo más tarde",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Las solicitudes siguen bloqueadas después de varias verificaciones. Es posible que AO3 haya reforzado su protección por ahora. Vuelva a intentarlo más tarde o cambie a otro espejo en Configuración > Fuente de contenido."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2657,7 +2669,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Entrez un titre de collection ou effectuez une recherche sans rien saisir pour parcourir toutes les collections",
   "最近搜尋": "Recherches récentes",
   "清除": "Effacer",
-  "排除 ": "Exclure"
+  "排除 ": "Exclure",
+  "AO3 一直要求人機驗證": "AO3 continue de demander une vérification",
+  "開啟驗證頁": "Ouvrir la page de vérification",
+  "稍後再試": "Essayez plus tard",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Les demandes sont toujours bloquées après plusieurs vérifications. AO3 a peut-être renforcé sa protection pour le moment. Réessayez plus tard ou passez à un autre miroir dans Paramètres > Source de contenu."
  },
  "de": {
   "載入中": "Laden",
@@ -3322,7 +3338,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Geben Sie einen Sammlungstitel ein oder suchen Sie ohne Eingaben, um alle Sammlungen zu durchsuchen",
   "最近搜尋": "Aktuelle Suchanfragen",
   "清除": "Klar",
-  "排除 ": "Ausschließen"
+  "排除 ": "Ausschließen",
+  "AO3 一直要求人機驗證": "AO3 bittet ständig um eine Bestätigung",
+  "開啟驗證頁": "Öffnen Sie die Verifizierungsseite",
+  "稍後再試": "Versuchen Sie es später",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Anfragen werden auch nach mehreren Überprüfungen immer noch blockiert. Möglicherweise hat AO3 seinen Schutz vorerst verschärft. Versuchen Sie es später erneut oder wechseln Sie unter Einstellungen › Inhaltsquelle zu einem anderen Spiegel."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3987,7 +4007,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Insira um título de coleção ou pesquise sem inserir nada para navegar por todas as coleções",
   "最近搜尋": "Pesquisas recentes",
   "清除": "Limpar",
-  "排除 ": "Excluir"
+  "排除 ": "Excluir",
+  "AO3 一直要求人機驗證": "AO3 continua pedindo verificação",
+  "開啟驗證頁": "Abrir página de verificação",
+  "稍後再試": "Tente mais tarde",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "As solicitações ainda estão bloqueadas após várias verificações. O AO3 pode ter reforçado a sua proteção por enquanto. Tente novamente mais tarde ou mude para outro espelho em Configurações › Fonte de conteúdo."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4652,7 +4676,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Inserisci il titolo di una raccolta o esegui una ricerca senza inserire nulla per sfogliare tutte le raccolte",
   "最近搜尋": "Ricerche recenti",
   "清除": "Chiaro",
-  "排除 ": "Escludere"
+  "排除 ": "Escludere",
+  "AO3 一直要求人機驗證": "AO3 continua a chiedere verifica",
+  "開啟驗證頁": "Apri la pagina di verifica",
+  "稍後再試": "Prova più tardi",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Le richieste risultano ancora bloccate dopo diverse verifiche. AO3 potrebbe aver rafforzato la sua protezione per ora. Riprova più tardi o passa a un altro mirror in Impostazioni › Origine contenuto."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5317,7 +5345,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Введите название коллекции или выполните поиск, ничего не вводя, чтобы просмотреть все коллекции.",
   "最近搜尋": "Недавние поиски",
   "清除": "Очистить",
-  "排除 ": "Исключить"
+  "排除 ": "Исключить",
+  "AO3 一直要求人機驗證": "AO3 продолжает запрашивать подтверждение",
+  "開啟驗證頁": "Открыть страницу проверки",
+  "稍後再試": "Попробуйте позже",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Запросы по-прежнему блокируются после нескольких проверок. AO3, возможно, ужесточила свою защиту. Повторите попытку позже или переключитесь на другое зеркало в «Настройки» > «Источник контента»."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -5982,7 +6014,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Введіть назву колекції або здійсніть пошук, не ввівши нічого, щоб переглянути всі колекції",
   "最近搜尋": "Останні пошуки",
   "清除": "ясно",
-  "排除 ": "Виключити"
+  "排除 ": "Виключити",
+  "AO3 一直要求人機驗證": "AO3 продовжує запитувати перевірку",
+  "開啟驗證頁": "Відкрийте сторінку підтвердження",
+  "稍後再試": "Спробуйте пізніше",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Запити все одно блокуються після кількох перевірок. Можливо, AO3 наразі посилив захист. Спробуйте пізніше або перейдіть до іншого дзеркала в Налаштуваннях › Джерело вмісту."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6647,7 +6683,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Wprowadź tytuł kolekcji lub wyszukaj bez wpisania, aby przeglądać wszystkie kolekcje",
   "最近搜尋": "Ostatnie wyszukiwania",
   "清除": "Jasne",
-  "排除 ": "Wyklucz"
+  "排除 ": "Wyklucz",
+  "AO3 一直要求人機驗證": "AO3 ciągle prosi o weryfikację",
+  "開啟驗證頁": "Otwórz stronę weryfikacyjną",
+  "稍後再試": "Spróbuj później",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Po kilku weryfikacjach żądania są nadal blokowane. Być może AO3 na razie zaostrzyło swoją ochronę. Spróbuj ponownie później lub przełącz się na inne lustro w Ustawieniach > Źródło treści."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7312,7 +7352,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Bir koleksiyon başlığı girin veya tüm koleksiyonlara göz atmak için hiçbir şey girmeden arama yapın",
   "最近搜尋": "Son Aramalar",
   "清除": "Temizle",
-  "排除 ": "Hariç tut"
+  "排除 ": "Hariç tut",
+  "AO3 一直要求人機驗證": "AO3 Sürekli Doğrulama İstiyor",
+  "開啟驗證頁": "Doğrulama Sayfasını Aç",
+  "稍後再試": "Daha Sonra Deneyin",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Birkaç doğrulamadan sonra istekler hâlâ engelleniyor. AO3 şimdilik korumasını sıkılaştırmış olabilir. Daha sonra tekrar deneyin veya Ayarlar › İçerik Kaynağı bölümünden başka bir yansıtmaya geçin."
  },
  "nl": {
   "載入中": "Laden",
@@ -7977,7 +8021,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Voer een collectietitel in of zoek zonder iets in te voeren om door alle collecties te bladeren",
   "最近搜尋": "Recente zoekopdrachten",
   "清除": "Duidelijk",
-  "排除 ": "Uitsluiten"
+  "排除 ": "Uitsluiten",
+  "AO3 一直要求人機驗證": "AO3 blijft om verificatie vragen",
+  "開啟驗證頁": "Open de verificatiepagina",
+  "稍後再試": "Probeer het later",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Verzoeken worden na verschillende verificaties nog steeds geblokkeerd. Mogelijk heeft AO3 voorlopig zijn bescherming aangescherpt. Probeer het later opnieuw of schakel over naar een andere mirror in Instellingen › Inhoudsbron."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8642,7 +8690,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "أدخل عنوان المجموعة، أو ابحث بدون إدخال أي شيء لتصفح جميع المجموعات",
   "最近搜尋": "عمليات البحث الأخيرة",
   "清除": "واضح",
-  "排除 ": "استبعاد"
+  "排除 ": "استبعاد",
+  "AO3 一直要求人機驗證": "AO3 يستمر في المطالبة بالتحقق",
+  "開啟驗證頁": "افتح صفحة التحقق",
+  "稍後再試": "حاول لاحقًا",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "لا تزال الطلبات محظورة بعد عدة عمليات تحقق. ربما يكون AO3 قد شدد حمايته في الوقت الحالي. حاول مرة أخرى لاحقًا، أو قم بالتبديل إلى نسخة متطابقة أخرى في الإعدادات › مصدر المحتوى."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -9307,7 +9359,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "एक संग्रह शीर्षक दर्ज करें, या सभी संग्रह ब्राउज़ करने के लिए कुछ भी दर्ज किए बिना खोजें",
   "最近搜尋": "हाल की खोजें",
   "清除": "स्पष्ट",
-  "排除 ": "बहिष्कृत करें"
+  "排除 ": "बहिष्कृत करें",
+  "AO3 一直要求人機驗證": "AO3 सत्यापन के लिए पूछता रहता है",
+  "開啟驗證頁": "सत्यापन पृष्ठ खोलें",
+  "稍後再試": "बाद में प्रयास करें",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "कई सत्यापनों के बाद भी अनुरोध अवरुद्ध हैं। हो सकता है कि AO3 ने फिलहाल अपनी सुरक्षा कड़ी कर दी हो। बाद में पुनः प्रयास करें, या सेटिंग्स › सामग्री स्रोत में किसी अन्य दर्पण पर स्विच करें।"
  },
  "id": {
   "載入中": "Memuat",
@@ -9972,7 +10028,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Masukkan judul koleksi, atau cari tanpa memasukkan apa pun untuk menelusuri semua koleksi",
   "最近搜尋": "Pencarian Terbaru",
   "清除": "Jelas",
-  "排除 ": "Kecualikan"
+  "排除 ": "Kecualikan",
+  "AO3 一直要求人機驗證": "AO3 Terus Meminta Verifikasi",
+  "開啟驗證頁": "Buka Halaman Verifikasi",
+  "稍後再試": "Coba Nanti",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Permintaan masih diblokir setelah beberapa kali verifikasi. AO3 mungkin telah memperketat perlindungannya untuk saat ini. Coba lagi nanti, atau beralih ke mirror lain di Pengaturan › Sumber Konten."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10637,7 +10697,11 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "Nhập tiêu đề bộ sưu tập hoặc tìm kiếm không nhập gì để duyệt tất cả các bộ sưu tập",
   "最近搜尋": "Tìm kiếm gần đây",
   "清除": "Xóa",
-  "排除 ": "Loại trừ"
+  "排除 ": "Loại trừ",
+  "AO3 一直要求人機驗證": "AO3 liên tục yêu cầu xác minh",
+  "開啟驗證頁": "Mở trang xác minh",
+  "稍後再試": "Thử sau",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Yêu cầu vẫn bị chặn sau nhiều lần xác minh. AO3 có thể đã thắt chặt việc bảo vệ vào lúc này. Hãy thử lại sau hoặc chuyển sang một máy phản chiếu khác trong Cài đặt > Nguồn nội dung."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -11302,6 +11366,10 @@
   "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集": "ป้อนชื่อคอลเลกชันหรือค้นหาโดยไม่ป้อนข้อมูลเลยเพื่อเรียกดูคอลเลกชันทั้งหมด",
   "最近搜尋": "การค้นหาล่าสุด",
   "清除": "ชัดเจน",
-  "排除 ": "ไม่รวม"
+  "排除 ": "ไม่รวม",
+  "AO3 一直要求人機驗證": "AO3 ขอให้มีการตรวจสอบต่อไป",
+  "開啟驗證頁": "เปิดหน้าการยืนยัน",
+  "稍後再試": "ลองภายหลัง",
+  "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "คำขอยังคงถูกบล็อกหลังจากการตรวจสอบหลายครั้ง AO3 อาจจะเพิ่มการป้องกันให้เข้มงวดขึ้นในตอนนี้ ลองอีกครั้งในภายหลัง หรือเปลี่ยนไปใช้มิเรอร์อื่นในการตั้งค่า > แหล่งที่มาของเนื้อหา"
  }
 }

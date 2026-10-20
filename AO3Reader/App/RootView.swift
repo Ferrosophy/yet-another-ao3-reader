@@ -23,6 +23,11 @@ struct RootView: View {
         return start == .bookshelf ? .bookshelf : .browse
     }()
     @State private var challenge: ChallengePage?
+    /// 驗證頁上次關閉的時間與最近彈出的時間（避免反覆彈出、關閉）
+    @State private var challengeClosedAt: Date?
+    @State private var challengeTimes: [Date] = []
+    @State private var showsChallengeHelp = false
+    @State private var pendingChallengeURL: URL?
     /// 各分頁的導覽路徑
     @State private var paths: [TabID: NavigationPath] = [:]
 
@@ -97,9 +102,30 @@ struct RootView: View {
         // AO3 請求遇到 Cloudflare 人機驗證時彈出驗證頁（同時只顯示一個）
         .onReceive(NotificationCenter.default.publisher(for: .ao3CloudflareChallenge).receive(on: DispatchQueue.main)) { note in
             guard challenge == nil, let url = note.userInfo?["url"] as? URL else { return }
+            // 剛關閉驗證頁不久時不立即再彈出（原頁面的重試請求還在用舊的 Cookie）
+            if let closed = challengeClosedAt, Date().timeIntervalSince(closed) < 20 { return }
+            // 10 分鐘內已彈出 3 次仍無法通過：不再自動彈出，改為提示一次，由使用者決定是否手動開啟
+            let now = Date()
+            challengeTimes = challengeTimes.filter { now.timeIntervalSince($0) < 600 }
+            if challengeTimes.count >= 3 {
+                if !showsChallengeHelp { pendingChallengeURL = url; showsChallengeHelp = true }
+                return
+            }
+            challengeTimes.append(now)
             challenge = ChallengePage(url: url)
         }
-        .sheet(item: $challenge) { page in
+        .alert("AO3 一直要求人機驗證", isPresented: $showsChallengeHelp) {
+            Button("開啟驗證頁") {
+                if let url = pendingChallengeURL {
+                    challengeTimes = []
+                    challenge = ChallengePage(url: url)
+                }
+            }
+            Button("稍後再試", role: .cancel) { challengeClosedAt = Date() }
+        } message: {
+            Text("驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。")
+        }
+        .sheet(item: $challenge, onDismiss: { challengeClosedAt = Date() }) { page in
             CloudflareChallengeView(url: page.url)
         }
         // 個人資料同步：開啟與回到前景時拉取、進入背景時上傳

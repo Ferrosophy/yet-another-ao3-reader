@@ -663,6 +663,10 @@ EN = {
 "最近搜尋": "Recent Searches",
 "清除": "Clear",
 "排除 ": "Exclude ",
+"AO3 一直要求人機驗證": "AO3 Keeps Asking for Verification",
+"開啟驗證頁": "Open Verification Page",
+"稍後再試": "Try Later",
+"驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Requests are still blocked after several verifications. AO3 may have tightened its protection for now. Try again later, or switch to another mirror in Settings › Content Source.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

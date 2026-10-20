@@ -1288,6 +1288,149 @@
         }
       }
     },
+    "AO3 一直要求人機驗證": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 يستمر في المطالبة بالتحقق"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 bittet ständig um eine Bestätigung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 Keeps Asking for Verification"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 sigue pidiendo verificación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 continue de demander une vérification"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 सत्यापन के लिए पूछता रहता है"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 Terus Meminta Verifikasi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 continua a chiedere verifica"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 は検証を求め続けます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3가 계속해서 인증을 요청하고 있습니다"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 blijft om verificatie vragen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 ciągle prosi o weryfikację"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 continua pedindo verificação"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 продолжает запрашивать подтверждение"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 ขอให้มีการตรวจสอบต่อไป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 Sürekli Doğrulama İstiyor"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 продовжує запитувати перевірку"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 liên tục yêu cầu xác minh"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 一直要求人机验证"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 一直要求人機驗證"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 一直要求人機驗證"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 一直要求人機驗證"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 一直要求人機驗證"
+          }
+        }
+      }
+    },
     "AO3 帳號": {
       "extractionState": "manual",
       "localizations": {
@@ -57058,6 +57201,149 @@
         }
       }
     },
+    "稍後再試": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حاول لاحقًا"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versuchen Sie es später"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try Later"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inténtalo más tarde"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayez plus tard"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बाद में प्रयास करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coba Nanti"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prova più tardi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "後で試してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나중에 시도"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probeer het later"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spróbuj później"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tente mais tarde"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Попробуйте позже"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลองภายหลัง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha Sonra Deneyin"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Спробуйте пізніше"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thử sau"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍后再试"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍後再試"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍後再試"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍後再試"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍後再試"
+          }
+        }
+      }
+    },
     "稍後閱讀": {
       "extractionState": "manual",
       "localizations": {
@@ -73646,6 +73932,149 @@
         }
       }
     },
+    "開啟驗證頁": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افتح صفحة التحقق"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffnen Sie die Verifizierungsseite"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Verification Page"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir página de verificación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir la page de vérification"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सत्यापन पृष्ठ खोलें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka Halaman Verifikasi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri la pagina di verifica"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認ページを開く"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인 페이지 열기"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open de verificatiepagina"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otwórz stronę weryfikacyjną"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir página de verificação"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть страницу проверки"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เปิดหน้าการยืนยัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doğrulama Sayfasını Aç"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відкрийте сторінку підтвердження"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mở trang xác minh"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开验证页"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟驗證頁"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟驗證頁"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟驗證頁"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟驗證頁"
+          }
+        }
+      }
+    },
     "閱讀字體": {
       "extractionState": "manual",
       "localizations": {
@@ -78075,6 +78504,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "騰訊交互翻譯網頁介面，免金鑰，中英品質佳。屬非官方介面，可能變更或限流。"
+          }
+        }
+      }
+    },
+    "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تزال الطلبات محظورة بعد عدة عمليات تحقق. ربما يكون AO3 قد شدد حمايته في الوقت الحالي. حاول مرة أخرى لاحقًا، أو قم بالتبديل إلى نسخة متطابقة أخرى في الإعدادات › مصدر المحتوى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anfragen werden auch nach mehreren Überprüfungen immer noch blockiert. Möglicherweise hat AO3 seinen Schutz vorerst verschärft. Versuchen Sie es später erneut oder wechseln Sie unter Einstellungen › Inhaltsquelle zu einem anderen Spiegel."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requests are still blocked after several verifications. AO3 may have tightened its protection for now. Try again later, or switch to another mirror in Settings › Content Source."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las solicitudes siguen bloqueadas después de varias verificaciones. Es posible que AO3 haya reforzado su protección por ahora. Vuelva a intentarlo más tarde o cambie a otro espejo en Configuración > Fuente de contenido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les demandes sont toujours bloquées après plusieurs vérifications. AO3 a peut-être renforcé sa protection pour le moment. Réessayez plus tard ou passez à un autre miroir dans Paramètres > Source de contenu."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कई सत्यापनों के बाद भी अनुरोध अवरुद्ध हैं। हो सकता है कि AO3 ने फिलहाल अपनी सुरक्षा कड़ी कर दी हो। बाद में पुनः प्रयास करें, या सेटिंग्स › सामग्री स्रोत में किसी अन्य दर्पण पर स्विच करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permintaan masih diblokir setelah beberapa kali verifikasi. AO3 mungkin telah memperketat perlindungannya untuk saat ini. Coba lagi nanti, atau beralih ke mirror lain di Pengaturan › Sumber Konten."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le richieste risultano ancora bloccate dopo diverse verifiche. AO3 potrebbe aver rafforzato la sua protezione per ora. Riprova più tardi o passa a un altro mirror in Impostazioni › Origine contenuto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数回の検証の後もリクエストはブロックされます。 AO3 は今のところ保護を強化している可能性があります。後でもう一度試すか、[設定] › [コンテンツ ソース] で別のミラーに切り替えてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "여러 번의 확인 후에도 요청이 계속 차단됩니다. AO3는 현재로서는 보호를 강화했을 수 있습니다. 나중에 다시 시도하거나 설정 > 콘텐츠 소스에서 다른 미러로 전환하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verzoeken worden na verschillende verificaties nog steeds geblokkeerd. Mogelijk heeft AO3 voorlopig zijn bescherming aangescherpt. Probeer het later opnieuw of schakel over naar een andere mirror in Instellingen › Inhoudsbron."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po kilku weryfikacjach żądania są nadal blokowane. Być może AO3 na razie zaostrzyło swoją ochronę. Spróbuj ponownie później lub przełącz się na inne lustro w Ustawieniach > Źródło treści."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As solicitações ainda estão bloqueadas após várias verificações. O AO3 pode ter reforçado a sua proteção por enquanto. Tente novamente mais tarde ou mude para outro espelho em Configurações › Fonte de conteúdo."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запросы по-прежнему блокируются после нескольких проверок. AO3, возможно, ужесточила свою защиту. Повторите попытку позже или переключитесь на другое зеркало в «Настройки» > «Источник контента»."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คำขอยังคงถูกบล็อกหลังจากการตรวจสอบหลายครั้ง AO3 อาจจะเพิ่มการป้องกันให้เข้มงวดขึ้นในตอนนี้ ลองอีกครั้งในภายหลัง หรือเปลี่ยนไปใช้มิเรอร์อื่นในการตั้งค่า > แหล่งที่มาของเนื้อหา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birkaç doğrulamadan sonra istekler hâlâ engelleniyor. AO3 şimdilik korumasını sıkılaştırmış olabilir. Daha sonra tekrar deneyin veya Ayarlar › İçerik Kaynağı bölümünden başka bir yansıtmaya geçin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запити все одно блокуються після кількох перевірок. Можливо, AO3 наразі посилив захист. Спробуйте пізніше або перейдіть до іншого дзеркала в Налаштуваннях › Джерело вмісту."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yêu cầu vẫn bị chặn sau nhiều lần xác minh. AO3 có thể đã thắt chặt việc bảo vệ vào lúc này. Hãy thử lại sau hoặc chuyển sang một máy phản chiếu khác trong Cài đặt > Nguồn nội dung."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "验证多次后仍被拦下，可能是 AO3 暂时加强了防护。请稍后再试，或在「设置 › 内容来源」换用其他镜像。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
           }
         }
       }
