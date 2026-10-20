@@ -2,8 +2,10 @@ import PhotosUI
 import SwiftUI
 import UniformTypeIdentifiers
 
-/// 設定 → 外觀：深色模式、主題色，以及閱讀頁的模式、排版、字體、配色與譯文外觀。
+/// 設定 → 外觀 → 某一個分類（介面、閱讀模式、字體與排版、閱讀配色、標籤與簡介、譯文外觀）。
+/// 設定頁把六個分類直接列在「外觀」下；閱讀頁的「閱讀設定」仍使用選項卡。
 struct AppearanceSettingsView: View {
+    let tab: AppearanceTab
     @Environment(AppState.self) private var app
     @Environment(\.colorScheme) private var systemScheme
     @State private var accentScheme: ColorScheme?
@@ -12,7 +14,7 @@ struct AppearanceSettingsView: View {
         @Bindable var appearance = app.appearance
         let scheme = accentScheme ?? systemScheme
 
-        ReaderAppearanceForm(showsInterface: true) {
+        ReaderAppearanceForm(showsInterface: true, fixedTab: tab) {
             Section {
                 Picker("外觀模式", selection: $appearance.config.colorScheme) {
                     ForEach(AppColorScheme.allCases) { Text($0.title).tag($0) }
@@ -55,7 +57,7 @@ struct AppearanceSettingsView: View {
         } translationExtras: {
             EmptyView()
         }
-        .navigationTitle("外觀")
+        .navigationTitle(tab.title)
     }
 }
 
@@ -98,13 +100,17 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
     /// - Parameters:
     ///   - showsInterface: 是否顯示「介面」選項卡（設定頁）
     ///   - translationExtras: 「譯文外觀」選項卡頂部的額外設定（閱讀頁的顯示方式）
-    init(showsInterface: Bool = false, @ViewBuilder interface: () -> Interface,
+    ///   - fixedTab: 只顯示這個分類、不顯示選項卡列（設定頁的各分類頁面）
+    init(showsInterface: Bool = false, fixedTab: AppearanceTab? = nil, @ViewBuilder interface: () -> Interface,
          @ViewBuilder translationExtras: () -> TranslationExtras) {
         self.showsInterface = showsInterface
+        self.fixedTab = fixedTab
         self.interface = interface()
         self.translationExtras = translationExtras()
-        _tab = State(initialValue: showsInterface ? .interface : .mode)
+        _tab = State(initialValue: fixedTab ?? (showsInterface ? .interface : .mode))
     }
+
+    private let fixedTab: AppearanceTab?
 
     @Environment(AppState.self) private var app
     @Environment(\.colorScheme) private var systemScheme
@@ -125,11 +131,13 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
         )
 
         Form {
-            Section {
-                AppearanceTabBar(tabs: tabs, selection: $tab)
+            if fixedTab == nil {
+                Section {
+                    AppearanceTabBar(tabs: tabs, selection: $tab)
+                }
+                .listRowInsets(EdgeInsets())
+                .listRowBackground(Color.clear)
             }
-            .listRowInsets(EdgeInsets())
-            .listRowBackground(Color.clear)
 
             switch tab {
             case .interface:
