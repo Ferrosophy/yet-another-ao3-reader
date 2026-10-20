@@ -328,7 +328,8 @@ final class AppearanceSettings {
 
     var fontDisplayName: String { displayName(forFont: config.readerFont) }
 
-    var interfaceFontChoice: String { config.interfaceFont ?? "system" }
+    /// 介面一律使用系統字體（已移除介面字體自訂；欄位保留以相容舊設定）
+    var interfaceFontChoice: String { "system" }
 
     func displayName(forFont value: String) -> String {
         if value == "system" { return String(localized: "系統預設") }

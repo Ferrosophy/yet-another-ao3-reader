@@ -44,16 +44,6 @@ struct AppearanceSettingsView: View {
                 Text("淺色與深色模式各自保存主題色，跟隨系統切換。")
             }
 
-            Section {
-                NavigationLink {
-                    FontPickerView(title: "介面字體", selection: Binding(
-                        get: { appearance.interfaceFontChoice },
-                        set: { appearance.config.interfaceFont = $0 == "system" ? nil : $0 }
-                    ))
-                } label: {
-                    LabeledContent("介面字體", value: appearance.displayName(forFont: appearance.interfaceFontChoice))
-                }
-            }
         } translationExtras: {
             EmptyView()
         }
