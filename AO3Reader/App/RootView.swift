@@ -104,9 +104,12 @@ struct RootView: View {
         }
         // 個人資料同步：開啟與回到前景時拉取、進入背景時上傳
         .task {
+            // 書架離線內容：繼續上次未完成的下載與翻譯
+            app.offline.resumePending()
             await app.sync.syncNow()
             await app.librarySync.syncNow()
             await app.checkLocalSubscriptions()
+            await app.offline.checkUpdates()
         }
         .onChange(of: scenePhase) { _, phase in
             switch phase {
@@ -115,6 +118,7 @@ struct RootView: View {
                     await app.sync.syncNow()
                     await app.librarySync.syncNow()
                     await app.checkLocalSubscriptions()
+                    await app.offline.checkUpdates()
                 }
             case .background:
                 Task {

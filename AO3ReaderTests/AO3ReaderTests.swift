@@ -317,3 +317,57 @@ struct AccountActionTests {
         #expect(AO3Client.fileName("  ") == "work")
     }
 }
+
+struct OfflineTests {
+    @Test func crc32MatchesKnownValue() {
+        #expect(CRC32.checksum(Data("123456789".utf8)) == 0xCBF4_3926)
+    }
+
+    @Test func zipStartsWithStoredMimetype() {
+        var zip = ZipWriter()
+        zip.add("mimetype", "application/epub+zip")
+        zip.add("a.txt", "hello")
+        let data = zip.finish()
+        // 本機檔頭簽名、檔名從偏移 30 開始，內容緊接在檔名之後（不壓縮）
+        #expect(data.prefix(4) == Data([0x50, 0x4B, 0x03, 0x04]))
+        #expect(String(decoding: data[30..<38], as: UTF8.self) == "mimetype")
+        #expect(String(decoding: data[38..<58], as: UTF8.self) == "application/epub+zip")
+        // 中央目錄結尾記錄共 2 個項目
+        let end = data.suffix(22)
+        #expect(end.prefix(4) == Data([0x50, 0x4B, 0x05, 0x06]))
+        #expect(end[end.startIndex + 10] == 2)
+    }
+
+    @Test func translationsIgnoreChangedParagraphs() {
+        var translations = OfflineTranslations(targetLanguageCode: "zh-TW")
+        let paragraph = Paragraph(id: "c0-p0", text: "Hello")
+        translations.entries[paragraph.id] = .init(hash: OfflineTranslations.hash("Hello"), text: "你好")
+        #expect(translations.text(for: paragraph) == "你好")
+        #expect(translations.text(for: Paragraph(id: "c0-p0", text: "Hello!")) == nil)
+    }
+
+    @Test func epubEscapesMarkup() {
+        #expect(BilingualEPUB.escape("a < b & \"c\"\u{1}") == "a &lt; b &amp; &quot;c&quot;")
+    }
+}
+
+struct LocalLibraryTests {
+    private func work(_ id: Int) -> WorkSummary { WorkSummary(id: id, title: "W\(id)") }
+
+    @Test func mergeKeepsNewerAndRespectsRemovals() {
+        let old = Date(timeIntervalSince1970: 100)
+        let new = Date(timeIntervalSince1970: 200)
+        var a = LocalLibrary()
+        a.bookmarks = [LocalBookmark(work: work(1), notes: "old", createdAt: old, modifiedAt: old)]
+        a.later = [LocalWorkEntry(work: work(2), date: old, modifiedAt: old)]
+        var b = LocalLibrary()
+        b.bookmarks = [LocalBookmark(work: work(1), notes: "new", createdAt: old, modifiedAt: new)]
+        // 另一台裝置在加入之後移除了稍後閱讀
+        b.removed["l:2"] = new
+
+        let merged = a.merged(with: b)
+        #expect(merged.bookmarks.first?.notes == "new")
+        #expect(merged.later.isEmpty)
+        #expect(merged == b.merged(with: a))
+    }
+}

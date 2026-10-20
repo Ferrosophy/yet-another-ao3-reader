@@ -1,63 +1,163 @@
 import SwiftUI
 
-/// 下載列表：顯示批次下載的進度，完成的檔案可分享或存到「檔案」。
+/// 下載列表：書架作品的離線進度（下載原文、翻譯、匯出），可暫停、繼續與重試。
+/// 匯出檔也會出現在「檔案」App 的 YAAO3R › Bookshelf 資料夾。
 struct DownloadsView: View {
     @Environment(AppState.self) private var app
     @State private var shared: DownloadedFile?
 
     var body: some View {
-        let manager = app.downloads
+        let offline = app.offline
+        let items = app.bookshelf.sorted(by: .added, ascending: false)
+        let active = items.filter { offline.activity[$0.id] != nil }
+        let done = items.filter { offline.activity[$0.id] == nil && offline.hasOfflineCopy($0.id) }
         List {
-            if manager.tasks.isEmpty {
+            if active.isEmpty && done.isEmpty {
                 ContentUnavailableView("沒有下載項目", systemImage: "arrow.down.circle",
-                                       description: Text("在「批次下載」中選擇作品後加入下載列表。下載的檔案也會出現在「檔案」App 的 YAAO3R 資料夾。"))
+                                       description: Text("加入書架的作品會自動下載原文與譯文，並以選擇的格式保存。"))
                     .listRowBackground(Color.clear)
             }
-            ForEach(manager.tasks) { task in
-                Button {
-                    if let file = task.file { shared = DownloadedFile(url: file) }
-                    else if case .failed = task.state { manager.retry(task.id) }
-                } label: {
-                    HStack(spacing: 12) {
-                        icon(task.state)
-                            .frame(width: 24)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(task.title).foregroundStyle(.primary).lineLimit(2)
-                            Text(detail(task)).appFont(.caption).foregroundStyle(.secondary).lineLimit(2)
-                        }
-                    }
+            if !active.isEmpty {
+                Section("進行中") {
+                    ForEach(active) { item in row(item) }
                 }
-                .disabled(task.state == .waiting || task.state == .downloading)
             }
-            .onDelete { offsets in manager.remove(offsets.map { manager.tasks[$0].id }) }
+            if !done.isEmpty {
+                Section {
+                    ForEach(done) { item in row(item) }
+                } header: {
+                    Text("已離線")
+                } footer: {
+                    Text("共 \(ByteCountFormatter.string(fromByteCount: offline.totalSize, countStyle: .file))")
+                }
+            }
         }
         .navigationTitle("下載列表")
-        .toolbar {
-            if manager.tasks.contains(where: { $0.state == .done }) {
-                Button("清除已完成") { manager.clearFinished() }
-            }
-        }
         .sheet(item: $shared) { file in
             ActivityView(items: [file.url]).presentationDetents([.medium, .large])
         }
     }
 
-    @ViewBuilder
-    private func icon(_ state: DownloadManager.State) -> some View {
-        switch state {
-        case .waiting: Image(systemName: "clock").foregroundStyle(.secondary)
-        case .downloading: ProgressView()
-        case .done: Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
-        case .failed: Image(systemName: "exclamationmark.triangle.fill").foregroundStyle(.red)
+    private func row(_ item: BookshelfItem) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(item.work.title).lineLimit(2)
+            OfflineStatusView(id: item.id)
+        }
+        .contextMenu { OfflineMenu(id: item.id, shared: $shared) }
+        .swipeActions {
+            if let url = app.offline.exportURL(item.id) {
+                Button("分享", systemImage: "square.and.arrow.up") { shared = DownloadedFile(url: url) }
+            }
+        }
+    }
+}
+
+/// 一部作品的離線狀態：進度、格式、大小與譯文語言。
+struct OfflineStatusView: View {
+    let id: Int
+    @Environment(AppState.self) private var app
+
+    var body: some View {
+        let offline = app.offline
+        VStack(alignment: .leading, spacing: 4) {
+            if case .translating(let done, let total) = offline.activity[id], total > 0 {
+                ProgressView(value: Double(done), total: Double(total))
+            }
+            HStack(spacing: 6) {
+                if offline.activity[id]?.isActive == true {
+                    ProgressView().controlSize(.mini)
+                } else if let icon {
+                    Image(systemName: icon.0).foregroundStyle(icon.1)
+                }
+                Text(text)
+                    .lineLimit(2)
+            }
+            .appFont(.caption)
+            .foregroundStyle(.secondary)
         }
     }
 
-    private func detail(_ task: DownloadManager.DownloadTask) -> String {
-        switch task.state {
-        case .waiting: String(localized: "等待中 · \(task.format.title)")
-        case .downloading: String(localized: "下載中 · \(task.format.title)")
-        case .done: String(localized: "已完成 · \(task.format.title) · 點擊分享")
-        case .failed(let message): String(localized: "失敗：\(message)　點擊重試")
+    private var icon: (String, Color)? {
+        switch app.offline.activity[id] {
+        case .paused: return ("pause.circle.fill", Color.secondary)
+        case .waitingForWiFi: return ("wifi", Color.secondary)
+        case .awaitingConsent: return ("exclamationmark.circle.fill", Color.orange)
+        case .failed: return ("exclamationmark.triangle.fill", Color.red)
+        default: return app.offline.hasOfflineCopy(id) ? ("checkmark.circle.fill", Color.green) : nil
+        }
+    }
+
+    private var text: String {
+        let offline = app.offline
+        switch offline.activity[id] {
+        case .queued: return String(localized: "等待中")
+        case .downloading: return String(localized: "正在下載原文")
+        case .translating(let done, let total): return String(localized: "正在翻譯 \(done)/\(total)")
+        case .exporting: return String(localized: "正在匯出")
+        case .paused: return String(localized: "已暫停")
+        case .waitingForWiFi: return String(localized: "等待 Wi-Fi 連線")
+        case .awaitingConsent: return String(localized: "翻譯會使用付費 API，長按確認後開始")
+        case .failed(let message): return String(localized: "失敗：\(message)")
+        case nil: break
+        }
+        guard let record = offline.records[id], record.downloadedAt != nil else { return String(localized: "未離線") }
+        var parts = [String(localized: "已離線")]
+        if let format = record.format { parts.append(format.title) }
+        if let size = offline.sizes[id] { parts.append(ByteCountFormatter.string(fromByteCount: size, countStyle: .file)) }
+        if let language = record.translatedLanguage {
+            if language != app.translation.config.targetLanguageCode {
+                parts.append(String(localized: "譯文為\(TranslationLanguage.named(language).displayName)"))
+            } else if !record.isTranslationComplete {
+                parts.append(String(localized: "已翻譯 \(record.translatedCount)/\(record.translatableCount)"))
+            }
+        }
+        return parts.joined(separator: " · ")
+    }
+}
+
+/// 離線內容的操作：暫停 / 繼續 / 重試、檢查新章節、重新翻譯、更換格式、分享與刪除。
+struct OfflineMenu: View {
+    let id: Int
+    @Binding var shared: DownloadedFile?
+    @Environment(AppState.self) private var app
+
+    var body: some View {
+        let offline = app.offline
+        let record = offline.records[id]
+        switch offline.activity[id] {
+        case .queued, .downloading, .translating, .exporting:
+            Button("暫停", systemImage: "pause") { offline.pause(id) }
+        case .paused, .waitingForWiFi:
+            Button("繼續", systemImage: "play") { offline.resume(id) }
+        case .failed:
+            Button("重試", systemImage: "arrow.clockwise") { offline.resume(id) }
+        case .awaitingConsent:
+            Button("使用付費 API 翻譯", systemImage: "checkmark.circle") { offline.consent(id) }
+        case nil:
+            if record?.downloadedAt == nil || record?.contentDeleted == true {
+                Button("下載離線內容", systemImage: "arrow.down.circle") { offline.update(id) }
+            }
+        }
+        if offline.hasOfflineCopy(id) {
+            if let url = offline.exportURL(id) {
+                Button("分享匯出檔", systemImage: "square.and.arrow.up") { shared = DownloadedFile(url: url) }
+            }
+            Button("檢查新章節", systemImage: "arrow.triangle.2.circlepath") { offline.update(id) }
+            Button("重新翻譯", systemImage: "translate") { offline.retranslate(id) }
+            Menu("匯出格式", systemImage: "doc") {
+                ForEach(DownloadFormat.allCases) { format in
+                    Button {
+                        offline.setFormat(format, for: id)
+                    } label: {
+                        if format == record?.format {
+                            Label(format.title, systemImage: "checkmark")
+                        } else {
+                            Text(verbatim: format.title)
+                        }
+                    }
+                }
+            }
+            Button("刪除離線內容", systemImage: "trash", role: .destructive) { offline.deleteContent(id) }
         }
     }
 }
@@ -87,7 +187,7 @@ struct BatchDownloadView: View {
     @State private var format: DownloadFormat?
     @State private var message: String?
 
-    private var limit: Int { DownloadManager.batchLimit }
+    private var limit: Int { OfflineManager.batchLimit }
 
     private var works: [WorkSummary] {
         let works = model?.works ?? []
@@ -114,11 +214,11 @@ struct BatchDownloadView: View {
                 NavigationLink {
                     DownloadsView()
                 } label: {
-                    LabeledContent("下載列表", value: app.downloads.activeCount > 0
-                        ? String(localized: "\(app.downloads.activeCount) 項進行中") : "")
+                    let activeCount = app.offline.activity.values.filter(\.isActive).count
+                    LabeledContent("下載列表", value: activeCount > 0 ? String(localized: "\(activeCount) 項進行中") : "")
                 }
             } footer: {
-                Text("篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 \(limit) 部。")
+                Text("選取的作品會加入書架，自動下載原文與譯文並以選擇的格式保存。篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 \(limit) 部。")
             }
 
             if let model {
@@ -231,8 +331,8 @@ struct BatchDownloadView: View {
 
     private func download() {
         let chosen = (model?.works ?? []).filter { selection.contains($0.id) }
-        app.downloads.enqueue(chosen, format: format ?? defaultFormat, client: app.client)
-        message = String(localized: "已加入下載列表：\(chosen.count) 部")
+        for work in chosen { app.offline.add(work, format: format ?? defaultFormat) }
+        message = String(localized: "已加入書架：\(chosen.count) 部")
         selection = []
     }
 }

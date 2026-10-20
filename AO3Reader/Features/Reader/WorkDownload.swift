@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 
 /// 官網支援的下載格式。
-enum DownloadFormat: String, CaseIterable, Identifiable, Sendable {
+enum DownloadFormat: String, CaseIterable, Identifiable, Codable, Sendable {
     case epub, azw3, mobi, pdf, html
 
     var id: String { rawValue }
@@ -13,17 +13,18 @@ enum DownloadFormat: String, CaseIterable, Identifiable, Sendable {
 }
 
 extension AO3Client {
-    /// 下載作品檔案（使用同一個 Cookie，限登入用戶的作品也能下載），存到「檔案」App 可見的 Downloads 資料夾。
-    func downloadWork(id: Int, title: String, format: DownloadFormat, href: String?) async throws -> URL {
+    /// 下載作品檔案（使用同一個 Cookie，限登入用戶的作品也能下載），預設存到「檔案」App 可見的 Downloads 資料夾。
+    func downloadWork(id: Int, title: String, format: DownloadFormat, href: String?,
+                      directory: URL? = nil, fileName: String? = nil) async throws -> URL {
         let path = href ?? "/downloads/\(id)/work.\(format.rawValue)"
         guard let url = URL(string: path, relativeTo: baseURL)?.absoluteURL else { throw AO3Error.invalidSource }
         let (data, response) = try await Self.session.data(from: url)
         let status = (response as? HTTPURLResponse)?.statusCode ?? 0
         guard (200..<300).contains(status), !data.isEmpty else { throw AO3Error.http(status) }
 
-        let directory = URL.documentsDirectory.appending(path: "Downloads", directoryHint: .isDirectory)
+        let directory = directory ?? URL.documentsDirectory.appending(path: "Downloads", directoryHint: .isDirectory)
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
-        let file = directory.appending(path: "\(Self.fileName(title)).\(format.rawValue)")
+        let file = directory.appending(path: fileName ?? "\(Self.fileName(title)).\(format.rawValue)")
         try data.write(to: file, options: .atomic)
         return file
     }
@@ -37,24 +38,25 @@ extension AO3Client {
     }
 }
 
-/// 閱讀頁工具列的下載按鈕：點擊以預設格式下載，長按選擇其他格式；完成後彈出分享選單。
+/// 閱讀頁工具列的下載按鈕：點擊以預設格式加入書架並離線（原文、譯文與匯出檔直接存到 App 資料夾），
+/// 長按選擇其他格式。進度顯示在書架。
 struct WorkDownloadButton: View {
     let detail: WorkDetail
-    let client: AO3Client
+    @Environment(AppState.self) private var app
     @AppStorage(DownloadFormat.storageKey) private var defaultFormat: DownloadFormat = .epub
-    @State private var isDownloading = false
-    @State private var file: DownloadedFile?
-    @State private var errorMessage: String?
+    @State private var message: String?
 
     var body: some View {
+        let offline = app.offline
+        let current = offline.records[detail.id]?.format
         Menu {
-            Section("下載為…") {
+            Section("離線格式") {
                 ForEach(DownloadFormat.allCases) { format in
                     Button {
                         download(format)
                     } label: {
-                        if format == defaultFormat {
-                            Label("\(format.title)（預設）", systemImage: "checkmark")
+                        if format == (current ?? defaultFormat) {
+                            Label(format.title, systemImage: "checkmark")
                         } else {
                             Text(verbatim: format.title)
                         }
@@ -62,37 +64,26 @@ struct WorkDownloadButton: View {
                 }
             }
         } label: {
-            if isDownloading {
+            if offline.activity[detail.id]?.isActive == true {
                 ProgressView()
             } else {
-                Label("下載", systemImage: "arrow.down.circle")
+                Label("下載", systemImage: offline.hasOfflineCopy(detail.id) ? "arrow.down.circle.fill" : "arrow.down.circle")
             }
         } primaryAction: {
-            download(defaultFormat)
+            download(current ?? defaultFormat)
         }
-        .disabled(isDownloading)
-        .sheet(item: $file) { file in
-            ActivityView(items: [file.url])
-                .presentationDetents([.medium, .large])
-        }
-        .alert("下載失敗", isPresented: Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })) {
-            Button("好") { errorMessage = nil }
+        .alert("已加入書架", isPresented: Binding(get: { message != nil }, set: { if !$0 { message = nil } })) {
+            Button("好") { message = nil }
         } message: {
-            Text(errorMessage ?? "")
+            Text(message ?? "")
         }
     }
 
     private func download(_ format: DownloadFormat) {
-        isDownloading = true
-        Task {
-            defer { isDownloading = false }
-            do {
-                let url = try await client.downloadWork(id: detail.id, title: detail.title, format: format,
-                                                        href: detail.downloads[format.rawValue])
-                file = DownloadedFile(url: url)
-            } catch {
-                errorMessage = error.localizedDescription
-            }
+        let wasOffline = app.offline.hasOfflineCopy(detail.id)
+        app.offline.add(detail.summaryInfo, format: format)
+        if !wasOffline {
+            message = String(localized: "正在下載原文並翻譯，完成後以 \(format.title) 格式保存。可在書架查看進度。")
         }
     }
 }

@@ -1,0 +1,242 @@
+import Foundation
+
+/// 最小 ZIP 寫入器：只使用不壓縮（stored）的項目，足以產生 EPUB（EPUB 規定 mimetype 必須不壓縮且排第一）。
+struct ZipWriter {
+    private var data = Data()
+    private var central = Data()
+    private var count: UInt16 = 0
+
+    mutating func add(_ path: String, _ content: Data) {
+        let name = Data(path.utf8)
+        let crc = CRC32.checksum(content)
+        let offset = UInt32(data.count)
+        let size = UInt32(content.count)
+
+        // Local file header
+        data.append(le32: 0x0403_4b50)
+        data.append(le16: 20)          // version needed
+        data.append(le16: 0x0800)      // flags: UTF-8 檔名
+        data.append(le16: 0)           // stored
+        data.append(le16: 0)           // mod time
+        data.append(le16: 0x21)        // mod date (1980-01-01)
+        data.append(le32: crc)
+        data.append(le32: size)
+        data.append(le32: size)
+        data.append(le16: UInt16(name.count))
+        data.append(le16: 0)
+        data.append(name)
+        data.append(content)
+
+        // Central directory header
+        central.append(le32: 0x0201_4b50)
+        central.append(le16: 20)       // version made by
+        central.append(le16: 20)
+        central.append(le16: 0x0800)
+        central.append(le16: 0)
+        central.append(le16: 0)
+        central.append(le16: 0x21)
+        central.append(le32: crc)
+        central.append(le32: size)
+        central.append(le32: size)
+        central.append(le16: UInt16(name.count))
+        central.append(le16: 0)        // extra
+        central.append(le16: 0)        // comment
+        central.append(le16: 0)        // disk
+        central.append(le16: 0)        // internal attributes
+        central.append(le32: 0)        // external attributes
+        central.append(le32: offset)
+        central.append(name)
+        count += 1
+    }
+
+    mutating func add(_ path: String, _ text: String) { add(path, Data(text.utf8)) }
+
+    func finish() -> Data {
+        var result = data
+        let offset = UInt32(result.count)
+        result.append(central)
+        result.append(le32: 0x0605_4b50)
+        result.append(le16: 0)
+        result.append(le16: 0)
+        result.append(le16: count)
+        result.append(le16: count)
+        result.append(le32: UInt32(central.count))
+        result.append(le32: offset)
+        result.append(le16: 0)
+        return result
+    }
+}
+
+enum CRC32 {
+    private static let table: [UInt32] = (0..<256).map { index in
+        var value = UInt32(index)
+        for _ in 0..<8 { value = value & 1 == 1 ? 0xEDB8_8320 ^ (value >> 1) : value >> 1 }
+        return value
+    }
+
+    static func checksum(_ data: Data) -> UInt32 {
+        var crc: UInt32 = 0xFFFF_FFFF
+        for byte in data { crc = table[Int((crc ^ UInt32(byte)) & 0xFF)] ^ (crc >> 8) }
+        return crc ^ 0xFFFF_FFFF
+    }
+}
+
+private extension Data {
+    mutating func append(le16 value: UInt16) {
+        Swift.withUnsafeBytes(of: value.littleEndian) { append(contentsOf: $0) }
+    }
+
+    mutating func append(le32 value: UInt32) {
+        Swift.withUnsafeBytes(of: value.littleEndian) { append(contentsOf: $0) }
+    }
+}
+
+/// 產生雙語 EPUB：每段原文之後緊接譯文（以較淡的樣式顯示），沒有譯文的段落只放原文。
+enum BilingualEPUB {
+    static func make(work: OfflineWork, translations: OfflineTranslations?) -> Data {
+        let detail = work.detail
+        func translation(_ id: String, _ text: String) -> String? {
+            translations?.text(for: Paragraph(id: id, text: text))
+        }
+
+        var zip = ZipWriter()
+        zip.add("mimetype", "application/epub+zip")
+        zip.add("META-INF/container.xml", """
+        <?xml version="1.0" encoding="UTF-8"?>
+        <container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
+          <rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/></rootfiles>
+        </container>
+        """)
+        zip.add("OEBPS/style.css", style)
+
+        // 標題頁：作品標題、作者、標籤、簡介與作者註
+        var title = "<h1>\(escape(work.title))</h1>"
+        if let text = translation(ReaderViewModel.workTitleID, work.title) { title += "<p class=\"tr-title\">\(escape(text))</p>" }
+        title += "<p class=\"byline\">\(escape(work.authors.joined(separator: ", ")))</p>"
+        if !work.tagGroups.isEmpty {
+            title += "<dl class=\"tags\">"
+            for group in work.tagGroups {
+                title += "<dt>\(escape(group.title))</dt><dd>\(escape(group.tags.map(\.name).joined(separator: ", ")))</dd>"
+            }
+            title += "</dl>"
+        }
+        title += block("Summary", work.summary, translation(ReaderViewModel.summaryID, work.summary))
+        title += block("Notes", work.notes, translation(ReaderViewModel.notesID, work.notes))
+        zip.add("OEBPS/title.xhtml", page(title: work.title, body: title))
+
+        // 章節
+        var manifest = ["<item id=\"title\" href=\"title.xhtml\" media-type=\"application/xhtml+xml\"/>"]
+        var spine = ["<itemref idref=\"title\"/>"]
+        var nav: [String] = ["<li><a href=\"title.xhtml\">\(escape(work.title))</a></li>"]
+        for chapter in work.chapters {
+            let file = "chapter-\(chapter.id + 1).xhtml"
+            let name = chapter.title.isEmpty ? "Chapter \(chapter.id + 1)" : chapter.title
+            var body = "<h2>\(escape(name))</h2>"
+            if detail.chapters.count > 1, let text = translation(ReaderViewModel.chapterTitleID(chapter.id), chapter.title) {
+                body += "<p class=\"tr-title\">\(escape(text))</p>"
+            }
+            body += block("Notes", chapter.notes, translation(ReaderViewModel.chapterNotesID(chapter.id), chapter.notes))
+            for paragraph in chapter.paragraphs {
+                switch paragraph.kind {
+                case .separator:
+                    body += "<hr/>"
+                case .heading:
+                    body += "<h3>\(lines(paragraph.text))</h3>"
+                    if let text = translations?.text(for: paragraph) { body += "<p class=\"tr-title\">\(lines(text))</p>" }
+                case .body:
+                    body += "<p>\(lines(paragraph.text))</p>"
+                    if let text = translations?.text(for: paragraph) { body += "<p class=\"tr\">\(lines(text))</p>" }
+                }
+            }
+            body += block("End Notes", chapter.endNotes, translation(ReaderViewModel.chapterEndNotesID(chapter.id), chapter.endNotes))
+            if chapter.id == work.chapters.count - 1 {
+                body += block("End Notes", work.endNotes, translation(ReaderViewModel.endNotesID, work.endNotes))
+            }
+            zip.add("OEBPS/\(file)", page(title: name, body: body))
+            manifest.append("<item id=\"c\(chapter.id + 1)\" href=\"\(file)\" media-type=\"application/xhtml+xml\"/>")
+            spine.append("<itemref idref=\"c\(chapter.id + 1)\"/>")
+            nav.append("<li><a href=\"\(file)\">\(escape(name))</a></li>")
+        }
+
+        zip.add("OEBPS/nav.xhtml", """
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE html>
+        <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+        <head><title>\(escape(work.title))</title></head>
+        <body><nav epub:type="toc" id="toc"><ol>\(nav.joined())</ol></nav></body>
+        </html>
+        """)
+        let modified = ISO8601DateFormatter().string(from: work.downloadedAt)
+        let language = translations?.targetLanguageCode ?? "und"
+        zip.add("OEBPS/content.opf", """
+        <?xml version="1.0" encoding="UTF-8"?>
+        <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+          <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <dc:identifier id="uid">urn:ao3:work:\(work.id)</dc:identifier>
+            <dc:title>\(escape(work.title))</dc:title>
+            \(work.authors.map { "<dc:creator>\(escape($0))</dc:creator>" }.joined())
+            <dc:language>\(escape(language))</dc:language>
+            <meta property="dcterms:modified">\(modified)</meta>
+          </metadata>
+          <manifest>
+            <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+            <item id="css" href="style.css" media-type="text/css"/>
+            \(manifest.joined(separator: "\n    "))
+          </manifest>
+          <spine>\(spine.joined())</spine>
+        </package>
+        """)
+        return zip.finish()
+    }
+
+    private static let style = """
+    body { line-height: 1.6; }
+    h1, h2 { text-align: center; }
+    .byline { text-align: center; font-style: italic; }
+    .tr { opacity: 0.72; border-left: 3px solid #990000; padding-left: 0.6em; }
+    .tr-title { text-align: center; opacity: 0.72; }
+    .block { margin: 1em 0; padding: 0.6em; border: 1px solid rgba(128,128,128,0.4); }
+    .block h4 { margin: 0 0 0.4em 0; }
+    dl.tags dt { font-weight: bold; }
+    dl.tags dd { margin: 0 0 0.4em 1em; }
+    """
+
+    private static func block(_ heading: String, _ text: String, _ translated: String?) -> String {
+        guard !text.isEmpty else { return "" }
+        var html = "<div class=\"block\"><h4>\(heading)</h4><p>\(lines(text))</p>"
+        if let translated { html += "<p class=\"tr\">\(lines(translated))</p>" }
+        return html + "</div>"
+    }
+
+    private static func page(title: String, body: String) -> String {
+        """
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE html>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head><title>\(escape(title))</title><link rel="stylesheet" type="text/css" href="style.css"/></head>
+        <body>\(body)</body>
+        </html>
+        """
+    }
+
+    private static func lines(_ text: String) -> String {
+        escape(text).replacingOccurrences(of: "\n", with: "<br/>")
+    }
+
+    static func escape(_ text: String) -> String {
+        var result = ""
+        result.reserveCapacity(text.count)
+        for scalar in text.unicodeScalars {
+            switch scalar {
+            case "&": result += "&amp;"
+            case "<": result += "&lt;"
+            case ">": result += "&gt;"
+            case "\"": result += "&quot;"
+            // XML 1.0 不允許的控制字元
+            case "\u{0}"..."\u{8}", "\u{B}", "\u{C}", "\u{E}"..."\u{1F}": continue
+            default: result.unicodeScalars.append(scalar)
+            }
+        }
+        return result
+    }
+}

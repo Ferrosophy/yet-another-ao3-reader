@@ -56,7 +56,7 @@ struct WorkDetail: Sendable {
     }
 }
 
-struct Chapter: Identifiable, Hashable, Sendable {
+struct Chapter: Identifiable, Hashable, Codable, Sendable {
     /// 章節索引（從 0 開始）
     let id: Int
     var title: String
@@ -67,8 +67,8 @@ struct Chapter: Identifiable, Hashable, Sendable {
 }
 
 /// 沉浸式翻譯的最小單位：一個段落對應一段譯文。
-struct Paragraph: Identifiable, Hashable, Sendable {
-    enum Kind: Hashable, Sendable { case body, heading, separator }
+struct Paragraph: Identifiable, Hashable, Codable, Sendable {
+    enum Kind: Hashable, Codable, Sendable { case body, heading, separator }
 
     /// 形如 "c0-p12"，在整部作品中唯一，同時作為譯文狀態的鍵。
     let id: String

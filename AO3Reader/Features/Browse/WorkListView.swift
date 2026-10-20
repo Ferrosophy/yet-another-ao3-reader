@@ -123,7 +123,7 @@ struct BookshelfMenuButton: View {
         if app.bookshelf.contains(work.id) {
             Button("移出書架", systemImage: "books.vertical.fill", role: .destructive) { app.bookshelf.remove(work.id) }
         } else {
-            Button("加入書架", systemImage: "books.vertical") { app.bookshelf.add(work) }
+            Button("加入書架", systemImage: "books.vertical") { app.offline.add(work) }
         }
     }
 }

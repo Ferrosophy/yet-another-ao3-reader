@@ -77,14 +77,14 @@ struct InboxComment: Identifiable, Hashable, Sendable {
 }
 
 /// 作品頁的標籤分組（Rating、Warnings、Fandoms…），每個標籤可點開該標籤下的作品。
-struct WorkTagGroup: Hashable, Sendable {
+struct WorkTagGroup: Hashable, Codable, Sendable {
     var title: String
     var tags: [WorkTag]
     /// Fandom 分組（翻譯開關與其他標籤分開）
     var isFandom = false
 }
 
-struct WorkTag: Hashable, Sendable {
+struct WorkTag: Hashable, Codable, Sendable {
     var name: String
     /// 通常為 /tags/<to_param>/works
     var path: String

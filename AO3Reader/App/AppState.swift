@@ -6,7 +6,7 @@ import Observation
 @MainActor
 @Observable
 final class AppState {
-    let sources = SourceStore()
+    let sources: SourceStore
     let auth = AuthService()
     let translation: TranslationSettings
     let translator: TranslationService
@@ -19,15 +19,17 @@ final class AppState {
     let bookshelf: BookshelfStore
     /// 時長管理
     let readingTime: ReadingTimeStore
-    /// 下載列表（批次下載）
-    let downloads = DownloadManager()
     /// 個人資料同步（iCloud / WebDAV），與 AO3 帳號資料分開
     let sync: SyncService
     /// 本機使用者資料（資料來源為「本機保存」時使用）與它的同步
     let library: LocalLibraryStore
     let librarySync: LibrarySyncService
+    /// 書架的離線內容（原文、譯文與匯出檔）
+    let offline: OfflineManager
 
     init() {
+        let sources = SourceStore()
+        self.sources = sources
         let translation = TranslationSettings()
         let translator = TranslationService()
         self.translation = translation
@@ -45,6 +47,9 @@ final class AppState {
         self.sync = sync
         self.library = library
         librarySync = LibrarySyncService(library: library, shelfSync: sync)
+        offline = OfflineManager(bookshelf: bookshelf, settings: translation, translator: translator) {
+            AO3Client(baseURL: sources.selected.baseURL)
+        }
     }
 
     /// 目前來源的客戶端；切換來源時自動跟著變更。

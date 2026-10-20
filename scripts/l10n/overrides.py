@@ -1,5 +1,6 @@
 LANGS = ['ja','ko','es','fr','de','pt-BR','it','ru','uk','pl','tr','nl','ar','hi','id','vi','th']
 _T = {
+"正在翻譯 %lld/%lld": "翻訳中 %lld/%lld|번역 중 %lld/%lld|Traduciendo %lld/%lld|Traduction %lld/%lld|Übersetzung %lld/%lld|Traduzindo %lld/%lld|Traduzione %lld/%lld|Перевод %lld/%lld|Переклад %lld/%lld|Tłumaczenie %lld/%lld|Çevriliyor %lld/%lld|Vertalen %lld/%lld|جارٍ الترجمة %lld/%lld|अनुवाद हो रहा है %lld/%lld|Menerjemahkan %lld/%lld|Đang dịch %lld/%lld|กำลังแปล %lld/%lld",
 "作者註": "作者メモ|작가 노트|Notas|Notes|Anmerkungen|Notas|Note|Примечания|Примітки|Notatki|Notlar|Notities|ملاحظات|नोट्स|Catatan|Ghi chú|หมายเหตุ",
 "簡介": "あらすじ|줄거리|Resumen|Résumé|Zusammenfassung|Resumo|Riassunto|Описание|Опис|Opis|Özet|Samenvatting|الملخص|सारांश|Ringkasan|Tóm tắt|เรื่องย่อ",
 "浮動": "フローティング|플로팅|Flotante|Flottant|Schwebend|Flutuante|Fluttuante|Плавающий|Плаваючий|Pływający|Yüzen|Zwevend|عائم|फ़्लोटिंग|Mengambang|Nổi|ลอย",

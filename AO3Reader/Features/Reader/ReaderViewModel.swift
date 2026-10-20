@@ -76,29 +76,59 @@ final class ReaderViewModel {
 
     // MARK: - Loading
 
+    /// 是否正在閱讀書架的離線副本
+    private(set) var isOffline = false
+
     func load() async {
         guard detail == nil else { return }
+        // 書架上已離線的作品直接讀取本機副本，不需要網路
+        if let offline = OfflineManager.loadWork(route.id) {
+            isOffline = true
+            show(offline.detail)
+            applyOfflineTranslations()
+            await loadActions()
+            return
+        }
         do {
-            let detail = try await client.work(id: route.id)
-            for chapter in detail.chapters {
-                for paragraph in chapter.paragraphs { lookup[paragraph.id] = paragraph }
-            }
-            for paragraph in Self.metaParagraphs(detail: detail, chapters: detail.chapters.indices) {
-                lookup[paragraph.id] = paragraph
-            }
-            let saved = UserDefaults.standard.integer(forKey: positionKey)
-            chapterIndex = min(max(saved, 0), detail.chapters.count - 1)
-            self.detail = detail
-            // 只在同一章時恢復段落位置
-            if let anchor = UserDefaults.standard.string(forKey: anchorKey), anchor.hasPrefix("c\(chapterIndex)-") {
-                scrollAnchor = anchor
-            }
+            show(try await client.work(id: route.id))
+            applyOfflineTranslations()
         } catch AO3Error.requiresLogin {
             requiresLogin = true
             loadError = AO3Error.requiresLogin.localizedDescription
         } catch {
             loadError = error.localizedDescription
         }
+    }
+
+    private func show(_ detail: WorkDetail) {
+        for chapter in detail.chapters {
+            for paragraph in chapter.paragraphs { lookup[paragraph.id] = paragraph }
+        }
+        for paragraph in Self.metaParagraphs(detail: detail, chapters: detail.chapters.indices, includeAll: true) {
+            lookup[paragraph.id] = paragraph
+        }
+        let saved = UserDefaults.standard.integer(forKey: positionKey)
+        chapterIndex = min(max(saved, 0), detail.chapters.count - 1)
+        self.detail = detail
+        // 只在同一章時恢復段落位置
+        if let anchor = UserDefaults.standard.string(forKey: anchorKey), anchor.hasPrefix("c\(chapterIndex)-") {
+            scrollAnchor = anchor
+        }
+    }
+
+    /// 離線譯文的目標語言與目前設定相同時直接填入，不必重新翻譯
+    private func applyOfflineTranslations() {
+        guard let saved = OfflineManager.loadTranslations(route.id),
+              saved.targetLanguageCode == settings.config.targetLanguageCode else { return }
+        for paragraph in lookup.values where translations[paragraph.id] == nil {
+            if let text = saved.text(for: paragraph) { translations[paragraph.id] = .done(text) }
+        }
+    }
+
+    /// 離線閱讀時，連線可用則在背景讀取帳號操作（書籤、訂閱等），失敗不影響閱讀
+    private func loadActions() async {
+        guard let actions = try? await client.workActions(id: route.id) else { return }
+        detail?.actions = actions
     }
 
     private var positionKey: String { "reader.position.\(route.id)" }
@@ -124,15 +154,16 @@ final class ReaderViewModel {
     // MARK: - Immersive translation
 
     /// 簡介與章節標題也以段落形式排入同一個翻譯佇列（ID 以 meta- 開頭，不會與正文衝突）
-    static let summaryID = "meta-summary"
-    static let workTitleID = "meta-worktitle"
-    static let notesID = "meta-notes"
-    static let endNotesID = "meta-endnotes"
-    static func chapterTitleID(_ chapter: Int) -> String { "meta-title-c\(chapter)" }
-    static func chapterNotesID(_ chapter: Int) -> String { "meta-notes-c\(chapter)" }
-    static func chapterEndNotesID(_ chapter: Int) -> String { "meta-endnotes-c\(chapter)" }
+    nonisolated static let summaryID = "meta-summary"
+    nonisolated static let workTitleID = "meta-worktitle"
+    nonisolated static let notesID = "meta-notes"
+    nonisolated static let endNotesID = "meta-endnotes"
+    nonisolated static func chapterTitleID(_ chapter: Int) -> String { "meta-title-c\(chapter)" }
+    nonisolated static func chapterNotesID(_ chapter: Int) -> String { "meta-notes-c\(chapter)" }
+    nonisolated static func chapterEndNotesID(_ chapter: Int) -> String { "meta-endnotes-c\(chapter)" }
 
-    private static func metaParagraphs(detail: WorkDetail, chapters: some Sequence<Int>) -> [Paragraph] {
+    /// `includeAll` 為 true 時忽略「顯示譯文」設定（離線翻譯一次備齊）
+    nonisolated static func metaParagraphs(detail: WorkDetail, chapters: some Sequence<Int>, includeAll: Bool = false) -> [Paragraph] {
         var result: [Paragraph] = []
         func add(_ id: String, _ text: String, kind: Paragraph.Kind = .body) {
             if !text.isEmpty { result.append(Paragraph(id: id, text: text, kind: kind)) }
@@ -141,8 +172,8 @@ final class ReaderViewModel {
             let chapter = detail.chapters[index]
             if index == 0 {
                 // 設定 › 一般 › 顯示譯文
-                if TranslationVisibility.readerTitle { add(workTitleID, detail.title, kind: .heading) }
-                if TranslationVisibility.readerSummary { add(summaryID, detail.summary) }
+                if includeAll || TranslationVisibility.readerTitle { add(workTitleID, detail.title, kind: .heading) }
+                if includeAll || TranslationVisibility.readerSummary { add(summaryID, detail.summary) }
                 add(notesID, detail.notes)
             }
             if detail.chapters.count > 1 { add(chapterTitleID(index), chapter.title, kind: .heading) }
@@ -213,7 +244,7 @@ final class ReaderViewModel {
     func setTargetLanguage(_ code: String) {
         guard code != settings.config.targetLanguageCode else { return }
         settings.config.targetLanguageCode = code
-        resetTranslations()
+        resetTranslations(keepOffline: true)
     }
 
     func setSourceLanguage(_ code: String?) {
@@ -240,10 +271,11 @@ final class ReaderViewModel {
     }
 
     /// 清除目前譯文並以目前設定重新翻譯可見段落（切換語言、服務或手動重譯時）。
-    func resetTranslations() {
+    func resetTranslations(keepOffline: Bool = false) {
         cancelPending()
         translations.removeAll()
         translationError = nil
+        if keepOffline { applyOfflineTranslations() }
         if isTranslationOn { enqueueVisible() }
     }
 

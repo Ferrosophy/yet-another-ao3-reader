@@ -12,6 +12,7 @@ struct BookshelfView: View {
     @State private var photoItem: PhotosPickerItem?
     @State private var showsReorder = false
     @State private var errorMessage: String?
+    @State private var shared: DownloadedFile?
 
     private var items: [BookshelfItem] { app.bookshelf.sorted(by: sort, ascending: ascending) }
 
@@ -21,7 +22,7 @@ struct BookshelfView: View {
                 ContentUnavailableView {
                     Label("書架是空的", systemImage: "books.vertical")
                 } description: {
-                    Text("在閱讀頁點擊書架按鈕，或在作品列表中長按作品，即可加入書架。")
+                    Text("在閱讀頁點擊書架或下載按鈕，或在作品列表中長按作品，即可加入書架。書架上的作品會自動下載原文與譯文，可離線閱讀。")
                 }
             } else if layout == .list {
                 list
@@ -31,11 +32,16 @@ struct BookshelfView: View {
         }
         .navigationTitle("書架")
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
+            ToolbarItemGroup(placement: .topBarLeading) {
                 NavigationLink {
                     ReadingStatsView()
                 } label: {
                     Label("閱讀時長", systemImage: "chart.bar.xaxis")
+                }
+                NavigationLink {
+                    DownloadsView()
+                } label: {
+                    Label("下載列表", systemImage: "arrow.down.circle")
                 }
             }
             ToolbarItem(placement: .topBarTrailing) { optionsMenu }
@@ -55,6 +61,9 @@ struct BookshelfView: View {
                 self.photoItem = nil
                 coverTarget = nil
             }
+        }
+        .sheet(item: $shared) { file in
+            ActivityView(items: [file.url]).presentationDetents([.medium, .large])
         }
         .alert("無法套用封面", isPresented: Binding(get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } })) {
             Button("好") { errorMessage = nil }
@@ -90,7 +99,10 @@ struct BookshelfView: View {
         List {
             ForEach(items) { item in
                 NavigationLink(value: WorkRoute(id: item.id, title: item.work.title)) {
-                    WorkRow(work: item.work)
+                    VStack(alignment: .leading, spacing: 6) {
+                        WorkRow(work: item.work)
+                        OfflineStatusView(id: item.id)
+                    }
                 }
                 .contextMenu { itemMenu(item) }
                 .swipeActions {
@@ -126,6 +138,8 @@ struct BookshelfView: View {
                                     .foregroundStyle(.secondary)
                                     .lineLimit(1)
                             }
+                            OfflineStatusView(id: item.id)
+                                .lineLimit(1)
                         }
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                     }
@@ -139,6 +153,9 @@ struct BookshelfView: View {
 
     @ViewBuilder
     private func itemMenu(_ item: BookshelfItem) -> some View {
+        Section("離線內容") {
+            OfflineMenu(id: item.id, shared: $shared)
+        }
         Button("更換封面", systemImage: "photo") {
             coverTarget = item.id
             showsPhotoPicker = true

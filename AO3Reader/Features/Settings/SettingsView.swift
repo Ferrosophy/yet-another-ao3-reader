@@ -21,6 +21,8 @@ struct SettingsView: View {
 
     @State private var showsClearConfirm = false
     @AppStorage(StartTab.storageKey) private var startTab: StartTab = .browse
+    @AppStorage(OfflineManager.autoTranslateKey) private var offlineTranslates = true
+    @AppStorage(OfflineManager.wifiOnlyKey) private var offlineWiFiOnly = false
     @AppStorage(DownloadFormat.storageKey) private var downloadFormat: DownloadFormat = .epub
     @AppStorage(TranslationVisibility.titleKey) private var showsTitleTranslation = true
     @AppStorage(TranslationVisibility.fandomKey) private var showsFandomTranslation = true
@@ -93,12 +95,24 @@ struct SettingsView: View {
                 Text("閱讀頁開啟翻譯時，標題頁上的這些內容是否顯示譯文。作品名稱與簡介譯成翻譯設定的目標語言，Fandom 與標籤譯成介面語言。")
             }
 
-            Section("下載") {
+            Section {
                 NavigationLink("批次下載") { BatchDownloadView() }
-                NavigationLink("下載列表") { DownloadsView() }
+                NavigationLink {
+                    DownloadsView()
+                } label: {
+                    LabeledContent("下載列表", value: ByteCountFormatter.string(fromByteCount: app.offline.totalSize, countStyle: .file))
+                }
                 Picker("預設下載格式", selection: $downloadFormat) {
                     ForEach(DownloadFormat.allCases) { Text(verbatim: $0.title).tag($0) }
                 }
+                Toggle("自動翻譯離線內容", isOn: $offlineTranslates)
+                    .onChange(of: offlineTranslates) { app.offline.settingsChanged() }
+                Toggle("僅在 Wi-Fi 下載", isOn: $offlineWiFiOnly)
+                    .onChange(of: offlineWiFiOnly) { app.offline.settingsChanged() }
+            } header: {
+                Text("下載")
+            } footer: {
+                Text("加入書架的作品會自動下載到 App 內，可離線閱讀。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在書架長按作品「重新翻譯」。")
             }
 
             Section("外觀") {

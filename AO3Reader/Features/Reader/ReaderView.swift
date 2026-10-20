@@ -74,12 +74,17 @@ struct ReaderView: View {
             ToolbarItemGroup(placement: .topBarTrailing) {
                 if let detail = model.detail {
                     Button {
-                        app.bookshelf.toggle(detail.summaryInfo)
+                        // 加入書架即開始離線下載與翻譯；移出書架時一併刪除離線內容
+                        if app.bookshelf.contains(detail.id) {
+                            app.bookshelf.remove(detail.id)
+                        } else {
+                            app.offline.add(detail.summaryInfo)
+                        }
                     } label: {
                         Label(app.bookshelf.contains(detail.id) ? LocalizedStringKey("移出書架") : "加入書架",
                               systemImage: app.bookshelf.contains(detail.id) ? "books.vertical.fill" : "books.vertical")
                     }
-                    WorkDownloadButton(detail: detail, client: model.client)
+                    WorkDownloadButton(detail: detail)
                 }
                 if dataSource == .local, let detail = model.detail {
                     LocalWorkActionsMenu(detail: detail)
@@ -111,7 +116,8 @@ struct ReaderView: View {
             Text("你已連續閱讀 \(app.readingTime.reminderMinutes) 分鐘，讓眼睛休息一下。")
         }
         .task { await model.load() }
-        .task(id: model.detail?.id) {
+        // 離線閱讀時帳號操作稍後才在背景讀到，讀到後重新載入
+        .task(id: "\(model.detail?.id ?? 0)-\(model.detail?.actions != nil)") {
             if let detail = model.detail { await actions.load(from: detail) }
         }
         .sheet(isPresented: $showsChapters) {
@@ -135,7 +141,7 @@ struct ReaderView: View {
             }
             .presentationDetents([.medium, .large])
         }
-        .sheet(item: $model.challenge, onDismiss: { model.resetTranslations() }) { challenge in
+        .sheet(item: $model.challenge, onDismiss: { model.resetTranslations(keepOffline: true) }) { challenge in
             TranslationChallengeView(challenge: challenge)
         }
         .sheet(isPresented: $showsTargetPicker) {
@@ -147,7 +153,7 @@ struct ReaderView: View {
             TranslationLanguageSheet(title: "原文語言", languages: app.translation.config.provider.sourceLanguages, allowsAutomatic: true,
                                 selection: Binding(get: { model.sourceLanguage?.code }, set: { model.setSourceLanguage($0) }))
         }
-        .sheet(isPresented: $showsTranslationSettings, onDismiss: { model.resetTranslations() }) {
+        .sheet(isPresented: $showsTranslationSettings, onDismiss: { model.resetTranslations(keepOffline: true) }) {
             NavigationStack {
                 TranslationSettingsView()
                     .toolbar {
