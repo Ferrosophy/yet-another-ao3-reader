@@ -61,15 +61,15 @@ struct AppearanceSettingsView: View {
 
 /// 外觀設定的分類選項卡。
 enum AppearanceTab: String, CaseIterable, Identifiable {
-    case interface, layout, font, colors, tags, translation
+    case interface, mode, typography, colors, tags, translation
 
     var id: String { rawValue }
 
     var title: LocalizedStringKey {
         switch self {
         case .interface: "介面"
-        case .layout: "閱讀模式與排版"
-        case .font: "字體"
+        case .mode: "閱讀模式"
+        case .typography: "字體與排版"
         case .colors: "閱讀配色"
         case .tags: "標籤與簡介"
         case .translation: "譯文外觀"
@@ -79,8 +79,8 @@ enum AppearanceTab: String, CaseIterable, Identifiable {
     var systemImage: String {
         switch self {
         case .interface: "iphone"
-        case .layout: "text.alignleft"
-        case .font: "textformat"
+        case .mode: "book.pages"
+        case .typography: "textformat"
         case .colors: "paintpalette"
         case .tags: "tag"
         case .translation: "translate"
@@ -103,7 +103,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
         self.showsInterface = showsInterface
         self.interface = interface()
         self.translationExtras = translationExtras()
-        _tab = State(initialValue: showsInterface ? .interface : .layout)
+        _tab = State(initialValue: showsInterface ? .interface : .mode)
     }
 
     @Environment(AppState.self) private var app
@@ -134,16 +134,17 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
             switch tab {
             case .interface:
                 interface
-            case .layout:
-                layoutSections(layout: layout)
-            case .font:
-                Section {
+            case .mode:
+                modeSections(layout: layout)
+            case .typography:
+                Section("字體") {
                     NavigationLink {
                         FontPickerView(title: "閱讀字體", selection: $appearance.config.readerFont)
                     } label: {
                         LabeledContent("閱讀字體", value: appearance.fontDisplayName)
                     }
                 }
+                typographySections(layout: layout)
             case .colors:
                 colorSections(theme: theme)
             case .tags:
@@ -175,8 +176,7 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
     }
 
     @ViewBuilder
-    private func layoutSections(layout: Binding<ReaderLayout>) -> some View {
-        let appearance = app.appearance
+    private func modeSections(layout: Binding<ReaderLayout>) -> some View {
         Section("閱讀模式") {
             Picker("模式", selection: layout.mode) {
                 ForEach(ReadingMode.allCases) { Text($0.title).tag($0) }
@@ -191,7 +191,11 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
                 ForEach(ChromeMode.allCases) { Text($0.title).tag($0) }
             }
         }
+    }
 
+    @ViewBuilder
+    private func typographySections(layout: Binding<ReaderLayout>) -> some View {
+        let appearance = app.appearance
         Section("排版") {
             slider("字體大小", value: layout.fontSize, in: 10...40, step: 1)
             Picker("字重", selection: layout.fontWeight) {
@@ -344,13 +348,33 @@ struct ReaderAppearanceForm<Interface: View, TranslationExtras: View>: View {
             .pickerStyle(.segmented)
             slider("譯文大小", value: $appearance.config.translation.fontScale, in: 0.6...1.3, step: 0.01, percent: true)
             Toggle("斜體", isOn: $appearance.config.translation.italic)
-            ColorPicker("譯文顏色", selection: Binding(
-                get: { appearance.config.translation.colorHex.flatMap(Color.init(hex:)) ?? .secondary },
-                set: { appearance.config.translation.colorHex = $0.hexString }
-            ), supportsOpacity: false)
-            if appearance.config.translation.colorHex != nil {
-                Button("譯文顏色恢復預設") { appearance.config.translation.colorHex = nil }
+        }
+
+        Section {
+            let translation = appearance.config.translation
+            let followsText = translation.followsTextColor == true
+            SwatchRow {
+                Swatch(color: .gray, label: "預設", isSelected: translation.colorHex == nil && !followsText, symbol: "wand.and.stars") {
+                    appearance.config.translation.colorHex = nil
+                    appearance.config.translation.followsTextColor = false
+                }
+                Swatch(color: appearance.textColor(for: scheme) ?? .primary, label: "跟隨正文", isSelected: followsText,
+                       symbol: "textformat") {
+                    appearance.config.translation.colorHex = nil
+                    appearance.config.translation.followsTextColor = true
+                }
+                CustomColorSwatch(isSelected: translation.colorHex != nil && !followsText, selection: Binding(
+                    get: { translation.colorHex.flatMap(Color.init(hex:)) ?? .secondary },
+                    set: {
+                        appearance.config.translation.colorHex = $0.hexString
+                        appearance.config.translation.followsTextColor = false
+                    }
+                ))
             }
+        } header: {
+            Text("譯文顏色")
+        } footer: {
+            Text("「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。")
         }
     }
 
@@ -567,13 +591,10 @@ private struct CustomColorSwatch: View {
             ZStack {
                 Circle()
                     .strokeBorder(isSelected ? Color.accentColor : .clear, lineWidth: 3)
-                Circle()
-                    .fill(AngularGradient(colors: [.red, .yellow, .green, .cyan, .blue, .purple, .red], center: .center))
-                    .padding(5)
+                // 直接顯示系統的色環按鈕（點擊開啟調色盤）；不可用透明疊加，否則點擊不會觸發
                 ColorPicker("自訂", selection: $selection, supportsOpacity: false)
                     .labelsHidden()
-                    .scaleEffect(1.3)
-                    .opacity(0.02)
+                    .scaleEffect(1.2)
             }
             .frame(width: 46, height: 46)
             Text("自訂").appFont(.caption2).foregroundStyle(.secondary)

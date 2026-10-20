@@ -499,7 +499,10 @@
   "功能建議": "機能を提案する",
   "查看所有回饋": "すべてのフィードバックを表示",
   "意見回饋": "フィードバック",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "フィードバックを実行すると、ブラウザーで GitHub の問題が開き、アプリとシステムのバージョンが入力されます (アカウントや読み取りデータはありません)。"
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "フィードバックを実行すると、ブラウザーで GitHub の問題が開き、アプリとシステムのバージョンが入力されます (アカウントや読み取りデータはありません)。",
+  "字體與排版": "フォントとレイアウト",
+  "跟隨正文": "テキストの一致",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "「デフォルト」では、明るい第 2 テキストの色が使用されます。 「文字に一致」は、現在の読み上げ色で本文と同じ色を使用します。"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1001,7 +1004,10 @@
   "功能建議": "기능 제안",
   "查看所有回饋": "모든 피드백 보기",
   "意見回饋": "피드백",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "피드백은 앱 및 시스템 버전이 채워진(계정 또는 데이터 읽기 없음) 브라우저에서 GitHub 문제를 엽니다."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "피드백은 앱 및 시스템 버전이 채워진(계정 또는 데이터 읽기 없음) 브라우저에서 GitHub 문제를 엽니다.",
+  "字體與排版": "글꼴 및 레이아웃",
+  "跟隨正文": "텍스트 일치",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "\"기본값\"은 더 밝은 보조 텍스트 색상을 사용합니다. \"텍스트 일치\"는 현재 읽기 색상에서 본문 텍스트와 동일한 색상을 사용합니다."
  },
  "es": {
   "載入中": "Cargando",
@@ -1503,7 +1509,10 @@
   "功能建議": "Sugerir una característica",
   "查看所有回饋": "Ver todos los comentarios",
   "意見回饋": "Comentarios",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Los comentarios abren Problemas de GitHub en su navegador con la aplicación y las versiones del sistema completadas (sin cuenta ni datos de lectura)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Los comentarios abren Problemas de GitHub en su navegador con la aplicación y las versiones del sistema completadas (sin cuenta ni datos de lectura).",
+  "字體與排版": "Fuente y diseño",
+  "跟隨正文": "Coincidir texto",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "\"Predeterminado\" utiliza un color de texto secundario más claro; “Coincidir texto” utiliza el mismo color que el texto del cuerpo en los colores de lectura actuales."
  },
  "fr": {
   "載入中": "Chargement",
@@ -2005,7 +2014,10 @@
   "功能建議": "Suggérer une fonctionnalité",
   "查看所有回饋": "Afficher tous les commentaires",
   "意見回饋": "Commentaires",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Les commentaires ouvrent les problèmes GitHub dans votre navigateur avec les versions de l'application et du système renseignées (pas de compte ni de données de lecture)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Les commentaires ouvrent les problèmes GitHub dans votre navigateur avec les versions de l'application et du système renseignées (pas de compte ni de données de lecture).",
+  "字體與排版": "Police et mise en page",
+  "跟隨正文": "Faire correspondre le texte",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "« Par défaut » utilise une couleur de texte secondaire plus claire ; « Match Text » utilise la même couleur que le corps du texte dans les couleurs de lecture actuelles."
  },
  "de": {
   "載入中": "Laden",
@@ -2507,7 +2519,10 @@
   "功能建議": "Schlagen Sie eine Funktion vor",
   "查看所有回饋": "Alle Rückmeldungen anzeigen",
   "意見回饋": "Rückmeldung",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Feedback öffnet GitHub Issues in Ihrem Browser mit den ausgefüllten App- und Systemversionen (kein Konto oder Lesedaten)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Feedback öffnet GitHub Issues in Ihrem Browser mit den ausgefüllten App- und Systemversionen (kein Konto oder Lesedaten).",
+  "字體與排版": "Schriftart und Layout",
+  "跟隨正文": "Text anpassen",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "„Standard“ verwendet eine hellere sekundäre Textfarbe; „Match Text“ verwendet dieselbe Farbe wie der Haupttext in den aktuellen Lesefarben."
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -3009,7 +3024,10 @@
   "功能建議": "Sugira um recurso",
   "查看所有回饋": "Ver todos os comentários",
   "意見回饋": "Comentários",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "O feedback abre GitHub Issues em seu navegador com as versões do aplicativo e do sistema preenchidas (sem conta ou dados de leitura)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "O feedback abre GitHub Issues em seu navegador com as versões do aplicativo e do sistema preenchidas (sem conta ou dados de leitura).",
+  "字體與排版": "Fonte e layout",
+  "跟隨正文": "Texto correspondente",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "“Padrão” usa uma cor de texto secundária mais clara; “Match Text” usa a mesma cor do corpo do texto nas cores de leitura atuais."
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -3511,7 +3529,10 @@
   "功能建議": "Suggerisci una funzionalità",
   "查看所有回饋": "Visualizza tutti i feedback",
   "意見回饋": "Feedback",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Il feedback apre GitHub Issues nel tuo browser con le versioni dell'app e del sistema compilate (nessun account o dati di lettura)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Il feedback apre GitHub Issues nel tuo browser con le versioni dell'app e del sistema compilate (nessun account o dati di lettura).",
+  "字體與排版": "Carattere e layout",
+  "跟隨正文": "Corrispondenza testo",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "\"Predefinito\" utilizza un colore del testo secondario più chiaro; \"Abbina testo\" utilizza lo stesso colore del corpo del testo nei colori di lettura correnti."
  },
  "ru": {
   "載入中": "Загрузка",
@@ -4013,7 +4034,10 @@
   "功能建議": "Предложить функцию",
   "查看所有回饋": "Просмотреть все отзывы",
   "意見回饋": "Обратная связь",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Отзыв открывает GitHub Issues в вашем браузере с заполненными версиями приложения и системы (без учетной записи или данных для чтения)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Отзыв открывает GitHub Issues в вашем браузере с заполненными версиями приложения и системы (без учетной записи или данных для чтения).",
+  "字體與排版": "Шрифт и макет",
+  "跟隨正文": "Текст совпадения",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "«По умолчанию» использует более светлый дополнительный цвет текста; «Сопоставить текст» использует тот же цвет, что и основной текст, в текущих цветах чтения."
  },
  "uk": {
   "載入中": "Завантаження",
@@ -4515,7 +4539,10 @@
   "功能建議": "Запропонуйте функцію",
   "查看所有回饋": "Переглянути всі відгуки",
   "意見回饋": "Зворотній зв'язок",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Відгук відкриває GitHub Issues у вашому браузері із заповненими версіями програми та системи (без даних облікового запису чи читання)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Відгук відкриває GitHub Issues у вашому браузері із заповненими версіями програми та системи (без даних облікового запису чи читання).",
+  "字體與排版": "Шрифт і макет",
+  "跟隨正文": "Відповідність тексту",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "«За замовчуванням» використовує світліший допоміжний колір тексту; «Збіг тексту» використовує той самий колір, що й основний текст у поточних кольорах читання."
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -5017,7 +5044,10 @@
   "功能建議": "Zaproponuj funkcję",
   "查看所有回饋": "Wyświetl wszystkie opinie",
   "意見回饋": "Informacje zwrotne",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Opinia otwiera GitHub Issues w Twojej przeglądarce z wypełnionymi wersjami aplikacji i systemu (bez konta i danych do odczytu)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Opinia otwiera GitHub Issues w Twojej przeglądarce z wypełnionymi wersjami aplikacji i systemu (bez konta i danych do odczytu).",
+  "字體與排版": "Czcionka i układ",
+  "跟隨正文": "Dopasuj tekst",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "„Domyślne” używa jaśniejszego koloru tekstu dodatkowego; Opcja „Dopasuj tekst” używa tego samego koloru co tekst podstawowy w bieżących kolorach odczytu."
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -5519,7 +5549,10 @@
   "功能建議": "Bir Özellik Önerin",
   "查看所有回饋": "Tüm Geri Bildirimleri Görüntüle",
   "意見回饋": "Geribildirim",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Geri bildirim, tarayıcınızda uygulama ve sistem sürümleri doldurulmuş olarak (hesap veya okuma verisi yok) GitHub Sorunlarını açar."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Geri bildirim, tarayıcınızda uygulama ve sistem sürümleri doldurulmuş olarak (hesap veya okuma verisi yok) GitHub Sorunlarını açar.",
+  "字體與排版": "Yazı Tipi ve Düzen",
+  "跟隨正文": "Metni Eşleştir",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "“Varsayılan” daha açık bir ikincil metin rengi kullanır; “Metni Eşleştir” mevcut okuma renklerinde gövde metniyle aynı rengi kullanır."
  },
  "nl": {
   "載入中": "Laden",
@@ -6021,7 +6054,10 @@
   "功能建議": "Stel een functie voor",
   "查看所有回饋": "Bekijk alle feedback",
   "意見回饋": "Feedback",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Feedback opent GitHub Issues in uw browser met de app- en systeemversies ingevuld (geen account- of leesgegevens)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Feedback opent GitHub Issues in uw browser met de app- en systeemversies ingevuld (geen account- of leesgegevens).",
+  "字體與排版": "Lettertype en lay-out",
+  "跟隨正文": "Overeenkomende tekst",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "“Standaard” gebruikt een lichtere secundaire tekstkleur; “Match Text” gebruikt dezelfde kleur als de hoofdtekst in de huidige leeskleuren."
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -6523,7 +6559,10 @@
   "功能建議": "اقتراح ميزة",
   "查看所有回饋": "عرض جميع التعليقات",
   "意見回饋": "ردود الفعل",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "تفتح التعليقات مشكلات GitHub في متصفحك مع ملء إصدارات التطبيق والنظام (بدون حساب أو بيانات القراءة)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "تفتح التعليقات مشكلات GitHub في متصفحك مع ملء إصدارات التطبيق والنظام (بدون حساب أو بيانات القراءة).",
+  "字體與排版": "الخط والتخطيط",
+  "跟隨正文": "مطابقة النص",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "يستخدم \"الافتراضي\" لون نص ثانوي أفتح؛ يستخدم \"نص المطابقة\" نفس لون النص الأساسي بألوان القراءة الحالية."
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -7025,7 +7064,10 @@
   "功能建議": "एक विशेषता सुझाएँ",
   "查看所有回饋": "सभी प्रतिक्रिया देखें",
   "意見回饋": "प्रतिक्रिया",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "फीडबैक आपके ब्राउज़र में ऐप और सिस्टम संस्करण (कोई खाता या रीडिंग डेटा नहीं) के साथ GitHub मुद्दे खोलता है।"
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "फीडबैक आपके ब्राउज़र में ऐप और सिस्टम संस्करण (कोई खाता या रीडिंग डेटा नहीं) के साथ GitHub मुद्दे खोलता है।",
+  "字體與排版": "फ़ॉन्ट और लेआउट",
+  "跟隨正文": "पाठ का मिलान करें",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "\"डिफ़ॉल्ट\" हल्के माध्यमिक पाठ रंग का उपयोग करता है; \"मैच टेक्स्ट\" वर्तमान पढ़ने के रंगों में मुख्य पाठ के समान रंग का उपयोग करता है।"
  },
  "id": {
   "載入中": "Memuat",
@@ -7527,7 +7569,10 @@
   "功能建議": "Sarankan Fitur",
   "查看所有回饋": "Lihat Semua Masukan",
   "意見回饋": "Umpan balik",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Umpan balik membuka Masalah GitHub di browser Anda dengan versi aplikasi dan sistem terisi (tidak ada akun atau data bacaan)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Umpan balik membuka Masalah GitHub di browser Anda dengan versi aplikasi dan sistem terisi (tidak ada akun atau data bacaan).",
+  "字體與排版": "Font & Tata Letak",
+  "跟隨正文": "Cocokkan Teks",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "“Default” menggunakan warna teks sekunder yang lebih terang; “Match Text” menggunakan warna yang sama dengan isi teks dalam warna bacaan saat ini."
  },
  "vi": {
   "載入中": "Đang tải",
@@ -8029,7 +8074,10 @@
   "功能建議": "Đề xuất một tính năng",
   "查看所有回饋": "Xem tất cả phản hồi",
   "意見回饋": "Phản hồi",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Phản hồi sẽ mở ra Sự cố GitHub trong trình duyệt của bạn với phiên bản ứng dụng và hệ thống được điền vào (không có tài khoản hoặc dữ liệu đọc)."
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "Phản hồi sẽ mở ra Sự cố GitHub trong trình duyệt của bạn với phiên bản ứng dụng và hệ thống được điền vào (không có tài khoản hoặc dữ liệu đọc).",
+  "字體與排版": "Phông chữ & Bố cục",
+  "跟隨正文": "So khớp văn bản",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "“Mặc định” sử dụng màu văn bản phụ nhạt hơn; “Văn bản phù hợp” sử dụng cùng màu với văn bản nội dung trong màu đọc hiện tại."
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -8531,6 +8579,9 @@
   "功能建議": "แนะนำฟีเจอร์",
   "查看所有回饋": "ดูคำติชมทั้งหมด",
   "意見回饋": "ข้อเสนอแนะ",
-  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "คำติชมจะเปิดปัญหา GitHub ในเบราว์เซอร์ของคุณด้วยแอปและเวอร์ชันของระบบที่กรอกไว้ (ไม่มีบัญชีหรือข้อมูลการอ่าน)"
+  "回饋會在瀏覽器中開啟 GitHub Issues，已自動附上 App 版本與系統版本（不含任何帳號或閱讀資料）。": "คำติชมจะเปิดปัญหา GitHub ในเบราว์เซอร์ของคุณด้วยแอปและเวอร์ชันของระบบที่กรอกไว้ (ไม่มีบัญชีหรือข้อมูลการอ่าน)",
+  "字體與排版": "แบบอักษรและเค้าโครง",
+  "跟隨正文": "จับคู่ข้อความ",
+  "「預設」為較淡的次要文字色；「跟隨正文」與目前閱讀配色的正文顏色相同。": "“ค่าเริ่มต้น” ใช้สีข้อความรองที่สว่างกว่า “จับคู่ข้อความ” ใช้สีเดียวกับข้อความเนื้อหาในสีการอ่านปัจจุบัน"
  }
 }

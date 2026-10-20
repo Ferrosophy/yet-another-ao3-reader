@@ -86,7 +86,9 @@ enum PagedTextBuilder {
         case .plain: nil
         }
 
-        let translationColor = style.translation.colorHex.flatMap(Color.init(hex:)).map(UIColor.init) ?? secondaryColor
+        let translationColor = style.translation.followsTextColor == true
+            ? textColor
+            : style.translation.colorHex.flatMap(Color.init(hex:)).map(UIColor.init) ?? secondaryColor
         let smallFont = UIFont.preferredFont(forTextStyle: .footnote)
         let translationIndent: CGFloat = style.translation.style == .plain ? 0 : 12
 

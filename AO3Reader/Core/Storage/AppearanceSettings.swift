@@ -136,6 +136,8 @@ struct TranslationAppearance: Codable, Hashable, Sendable {
     var fontScale = 0.95
     /// nil 為次要文字色
     var colorHex: String?
+    /// 譯文與正文同色（Optional 讓舊設定可正常解碼）
+    var followsTextColor: Bool?
     var italic = false
 }
 

@@ -36,7 +36,11 @@ struct ReaderStyle {
     var titleFont: Font { font(scale: 1.5, weight: .bold) }
     var translationFont: Font { font(scale: translation.fontScale) }
 
-    var translationColor: Color? { translation.colorHex.flatMap(Color.init(hex:)) }
+    /// nil 為次要文字色；跟隨正文時使用正文顏色
+    var translationColor: Color? {
+        if translation.followsTextColor == true { return textColor ?? .primary }
+        return translation.colorHex.flatMap(Color.init(hex:))
+    }
 
     // MARK: UIKit（翻頁模式排版）
 
