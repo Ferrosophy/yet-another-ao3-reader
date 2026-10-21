@@ -37,7 +37,7 @@ YAFR 是独立开发的非官方 AO3 阅读器，与 Archive of Our Own（AO3）
 
 ## 联系
 
-隐私问题请在 [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues) 提出；涉及安全漏洞请依 [SECURITY.md](SECURITY.md) 私密回报。
+隐私问题请在 [GitHub Issues](https://github.com/Ferrosophy/yet-another-fanfic-reader/issues) 提出；涉及安全漏洞请依 [SECURITY.md](SECURITY.md) 私密回报。
 
 ---
 

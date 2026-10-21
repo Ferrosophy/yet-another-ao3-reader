@@ -15,7 +15,7 @@ struct SettingsView: View {
     /// GitHub Issues 的新回饋網址，預先填入版本與系統資訊（不含帳號或閱讀資料）
     private static let feedbackURL: URL = {
         let system = "iOS \(ProcessInfo.processInfo.operatingSystemVersionString)"
-        var components = URLComponents(string: "https://github.com/Ferrosophy/yet-another-ao3-reader/issues/new")!
+        var components = URLComponents(string: "https://github.com/Ferrosophy/yet-another-fanfic-reader/issues/new")!
         // 使用問題回報表單，並預先填入「版本資訊」欄位
         components.queryItems = [
             URLQueryItem(name: "template", value: "bug_report.yml"),

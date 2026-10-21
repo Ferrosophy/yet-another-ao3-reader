@@ -32,7 +32,7 @@ body:
     attributes:
       label: 版本信息 / Environment
       description: 从 App 的「设置 › 意见反馈」打开时会自动填入
-      placeholder: App 1.0.3 (40) · iOS 26.0
+      placeholder: App 1.0.4 (40) · iOS 26.0
     validations:
       required: true
   - type: textarea

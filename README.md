@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest"><b>下载最新版</b></a> ·
-  <a href="https://ferrosophy.github.io/yet-another-ao3-reader/">介绍网页</a> ·
-  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/issues">意见反馈</a>
+  <a href="https://github.com/Ferrosophy/yet-another-fanfic-reader/releases/latest"><b>下载最新版</b></a> ·
+  <a href="https://ferrosophy.github.io/yet-another-fanfic-reader/">介绍网页</a> ·
+  <a href="https://github.com/Ferrosophy/yet-another-fanfic-reader/issues">意见反馈</a>
 </p>
 
 <p align="center">
@@ -63,7 +63,7 @@ YAFR 是一个用 SwiftUI 打造的 [Archive of Our Own](https://archiveofourown
 
 需要 **iOS 26 或以上**的 iPhone。目前只通过本仓库的 GitHub Releases 发布，尚未上架 App Store 或 TestFlight。
 
-1. 到 [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest) 下载 `YAFR-<版本号>-unsigned.ipa`。
+1. 到 [Releases](https://github.com/Ferrosophy/yet-another-fanfic-reader/releases/latest) 下载 `YAFR-<版本号>-unsigned.ipa`。
 2. **核对校验值**：Release 说明里附有 SHA-256，也可下载同名的 `.sha256` 文件。在电脑上执行 `shasum -a 256 YAFR-<版本号>-unsigned.ipa`（macOS / Linux）或 `Get-FileHash YAFR-<版本号>-unsigned.ipa`（Windows PowerShell），结果应与 Release 中的一致。
 3. **签名并安装**：IPA 未签名，需要用以下任一工具以你自己的 Apple ID 签名后安装：
    - [AltStore](https://altstore.io) 或 [SideStore](https://sidestore.io)：在 iPhone 上安装后，用它打开 IPA 即可；
@@ -98,7 +98,7 @@ AO3 官网在中国大陆通常无法直接连接。第一次打开时的新手�
 
 ## 意见反馈与维护
 
-- **Bug 与功能建议**：在 App 的「设置 › 意见反馈」可以直接打开 [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues) 的问题回报表单，会自动带上版本信息；功能建议请选「功能建议」模板。
+- **Bug 与功能建议**：在 App 的「设置 › 意见反馈」可以直接打开 [GitHub Issues](https://github.com/Ferrosophy/yet-another-fanfic-reader/issues) 的问题回报表单，会自动带上版本信息；功能建议请选「功能建议」模板。
 - **安全漏洞**：请勿公开，使用 Security 页面的私密回报，详见 [SECURITY.md](SECURITY.md)。
 - **作者内容异议**：如果你是 AO3 作者，对作品在本 App 中的显示、翻译或离线保存有疑虑，请使用「作者内容异议」模板。本 App 不托管、不转载任何作品；作品可在 AO3 设置为仅限登录用户阅读，本 App 会遵守此限制。
 - **调试记录**：如果某个镜像源无法使用，在「设置」连点三下「应用版本」可以进入调试页。记录已隐藏密码、Cookie 与验证令牌，但仍包含浏览过的网址，请私下提供，不要公开贴出。

@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest"><b>Download</b></a> ·
-  <a href="https://ferrosophy.github.io/yet-another-ao3-reader/">Website</a> ·
-  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/issues">Feedback</a>
+  <a href="https://github.com/Ferrosophy/yet-another-fanfic-reader/releases/latest"><b>Download</b></a> ·
+  <a href="https://ferrosophy.github.io/yet-another-fanfic-reader/">Website</a> ·
+  <a href="https://github.com/Ferrosophy/yet-another-fanfic-reader/issues">Feedback</a>
 </p>
 
 <p align="center">
@@ -63,7 +63,7 @@ Traditional Chinese (Taiwan, Hong Kong, Macau), Simplified Chinese, English, Jap
 
 Requires an iPhone running **iOS 26 or later**. The app is distributed only through this repository's GitHub Releases; it isn't on the App Store or TestFlight.
 
-1. Download `YAFR-<version>-unsigned.ipa` from [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest).
+1. Download `YAFR-<version>-unsigned.ipa` from [Releases](https://github.com/Ferrosophy/yet-another-fanfic-reader/releases/latest).
 2. **Verify the checksum**: each release lists the SHA-256 and includes a matching `.sha256` file. Run `shasum -a 256 YAFR-<version>-unsigned.ipa` (macOS / Linux) or `Get-FileHash YAFR-<version>-unsigned.ipa` (Windows PowerShell); the result must match.
 3. **Sign and install** the unsigned IPA with your own Apple ID using [AltStore](https://altstore.io) or [SideStore](https://sidestore.io) (open the IPA with it on your iPhone), [Sideloadly](https://sideloadly.io) (on a computer), or your own paid developer certificate.
 4. Before first launch, trust your developer certificate in Settings › General › VPN & Device Management, and turn on Developer Mode in Settings › Privacy & Security.
@@ -92,7 +92,7 @@ Requires an iPhone running **iOS 26 or later**. The app is distributed only thro
 
 ## Feedback and maintenance
 
-- **Bugs and suggestions**: **Settings › Feedback** opens the bug report form in [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues) with your version filled in; use the feature request template for ideas.
+- **Bugs and suggestions**: **Settings › Feedback** opens the bug report form in [GitHub Issues](https://github.com/Ferrosophy/yet-another-fanfic-reader/issues) with your version filled in; use the feature request template for ideas.
 - **Security issues**: don't post them publicly; report privately as described in [SECURITY.md](SECURITY.md).
 - **Creators**: if you write on AO3 and have concerns about how your work is shown, translated or saved offline in this app, use the creator concern template. The app doesn't host or repost any work, and it respects AO3's "registered users only" setting.
 - **Debug log**: if a mirror doesn't work, triple-tap **App Version** in Settings to open the debug page. Passwords, cookies and tokens are hidden, but the log still contains URLs you visited, so share it privately.
