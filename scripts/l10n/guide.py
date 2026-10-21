@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """產生 AO3 說明（AO3GuideView）的多語言版本：以英文版為來源機器翻譯，
 簡體由繁體中文版以 OpenCC 轉換。術語一律附上英文原文。
 用法：PYTHONPATH=<opencc> python3 guide.py ../../AO3Reader/Features/Browse/AO3GuideView.swift ../../AO3Reader/Resources/AO3Guide.json"""

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 展示模式的示範作品：全部為 AI 生成的原創短篇，作者、原作、角色與評論者都是虛構的。

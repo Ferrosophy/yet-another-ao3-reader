@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// AO3 術語與使用說明（依官網 FAQ 與 Terms 整理）。繁體中文與英文為原稿，

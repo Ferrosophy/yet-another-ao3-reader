@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 搜尋分頁，對應官網的四種搜尋：作品（Work Search）、標籤（Tag Search）、用戶（People Search）與合集（Collections）。

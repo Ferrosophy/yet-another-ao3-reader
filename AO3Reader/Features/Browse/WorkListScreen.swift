@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 標籤 / 合集 / 系列 / 用戶的作品列表。可篩選的列表使用官網「Sort and Filter」參數，

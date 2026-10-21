@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 import Observation
 
@@ -54,9 +55,39 @@ final class DebugLog {
         try? FileManager.default.removeItem(at: Self.url)
     }
 
-    /// 從任何執行緒記錄
+    /// 從任何執行緒記錄。寫入前統一脫敏：網址中的敏感參數、頁面裡的驗證權杖與電子郵件地址
     nonisolated static func record(_ entry: DebugEntry) {
+        var entry = entry
+        entry.url = redactURL(entry.url)
+        entry.detail = redact(entry.detail)
         Task { @MainActor in DebugLog.shared.add(entry) }
+    }
+
+    /// 名稱含這些字的網址參數，值一律隱藏
+    nonisolated private static let sensitiveParameters = ["token", "password", "passwd", "secret", "key", "session", "auth", "email", "login"]
+
+    nonisolated static func redactURL(_ text: String) -> String {
+        guard var components = URLComponents(string: text), let items = components.queryItems, !items.isEmpty else { return text }
+        components.queryItems = items.map { item in
+            let name = item.name.lowercased()
+            return sensitiveParameters.contains { name.contains($0) } ? URLQueryItem(name: item.name, value: "redacted") : item
+        }
+        return components.string ?? text
+    }
+
+    /// 隱藏頁面片段中的驗證權杖（authenticity_token、csrf-token）與電子郵件地址
+    nonisolated static func redact(_ text: String) -> String {
+        let rules: [(String, String)] = [
+            (#"(name="authenticity_token"[^>]*?value=")[^"]*"#, "$1<redacted>"),
+            (#"(value=")[^"]*("[^>]*?name="authenticity_token")"#, "$1<redacted>$2"),
+            (#"(name="csrf-token"[^>]*?content=")[^"]*"#, "$1<redacted>"),
+            (#"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"#, "<email>"),
+        ]
+        var result = text
+        for (pattern, template) in rules {
+            result = result.replacingOccurrences(of: pattern, with: template, options: .regularExpression)
+        }
+        return result
     }
 
     /// 全部紀錄的文字版（複製給開發者）

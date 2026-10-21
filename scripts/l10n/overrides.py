@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 LANGS = ['ja','ko','es','fr','de','pt-BR','it','ru','uk','pl','tr','nl','ar','hi','id','vi','th']
 _T = {
 "正在翻譯 %lld/%lld": "翻訳中 %lld/%lld|번역 중 %lld/%lld|Traduciendo %lld/%lld|Traduction %lld/%lld|Übersetzung %lld/%lld|Traduzindo %lld/%lld|Traduzione %lld/%lld|Перевод %lld/%lld|Переклад %lld/%lld|Tłumaczenie %lld/%lld|Çevriliyor %lld/%lld|Vertalen %lld/%lld|جارٍ الترجمة %lld/%lld|अनुवाद हो रहा है %lld/%lld|Menerjemahkan %lld/%lld|Đang dịch %lld/%lld|กำลังแปล %lld/%lld",

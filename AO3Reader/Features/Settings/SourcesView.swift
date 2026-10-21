@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 來源管理：官網 + 使用者導入的鏡像站。鏡像必須與 AO3 官網 HTML 結構相同（例如 OTW 官方域名或反向代理）。

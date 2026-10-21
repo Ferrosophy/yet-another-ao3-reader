@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 介面語言選擇。iOS 會在 App 重新啟動後以所選語言載入全部介面文字。

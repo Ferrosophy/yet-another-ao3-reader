@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 翻譯服務的統一介面。輸入為段落陣列，輸出必須是一一對應、順序相同的譯文陣列，

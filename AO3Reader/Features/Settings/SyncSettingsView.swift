@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 資料同步：書架與本機使用者資料各自選擇 iCloud 或 WebDAV，WebDAV 伺服器設定兩者共用。

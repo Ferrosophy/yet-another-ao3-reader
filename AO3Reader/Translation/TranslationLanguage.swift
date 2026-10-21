@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 翻譯語言。`code` 為 BCP-47，Google 與各 AI 模型皆可直接使用；其他服務在各自的翻譯器中轉換代碼。

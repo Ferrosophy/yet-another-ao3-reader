@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 資料來源為「本機保存」時，閱讀頁右上角的操作選單：書籤、稍後閱讀、訂閱作品 / 作者 / 系列，

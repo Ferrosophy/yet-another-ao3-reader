@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 篩選表單。兩種模式欄位完全相同（作品列表的篩選與詳細搜尋一致）：

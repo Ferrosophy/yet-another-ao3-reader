@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 import Testing
 @testable import AO3Reader
@@ -569,5 +570,32 @@ struct AnubisDetectionTests {
         #expect(DemoSite.leaveKudos(workID: -1) == .given)
         #expect(DemoSite.leaveKudos(workID: -1) == .alreadyGiven)
         #expect(!DemoSite.comments(workID: DemoSite.works[0].detail.id, page: 1).comments.isEmpty)
+    }
+
+    @Test func sourcesRequireHTTPS() {
+        #expect(SourceStore.normalize("mirror.example.org")?.absoluteString == "https://mirror.example.org")
+        #expect(SourceStore.normalize("https://mirror.example.org/works?x=1")?.absoluteString == "https://mirror.example.org")
+        #expect(SourceStore.normalize("http://mirror.example.org") == nil)
+        #expect(SourceStore.normalize("ftp://mirror.example.org") == nil)
+    }
+
+    @Test func debugLogRedactsSecrets() {
+        let url = DebugLog.redactURL("https://example.org/works/search?work_search%5Bquery%5D=tea&authenticity_token=abc&api_key=k")
+        #expect(url.contains("tea"))
+        #expect(!url.contains("abc"))
+        #expect(!url.contains("=k"))
+        let html = #"<meta name="csrf-token" content="SECRET1"><input type="hidden" name="authenticity_token" value="SECRET2"> mail me@example.com"#
+        let redacted = DebugLog.redact(html)
+        #expect(!redacted.contains("SECRET1"))
+        #expect(!redacted.contains("SECRET2"))
+        #expect(!redacted.contains("me@example.com"))
+    }
+
+    @Test func cookieDomainMatching() throws {
+        let cookie = try #require(HTTPCookie(properties: [.name: "a", .value: "b", .domain: ".mirror.example", .path: "/"]))
+        #expect(cookie.belongs(to: "www.mirror.example"))
+        #expect(cookie.belongs(to: "mirror.example"))
+        #expect(!cookie.belongs(to: "evilmirror.example"))
+        #expect(!cookie.belongs(to: "challenges.cloudflare.com"))
     }
 }

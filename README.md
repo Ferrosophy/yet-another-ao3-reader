@@ -60,15 +60,26 @@ YAAO3R 是一个用 SwiftUI 打造的 [Archive of Our Own](https://archiveofouro
 
 ## 安装
 
-- 需要 **iOS 26 或以上**的 iPhone。
-- 到 [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest) 下载 `YAAO3R-<版本号>-unsigned.ipa`。
-- IPA **未签名**，请用 [AltStore](https://altstore.io)、[SideStore](https://sidestore.io)、[Sideloadly](https://sideloadly.io) 或自己的开发者凭证签名后安装。
-- 使用免费 Apple ID 签名时，App 每 7 天需要重新签名一次。
+需要 **iOS 26 或以上**的 iPhone。目前只通过本仓库的 GitHub Releases 发布，尚未上架 App Store 或 TestFlight。
+
+1. 到 [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest) 下载 `YAAO3R-<版本号>-unsigned.ipa`。
+2. **核对校验值**：Release 说明里附有 SHA-256，也可下载同名的 `.sha256` 文件。在电脑上执行 `shasum -a 256 YAAO3R-<版本号>-unsigned.ipa`（macOS / Linux）或 `Get-FileHash YAAO3R-<版本号>-unsigned.ipa`（Windows PowerShell），结果应与 Release 中的一致。
+3. **签名并安装**：IPA 未签名，需要用以下任一工具以你自己的 Apple ID 签名后安装：
+   - [AltStore](https://altstore.io) 或 [SideStore](https://sidestore.io)：在 iPhone 上安装后，用它打开 IPA 即可；
+   - [Sideloadly](https://sideloadly.io)：在电脑上连接 iPhone，拖入 IPA 并登录 Apple ID；
+   - 自己的付费开发者证书。
+4. 第一次打开前，到 iPhone「设置 › 通用 › VPN 与设备管理」信任你的开发者证书；iOS 16 以上还需要在「设置 › 隐私与安全性」开启「开发者模式」。
+
+**限制与风险**
+- 使用免费 Apple ID 签名时，App 每 **7 天**需要重新签名一次（AltStore / SideStore 可在后台自动续签），而且同时最多只能安装 3 个自行签名的 App。
+- 签名工具需要你的 Apple ID，请使用你信任的工具，建议另外开一个 Apple ID 专门用来签名。
+- **只从本仓库的 Releases 下载 IPA。** 第三方「二次打包」或「免签」版本可能被植入恶意代码，或窃取你的 AO3 账号与 API Key；本项目不对非官方来源的安装包负责。
+- 升级时直接安装新版 IPA 即可，本机数据会保留（使用同一个 Apple ID 签名）。
 
 ### 在中国大陆使用
 AO3 官网在中国大陆通常无法直接连接。第一次打开时的新手引导会检测连接，并教你加入镜像源；之后也可以在「设置 › 内容来源」管理。Google 翻译在中国大陆通常也无法使用，建议改用腾讯、火山或 Bing 翻译。
 
-> 登录时密码会发送给所选的来源，请只使用你信任的镜像。
+> **使用镜像登录有风险**：镜像站不是 AO3 官方网站，镜像的运营者能看到你输入的账号与密码，以及登录后账号里的内容。App 的「测试连接」只检查页面格式是否兼容，不代表镜像安全可信。请尽量在官网登录，或只使用你信任的镜像，并避免使用与其他网站相同的密码。App 只接受 HTTPS 镜像。
 
 ## 隐私
 
@@ -77,9 +88,19 @@ AO3 官网在中国大陆通常无法直接连接。第一次打开时的新手�
 - 翻译 API Key 只存在本机钥匙圈，不会同步到 iCloud；翻译时文本直接送往你选择的翻译服务。
 - 同步数据只存放在你自己的 iCloud 或 WebDAV。
 
-## 意见反馈
+## 翻译服务说明
 
-在 App 的「设置 › 意见反馈」可以直接打开 [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues)，系统会自动附上版本信息。如果某个镜像源无法使用，在「设置」连点三下「应用版本」可以进入调试页，拷贝记录后一起附上。
+- **数据会发送给服务商**：开启翻译后，要翻译的文本（正文、标题、标签、简介、作者注与评论）会发送到你选择的翻译服务，并按该服务的隐私政策处理。**只有 Apple 翻译在设备上进行**，文字不会离开你的 iPhone。第一次在阅读页开启云端翻译时，App 也会提示这一点。
+- **非官方接口**：标示「免密钥」或「网页版」的服务（Google、Bing、腾讯 TranSmart、火山、百度、有道、搜狗、未填密钥的 DeepL）使用的是网页端的非官方接口，**未经服务商授权**，可能违反其服务条款、被限流或随时失效。需要稳定、合规的使用时，请改用官方 API（Google Cloud Translation、Microsoft Azure、DeepL API、OpenAI 兼容服务、Claude、Gemini 等，需自备 API Key）或 Apple 翻译。
+- **翻译准确性**：机器翻译可能有误，不能取代原文。标签、警告（Archive Warnings）与作者注尤其请以原文为准。
+
+## 意见反馈与维护
+
+- **Bug 与功能建议**：在 App 的「设置 › 意见反馈」可以直接打开 [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues) 的问题回报表单，会自动带上版本信息；功能建议请选「功能建议」模板。
+- **安全漏洞**：请勿公开，使用 Security 页面的私密回报，详见 [SECURITY.md](SECURITY.md)。
+- **作者内容异议**：如果你是 AO3 作者，对作品在本 App 中的显示、翻译或离线保存有疑虑，请使用「作者内容异议」模板。本 App 不托管、不转载任何作品；作品可在 AO3 设置为仅限登录用户阅读，本 App 会遵守此限制。
+- **调试记录**：如果某个镜像源无法使用，在「设置」连点三下「应用版本」可以进入调试页。记录已隐藏密码、Cookie 与验证令牌，但仍包含浏览过的网址，请私下提供，不要公开贴出。
+- **维护预期**：这是个人业余维护的项目，会尽量回复与修复，但无法保证响应时间或实现所有建议。AO3 改版时可能需要一段时间才能适配。
 
 喜欢这个项目的话，可以在「设置 › 支持赞助」请开发者喝杯咖啡。
 
@@ -118,9 +139,15 @@ AO3 官网在中国大陆通常无法直接连接。第一次打开时的新手�
 
 ## 许可证
 
-本项目以 [GNU 通用公共许可证第 3 版（GPL-3.0）](LICENSE)开源：你可以自由使用、修改和再发布，但再发布（包括修改后的版本）时必须同样以 GPL-3.0 公开源代码。第三方依赖 [SwiftSoup](https://github.com/scinfu/SwiftSoup) 采用 MIT 许可证。
+本项目以 [GNU 通用公共许可证](LICENSE)第 3 版或（由你选择的）任何更新的版本开源（SPDX：`GPL-3.0-or-later`），每个源代码文件开头都有相同的声明。你可以自由使用、修改和再发布，但再发布（包括修改后的版本）时必须以相同的许可证公开源代码。第三方依赖 [SwiftSoup](https://github.com/scinfu/SwiftSoup) 采用 MIT 许可证。
 
 ## 开发
+
+### 版本与更新
+
+- 版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)：`主版本.次版本.修订号`。不兼容的变更增加主版本，新功能增加次版本，修复与小改动增加修订号。
+- 每个版本的变更记录在 [CHANGELOG.md](CHANGELOG.md)，已知问题列在上方「已知问题」。
+- 正式版发布在 GitHub Releases，并附上 IPA 的 SHA-256 校验值。
 
 需要 Xcode 26 以上与 iOS 26 SDK。
 

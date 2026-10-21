@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 import re, sys, json, pathlib
 han = re.compile(r'[一-鿿]')
 INT_HINTS = re.compile(r'^(page|done|total|code|expected|got|result|count|index|limit|remaining|.*\.limit|Int\(.*\)|.*\.count|.*[cC]ount|status|seconds|.*[mM]inutes)$')

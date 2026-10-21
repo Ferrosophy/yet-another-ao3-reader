@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-or-later
 # 建置未簽名的 IPA（簽名由使用者自行處理）。
 # 用法：scripts/build-unsigned-ipa.sh <版本號> <建置號>
 # 產物：build/YAAO3R-<版本號>-unsigned.ipa（版本號最後一位代表第幾次修改；建置號只寫入 CFBundleVersion）

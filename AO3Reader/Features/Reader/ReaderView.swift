@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 import UIKit
 
@@ -31,6 +32,9 @@ struct ReaderView: View {
     @State private var showsComments = false
     /// 翻頁模式在最後一頁繼續往後翻時彈出文末
     @State private var showsWorkEnd = false
+    /// 第一次在閱讀頁開啟雲端翻譯時，說明文字會傳送給第三方服務
+    @AppStorage("translation.cloudNoticeShown") private var cloudNoticeShown = false
+    @State private var showsCloudNotice = false
     @Namespace private var glass
 
     init(model: ReaderViewModel) {
@@ -133,6 +137,15 @@ struct ReaderView: View {
             if let detail = model.detail { await actions.load(from: detail) }
         }
         .sheet(item: $webTarget) { WebPageSheet(url: $0.url) }
+        .alert("翻譯會把文字傳送給第三方服務", isPresented: $showsCloudNotice) {
+            Button("繼續翻譯") {
+                cloudNoticeShown = true
+                withAnimation(.bouncy) { model.isTranslationOn = true }
+            }
+            Button("取消", role: .cancel) {}
+        } message: {
+            Text("開啟翻譯後，作品的正文、標題、標籤、簡介、作者註與評論會傳送到「\(app.translation.config.provider.title)」進行翻譯，資料如何處理以該服務的隱私政策為準。只有 Apple 翻譯在裝置上進行、不會傳出文字，可在「設定 › 翻譯服務」更換。機器翻譯可能有誤，請以原文為準。")
+        }
         .sheet(isPresented: $showsComments) {
             CommentsSheet(workID: model.route.id, client: model.client, app: app, translates: model.isTranslationOn)
         }
@@ -596,7 +609,11 @@ struct ReaderView: View {
 
                     // 點擊切換翻譯（翻譯設定在「設定」分頁）
                     Button {
-                        withAnimation(.bouncy) { model.isTranslationOn.toggle() }
+                        if !model.isTranslationOn, !cloudNoticeShown, app.translation.config.provider != .apple {
+                            showsCloudNotice = true
+                        } else {
+                            withAnimation(.bouncy) { model.isTranslationOn.toggle() }
+                        }
                     } label: {
                         Image(systemName: "translate")
                             .appFont(.title3)

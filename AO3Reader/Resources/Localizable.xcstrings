@@ -2432,6 +2432,149 @@
         }
       }
     },
+    "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Translate runs on device; text never leaves this device."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻译在设备上进行，文本不会传出这台设备。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。"
+          }
+        }
+      }
+    },
     "Apple 翻譯需要先下載這組語言才能在裝置上翻譯。下載後可離線使用。": {
       "extractionState": "manual",
       "localizations": {
@@ -12156,6 +12299,149 @@
         }
       }
     },
+    "你正在透過鏡像站登入": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You are logging in through a mirror"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你正在通过镜像站登录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你正在透過鏡像站登入"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你正在透過鏡像站登入"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你正在透過鏡像站登入"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你正在透過鏡像站登入"
+          }
+        }
+      }
+    },
     "你的標籤（以逗號分隔）": {
       "extractionState": "manual",
       "localizations": {
@@ -16156,6 +16442,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "儲存到本機鑰匙圈"
+          }
+        }
+      }
+    },
+    "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key-free and web services use unofficial endpoints that the providers haven't authorized. They may violate the providers' terms or stop working at any time. For reliable, compliant use, choose an official API or Apple Translate."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免密钥与网页版服务使用非官方界面，未经服务商授权，可能违反其服务条款或随时失效。需要稳定、合规的使用时，请改用官方 API 或 Apple 翻译。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。"
           }
         }
       }
@@ -35179,6 +35608,149 @@
         }
       }
     },
+    "我了解風險，仍要登入": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I understand the risk and want to log in"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我了解风险，仍要登录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我了解風險，仍要登入"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我了解風險，仍要登入"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我了解風險，仍要登入"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我了解風險，仍要登入"
+          }
+        }
+      }
+    },
     "我的 AO3": {
       "extractionState": "manual",
       "localizations": {
@@ -46333,6 +46905,149 @@
         }
       }
     },
+    "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本文件由 YAAO3R 为个人离线阅读产生。作品的著作权属于原作者；译文为机器翻译，可能有误，请以原文为准。请勿公开转载、散布或贩售本作品及其译文。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+          }
+        }
+      }
+    },
     "本週": {
       "extractionState": "manual",
       "localizations": {
@@ -48617,6 +49332,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "樣式"
+          }
+        }
+      }
+    },
+    "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Machine translation can be wrong and doesn't replace the original. Rely on the original for tags, warnings and author's notes."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "机器翻译可能有误，不能取代原文；标签、警告与作者注请以原文为准。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。"
           }
         }
       }
@@ -66496,6 +67354,149 @@
         }
       }
     },
+    "紀錄已隱藏密碼、Cookie 與驗證權杖，但仍包含你瀏覽過的網址與部分頁面內容。請只私下提供給開發者，不要公開貼到 GitHub Issues。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwords, cookies and verification tokens are hidden, but the log still contains URLs you visited and parts of pages. Share it privately with the developer only; don't post it publicly in GitHub Issues."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "记录已隐藏密码、Cookie 与验证权杖，但仍包含你浏览过的网址与部分页面内容。请只私下提供给开发者，不要公开贴到 GitHub Issues。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "紀錄已隱藏密碼、Cookie 與驗證權杖，但仍包含你瀏覽過的網址與部分頁面內容。請只私下提供給開發者，不要公開貼到 GitHub Issues。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "紀錄已隱藏密碼、Cookie 與驗證權杖，但仍包含你瀏覽過的網址與部分頁面內容。請只私下提供給開發者，不要公開貼到 GitHub Issues。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "紀錄已隱藏密碼、Cookie 與驗證權杖，但仍包含你瀏覽過的網址與部分頁面內容。請只私下提供給開發者，不要公開貼到 GitHub Issues。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "紀錄已隱藏密碼、Cookie 與驗證權杖，但仍包含你瀏覽過的網址與部分頁面內容。請只私下提供給開發者，不要公開貼到 GitHub Issues。"
+          }
+        }
+      }
+    },
     "純文字": {
       "extractionState": "manual",
       "localizations": {
@@ -68784,6 +69785,149 @@
         }
       }
     },
+    "繼續翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繼續翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繼續翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繼續翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繼續翻譯"
+          }
+        }
+      }
+    },
     "羊皮紙": {
       "extractionState": "manual",
       "localizations": {
@@ -69928,6 +71072,149 @@
         }
       }
     },
+    "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text to be translated (body, titles, tags, summaries, notes and comments) is sent to the selected service. Only Apple Translate runs on device."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译时，要翻译的文本（正文、标题、标签、简介、作者注与评论）会发送到所选的服务；只有 Apple 翻译在设备上进行。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。"
+          }
+        }
+      }
+    },
     "翻譯會使用付費 API，長按確認後開始": {
       "extractionState": "manual",
       "localizations": {
@@ -70067,6 +71354,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "翻譯會使用付費 API，長按確認後開始"
+          }
+        }
+      }
+    },
+    "翻譯會把文字傳送給第三方服務": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translation Sends Text to a Third-Party Service"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译会把文本发送给第三方服务"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯會把文字傳送給第三方服務"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯會把文字傳送給第三方服務"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯會把文字傳送給第三方服務"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻譯會把文字傳送給第三方服務"
           }
         }
       }
@@ -71926,6 +73356,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "複製全部紀錄"
+          }
+        }
+      }
+    },
+    "複製除錯紀錄？": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Debug Log?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拷贝调试记录？"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製除錯紀錄？"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製除錯紀錄？"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製除錯紀錄？"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製除錯紀錄？"
           }
         }
       }
@@ -81511,6 +83084,149 @@
         }
       }
     },
+    "鏡像站不是 AO3 官方網站。鏡像的營運者能看到你輸入的帳號與密碼，以及登入後帳號裡的內容。App 的「測試連線」只檢查頁面格式是否相容，不代表這個鏡像安全可信。建議盡量在官網登入；若一定要使用鏡像，請只使用你信任的鏡像，並避免使用與其他網站相同的密碼。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A mirror is not the official AO3 site. Whoever runs it can see the username and password you enter, and the contents of your account after you log in. The app's connection test only checks that the pages are compatible; it doesn't mean the mirror is safe or trustworthy. Log in on the official site whenever possible. If you must use a mirror, only use one you trust and don't reuse a password from other sites."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "镜像站不是 AO3 官方网站。镜像的营运者能看到你输入的账号与密码，以及登录后账号里的内容。App 的「测试连接」只检查页面格式是否兼容，不代表这个镜像安全可信。建议尽量在官网登录；若一定要使用镜像，请只使用你信任的镜像，并避免使用与其他网站相同的密码。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站不是 AO3 官方網站。鏡像的營運者能看到你輸入的帳號與密碼，以及登入後帳號裡的內容。App 的「測試連線」只檢查頁面格式是否相容，不代表這個鏡像安全可信。建議盡量在官網登入；若一定要使用鏡像，請只使用你信任的鏡像，並避免使用與其他網站相同的密碼。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站不是 AO3 官方網站。鏡像的營運者能看到你輸入的帳戶與密碼，以及登入後帳戶裡的內容。App 的「測試連線」只檢查頁面格式是否相容，不代表這個鏡像安全可信。建議盡量在官網登入；若一定要使用鏡像，請只使用你信任的鏡像，並避免使用與其他網站相同的密碼。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站不是 AO3 官方網站。鏡像的營運者能看到你輸入的帳戶與密碼，以及登入後帳戶裡的內容。App 的「測試連線」只檢查頁面格式是否相容，不代表這個鏡像安全可信。建議盡量在官網登入；若一定要使用鏡像，請只使用你信任的鏡像，並避免使用與其他網站相同的密碼。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站不是 AO3 官方網站。鏡像的營運者能看到你輸入的帳號與密碼，以及登入後帳號裡的內容。App 的「測試連線」只檢查頁面格式是否相容，不代表這個鏡像安全可信。建議盡量在官網登入；若一定要使用鏡像，請只使用你信任的鏡像，並避免使用與其他網站相同的密碼。"
+          }
+        }
+      }
+    },
     "鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試": {
       "extractionState": "manual",
       "localizations": {
@@ -81793,6 +83509,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "開啟翻譯"
+          }
+        }
+      }
+    },
+    "開啟翻譯後，作品的正文、標題、標籤、簡介、作者註與評論會傳送到「%@」進行翻譯，資料如何處理以該服務的隱私政策為準。只有 Apple 翻譯在裝置上進行、不會傳出文字，可在「設定 › 翻譯服務」更換。機器翻譯可能有誤，請以原文為準。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With translation on, the work's text, titles, tags, summary, notes and comments are sent to “%@” to be translated, and handled according to that service's privacy policy. Only Apple Translate runs on device without sending text; you can switch in Settings › Translation Service. Machine translation can be wrong, so rely on the original."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开翻译后，作品的正文、标题、标签、简介、作者注与评论会发送到「%@」进行翻译，数据如何处理以该服务的隐私政策为准。只有 Apple 翻译在设备上进行、不会传出文本，可在「设置 › 翻译服务」更换。机器翻译可能有误，请以原文为准。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟翻譯後，作品的正文、標題、標籤、簡介、作者註與評論會傳送到「%@」進行翻譯，資料如何處理以該服務的隱私政策為準。只有 Apple 翻譯在裝置上進行、不會傳出文字，可在「設定 › 翻譯服務」更換。機器翻譯可能有誤，請以原文為準。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟翻譯後，作品的正文、標題、標籤、簡介、作者註與評論會傳送到「%@」進行翻譯，資料如何處理以該服務的隱私政策為準。只有 Apple 翻譯在裝置上進行、不會傳出文字，可在「設定 › 翻譯服務」更換。機器翻譯可能有誤，請以原文為準。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟翻譯後，作品的正文、標題、標籤、簡介、作者註與評論會傳送到「%@」進行翻譯，資料如何處理以該服務的隱私政策為準。只有 Apple 翻譯在裝置上進行、不會傳出文字，可在「設定 › 翻譯服務」更換。機器翻譯可能有誤，請以原文為準。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟翻譯後，作品的正文、標題、標籤、簡介、作者註與評論會傳送到「%@」進行翻譯，資料如何處理以該服務的隱私政策為準。只有 Apple 翻譯在裝置上進行、不會傳出文字，可在「設定 › 翻譯服務」更換。機器翻譯可能有誤，請以原文為準。"
           }
         }
       }

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 收件匣：收到的評論（/users/<name>/inbox）。點擊可開啟評論所在的作品。

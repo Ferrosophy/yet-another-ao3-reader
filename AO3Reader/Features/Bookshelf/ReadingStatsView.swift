@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 時長管理：閱讀時長統計（依作品或標籤排列）與休息提醒設定。

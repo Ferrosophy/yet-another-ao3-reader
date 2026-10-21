@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 import json, re, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, '.')
 from en import EN

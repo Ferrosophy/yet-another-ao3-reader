@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 import Observation
 
@@ -37,25 +38,36 @@ final class SourceStore {
         self.defaults = defaults
         let stored = defaults.data(forKey: Self.sourcesKey)
             .flatMap { try? JSONDecoder().decode([AO3Source].self, from: $0) } ?? []
-        self.sources = [.official] + stored.filter { !$0.isBuiltIn }
+        // 舊版允許的 HTTP 鏡像一律改為 HTTPS
+        self.sources = [.official] + stored.filter { !$0.isBuiltIn }.map(Self.upgradedToHTTPS)
         let storedID = defaults.string(forKey: Self.selectedKey).flatMap(UUID.init(uuidString:)) ?? AO3Source.official.id
         // 展示來源不保存：重新開啟 App 時回到官網
         self.selectedID = storedID == DemoSite.source.id ? AO3Source.official.id : storedID
     }
 
-    /// 解析使用者輸入的網址，補齊 scheme 並去掉路徑。
+    /// 解析使用者輸入的網址，補齊 scheme 並去掉路徑。只接受 HTTPS：登入資料與 Cookie 不能以明文傳送
+    /// （App 未設定 ATS 例外，系統本身也會擋下 HTTP 連線與降級到 HTTP 的轉址）。
     nonisolated static func normalize(_ raw: String) -> URL? {
         var text = raw.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty else { return nil }
         if !text.contains("://") { text = "https://" + text }
         guard var components = URLComponents(string: text),
-              let scheme = components.scheme?.lowercased(), ["http", "https"].contains(scheme),
+              let scheme = components.scheme?.lowercased(), scheme == "https",
               components.host?.isEmpty == false
         else { return nil }
         components.path = ""
         components.query = nil
         components.fragment = nil
         return components.url
+    }
+
+    private static func upgradedToHTTPS(_ source: AO3Source) -> AO3Source {
+        guard source.baseURL.scheme?.lowercased() == "http",
+              var components = URLComponents(url: source.baseURL, resolvingAgainstBaseURL: false) else { return source }
+        components.scheme = "https"
+        var upgraded = source
+        upgraded.baseURL = components.url ?? source.baseURL
+        return upgraded
     }
 
     @discardableResult

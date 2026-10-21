@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 各家大模型 API 的最小抽象：給定 system 與 user 文字，回傳模型輸出文字。

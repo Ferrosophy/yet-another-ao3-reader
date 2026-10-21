@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 struct SettingsView: View {
@@ -15,7 +16,11 @@ struct SettingsView: View {
     private static let feedbackURL: URL = {
         let system = "iOS \(ProcessInfo.processInfo.operatingSystemVersionString)"
         var components = URLComponents(string: "https://github.com/Ferrosophy/yet-another-ao3-reader/issues/new")!
-        components.queryItems = [URLQueryItem(name: "body", value: "\n\n---\nApp \(versionString) · \(system)")]
+        // 使用問題回報表單，並預先填入「版本資訊」欄位
+        components.queryItems = [
+            URLQueryItem(name: "template", value: "bug_report.yml"),
+            URLQueryItem(name: "environment", value: "App \(versionString) · \(system)"),
+        ]
         return components.url!
     }()
 
