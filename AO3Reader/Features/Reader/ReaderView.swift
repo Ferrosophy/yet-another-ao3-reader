@@ -142,6 +142,11 @@ struct ReaderView: View {
             if let detail = model.detail { await actions.load(from: detail) }
         }
         .sheet(item: $webTarget) { WebPageSheet(url: $0.url) }
+        .alert("Kudos", isPresented: Binding(get: { workEnd.alert != nil }, set: { if !$0 { workEnd.alert = nil } })) {
+            Button("好") {}
+        } message: {
+            Text(workEnd.alert ?? "")
+        }
         .alert("跳到指定進度", isPresented: $showsProgressJump) {
             TextField(text: $progressInput, prompt: Text(verbatim: "0–100")) { Text("百分比") }
                 .keyboardType(.numberPad)

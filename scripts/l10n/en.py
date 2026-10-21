@@ -730,6 +730,7 @@ EN = {
 '訪客': 'Guest',
 '在 Safari 開啟': 'Open in Safari',
 '你已經給過這部作品 Kudos 了': "You've already left kudos on this work.",
+'正在送出 Kudos，請稍候': "Sending kudos, please wait…",
 '已送出 Kudos，謝謝你的支持！': 'Kudos sent. Thanks for your support!',
 'Kudos 送出失敗：%@': "Couldn't leave kudos: %@",
 '喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。': 'If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author.',

@@ -773,7 +773,8 @@
   "不翻譯": "翻訳しない",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "作者は作品内で次のように述べています：「%@」\n作者の意思を尊重し、この作品には AI 翻訳サービスを使用しません。読むための補助が必要な場合は、「設定 › 翻訳サービス」で AI 以外のサービスに切り替えてください。",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "作者は作品内で次のように述べています：「%@」\n作者の意思を尊重してください。それでも翻訳する場合、訳文はあなただけに表示されます。共有や転載はしないでください。",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "作者はこの作品の翻訳や AI での利用を希望していないため、AI 翻訳サービスは使用しません。「設定 › 翻訳サービス」で AI 以外のサービスに切り替えてください。"
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "作者はこの作品の翻訳や AI での利用を希望していないため、AI 翻訳サービスは使用しません。「設定 › 翻訳サービス」で AI 以外のサービスに切り替えてください。",
+  "正在送出 Kudos，請稍候": "Kudos を送信中です。少々お待ちください"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1549,7 +1550,8 @@
   "不翻譯": "번역 안 함",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "작가의 말: “%@”\n작가를 존중하여 이 작품에는 AI 번역 서비스를 사용하지 않습니다. 읽는 데 도움이 필요하다면 ‘설정 › 번역 서비스’에서 AI가 아닌 서비스로 변경하세요.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "작가의 말: “%@”\n작가의 뜻을 존중해 주세요. 그래도 번역하면 번역문은 본인에게만 표시됩니다. 공유하거나 다른 곳에 게시하지 마세요.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "작가가 이 작품의 번역이나 AI 사용을 원하지 않으므로 AI 번역 서비스를 사용하지 않습니다. ‘설정 › 번역 서비스’에서 AI가 아닌 서비스로 변경하세요."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "작가가 이 작품의 번역이나 AI 사용을 원하지 않으므로 AI 번역 서비스를 사용하지 않습니다. ‘설정 › 번역 서비스’에서 AI가 아닌 서비스로 변경하세요.",
+  "正在送出 Kudos，請稍候": "Kudos를 보내는 중입니다. 잠시만 기다려 주세요"
  },
  "es": {
   "載入中": "Cargando",
@@ -2325,7 +2327,8 @@
   "不翻譯": "No traducir",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "El autor escribió: “%@”\nPor respeto al autor, no se usarán servicios de traducción con AI para esta obra. Si aun así necesitas ayuda para leerla, cambia a un servicio sin AI en Configuración › Servicio de traducción.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "El autor escribió: “%@”\nRespeta los deseos del autor. Si la traduces de todos modos, la traducción solo se mostrará a ti; no la compartas ni la vuelvas a publicar.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "El autor no quiere que esta obra se traduzca ni se use con AI, por lo que no se usarán servicios de traducción con AI. Cambia a un servicio sin AI en Configuración › Servicio de traducción."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "El autor no quiere que esta obra se traduzca ni se use con AI, por lo que no se usarán servicios de traducción con AI. Cambia a un servicio sin AI en Configuración › Servicio de traducción.",
+  "正在送出 Kudos，請稍候": "Enviando kudos, espera un momento"
  },
  "fr": {
   "載入中": "Chargement",
@@ -3101,7 +3104,8 @@
   "不翻譯": "Ne pas traduire",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "L’auteur a écrit : « %@ »\nPar respect pour l’auteur, aucun service de traduction par AI ne sera utilisé pour cette œuvre. Si vous avez tout de même besoin d’aide pour la lire, passez à un service sans AI dans Paramètres › Service de traduction.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "L’auteur a écrit : « %@ »\nVeuillez respecter la volonté de l’auteur. Si vous traduisez quand même, la traduction ne s’affichera que pour vous ; ne la partagez pas et ne la republiez pas.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "L’auteur ne souhaite pas que cette œuvre soit traduite ni utilisée avec l’AI ; aucun service de traduction par AI ne sera donc utilisé. Passez à un service sans AI dans Paramètres › Service de traduction."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "L’auteur ne souhaite pas que cette œuvre soit traduite ni utilisée avec l’AI ; aucun service de traduction par AI ne sera donc utilisé. Passez à un service sans AI dans Paramètres › Service de traduction.",
+  "正在送出 Kudos，請稍候": "Envoi des kudos en cours, veuillez patienter"
  },
  "de": {
   "載入中": "Laden",
@@ -3877,7 +3881,8 @@
   "不翻譯": "Nicht übersetzen",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "Der Autor schreibt: „%@“\nAus Respekt vor dem Autor werden für dieses Werk keine AI-Übersetzungsdienste verwendet. Wenn Sie trotzdem Hilfe beim Lesen benötigen, wechseln Sie unter Einstellungen › Übersetzungsdienst zu einem Dienst ohne AI.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "Der Autor schreibt: „%@“\nBitte respektieren Sie den Wunsch des Autors. Wenn Sie trotzdem übersetzen, wird die Übersetzung nur Ihnen angezeigt; bitte nicht teilen oder erneut veröffentlichen.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Der Autor möchte nicht, dass dieses Werk übersetzt oder mit AI verwendet wird, daher werden keine AI-Übersetzungsdienste verwendet. Wechseln Sie unter Einstellungen › Übersetzungsdienst zu einem Dienst ohne AI."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Der Autor möchte nicht, dass dieses Werk übersetzt oder mit AI verwendet wird, daher werden keine AI-Übersetzungsdienste verwendet. Wechseln Sie unter Einstellungen › Übersetzungsdienst zu einem Dienst ohne AI.",
+  "正在送出 Kudos，請稍候": "Kudos werden gesendet, bitte warten"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -4653,7 +4658,8 @@
   "不翻譯": "Não traduzir",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "O autor escreveu: “%@”\nEm respeito ao autor, os serviços de tradução com AI não serão usados nesta obra. Se ainda precisar de ajuda para ler, mude para um serviço sem AI em Configurações › Serviço de tradução.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "O autor escreveu: “%@”\nRespeite a vontade do autor. Se traduzir mesmo assim, a tradução será exibida só para você; não a compartilhe nem a republique.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "O autor não quer que esta obra seja traduzida nem usada com AI, por isso os serviços de tradução com AI não serão usados. Mude para um serviço sem AI em Configurações › Serviço de tradução."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "O autor não quer que esta obra seja traduzida nem usada com AI, por isso os serviços de tradução com AI não serão usados. Mude para um serviço sem AI em Configurações › Serviço de tradução.",
+  "正在送出 Kudos，請稍候": "Enviando kudos, aguarde um momento"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -5429,7 +5435,8 @@
   "不翻譯": "Non tradurre",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "L’autore ha scritto: “%@”\nPer rispetto verso l’autore, per quest’opera non verranno usati servizi di traduzione AI. Se hai comunque bisogno di aiuto per leggerla, passa a un servizio non AI in Impostazioni › Servizio di traduzione.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "L’autore ha scritto: “%@”\nRispetta la volontà dell’autore. Se traduci comunque, la traduzione sarà visibile solo a te; non condividerla né ripubblicarla.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "L’autore non vuole che quest’opera venga tradotta o usata con l’AI, quindi non verranno usati servizi di traduzione AI. Passa a un servizio non AI in Impostazioni › Servizio di traduzione."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "L’autore non vuole che quest’opera venga tradotta o usata con l’AI, quindi non verranno usati servizi di traduzione AI. Passa a un servizio non AI in Impostazioni › Servizio di traduzione.",
+  "正在送出 Kudos，請稍候": "Invio dei kudos in corso, attendi"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -6205,7 +6212,8 @@
   "不翻譯": "Не переводить",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "Автор пишет: «%@»\nИз уважения к автору службы перевода на основе AI для этой работы использоваться не будут. Если вам всё же нужна помощь в чтении, выберите службу без AI в разделе Настройки › Служба перевода.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "Автор пишет: «%@»\nПожалуйста, уважайте желание автора. Если вы всё равно переведёте работу, перевод будет виден только вам; не распространяйте и не публикуйте его.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Автор не хочет, чтобы эту работу переводили или использовали с AI, поэтому службы перевода на основе AI использоваться не будут. Выберите службу без AI в разделе Настройки › Служба перевода."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Автор не хочет, чтобы эту работу переводили или использовали с AI, поэтому службы перевода на основе AI использоваться не будут. Выберите службу без AI в разделе Настройки › Служба перевода.",
+  "正在送出 Kudos，請稍候": "Отправка Kudos, подождите"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -6981,7 +6989,8 @@
   "不翻譯": "Не перекладати",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "Автор пише: «%@»\nЗ поваги до автора служби перекладу на основі AI для цього твору не використовуватимуться. Якщо вам усе ж потрібна допомога з читанням, виберіть службу без AI у розділі Налаштування › Служба перекладу.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "Автор пише: «%@»\nБудь ласка, поважайте бажання автора. Якщо ви все одно перекладете твір, переклад бачитимете лише ви; не поширюйте й не публікуйте його.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Автор не хоче, щоб цей твір перекладали або використовували з AI, тому служби перекладу на основі AI не використовуватимуться. Виберіть службу без AI у розділі Налаштування › Служба перекладу."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Автор не хоче, щоб цей твір перекладали або використовували з AI, тому служби перекладу на основі AI не використовуватимуться. Виберіть службу без AI у розділі Налаштування › Служба перекладу.",
+  "正在送出 Kudos，請稍候": "Надсилання Kudos, зачекайте"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -7757,7 +7766,8 @@
   "不翻譯": "Nie tłumacz",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "Autor napisał: „%@”\nZ szacunku dla autora usługi tłumaczeniowe AI nie będą używane dla tego utworu. Jeśli mimo to potrzebujesz pomocy w czytaniu, przełącz się na usługę bez AI w Ustawienia › Usługa tłumaczeniowa.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "Autor napisał: „%@”\nUszanuj wolę autora. Jeśli mimo to przetłumaczysz utwór, tłumaczenie będzie widoczne tylko dla Ciebie; nie udostępniaj go ani nie publikuj ponownie.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Autor nie chce, aby ten utwór był tłumaczony ani używany z AI, dlatego usługi tłumaczeniowe AI nie będą używane. Przełącz się na usługę bez AI w Ustawienia › Usługa tłumaczeniowa."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Autor nie chce, aby ten utwór był tłumaczony ani używany z AI, dlatego usługi tłumaczeniowe AI nie będą używane. Przełącz się na usługę bez AI w Ustawienia › Usługa tłumaczeniowa.",
+  "正在送出 Kudos，請稍候": "Wysyłanie kudosów, poczekaj"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -8533,7 +8543,8 @@
   "不翻譯": "Çevirme",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "Yazar şöyle yazdı: “%@”\nYazara saygı gereği bu eser için AI çeviri hizmetleri kullanılmayacak. Okumak için yine de yardıma ihtiyacınız varsa Ayarlar › Çeviri Hizmeti bölümünden AI olmayan bir hizmete geçin.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "Yazar şöyle yazdı: “%@”\nLütfen yazarın isteğine saygı gösterin. Yine de çevirirseniz çeviri yalnızca size gösterilir; paylaşmayın veya yeniden yayımlamayın.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Yazar bu eserin çevrilmesini veya AI ile kullanılmasını istemiyor, bu yüzden AI çeviri hizmetleri kullanılmayacak. Ayarlar › Çeviri Hizmeti bölümünden AI olmayan bir hizmete geçin."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Yazar bu eserin çevrilmesini veya AI ile kullanılmasını istemiyor, bu yüzden AI çeviri hizmetleri kullanılmayacak. Ayarlar › Çeviri Hizmeti bölümünden AI olmayan bir hizmete geçin.",
+  "正在送出 Kudos，請稍候": "Kudos gönderiliyor, lütfen bekleyin"
  },
  "nl": {
   "載入中": "Laden",
@@ -9309,7 +9320,8 @@
   "不翻譯": "Niet vertalen",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "De auteur schreef: ‘%@’\nUit respect voor de auteur worden voor dit werk geen AI-vertaaldiensten gebruikt. Hebt u toch hulp nodig bij het lezen, kies dan een dienst zonder AI in Instellingen › Vertaaldienst.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "De auteur schreef: ‘%@’\nRespecteer de wens van de auteur. Als u toch vertaalt, is de vertaling alleen voor u zichtbaar; deel of herpubliceer deze niet.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "De auteur wil niet dat dit werk wordt vertaald of met AI wordt gebruikt, dus worden er geen AI-vertaaldiensten gebruikt. Kies een dienst zonder AI in Instellingen › Vertaaldienst."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "De auteur wil niet dat dit werk wordt vertaald of met AI wordt gebruikt, dus worden er geen AI-vertaaldiensten gebruikt. Kies een dienst zonder AI in Instellingen › Vertaaldienst.",
+  "正在送出 Kudos，請稍候": "Kudos worden verzonden, even geduld"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -10085,7 +10097,8 @@
   "不翻譯": "عدم الترجمة",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "كتب المؤلف: «%@»\nاحترامًا للمؤلف، لن تُستخدم خدمات الترجمة بالـ AI لهذا العمل. إذا كنت لا تزال بحاجة إلى مساعدة في القراءة، فانتقل إلى خدمة لا تعتمد على AI من الإعدادات › خدمة الترجمة.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "كتب المؤلف: «%@»\nيُرجى احترام رغبة المؤلف. إذا ترجمته على أي حال، فستظهر الترجمة لك وحدك؛ لا تشاركها ولا تُعِد نشرها.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "لا يرغب المؤلف في ترجمة هذا العمل أو استخدامه مع AI، لذا لن تُستخدم خدمات الترجمة بالـ AI. انتقل إلى خدمة لا تعتمد على AI من الإعدادات › خدمة الترجمة."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "لا يرغب المؤلف في ترجمة هذا العمل أو استخدامه مع AI، لذا لن تُستخدم خدمات الترجمة بالـ AI. انتقل إلى خدمة لا تعتمد على AI من الإعدادات › خدمة الترجمة.",
+  "正在送出 Kudos，請稍候": "جارٍ إرسال Kudos، يرجى الانتظار"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -10861,7 +10874,8 @@
   "不翻譯": "अनुवाद न करें",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "लेखक ने लिखा है: “%@”\nलेखक के सम्मान में, इस रचना के लिए AI अनुवाद सेवाओं का उपयोग नहीं किया जाएगा। अगर आपको फिर भी पढ़ने में मदद चाहिए, तो सेटिंग्स › अनुवाद सेवा में जाकर बिना AI वाली सेवा चुनें।",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "लेखक ने लिखा है: “%@”\nकृपया लेखक की इच्छा का सम्मान करें। अगर आप फिर भी अनुवाद करते हैं, तो अनुवाद केवल आपको दिखेगा; इसे शेयर या दोबारा पोस्ट न करें।",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "लेखक नहीं चाहते कि इस रचना का अनुवाद हो या इसे AI के साथ उपयोग किया जाए, इसलिए AI अनुवाद सेवाओं का उपयोग नहीं किया जाएगा। सेटिंग्स › अनुवाद सेवा में जाकर बिना AI वाली सेवा चुनें।"
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "लेखक नहीं चाहते कि इस रचना का अनुवाद हो या इसे AI के साथ उपयोग किया जाए, इसलिए AI अनुवाद सेवाओं का उपयोग नहीं किया जाएगा। सेटिंग्स › अनुवाद सेवा में जाकर बिना AI वाली सेवा चुनें।",
+  "正在送出 Kudos，請稍候": "Kudos भेजा जा रहा है, कृपया प्रतीक्षा करें"
  },
  "id": {
   "載入中": "Memuat",
@@ -11637,7 +11651,8 @@
   "不翻譯": "Jangan Terjemahkan",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "Penulis menulis: “%@”\nSebagai bentuk hormat kepada penulis, layanan terjemahan AI tidak akan digunakan untuk karya ini. Jika Anda tetap memerlukan bantuan membaca, beralihlah ke layanan non-AI di Pengaturan › Layanan Terjemahan.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "Penulis menulis: “%@”\nHormati keinginan penulis. Jika Anda tetap menerjemahkannya, terjemahan hanya ditampilkan untuk Anda; jangan bagikan atau unggah ulang.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Penulis tidak ingin karya ini diterjemahkan atau digunakan dengan AI, jadi layanan terjemahan AI tidak akan digunakan. Beralihlah ke layanan non-AI di Pengaturan › Layanan Terjemahan."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Penulis tidak ingin karya ini diterjemahkan atau digunakan dengan AI, jadi layanan terjemahan AI tidak akan digunakan. Beralihlah ke layanan non-AI di Pengaturan › Layanan Terjemahan.",
+  "正在送出 Kudos，請稍候": "Mengirim kudos, harap tunggu"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -12413,7 +12428,8 @@
   "不翻譯": "Không dịch",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "Tác giả viết: “%@”\nĐể tôn trọng tác giả, dịch vụ dịch bằng AI sẽ không được dùng cho tác phẩm này. Nếu bạn vẫn cần hỗ trợ đọc, hãy chuyển sang dịch vụ không dùng AI trong Cài đặt › Dịch vụ dịch thuật.",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "Tác giả viết: “%@”\nHãy tôn trọng mong muốn của tác giả. Nếu bạn vẫn dịch, bản dịch chỉ hiển thị cho riêng bạn; vui lòng không chia sẻ hoặc đăng lại.",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Tác giả không muốn tác phẩm này bị dịch hoặc dùng với AI, vì vậy dịch vụ dịch bằng AI sẽ không được dùng. Hãy chuyển sang dịch vụ không dùng AI trong Cài đặt › Dịch vụ dịch thuật."
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "Tác giả không muốn tác phẩm này bị dịch hoặc dùng với AI, vì vậy dịch vụ dịch bằng AI sẽ không được dùng. Hãy chuyển sang dịch vụ không dùng AI trong Cài đặt › Dịch vụ dịch thuật.",
+  "正在送出 Kudos，請稍候": "Đang gửi Kudos, vui lòng đợi"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -13189,6 +13205,7 @@
   "不翻譯": "ไม่แปล",
   "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": "ผู้เขียนระบุว่า: “%@”\nเพื่อเคารพผู้เขียน จะไม่ใช้บริการแปลด้วย AI กับผลงานนี้ หากยังต้องการความช่วยเหลือในการอ่าน โปรดเปลี่ยนไปใช้บริการที่ไม่ใช่ AI ใน การตั้งค่า › บริการแปล",
   "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": "ผู้เขียนระบุว่า: “%@”\nโปรดเคารพความต้องการของผู้เขียน หากยังแปล คำแปลจะแสดงให้คุณเห็นเท่านั้น โปรดอย่าแชร์หรือโพสต์ซ้ำ",
-  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "ผู้เขียนไม่ต้องการให้ผลงานนี้ถูกแปลหรือใช้กับ AI จึงจะไม่ใช้บริการแปลด้วย AI โปรดเปลี่ยนไปใช้บริการที่ไม่ใช่ AI ใน การตั้งค่า › บริการแปล"
+  "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": "ผู้เขียนไม่ต้องการให้ผลงานนี้ถูกแปลหรือใช้กับ AI จึงจะไม่ใช้บริการแปลด้วย AI โปรดเปลี่ยนไปใช้บริการที่ไม่ใช่ AI ใน การตั้งค่า › บริการแปล",
+  "正在送出 Kudos，請稍候": "กำลังส่ง Kudos โปรดรอสักครู่"
  }
 }

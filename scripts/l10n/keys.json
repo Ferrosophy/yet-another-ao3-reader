@@ -443,6 +443,7 @@
  "帳號操作": "WorkActionsView.swift",
  "%@（讀取中或無法訂閱）": "WorkActionsView.swift",
  "你已經給過這部作品 Kudos 了": "WorkEndView.swift",
+ "正在送出 Kudos，請稍候": "WorkEndView.swift",
  "已送出 Kudos，謝謝你的支持！": "WorkEndView.swift",
  "Kudos 送出失敗：%@": "WorkEndView.swift",
  "如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。": "WorkEndView.swift",
