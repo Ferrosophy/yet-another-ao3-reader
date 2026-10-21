@@ -496,3 +496,11 @@ struct FilterConversionTests {
         #expect(a.merged(with: b).entries.isEmpty)
     }
 }
+
+struct AnubisDetectionTests {
+    @Test func detectsAnubisChallengePage() {
+        let page = Data(#"<html><head><title>Making sure you're not a bot!</title></head><body><script id="anubis_challenge" type="application/json">{}</script><img src="/.within.website/x/cmd/anubis/static/img/pensive.webp"></body></html>"#.utf8)
+        #expect(AO3Client.isAnubisChallenge(data: page))
+        #expect(!AO3Client.isAnubisChallenge(data: Data("<html><div id=\"outer\"></div></html>".utf8)))
+    }
+}

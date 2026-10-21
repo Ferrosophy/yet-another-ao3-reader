@@ -669,6 +669,18 @@ EN = {
 "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Requests are still blocked after several verifications. AO3 may have tightened its protection for now. Try again later, or switch to another mirror in Settings › Content Source.",
 "支持贊助": "Support Us",
 "重新整理": "Refresh",
+"鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試": "The mirror requires browser verification (Anubis). Wait for the verification to finish on the page that opens, then try again.",
+"環境": "Environment",
+"來源": "Source",
+"只顯示問題與驗證": "Show Only Problems and Verification",
+"複製": "Copy",
+"請求紀錄（%lld）": "Requests (%lld)",
+"除錯": "Debug",
+"複製全部紀錄": "Copy All Logs",
+"清除紀錄": "Clear Logs",
+"更多": "More",
+"已複製": "Copied",
+"網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。": "The site's protection (Cloudflare or Anubis) needs to confirm you're not a bot. Tap the checkbox on the page or wait for the automatic check to finish. The page closes when you pass; then refresh the original page.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

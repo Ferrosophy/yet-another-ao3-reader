@@ -1574,149 +1574,6 @@
         }
       }
     },
-    "AO3 的 Cloudflare 防護要求確認你不是機器人。請點擊頁面中的驗證方塊，通過後會自動關閉，再重新整理原頁面即可。": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تحتاج حماية Cloudflare الخاصة بـ AO3 إلى التأكد من أنك لست روبوتًا. اضغط على مربع الاختيار الموجود على الصفحة؛ يتم إغلاقه تلقائيًا بمجرد المرور. ثم قم بتحديث الصفحة السابقة."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Cloudflare-Schutz von AO3 muss bestätigen, dass Sie kein Roboter sind. Tippen Sie auf das Kontrollkästchen auf der Seite. Es schließt sich automatisch, sobald Sie vorbeikommen. Aktualisieren Sie dann die vorherige Seite."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3’s Cloudflare protection needs to confirm you are not a robot. Tap the checkbox on the page; it closes automatically once you pass. Then refresh the previous page."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "La protección Cloudflare de AO3 debe confirmar que no eres un robot. Toque la casilla de verificación en la página; se cierra automáticamente una vez que pasas. Luego actualice la página anterior."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "La protection Cloudflare d'AO3 doit confirmer que vous n'êtes pas un robot. Appuyez sur la case à cocher sur la page ; il se ferme automatiquement une fois que vous passez. Actualisez ensuite la page précédente."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3 की क्लाउडफ्लेयर सुरक्षा को यह पुष्टि करने की आवश्यकता है कि आप रोबोट नहीं हैं। पृष्ठ पर चेकबॉक्स टैप करें; आपके गुजरते ही यह स्वतः बंद हो जाता है। फिर पिछले पृष्ठ को ताज़ा करें।"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Perlindungan Cloudflare AO3 perlu mengonfirmasi bahwa Anda bukan robot. Ketuk kotak centang di halaman; itu menutup secara otomatis setelah Anda melewatinya. Kemudian segarkan halaman sebelumnya."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "La protezione Cloudflare di AO3 deve confermare che non sei un robot. Tocca la casella di controllo sulla pagina; si chiude automaticamente una volta superato. Quindi aggiorna la pagina precedente."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3 の Cloudflare 保護では、あなたがロボットではないことを確認する必要があります。ページ上のチェックボックスをタップします。通過すると自動的に閉まります。次に、前のページを更新します。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3의 Cloudflare 보호 기능은 귀하가 로봇이 아닌지 확인해야 합니다. 페이지의 체크박스를 탭하세요. 지나가면 자동으로 닫힙니다. 그런 다음 이전 페이지를 새로 고치세요."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "De Cloudflare-bescherming van AO3 moet bevestigen dat u geen robot bent. Tik op het selectievakje op de pagina; het sluit automatisch zodra u voorbij bent. Ververs vervolgens de vorige pagina."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ochrona Cloudflare firmy AO3 musi potwierdzić, że nie jesteś robotem. Kliknij pole wyboru na stronie; zamyka się automatycznie po przejściu. Następnie odśwież poprzednią stronę."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A proteção Cloudflare do AO3 precisa confirmar que você não é um robô. Toque na caixa de seleção da página; ele fecha automaticamente quando você passa. Em seguida, atualize a página anterior."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Защита Cloudflare AO3 должна подтвердить, что вы не робот. Нажмите на флажок на странице; он закрывается автоматически, как только вы проходите мимо. Затем обновите предыдущую страницу."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "การป้องกัน Cloudflare ของ AO3 จำเป็นต้องยืนยันว่าคุณไม่ใช่หุ่นยนต์ แตะช่องทำเครื่องหมายบนหน้า มันปิดโดยอัตโนมัติเมื่อคุณผ่าน จากนั้นรีเฟรชหน้าก่อนหน้า"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3'ün Cloudflare korumasının robot olmadığınızı doğrulaması gerekiyor. Sayfadaki onay kutusuna dokunun; siz geçtikten sonra otomatik olarak kapanır. Daha sonra önceki sayfayı yenileyin."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Захист Cloudflare AO3 потребує підтвердження, що ви не робот. Торкніться прапорця на сторінці; він автоматично закривається, коли ви проходите. Потім оновіть попередню сторінку."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cơ chế bảo vệ Cloudflare của AO3 cần xác nhận bạn không phải là robot. Nhấn vào hộp kiểm trên trang; nó tự động đóng lại khi bạn đi qua. Sau đó làm mới trang trước đó."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3 的 Cloudflare 防护要求确认你不是机器人。请点击页面中的验证方块，通过后会自动关闭，再刷新原页面即可。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3 的 Cloudflare 防護要求確認你不是機器人。請點擊頁面中的驗證方塊，通過後會自動關閉，再重新整理原頁面即可。"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3 的 Cloudflare 防護要求確認你不是機器人。請點擊頁面中的驗證方塊，通過後會自動關閉，再重新整理原頁面即可。"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3 的 Cloudflare 防護要求確認你不是機器人。請點擊頁面中的驗證方塊，通過後會自動關閉，再重新整理原頁面即可。"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AO3 的 Cloudflare 防護要求確認你不是機器人。請點擊頁面中的驗證方塊，通過後會自動關閉，再重新整理原頁面即可。"
-          }
-        }
-      }
-    },
     "AO3 說明": {
       "extractionState": "manual",
       "localizations": {
@@ -11870,6 +11727,149 @@
         }
       }
     },
+    "來源": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المصدر"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelle"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Source"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Source"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्रोत"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sumber"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fonte"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソース"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "소스"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bron"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Źródło"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fonte"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Источник"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แหล่งที่มา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaynak"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Джерело"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nguồn"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来源"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "來源"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "來源"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "來源"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "來源"
+          }
+        }
+      }
+    },
     "例如 gpt-4o-mini、deepseek-chat": {
       "extractionState": "manual",
       "localizations": {
@@ -20450,6 +20450,149 @@
         }
       }
     },
+    "只顯示問題與驗證": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار المشاكل والتحقق فقط"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur Probleme und Überprüfung anzeigen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Only Problems and Verification"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar solo problemas y verificación"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher uniquement les problèmes et la vérification"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "केवल समस्याएँ और सत्यापन दिखाएँ"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan Hanya Masalah dan Verifikasi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra solo problemi e verifica"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "問題と検証のみを表示"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "문제 및 확인만 표시"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon alleen problemen en verificatie"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokaż tylko problemy i weryfikację"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar apenas problemas e verificação"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показать только проблемы и проверку"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงเฉพาะปัญหาและการตรวจสอบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca Sorunları ve Doğrulamayı Göster"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показати лише проблеми та перевірку"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ hiển thị sự cố và xác minh"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只显示问题与验证"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只顯示問題與驗證"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只顯示問題與驗證"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只顯示問題與驗證"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只顯示問題與驗證"
+          }
+        }
+      }
+    },
     "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": {
       "extractionState": "manual",
       "localizations": {
@@ -29026,6 +29169,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "已翻譯 %lld/%lld"
+          }
+        }
+      }
+    },
+    "已複製": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منقول"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiert"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copied"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copié"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "नकल की गई"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disalin"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiato"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コピーされました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복사됨"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gekopieerd"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skopiowano"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопировано"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คัดลอกแล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopyalandı"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопійовано"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã sao chép"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已拷贝"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已複製"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已複製"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已複製"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已複製"
           }
         }
       }
@@ -38035,6 +38321,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "暫停"
+          }
+        }
+      }
+    },
+    "更多": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المزيد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Más"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plus"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अधिक"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lebih lanjut"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di più"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もっと見る"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더보기"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meer"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Więcej"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mais"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подробнее"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เพิ่มเติม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha Fazla"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "більше"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多"
           }
         }
       }
@@ -50766,6 +51195,149 @@
         }
       }
     },
+    "清除紀錄": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح السجلات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Protokolle löschen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear Logs"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar registros"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Effacer les journaux"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "लॉग साफ़ करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus Log"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella registri"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログをクリアする"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그 지우기"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logboeken wissen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyczyść dzienniki"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limpar registros"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Очистить журналы"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ล้างบันทึก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Günlükleri Temizle"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Очистити журнали"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xóa nhật ký"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除记录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除紀錄"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除紀錄"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除紀錄"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除紀錄"
+          }
+        }
+      }
+    },
     "清除翻譯快取": {
       "extractionState": "manual",
       "localizations": {
@@ -54194,6 +54766,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "燈塔金"
+          }
+        }
+      }
+    },
+    "環境": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البيئة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umwelt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Environment"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medio ambiente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Environnement"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "पर्यावरण"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lingkungan Hidup"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ambiente"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "環境"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "환경"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Milieu"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Środowisko"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meio Ambiente"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Окружающая среда"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สิ่งแวดล้อม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çevre"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Навколишнє середовище"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Môi trường"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "环境"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "環境"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "環境"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "環境"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "環境"
           }
         }
       }
@@ -61062,6 +61777,149 @@
         }
       }
     },
+    "網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحتاج حماية الموقع (Cloudflare أو Anubis) إلى التأكد من أنك لست روبوتًا. اضغط على مربع الاختيار الموجود في الصفحة أو انتظر حتى ينتهي الفحص التلقائي. تُغلق الصفحة عند المرور؛ ثم قم بتحديث الصفحة الأصلية."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Schutz der Website (Cloudflare oder Anubis) muss bestätigen, dass Sie kein Bot sind. Tippen Sie auf das Kontrollkästchen auf der Seite oder warten Sie, bis die automatische Prüfung abgeschlossen ist. Die Seite wird geschlossen, wenn Sie vorbeigehen. Aktualisieren Sie dann die Originalseite."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The site's protection (Cloudflare or Anubis) needs to confirm you're not a bot. Tap the checkbox on the page or wait for the automatic check to finish. The page closes when you pass; then refresh the original page."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La protección del sitio (Cloudflare o Anubis) debe confirmar que no eres un bot. Toque la casilla de verificación en la página o espere a que finalice la verificación automática. La página se cierra cuando pasas; luego actualice la página original."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La protection du site (Cloudflare ou Anubis) doit confirmer que vous n'êtes pas un bot. Appuyez sur la case à cocher sur la page ou attendez la fin de la vérification automatique. La page se ferme lorsque vous passez ; puis actualisez la page d'origine."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "साइट की सुरक्षा (क्लाउडफ्लेयर या एनुबिस) को यह पुष्टि करने की आवश्यकता है कि आप बॉट नहीं हैं। पृष्ठ पर चेकबॉक्स टैप करें या स्वचालित जांच समाप्त होने तक प्रतीक्षा करें। आपके पास होने पर पृष्ठ बंद हो जाता है; फिर मूल पृष्ठ को ताज़ा करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perlindungan situs (Cloudflare atau Anubis) perlu mengonfirmasi bahwa Anda bukan bot. Ketuk kotak centang di halaman atau tunggu hingga pemeriksaan otomatis selesai. Halaman ditutup ketika Anda lewat; lalu segarkan halaman aslinya."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La protezione del sito (Cloudflare o Anubis) deve confermare che non sei un bot. Tocca la casella di controllo sulla pagina o attendi il completamento del controllo automatico. La pagina si chiude al tuo passaggio; quindi aggiorna la pagina originale."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サイトの保護 (Cloudflare または Anubis) では、ボットではないことを確認する必要があります。ページ上のチェックボックスをタップするか、自動チェックが完了するまで待ちます。あなたが通過するとページは閉じます。その後、元のページを更新します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사이트 보호(Cloudflare 또는 Anubis)에서는 귀하가 봇이 아닌지 확인해야 합니다. 페이지의 확인란을 탭하거나 자동 확인이 완료될 때까지 기다립니다. 통과하면 페이지가 닫힙니다. 그런 다음 원본 페이지를 새로 고치세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De bescherming van de site (Cloudflare of Anubis) moet bevestigen dat u geen bot bent. Tik op het selectievakje op de pagina of wacht tot de automatische controle is voltooid. De pagina sluit als u slaagt; ververs vervolgens de originele pagina."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ochrona witryny (Cloudflare lub Anubis) musi potwierdzić, że nie jesteś botem. Kliknij pole wyboru na stronie lub poczekaj na zakończenie automatycznego sprawdzania. Strona zamyka się po przejściu; następnie odśwież oryginalną stronę."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A proteção do site (Cloudflare ou Anubis) precisa confirmar que você não é um bot. Toque na caixa de seleção na página ou aguarde a conclusão da verificação automática. A página fecha quando você passa; em seguida, atualize a página original."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Защита сайта (Cloudflare или Anubis) должна подтвердить, что вы не бот. Установите флажок на странице или дождитесь завершения автоматической проверки. Страница закрывается, когда вы проходите; затем обновите исходную страницу."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การป้องกันของไซต์ (Cloudflare หรือ Anubis) จำเป็นต้องยืนยันว่าคุณไม่ใช่บอท แตะช่องทำเครื่องหมายบนหน้าหรือรอให้การตรวจสอบอัตโนมัติเสร็จสิ้น หน้าจะปิดเมื่อคุณผ่าน จากนั้นรีเฟรชหน้าเดิม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sitenin korumasının (Cloudflare veya Anubis) bot olmadığınızı doğrulaması gerekiyor. Sayfadaki onay kutusuna dokunun veya otomatik kontrolün bitmesini bekleyin. Siz geçtiğinizde sayfa kapanır; ardından orijinal sayfayı yenileyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Захист сайту (Cloudflare або Anubis) повинен підтвердити, що ви не бот. Торкніться прапорця на сторінці або дочекайтеся завершення автоматичної перевірки. Сторінка закривається, коли ви проходите повз; потім оновіть початкову сторінку."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cơ chế bảo vệ của trang web (Cloudflare hoặc Anubis) cần xác nhận bạn không phải là bot. Nhấn vào hộp kiểm trên trang hoặc đợi quá trình kiểm tra tự động hoàn tất. Trang sẽ đóng lại khi bạn vượt qua; sau đó làm mới trang gốc."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "网站的防护（Cloudflare 或 Anubis）要求确认你不是机器人。请点击页面中的验证方块，或等待自动验证完成；通过后会自动关闭，再刷新原页面即可。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。"
+          }
+        }
+      }
+    },
     "網站要求人機驗證（Cloudflare），請在彈出的頁面完成驗證後重試": {
       "extractionState": "manual",
       "localizations": {
@@ -64780,6 +65638,292 @@
         }
       }
     },
+    "複製": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نسخ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "प्रतिलिपि"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salin"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コピー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복사"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieer"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopiuj"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копировать"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คัดลอก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopyala"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копія"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sao chép"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拷贝"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製"
+          }
+        }
+      }
+    },
+    "複製全部紀錄": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نسخ كافة السجلات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Protokolle kopieren"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy All Logs"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar todos los registros"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier tous les journaux"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सभी लॉग कॉपी करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salin Semua Log"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copia tutti i registri"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのログをコピー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 로그 복사"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieer alle logboeken"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skopiuj wszystkie dzienniki"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar todos os registros"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копировать все журналы"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คัดลอกบันทึกทั้งหมด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm Günlükleri Kopyala"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копіювати всі журнали"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sao chép tất cả nhật ký"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拷贝全部记录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製全部紀錄"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製全部紀錄"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製全部紀錄"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製全部紀錄"
+          }
+        }
+      }
+    },
     "覆蓋": {
       "extractionState": "manual",
       "localizations": {
@@ -67207,6 +68351,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "請從多工畫面關閉 App 後重新開啟。"
+          }
+        }
+      }
+    },
+    "請求紀錄（%lld）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلبات (%lld)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anfragen (%lld)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requests (%lld)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solicitudes (%lld)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demandes (%lld)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अनुरोध (%lld)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permintaan (%lld)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richieste (%lld)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リクエスト (%lld)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "요청(%lld)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verzoeken (%lld)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Żądania (%lld)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solicitações (%lld)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запросы (%lld)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คำขอ (%lld)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İstekler (%lld)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запити (%lld)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yêu cầu (%lld)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请求记录（%lld）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請求紀錄（%lld）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請求紀錄（%lld）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請求紀錄（%lld）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請求紀錄（%lld）"
           }
         }
       }
@@ -73074,6 +74361,149 @@
         }
       }
     },
+    "鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتطلب المرآة التحقق من المتصفح (أنوبيس). انتظر حتى انتهاء عملية التحقق على الصفحة التي تفتح، ثم حاول مرة أخرى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Spiegel erfordert eine Browserüberprüfung (Anubis). Warten Sie, bis die Überprüfung auf der sich öffnenden Seite abgeschlossen ist, und versuchen Sie es dann erneut."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The mirror requires browser verification (Anubis). Wait for the verification to finish on the page that opens, then try again."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El espejo requiere verificación del navegador (Anubis). Espere a que finalice la verificación en la página que se abre y vuelva a intentarlo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le miroir nécessite une vérification du navigateur (Anubis). Attendez la fin de la vérification sur la page qui s'ouvre, puis réessayez."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "दर्पण को ब्राउज़र सत्यापन (Anubis) की आवश्यकता होती है। खुलने वाले पृष्ठ पर सत्यापन समाप्त होने तक प्रतीक्षा करें, फिर पुनः प्रयास करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cermin memerlukan verifikasi browser (Anubis). Tunggu hingga verifikasi selesai pada halaman yang terbuka, lalu coba lagi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il mirror richiede la verifica del browser (Anubis). Attendi il completamento della verifica nella pagina che si apre, quindi riprova."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ミラーにはブラウザの検証 (Anubis) が必要です。開いたページで検証が完了するまで待ってから、再試行してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미러에는 브라우저 확인(Anubis)이 필요합니다. 열리는 페이지에서 확인이 완료될 때까지 기다린 후 다시 시도하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De spiegel vereist browserverificatie (Anubis). Wacht tot de verificatie is voltooid op de pagina die wordt geopend en probeer het vervolgens opnieuw."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lustro wymaga weryfikacji przez przeglądarkę (Anubis). Poczekaj na zakończenie weryfikacji na stronie, która się otworzy, a następnie spróbuj ponownie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O espelho requer verificação do navegador (Anubis). Aguarde a conclusão da verificação na página que é aberta e tente novamente."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зеркало требует верификации браузера (Анубис). Дождитесь завершения проверки на открывшейся странице и повторите попытку."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "มิเรอร์ต้องมีการตรวจสอบเบราว์เซอร์ (Anubis) รอให้การตรวจสอบเสร็จสิ้นในหน้าที่เปิดขึ้น จากนั้นลองอีกครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayna, tarayıcı doğrulamasını (Anubis) gerektirir. Açılan sayfada doğrulamanın bitmesini bekleyin, ardından tekrar deneyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дзеркало вимагає перевірки браузера (Анубіс). Зачекайте, поки перевірка завершиться на сторінці, що відкриється, а потім повторіть спробу."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Máy nhân bản yêu cầu xác minh trình duyệt (Anubis). Đợi quá trình xác minh hoàn tất trên trang mở ra, sau đó thử lại."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "镜像站要求浏览器验证（Anubis），请在弹出的页面等待验证完成后重试"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試"
+          }
+        }
+      }
+    },
     "開啟翻譯": {
       "extractionState": "manual",
       "localizations": {
@@ -74929,6 +76359,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "降序"
+          }
+        }
+      }
+    },
+    "除錯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصحيح"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debuggen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debug"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depurar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Débogage"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डीबग करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Men-debug"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debug"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバッグ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디버그"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foutopsporing"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Debuguj"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depurar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отладка"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดีบัก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hata ayıklama"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Налагодження"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gỡ lỗi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "调试"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "除錯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "除錯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "除錯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "除錯"
           }
         }
       }

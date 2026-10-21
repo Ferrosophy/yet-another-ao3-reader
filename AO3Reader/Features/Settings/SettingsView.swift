@@ -21,6 +21,7 @@ struct SettingsView: View {
 
     @State private var showsClearConfirm = false
     @State private var showsDonate = false
+    @State private var showsDebug = false
     @AppStorage(StartTab.storageKey) private var startTab: StartTab = .browse
     @AppStorage(OfflineManager.autoTranslateKey) private var offlineTranslates = true
     @AppStorage(OfflineManager.wifiOnlyKey) private var offlineWiFiOnly = false
@@ -71,7 +72,10 @@ struct SettingsView: View {
                         .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
+                // 連續點擊三次進入除錯頁
                 LabeledContent("應用版本", value: Self.versionString)
+                    .contentShape(.rect)
+                    .onTapGesture(count: 3) { showsDebug = true }
             }
 
             Section("翻譯") {
@@ -131,6 +135,7 @@ struct SettingsView: View {
         }
         .navigationTitle("設定")
         .sheet(isPresented: $showsDonate) { DonateView() }
+        .navigationDestination(isPresented: $showsDebug) { DebugView() }
         .confirmationDialog("刪除所有 API Key？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
             Button("刪除", role: .destructive) { KeychainStore.deleteAll() }
         }

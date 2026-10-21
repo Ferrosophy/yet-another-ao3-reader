@@ -4,6 +4,8 @@ enum AO3Error: LocalizedError, Equatable {
     case http(Int)
     case rateLimited(retryAfter: String?)
     case cloudflareChallenge
+    /// 鏡像站的 Anubis 反爬蟲驗證（工作量證明，需在瀏覽器中執行）
+    case anubisChallenge
     case requiresLogin
     case loginFailed
     case parse(String)
@@ -14,6 +16,7 @@ enum AO3Error: LocalizedError, Equatable {
         case .http(let code): String(localized: "伺服器回應錯誤（HTTP \(code)）")
         case .rateLimited(let after): after.map { String(localized: "請求過於頻繁，AO3 暫時限制存取，請於 \($0) 秒後再試") } ?? String(localized: "請求過於頻繁，AO3 暫時限制存取")
         case .cloudflareChallenge: String(localized: "網站要求人機驗證（Cloudflare），請在彈出的頁面完成驗證後重試")
+        case .anubisChallenge: String(localized: "鏡像站要求瀏覽器驗證（Anubis），請在彈出的頁面等待驗證完成後重試")
         case .requiresLogin: String(localized: "此作品僅限登入用戶閱讀")
         case .loginFailed: String(localized: "登入失敗，請檢查帳號密碼")
         case .parse(let what): String(localized: "頁面解析失敗：\(what)")
@@ -47,9 +50,31 @@ struct AO3Client: Sendable {
         config.httpAdditionalHeaders = [
             "User-Agent": userAgent,
             "Accept": "text/html,application/xhtml+xml",
+            // 與網頁驗證（WKWebView）使用相同格式的語言標頭：Anubis 等防護會比對請求標頭
+            "Accept-Language": acceptLanguage,
         ]
         config.timeoutIntervalForRequest = timeout
         return URLSession(configuration: config)
+    }
+
+    /// 仿照 Safari 的 Accept-Language（例如 zh-CN,zh-Hans;q=0.9 或 en-US,en;q=0.9）
+    static let acceptLanguage: String = {
+        let preferred = Locale.preferredLanguages.first ?? "en-US"
+        let locale = Locale(identifier: preferred)
+        let language = locale.language.languageCode?.identifier ?? "en"
+        let region = locale.region?.identifier
+        let script = locale.language.script?.identifier
+        let primary = region.map { "\(language)-\($0)" } ?? language
+        let secondary = script.map { "\(language)-\($0)" } ?? language
+        return primary == secondary ? primary : "\(primary),\(secondary);q=0.9"
+    }()
+
+    /// 除錯紀錄中顯示的請求標頭
+    static func requestHeaders(_ request: URLRequest, session: URLSession) -> [String: String] {
+        var headers: [String: String] = [:]
+        for (key, value) in session.configuration.httpAdditionalHeaders ?? [:] { headers["\(key)"] = "\(value)" }
+        for (key, value) in request.allHTTPHeaderFields ?? [:] { headers[key] = value }
+        return headers
     }
 
     func url(_ path: String, query: [URLQueryItem] = []) -> URL {
@@ -74,29 +99,79 @@ struct AO3Client: Sendable {
             request.setValue(token, forHTTPHeaderField: "X-CSRF-Token")
         }
         request.httpBody = Data(FormEncoding.encode(fields).utf8)
-        let (data, response) = try await Self.session.data(for: request)
+        let (data, response) = try await load(request, session: Self.session)
         let http = response as! HTTPURLResponse
-        try validate(http, data: data)
+        try validate(http, data: data, request: request, session: Self.session)
         return (String(decoding: data, as: UTF8.self), http)
     }
 
     private func send(_ request: URLRequest, session: URLSession = AO3Client.session) async throws -> String {
-        let (data, response) = try await session.data(for: request)
-        try validate(response as! HTTPURLResponse, data: data)
+        let (data, response) = try await load(request, session: session)
+        try validate(response as! HTTPURLResponse, data: data, request: request, session: session)
         return String(decoding: data, as: UTF8.self)
     }
 
-    private func validate(_ response: HTTPURLResponse, data: Data) throws {
+    /// 送出請求；網路錯誤記入除錯紀錄
+    private func load(_ request: URLRequest, session: URLSession) async throws -> (Data, URLResponse) {
+        do {
+            return try await session.data(for: request)
+        } catch {
+            DebugLog.record(DebugEntry(kind: .network, method: request.httpMethod ?? "GET", url: request.url?.absoluteString ?? "",
+                                       summary: error.localizedDescription,
+                                       detail: Self.requestHeaders(request, session: session).sorted { $0.key < $1.key }
+                                           .map { "\($0.key): \($0.value)" }.joined(separator: "\n")))
+            throw error
+        }
+    }
+
+    private func validate(_ response: HTTPURLResponse, data: Data, request: URLRequest, session: URLSession) throws {
+        let method = request.httpMethod ?? "GET"
+        let headers = Self.requestHeaders(request, session: session)
+        func log(_ kind: DebugEntry.Kind, _ summary: String) {
+            DebugLog.record(.response(response, data: data, method: method, requestHeaders: headers, kind: kind, summary: summary))
+        }
         if Self.isCloudflareChallenge(response, data: data) {
+            log(.cloudflare, "Cloudflare challenge")
             // 通知介面彈出驗證頁，讓使用者點一下人機驗證
             NotificationCenter.default.post(name: .ao3CloudflareChallenge, object: nil,
                                             userInfo: ["url": response.url ?? baseURL])
             throw AO3Error.cloudflareChallenge
         }
+        if Self.isAnubisChallenge(data: data) {
+            log(.anubis, "Anubis challenge")
+            // Anubis 需要在瀏覽器中計算工作量證明，同樣以驗證頁處理
+            NotificationCenter.default.post(name: .ao3CloudflareChallenge, object: nil,
+                                            userInfo: ["url": response.url ?? baseURL])
+            throw AO3Error.anubisChallenge
+        }
         switch response.statusCode {
-        case 200..<400: return
-        case 429: throw AO3Error.rateLimited(retryAfter: response.value(forHTTPHeaderField: "Retry-After"))
-        default: throw AO3Error.http(response.statusCode)
+        case 200..<400:
+            log(.ok, "OK (\(data.count) bytes)")
+        case 429:
+            log(.http, "Rate limited")
+            throw AO3Error.rateLimited(retryAfter: response.value(forHTTPHeaderField: "Retry-After"))
+        default:
+            log(.http, "HTTP \(response.statusCode)")
+            throw AO3Error.http(response.statusCode)
+        }
+    }
+
+    /// Anubis（TecharoHQ/anubis）的驗證頁：含 Anubis 的腳本或路徑
+    static func isAnubisChallenge(data: Data) -> Bool {
+        let head = String(decoding: data.prefix(16_000), as: UTF8.self)
+        return head.contains("anubis_challenge") || head.contains("/.within.website/")
+            || (head.localizedCaseInsensitiveContains("anubis") && head.contains("Making sure you"))
+    }
+
+    /// 頁面解析失敗時記入除錯紀錄（例如鏡像回傳了非 AO3 的頁面）
+    private func parsed<T>(_ path: String, _ html: String, _ parse: () throws -> T) throws -> T {
+        do {
+            return try parse()
+        } catch {
+            DebugLog.record(DebugEntry(kind: .parse, url: baseURL.appending(path: path).absoluteString,
+                                       summary: error.localizedDescription,
+                                       detail: "— Body (first 1500 chars) —\n" + String(html.prefix(1500))))
+            throw error
         }
     }
 
@@ -115,7 +190,7 @@ struct AO3Client: Sendable {
 
     func searchWorks(_ query: WorkSearchQuery, page: Int = 1) async throws -> WorkPage {
         let html = try await get("/works/search", query: query.queryItems(page: page))
-        return try AO3Parser.workPage(html: html, page: page)
+        return try parsed("/works/search", html) { try AO3Parser.workPage(html: html, page: page) }
     }
 
     func work(id: Int) async throws -> WorkDetail {
@@ -126,7 +201,7 @@ struct AO3Client: Sendable {
         // 長篇作品的完整內容頁 AO3 可能要很久才開始回應，放寬逾時（一般頁面為 30 秒）
         request.timeoutInterval = 180
         let html = try await send(request, session: Self.longSession)
-        return try AO3Parser.workDetail(html: html, id: id)
+        return try parsed("/works/\(id)", html) { try AO3Parser.workDetail(html: html, id: id) }
     }
 
     func userList(_ kind: UserListKind, username: String, page: Int = 1) async throws -> WorkPage {
@@ -144,7 +219,7 @@ struct AO3Client: Sendable {
     /// 任意作品列表頁（標籤、合集、系列、用戶作品…），列表中的 `li.blurb` 皆可解析。
     func worksPage(path: String, query: [URLQueryItem] = [], page: Int = 1) async throws -> WorkPage {
         let html = try await get(path, query: Self.paged(query, page))
-        return try AO3Parser.workPage(html: html, page: page)
+        return try parsed(path, html) { try AO3Parser.workPage(html: html, page: page) }
     }
 
     func searchTags(name: String, type: TagSearchType, page: Int = 1) async throws -> ListPage<TagResult> {
@@ -197,8 +272,8 @@ struct AO3Client: Sendable {
         var request = URLRequest(url: url("/autocomplete/\(kind.rawValue)", query: [URLQueryItem(name: "term", value: term)]))
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("XMLHttpRequest", forHTTPHeaderField: "X-Requested-With")
-        let (data, response) = try await Self.session.data(for: request)
-        if let http = response as? HTTPURLResponse { try validate(http, data: data) }
+        let (data, response) = try await load(request, session: Self.session)
+        if let http = response as? HTTPURLResponse { try validate(http, data: data, request: request, session: Self.session) }
         struct Item: Decodable { let name: String }
         return try JSONDecoder().decode([Item].self, from: data).map(\.name)
     }
