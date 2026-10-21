@@ -340,6 +340,7 @@ struct BrowseCard: View {
             ScrollView {
                 WorkRow(work: work, translationActive: isCurrent, compact: false)
                     .padding(20)
+                    .padding(.bottom, 32)  // 留位置給右下角的快速跳轉按鈕
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .scrollIndicators(.hidden)

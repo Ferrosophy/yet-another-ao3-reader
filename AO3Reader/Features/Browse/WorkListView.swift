@@ -101,16 +101,18 @@ struct WorkCardPager: View {
     var loadMore: (WorkSummary) async -> Void
 
     var body: some View {
-        VStack(spacing: 6) {
-            TabView(selection: $currentIndex) {
-                ForEach(Array(works.enumerated()), id: \.element.id) { index, work in
-                    BrowseCard(work: work, isCurrent: index == currentIndex, onDelete: onDelete)
-                        .tag(index)
-                }
+        TabView(selection: $currentIndex) {
+            ForEach(Array(works.enumerated()), id: \.element.id) { index, work in
+                BrowseCard(work: work, isCurrent: index == currentIndex, onDelete: onDelete)
+                    .tag(index)
             }
-            .tabViewStyle(.page(indexDisplayMode: .never))
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        // 快速跳轉放在卡片右下角（卡片外距 16 再往內 10）
+        .overlay(alignment: .bottomTrailing) {
             CardJumpButton(currentIndex: $currentIndex, count: works.count, hasMore: hasMore, loadUntil: loadUntil)
-                .padding(.bottom, 4)
+                .padding(.trailing, 26)
+                .padding(.bottom, 26)
         }
         .task(id: "\(currentIndex)-\(works.count)") {
             if currentIndex >= works.count, !works.isEmpty { currentIndex = works.count - 1 }
@@ -136,7 +138,7 @@ struct CardTranslationView: View {
             case .done(let translated):
                 Text(translated)
                     .appFont(font)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.primary.opacity(0.85))
                     .lineLimit(lineLimit)
                     .padding(.leading, 10)
                     .overlay(alignment: .leading) {
