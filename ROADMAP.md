@@ -67,3 +67,11 @@
 - **延伸功能**：
   - 劃線與筆記可以匯出成 Markdown，或一併寫入雙語 EPUB。
   - 在閱讀進度和目錄中顯示有劃線的章節。
+
+## 附：文末提示文案
+
+作品文末顯示的提示，只在未登入或尚未給過 Kudos 時出現（與第 2 項一起實作）。
+
+- **繁體中文**：喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。
+- **简体中文**：喜欢这部作品的话，可以点一下 Kudos 送上小小的心意，或到原网站登录后留下评论。你的支持是作者最大的鼓励。
+- **English**: If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author.
