@@ -131,6 +131,39 @@ extension AO3Client {
         return SubscriptionTarget(name: name, path: path, form: try AO3Parser.subscribeForm(html: html))
     }
 
+    /// 給作品 Kudos（官網的「Kudos ♥」按鈕）。訪客也可以給；同一人對同一作品只能給一次，重複時 AO3 會回覆提示。
+    func leaveKudos(workID: Int) async throws -> KudosResult {
+        if isDemo { return DemoSite.leaveKudos(workID: workID) }
+        let workPath = "/works/\(workID)"
+        let html = try await get(workPath, query: [URLQueryItem(name: "view_adult", value: "true")])
+        let doc = try SwiftSoup.parse(html)
+        let token = try AO3Parser.pageToken(doc)
+        var action = "/kudos"
+        var fields: [(String, String)]
+        if let form = try doc.select("form#new_kudo").first() {
+            let spec = try AO3Parser.formSpec(form, pageToken: token)
+            action = spec.action
+            fields = spec.pairs
+        } else {
+            // 已給過（或自己的作品）時頁面可能沒有表單：照官網表單的欄位送出，由 AO3 回覆結果
+            fields = [
+                ("authenticity_token", token ?? ""),
+                ("kudo[commentable_id]", String(workID)),
+                ("kudo[commentable_type]", "Work"),
+            ]
+        }
+        guard fields.contains(where: { $0.0 == "authenticity_token" && !$0.1.isEmpty }) else {
+            throw AO3Error.message(String(localized: "找不到送出 Kudos 需要的驗證資料，請重新整理後再試"))
+        }
+        let (body, _) = try await postForm(action, fields: fields, referer: url(workPath).absoluteString)
+        guard let flash = try AO3Parser.flashMessage(html: body) else {
+            throw AO3Error.message(String(localized: "AO3 沒有確認這次 Kudos，請稍後再試"))
+        }
+        if flash.text.localizedCaseInsensitiveContains("already") { return .alreadyGiven }
+        if flash.isError { throw AO3Error.message(flash.text) }
+        return .given
+    }
+
     func submit(_ form: FormSpec, extra: [(String, String)] = []) async throws {
         _ = try await postForm(form.action, fields: form.pairs + extra)
     }

@@ -10,6 +10,8 @@ enum AO3Error: LocalizedError, Equatable {
     case loginFailed
     case parse(String)
     case invalidSource
+    /// AO3 頁面上的提示訊息（例如 Kudos 被拒絕的原因）
+    case message(String)
 
     var errorDescription: String? {
         switch self {
@@ -21,6 +23,7 @@ enum AO3Error: LocalizedError, Equatable {
         case .loginFailed: String(localized: "登入失敗，請檢查帳號密碼")
         case .parse(let what): String(localized: "頁面解析失敗：\(what)")
         case .invalidSource: String(localized: "無效的來源網址")
+        case .message(let text): text
         }
     }
 }
@@ -77,6 +80,9 @@ struct AO3Client: Sendable {
         return headers
     }
 
+    /// 展示模式的來源：內容由 `DemoSite` 提供，不送出任何網路請求
+    var isDemo: Bool { baseURL.host() == DemoSite.host }
+
     func url(_ path: String, query: [URLQueryItem] = []) -> URL {
         var components = URLComponents(url: baseURL.appending(path: path), resolvingAgainstBaseURL: false)!
         if !query.isEmpty { components.queryItems = query }
@@ -89,12 +95,12 @@ struct AO3Client: Sendable {
         try await send(URLRequest(url: url(path, query: query)))
     }
 
-    func postForm(_ path: String, fields: [(String, String)]) async throws -> (String, HTTPURLResponse) {
+    func postForm(_ path: String, fields: [(String, String)], referer: String? = nil) async throws -> (String, HTTPURLResponse) {
         var request = URLRequest(url: url(path))
         request.httpMethod = "POST"
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.setValue(baseURL.absoluteString, forHTTPHeaderField: "Origin")
-        request.setValue(url(path).absoluteString, forHTTPHeaderField: "Referer")
+        request.setValue(referer ?? url(path).absoluteString, forHTTPHeaderField: "Referer")
         if let token = fields.first(where: { $0.0 == "authenticity_token" })?.1 {
             request.setValue(token, forHTTPHeaderField: "X-CSRF-Token")
         }
@@ -207,11 +213,13 @@ struct AO3Client: Sendable {
     // MARK: - High level API
 
     func searchWorks(_ query: WorkSearchQuery, page: Int = 1) async throws -> WorkPage {
+        if isDemo { return DemoSite.searchPage(query, page: page) }
         let html = try await get("/works/search", query: query.queryItems(page: page))
         return try parsed("/works/search", html) { try AO3Parser.workPage(html: html, page: page) }
     }
 
     func work(id: Int) async throws -> WorkDetail {
+        if isDemo { return try DemoSite.detail(id: id) }
         var request = URLRequest(url: url("/works/\(id)", query: [
             URLQueryItem(name: "view_full_work", value: "true"),
             URLQueryItem(name: "view_adult", value: "true"),
@@ -222,7 +230,24 @@ struct AO3Client: Sendable {
         return try parsed("/works/\(id)", html) { try AO3Parser.workDetail(html: html, id: id) }
     }
 
+    /// 作品的評論（整部作品，每則標示所屬章節）；`show_comments` 讓官網直接輸出評論區。
+    func comments(workID: Int, page: Int = 1) async throws -> CommentPage {
+        if isDemo { return DemoSite.comments(workID: workID, page: page) }
+        var query = [
+            URLQueryItem(name: "show_comments", value: "true"),
+            URLQueryItem(name: "view_full_work", value: "true"),
+            URLQueryItem(name: "view_adult", value: "true"),
+        ]
+        if page > 1 { query.append(URLQueryItem(name: "page", value: String(page))) }
+        var request = URLRequest(url: url("/works/\(workID)", query: query))
+        // 與完整作品頁相同：長篇作品的頁面可能要很久才開始回應
+        request.timeoutInterval = 180
+        let html = try await send(request, session: Self.longSession)
+        return try parsed("/works/\(workID)", html) { try AO3Parser.comments(html: html, page: page) }
+    }
+
     func userList(_ kind: UserListKind, username: String, page: Int = 1) async throws -> WorkPage {
+        if isDemo { return WorkPage(works: [], page: page, hasNextPage: false) }
         var (path, query) = kind.path(username: username)
         if page > 1 { query.append(URLQueryItem(name: "page", value: String(page))) }
         let html = try await get(path, query: query)
@@ -231,16 +256,19 @@ struct AO3Client: Sendable {
 
     /// 從官網搜尋表單讀取所有可篩選的語言。
     func languages() async throws -> [AO3Language] {
+        if isDemo { return DemoSite.languages }
         AO3Language.bySpeakers(try AO3Parser.languageOptions(html: try await get("/works/search")))
     }
 
     /// 任意作品列表頁（標籤、合集、系列、用戶作品…），列表中的 `li.blurb` 皆可解析。
     func worksPage(path: String, query: [URLQueryItem] = [], page: Int = 1) async throws -> WorkPage {
+        if isDemo { return DemoSite.worksPage(path: path, page: page) }
         let html = try await get(path, query: Self.paged(query, page))
         return try parsed(path, html) { try AO3Parser.workPage(html: html, page: page) }
     }
 
     func searchTags(name: String, type: TagSearchType, page: Int = 1) async throws -> ListPage<TagResult> {
+        if isDemo { return DemoSite.tagResults(name: name, type: type, page: page) }
         let html = try await get("/tags/search", query: Self.paged([
             URLQueryItem(name: "tag_search[name]", value: name),
             URLQueryItem(name: "tag_search[type]", value: type.rawValue),
@@ -252,6 +280,7 @@ struct AO3Client: Sendable {
     }
 
     func searchPeople(name: String, page: Int = 1) async throws -> ListPage<PersonResult> {
+        if isDemo { return ListPage(items: [], page: page, hasNextPage: false) }
         let html = try await get("/people/search", query: Self.paged([
             URLQueryItem(name: "people_search[name]", value: name),
             URLQueryItem(name: "commit", value: "Search People"),
@@ -260,6 +289,7 @@ struct AO3Client: Sendable {
     }
 
     func searchCollections(title: String, page: Int = 1) async throws -> ListPage<CollectionResult> {
+        if isDemo { return ListPage(items: [], page: page, hasNextPage: false) }
         var query: [URLQueryItem] = []
         if !title.isEmpty {
             query = [
@@ -272,6 +302,7 @@ struct AO3Client: Sendable {
     }
 
     func subscriptions(username: String, kind: SubscriptionItem.Kind, page: Int = 1) async throws -> ListPage<SubscriptionItem> {
+        if isDemo { return ListPage(items: [], page: page, hasNextPage: false) }
         let html = try await get("/users/\(username)/subscriptions", query: Self.paged([
             URLQueryItem(name: "type", value: kind.rawValue),
         ], page))
@@ -279,6 +310,7 @@ struct AO3Client: Sendable {
     }
 
     func inbox(username: String, unreadOnly: Bool, page: Int = 1) async throws -> ListPage<InboxComment> {
+        if isDemo { return ListPage(items: [], page: page, hasNextPage: false) }
         var query: [URLQueryItem] = []
         if unreadOnly { query.append(URLQueryItem(name: "filters[read]", value: "false")) }
         let html = try await get("/users/\(username)/inbox", query: Self.paged(query, page))
@@ -287,6 +319,7 @@ struct AO3Client: Sendable {
 
     /// AO3 輸入框自動完成（/autocomplete/fandom 等），回傳 `[{id, name}]`。
     func autocomplete(_ kind: AutocompleteKind, term: String) async throws -> [String] {
+        if isDemo { return DemoSite.autocomplete(kind, term: term) }
         var request = URLRequest(url: url("/autocomplete/\(kind.rawValue)", query: [URLQueryItem(name: "term", value: term)]))
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("XMLHttpRequest", forHTTPHeaderField: "X-Requested-With")
@@ -302,6 +335,7 @@ struct AO3Client: Sendable {
 
     /// 以首頁判斷來源是否為可用的 AO3（或其鏡像），並回傳目前登入的用戶名。
     func probe() async throws -> (isAO3: Bool, username: String?) {
+        if isDemo { return (true, nil) }
         let html = try await get("/")
         return (AO3Parser.looksLikeAO3(html), AO3Parser.loggedInUsername(html))
     }

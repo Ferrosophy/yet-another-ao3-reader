@@ -641,18 +641,28 @@ final class OfflineManager {
 extension AO3Client {
     /// 作品各章的 ID（目錄頁 /works/<id>/navigate），供逐章下載
     func chapterIDs(workID: Int) async throws -> [Int] {
+        if isDemo {
+            let count = try DemoSite.detail(id: workID).chapters.count
+            return Array(0..<count)
+        }
         let html = try await get("/works/\(workID)/navigate", query: [URLQueryItem(name: "view_adult", value: "true")])
         return try AO3Parser.chapterIDs(html: html)
     }
 
     /// 單章頁面；`index` 為這一章在整部作品中的索引（段落 ID 與完整內容頁一致）
     func chapter(workID: Int, chapterID: Int, index: Int) async throws -> WorkDetail {
+        if isDemo {
+            var detail = try DemoSite.detail(id: workID)
+            detail.chapters = detail.chapters.indices.contains(index) ? [detail.chapters[index]] : []
+            return detail
+        }
         let html = try await get("/works/\(workID)/chapters/\(chapterID)", query: [URLQueryItem(name: "view_adult", value: "true")])
         return try AO3Parser.workDetail(html: html, id: workID, chapterOffset: index)
     }
 
     /// 作品目前已發布的章節數（作品頁統計列「3/10」的前半）
     func publishedChapterCount(id: Int) async throws -> Int? {
+        if isDemo { return try DemoSite.detail(id: id).chapters.count }
         let html = try await get("/works/\(id)", query: [URLQueryItem(name: "view_adult", value: "true")])
         let text = try SwiftSoup.parse(html).select("dl.stats dd.chapters").first()?.text() ?? ""
         return Int(text.split(separator: "/").first?.trimmingCharacters(in: .whitespaces).filter(\.isNumber) ?? "")
