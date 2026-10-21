@@ -101,7 +101,8 @@ struct RootView: View {
         }
         // AO3 請求遇到 Cloudflare 人機驗證時彈出驗證頁（同時只顯示一個）
         .onReceive(NotificationCenter.default.publisher(for: .ao3CloudflareChallenge).receive(on: DispatchQueue.main)) { note in
-            guard challenge == nil, let url = note.userInfo?["url"] as? URL else { return }
+            // 新手引導顯示中不彈出（引導裡的連線檢測不經過這裡，但背景的同步、離線下載可能觸發）
+            guard challenge == nil, !app.showsOnboarding, let url = note.userInfo?["url"] as? URL else { return }
             // 剛關閉驗證頁不久時不立即再彈出（原頁面的重試請求還在用舊的 Cookie）
             if let closed = challengeClosedAt, Date().timeIntervalSince(closed) < 20 { return }
             // 10 分鐘內已彈出 3 次仍無法通過：不再自動彈出，改為提示一次，由使用者決定是否手動開啟
@@ -127,6 +128,9 @@ struct RootView: View {
         }
         .sheet(item: $challenge, onDismiss: { challengeClosedAt = Date() }) { page in
             CloudflareChallengeView(url: page.url)
+        }
+        .fullScreenCover(isPresented: Binding(get: { app.showsOnboarding }, set: { app.showsOnboarding = $0 })) {
+            OnboardingView()
         }
         // 個人資料同步：開啟與回到前景時拉取、進入背景時上傳
         .task {

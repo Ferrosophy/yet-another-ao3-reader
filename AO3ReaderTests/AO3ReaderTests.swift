@@ -503,4 +503,20 @@ struct AnubisDetectionTests {
         #expect(AO3Client.isAnubisChallenge(data: page))
         #expect(!AO3Client.isAnubisChallenge(data: Data("<html><div id=\"outer\"></div></html>".utf8)))
     }
+
+    @Test func rebuildsWebCookiesWithStandardAttributes() throws {
+        let original = try #require(HTTPCookie(properties: [
+            .name: "cf_clearance", .value: "abc", .domain: ".mirror.example", .path: "/",
+            .secure: "TRUE", .expires: Date(timeIntervalSinceNow: 3600),
+            HTTPCookiePropertyKey("HttpOnly"): "TRUE", .sameSitePolicy: HTTPCookieStringPolicy.sameSiteLax.rawValue,
+        ]))
+        let rebuilt = try #require(original.forURLSession)
+        #expect(rebuilt.name == "cf_clearance")
+        #expect(rebuilt.value == "abc")
+        #expect(rebuilt.domain == ".mirror.example")
+        #expect(rebuilt.isSecure)
+        #expect(rebuilt.isHTTPOnly)
+        #expect(rebuilt.sameSitePolicy == .sameSiteLax)
+        #expect(rebuilt.expiresDate != nil)
+    }
 }

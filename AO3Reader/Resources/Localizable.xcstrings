@@ -3147,6 +3147,149 @@
         }
       }
     },
+    "Google 翻譯在中國大陸通常無法使用，建議選擇騰訊、火山或 Bing 翻譯。需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خدمة الترجمة من Google لا تعمل عادةً في الصين القارية؛ يوصى باستخدام Tencent أو Volcano أو Bing Translate. يمكن إعداد الخدمات التي تحتاج إلى مفتاح واجهة برمجة التطبيقات (مثل ترجمة الذكاء الاصطناعي) لاحقًا في الإعدادات."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate funktioniert normalerweise nicht auf dem chinesischen Festland. Empfohlen werden Tencent, Volcano oder Bing Translate. Dienste, die einen API-Schlüssel benötigen (z. B. KI-Übersetzung), können später in den Einstellungen eingerichtet werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate usually doesn't work in mainland China; Tencent, Volcano or Bing Translate are recommended. Services that need an API key (such as AI translation) can be set up later in Settings."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate normalmente no funciona en China continental; Se recomiendan Tencent, Volcano o Bing Translate. Los servicios que necesitan una clave API (como la traducción AI) se pueden configurar más adelante en Configuración."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate ne fonctionne généralement pas en Chine continentale ; Tencent, Volcano ou Bing Translate sont recommandés. Les services nécessitant une clé API (comme la traduction AI) peuvent être configurés ultérieurement dans Paramètres."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google अनुवाद आमतौर पर मुख्य भूमि चीन में काम नहीं करता है; Tencent, Volcano या Bing Translate की अनुशंसा की जाती है। जिन सेवाओं के लिए एपीआई कुंजी (जैसे एआई अनुवाद) की आवश्यकता होती है, उन्हें बाद में सेटिंग्स में सेट किया जा सकता है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Terjemahan biasanya tidak berfungsi di daratan Tiongkok; Tencent, Volcano, atau Bing Translate direkomendasikan. Layanan yang memerlukan kunci API (seperti terjemahan AI) dapat diatur nanti di Pengaturan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate di solito non funziona nella Cina continentale; Si consigliano Tencent, Volcano o Bing Translate. I servizi che richiedono una chiave API (come la traduzione AI) possono essere configurati successivamente in Impostazioni."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 翻訳は通常、中国本土では機能しません。 Tencent、Volcano、または Bing Translate をお勧めします。 API キーが必要なサービス (AI 翻訳など) は、後から [設定] で設定できます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 번역은 일반적으로 중국 본토에서는 작동하지 않습니다. Tencent, Volcano 또는 Bing Translate를 권장합니다. API 키가 필요한 서비스(예: AI 번역)는 나중에 설정에서 설정할 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate werkt meestal niet op het vasteland van China; Tencent, Volcano of Bing Translate worden aanbevolen. Services waarvoor een API-sleutel nodig is (zoals AI-vertaling) kunnen later worden ingesteld in Instellingen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumacz Google zwykle nie działa w Chinach kontynentalnych; Zalecane są Tencent, Volcano lub Bing Translate. Usługi wymagające klucza API (takie jak tłumaczenie AI) można skonfigurować później w Ustawieniach."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Google Tradutor geralmente não funciona na China continental; Tencent, Volcano ou Bing Translate são recomendados. Os serviços que precisam de uma chave de API (como tradução de IA) podem ser configurados posteriormente em Configurações."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate обычно не работает в материковом Китае; Рекомендуется использовать Tencent, Volcano или Bing Translate. Службы, которым требуется ключ API (например, перевод AI), можно настроить позже в настройках."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Translate มักจะใช้งานไม่ได้ในจีนแผ่นดินใหญ่ แนะนำให้ใช้ Tencent, Volcano หรือ Bing Translate บริการที่ต้องใช้คีย์ API (เช่น การแปล AI) สามารถตั้งค่าได้ภายหลังในการตั้งค่า"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Çeviri genellikle Çin ana karasında çalışmaz; Tencent, Volcano veya Bing Translate önerilir. API anahtarı gerektiren hizmetler (AI çevirisi gibi) daha sonra Ayarlar'dan ayarlanabilir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перекладач Google зазвичай не працює в материковому Китаї; Рекомендовано Tencent, Volcano або Bing Translate. Служби, яким потрібен ключ API (наприклад, переклад AI), можна налаштувати пізніше в налаштуваннях."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google Dịch thường không hoạt động ở Trung Quốc đại lục; Khuyến khích sử dụng Tencent, Volcano hoặc Bing Translate. Các dịch vụ cần khóa API (chẳng hạn như dịch thuật AI) có thể được thiết lập sau trong Cài đặt."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 翻译在中国大陆通常无法使用，建议选择腾讯、火山或 Bing 翻译。需要 API Key 的服务（例如 AI 翻译）可稍后在设置中填写。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 翻譯在中國大陸通常無法使用，建議選擇騰訊、火山或 Bing 翻譯。需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 翻譯在中國大陸通常無法使用，建議選擇騰訊、火山或 Bing 翻譯。需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 翻譯在中國大陸通常無法使用，建議選擇騰訊、火山或 Bing 翻譯。需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 翻譯在中國大陸通常無法使用，建議選擇騰訊、火山或 Bing 翻譯。需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
+          }
+        }
+      }
+    },
     "Google 翻譯（免金鑰）": {
       "extractionState": "manual",
       "localizations": {
@@ -3858,6 +4001,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "WebDAV 帳號或應用密碼錯誤"
+          }
+        }
+      }
+    },
+    "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قارئ AO3 آخر: تصفح وابحث واحفظ AO3 يعمل دون اتصال بالإنترنت، واقرأه مع النص الأصلي والترجمة جنبًا إلى جنب."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch ein AO3-Reader: Durchsuchen, suchen und speichern Sie AO3-Werke offline und lesen Sie sie mit dem Original und der Übersetzung nebeneinander."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yet another AO3 reader: browse, search and save AO3 works offline, and read them with the original and translation side by side."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otro lector más de AO3: explore, busque y guarde. AO3 funciona sin conexión y lee el original y la traducción uno al lado del otro."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encore un autre lecteur AO3 : parcourez, recherchez et enregistrez les œuvres d'AO3 hors ligne, et lisez-les avec l'original et la traduction côte à côte."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "एक और AO3 रीडर: AO3 कार्यों को ऑफ़लाइन ब्राउज़ करें, खोजें और सहेजें, और उन्हें मूल और अनुवाद के साथ-साथ पढ़ें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pembaca AO3 lainnya: menelusuri, mencari, dan menyimpan AO3 berfungsi secara offline, dan membacanya dengan versi asli dan terjemahannya secara berdampingan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ancora un altro lettore AO3: sfoglia, cerca e salva AO3 funziona offline e leggili con l'originale e la traduzione fianco a fianco."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "さらにもう 1 つの AO3 リーダー: AO3 はオフラインでも閲覧、検索、保存でき、原文と翻訳を並べて読みます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "또 다른 AO3 리더: AO3의 작품을 오프라인에서 찾아보고 검색하고 저장하고 원본과 번역본을 나란히 읽어보세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog een andere AO3-lezer: blader, zoek en bewaar AO3-werken offline, en lees ze met het origineel en de vertaling naast elkaar."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeszcze inny czytnik AO3: przeglądaj, wyszukuj i zapisuj. AO3 działa w trybie offline i czytaj je obok oryginału i tłumaczenia."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mais um leitor do AO3: navegue, pesquise e salve obras do AO3 offline e leia-as com o original e a tradução lado a lado."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Еще одна программа для чтения AO3: просматривайте, ищите и сохраняйте AO3, работающие в автономном режиме, и читайте их рядом с оригиналом и переводом."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โปรแกรมอ่าน AO3 อีกเครื่องหนึ่ง: เรียกดู ค้นหา และบันทึก AO3 ทำงานแบบออฟไลน์ และอ่านพร้อมกับต้นฉบับและการแปลเคียงข้างกัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başka bir AO3 okuyucusu: AO3'e göz atın, arayın ve kaydedin, çevrimdışı çalışır ve bunları orijinal ve çeviri yan yana okuyun."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ще один читач AO3: переглядайте, шукайте та зберігайте AO3 працює в автономному режимі та читайте їх разом з оригіналом і перекладом поруч."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một trình đọc AO3 khác: duyệt, tìm kiếm và lưu AO3 hoạt động ngoại tuyến và đọc chúng với bản gốc và bản dịch cạnh nhau."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yet another AO3 reader：浏览、搜索与离线保存 AO3 作品，并以原文与译文对照阅读。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
           }
         }
       }
@@ -4577,6 +4863,149 @@
         }
       }
     },
+    "上一步": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العودة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zurück"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atrás"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retour"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वापस"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kembali"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indietro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戻る"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "뒤로"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terug"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powrót"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voltar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Назад"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กลับ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geri"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Назад"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quay lại"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上一步"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上一步"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上一步"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上一步"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上一步"
+          }
+        }
+      }
+    },
     "上一章": {
       "extractionState": "manual",
       "localizations": {
@@ -5002,6 +5431,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "上邊距"
+          }
+        }
+      }
+    },
+    "下一步": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التالي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als nächstes"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siguiente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suivant"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अगला"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selanjutnya"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次へ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volgende"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Następny"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Далее"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถัดไป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonraki"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Далі"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiếp theo"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一步"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一步"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一步"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一步"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一步"
           }
         }
       }
@@ -8148,6 +8720,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "介面語言"
+          }
+        }
+      }
+    },
+    "介面語言、外觀與字體可在「設定」調整": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قم بتغيير لغة الواجهة ومظهرها وخطوطها في الإعدادات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ändern Sie die Sprache, das Erscheinungsbild und die Schriftarten der Benutzeroberfläche in den Einstellungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change the interface language, appearance and fonts in Settings"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambie el idioma, la apariencia y las fuentes de la interfaz en Configuración"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifiez la langue, l'apparence et les polices de l'interface dans Paramètres"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सेटिंग्स में इंटरफ़ेस भाषा, स्वरूप और फ़ॉन्ट बदलें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ubah bahasa antarmuka, tampilan, dan font di Pengaturan"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifica la lingua, l'aspetto e i caratteri dell'interfaccia nelle Impostazioni"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定でインターフェイスの言語、外観、フォントを変更する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정에서 인터페이스 언어, 모양, 글꼴을 변경하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wijzig de interfacetaal, het uiterlijk en de lettertypen in Instellingen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmień język interfejsu, wygląd i czcionki w Ustawieniach"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altere o idioma, aparência e fontes da interface em Configurações"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Измените язык интерфейса, внешний вид и шрифты в Настройках."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เปลี่ยนภาษาอินเทอร์เฟซ ลักษณะ และแบบอักษรในการตั้งค่า"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar'da arayüz dilini, görünümünü ve yazı tiplerini değiştirin"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Змініть мову інтерфейсу, вигляд і шрифти в налаштуваннях"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thay đổi ngôn ngữ giao diện, hình thức và phông chữ trong Cài đặt"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "界面语言、外观与字体可在「设置」调整"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "介面語言、外觀與字型可在「設定」調整"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "介面語言、外觀與字體可在「設定」調整"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "介面語言、外觀與字體可在「設定」調整"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "介面語言、外觀與字型可在「設定」調整"
+          }
+        }
+      }
+    },
+    "以下是幾個小提示。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بعض النصائح السريعة:"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein paar schnelle Tipps:"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A few quick tips:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Algunos consejos rápidos:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quelques conseils rapides :"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कुछ त्वरित युक्तियाँ:"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beberapa tip cepat:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alcuni suggerimenti rapidi:"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "いくつかの簡単なヒント:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "몇 가지 빠른 팁:"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een paar snelle tips:"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kilka szybkich wskazówek:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Algumas dicas rápidas:"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Несколько быстрых советов:"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เคล็ดลับสั้นๆ:"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birkaç hızlı ipucu:"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кілька швидких порад:"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một số mẹo nhanh:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下是几个小提示。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下是幾個小提示。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下是幾個小提示。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下是幾個小提示。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下是幾個小提示。"
           }
         }
       }
@@ -17590,6 +18448,149 @@
         }
       }
     },
+    "加入鏡像源": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف مرآة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fügen Sie einen Spiegel hinzu"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add a Mirror"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agregar un espejo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un miroir"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "एक दर्पण जोड़ें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambahkan Cermin"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi uno specchio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ミラーを追加する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "거울 추가"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg een spiegel toe"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj lustro"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar um espelho"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить зеркало"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เพิ่มกระจก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayna Ekle"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Додайте дзеркало"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm một tấm gương"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入镜像源"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入鏡像源"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入鏡像源"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入鏡像源"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入鏡像源"
+          }
+        }
+      }
+    },
     "加暗": {
       "extractionState": "manual",
       "localizations": {
@@ -20593,6 +21594,149 @@
         }
       }
     },
+    "可以正常連線。若之後無法連線，可在「設定 › 內容來源」加入鏡像源。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متصل. إذا توقف عن العمل لاحقًا، أضف مرآة في الإعدادات › مصدر المحتوى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbunden. Wenn es später nicht mehr funktioniert, fügen Sie unter „Einstellungen“ > „Inhaltsquelle“ einen Spiegel hinzu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connected. If it stops working later, add a mirror in Settings › Content Source."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conectado. Si deja de funcionar más tarde, agregue un espejo en Configuración>Fuente de contenido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecté. S'il cesse de fonctionner plus tard, ajoutez un miroir dans Paramètres > Source de contenu."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जुड़ा हुआ. यदि यह बाद में काम करना बंद कर देता है, तो सेटिंग्स › सामग्री स्रोत में एक दर्पण जोड़ें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terhubung. Jika nanti berhenti berfungsi, tambahkan cermin di Pengaturan › Sumber Konten."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connesso. Se smette di funzionare in seguito, aggiungi un mirror in Impostazioni › Origine contenuto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続されました。後で動作しなくなった場合は、[設定] › [コンテンツ ソース] でミラーを追加します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결되었습니다. 나중에 작동이 중지되면 설정 > 콘텐츠 소스에 미러를 추가하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbonden. Als het later niet meer werkt, voeg dan een spiegel toe in Instellingen › Inhoudsbron."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Połączono. Jeśli później przestanie działać, dodaj kopię lustrzaną w Ustawieniach > Źródło treści."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conectado. Se parar de funcionar mais tarde, adicione um espelho em Configurações › Fonte de conteúdo."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подключено. Если позже оно перестанет работать, добавьте зеркало в «Настройки» > «Источник контента»."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เชื่อมต่อแล้ว หากหยุดทำงานในภายหลัง ให้เพิ่มมิเรอร์ในการตั้งค่า > แหล่งที่มาของเนื้อหา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlı. Daha sonra çalışmayı durdurursa Ayarlar › İçerik Kaynağı'na bir ayna ekleyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Підключено. Якщо пізніше воно перестане працювати, додайте дзеркало в меню Налаштування › Джерело вмісту."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã kết nối. Nếu nó ngừng hoạt động sau đó, hãy thêm một bản sao trong Cài đặt > Nguồn nội dung."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以正常连接。若之后无法连接，可在「设置 › 内容来源」加入镜像源。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以正常連線。若之後無法連線，可在「設定 › 內容來源」加入鏡像源。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以正常連線。若之後無法連線，可在「設定 › 內容來源」加入鏡像源。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以正常連線。若之後無法連線，可在「設定 › 內容來源」加入鏡像源。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以正常連線。若之後無法連線，可在「設定 › 內容來源」加入鏡像源。"
+          }
+        }
+      }
+    },
     "可從「檔案」或雲端硬碟匯入字體檔，僅在本 App 內使用；向左滑可刪除。": {
       "extractionState": "manual",
       "localizations": {
@@ -23163,6 +24307,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。"
+          }
+        }
+      }
+    },
+    "在「帳號」登入 AO3，或選擇「本機保存」記錄書籤與閱讀紀錄": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قم بتسجيل الدخول إلى AO3 في الحساب، أو اختر \"على هذا الجهاز\" للاحتفاظ بالإشارات المرجعية والسجل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melden Sie sich unter „Konto“ bei AO3 an oder wählen Sie „Auf diesem Gerät“, um Lesezeichen und Verlauf zu speichern"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in to AO3 in Account, or choose On This Device to keep bookmarks and history"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicie sesión en AO3 en Cuenta o elija En este dispositivo para mantener los marcadores y el historial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connectez-vous à AO3 dans Compte ou choisissez Sur cet appareil pour conserver les favoris et l'historique."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खाते में AO3 में लॉग इन करें, या बुकमार्क और इतिहास रखने के लिए इस डिवाइस पर चुनें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masuk ke AO3 di Akun, atau pilih Di Perangkat Ini untuk menyimpan penanda dan riwayat"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi ad AO3 in Account o scegli Su questo dispositivo per conservare segnalibri e cronologia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アカウントで AO3 にログインするか、[このデバイス上] を選択してブックマークと履歴を保存します"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계정에서 AO3에 로그인하거나 이 장치에서를 선택하여 북마크와 기록을 유지하세요"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in op AO3 in Account, of kies Op dit apparaat om bladwijzers en geschiedenis bij te houden"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaloguj się do AO3 na koncie lub wybierz opcję Na tym urządzeniu, aby zachować zakładki i historię"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faça login no AO3 em Conta ou escolha Neste dispositivo para manter favoritos e histórico"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войдите в AO3 в учетной записи или выберите «На этом устройстве», чтобы сохранить закладки и историю."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เข้าสู่ระบบ AO3 ในบัญชี หรือเลือกบนอุปกรณ์นี้เพื่อเก็บบุ๊กมาร์กและประวัติไว้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesap bölümünden AO3'te oturum açın veya yer işaretlerini ve geçmişi saklamak için Bu Cihazda seçeneğini seçin"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Увійдіть в обліковий запис AO3 або виберіть «На цьому пристрої», щоб зберегти закладки та історію"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đăng nhập vào AO3 trong Tài khoản hoặc chọn Trên thiết bị này để lưu dấu trang và lịch sử"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「账号」登录 AO3，或选择「本机保存」记录书签与阅读记录"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「帳號」登入 AO3，或選擇「本機保存」記錄書籤與閱讀紀錄"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「帳戶」登入 AO3，或選擇「本機保存」記錄書籤與閱讀紀錄"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「帳戶」登入 AO3，或選擇「本機保存」記錄書籤與閱讀紀錄"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「帳號」登入 AO3，或選擇「本機保存」記錄書籤與閱讀紀錄"
+          }
+        }
+      }
+    },
+    "在中國大陸等地區通常無法直接連上 AO3 官網，需要加入「鏡像源」：內容與 AO3 相同、可以直接連線的網站。本 App 不提供鏡像網址，請自行尋找可信的 AO3 鏡像，把網址貼到下方。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "في بعض المناطق، مثل الصين القارية، عادة لا يمكن الوصول إلى موقع AO3 الرسمي مباشرة، لذلك ستحتاج إلى إضافة مرآة: موقع بنفس محتوى AO3 الذي يمكنك الاتصال به. لا يوفر هذا التطبيق عناوين المرآة. ابحث عن مرآة AO3 التي تثق بها وألصق عنوانها أدناه."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In einigen Regionen, beispielsweise auf dem chinesischen Festland, ist die offizielle AO3-Site normalerweise nicht direkt erreichbar. Daher müssen Sie einen Mirror hinzufügen: eine Site mit demselben Inhalt wie AO3, zu der Sie eine Verbindung herstellen können. Diese App stellt keine Spiegeladressen bereit. Suchen Sie einen AO3-Spiegel, dem Sie vertrauen, und fügen Sie die Adresse unten ein."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In some regions, such as mainland China, the official AO3 site usually can't be reached directly, so you'll need to add a mirror: a site with the same content as AO3 that you can connect to. This app doesn't provide mirror addresses. Find an AO3 mirror you trust and paste its address below."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En algunas regiones, como China continental, generalmente no se puede acceder directamente al sitio oficial de AO3, por lo que deberás agregar un espejo: un sitio con el mismo contenido que AO3 al que puedas conectarte. Esta aplicación no proporciona direcciones espejo. Busque un espejo AO3 en el que confíe y pegue su dirección a continuación."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans certaines régions, comme la Chine continentale, le site officiel d'AO3 n'est généralement pas accessible directement, vous devrez donc ajouter un miroir : un site avec le même contenu qu'AO3 auquel vous pouvez vous connecter. Cette application ne fournit pas d'adresses miroir. Trouvez un miroir AO3 en qui vous avez confiance et collez son adresse ci-dessous."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कुछ क्षेत्रों में, जैसे कि मुख्य भूमि चीन में, आधिकारिक AO3 साइट तक आमतौर पर सीधे नहीं पहुंचा जा सकता है, इसलिए आपको एक दर्पण जोड़ने की आवश्यकता होगी: AO3 जैसी समान सामग्री वाली एक साइट जिससे आप जुड़ सकते हैं। यह ऐप मिरर एड्रेस प्रदान नहीं करता है। आप जिस AO3 दर्पण पर भरोसा करते हैं उसे ढूंढें और उसका पता नीचे चिपकाएँ।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di beberapa wilayah, seperti Tiongkok daratan, situs resmi AO3 biasanya tidak dapat dijangkau secara langsung, jadi Anda perlu menambahkan mirror: situs dengan konten yang sama dengan AO3 yang dapat Anda sambungkan. Aplikasi ini tidak memberikan alamat cermin. Temukan mirror AO3 yang Anda percayai dan tempelkan alamatnya di bawah."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In alcune regioni, come la Cina continentale, il sito ufficiale di AO3 solitamente non è raggiungibile direttamente, quindi dovrai aggiungere un mirror: un sito con lo stesso contenuto di AO3 a cui puoi connetterti. Questa app non fornisce indirizzi mirror. Trova un mirror AO3 di cui ti fidi e incolla il suo indirizzo qui sotto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中国本土などの一部の地域では、通常、AO3 の公式サイトに直接アクセスできないため、ミラー (接続できる AO3 と同じコンテンツを含むサイト) を追加する必要があります。このアプリはミラーアドレスを提供しません。信頼できる AO3 ミラーを見つけて、そのアドレスを下に貼り付けます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "중국 본토와 같은 일부 지역에서는 일반적으로 공식 AO3 사이트에 직접 연결할 수 없으므로 연결할 수 있는 AO3와 동일한 콘텐츠가 있는 사이트인 미러를 추가해야 합니다. 이 앱은 미러 주소를 제공하지 않습니다. 신뢰할 수 있는 AO3 미러를 찾아 아래 주소를 붙여넣으세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In sommige regio's, zoals het vasteland van China, is de officiële AO3-site meestal niet rechtstreeks bereikbaar, dus moet je een mirror toevoegen: een site met dezelfde inhoud als AO3 waarmee je verbinding kunt maken. Deze app biedt geen spiegeladressen. Zoek een AO3-mirror die u vertrouwt en plak het adres hieronder."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W niektórych regionach, np. w Chinach kontynentalnych, oficjalna strona AO3 zwykle nie jest dostępna bezpośrednio, więc będziesz musiał dodać serwer lustrzany: witrynę o tej samej zawartości co AO3, z którą możesz się połączyć. Ta aplikacja nie zapewnia adresów lustrzanych. Znajdź zaufany serwer lustrzany AO3 i wklej jego adres poniżej."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em algumas regiões, como a China continental, o site oficial do AO3 geralmente não pode ser acessado diretamente, então você precisará adicionar um espelho: um site com o mesmo conteúdo do AO3 ao qual você possa se conectar. Este aplicativo não fornece endereços espelho. Encontre um espelho AO3 em que você confia e cole seu endereço abaixo."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В некоторых регионах, например в материковом Китае, официальный сайт AO3 обычно недоступен напрямую, поэтому вам необходимо добавить зеркало: сайт с тем же содержимым, что и AO3, к которому вы можете подключиться. Это приложение не предоставляет зеркальные адреса. Найдите зеркало AO3, которому вы доверяете, и вставьте его адрес ниже."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ในบางภูมิภาค เช่น จีนแผ่นดินใหญ่ โดยปกติจะไม่สามารถเข้าถึงไซต์อย่างเป็นทางการของ AO3 ได้โดยตรง ดังนั้นคุณจะต้องเพิ่มมิเรอร์: ไซต์ที่มีเนื้อหาเดียวกันกับ AO3 ที่คุณสามารถเชื่อมต่อได้ แอพนี้ไม่มีที่อยู่มิเรอร์ ค้นหามิเรอร์ AO3 ที่คุณเชื่อถือและวางที่อยู่ด้านล่าง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çin anakarası gibi bazı bölgelerde, resmi AO3 sitesine genellikle doğrudan erişilemez, bu nedenle bir ayna eklemeniz gerekir: bağlanabileceğiniz, AO3 ile aynı içeriğe sahip bir site. Bu uygulama ayna adresleri sağlamaz. Güvendiğiniz bir AO3 aynasını bulun ve adresini aşağıya yapıştırın."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У деяких регіонах, наприклад у Китаї, офіційний сайт AO3 зазвичай недоступний напряму, тому вам потрібно буде додати дзеркало: сайт із таким же вмістом, як і AO3, до якого можна підключитися. Ця програма не надає дзеркальних адрес. Знайдіть дзеркало AO3, якому ви довіряєте, і вставте його адресу нижче."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ở một số khu vực, chẳng hạn như Trung Quốc đại lục, thường không thể truy cập trực tiếp vào trang AO3 chính thức, vì vậy bạn sẽ cần thêm một bản sao: một trang có cùng nội dung với AO3 mà bạn có thể kết nối. Ứng dụng này không cung cấp địa chỉ nhân bản. Tìm một chiếc gương AO3 mà bạn tin tưởng và dán địa chỉ của nó vào bên dưới."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在中国大陆等地区通常无法直接连上 AO3 官网，需要加入「镜像源」：内容与 AO3 相同、可以直接连接的网站。本 App 不提供镜像网址，请自行寻找可信的 AO3 镜像，把网址贴到下方。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在中國大陸等地區通常無法直接連上 AO3 官網，需要加入「鏡像源」：內容與 AO3 相同、可以直接連線的網站。本 App 不提供鏡像網址，請自行尋找可信的 AO3 鏡像，把網址貼到下方。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在中國大陸等地區通常無法直接連上 AO3 官網，需要加入「鏡像源」：內容與 AO3 相同、可以直接連線的網站。本 App 不提供鏡像網址，請自行尋找可信的 AO3 鏡像，把網址貼到下方。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在中國大陸等地區通常無法直接連上 AO3 官網，需要加入「鏡像源」：內容與 AO3 相同、可以直接連線的網站。本 App 不提供鏡像網址，請自行尋找可信的 AO3 鏡像，把網址貼到下方。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在中國大陸等地區通常無法直接連上 AO3 官網，需要加入「鏡像源」：內容與 AO3 相同、可以直接連線的網站。本 App 不提供鏡像網址，請自行尋找可信的 AO3 鏡像，把網址貼到下方。"
           }
         }
       }
@@ -27882,6 +29312,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "已刪除"
+          }
+        }
+      }
+    },
+    "已加入並切換到這個鏡像": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت إضافة المرآة وتحديدها"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiegel hinzugefügt und ausgewählt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mirror added and selected"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espejo agregado y seleccionado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Miroir ajouté et sélectionné"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "दर्पण जोड़ा गया और चयनित किया गया"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cermin ditambahkan dan dipilih"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Specchio aggiunto e selezionato"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ミラーを追加して選択しました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미러 추가 및 선택"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiegel toegevoegd en geselecteerd"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodano i wybrano kopię lustrzaną"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espelho adicionado e selecionado"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зеркало добавлено и выбрано"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เพิ่มและเลือกกระจกแล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayna eklendi ve seçildi"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дзеркало додано та вибрано"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã thêm và chọn gương"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入并切换到这个镜像"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像"
+          }
+        }
+      }
+    },
+    "已加入並切換到這個鏡像。它需要人機驗證，開始瀏覽時會彈出驗證頁，照畫面完成即可。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت إضافة المرآة وتحديدها. يتطلب فحصًا بشريًا؛ ستظهر صفحة التحقق عند بدء التصفح. ما عليك سوى اتباع الخطوات التي تظهر على الشاشة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiegel hinzugefügt und ausgewählt. Es erfordert eine menschliche Kontrolle; Wenn Sie mit dem Surfen beginnen, wird eine Bestätigungsseite angezeigt. Befolgen Sie einfach die Schritte auf dem Bildschirm."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mirror added and selected. It requires a human check; a verification page will appear when you start browsing. Just follow the on-screen steps."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espejo agregado y seleccionado. Requiere un control humano; Aparecerá una página de verificación cuando comiences a navegar. Simplemente siga los pasos que aparecen en pantalla."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Miroir ajouté et sélectionné. Cela nécessite un contrôle humain ; une page de vérification apparaîtra lorsque vous commencerez à naviguer. Suivez simplement les étapes à l’écran."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "दर्पण जोड़ा गया और चयनित किया गया. इसके लिए मानवीय जाँच की आवश्यकता है; जब आप ब्राउज़ करना प्रारंभ करेंगे तो एक सत्यापन पृष्ठ दिखाई देगा. बस ऑन-स्क्रीन चरणों का पालन करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cermin ditambahkan dan dipilih. Hal ini membutuhkan pemeriksaan manusia; halaman verifikasi akan muncul saat Anda mulai menjelajah. Cukup ikuti langkah-langkah di layar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Specchio aggiunto e selezionato. Richiede un controllo umano; quando inizi a navigare verrà visualizzata una pagina di verifica. Basta seguire i passaggi sullo schermo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ミラーが追加され、選択されました。人間によるチェックが必要です。閲覧を開始すると確認ページが表示されます。画面上の手順に従ってください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "미러가 추가되고 선택되었습니다. 사람의 확인이 필요합니다. 탐색을 시작하면 확인 페이지가 나타납니다. 화면에 표시되는 단계를 따르세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiegel toegevoegd en geselecteerd. Het vereist een menselijke controle; er verschijnt een verificatiepagina wanneer u begint met browsen. Volg gewoon de stappen op het scherm."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodano i wybrano kopię lustrzaną. Wymaga kontroli człowieka; strona weryfikacyjna pojawi się po rozpoczęciu przeglądania. Po prostu postępuj zgodnie z instrukcjami wyświetlanymi na ekranie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espelho adicionado e selecionado. Requer uma verificação humana; uma página de verificação aparecerá quando você começar a navegar. Basta seguir as etapas na tela."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зеркало добавлено и выбрано. Это требует человеческой проверки; страница подтверждения появится, когда вы начнете просмотр. Просто следуйте инструкциям на экране."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เพิ่มและเลือกกระจกแล้ว ต้องมีการตรวจสอบโดยมนุษย์ หน้าการยืนยันจะปรากฏขึ้นเมื่อคุณเริ่มเรียกดู เพียงทำตามขั้นตอนบนหน้าจอ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayna eklendi ve seçildi. İnsan kontrolü gerektirir; Göz atmaya başladığınızda bir doğrulama sayfası görünecektir. Ekrandaki adımları takip etmeniz yeterli."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дзеркало додано та вибрано. Це вимагає перевірки людиною; сторінка підтвердження з'явиться, коли ви почнете перегляд. Просто дотримуйтеся вказівок на екрані."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã thêm và chọn gương. Nó đòi hỏi sự kiểm tra của con người; một trang xác minh sẽ xuất hiện khi bạn bắt đầu duyệt. Chỉ cần làm theo các bước trên màn hình."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入并切换到这个镜像。它需要人机验证，开始浏览时会弹出验证页，照画面完成即可。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像。它需要人機驗證，開始瀏覽時會彈出驗證頁，照畫面完成即可。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像。它需要人機驗證，開始瀏覽時會彈出驗證頁，照畫面完成即可。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像。它需要人機驗證，開始瀏覽時會彈出驗證頁，照畫面完成即可。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入並切換到這個鏡像。它需要人機驗證，開始瀏覽時會彈出驗證頁，照畫面完成即可。"
           }
         }
       }
@@ -33316,6 +35032,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "把 AO3 帳號的書籤、稍後閱讀、閱讀紀錄與訂閱複製到本機，只新增本機沒有的項目，不會修改 AO3 帳號。"
+          }
+        }
+      }
+    },
+    "把作品加入「離線」後會自動下載並翻譯，沒有網路也能閱讀": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتم تنزيل الأعمال التي تضيفها إلى وضع عدم الاتصال وترجمتها تلقائيًا، حتى تتمكن من القراءة بدون اتصال"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werke, die Sie zu Offline hinzufügen, werden automatisch heruntergeladen und übersetzt, sodass Sie sie ohne Verbindung lesen können"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works you add to Offline are downloaded and translated automatically, so you can read without a connection"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los trabajos que agregas sin conexión se descargan y traducen automáticamente, para que puedas leerlos sin conexión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les œuvres que vous ajoutez hors ligne sont téléchargées et traduites automatiquement afin que vous puissiez les lire sans connexion."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपके द्वारा ऑफ़लाइन में जोड़े गए कार्य स्वचालित रूप से डाउनलोड और अनुवादित हो जाते हैं, ताकि आप बिना कनेक्शन के पढ़ सकें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karya yang Anda tambahkan ke Offline diunduh dan diterjemahkan secara otomatis, sehingga Anda dapat membacanya tanpa koneksi internet"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le opere che aggiungi a Offline vengono scaricate e tradotte automaticamente, così puoi leggerle senza connessione"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オフラインに追加した作品は自動的にダウンロードされて翻訳されるため、接続なしでも読むことができます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오프라인에 추가한 작품은 자동으로 다운로드 및 번역되어 연결 없이도 읽을 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werken die je aan Offline toevoegt, worden automatisch gedownload en vertaald, zodat je ze zonder verbinding kunt lezen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prace dodawane do trybu offline są pobierane i tłumaczone automatycznie, dzięki czemu można je czytać bez połączenia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As obras que você adiciona ao Off-line são baixadas e traduzidas automaticamente, para que você possa ler sem conexão"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Работы, которые вы добавляете в Оффлайн, загружаются и переводятся автоматически, поэтому вы можете читать их без подключения."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ผลงานที่คุณเพิ่มลงในออฟไลน์จะถูกดาวน์โหลดและแปลโดยอัตโนมัติ คุณจึงสามารถอ่านได้โดยไม่ต้องเชื่อมต่อ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çevrimdışına eklediğiniz çalışmalar otomatik olarak indirilip çevrilir, böylece bağlantı olmadan okuyabilirsiniz"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Твори, які ви додаєте в автономний режим, завантажуються та перекладаються автоматично, тому ви можете читати без з’єднання"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Các tác phẩm bạn thêm vào Ngoại tuyến sẽ được tải xuống và dịch tự động, do đó bạn có thể đọc mà không cần kết nối"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把作品加入「离线」后会自动下载并翻译，没有网络也能阅读"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把作品加入「離線」後會自動下載並翻譯，沒有網路也能閱讀"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把作品加入「離線」後會自動下載並翻譯，沒有網絡也能閱讀"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把作品加入「離線」後會自動下載並翻譯，沒有網絡也能閱讀"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把作品加入「離線」後會自動下載並翻譯，沒有網路也能閱讀"
           }
         }
       }
@@ -41900,6 +43759,149 @@
         }
       }
     },
+    "本 App 為非官方的第三方客戶端，與 AO3 及 OTW 無關。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا تطبيق غير رسمي تابع لجهة خارجية ولا ينتمي إلى AO3 أو OTW."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dies ist eine inoffizielle Drittanbieter-App und steht in keiner Verbindung zu AO3 oder der OTW."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is an unofficial third-party app and is not affiliated with AO3 or the OTW."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta es una aplicación de terceros no oficial y no está afiliada a AO3 ni a la OTW."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il s'agit d'une application tierce non officielle et n'est pas affiliée à AO3 ou à l'OTW."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "यह एक अनौपचारिक तृतीय-पक्ष ऐप है और AO3 या OTW से संबद्ध नहीं है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ini adalah aplikasi pihak ketiga tidak resmi dan tidak berafiliasi dengan AO3 atau OTW."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa è un'app di terze parti non ufficiale e non è affiliata ad AO3 o OTW."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "これは非公式のサードパーティ アプリであり、AO3 または OTW とは提携していません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 앱은 비공식 타사 앱이며 AO3 또는 OTW와 관련이 없습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit is een onofficiële app van derden en is niet aangesloten bij AO3 of de OTW."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jest to nieoficjalna aplikacja strony trzeciej i nie jest powiązana z AO3 ani OTW."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este é um aplicativo não oficial de terceiros e não é afiliado ao AO3 ou à OTW."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Это неофициальное стороннее приложение, не связанное с AO3 или OTW."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "นี่เป็นแอปของบุคคลที่สามที่ไม่เป็นทางการและไม่มีส่วนเกี่ยวข้องกับ AO3 หรือ OTW"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu resmi olmayan bir üçüncü taraf uygulamasıdır ve AO3 veya OTW ile bağlantısı yoktur."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Це неофіційна стороння програма, яка не пов’язана з AO3 або OTW."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đây là ứng dụng bên thứ ba không chính thức và không liên kết với AO3 hoặc OTW."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本 App 为非官方的第三方客户端，与 AO3 及 OTW 无关。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本 App 為非官方的第三方客戶端，與 AO3 及 OTW 無關。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本 App 為非官方的第三方客戶端，與 AO3 及 OTW 無關。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本 App 為非官方的第三方客戶端，與 AO3 及 OTW 無關。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本 App 為非官方的第三方客戶端，與 AO3 及 OTW 無關。"
+          }
+        }
+      }
+    },
     "本月": {
       "extractionState": "manual",
       "localizations": {
@@ -45189,6 +47191,149 @@
         }
       }
     },
+    "歡迎使用 YAAO3R": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مرحبا بكم في YAAO3R"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Willkommen bei YAAO3R"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to YAAO3R"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bienvenido a YAAO3R"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bienvenue sur YAAO3R"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "YAAO3R में आपका स्वागत है"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selamat datang di YAAO3R"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benvenuti su YAAO3R"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "YAAO3Rへようこそ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "YAAO3R에 오신 것을 환영합니다"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welkom bij YAAO3R"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Witamy w YAAO3R"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bem-vindo ao YAAO3R"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добро пожаловать в ЯАО3Р"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ยินดีต้อนรับสู่ YAAO3R"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "YAAO3R'ye hoş geldiniz"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ласкаво просимо до YAAO3R"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chào mừng đến với YAAO3R"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "欢迎使用 YAAO3R"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "歡迎使用 YAAO3R"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "歡迎使用 YAAO3R"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "歡迎使用 YAAO3R"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "歡迎使用 YAAO3R"
+          }
+        }
+      }
+    },
     "正在下載原文": {
       "extractionState": "manual",
       "localizations": {
@@ -46901,6 +49046,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "每次最多選取 %lld 部"
+          }
+        }
+      }
+    },
+    "沉浸式翻譯：譯文顯示在每段原文下方": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترجمة غامرة: تظهر كل ترجمة أسفل فقرتها الأصلية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Immersive Übersetzung: Jede Übersetzung erscheint unter ihrem Originalabsatz"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Immersive translation: each translation appears below its original paragraph"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traducción inmersiva: cada traducción aparece debajo de su párrafo original"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduction immersive : chaque traduction apparaît sous son paragraphe d'origine"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "भावपूर्ण अनुवाद: प्रत्येक अनुवाद अपने मूल अनुच्छेद के नीचे दिखाई देता है"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terjemahan imersif: setiap terjemahan muncul di bawah paragraf aslinya"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traduzione immersiva: ogni traduzione appare sotto il paragrafo originale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没入型翻訳: 各翻訳は元の段落の下に表示されます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "몰입형 번역: 각 번역은 원래 단락 아래에 표시됩니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meeslepende vertaling: elke vertaling verschijnt onder de oorspronkelijke paragraaf"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tłumaczenie wciągające: każde tłumaczenie pojawia się pod oryginalnym akapitem"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tradução imersiva: cada tradução aparece abaixo do parágrafo original"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Иммерсивный перевод: каждый перевод отображается под исходным абзацем."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การแปลที่สมจริง: การแปลแต่ละครั้งจะปรากฏใต้ย่อหน้าต้นฉบับ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sürükleyici çeviri: her çeviri orijinal paragrafının altında görünür"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Імерсивний переклад: кожен переклад відображається під оригінальним абзацом"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bản dịch nhập vai: mỗi bản dịch xuất hiện bên dưới đoạn văn gốc"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沉浸式翻译：译文显示在每段原文下方"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沉浸式翻譯：譯文顯示在每段原文下方"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沉浸式翻譯：譯文顯示在每段原文下方"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沉浸式翻譯：譯文顯示在每段原文下方"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沉浸式翻譯：譯文顯示在每段原文下方"
           }
         }
       }
@@ -51624,6 +53912,149 @@
         }
       }
     },
+    "測試並使用這個鏡像": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختبار واستخدام هذه المرآة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testen und verwenden Sie diesen Spiegel"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test and Use This Mirror"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pruebe y use este espejo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testez et utilisez ce miroir"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "इस दर्पण का परीक्षण करें और उपयोग करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uji dan Gunakan Cermin Ini"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prova e usa questo specchio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このミラーをテストして使用する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 거울을 테스트하고 사용해 보세요"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test en gebruik deze spiegel"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przetestuj i użyj tego lustra"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teste e use este espelho"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверьте и используйте это зеркало"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทดสอบและใช้กระจกนี้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu Aynayı Test Edin ve Kullanın"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевірте та використовуйте це дзеркало"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiểm tra và sử dụng chiếc gương này"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试并使用这个镜像"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並使用這個鏡像"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並使用這個鏡像"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並使用這個鏡像"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測試並使用這個鏡像"
+          }
+        }
+      }
+    },
     "測試並同步": {
       "extractionState": "manual",
       "localizations": {
@@ -52053,6 +54484,149 @@
         }
       }
     },
+    "準備好了": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت جاهز تمامًا"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie sind bereit"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're All Set"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estás listo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous êtes prêt"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आप पूरी तरह तैयार हैं"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda sudah siap"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sei tutto pronto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "準備完了です"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 준비가 완료되었습니다"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je bent helemaal klaar"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszystko gotowe"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você está tudo pronto"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все готово"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คุณพร้อมแล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artık Hazırsınız"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все готово"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bạn đã sẵn sàng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "准备好了"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "準備好了"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "準備好了"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "準備好了"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "準備好了"
+          }
+        }
+      }
+    },
     "滾動": {
       "extractionState": "manual",
       "localizations": {
@@ -52478,6 +55052,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "瀏覽"
+          }
+        }
+      }
+    },
+    "瀏覽最新作品，搜尋作品、標籤、作者與合集": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصفح أحدث الأعمال وابحث عن الأعمال والعلامات والمؤلفين والمجموعات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durchsuchen Sie die neuesten Werke und suchen Sie nach Werken, Tags, Autoren und Sammlungen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Browse the latest works and search works, tags, authors and collections"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explore las últimas obras y busque obras, etiquetas, autores y colecciones."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parcourez les dernières œuvres et recherchez des œuvres, des tags, des auteurs et des collections"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "नवीनतम कार्य ब्राउज़ करें और कार्य, टैग, लेखक और संग्रह खोजें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jelajahi karya terbaru dan cari karya, tag, penulis, dan koleksi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sfoglia gli ultimi lavori e cerca opere, tag, autori e raccolte"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最新の作品を閲覧し、作品、タグ、作者、コレクションを検索します"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최신 작품을 찾아보고 작품, 태그, 작가, 컬렉션을 검색하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blader door de nieuwste werken en zoek naar werken, tags, auteurs en collecties"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przeglądaj najnowsze prace i wyszukuj prace, tagi, autorów i kolekcje"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navegue pelas obras mais recentes e pesquise obras, tags, autores e coleções"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Просматривайте последние работы и ищите работы, теги, авторов и коллекции."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เรียกดูผลงานล่าสุดและค้นหาผลงาน แท็ก ผู้แต่ง และคอลเลกชัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En son çalışmalara göz atın ve çalışmaları, etiketleri, yazarları ve koleksiyonları arayın"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переглядайте останні роботи та шукайте роботи, теги, авторів і колекцій"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duyệt các tác phẩm mới nhất và tìm kiếm tác phẩm, thẻ, tác giả và bộ sưu tập"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "浏览最新作品，搜索作品、标签、作者与合集"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽最新作品，搜尋作品、標籤、作者與合集"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽最新作品，搜尋作品、標籤、作者與合集"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽最新作品，搜尋作品、標籤、作者與合集"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瀏覽最新作品，搜尋作品、標籤、作者與合集"
           }
         }
       }
@@ -54484,6 +57201,292 @@
         }
       }
     },
+    "無法連上這個來源。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يمكن الوصول إلى هذا المصدر."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Quelle konnte nicht erreicht werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't reach this source."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo acceder a esta fuente."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d'atteindre cette source."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "इस स्रोत तक नहीं पहुंच सका."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak dapat menjangkau sumber ini."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile raggiungere questa fonte."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このソースに到達できませんでした。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 소스에 연결할 수 없습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kan deze bron niet bereiken."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się dotrzeć do tego źródła."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível acessar esta fonte."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось связаться с этим источником."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่สามารถเข้าถึงแหล่งที่มานี้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu kaynağa ulaşılamadı."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не вдалося отримати доступ до цього джерела."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể truy cập nguồn này."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法连上这个来源。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個來源。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個來源。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個來源。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個來源。"
+          }
+        }
+      }
+    },
+    "無法連上這個網址": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر الوصول إلى هذا العنوان"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Adresse konnte nicht erreicht werden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't reach this address"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo llegar a esta dirección"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d'atteindre cette adresse"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "इस पते पर नहीं पहुंचा जा सका"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak dapat menghubungi alamat ini"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile raggiungere questo indirizzo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このアドレスに到達できませんでした"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 주소에 접속할 수 없습니다"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kan dit adres niet bereiken"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się dotrzeć do tego adresu"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível acessar este endereço"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось связаться с этим адресом"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่สามารถเข้าถึงที่อยู่นี้ได้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu adrese ulaşılamadı"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не вдалося зв’язатися з цією адресою"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể truy cập địa chỉ này"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法连上这个网址"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個網址"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個網址"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個網址"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法連上這個網址"
+          }
+        }
+      }
+    },
     "無法開啟作品": {
       "extractionState": "manual",
       "localizations": {
@@ -55628,6 +58631,149 @@
         }
       }
     },
+    "登入 AO3 帳號，或把書籤與紀錄保存在本機": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قم بتسجيل الدخول إلى حساب AO3 الخاص بك، أو احتفظ بالإشارات المرجعية والسجل على هذا الجهاز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melden Sie sich bei Ihrem AO3-Konto an oder behalten Sie Lesezeichen und Verlauf auf diesem Gerät"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in to your AO3 account, or keep bookmarks and history on this device"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicie sesión en su cuenta AO3 o mantenga favoritos e historial en este dispositivo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connectez-vous à votre compte AO3 ou conservez les favoris et l'historique sur cet appareil"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अपने AO3 खाते में लॉग इन करें, या इस डिवाइस पर बुकमार्क और इतिहास रखें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masuk ke akun AO3 Anda, atau simpan bookmark dan riwayat di perangkat ini"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi al tuo account AO3 o mantieni segnalibri e cronologia su questo dispositivo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 アカウントにログインするか、このデバイスにブックマークと履歴を保存してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 계정에 로그인하거나 이 장치에 북마크와 기록을 유지하세요"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in op uw AO3-account of bewaar bladwijzers en geschiedenis op dit apparaat"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaloguj się na swoje konto AO3 lub przechowuj zakładki i historię na tym urządzeniu"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faça login na sua conta do AO3 ou mantenha os favoritos e o histórico neste dispositivo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войдите в свою учетную запись AO3 или сохраните закладки и историю на этом устройстве."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ลงชื่อเข้าใช้บัญชี AO3 ของคุณ หรือเก็บบุ๊กมาร์กและประวัติไว้ในอุปกรณ์นี้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AO3 hesabınızda oturum açın veya yer işaretlerini ve geçmişi bu cihazda tutun"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Увійдіть у свій обліковий запис AO3 або збережіть закладки та історію на цьому пристрої"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đăng nhập vào tài khoản AO3 của bạn hoặc lưu dấu trang và lịch sử trên thiết bị này"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录 AO3 账号，或把书签与记录保存在本机"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入 AO3 帳號，或把書籤與紀錄保存在本機"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入 AO3 帳戶，或把書籤與紀錄保存在本機"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入 AO3 帳戶，或把書籤與紀錄保存在本機"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入 AO3 帳號，或把書籤與紀錄保存在本機"
+          }
+        }
+      }
+    },
     "登入 Archive of Our Own": {
       "extractionState": "manual",
       "localizations": {
@@ -56053,6 +59199,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "登入後找到字型檔（.ttf / .otf）並點擊下載，下載完成會自動匯入。"
+          }
+        }
+      }
+    },
+    "登入時密碼會傳送給鏡像站，請只使用你信任的鏡像。之後可在「設定 › 內容來源」管理或切換。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتم إرسال كلمة المرور الخاصة بك إلى المرآة عند تسجيل الدخول، لذا استخدم فقط المرايا التي تثق بها. يمكنك إدارة المصادر أو تبديلها لاحقًا في الإعدادات › مصدر المحتوى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ihr Passwort wird an den Mirror gesendet, wenn Sie sich anmelden. Verwenden Sie daher nur Mirrors, denen Sie vertrauen. Sie können die Quellen später unter „Einstellungen“ > „Inhaltsquelle“ verwalten oder wechseln."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your password is sent to the mirror when you log in, so only use mirrors you trust. You can manage or switch sources later in Settings › Content Source."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Su contraseña se envía al mirror cuando inicia sesión, así que utilice únicamente mirrors en los que confíe. Puede administrar o cambiar fuentes más adelante en Configuración › Fuente de contenido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre mot de passe est envoyé au miroir lorsque vous vous connectez, utilisez donc uniquement des miroirs en qui vous avez confiance. Vous pouvez gérer ou changer de source ultérieurement dans Paramètres > Source de contenu."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जब आप लॉग इन करते हैं तो आपका पासवर्ड मिरर को भेजा जाता है, इसलिए केवल उन्हीं मिरर का उपयोग करें जिन पर आपको भरोसा हो। आप बाद में सेटिंग्स › सामग्री स्रोत में स्रोतों को प्रबंधित या स्विच कर सकते हैं।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kata sandi Anda dikirim ke mirror saat Anda login, jadi gunakan hanya mirror yang Anda percayai. Anda dapat mengelola atau berpindah sumber nanti di Pengaturan › Sumber Konten."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua password viene inviata al mirror quando accedi, quindi utilizza solo mirror di cui ti fidi. Puoi gestire o cambiare fonte in un secondo momento in Impostazioni › Sorgente contenuto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン時にパスワードがミラーに送信されるため、信頼できるミラーのみを使用してください。後で [設定] › [コンテンツ ソース] でソースを管理または切り替えることができます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 시 비밀번호가 미러로 전송되므로 신뢰할 수 있는 미러만 사용하세요. 나중에 설정 › 콘텐츠 소스에서 소스를 관리하거나 전환할 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uw wachtwoord wordt naar de mirror verzonden wanneer u inlogt, dus gebruik alleen mirrors die u vertrouwt. Je kunt bronnen later beheren of schakelen via Instellingen › Inhoudsbron."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Twoje hasło jest wysyłane do serwera lustrzanego po zalogowaniu, więc korzystaj tylko z serwerów lustrzanych, którym ufasz. Możesz później zarządzać źródłami lub je przełączać, wybierając Ustawienia > Źródło treści."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua senha é enviada para o espelho quando você faz login, portanto, use apenas espelhos em que você confia. Você pode gerenciar ou alternar fontes posteriormente em Configurações › Fonte de conteúdo."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш пароль отправляется на зеркало при входе в систему, поэтому используйте только те зеркала, которым вы доверяете. Вы можете управлять источниками или переключать их позже в «Настройки» > «Источник контента»."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รหัสผ่านของคุณจะถูกส่งไปยังมิเรอร์เมื่อคุณเข้าสู่ระบบ ดังนั้นให้ใช้เฉพาะมิเรอร์ที่คุณเชื่อถือเท่านั้น คุณสามารถจัดการหรือสลับแหล่งที่มาได้ในภายหลังในการตั้งค่า > แหล่งที่มาของเนื้อหา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum açtığınızda şifreniz aynaya gönderilir, bu nedenle yalnızca güvendiğiniz aynaları kullanın. Kaynakları daha sonra Ayarlar › İçerik Kaynağı bölümünden yönetebilir veya değiştirebilirsiniz."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш пароль надсилається на дзеркало під час входу, тому використовуйте лише дзеркала, яким довіряєте. Ви можете керувати або перемикати джерела пізніше в Налаштуваннях › Джерело вмісту."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mật khẩu của bạn sẽ được gửi tới máy nhân bản khi bạn đăng nhập, vì vậy chỉ sử dụng máy nhân bản mà bạn tin tưởng. Bạn có thể quản lý hoặc chuyển đổi nguồn sau trong Cài đặt > Nguồn nội dung."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录时密码会发送给镜像站，请只使用你信任的镜像。之后可在「设置 › 内容来源」管理或切换。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入時密碼會傳送給鏡像站，請只使用你信任的鏡像。之後可在「設定 › 內容來源」管理或切換。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入時密碼會傳送給鏡像站，請只使用你信任的鏡像。之後可在「設定 › 內容來源」管理或切換。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入時密碼會傳送給鏡像站，請只使用你信任的鏡像。之後可在「設定 › 內容來源」管理或切換。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入時密碼會傳送給鏡像站，請只使用你信任的鏡像。之後可在「設定 › 內容來源」管理或切換。"
           }
         }
       }
@@ -57058,6 +60347,149 @@
         }
       }
     },
+    "目前的來源": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المصدر الحالي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuelle Quelle"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current Source"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuente actual"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Source actuelle"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वर्तमान स्रोत"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sumber Saat Ini"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fonte attuale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電流源"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 소스"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Huidige bron"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualne źródło"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fonte Atual"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Текущий источник"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แหล่งที่มาปัจจุบัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mevcut Kaynak"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Джерело струму"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nguồn hiện tại"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前的来源"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前的來源"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前的來源"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前的來源"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前的來源"
+          }
+        }
+      }
+    },
     "目標語言": {
       "extractionState": "manual",
       "localizations": {
@@ -57197,6 +60629,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "目標語言"
+          }
+        }
+      }
+    },
+    "確認能否連上目前的內容來源。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التحقق من إمكانية الوصول إلى مصدر المحتوى الحالي."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Überprüfung, ob die aktuelle Inhaltsquelle erreichbar ist."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checking whether the current content source can be reached."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprobar si se puede acceder a la fuente del contenido actual."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifier si la source de contenu actuelle est accessible."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जाँच कर रहा है कि क्या वर्तमान सामग्री स्रोत तक पहुँचा जा सकता है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memeriksa apakah sumber konten saat ini dapat dijangkau."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifica se è possibile raggiungere la fonte di contenuto corrente."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在のコンテンツ ソースにアクセスできるかどうかを確認しています。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 콘텐츠 소스에 접근할 수 있는지 확인합니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controleren of de huidige contentbron bereikbaar is."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprawdzanie, czy można dotrzeć do bieżącego źródła treści."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificando se a fonte de conteúdo atual pode ser acessada."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверка доступности текущего источника контента."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตรวจสอบว่าสามารถเข้าถึงแหล่งเนื้อหาปัจจุบันได้หรือไม่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçerli içerik kaynağına ulaşılıp ulaşılamadığı kontrol ediliyor."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевірка доступності поточного джерела вмісту."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiểm tra xem nguồn nội dung hiện tại có thể truy cập được hay không."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "确认能否连上目前的内容来源。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認能否連上目前的內容來源。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認能否連上目前的內容來源。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認能否連上目前的內容來源。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "確認能否連上目前的內容來源。"
           }
         }
       }
@@ -62059,6 +65634,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "網站要求人機驗證（Cloudflare），請在彈出的頁面完成驗證後重試"
+          }
+        }
+      }
+    },
+    "網頁已通過驗證，但這個鏡像仍拒絕 App 的請求，可能不支援在 App 中使用。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لقد اجتازت الصفحة عملية التحقق، لكن هذه المرآة لا تزال ترفض طلبات التطبيق وقد لا تعمل في التطبيق. حاول مرة أخرى لاحقًا، أو قم بالتبديل إلى نسخة متطابقة أخرى في الإعدادات › مصدر المحتوى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Seite hat die Überprüfung bestanden, aber dieser Spiegel lehnt weiterhin die Anfragen der App ab und funktioniert möglicherweise nicht in der App. Versuchen Sie es später erneut oder wechseln Sie unter Einstellungen › Inhaltsquelle zu einem anderen Spiegel."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The page passed verification, but this mirror still rejects the app's requests and may not work in the app. Try again later, or switch to another mirror in Settings › Content Source."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La página pasó la verificación, pero este espejo aún rechaza las solicitudes de la aplicación y es posible que no funcione en la aplicación. Vuelva a intentarlo más tarde o cambie a otro espejo en Configuración > Fuente de contenido."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La page a réussi la vérification, mais ce miroir rejette toujours les demandes de l'application et peut ne pas fonctionner dans l'application. Réessayez plus tard ou passez à un autre miroir dans Paramètres > Source de contenu."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "पृष्ठ सत्यापन में सफल रहा, लेकिन यह दर्पण अभी भी ऐप के अनुरोधों को अस्वीकार करता है और ऐप में काम नहीं कर सकता है। बाद में पुनः प्रयास करें, या सेटिंग्स › सामग्री स्रोत में किसी अन्य दर्पण पर स्विच करें।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halaman tersebut lolos verifikasi, namun mirror ini masih menolak permintaan aplikasi dan mungkin tidak berfungsi di aplikasi. Coba lagi nanti, atau beralih ke mirror lain di Pengaturan › Sumber Konten."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pagina ha superato la verifica, ma questo mirror rifiuta comunque le richieste dell'app e potrebbe non funzionare nell'app. Riprova più tardi o passa a un altro mirror in Impostazioni › Origine contenuto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ページは検証に合格しましたが、このミラーは依然としてアプリのリクエストを拒否しているため、アプリで機能しない可能性があります。後でもう一度試すか、[設定] › [コンテンツ ソース] で別のミラーに切り替えてください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "페이지가 확인을 통과했지만 이 미러는 여전히 앱의 요청을 거부하므로 앱에서 작동하지 않을 수 있습니다. 나중에 다시 시도하거나 설정 > 콘텐츠 소스에서 다른 미러로 전환하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De pagina heeft de verificatie doorstaan, maar deze mirror wijst nog steeds de verzoeken van de app af en werkt mogelijk niet in de app. Probeer het later opnieuw of schakel over naar een andere mirror in Instellingen › Inhoudsbron."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strona przeszła weryfikację, ale lustro nadal odrzuca żądania aplikacji i może nie działać w aplikacji. Spróbuj ponownie później lub przełącz się na inne lustro w Ustawieniach > Źródło treści."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A página passou na verificação, mas esse espelho ainda rejeita as solicitações do aplicativo e pode não funcionar no aplicativo. Tente novamente mais tarde ou mude para outro espelho em Configurações › Fonte de conteúdo."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страница прошла проверку, но это зеркало по-прежнему отклоняет запросы приложения и может не работать в приложении. Повторите попытку позже или переключитесь на другое зеркало в «Настройки» > «Источник контента»."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หน้านี้ผ่านการยืนยันแล้ว แต่มิเรอร์นี้ยังคงปฏิเสธคำขอของแอปและอาจใช้งานไม่ได้ในแอป ลองอีกครั้งในภายหลัง หรือเปลี่ยนไปใช้มิเรอร์อื่นในการตั้งค่า > แหล่งที่มาของเนื้อหา"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sayfa doğrulamayı geçti ancak bu yansıtma yine de uygulamanın isteklerini reddediyor ve uygulamada çalışmayabilir. Daha sonra tekrar deneyin veya Ayarlar › İçerik Kaynağı bölümünden başka bir yansıtmaya geçin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сторінка пройшла перевірку, але це дзеркало все ще відхиляє запити програми та може не працювати в програмі. Спробуйте пізніше або перейдіть до іншого дзеркала в Налаштуваннях › Джерело вмісту."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trang đã vượt qua quá trình xác minh nhưng máy nhân bản này vẫn từ chối yêu cầu của ứng dụng và có thể không hoạt động trong ứng dụng. Hãy thử lại sau hoặc chuyển sang một máy phản chiếu khác trong Cài đặt > Nguồn nội dung."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "网页已通过验证，但这个镜像仍拒绝 App 的请求，可能不支持在 App 中使用。请稍后再试，或在「设置 › 内容来源」换用其他镜像。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁已通過驗證，但這個鏡像仍拒絕 App 的請求，可能不支援在 App 中使用。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁已通過驗證，但這個鏡像仍拒絕 App 的請求，可能不支援在 App 中使用。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁已通過驗證，但這個鏡像仍拒絕 App 的請求，可能不支援在 App 中使用。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網頁已通過驗證，但這個鏡像仍拒絕 App 的請求，可能不支援在 App 中使用。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。"
           }
         }
       }
@@ -70643,6 +74361,149 @@
         }
       }
     },
+    "跳過": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخطي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Überspringen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saltar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sauter"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "छोड़ें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lewati"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salta"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキップ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건너뛰기"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overslaan"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomiń"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pular"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пропустить"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ข้าม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atla"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пропустити"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bỏ qua"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳过"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳過"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳過"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳過"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳過"
+          }
+        }
+      }
+    },
     "載入中": {
       "extractionState": "manual",
       "localizations": {
@@ -71787,6 +75648,149 @@
         }
       }
     },
+    "連線檢測": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فحص الاتصال"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbindungsprüfung"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connection Check"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificación de conexión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérification de la connexion"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कनेक्शन जांच"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemeriksaan Koneksi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifica della connessione"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続チェック"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연결 확인"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbindingscontrole"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrola połączenia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verificação de conexão"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверка подключения"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตรวจสอบการเชื่อมต่อ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı Kontrolü"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевірка підключення"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiểm tra kết nối"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连接检测"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連線檢測"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連線檢測"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連線檢測"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連線檢測"
+          }
+        }
+      }
+    },
     "連續閱讀": {
       "extractionState": "manual",
       "localizations": {
@@ -72359,6 +76363,149 @@
         }
       }
     },
+    "遇到人機驗證時，照彈出的頁面完成即可": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عندما يظهر فحص بشري، ما عليك سوى إكماله على الصفحة المنبثقة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn ein menschlicher Scheck erscheint, füllen Sie ihn einfach auf der Seite aus, die angezeigt wird"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When a human check appears, just complete it on the page that pops up"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando aparezca una verificación humana, simplemente complétela en la página que aparece"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsqu'un contrôle humain apparaît, complétez-le simplement sur la page qui apparaît"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जब कोई मानव चेक दिखाई दे, तो उसे पॉप अप होने वाले पृष्ठ पर पूरा करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ketika muncul human check, selesaikan saja pada halaman yang muncul"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando viene visualizzato un controllo umano, completalo nella pagina che si apre"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人間によるチェックが表示されたら、ポップアップされたページで完了するだけです"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사람 수표가 나타나면 나타나는 페이지에서 완료하세요."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer er een menselijke controle verschijnt, vult u deze gewoon in op de pagina die verschijnt"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiedy pojawi się czek, po prostu go uzupełnij na stronie, która się pojawi"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando uma verificação humana aparecer, basta concluí-la na página que aparece"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когда появится человеческая проверка, просто завершите ее на всплывающей странице."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อเช็คโดยเจ้าหน้าที่ปรากฏขึ้น เพียงกรอกข้อมูลลงในหน้าที่ป๊อปอัป"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İnsan kontrolü göründüğünde, açılan sayfada işlemi tamamlamanız yeterli"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Коли з’явиться ручна перевірка, просто завершіть її на сторінці, що з’явиться"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi có kiểm tra của con người xuất hiện, chỉ cần hoàn thành nó trên trang bật lên"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遇到人机验证时，照弹出的页面完成即可"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遇到人機驗證時，照彈出的頁面完成即可"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遇到人機驗證時，照彈出的頁面完成即可"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遇到人機驗證時，照彈出的頁面完成即可"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遇到人機驗證時，照彈出的頁面完成即可"
+          }
+        }
+      }
+    },
     "遞增": {
       "extractionState": "manual",
       "localizations": {
@@ -72784,6 +76931,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "選取的作品會離線保存：先下載原文，再自動翻譯，並以選擇的格式保存。篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 %lld 部。"
+          }
+        }
+      }
+    },
+    "選擇翻譯服務與目標語言，之後都可以在「設定 › 翻譯」更改。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر خدمة الترجمة واللغة المستهدفة. يمكنك تغييرهما لاحقًا في الإعدادات › الترجمة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wählen Sie einen Übersetzungsdienst und eine Zielsprache. Sie können beides später unter Einstellungen › Übersetzung ändern."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a translation service and target language. You can change both later in Settings › Translation."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elija un servicio de traducción y el idioma de destino. Puedes cambiar ambos más adelante en Configuración › Traducción."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez un service de traduction et une langue cible. Vous pourrez modifier les deux ultérieurement dans Paramètres > Traduction."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "एक अनुवाद सेवा और लक्ष्य भाषा चुनें। आप बाद में सेटिंग्स › अनुवाद में दोनों को बदल सकते हैं।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pilih layanan terjemahan dan bahasa target. Anda dapat mengubah keduanya nanti di Pengaturan › Terjemahan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli un servizio di traduzione e la lingua di destinazione. Puoi modificarli entrambi in seguito in Impostazioni › Traduzione."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻訳サービスとターゲット言語を選択します。後で [設定] › [翻訳] で両方を変更できます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "번역 서비스와 대상 언어를 선택하세요. 나중에 설정 › 번역에서 둘 다 변경할 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies een vertaaldienst en doeltaal. Je kunt beide later wijzigen in Instellingen ›Vertaling."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz usługę tłumaczeniową i język docelowy. Możesz zmienić oba później w Ustawieniach › Tłumaczenie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha um serviço de tradução e o idioma de destino. Você pode alterar ambos posteriormente em Configurações › Tradução."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите службу перевода и целевой язык. Вы можете изменить оба варианта позже в «Настройки» > «Перевод»."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เลือกบริการแปลและภาษาเป้าหมาย คุณสามารถเปลี่ยนทั้งสองอย่างได้ในภายหลังในการตั้งค่า > การแปล"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir çeviri hizmeti ve hedef dil seçin. Her ikisini de daha sonra Ayarlar › Çeviri bölümünden değiştirebilirsiniz."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Виберіть послугу перекладу та цільову мову. Ви можете змінити обидва пізніше в Налаштуваннях › Переклад."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chọn một dịch vụ dịch thuật và ngôn ngữ đích. Bạn có thể thay đổi cả hai sau trong Cài đặt > Dịch."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择翻译服务与目标语言，之后都可以在「设置 › 翻译」更改。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇翻譯服務與目標語言，之後都可以在「設定 › 翻譯」更改。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇翻譯服務與目標語言，之後都可以在「設定 › 翻譯」更改。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇翻譯服務與目標語言，之後都可以在「設定 › 翻譯」更改。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇翻譯服務與目標語言，之後都可以在「設定 › 翻譯」更改。"
           }
         }
       }
@@ -73642,6 +77932,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "重新整理"
+          }
+        }
+      }
+    },
+    "重新檢測": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحقق مرة أخرى"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Überprüfen Sie es erneut"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check Again"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprobar de nuevo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vérifiez à nouveau"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "दोबारा जांचें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periksa Lagi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla di nuovo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう一度確認してください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다시 확인하세요"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controleer opnieuw"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprawdź ponownie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifique novamente"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверьте еще раз"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตรวจสอบอีกครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekrar Kontrol Et"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перевірте ще раз"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiểm tra lại"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新检测"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新檢測"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新檢測"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新檢測"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新檢測"
           }
         }
       }
@@ -74786,6 +79219,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "開啟驗證頁"
+          }
+        }
+      }
+    },
+    "開始使用": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legen Sie los"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Started"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empezar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commencer"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आरंभ करें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memulai"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "始めましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시작하기"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aan de slag"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozpocznij"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comece"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Начать"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เริ่มต้นเลย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlayın"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Почніть роботу"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bắt đầu"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始使用"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始使用"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始使用"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始使用"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始使用"
           }
         }
       }
@@ -76506,6 +81082,149 @@
         }
       }
     },
+    "隨時可以在「設定 › 顯示教程」重新查看本引導。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكنك عرض هذا الدليل مرة أخرى في أي وقت من خلال الإعدادات > عرض البرنامج التعليمي."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sie können diese Anleitung jederzeit unter „Einstellungen“ > „Anleitung anzeigen“ erneut ansehen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can view this guide again anytime in Settings › Show Tutorial."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puede volver a ver esta guía en cualquier momento en Configuración > Mostrar tutorial."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous pouvez consulter à nouveau ce guide à tout moment dans Paramètres > Afficher le didacticiel."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आप इस गाइड को सेटिंग्स › ट्यूटोरियल दिखाएँ में किसी भी समय दोबारा देख सकते हैं।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda dapat melihat panduan ini lagi kapan saja di Pengaturan ›Tampilkan Tutorial."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puoi visualizzare nuovamente questa guida in qualsiasi momento in Impostazioni › Mostra tutorial."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このガイドは、[設定] › [チュートリアルを表示] でいつでも再度表示できます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정 › 튜토리얼 표시에서 언제든지 이 가이드를 다시 볼 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "U kunt deze handleiding op elk gewenst moment opnieuw bekijken via Instellingen › Tutorial tonen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Możesz ponownie wyświetlić ten przewodnik w dowolnym momencie, wybierając Ustawienia > Pokaż samouczek."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você pode visualizar este guia novamente a qualquer momento em Configurações › Mostrar tutorial."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы можете просмотреть это руководство еще раз в любое время в меню «Настройки» > «Показать руководство»."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คุณสามารถดูคู่มือนี้อีกครั้งได้ทุกเมื่อในการตั้งค่า > แสดงบทช่วยสอน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu kılavuzu istediğiniz zaman Ayarlar › Öğreticiyi Göster bölümünde tekrar görüntüleyebilirsiniz."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ви можете будь-коли переглянути цей посібник знову в Налаштуваннях › Показати підручник."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bạn có thể xem lại hướng dẫn này bất kỳ lúc nào trong Cài đặt > Hiển thị Hướng dẫn."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "随时可以在「设置 › 显示教程」重新查看本引导。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隨時可以在「設定 › 顯示教程」重新查看本引導。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隨時可以在「設定 › 顯示教程」重新查看本引導。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隨時可以在「設定 › 顯示教程」重新查看本引導。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隨時可以在「設定 › 顯示教程」重新查看本引導。"
+          }
+        }
+      }
+    },
     "隱私": {
       "extractionState": "manual",
       "localizations": {
@@ -77221,6 +81940,149 @@
         }
       }
     },
+    "離線保存：先下載原文再翻譯，沒有網路也能讀": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دون الاتصال بالإنترنت: يتم تنزيل النسخ الأصلية أولاً، ثم تتم ترجمتها، حتى تتمكن من القراءة دون اتصال بالإنترنت"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline: Zuerst werden die Originale heruntergeladen und dann übersetzt, sodass Sie sie ohne Verbindung lesen können"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline: originals download first, then get translated, so you can read without a connection"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin conexión: los originales se descargan primero y luego se traducen, para que puedas leer sin conexión"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hors ligne : les originaux sont d'abord téléchargés, puis traduits, afin que vous puissiez les lire sans connexion"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑफ़लाइन: पहले मूल डाउनलोड करें, फिर अनुवादित करें, ताकि आप बिना कनेक्शन के पढ़ सकें"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline: unduh dokumen asli terlebih dahulu, lalu diterjemahkan, sehingga Anda dapat membaca tanpa koneksi internet"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline: gli originali vengono prima scaricati, poi vengono tradotti, così puoi leggerli senza connessione"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オフライン: オリジナルが最初にダウンロードされ、その後翻訳されるため、接続なしで読むことができます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오프라인: 원본을 먼저 다운로드한 다음 번역하여 연결 없이도 읽을 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline: eerst de originelen downloaden en daarna vertalen, zodat je ze zonder verbinding kunt lezen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offline: najpierw pobieraj oryginały, a następnie je tłumacz, dzięki czemu możesz czytać bez połączenia"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off-line: os originais são baixados primeiro e depois traduzidos, para que você possa ler sem conexão"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Офлайн: сначала загружаются оригиналы, затем переводятся, чтобы вы могли читать без подключения к Интернету."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ออฟไลน์: ดาวน์โหลดต้นฉบับก่อน จากนั้นจึงแปล เพื่อให้คุณสามารถอ่านได้โดยไม่ต้องเชื่อมต่อ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çevrimdışı: Önce orijinaller indirilir, sonra çevrilir; böylece bağlantı olmadan okuyabilirsiniz"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Офлайн: спочатку завантажуються оригінали, а потім перекладаються, щоб ви могли читати без підключення"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngoại tuyến: bản gốc tải xuống trước, sau đó được dịch để bạn có thể đọc mà không cần kết nối"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "离线保存：先下载原文再翻译，没有网络也能读"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "離線保存：先下載原文再翻譯，沒有網路也能讀"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "離線保存：先下載原文再翻譯，沒有網絡也能讀"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "離線保存：先下載原文再翻譯，沒有網絡也能讀"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "離線保存：先下載原文再翻譯，沒有網路也能讀"
+          }
+        }
+      }
+    },
     "離線清單同步": {
       "extractionState": "manual",
       "localizations": {
@@ -77503,6 +82365,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "雲端的同步檔案無法讀取"
+          }
+        }
+      }
+    },
+    "需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكن إعداد الخدمات التي تحتاج إلى مفتاح واجهة برمجة التطبيقات (مثل ترجمة الذكاء الاصطناعي) لاحقًا في الإعدادات."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dienste, die einen API-Schlüssel benötigen (z. B. KI-Übersetzung), können später in den Einstellungen eingerichtet werden."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Services that need an API key (such as AI translation) can be set up later in Settings."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los servicios que necesitan una clave API (como la traducción AI) se pueden configurar más adelante en Configuración."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les services nécessitant une clé API (comme la traduction AI) peuvent être configurés ultérieurement dans Paramètres."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जिन सेवाओं के लिए एपीआई कुंजी (जैसे एआई अनुवाद) की आवश्यकता होती है, उन्हें बाद में सेटिंग्स में सेट किया जा सकता है।"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layanan yang memerlukan kunci API (seperti terjemahan AI) dapat diatur nanti di Pengaturan."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I servizi che richiedono una chiave API (come la traduzione AI) possono essere configurati successivamente in Impostazioni."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API キーが必要なサービス (AI 翻訳など) は、後から [設定] で設定できます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API 키가 필요한 서비스(예: AI 번역)는 나중에 설정에서 설정할 수 있습니다."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Services waarvoor een API-sleutel nodig is (zoals AI-vertaling) kunnen later worden ingesteld in Instellingen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usługi wymagające klucza API (takie jak tłumaczenie AI) można skonfigurować później w Ustawieniach."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os serviços que precisam de uma chave de API (como tradução de IA) podem ser configurados posteriormente em Configurações."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Службы, которым требуется ключ API (например, перевод AI), можно настроить позже в настройках."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "บริการที่ต้องใช้คีย์ API (เช่น การแปล AI) สามารถตั้งค่าได้ภายหลังในการตั้งค่า"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API anahtarı gerektiren hizmetler (AI çevirisi gibi) daha sonra Ayarlar'dan ayarlanabilir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Служби, яким потрібен ключ API (наприклад, переклад AI), можна налаштувати пізніше в налаштуваннях."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Các dịch vụ cần khóa API (chẳng hạn như dịch thuật AI) có thể được thiết lập sau trong Cài đặt."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要 API Key 的服务（例如 AI 翻译）可稍后在设置中填写。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要 API Key 的服務（例如 AI 翻譯）可稍後在設定中填寫。"
           }
         }
       }
@@ -78790,6 +83795,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "顯示全部標籤"
+          }
+        }
+      }
+    },
+    "顯示教程": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض البرنامج التعليمي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutorial anzeigen"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Tutorial"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar tutorial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher le didacticiel"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ट्यूटोरियल दिखाएँ"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan Tutorial"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra tutorial"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チュートリアルを表示する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "튜토리얼 표시"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handleiding tonen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokaż samouczek"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar tutorial"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показать руководство"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงบทช่วยสอน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öğreticiyi Göster"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показати підручник"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị hướng dẫn"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示教程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示教程"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示教程"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示教程"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示教程"
           }
         }
       }

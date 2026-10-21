@@ -54,6 +54,14 @@ struct SettingsView: View {
                     LabeledContent("時長管理", value: app.readingTime.reminderEnabled
                         ? String(localized: "每 \(app.readingTime.reminderMinutes) 分鐘提醒") : "")
                 }
+                Button {
+                    app.showsOnboarding = true
+                } label: {
+                    Text("顯示教程")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
                 // 直接在瀏覽器開啟 GitHub Issues，已附上版本資訊
                 // 以一般按鈕外觀呈現（Link 在列表中會套用主題色）
                 Button {

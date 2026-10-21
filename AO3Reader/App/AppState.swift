@@ -28,6 +28,9 @@ final class AppState {
     let searchHistory: SearchHistoryStore
     /// 書架的離線內容（原文、譯文與匯出檔）
     let offline: OfflineManager
+    /// 新手引導：第一次開啟時顯示，也可從「設定 › 顯示教程」重新開啟
+    var showsOnboarding = !UserDefaults.standard.bool(forKey: AppState.onboardingKey)
+    static let onboardingKey = "onboarding.completed"
 
     init() {
         let sources = SourceStore()

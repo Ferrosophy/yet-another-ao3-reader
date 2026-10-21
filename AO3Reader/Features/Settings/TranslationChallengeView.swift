@@ -39,10 +39,12 @@ struct TranslationChallengeView: View {
 /// 讓驗證通過後的 Cookie 在後續翻譯請求中生效。
 struct VerificationWebView: UIViewRepresentable {
     let url: URL
-    /// 指定時，頁面載入完成且不再是 Cloudflare 驗證頁就呼叫（Cookie 已同步完成）
+    /// 指定時，網頁通過驗證、且 App 的請求也不再被攔下時呼叫（Cookie 已同步完成）
     var onPassed: (() -> Void)?
+    /// 網頁已通過驗證，但 App 的請求仍被攔下時呼叫
+    var onBlocked: (() -> Void)?
 
-    func makeCoordinator() -> Coordinator { Coordinator(onPassed: onPassed) }
+    func makeCoordinator() -> Coordinator { Coordinator(url: url, onPassed: onPassed, onBlocked: onBlocked) }
 
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
@@ -66,25 +68,41 @@ struct VerificationWebView: UIViewRepresentable {
 
     @MainActor
     final class Coordinator: NSObject, WKNavigationDelegate {
+        private let url: URL
         private let onPassed: (() -> Void)?
+        private let onBlocked: (() -> Void)?
         private var passed = false
+        private var checking = false
 
-        init(onPassed: (() -> Void)?) {
+        init(url: URL, onPassed: (() -> Void)?, onBlocked: (() -> Void)?) {
+            self.url = url
             self.onPassed = onPassed
+            self.onBlocked = onBlocked
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             Task {
                 await syncCookiesNow(from: webView)
-                guard onPassed != nil, !passed else { return }
+                guard onPassed != nil, !passed, !checking else { return }
                 // 驗證頁可能在通過前重新載入好幾次，等頁面穩定後再判斷
                 try? await Task.sleep(for: .milliseconds(800))
-                let ok = await Self.isPassed(webView)
-                await log(webView, summary: ok ? "Verification page: passed" : "Verification page: still challenging")
-                guard !webView.isLoading, ok else { return }
+                guard !webView.isLoading, !passed, !checking else { return }
+                guard await Self.looksPassed(webView) else {
+                    await log(webView, summary: "Verification page: still challenging")
+                    return
+                }
+                // 網頁看起來已通過：同步 Cookie 後由 App 實際請求一次，App 也能取得頁面才算通過
+                checking = true
+                defer { checking = false }
                 await syncCookiesNow(from: webView)
-                passed = true
-                onPassed?()
+                let ok = await AO3Client.verifyAccess(url)
+                await log(webView, summary: ok ? "Verification page: passed" : "Verification page: passed in web, app request still blocked")
+                if ok {
+                    passed = true
+                    onPassed?()
+                } else {
+                    onBlocked?()
+                }
             }
         }
 
@@ -92,33 +110,44 @@ struct VerificationWebView: UIViewRepresentable {
             DebugLog.record(DebugEntry(kind: .verify, url: webView.url?.absoluteString ?? "", summary: "Verification page failed: \(error.localizedDescription)"))
         }
 
-        /// 除錯紀錄：驗證頁目前的網址、標題、是否為 Cloudflare / Anubis 頁面，以及網頁中的 Cookie 名稱
+        /// 除錯紀錄：驗證頁目前的網址、標題，以及網頁與 App 兩邊的 Cookie 名稱（用來確認 Cookie 是否同步成功）
         private func log(_ webView: WKWebView, summary: String) async {
             let title = (try? await webView.evaluateJavaScript("document.title") as? String) ?? ""
             let languages = (try? await webView.evaluateJavaScript("navigator.languages.join(',')") as? String) ?? ""
             let html = (try? await webView.evaluateJavaScript("document.documentElement.outerHTML.slice(0, 1500)") as? String) ?? ""
             let cookies = await webView.configuration.websiteDataStore.httpCookieStore.allCookies()
                 .filter { webView.url?.host()?.hasSuffix($0.domain.trimmingCharacters(in: CharacterSet(charactersIn: "."))) ?? false }
-                .map(\.name).sorted()
+            let appCookies = (HTTPCookieStorage.shared.cookies(for: url) ?? []).map(\.name).sorted()
             let detail = [
                 "Title: \(title)",
                 "navigator.languages: \(languages)",
                 "App Accept-Language: \(AO3Client.acceptLanguage)",
-                "Web cookies: \(cookies.joined(separator: ", "))",
+                "Web cookies: \(cookies.map(\.name).sorted().joined(separator: ", "))",
+                "Web cookie attributes: \(cookies.map(Self.describe).sorted().joined(separator: ", "))",
+                "App cookies for \(url.host() ?? ""): \(appCookies.joined(separator: ", "))",
                 "— Page (first 1500 chars) —",
                 html,
             ].joined(separator: "\n")
             DebugLog.record(DebugEntry(kind: .verify, url: webView.url?.absoluteString ?? "", summary: summary, detail: detail))
         }
 
-        /// 以頁面內容判斷是否已通過：沒有 Cloudflare 驗證元素，而且出現 AO3 的頁面結構。
-        /// 不看標題：新版 Cloudflare 驗證頁的標題可能就是網站網域，會被誤判為已通過而提早關閉。
-        private static func isPassed(_ webView: WKWebView) async -> Bool {
+        private static func describe(_ cookie: HTTPCookie) -> String {
+            var flags = [cookie.domain + cookie.path]
+            if cookie.isSecure { flags.append("secure") }
+            if cookie.isHTTPOnly { flags.append("httpOnly") }
+            if let policy = cookie.sameSitePolicy { flags.append(policy.rawValue) }
+            return "\(cookie.name)[\(flags.joined(separator: " "))]"
+        }
+
+        /// 頁面看起來已不是驗證頁：沒有 Cloudflare / Anubis 的驗證元素與「Just a moment」標題，或已出現 AO3 的頁面結構。
+        /// 最終是否通過由 `AO3Client.verifyAccess` 實際請求判斷，這裡只決定何時去檢查。
+        private static func looksPassed(_ webView: WKWebView) async -> Bool {
             let script = """
             (function() {
-              var challenge = !!(window._cf_chl_opt || document.querySelector('#challenge-form, #challenge-stage, #challenge-running, #cf-wrapper, .cf-turnstile, #turnstile-wrapper, #anubis_challenge'));
-              var ao3 = !!document.querySelector('#outer #main, #outer #header, #footer .group');
-              return !challenge && ao3;
+              if (document.querySelector('#outer #main, #outer #header')) return true;
+              var challenge = !!document.querySelector('#challenge-form, #challenge-stage, #challenge-running, #challenge-error-text, #anubis_challenge')
+                || /^just a moment/i.test(document.title);
+              return !challenge && document.readyState === 'complete';
             })()
             """
             return (try? await webView.evaluateJavaScript(script) as? Bool) == true
@@ -130,7 +159,9 @@ struct VerificationWebView: UIViewRepresentable {
 
         private func syncCookiesNow(from webView: WKWebView) async {
             let store = webView.configuration.websiteDataStore.httpCookieStore
-            for cookie in await store.allCookies() { HTTPCookieStorage.shared.setCookie(cookie) }
+            for cookie in await store.allCookies() {
+                HTTPCookieStorage.shared.setCookie(cookie.forURLSession ?? cookie)
+            }
         }
     }
 }
@@ -139,25 +170,36 @@ struct VerificationWebView: UIViewRepresentable {
 struct CloudflareChallengeView: View {
     let url: URL
     @Environment(\.dismiss) private var dismiss
+    /// 網頁已通過但 App 的請求仍被攔下
+    @State private var blocked = false
 
     var body: some View {
         NavigationStack {
-            VerificationWebView(url: url) {
+            VerificationWebView(url: url, onPassed: {
                 // 稍等一下讓 Cookie 寫入後再關閉
                 Task {
                     try? await Task.sleep(for: .seconds(1))
                     dismiss()
                 }
-            }
+            }, onBlocked: {
+                blocked = true
+            })
             .ignoresSafeArea(edges: .bottom)
             .navigationTitle("人機驗證")
             .navigationBarTitleDisplayMode(.inline)
             .safeAreaInset(edge: .top) {
-                Text("網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。")
-                    .appFont(.footnote)
-                    .foregroundStyle(.secondary)
-                    .padding(.horizontal)
-                    .padding(.bottom, 6)
+                Group {
+                    if blocked {
+                        Label("網頁已通過驗證，但這個鏡像仍拒絕 App 的請求，可能不支援在 App 中使用。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。", systemImage: "exclamationmark.triangle.fill")
+                            .foregroundStyle(.orange)
+                    } else {
+                        Text("網站的防護（Cloudflare 或 Anubis）要求確認你不是機器人。請點擊頁面中的驗證方塊，或等待自動驗證完成；通過後會自動關閉，再重新整理原頁面即可。")
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .appFont(.footnote)
+                .padding(.horizontal)
+                .padding(.bottom, 6)
             }
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {

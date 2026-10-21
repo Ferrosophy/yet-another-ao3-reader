@@ -156,6 +156,24 @@ struct AO3Client: Sendable {
         }
     }
 
+    /// 人機驗證後確認 App 的網路層也能取得頁面（不記為一般請求、不彈出驗證頁）。
+    /// 網頁通過但這裡仍被攔下，表示驗證 Cookie 沒有在 App 的請求中生效。
+    static func verifyAccess(_ url: URL) async -> Bool {
+        let request = URLRequest(url: url)
+        let headers = requestHeaders(request, session: session)
+        do {
+            let (data, response) = try await session.data(for: request)
+            guard let http = response as? HTTPURLResponse else { return false }
+            let ok = !isCloudflareChallenge(http, data: data) && !isAnubisChallenge(data: data) && http.statusCode < 400
+            DebugLog.record(.response(http, data: data, method: "GET", requestHeaders: headers, kind: .verify,
+                                      summary: ok ? "App request after verification: OK" : "App request after verification: still blocked (HTTP \(http.statusCode))"))
+            return ok
+        } catch {
+            DebugLog.record(DebugEntry(kind: .verify, url: url.absoluteString, summary: "App request after verification failed: \(error.localizedDescription)"))
+            return false
+        }
+    }
+
     /// Anubis（TecharoHQ/anubis）的驗證頁：含 Anubis 的腳本或路徑
     static func isAnubisChallenge(data: Data) -> Bool {
         let head = String(decoding: data.prefix(16_000), as: UTF8.self)
@@ -326,5 +344,23 @@ enum FormEncoding {
 
     static func escape(_ string: String) -> String {
         string.addingPercentEncoding(withAllowedCharacters: allowed) ?? string
+    }
+}
+
+extension HTTPCookie {
+    /// 把 WKWebView 的 Cookie 重建為只含標準屬性的 Cookie 再存入 `HTTPCookieStorage`。
+    /// Cloudflare 的 cf_clearance 會帶 Partitioned 等屬性，原樣寫入後不會隨 App 的請求送出，導致驗證後仍被攔下。
+    var forURLSession: HTTPCookie? {
+        var properties: [HTTPCookiePropertyKey: Any] = [
+            .name: name,
+            .value: value,
+            .domain: domain,
+            .path: path.isEmpty ? "/" : path,
+        ]
+        if isSecure { properties[.secure] = "TRUE" }
+        if let expiresDate { properties[.expires] = expiresDate } else { properties[.discard] = "TRUE" }
+        if isHTTPOnly { properties[HTTPCookiePropertyKey("HttpOnly")] = "TRUE" }
+        if let sameSitePolicy { properties[.sameSitePolicy] = sameSitePolicy.rawValue }
+        return HTTPCookie(properties: properties)
     }
 }
