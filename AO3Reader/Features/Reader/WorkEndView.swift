@@ -79,18 +79,19 @@ struct WorkEndView: View {
                         if model.isBusy {
                             ProgressView()
                         } else {
-                            Text(verbatim: "❤️ Kudos")
+                            Label {
+                                Text(verbatim: "Kudos")
+                            } icon: {
+                                Image(systemName: "heart.fill")
+                            }
                         }
                     }
                     .frame(minWidth: 96)
                 }
                 .buttonStyle(.glassProminent)
                 Button(action: onComments) {
-                    HStack(spacing: 6) {
-                        Text(verbatim: "📖")
-                        Text("評論")
-                    }
-                    .frame(minWidth: 96)
+                    Label("評論", systemImage: "text.bubble.fill")
+                        .frame(minWidth: 96)
                 }
                 .buttonStyle(.glass)
             }

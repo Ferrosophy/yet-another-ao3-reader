@@ -33,6 +33,9 @@ struct ReaderView: View {
     /// 第一次在閱讀頁開啟雲端翻譯時，說明文字會傳送給第三方服務
     @AppStorage("translation.cloudNoticeShown") private var cloudNoticeShown = false
     @State private var showsCloudNotice = false
+    /// 輸入百分比跳到指定進度
+    @State private var showsProgressJump = false
+    @State private var progressInput = ""
     @Namespace private var glass
 
     init(model: ReaderViewModel) {
@@ -135,6 +138,24 @@ struct ReaderView: View {
             if let detail = model.detail { await actions.load(from: detail) }
         }
         .sheet(item: $webTarget) { WebPageSheet(url: $0.url) }
+        .alert("跳到指定進度", isPresented: $showsProgressJump) {
+            TextField(text: $progressInput, prompt: Text(verbatim: "0–100")) { Text("百分比") }
+                .keyboardType(.numberPad)
+            Button("跳轉") {
+                if let value = Double(progressInput.filter(\.isNumber)) {
+                    let fraction = min(value, 100) / 100
+                    startAtEnd = false
+                    if layout.mode == .scroll {
+                        withAnimation(.smooth(duration: 0.35)) { model.jump(toProgress: fraction) }
+                    } else {
+                        model.jump(toProgress: fraction)
+                    }
+                }
+            }
+            Button("取消", role: .cancel) {}
+        } message: {
+            Text("輸入 0 到 100 的百分比，跳到整部作品的對應位置。")
+        }
         .alert("翻譯會把文字傳送給第三方服務", isPresented: $showsCloudNotice) {
             Button("繼續翻譯") {
                 cloudNoticeShown = true
@@ -145,7 +166,8 @@ struct ReaderView: View {
             Text("開啟翻譯後，作品的正文、標題、標籤、簡介、作者註與評論會傳送到「\(app.translation.config.provider.title)」進行翻譯，資料如何處理以該服務的隱私政策為準。只有 Apple 翻譯在裝置上進行、不會傳出文字，可在「設定 › 翻譯服務」更換。機器翻譯可能有誤，請以原文為準。")
         }
         .sheet(isPresented: $showsComments) {
-            CommentsSheet(workID: model.route.id, client: model.client, app: app, translates: model.isTranslationOn)
+            CommentsSheet(workID: model.route.id, client: model.client, app: app, translates: model.isTranslationOn,
+                          creators: model.detail?.authors ?? [])
         }
         .sheet(isPresented: $showsChapters) {
             ChapterListSheet(model: model)
@@ -365,6 +387,7 @@ struct ReaderView: View {
             background: background,
             anchorParagraphID: model.scrollAnchor,
             startAtEnd: startAtEnd,
+            jumpCount: model.jumpCount,
             onPageChange: { paragraphs in
                 model.setVisibleParagraphs(paragraphs)
                 if let first = paragraphs.first { model.scrollAnchor = first.id }
@@ -585,14 +608,26 @@ struct ReaderView: View {
                     .glassEffect(.regular.tint(.red.opacity(0.25)), in: .capsule)
             }
 
-            // 整部作品的閱讀進度
-            Text(model.progress, format: .percent.precision(.fractionLength(0)))
+            // 整部作品的閱讀進度；點擊可輸入百分比跳轉
+            Button {
+                progressInput = String(Int((model.progress * 100).rounded()))
+                showsProgressJump = true
+            } label: {
+                HStack(spacing: 4) {
+                    Text(model.progress, format: .percent.precision(.fractionLength(0)))
+                        .monospacedDigit()
+                    Image(systemName: "chevron.up.chevron.down")
+                        .imageScale(.small)
+                }
                 .appFont(.caption, weight: .medium)
-                .monospacedDigit()
                 .padding(.horizontal, 12)
                 .padding(.vertical, 5)
-                .glassEffect(.regular, in: .capsule)
-                .accessibilityLabel(Text("閱讀進度"))
+                .contentShape(.capsule)
+            }
+            .buttonStyle(.plain)
+            .glassEffect(.regular.interactive(), in: .capsule)
+            .accessibilityLabel(Text("閱讀進度"))
+            .accessibilityHint(Text("輸入百分比跳到指定進度"))
 
             GlassEffectContainer(spacing: 10) {
                 HStack(spacing: 10) {

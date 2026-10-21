@@ -9,6 +9,8 @@ extension AO3Parser {
     static func comments(html: String, page: Int) throws -> CommentPage {
         let doc = try SwiftSoup.parse(html)
         var result: [WorkComment] = []
+        // 評論元素 → 作者，用來找出回覆的對象（上層評論一定先出現）
+        var authorsByElement: [ObjectIdentifier: String] = [:]
         for (index, item) in try doc.select("li.comment").array().enumerated() {
             let children = item.children().array()
             guard let body = children.first(where: { $0.tagName() == "blockquote" }) else { continue }
@@ -25,22 +27,29 @@ extension AO3Parser {
                 if let date = try byline.select("span.posted").first()?.text(), !date.isEmpty { posted.append(date) }
             }
 
-            // 回覆位於上層評論的 li 之內：祖先中有幾個 li.comment 就是第幾層
+            // 回覆位於上層評論的 li 之內：祖先中有幾個 li.comment 就是第幾層，最近的一個就是回覆對象
             var depth = 0
+            var replyTo: String?
             var ancestor = item.parent()
             while let current = ancestor {
-                if current.tagName() == "li", current.hasClass("comment") { depth += 1 }
+                if current.tagName() == "li", current.hasClass("comment") {
+                    if depth == 0 { replyTo = authorsByElement[ObjectIdentifier(current)] }
+                    depth += 1
+                }
                 ancestor = current.parent()
             }
+            let name = author.isEmpty ? "Anonymous" : author
+            authorsByElement[ObjectIdentifier(item)] = name
 
             let id = item.id()
             result.append(WorkComment(
                 id: id.isEmpty ? "comment-\(page)-\(index)" : id,
-                author: author.isEmpty ? "Anonymous" : author,
+                author: name,
                 isGuest: isGuest,
                 posted: posted.joined(separator: " · "),
                 text: text,
-                depth: depth
+                depth: depth,
+                replyTo: replyTo
             ))
         }
         return CommentPage(comments: result, page: page, hasNextPage: try hasNextPage(doc))

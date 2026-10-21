@@ -239,6 +239,8 @@ struct PagedReaderView: UIViewControllerRepresentable {
     /// 首次顯示或切換章節時要定位到的段落
     let anchorParagraphID: String?
     let startAtEnd: Bool
+    /// 變化時（使用者輸入進度跳轉）定位到 anchorParagraphID，即使沒有換章
+    var jumpCount = 0
     var onPageChange: ([Paragraph]) -> Void
     var onCenterTap: () -> Void
     var onBoundary: (_ forward: Bool) -> Void
@@ -259,7 +261,8 @@ struct PagedReaderView: UIViewControllerRepresentable {
             margins: margins,
             background: background,
             anchorParagraphID: anchorParagraphID,
-            startAtEnd: startAtEnd
+            startAtEnd: startAtEnd,
+            jumpCount: jumpCount
         )
     }
 }
@@ -422,6 +425,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     private var content: PagedContent?
     private var header: AnyView?
     private var footer: AnyView?
+    private var lastJumpCount = 0
     private var pageRanges: [NSRange] = []
     /// 目前頁碼（含資訊頁；有資訊頁時第 0 頁為資訊頁）
     private var currentIndex = 0
@@ -474,7 +478,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     }
 
     func update(content: PagedContent, header: AnyView?, footer: AnyView?, transition: PageTransition, margins: PageMargins,
-                background: PageBackground, anchorParagraphID: String?, startAtEnd: Bool) {
+                background: PageBackground, anchorParagraphID: String?, startAtEnd: Bool, jumpCount: Int = 0) {
         let chapterChanged = self.content?.chapterIndex != content.chapterIndex
         let headerChanged = (header == nil) != (self.header == nil) || (footer == nil) != (self.footer == nil)
         let transitionChanged = transition != self.transition
@@ -487,6 +491,14 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         }
         // 停在第一章的作品資訊頁時從目錄再選第一章：跳到第一個正文頁
         var jumpToText = false
+        // 使用者輸入進度跳轉：同一章內也定位到指定段落
+        if jumpCount != lastJumpCount {
+            lastJumpCount = jumpCount
+            if !chapterChanged, let anchor = anchorParagraphID {
+                pendingAnchor = anchor
+                jumpToText = true
+            }
+        }
         if !chapterChanged, let anchor = anchorParagraphID, anchor.hasPrefix("chaptertext-"), currentIndex < headerOffset {
             pendingAnchor = anchor
             jumpToText = true

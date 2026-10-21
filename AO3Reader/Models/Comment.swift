@@ -11,6 +11,8 @@ struct WorkComment: Identifiable, Hashable, Sendable {
     var text: String
     /// 0 為頂層評論，回覆逐層加一
     var depth = 0
+    /// 回覆對象（上一層評論的作者）
+    var replyTo: String? = nil
 }
 
 /// 一頁評論與分頁資訊。

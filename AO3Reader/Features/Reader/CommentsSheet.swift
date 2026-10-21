@@ -116,7 +116,8 @@ final class CommentTranslator {
     }
 }
 
-/// 評論頁：可閱讀評論並以沉浸式翻譯顯示譯文；要留言請到原網站
+/// 評論頁：可閱讀評論並以沉浸式翻譯顯示譯文；回覆以縮排與連線顯示所屬的討論串，作者本人的評論加上標記。
+/// 要留言請到原網站
 struct CommentsSheet: View {
     @State private var model: CommentsModel
     @State private var translator: CommentTranslator
@@ -124,17 +125,39 @@ struct CommentsSheet: View {
     @Environment(AppState.self) private var app
     @Environment(\.dismiss) private var dismiss
 
-    init(workID: Int, client: AO3Client, app: AppState, translates: Bool) {
+    /// 作品作者的名稱（用來標示作者本人的回覆）
+    private let creators: Set<String>
+
+    init(workID: Int, client: AO3Client, app: AppState, translates: Bool, creators: [String] = []) {
+        self.creators = Self.names(creators)
         _model = State(initialValue: CommentsModel(workID: workID, client: client))
         _translator = State(initialValue: CommentTranslator(isEnabled: translates, settings: app.translation,
                                                             translator: app.translator))
+    }
+
+    /// AO3 的作者名稱可能是「筆名 (帳號)」：兩者都拿來比對，不分大小寫
+    private static func names(_ list: [String]) -> Set<String> {
+        var result = Set<String>()
+        for raw in list {
+            let name = raw.trimmingCharacters(in: .whitespaces).lowercased()
+            guard !name.isEmpty else { continue }
+            result.insert(name)
+            if let open = name.firstIndex(of: "("), name.hasSuffix(")") {
+                result.insert(name[..<open].trimmingCharacters(in: .whitespaces))
+                result.insert(String(name[name.index(after: open)..<name.index(before: name.endIndex)]))
+            }
+        }
+        return result
     }
 
     var body: some View {
         NavigationStack {
             List {
                 ForEach(model.comments) { comment in
-                    CommentRow(comment: comment, translator: translator, accent: app.appearance.accentColor)
+                    CommentRow(comment: comment, translator: translator, accent: app.appearance.accentColor,
+                               isCreator: !comment.isGuest && !Self.names([comment.author]).isDisjoint(with: creators))
+                        // 同一串討論之間不加分隔線，只在頂層評論之前分隔
+                        .listRowSeparator(comment.depth > 0 ? .hidden : .automatic, edges: .top)
                 }
                 if let error = model.error {
                     Section {
@@ -190,14 +213,33 @@ private struct CommentRow: View {
     let comment: WorkComment
     let translator: CommentTranslator
     let accent: Color
+    /// 評論者是作品的作者
+    let isCreator: Bool
+
+    private static let indent: CGFloat = 16
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 6) {
-                Text(verbatim: comment.author).appFont(.subheadline, weight: .semibold)
+                Text(verbatim: comment.author)
+                    .appFont(.subheadline, weight: .semibold)
+                    .foregroundStyle(isCreator ? AnyShapeStyle(accent) : AnyShapeStyle(.primary))
+                if isCreator {
+                    Text("作者")
+                        .appFont(.caption2, weight: .semibold)
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(accent, in: .capsule)
+                }
                 if comment.isGuest {
                     Text("訪客").appFont(.caption2).foregroundStyle(.secondary)
                 }
+            }
+            if comment.depth > 0, let replyTo = comment.replyTo {
+                Label("回覆 \(replyTo)", systemImage: "arrowshape.turn.up.left")
+                    .appFont(.caption)
+                    .foregroundStyle(.secondary)
             }
             if !comment.posted.isEmpty {
                 Text(verbatim: comment.posted).appFont(.caption).foregroundStyle(.secondary)
@@ -210,11 +252,16 @@ private struct CommentRow: View {
             }
         }
         .padding(.vertical, 4)
-        .padding(.leading, CGFloat(min(comment.depth, 4)) * 18)
+        .padding(.leading, CGFloat(min(comment.depth, 4)) * Self.indent)
+        // 每一層回覆畫一條線，連成同一串討論
         .overlay(alignment: .leading) {
-            if comment.depth > 0 {
-                Rectangle().fill(Color.secondary.opacity(0.3)).frame(width: 2)
-                    .padding(.leading, CGFloat(min(comment.depth, 4)) * 18 - 10)
+            HStack(spacing: 0) {
+                ForEach(0..<min(comment.depth, 4), id: \.self) { _ in
+                    Rectangle()
+                        .fill(Color.secondary.opacity(0.3))
+                        .frame(width: 2)
+                        .frame(width: Self.indent, alignment: .leading)
+                }
             }
         }
         .task(id: translator.isEnabled) {

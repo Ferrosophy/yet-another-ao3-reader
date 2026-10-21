@@ -76,15 +76,19 @@ extension DemoSite {
             authorLinks: [WorkTag(name: spec.author, path: "/users/\(spec.author)/pseuds/\(spec.author)")],
             info: info
         )
-        let comments = spec.comments.enumerated().map { index, comment in
-            WorkComment(
+        var comments: [WorkComment] = []
+        for (index, comment) in spec.comments.enumerated() {
+            // 回覆對象：前面最近一則層級較淺的評論
+            let parent = comments.last { $0.depth < comment.depth }
+            comments.append(WorkComment(
                 id: "demo-\(spec.id)-\(index)",
                 author: comment.author,
                 isGuest: comment.guest,
                 posted: comment.chapter.map { "on Chapter \($0) · \(comment.date)" } ?? comment.date,
                 text: comment.text,
-                depth: comment.depth
-            )
+                depth: comment.depth,
+                replyTo: comment.depth > 0 ? parent?.author : nil
+            ))
         }
         return Work(detail: detail, comments: comments)
     }

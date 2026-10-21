@@ -198,6 +198,29 @@ final class ReaderViewModel {
         ReadingProgress.touch(route.id)
     }
 
+    /// 每次跳到指定進度時遞增，讓翻頁模式在同一章內也重新定位
+    private(set) var jumpCount = 0
+
+    /// 跳到整部作品的某個進度（0...1）：定位到對應的正文段落
+    func jump(toProgress fraction: Double) {
+        guard let chapters = detail?.chapters else { return }
+        let total = chapters.reduce(0) { $0 + $1.paragraphs.count }
+        guard total > 0 else { return }
+        var target = min(max(Int(Double(total) * min(max(fraction, 0), 1)), 0), total - 1)
+        for (index, chapter) in chapters.enumerated() {
+            if target < chapter.paragraphs.count {
+                chapterIndex = index
+                visible.removeAll()
+                scrollAnchor = chapter.paragraphs[target].id
+                jumpCount += 1
+                UserDefaults.standard.set(index, forKey: positionKey)
+                ReadingProgress.touch(route.id)
+                return
+            }
+            target -= chapter.paragraphs.count
+        }
+    }
+
     func nextChapter() { goToChapter(chapterIndex + 1) }
     func previousChapter() { goToChapter(chapterIndex - 1) }
 

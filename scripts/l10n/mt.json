@@ -754,7 +754,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "キー不要のサービスや Web 版サービスは、提供元が許可していない非公式のインターフェースを使用しています。提供元の利用規約に違反したり、いつでも使えなくなったりする可能性があります。安定して規約に沿った利用には、公式 API または Apple 翻訳を選択してください。",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "機械翻訳は誤りを含む可能性があり、原文の代わりにはなりません。タグ、警告、作者の注釈は原文を優先してください。",
   "向左翻頁繼續閱讀": "左にめくって続きを読む",
-  "已讀完最後一章": "最終章まで読み終えました"
+  "已讀完最後一章": "最終章まで読み終えました",
+  "回覆 %@": "%@ への返信",
+  "跳到指定進度": "進捗位置へ移動",
+  "百分比": "パーセント",
+  "跳轉": "移動",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "0〜100 のパーセントを入力すると、作品全体の該当位置へ移動します。",
+  "輸入百分比跳到指定進度": "パーセントを入力して移動"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1511,7 +1517,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "키가 필요 없는 서비스와 웹 버전 서비스는 제공업체가 승인하지 않은 비공식 인터페이스를 사용합니다. 제공업체의 이용 약관을 위반하거나 언제든지 작동하지 않을 수 있습니다. 안정적이고 규정에 맞게 사용하려면 공식 API 또는 Apple 번역을 선택하세요.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "기계 번역은 부정확할 수 있으며 원문을 대신할 수 없습니다. 태그, 경고, 작가 메모는 원문을 기준으로 해 주세요.",
   "向左翻頁繼續閱讀": "왼쪽으로 넘겨 계속 읽기",
-  "已讀完最後一章": "마지막 장까지 다 읽었습니다"
+  "已讀完最後一章": "마지막 장까지 다 읽었습니다",
+  "回覆 %@": "%@ 님에게 답글",
+  "跳到指定進度": "진행 위치로 이동",
+  "百分比": "퍼센트",
+  "跳轉": "이동",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "0~100 사이의 퍼센트를 입력하면 작품 전체에서 해당 위치로 이동합니다.",
+  "輸入百分比跳到指定進度": "퍼센트를 입력해 이동"
  },
  "es": {
   "載入中": "Cargando",
@@ -2268,7 +2280,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Los servicios sin clave y web usan interfaces no oficiales que los proveedores no han autorizado. Pueden infringir los términos de los proveedores o dejar de funcionar en cualquier momento. Para un uso fiable y conforme, elige una API oficial o Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traducción automática puede tener errores y no sustituye al original. Para etiquetas, advertencias y notas del autor, prevalece el original.",
   "向左翻頁繼續閱讀": "Pasa la página para seguir leyendo",
-  "已讀完最後一章": "Has terminado el último capítulo"
+  "已讀完最後一章": "Has terminado el último capítulo",
+  "回覆 %@": "Respuesta a %@",
+  "跳到指定進度": "Ir a un progreso",
+  "百分比": "Porcentaje",
+  "跳轉": "Ir",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Introduce un porcentaje de 0 a 100 para saltar a ese punto de la obra.",
+  "輸入百分比跳到指定進度": "Introduce un porcentaje para saltar a ese punto"
  },
  "fr": {
   "載入中": "Chargement",
@@ -3025,7 +3043,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Les services sans clé et web utilisent des interfaces non officielles non autorisées par les fournisseurs. Ils peuvent enfreindre les conditions des fournisseurs ou cesser de fonctionner à tout moment. Pour une utilisation fiable et conforme, choisissez une API officielle ou Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traduction automatique peut être erronée et ne remplace pas l'original. Pour les balises, avertissements et notes de l'auteur, le texte original fait foi.",
   "向左翻頁繼續閱讀": "Tournez la page pour continuer",
-  "已讀完最後一章": "Vous avez terminé le dernier chapitre"
+  "已讀完最後一章": "Vous avez terminé le dernier chapitre",
+  "回覆 %@": "Réponse à %@",
+  "跳到指定進度": "Aller à une progression",
+  "百分比": "Pourcentage",
+  "跳轉": "Aller",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Saisissez un pourcentage de 0 à 100 pour aller à ce point de l’œuvre.",
+  "輸入百分比跳到指定進度": "Saisissez un pourcentage pour y aller"
  },
  "de": {
   "載入中": "Laden",
@@ -3782,7 +3806,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Dienste ohne Schlüssel und Webdienste nutzen inoffizielle Schnittstellen, die von den Anbietern nicht autorisiert sind. Sie können gegen deren Nutzungsbedingungen verstoßen oder jederzeit ausfallen. Für eine zuverlässige, regelkonforme Nutzung wählen Sie eine offizielle API oder Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Maschinelle Übersetzungen können fehlerhaft sein und ersetzen nicht das Original. Bei Schlagworten, Warnungen und Notizen der Autor*innen ist das Original maßgeblich.",
   "向左翻頁繼續閱讀": "Weiterblättern zum Weiterlesen",
-  "已讀完最後一章": "Letztes Kapitel gelesen"
+  "已讀完最後一章": "Letztes Kapitel gelesen",
+  "回覆 %@": "Antwort an %@",
+  "跳到指定進度": "Zu Fortschritt springen",
+  "百分比": "Prozent",
+  "跳轉": "Springen",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Gib einen Prozentwert von 0 bis 100 ein, um zu dieser Stelle im Werk zu springen.",
+  "輸入百分比跳到指定進度": "Prozentwert eingeben, um dorthin zu springen"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -4539,7 +4569,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Serviços sem chave e da web usam interfaces não oficiais que os provedores não autorizaram. Eles podem violar os termos dos provedores ou parar de funcionar a qualquer momento. Para um uso confiável e em conformidade, escolha uma API oficial ou o Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "A tradução automática pode conter erros e não substitui o original. Para etiquetas, avisos e notas do autor, confie no original.",
   "向左翻頁繼續閱讀": "Vire a página para continuar lendo",
-  "已讀完最後一章": "Você terminou o último capítulo"
+  "已讀完最後一章": "Você terminou o último capítulo",
+  "回覆 %@": "Resposta a %@",
+  "跳到指定進度": "Ir para o progresso",
+  "百分比": "Porcentagem",
+  "跳轉": "Ir",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Digite uma porcentagem de 0 a 100 para pular para esse ponto da obra.",
+  "輸入百分比跳到指定進度": "Digite uma porcentagem para pular para esse ponto"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -5296,7 +5332,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "I servizi senza chiave e web usano interfacce non ufficiali non autorizzate dai fornitori. Potrebbero violare i termini dei fornitori o smettere di funzionare in qualsiasi momento. Per un uso affidabile e conforme, scegli un'API ufficiale o Apple Traduttore.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traduzione automatica può contenere errori e non sostituisce l'originale. Per tag, avvertenze e note dell'autore fai riferimento all'originale.",
   "向左翻頁繼續閱讀": "Gira pagina per continuare a leggere",
-  "已讀完最後一章": "Hai finito l’ultimo capitolo"
+  "已讀完最後一章": "Hai finito l’ultimo capitolo",
+  "回覆 %@": "Risposta a %@",
+  "跳到指定進度": "Vai a un punto",
+  "百分比": "Percentuale",
+  "跳轉": "Vai",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Inserisci una percentuale da 0 a 100 per saltare a quel punto dell’opera.",
+  "輸入百分比跳到指定進度": "Inserisci una percentuale per saltare a quel punto"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -6053,7 +6095,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Сервисы без ключа и веб-сервисы используют неофициальные интерфейсы, не разрешённые их владельцами. Они могут нарушать условия использования сервисов или перестать работать в любой момент. Для надёжного и правомерного использования выберите официальный API или Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Машинный перевод может содержать ошибки и не заменяет оригинал. Для тегов, предупреждений и примечаний автора ориентируйтесь на оригинал.",
   "向左翻頁繼續閱讀": "Листайте дальше, чтобы продолжить",
-  "已讀完最後一章": "Последняя глава прочитана"
+  "已讀完最後一章": "Последняя глава прочитана",
+  "回覆 %@": "Ответ для %@",
+  "跳到指定進度": "Перейти к прогрессу",
+  "百分比": "Процент",
+  "跳轉": "Перейти",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Введите процент от 0 до 100, чтобы перейти к этому месту в работе.",
+  "輸入百分比跳到指定進度": "Введите процент, чтобы перейти"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -6810,7 +6858,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Служби без ключа та веб-служби використовують неофіційні інтерфейси, не дозволені постачальниками. Вони можуть порушувати умови постачальників або будь-коли перестати працювати. Для надійного й правомірного використання оберіть офіційний API або Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Машинний переклад може містити помилки й не замінює оригінал. Щодо тегів, попереджень і приміток автора орієнтуйтеся на оригінал.",
   "向左翻頁繼續閱讀": "Гортайте далі, щоб продовжити",
-  "已讀完最後一章": "Останній розділ прочитано"
+  "已讀完最後一章": "Останній розділ прочитано",
+  "回覆 %@": "Відповідь для %@",
+  "跳到指定進度": "Перейти до прогресу",
+  "百分比": "Відсоток",
+  "跳轉": "Перейти",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Введіть відсоток від 0 до 100, щоб перейти до цього місця у творі.",
+  "輸入百分比跳到指定進度": "Введіть відсоток, щоб перейти"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -7567,7 +7621,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Usługi bez klucza i usługi webowe korzystają z nieoficjalnych interfejsów, na które dostawcy nie wyrazili zgody. Mogą naruszać regulaminy dostawców lub w każdej chwili przestać działać. Aby korzystać niezawodnie i zgodnie z zasadami, wybierz oficjalne API lub Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Tłumaczenie maszynowe może zawierać błędy i nie zastępuje oryginału. W przypadku tagów, ostrzeżeń i notatek autora polegaj na oryginale.",
   "向左翻頁繼續閱讀": "Przewiń dalej, aby czytać",
-  "已讀完最後一章": "Przeczytano ostatni rozdział"
+  "已讀完最後一章": "Przeczytano ostatni rozdział",
+  "回覆 %@": "Odpowiedź dla %@",
+  "跳到指定進度": "Przejdź do postępu",
+  "百分比": "Procent",
+  "跳轉": "Przejdź",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Wpisz procent od 0 do 100, aby przejść do tego miejsca w utworze.",
+  "輸入百分比跳到指定進度": "Wpisz procent, aby przejść"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -8324,7 +8384,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Anahtarsız ve web hizmetleri, sağlayıcıların yetkilendirmediği resmi olmayan uç noktalar kullanır. Sağlayıcıların koşullarını ihlal edebilir veya her an çalışmayı durdurabilirler. Güvenilir ve kurallara uygun kullanım için resmi bir API veya Apple Translate seçin.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Makine çevirisi hatalı olabilir ve orijinalin yerini tutmaz. Etiketler, uyarılar ve yazar notları için orijinali esas alın.",
   "向左翻頁繼續閱讀": "Okumaya devam etmek için sayfayı çevirin",
-  "已讀完最後一章": "Son bölümü bitirdiniz"
+  "已讀完最後一章": "Son bölümü bitirdiniz",
+  "回覆 %@": "%@ adlı kişiye yanıt",
+  "跳到指定進度": "İlerlemeye git",
+  "百分比": "Yüzde",
+  "跳轉": "Git",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Eserin o noktasına gitmek için 0 ile 100 arasında bir yüzde girin.",
+  "輸入百分比跳到指定進度": "Gitmek için bir yüzde girin"
  },
  "nl": {
   "載入中": "Laden",
@@ -9081,7 +9147,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Diensten zonder sleutel en webdiensten gebruiken onofficiële eindpunten waarvoor de aanbieders geen toestemming hebben gegeven. Ze kunnen de voorwaarden van de aanbieders schenden of op elk moment stoppen met werken. Kies voor betrouwbaar en correct gebruik een officiële API of Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Machinevertaling kan fouten bevatten en vervangt het origineel niet. Vertrouw voor labels, waarschuwingen en notities van de auteur op het origineel.",
   "向左翻頁繼續閱讀": "Blader verder om te blijven lezen",
-  "已讀完最後一章": "Laatste hoofdstuk gelezen"
+  "已讀完最後一章": "Laatste hoofdstuk gelezen",
+  "回覆 %@": "Antwoord aan %@",
+  "跳到指定進度": "Naar voortgang gaan",
+  "百分比": "Percentage",
+  "跳轉": "Ga",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Voer een percentage van 0 tot 100 in om naar dat punt in het werk te gaan.",
+  "輸入百分比跳到指定進度": "Voer een percentage in om erheen te gaan"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -9838,7 +9910,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "تستخدم الخدمات التي لا تتطلب مفتاحًا وخدمات الويب واجهات غير رسمية لم يأذن بها مقدّموها. وقد تنتهك شروط مقدّمي الخدمة أو تتوقف عن العمل في أي وقت. للاستخدام الموثوق والمتوافق مع الشروط، اختر واجهة API رسمية أو Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "قد تكون الترجمة الآلية خاطئة ولا تحل محل النص الأصلي. اعتمد على النص الأصلي في العلامات والتحذيرات وملاحظات المؤلف.",
   "向左翻頁繼續閱讀": "اقلب الصفحة لمتابعة القراءة",
-  "已讀完最後一章": "أنهيت الفصل الأخير"
+  "已讀完最後一章": "أنهيت الفصل الأخير",
+  "回覆 %@": "رد على %@",
+  "跳到指定進度": "الانتقال إلى نسبة التقدم",
+  "百分比": "النسبة المئوية",
+  "跳轉": "انتقال",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "أدخل نسبة مئوية من 0 إلى 100 للانتقال إلى ذلك الموضع في العمل.",
+  "輸入百分比跳到指定進度": "أدخل نسبة مئوية للانتقال"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -10595,7 +10673,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "बिना कुंजी वाली और वेब सेवाएँ अनौपचारिक एंडपॉइंट का उपयोग करती हैं, जिन्हें प्रदाताओं ने अधिकृत नहीं किया है। वे प्रदाताओं की शर्तों का उल्लंघन कर सकती हैं या कभी भी काम करना बंद कर सकती हैं। भरोसेमंद और नियमों के अनुरूप उपयोग के लिए आधिकारिक API या Apple अनुवाद चुनें।",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "मशीन अनुवाद गलत हो सकता है और मूल पाठ की जगह नहीं ले सकता। टैग, चेतावनियों और लेखक के नोट्स के लिए मूल पाठ पर भरोसा करें।",
   "向左翻頁繼續閱讀": "पढ़ना जारी रखने के लिए पन्ना पलटें",
-  "已讀完最後一章": "आपने अंतिम अध्याय पढ़ लिया है"
+  "已讀完最後一章": "आपने अंतिम अध्याय पढ़ लिया है",
+  "回覆 %@": "%@ को जवाब",
+  "跳到指定進度": "प्रगति पर जाएँ",
+  "百分比": "प्रतिशत",
+  "跳轉": "जाएँ",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "रचना में उस स्थान पर जाने के लिए 0 से 100 तक प्रतिशत दर्ज करें।",
+  "輸入百分比跳到指定進度": "जाने के लिए प्रतिशत दर्ज करें"
  },
  "id": {
   "載入中": "Memuat",
@@ -11352,7 +11436,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Layanan tanpa kunci dan layanan web menggunakan endpoint tidak resmi yang tidak diizinkan oleh penyedianya. Layanan ini dapat melanggar ketentuan penyedia atau berhenti berfungsi kapan saja. Untuk penggunaan yang andal dan sesuai aturan, pilih API resmi atau Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Terjemahan mesin bisa salah dan tidak menggantikan teks asli. Jadikan teks asli sebagai acuan untuk tag, peringatan, dan catatan penulis.",
   "向左翻頁繼續閱讀": "Balik halaman untuk lanjut membaca",
-  "已讀完最後一章": "Anda telah menyelesaikan bab terakhir"
+  "已讀完最後一章": "Anda telah menyelesaikan bab terakhir",
+  "回覆 %@": "Balasan untuk %@",
+  "跳到指定進度": "Lompat ke progres",
+  "百分比": "Persentase",
+  "跳轉": "Lompat",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Masukkan persentase 0 sampai 100 untuk melompat ke titik tersebut dalam karya.",
+  "輸入百分比跳到指定進度": "Masukkan persentase untuk melompat"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -12109,7 +12199,13 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Các dịch vụ không cần khóa và dịch vụ web dùng endpoint không chính thức, chưa được nhà cung cấp cho phép. Chúng có thể vi phạm điều khoản của nhà cung cấp hoặc ngừng hoạt động bất cứ lúc nào. Để sử dụng ổn định và hợp lệ, hãy chọn API chính thức hoặc Apple Translate.",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Bản dịch máy có thể sai và không thay thế được bản gốc. Hãy lấy bản gốc làm chuẩn cho thẻ, cảnh báo và ghi chú của tác giả.",
   "向左翻頁繼續閱讀": "Lật trang để đọc tiếp",
-  "已讀完最後一章": "Bạn đã đọc xong chương cuối"
+  "已讀完最後一章": "Bạn đã đọc xong chương cuối",
+  "回覆 %@": "Trả lời %@",
+  "跳到指定進度": "Đi đến tiến độ",
+  "百分比": "Phần trăm",
+  "跳轉": "Đi",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "Nhập phần trăm từ 0 đến 100 để chuyển đến vị trí đó trong tác phẩm.",
+  "輸入百分比跳到指定進度": "Nhập phần trăm để chuyển đến vị trí đó"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -12866,6 +12962,12 @@
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "บริการแบบไม่ต้องใช้คีย์และบริการเว็บใช้ endpoint ที่ไม่เป็นทางการซึ่งผู้ให้บริการไม่ได้อนุญาต อาจละเมิดข้อกำหนดของผู้ให้บริการหรือหยุดทำงานได้ทุกเมื่อ หากต้องการใช้งานที่เสถียรและถูกต้องตามข้อกำหนด โปรดเลือก API ทางการหรือ Apple Translate",
   "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "การแปลด้วยเครื่องอาจผิดพลาดและไม่สามารถแทนที่ต้นฉบับได้ โปรดยึดต้นฉบับเป็นหลักสำหรับแท็ก คำเตือน และหมายเหตุของผู้เขียน",
   "向左翻頁繼續閱讀": "พลิกหน้าเพื่ออ่านต่อ",
-  "已讀完最後一章": "อ่านจบบทสุดท้ายแล้ว"
+  "已讀完最後一章": "อ่านจบบทสุดท้ายแล้ว",
+  "回覆 %@": "ตอบกลับ %@",
+  "跳到指定進度": "ไปยังความคืบหน้า",
+  "百分比": "เปอร์เซ็นต์",
+  "跳轉": "ไป",
+  "輸入 0 到 100 的百分比，跳到整部作品的對應位置。": "ป้อนเปอร์เซ็นต์ 0 ถึง 100 เพื่อไปยังตำแหน่งนั้นในผลงาน",
+  "輸入百分比跳到指定進度": "ป้อนเปอร์เซ็นต์เพื่อไปยังตำแหน่ง"
  }
 }
