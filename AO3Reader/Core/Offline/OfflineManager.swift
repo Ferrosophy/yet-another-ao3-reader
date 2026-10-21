@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 import Network
 import Observation
@@ -285,10 +286,16 @@ final class OfflineManager {
         }
     }
 
+    /// AO3 限流（HTTP 429）後，整個佇列暫停到這個時間，不再接著請求其他作品
+    @ObservationIgnored private var rateLimitedUntil: Date?
+
     private func run() {
         guard worker == nil else { return }
         worker = Task { [weak self] in
             while let self, let id = self.nextID() {
+                if let until = self.rateLimitedUntil, until > Date() {
+                    try? await Task.sleep(for: .seconds(until.timeIntervalSinceNow))
+                }
                 self.currentID = id
                 let job = Task { await self.process(id) }
                 self.job = job
@@ -500,6 +507,9 @@ final class OfflineManager {
             if Task.isCancelled {
                 if activity[id] != nil { activity[id] = .paused }
             } else if needsDownload(id), Self.isRetryable(error) {
+                if case AO3Error.rateLimited(let after) = error {
+                    rateLimitedUntil = Date().addingTimeInterval(max(Double(after ?? "") ?? 60, 60))
+                }
                 // 下載失敗：已下載的章節保留，稍後自動從斷點繼續
                 activity[id] = .failed(String(localized: "下載中斷：\(error.localizedDescription)，稍後自動繼續"))
                 scheduleAutoRetry(id)

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 可搜尋的語言長列表。`selection` 為 nil 代表「自動偵測」（僅在 `allowsAutomatic` 時出現）。

@@ -99,11 +99,37 @@ jobs:
         id: build
         run: scripts/build-unsigned-ipa.sh "${{ steps.version.outputs.version }}" "${{ steps.version.outputs.build }}"
 
+      # SHA-256 校驗值：附在 Artifact 與 Release，讓使用者確認 IPA 來自官方建置且未被修改
+      - name: Checksum
+        id: checksum
+        env:
+          IPA_PATH: ${{ steps.build.outputs.ipa_path }}
+          IPA_NAME: ${{ steps.build.outputs.ipa_name }}
+        run: |
+          SUM=$(shasum -a 256 "$IPA_PATH" | cut -d ' ' -f 1)
+          echo "$SUM  $IPA_NAME" > "$IPA_PATH.sha256"
+          echo "sha256=$SUM" >> "$GITHUB_OUTPUT"
+          echo "sha256_path=$IPA_PATH.sha256" >> "$GITHUB_OUTPUT"
+          {
+            cat .github/RELEASE_NOTES.md
+            echo
+            echo "**SHA-256** (\`$IPA_NAME\`)"
+            echo
+            echo "\`\`\`"
+            echo "$SUM"
+            echo "\`\`\`"
+            echo
+            echo "校验方法 / Verify: \`shasum -a 256 $IPA_NAME\`（macOS / Linux）或 \`Get-FileHash $IPA_NAME\`（Windows PowerShell）。只从本仓库的 GitHub Releases 下载 IPA。"
+          } > build/release-notes.md
+          echo "SHA-256: $SUM"
+
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.build.outputs.ipa_name }}
-          path: ${{ steps.build.outputs.ipa_path }}
+          path: |
+            ${{ steps.build.outputs.ipa_path }}
+            ${{ steps.checksum.outputs.sha256_path }}
           if-no-files-found: error
 
       - name: Upload build log
@@ -120,7 +146,9 @@ jobs:
           tag_name: v${{ steps.version.outputs.version }}
           target_commitish: ${{ github.sha }}
           name: YAAO3R ${{ steps.version.outputs.version }}
-          files: ${{ steps.build.outputs.ipa_path }}
-          body_path: .github/RELEASE_NOTES.md
+          files: |
+            ${{ steps.build.outputs.ipa_path }}
+            ${{ steps.checksum.outputs.sha256_path }}
+          body_path: build/release-notes.md
           prerelease: ${{ startsWith(steps.version.outputs.version, '0.') }}
           make_latest: ${{ !startsWith(steps.version.outputs.version, '0.') }}

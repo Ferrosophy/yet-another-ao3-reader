@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 對應 AO3 官方「Work Search」進階搜尋表單（/works/search）的全部欄位。

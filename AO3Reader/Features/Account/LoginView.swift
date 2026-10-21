@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 import WebKit
 
@@ -8,6 +9,11 @@ struct LoginView: View {
     @State private var password = ""
     @State private var error: String?
     @State private var showsWebLogin = false
+    /// 使用鏡像登入時，需先確認了解風險
+    @State private var acceptsMirrorRisk = false
+
+    private var isMirror: Bool { app.sources.selected.id != AO3Source.official.id }
+    private var canLogin: Bool { !isMirror || acceptsMirrorRisk }
     @FocusState private var focus: Field?
 
     private enum Field { case username, password }
@@ -46,6 +52,21 @@ struct LoginView: View {
                 .padding(16)
                 .glassEffect(.regular, in: .rect(cornerRadius: 22))
 
+                if isMirror {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Label("你正在透過鏡像站登入", systemImage: "exclamationmark.shield.fill")
+                            .appFont(.subheadline, weight: .semibold)
+                            .foregroundStyle(.orange)
+                        Text("鏡像站不是 AO3 官方網站。鏡像的營運者能看到你輸入的帳號與密碼，以及登入後帳號裡的內容。App 的「測試連線」只檢查頁面格式是否相容，不代表這個鏡像安全可信。建議盡量在官網登入；若一定要使用鏡像，請只使用你信任的鏡像，並避免使用與其他網站相同的密碼。")
+                            .appFont(.footnote)
+                            .foregroundStyle(.secondary)
+                        Toggle("我了解風險，仍要登入", isOn: $acceptsMirrorRisk)
+                            .appFont(.footnote)
+                    }
+                    .padding(14)
+                    .background(Color.orange.opacity(0.1), in: .rect(cornerRadius: 16))
+                }
+
                 if let error {
                     Text(error)
                         .appFont(.footnote)
@@ -61,10 +82,11 @@ struct LoginView: View {
                     .padding(.vertical, 6)
                 }
                 .buttonStyle(.glassProminent)
-                .disabled(username.isEmpty || password.isEmpty || app.auth.isWorking)
+                .disabled(username.isEmpty || password.isEmpty || app.auth.isWorking || !canLogin)
 
                 Button("使用網頁登入") { showsWebLogin = true }
                     .buttonStyle(.glass)
+                    .disabled(!canLogin)
 
                 Text("密碼只會直接傳送給目前的 AO3 來源，不會被本應用保存。")
                     .appFont(.caption)
@@ -94,7 +116,7 @@ struct LoginView: View {
     }
 
     private func login() {
-        guard !username.isEmpty, !password.isEmpty else { return }
+        guard !username.isEmpty, !password.isEmpty, canLogin else { return }
         error = nil
         Task {
             do {
@@ -114,7 +136,7 @@ struct WebLoginView: UIViewRepresentable {
     let url: URL
     var onLoggedIn: () -> Void
 
-    func makeCoordinator() -> Coordinator { Coordinator(onLoggedIn: onLoggedIn) }
+    func makeCoordinator() -> Coordinator { Coordinator(host: url.host(), onLoggedIn: onLoggedIn) }
 
     func makeUIView(context: Context) -> WKWebView {
         let config = WKWebViewConfiguration()
@@ -130,13 +152,20 @@ struct WebLoginView: UIViewRepresentable {
 
     @MainActor
     final class Coordinator: NSObject, WKNavigationDelegate {
+        let host: String?
         let onLoggedIn: () -> Void
-        init(onLoggedIn: @escaping () -> Void) { self.onLoggedIn = onLoggedIn }
+        init(host: String?, onLoggedIn: @escaping () -> Void) {
+            self.host = host
+            self.onLoggedIn = onLoggedIn
+        }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             Task {
                 let cookies = await webView.configuration.websiteDataStore.httpCookieStore.allCookies()
-                for cookie in cookies { HTTPCookieStorage.shared.setCookie(cookie) }
+                // 只同步登入網站的 Cookie
+                for cookie in cookies where cookie.belongs(to: host) {
+                    HTTPCookieStorage.shared.setCookie(cookie.forURLSession ?? cookie)
+                }
                 let html = try? await webView.evaluateJavaScript("document.documentElement.outerHTML") as? String
                 if let html, AO3Parser.loggedInUsername(html) != nil {
                     onLoggedIn()

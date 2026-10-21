@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 import WebKit
 
@@ -159,7 +160,8 @@ struct VerificationWebView: UIViewRepresentable {
 
         private func syncCookiesNow(from webView: WKWebView) async {
             let store = webView.configuration.websiteDataStore.httpCookieStore
-            for cookie in await store.allCookies() {
+            // 只同步目前網站的 Cookie（驗證服務、統計等第三方網域的 Cookie 不帶入 App）
+            for cookie in await store.allCookies() where cookie.belongs(to: url.host()) {
                 HTTPCookieStorage.shared.setCookie(cookie.forURLSession ?? cookie)
             }
         }

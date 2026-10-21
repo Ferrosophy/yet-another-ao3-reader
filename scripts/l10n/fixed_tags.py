@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """AO3 固定標籤（分級、警告、分類）的內建翻譯，輸出 AO3Reader/Resources/FixedTags.json。
 中文為人工翻譯，其他語言以 Google 翻譯產生。用法：python3 fixed_tags.py ../../AO3Reader/Resources/FixedTags.json"""
 import json, sys, time, urllib.parse, urllib.request

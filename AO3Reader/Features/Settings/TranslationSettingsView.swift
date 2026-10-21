@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 struct TranslationSettingsView: View {
@@ -26,7 +27,18 @@ struct TranslationSettingsView: View {
                     ForEach(BilingualDisplayMode.allCases) { Text($0.title).tag($0) }
                 }
             } footer: {
-                Text("沉浸式翻譯：譯文顯示在每段原文下方，不會取代原文。")
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("沉浸式翻譯：譯文顯示在每段原文下方，不會取代原文。")
+                    if kind == .apple {
+                        Text("Apple 翻譯在裝置上進行，文字不會傳出這台裝置。")
+                    } else {
+                        Text("翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。")
+                    }
+                    if !kind.requiresAPIKey, kind != .apple {
+                        Text("免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。")
+                    }
+                    Text("機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。")
+                }
             }
 
             if kind.acceptsAPIKey {

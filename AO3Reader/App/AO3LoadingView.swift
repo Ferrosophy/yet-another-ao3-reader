@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 載入動畫：書本圖示原地循環淡入淡出（不使用 AO3 官方標誌，避免暗示官方授權）。`compact` 用於列表底部的分頁載入。

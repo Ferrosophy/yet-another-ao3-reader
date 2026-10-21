@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 首頁：最新作品，以及依 Kudos / 評論 / 點擊排序的排行榜（可選時間範圍）。

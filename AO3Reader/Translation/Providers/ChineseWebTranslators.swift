@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 // 免金鑰的中文網頁翻譯服務。皆為非官方介面（與網頁版或瀏覽器擴充所用相同），

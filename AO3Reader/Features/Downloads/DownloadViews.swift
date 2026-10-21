@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 下載列表：書架作品的離線進度（下載原文、翻譯、匯出），可暫停、繼續與重試。

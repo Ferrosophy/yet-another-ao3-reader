@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 標籤輸入框：輸入時向 AO3 /autocomplete 查詢匹配的正式標籤，點選後加入為標籤膠囊。

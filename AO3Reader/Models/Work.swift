@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 搜尋結果、閱讀紀錄、書籤列表中的一個作品卡片（AO3 的 `li.blurb`）。

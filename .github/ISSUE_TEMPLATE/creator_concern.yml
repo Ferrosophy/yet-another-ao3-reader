@@ -1,0 +1,21 @@
+name: 作者内容异议 / Creator concern
+description: 我是 AO3 作者，对作品在本 App 中的显示、翻译或离线保存有疑虑
+labels: [creator-concern]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        YAAO3R 是非官方的 AO3 阅读器，**不托管、不转载任何作品**：作品只在用户操作时从 AO3（或用户自行加入的镜像）读取，翻译与离线副本只保存在该用户自己的设备上。
+        如果你希望作品只给登录用户阅读，可在 AO3 的作品设置中开启「Only show your work to registered users」，本 App 会遵守此限制。
+        请在下方说明你的疑虑，维护者会尽快回复。如不便公开，可只留下联系方式。
+  - type: textarea
+    id: concern
+    attributes:
+      label: 你的疑虑 / Your concern
+    validations:
+      required: true
+  - type: input
+    id: work
+    attributes:
+      label: 相关作品（可选）/ Related work (optional)
+      placeholder: https://archiveofourown.org/works/…

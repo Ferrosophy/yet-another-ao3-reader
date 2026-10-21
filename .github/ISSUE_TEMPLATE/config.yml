@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 安全漏洞（私密回报）/ Security vulnerability
+    url: https://github.com/Ferrosophy/yet-another-ao3-reader/security/advisories/new
+    about: 请勿在 Issues 公开安全漏洞，使用私密回报。
+  - name: 隐私政策 / Privacy policy
+    url: https://github.com/Ferrosophy/yet-another-ao3-reader/blob/main/PRIVACY.md
+    about: 数据流向与删除方式

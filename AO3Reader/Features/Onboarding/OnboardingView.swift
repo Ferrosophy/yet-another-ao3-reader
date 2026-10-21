@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 新手引導：第一次開啟時顯示，之後可在「設定 › 顯示教程」重看。

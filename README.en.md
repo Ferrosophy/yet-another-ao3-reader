@@ -60,12 +60,20 @@ Traditional Chinese (Taiwan, Hong Kong, Macau), Simplified Chinese, English, Jap
 
 ## Installation
 
-- Requires an iPhone running **iOS 26 or later**.
-- Download `YAAO3R-<version>-unsigned.ipa` from [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest).
-- The IPA is **unsigned**. Sign it with [AltStore](https://altstore.io), [SideStore](https://sidestore.io), [Sideloadly](https://sideloadly.io) or your own developer certificate before installing.
-- Apps signed with a free Apple ID must be re-signed every 7 days.
+Requires an iPhone running **iOS 26 or later**. The app is distributed only through this repository's GitHub Releases; it isn't on the App Store or TestFlight.
 
-> Your password is sent to the selected source when you log in, so only use mirrors you trust.
+1. Download `YAAO3R-<version>-unsigned.ipa` from [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest).
+2. **Verify the checksum**: each release lists the SHA-256 and includes a matching `.sha256` file. Run `shasum -a 256 YAAO3R-<version>-unsigned.ipa` (macOS / Linux) or `Get-FileHash YAAO3R-<version>-unsigned.ipa` (Windows PowerShell); the result must match.
+3. **Sign and install** the unsigned IPA with your own Apple ID using [AltStore](https://altstore.io) or [SideStore](https://sidestore.io) (open the IPA with it on your iPhone), [Sideloadly](https://sideloadly.io) (on a computer), or your own paid developer certificate.
+4. Before first launch, trust your developer certificate in Settings › General › VPN & Device Management, and turn on Developer Mode in Settings › Privacy & Security.
+
+**Limits and risks**
+- With a free Apple ID the app must be re-signed every **7 days** (AltStore / SideStore can refresh in the background), and you can have at most 3 self-signed apps installed.
+- Signing tools need your Apple ID. Use tools you trust; a separate Apple ID just for signing is a good idea.
+- **Only download the IPA from this repository's Releases.** Repackaged or "no-signing-needed" builds from elsewhere may contain malware or steal your AO3 account and API keys.
+- To update, install the new IPA over the old one; local data is kept as long as you sign with the same Apple ID.
+
+> **Logging in through a mirror is risky**: a mirror is not the official AO3 site, and whoever runs it can see the username and password you enter and the contents of your account. The app's connection test only checks that pages are compatible; it doesn't mean a mirror is trustworthy. Log in on the official site when possible, use only mirrors you trust, and don't reuse passwords. Only HTTPS mirrors are accepted.
 
 ## Privacy
 
@@ -74,9 +82,19 @@ Traditional Chinese (Taiwan, Hong Kong, Macau), Simplified Chinese, English, Jap
 - Translation API keys stay in the device keychain and never sync to iCloud. Text is sent directly to the translation service you choose.
 - Synced data is stored only in your own iCloud or WebDAV.
 
-## Feedback
+## Translation services
 
-**Settings › Feedback** opens [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues) with your version information filled in. If a mirror doesn't work, triple-tap **App Version** in Settings to open the debug page, then copy the log and attach it.
+- **Text goes to the provider**: with translation on, the text to translate (body, titles, tags, summaries, notes and comments) is sent to the service you choose and handled under its privacy policy. **Only Apple Translate runs on device.** The app also tells you this the first time you turn on cloud translation in the reader.
+- **Unofficial endpoints**: services marked "key-free" or "web" (Google, Bing, Tencent TranSmart, Volcano, Baidu, Youdao, Sogou, DeepL without a key) use unofficial web endpoints the providers haven't authorized. They may violate the providers' terms, be rate-limited or stop working. For reliable, compliant use, choose an official API (Google Cloud Translation, Microsoft Azure, DeepL API, OpenAI-compatible services, Claude, Gemini; bring your own key) or Apple Translate.
+- **Accuracy**: machine translation can be wrong and doesn't replace the original. Rely on the original especially for tags, Archive Warnings and author's notes.
+
+## Feedback and maintenance
+
+- **Bugs and suggestions**: **Settings › Feedback** opens the bug report form in [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues) with your version filled in; use the feature request template for ideas.
+- **Security issues**: don't post them publicly; report privately as described in [SECURITY.md](SECURITY.md).
+- **Creators**: if you write on AO3 and have concerns about how your work is shown, translated or saved offline in this app, use the creator concern template. The app doesn't host or repost any work, and it respects AO3's "registered users only" setting.
+- **Debug log**: if a mirror doesn't work, triple-tap **App Version** in Settings to open the debug page. Passwords, cookies and tokens are hidden, but the log still contains URLs you visited, so share it privately.
+- **Expectations**: this is a personal, spare-time project. Issues are answered and fixed on a best-effort basis, without guaranteed response times; adapting to AO3 site changes may take a while.
 
 If you enjoy the app, you can buy the developer a coffee in **Settings › Support Us**.
 
@@ -115,9 +133,15 @@ Donations support only the developer of this app. They are not affiliated with A
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE). You may use, modify and redistribute it, but redistributed versions (including modified ones) must also be released under GPL-3.0 with their source code. The dependency [SwiftSoup](https://github.com/scinfu/SwiftSoup) is MIT-licensed.
+This project is licensed under the [GNU General Public License](LICENSE), version 3 or (at your option) any later version (SPDX: `GPL-3.0-or-later`); every source file carries the same notice. You may use, modify and redistribute it, but redistributed versions (including modified ones) must be released under the same license with their source code. The dependency [SwiftSoup](https://github.com/scinfu/SwiftSoup) is MIT-licensed.
 
 ## Development
+
+### Versioning
+
+- Versions follow [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`.
+- Changes are listed in [CHANGELOG.md](CHANGELOG.md); known issues are listed above.
+- Releases are published on GitHub Releases with the IPA's SHA-256 checksum.
 
 Requires Xcode 26 or later and the iOS 26 SDK.
 

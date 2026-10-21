@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// Google 網頁翻譯端點（免金鑰）。非官方公開 API，可能被限流，適合作為預設的開箱即用選項。

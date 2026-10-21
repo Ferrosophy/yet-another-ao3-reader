@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import SwiftUI
 
 /// 訂閱列表：作品、系列、用戶（/users/<name>/subscriptions?type=…）。

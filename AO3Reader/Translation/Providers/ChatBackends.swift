@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// OpenAI Chat Completions 相容介面：OpenAI、DeepSeek、OpenRouter、Groq、本地 Ollama / LM Studio 等皆可使用。

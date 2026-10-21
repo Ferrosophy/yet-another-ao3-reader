@@ -1,0 +1,43 @@
+name: 问题回报 / Bug report
+description: App 出现错误、闪退或页面无法加载
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢回报！请不要在这里贴出密码、Cookie、API Key 或其他私人信息。
+        **安全漏洞请勿在此公开**，请到 Security 页面使用「Report a vulnerability」私密回报。
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述 / What happened
+      description: 发生了什么？你原本预期会怎样？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重现步骤 / Steps to reproduce
+      placeholder: |
+        1. 打开…
+        2. 点击…
+        3. 出现…
+  - type: input
+    id: source
+    attributes:
+      label: 内容来源 / Content source
+      description: 使用官网还是镜像源？（镜像网址可以不填）
+  - type: textarea
+    id: environment
+    attributes:
+      label: 版本信息 / Environment
+      description: 从 App 的「设置 › 意见反馈」打开时会自动填入
+      placeholder: App 1.0.2 (40) · iOS 26.0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 调试记录 / Debug log（可选）
+      description: 设置里连点三下「应用版本」可打开调试页。记录已隐藏密码、Cookie 与验证令牌，但仍可能包含你浏览过的网址；不想公开的话请勿贴出。
+      render: text

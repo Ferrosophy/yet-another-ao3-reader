@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 非作品類列表（標籤、用戶、合集、訂閱、收件匣）的一頁。

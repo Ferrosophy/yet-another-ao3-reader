@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 /// 作品頁底部的一則評論（含回覆，以 `depth` 表示層級）。

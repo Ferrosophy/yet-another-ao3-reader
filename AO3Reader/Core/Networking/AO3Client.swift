@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 import Foundation
 
 enum AO3Error: LocalizedError, Equatable {
@@ -386,6 +387,13 @@ enum FormEncoding {
 }
 
 extension HTTPCookie {
+    /// Cookie 是否屬於這個網域（含子網域）。從網頁同步 Cookie 時只同步目前來源的，不帶入第三方網域
+    func belongs(to host: String?) -> Bool {
+        guard let host = host?.lowercased() else { return false }
+        let domain = self.domain.lowercased().trimmingCharacters(in: CharacterSet(charactersIn: "."))
+        return host == domain || host.hasSuffix("." + domain)
+    }
+
     /// 把 WKWebView 的 Cookie 重建為只含標準屬性的 Cookie 再存入 `HTTPCookieStorage`。
     /// Cloudflare 的 cf_clearance 會帶 Partitioned 等屬性，原樣寫入後不會隨 App 的請求送出，導致驗證後仍被攔下。
     var forURLSession: HTTPCookie? {
