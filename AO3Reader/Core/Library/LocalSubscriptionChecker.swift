@@ -23,6 +23,7 @@ extension AO3Parser {
 
 extension AO3Client {
     func subscriptionFingerprint(_ subscription: LocalSubscription) async throws -> String? {
+        if isDemo { return nil }
         var path = subscription.path
         var query: [URLQueryItem] = []
         switch subscription.kind {

@@ -146,8 +146,8 @@ struct VerificationWebView: UIViewRepresentable {
             let script = """
             (function() {
               if (document.querySelector('#outer #main, #outer #header')) return true;
-              var challenge = !!document.querySelector('#challenge-form, #challenge-stage, #challenge-running, #challenge-error-text, #anubis_challenge')
-                || /^just a moment/i.test(document.title);
+              var challenge = !!document.querySelector('#challenge-form, #challenge-stage, #challenge-running, #challenge-error-text, #anubis_challenge, altcha-widget')
+                || /^(just a moment|verification)/i.test(document.title);
               return !challenge && document.readyState === 'complete';
             })()
             """

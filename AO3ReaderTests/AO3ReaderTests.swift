@@ -598,4 +598,9 @@ struct AnubisDetectionTests {
         #expect(!cookie.belongs(to: "evilmirror.example"))
         #expect(!cookie.belongs(to: "challenges.cloudflare.com"))
     }
+
+    @Test func detectsAltchaChallenge() {
+        let page = Data(#"<html><head><title>Verification</title><script type="module" src="/aegis_altcha_object/altcha.min.js"></script></head><body><altcha-widget id="altcha" auto="onload"></altcha-widget></body></html>"#.utf8)
+        #expect(AO3Client.isAnubisChallenge(data: page))
+    }
 }

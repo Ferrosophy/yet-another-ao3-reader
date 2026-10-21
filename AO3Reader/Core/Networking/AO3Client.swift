@@ -149,7 +149,7 @@ struct AO3Client: Sendable {
             throw AO3Error.cloudflareChallenge
         }
         if Self.isAnubisChallenge(data: data) {
-            log(.anubis, "Anubis challenge")
+            log(.anubis, "Browser challenge (Anubis / ALTCHA)")
             // Anubis 需要在瀏覽器中計算工作量證明，同樣以驗證頁處理
             NotificationCenter.default.post(name: .ao3CloudflareChallenge, object: nil,
                                             userInfo: ["url": response.url ?? baseURL])
@@ -185,11 +185,13 @@ struct AO3Client: Sendable {
         }
     }
 
-    /// Anubis（TecharoHQ/anubis）的驗證頁：含 Anubis 的腳本或路徑
+    /// 需要在瀏覽器中完成的工作量證明驗證頁：Anubis（TecharoHQ/anubis），
+    /// 或 ALTCHA（部分鏡像的「Verification」頁，含 altcha-widget 元件與 /aegis_altcha_object/ 腳本）
     static func isAnubisChallenge(data: Data) -> Bool {
         let head = String(decoding: data.prefix(16_000), as: UTF8.self)
         return head.contains("anubis_challenge") || head.contains("/.within.website/")
             || (head.localizedCaseInsensitiveContains("anubis") && head.contains("Making sure you"))
+            || head.contains("<altcha-widget") || head.contains("aegis_altcha")
     }
 
     /// 頁面解析失敗時記入除錯紀錄（例如鏡像回傳了非 AO3 的頁面）
