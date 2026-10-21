@@ -17,6 +17,10 @@ on:
       version:
         description: "版本號（例如 1.0.0），留空則使用 project.yml"
         required: false
+      tests:
+        description: "同時執行單元測試（另佔一台 macOS 機器，預設不執行）"
+        type: boolean
+        default: false
       release:
         description: "發行：建立 tag v<版本號> 與 GitHub Release（附 IPA，說明取自 .github/RELEASE_NOTES.md）"
         type: boolean
@@ -32,8 +36,8 @@ permissions:
 jobs:
   test:
     name: Unit tests
-    # 推送與發行時只編譯 IPA，避免同時搶兩台 macOS 機器；單元測試在 PR 與一般手動執行時跑
-    if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && !inputs.release)
+    # 預設只編譯 IPA；單元測試只在手動執行並勾選「同時執行單元測試」時跑
+    if: github.event_name == 'workflow_dispatch' && inputs.tests
     runs-on: macos-26
     steps:
       - uses: actions/checkout@v4

@@ -261,7 +261,7 @@ struct AO3Client: Sendable {
     /// 從官網搜尋表單讀取所有可篩選的語言。
     func languages() async throws -> [AO3Language] {
         if isDemo { return DemoSite.languages }
-        AO3Language.bySpeakers(try AO3Parser.languageOptions(html: try await get("/works/search")))
+        return AO3Language.bySpeakers(try AO3Parser.languageOptions(html: try await get("/works/search")))
     }
 
     /// 任意作品列表頁（標籤、合集、系列、用戶作品…），列表中的 `li.blurb` 皆可解析。

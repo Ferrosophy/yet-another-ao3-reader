@@ -212,7 +212,7 @@ private struct CommentRow: View {
         .padding(.leading, CGFloat(min(comment.depth, 4)) * 18)
         .overlay(alignment: .leading) {
             if comment.depth > 0 {
-                Rectangle().fill(.secondary.opacity(0.3)).frame(width: 2)
+                Rectangle().fill(Color.secondary.opacity(0.3)).frame(width: 2)
                     .padding(.leading, CGFloat(min(comment.depth, 4)) * 18 - 10)
             }
         }
