@@ -81,7 +81,9 @@ struct SearchView: View {
                 // 詳細搜尋（作品的條件）任何範圍都可打開，送出時切到作品範圍
                 ToolbarItem(placement: .topBarLeading) {
                     Button("詳細搜尋", systemImage: query.isEmpty ? "line.3.horizontal.decrease" : "line.3.horizontal.decrease.circle.fill") {
-                        showsFilters = true
+                        // 搜尋框輸入中時先收起鍵盤，下一輪再顯示表單（避免與搜尋介面的轉場同時進行）
+                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        DispatchQueue.main.async { showsFilters = true }
                     }
                 }
             }
@@ -365,7 +367,9 @@ struct SearchCondition: Identifiable {
             if !value.isEmpty { add(id, "\(title) \(value)") { $0[keyPath: keyPath] = "" } }
         }
         func tags(_ id: String, _ keyPath: WritableKeyPath<WorkSearchQuery, String> & Sendable, prefix: String = "") {
-            let names = query[keyPath: keyPath].split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
+            var seen = Set<String>()
+            let names = query[keyPath: keyPath].split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }
+                .filter { !$0.isEmpty && seen.insert($0).inserted }
             for name in names {
                 add("\(id):\(name)", prefix + name) { query in
                     query[keyPath: keyPath] = query[keyPath: keyPath].split(separator: ",")

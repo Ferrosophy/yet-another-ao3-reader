@@ -13,10 +13,12 @@ struct TagTokenField: View {
     @State private var suggestions: [String] = []
     @State private var lookup: Task<Void, Never>?
 
+    /// 已加入的標籤（去除重複，避免列表出現相同的 ID）
     private var tokens: [String] {
-        text.split(separator: ",")
+        var seen = Set<String>()
+        return text.split(separator: ",")
             .map { $0.trimmingCharacters(in: .whitespaces) }
-            .filter { !$0.isEmpty }
+            .filter { !$0.isEmpty && seen.insert($0).inserted }
     }
 
     var body: some View {
@@ -80,7 +82,8 @@ struct TagTokenField: View {
             guard !Task.isCancelled else { return }
             let result = (try? await client.autocomplete(kind, term: term)) ?? []
             guard !Task.isCancelled else { return }
-            suggestions = result.filter { !tokens.contains($0) }
+            var seen = Set(tokens)
+            suggestions = result.filter { seen.insert($0).inserted }
         }
     }
 

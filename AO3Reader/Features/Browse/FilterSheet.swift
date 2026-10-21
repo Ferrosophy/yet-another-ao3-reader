@@ -161,6 +161,8 @@ struct ComparisonField: View {
     @State private var comparator = ">"
     @State private var number = ""
     @State private var unit = "days"
+    /// 讀回已有條件之前不回寫，避免表單打開時一連串回寫搜尋條件
+    @State private var loaded = false
 
     var body: some View {
         HStack(spacing: 10) {
@@ -198,15 +200,15 @@ struct ComparisonField: View {
         if trimmed.hasPrefix("<") { comparator = "<" } else if trimmed.hasPrefix(">") { comparator = ">" }
         number = trimmed.filter(\.isNumber)
         if let match = units.first(where: { trimmed.contains($0.value.dropLast()) }) { unit = match.value }
+        DispatchQueue.main.async { loaded = true }
     }
 
     private func compose() {
+        guard loaded else { return }
         let digits = number.filter(\.isNumber)
-        guard !digits.isEmpty else {
-            value = ""
-            return
-        }
-        value = units.isEmpty ? "\(comparator) \(digits)" : "\(comparator) \(digits) \(unit)"
+        let composed = digits.isEmpty ? "" : (units.isEmpty ? "\(comparator) \(digits)" : "\(comparator) \(digits) \(unit)")
+        // 只在真的改變時才回寫
+        if composed != value { value = composed }
     }
 }
 

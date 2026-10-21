@@ -86,8 +86,11 @@ struct WorkEndView: View {
                 }
                 .buttonStyle(.glassProminent)
                 Button(action: onComments) {
-                    Label("評論", systemImage: "text.bubble")
-                        .frame(minWidth: 96)
+                    HStack(spacing: 6) {
+                        Text(verbatim: "📖")
+                        Text("評論")
+                    }
+                    .frame(minWidth: 96)
                 }
                 .buttonStyle(.glass)
             }
