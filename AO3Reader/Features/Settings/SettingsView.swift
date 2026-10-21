@@ -122,7 +122,7 @@ struct SettingsView: View {
             } header: {
                 Text("下載")
             } footer: {
-                Text("離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。")
+                Text("離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAFR › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。")
             }
 
             Section("外觀") {

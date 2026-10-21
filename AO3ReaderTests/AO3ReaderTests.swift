@@ -603,4 +603,13 @@ struct AnubisDetectionTests {
         let page = Data(#"<html><head><title>Verification</title><script type="module" src="/aegis_altcha_object/altcha.min.js"></script></head><body><altcha-widget id="altcha" auto="onload"></altcha-widget></body></html>"#.utf8)
         #expect(AO3Client.isAnubisChallenge(data: page))
     }
+
+    @Test func detectsAuthorTranslationWishes() {
+        #expect(AuthorWishes.declinesTranslation(["Please do not translate or repost my work."]) != nil)
+        #expect(AuthorWishes.declinesTranslation(["No AI", "Fluff"]) != nil)
+        #expect(AuthorWishes.declinesTranslation(["禁止翻譯與轉載"]) != nil)
+        #expect(AuthorWishes.declinesTranslation(["無断翻訳禁止"]) != nil)
+        #expect(AuthorWishes.declinesTranslation(["Fluff", "Hurt/Comfort", "Translation available in Chinese"]) == nil)
+        #expect(AuthorWishes.declinesTranslation(["Kano Aida is here", "no aid was given"]) == nil)
+    }
 }

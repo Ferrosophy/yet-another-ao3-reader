@@ -128,8 +128,8 @@ private struct WelcomePage: View {
     var body: some View {
         List {
             PageHeader(systemImage: "books.vertical.fill",
-                       title: "歡迎使用 YAAO3R",
-                       message: "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。")
+                       title: "歡迎使用 YAFR",
+                       message: "Yet another fanfic reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。")
             Section {
                 Label("瀏覽最新作品，搜尋作品、標籤、作者與合集", systemImage: "sparkles.rectangle.stack")
                 Label("沉浸式翻譯：譯文顯示在每段原文下方", systemImage: "character.book.closed")

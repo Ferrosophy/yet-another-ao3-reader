@@ -105,7 +105,8 @@ struct BookshelfView: View {
     /// 列表顯示：左右滑動的卡片（與瀏覽頁相同），卡片下方顯示離線狀態；只翻譯目前的卡片
     private var list: some View {
         let items = items
-        return TabView(selection: $currentIndex) {
+        return VStack(spacing: 6) {
+            TabView(selection: $currentIndex) {
             ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 NavigationLink(value: WorkRoute(id: item.id, title: item.work.title)) {
                     ScrollView {
@@ -127,7 +128,10 @@ struct BookshelfView: View {
                 .tag(index)
             }
         }
-        .tabViewStyle(.page(indexDisplayMode: .never))
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            CardJumpButton(currentIndex: $currentIndex, count: items.count)
+                .padding(.bottom, 4)
+        }
         .onChange(of: items.count) {
             if currentIndex >= items.count { currentIndex = max(items.count - 1, 0) }
         }

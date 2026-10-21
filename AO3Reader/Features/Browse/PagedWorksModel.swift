@@ -47,6 +47,18 @@ final class PagedWorksModel {
         await loadNext(reset: true)
     }
 
+    /// 快速跳轉：載入到至少 `count` 部作品或沒有下一頁為止。每次最多 10 頁，頁與頁之間稍作間隔，避免對 AO3 造成負擔
+    func loadUntil(count: Int) async {
+        var pages = 0
+        while works.count < count, hasNextPage, pages < 10 {
+            let before = works.count
+            await loadNext(reset: false)
+            pages += 1
+            if works.count == before { break }
+            if works.count < count, hasNextPage { try? await Task.sleep(for: .milliseconds(600)) }
+        }
+    }
+
     func loadMoreIfNeeded(current work: WorkSummary) async {
         guard hasNextPage, !isLoading, work.id == works.last?.id else { return }
         await loadNext(reset: false)

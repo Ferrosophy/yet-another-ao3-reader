@@ -2,7 +2,7 @@
 import SwiftUI
 
 /// 下載列表：書架作品的離線進度（下載原文、翻譯、匯出），可暫停、繼續與重試。
-/// 匯出檔也會出現在「檔案」App 的 YAAO3R › Bookshelf 資料夾。
+/// 匯出檔也會出現在「檔案」App 的 YAFR › Bookshelf 資料夾。
 struct DownloadsView: View {
     @Environment(AppState.self) private var app
     @State private var shared: DownloadedFile?
@@ -110,7 +110,9 @@ struct OfflineStatusView: View {
         var parts = [String(localized: "已離線")]
         if let format = record.format { parts.append(format.title) }
         if let size = offline.sizes[id] { parts.append(ByteCountFormatter.string(fromByteCount: size, countStyle: .file)) }
-        if offline.isSameLanguage(record.originalLanguage) {
+        if record.authorDeclinesTranslation == true {
+            parts.append(String(localized: "作者不希望被翻譯，未自動翻譯"))
+        } else if offline.isSameLanguage(record.originalLanguage) {
             parts.append(String(localized: "原文即目標語言"))
         } else if let language = record.translatedLanguage {
             if language != targetLanguageCode {
@@ -151,9 +153,14 @@ struct OfflineMenu: View {
             }
         }
         if offline.hasOfflineCopy(id) {
-            Menu("分享", systemImage: "square.and.arrow.up") {
-                Button("原文") { share(bilingual: false) }
-                Button("原文與譯文") { share(bilingual: true) }
+            if offline.isRestricted(id) {
+                // 作者限定登入用戶閱讀：不提供分享
+                Label("僅限登入用戶的作品不提供分享", systemImage: "lock")
+            } else {
+                Menu("分享", systemImage: "square.and.arrow.up") {
+                    Button("原文") { share(bilingual: false) }
+                    Button("原文與譯文") { share(bilingual: true) }
+                }
             }
             Button("檢查新章節", systemImage: "arrow.triangle.2.circlepath") { offline.update(id) }
             Button("重新翻譯", systemImage: "translate") { offline.retranslate(id) }

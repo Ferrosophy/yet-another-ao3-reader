@@ -1,4 +1,4 @@
-# Yet another AO3 reader（YAAO3R）— 开发规范（SPEC）
+# Yet another fanfic reader（YAFR）— 开发规范（SPEC）
 
 > 本文档约束 App 的功能范围、设计语言、技术选型、隐私与验收标准。所有开发工作（含 AI 辅助生成的代码）须以本文档为准；与本文档冲突的实作视为缺陷。
 >

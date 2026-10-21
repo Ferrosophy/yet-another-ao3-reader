@@ -217,7 +217,8 @@ struct LatestWorksView: View {
                         .frame(maxHeight: .infinity)
                 }
             } else {
-                WorkCardPager(works: model.works, currentIndex: $currentIndex) { last in
+                WorkCardPager(works: model.works, currentIndex: $currentIndex, hasMore: model.hasNextPage,
+                              loadUntil: { await model.loadUntil(count: $0) }) { last in
                     await model.loadMoreIfNeeded(current: last)
                 }
             }

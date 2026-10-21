@@ -85,7 +85,8 @@ enum AO3Parser {
             kudos: try text("dl.stats dd.kudos"),
             hits: try text("dl.stats dd.hits"),
             updated: try text("p.datetime"),
-            visitedAt: try text("h4.viewed").flatMap(visitedDate)
+            visitedAt: try text("h4.viewed").flatMap(visitedDate),
+            isRestricted: try !blurb.select("img[title=Restricted]").isEmpty()
         )
     }
 

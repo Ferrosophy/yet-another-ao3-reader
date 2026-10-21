@@ -29,7 +29,8 @@ struct WorkListView: View {
                     ContentUnavailableView("沒有作品", systemImage: "books.vertical")
                 }
             } else {
-                WorkCardPager(works: model.works, currentIndex: $currentIndex, onDelete: onDelete) { last in
+                WorkCardPager(works: model.works, currentIndex: $currentIndex, onDelete: onDelete, hasMore: model.hasNextPage,
+                              loadUntil: { await model.loadUntil(count: $0) }) { last in
                     await model.loadMoreIfNeeded(current: last)
                 }
                 .padding(.top, 8)
@@ -92,17 +93,25 @@ struct WorkCardPager: View {
     let works: [WorkSummary]
     @Binding var currentIndex: Int
     var onDelete: ((WorkSummary) -> Void)?
+    /// 還有下一頁（快速跳轉的序號顯示「+」）
+    var hasMore = false
+    /// 快速跳轉超過已載入數量時，載入到指定的作品數
+    var loadUntil: ((Int) async -> Void)?
     /// 接近最後幾張時呼叫，參數為目前最後一部作品
     var loadMore: (WorkSummary) async -> Void
 
     var body: some View {
-        TabView(selection: $currentIndex) {
-            ForEach(Array(works.enumerated()), id: \.element.id) { index, work in
-                BrowseCard(work: work, isCurrent: index == currentIndex, onDelete: onDelete)
-                    .tag(index)
+        VStack(spacing: 6) {
+            TabView(selection: $currentIndex) {
+                ForEach(Array(works.enumerated()), id: \.element.id) { index, work in
+                    BrowseCard(work: work, isCurrent: index == currentIndex, onDelete: onDelete)
+                        .tag(index)
+                }
             }
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            CardJumpButton(currentIndex: $currentIndex, count: works.count, hasMore: hasMore, loadUntil: loadUntil)
+                .padding(.bottom, 4)
         }
-        .tabViewStyle(.page(indexDisplayMode: .never))
         .task(id: "\(currentIndex)-\(works.count)") {
             if currentIndex >= works.count, !works.isEmpty { currentIndex = works.count - 1 }
             if currentIndex >= works.count - 3, let last = works.last { await loadMore(last) }

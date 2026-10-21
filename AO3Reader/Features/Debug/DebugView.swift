@@ -90,7 +90,7 @@ struct DebugView: View {
     private var environmentText: String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
         return [
-            "YAAO3R \(version)",
+            "YAFR \(version)",
             "Source: \(app.sources.selected.baseURL.absoluteString)",
             "User-Agent: \(AO3Client.userAgent)",
             "Accept-Language: \(AO3Client.acceptLanguage)",

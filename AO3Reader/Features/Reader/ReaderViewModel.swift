@@ -146,7 +146,12 @@ final class ReaderViewModel {
         }
     }
 
+    /// 作者聲明不希望作品被翻譯或用於 AI 時的原句；有值時翻譯需使用者確認，且不使用 AI 服務
+    private(set) var authorDeclinesTranslation: String?
+    private var declinesAI: Bool { authorDeclinesTranslation != nil && settings.config.provider.isLLM }
+
     private func show(_ detail: WorkDetail) {
+        authorDeclinesTranslation = AuthorWishes.declinesTranslation(detail)
         for chapter in detail.chapters {
             for paragraph in chapter.paragraphs { lookup[paragraph.id] = paragraph }
         }
@@ -282,7 +287,7 @@ final class ReaderViewModel {
         guard isTranslationOn, let detail, detail.chapters.count > 1 else { return }
         let pending = detail.chapters.indices.map(Self.chapterTitleID)
             .compactMap { id in translations[id] == nil ? lookup[id] : nil }
-        guard !pending.isEmpty, let provider = try? settings.makeProvider() else { return }
+        guard !pending.isEmpty, !declinesAI, let provider = try? settings.makeProvider() else { return }
         for paragraph in pending { translations[paragraph.id] = .loading }
         let generation = generation
         do {
@@ -410,6 +415,8 @@ final class ReaderViewModel {
 
         let provider: any TranslationProvider
         do {
+            // 作者不希望作品用於 AI：即使已開啟翻譯，也不送往 AI 服務
+            if declinesAI { throw AO3Error.message(String(localized: "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。")) }
             provider = try settings.makeProvider()
         } catch {
             for id in queue { translations[id] = .failed(error.localizedDescription) }

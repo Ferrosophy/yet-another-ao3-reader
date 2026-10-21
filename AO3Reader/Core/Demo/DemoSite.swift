@@ -5,8 +5,8 @@ import os
 /// 展示模式（設定 › 連點版本號 › 除錯 › 展示）：來源指向虛構的示範站，作品、作者與評論全部由 AI 生成，
 /// 用於截取宣傳圖，不會出現任何真實作者或作品。內容由 `AO3Client` 直接回傳，不送出網路請求。
 enum DemoSite {
-    static let host = "demo.yaao3r.invalid"
-    static let baseURL = URL(string: "https://demo.yaao3r.invalid")!
+    static let host = "demo.yafr.invalid"
+    static let baseURL = URL(string: "https://demo.yafr.invalid")!
 
     /// 展示來源（不會被保存，重新開啟 App 後回到原本的來源）
     static let source = AO3Source(

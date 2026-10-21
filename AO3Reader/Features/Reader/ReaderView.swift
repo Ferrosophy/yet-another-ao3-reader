@@ -33,6 +33,10 @@ struct ReaderView: View {
     /// 第一次在閱讀頁開啟雲端翻譯時，說明文字會傳送給第三方服務
     @AppStorage("translation.cloudNoticeShown") private var cloudNoticeShown = false
     @State private var showsCloudNotice = false
+    /// 作者不希望作品被翻譯：開啟翻譯前先確認
+    @State private var showsAuthorWish = false
+    /// 這部作品已確認仍要翻譯（只在這次閱讀有效）
+    @State private var acceptedAuthorWish = false
     /// 輸入百分比跳到指定進度
     @State private var showsProgressJump = false
     @State private var progressInput = ""
@@ -155,6 +159,21 @@ struct ReaderView: View {
             Button("取消", role: .cancel) {}
         } message: {
             Text("輸入 0 到 100 的百分比，跳到整部作品的對應位置。")
+        }
+        .alert("作者不希望這部作品被翻譯", isPresented: $showsAuthorWish) {
+            if !app.translation.config.provider.isLLM {
+                Button("仍要翻譯（僅供自己閱讀）") {
+                    acceptedAuthorWish = true
+                    withAnimation(.bouncy) { model.isTranslationOn = true }
+                }
+            }
+            Button("不翻譯", role: .cancel) {}
+        } message: {
+            if app.translation.config.provider.isLLM {
+                Text("作者在作品中表示：「\(model.authorDeclinesTranslation ?? "")」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。")
+            } else {
+                Text("作者在作品中表示：「\(model.authorDeclinesTranslation ?? "")」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。")
+            }
         }
         .alert("翻譯會把文字傳送給第三方服務", isPresented: $showsCloudNotice) {
             Button("繼續翻譯") {
@@ -656,7 +675,10 @@ struct ReaderView: View {
 
                     // 點擊切換翻譯（翻譯設定在「設定」分頁）
                     Button {
-                        if !model.isTranslationOn, !cloudNoticeShown, app.translation.config.provider != .apple {
+                        if !model.isTranslationOn, model.authorDeclinesTranslation != nil,
+                           !acceptedAuthorWish || app.translation.config.provider.isLLM {
+                            showsAuthorWish = true
+                        } else if !model.isTranslationOn, !cloudNoticeShown, app.translation.config.provider != .apple {
                             showsCloudNotice = true
                         } else {
                             withAnimation(.bouncy) { model.isTranslationOn.toggle() }

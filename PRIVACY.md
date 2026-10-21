@@ -1,8 +1,8 @@
 # 隐私政策 / Privacy Policy
 
-最后更新：2026-10-21 · 适用于 YAAO3R（Yet another AO3 reader）1.0 及以上版本
+最后更新：2026-10-21 · 适用于 YAFR（Yet another fanfic reader）1.0 及以上版本
 
-YAAO3R 是独立开发的非官方 AO3 阅读器，与 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）没有官方关联。
+YAFR 是独立开发的非官方 AO3 阅读器，与 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）没有官方关联。
 
 ## 我们不收集任何数据
 
@@ -21,7 +21,7 @@ YAAO3R 是独立开发的非官方 AO3 阅读器，与 Archive of Our Own（AO3�
 
 ## 保存在设备上的数据
 
-设置、离线作品与导出档（「文件」App 的 YAAO3R › Bookshelf）、书架、阅读记录与进度、翻译缓存、导入的字体与背景图、登录 Cookie、调试记录。
+设置、离线作品与导出档（「文件」App 的 YAFR › Bookshelf）、书架、阅读记录与进度、翻译缓存、导入的字体与背景图、登录 Cookie、调试记录。
 
 调试记录（设置 › 连点版本号三次）只保存在本机，记录请求网址、状态，以及出错时回应的开头部分。写入前会自动隐藏 Cookie、验证令牌、Authorization、网址中的敏感参数与电子邮件地址；成功的请求不记录回应内容。只有你主动拷贝时才会离开设备，拷贝前 App 会提醒你不要公开发布。
 

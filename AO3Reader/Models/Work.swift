@@ -22,6 +22,8 @@ struct WorkSummary: Identifiable, Hashable, Codable, Sendable {
     var updated: String?
     /// 閱讀紀錄的最後閱讀時間（只有閱讀紀錄列表有值）
     var visitedAt: Date?
+    /// 作者設為僅限登入用戶閱讀（Restricted）：只供 App 內離線閱讀，不提供匯出與分享
+    var isRestricted: Bool? = nil
 }
 
 /// 一頁作品列表與分頁資訊。

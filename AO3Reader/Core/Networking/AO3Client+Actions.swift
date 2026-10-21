@@ -136,7 +136,8 @@ extension AO3Client {
     func leaveKudos(workID: Int) async throws -> KudosResult {
         if isDemo { return DemoSite.leaveKudos(workID: workID) }
         let workPath = "/works/\(workID)"
-        let html = try await get(workPath, query: [URLQueryItem(name: "view_adult", value: "true")])
+        // 從章節目錄頁取得驗證資料：不打開作品頁，送 Kudos 不會額外增加作者的點擊數
+        let html = try await get(workPath + "/navigate", query: [URLQueryItem(name: "view_adult", value: "true")])
         let doc = try SwiftSoup.parse(html)
         let token = try AO3Parser.pageToken(doc)
         var action = "/kudos"

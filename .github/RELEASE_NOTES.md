@@ -1,6 +1,14 @@
-## YAAO3R 1.0.2
+## YAFR 1.0.2
+
+App 更名为 **Yet another fanfic reader（YAFR）**，仍是非官方的 AO3 阅读器。
+
+**尊重作者**
+- 作者声明「不要翻译 / No AI」的作品默认不翻译，且不会使用 AI 翻译服务。
+- 仅限登录用户阅读的作品不提供导出与分享。
+- 后台检查更新与送 Kudos 不再增加作品的点击数。
 
 **新功能**
+- 所有作品列表新增快速跳转（点击下方序号输入数字）。
 - 阅读页：「在网页中打开」（使用镜像时打开镜像站），并显示整部作品的阅读进度百分比。
 - 每章末尾：内嵌「Kudos」与「评论」按钮（滚动模式在章末，翻页模式为每章最后一页）及支持作者的提示。
 - 评论：按讨论串缩排并以连线显示回复关系，标示回复对象，作者本人的评论加上「作者」标记；支持沉浸式翻译。
@@ -30,4 +38,4 @@
 
 **English**: Adds Open in Browser, a reading progress percentage, end-of-work kudos and comments (with immersive translation) and Erase All Local Data, and fixes the browse page sometimes failing to load after switching sources. Requires iOS 26 or later; the IPA is unsigned and must be signed before installing.
 
-YAAO3R 是独立开发的非官方 AO3 阅读器，与 AO3 及 OTW 没有官方关联。
+YAFR 是独立开发的非官方 AO3 阅读器，与 AO3 及 OTW 没有官方关联。

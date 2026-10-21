@@ -54,7 +54,7 @@ struct DonateView: View {
         Task {
             let status = await PHPhotoLibrary.requestAuthorization(for: .addOnly)
             guard status == .authorized || status == .limited else {
-                message = String(localized: "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片")
+                message = String(localized: "沒有相簿權限，請在「設定」中允許 YAFR 加入照片")
                 return
             }
             do {

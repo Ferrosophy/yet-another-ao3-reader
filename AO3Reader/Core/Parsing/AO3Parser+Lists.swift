@@ -188,7 +188,9 @@ extension AO3Parser {
             chapters: try stat("dd.chapters"),
             kudos: try stat("dd.kudos"),
             hits: try stat("dd.hits"),
-            updated: try stat("dd.status") ?? stat("dd.published")
+            updated: try stat("dd.status") ?? stat("dd.published"),
+            // 標題旁的鎖頭圖示：作者限定只有登入用戶能閱讀
+            isRestricted: try !doc.select("#workskin h2.title img[title=Restricted], h2.title img[title=Restricted]").isEmpty()
         )
     }
 

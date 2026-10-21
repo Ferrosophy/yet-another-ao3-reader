@@ -93,7 +93,7 @@ struct SyncSettingsView: View {
 
                 Section {
                     guideStep(1, "註冊堅果雲", detail: String(localized: "在 jianguoyun.com 註冊並登入，免費提供 WebDAV 空間。"))
-                    guideStep(2, "生成應用密碼", detail: String(localized: "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"))
+                    guideStep(2, "生成應用密碼", detail: String(localized: "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAFR。"))
                     guideStep(3, "填寫上方設定", detail: String(localized: "伺服器位址填 \(Self.jianguoyunURL)，帳號是堅果雲的登入信箱，密碼是剛生成的應用密碼。"))
                     guideStep(4, "測試並同步", detail: String(localized: "點「儲存並測試連線」，成功後點「立即同步」。"))
                 } header: {

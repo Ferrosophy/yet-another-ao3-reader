@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/icon.png" width="128" alt="YAAO3R">
+  <img src="docs/icon.png" width="128" alt="YAFR">
 </p>
 
-<h1 align="center">Yet another AO3 reader（YAAO3R）</h1>
+<h1 align="center">Yet another fanfic reader（YAFR）</h1>
 
 <p align="center">
   原生 iOS 的 Archive of Our Own 閱讀器 · Liquid Glass · 沉浸式翻譯
@@ -20,7 +20,7 @@
 
 ---
 
-YAAO3R 是一個用 SwiftUI 打造的 [Archive of Our Own](https://archiveofourown.org)（AO3）第三方閱讀器，採用 iOS 26 的 Liquid Glass 設計。你可以瀏覽、搜尋、離線儲存作品，並以「原文在上、譯文在下」的方式閱讀任何語言的同人作品。
+YAFR 是一個用 SwiftUI 打造的 [Archive of Our Own](https://archiveofourown.org)（AO3）第三方閱讀器，採用 iOS 26 的 Liquid Glass 設計。你可以瀏覽、搜尋、離線儲存作品，並以「原文在上、譯文在下」的方式閱讀任何語言的同人作品。
 
 > 本 App 為非官方的第三方客戶端，與 AO3 及 Organization for Transformative Works（OTW）無關。
 
@@ -42,7 +42,8 @@ YAAO3R 是一個用 SwiftUI 打造的 [Archive of Our Own](https://archiveofouro
 ### 離線
 - 加入「離線」的作品會自動**先下載原文、再翻譯**，沒有網路也能閱讀。原文與目標語言相同時只下載原文。
 - 下載失敗會自動斷點續傳；可暫停、重試，或只更新新章節。
-- 可分享為 App 產生的雙語 EPUB，或官網的 AZW3 / MOBI / PDF / HTML。
+- 可分享為 App 產生的雙語 EPUB，或官網的 AZW3 / MOBI / PDF / HTML。作者設為「僅限登入使用者閱讀」的作品只能在 App 內離線閱讀，不提供匯出與分享。
+- 後臺檢查新章節只讀取章節目錄頁，不會增加作品的點選數（Hits）。
 
 ### 帳號與資料
 - **AO3 帳號**：登入後可使用收件箱、訂閱、閱讀記錄、稍後閱讀、書籤，並直接在 App 內加入書籤、訂閱作品 / 作者 / 系列。
@@ -62,8 +63,8 @@ YAAO3R 是一個用 SwiftUI 打造的 [Archive of Our Own](https://archiveofouro
 
 需要 **iOS 26 或以上**的 iPhone。目前只透過本倉庫的 GitHub Releases 釋出，尚未上架 App Store 或 TestFlight。
 
-1. 到 [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest) 下載 `YAAO3R-<版本號>-unsigned.ipa`。
-2. **核對校驗值**：Release 說明裡附有 SHA-256，也可下載同名的 `.sha256` 檔案。在電腦上執行 `shasum -a 256 YAAO3R-<版本號>-unsigned.ipa`（macOS / Linux）或 `Get-FileHash YAAO3R-<版本號>-unsigned.ipa`（Windows PowerShell），結果應與 Release 中的一致。
+1. 到 [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest) 下載 `YAFR-<版本號>-unsigned.ipa`。
+2. **核對校驗值**：Release 說明裡附有 SHA-256，也可下載同名的 `.sha256` 檔案。在電腦上執行 `shasum -a 256 YAFR-<版本號>-unsigned.ipa`（macOS / Linux）或 `Get-FileHash YAFR-<版本號>-unsigned.ipa`（Windows PowerShell），結果應與 Release 中的一致。
 3. **簽名並安裝**：IPA 未簽名，需要用以下任一工具以你自己的 Apple ID 簽名後安裝：
    - [AltStore](https://altstore.io) 或 [SideStore](https://sidestore.io)：在 iPhone 上安裝後，用它開啟 IPA 即可；
    - [Sideloadly](https://sideloadly.io)：在電腦上連線 iPhone，拖入 IPA 並登入 Apple ID；
@@ -92,6 +93,7 @@ AO3 官網在中國大陸通常無法直接連線。第一次開啟時的新手�
 
 - **資料會傳送給服務商**：開啟翻譯後，要翻譯的文字（正文、標題、標籤、簡介、作者注與評論）會傳送到你選擇的翻譯服務，並按該服務的隱私政策處理。**只有 Apple 翻譯在裝置上進行**，文字不會離開你的 iPhone。第一次在閱讀頁開啟雲端翻譯時，App 也會提示這一點。
 - **非官方介面**：標示「免金鑰」或「網頁版」的服務（Google、Bing、騰訊 TranSmart、火山、百度、有道、搜狗、未填金鑰的 DeepL）使用的是網頁端的非官方介面，**未經服務商授權**，可能違反其服務條款、被限流或隨時失效。需要穩定、合規的使用時，請改用官方 API（Google Cloud Translation、Microsoft Azure、DeepL API、OpenAI 相容服務、Claude、Gemini 等，需自備 API Key）或 Apple 翻譯。
+- **尊重作者意願**：作者在標籤、簡介或作者注中寫明「不要翻譯」「No AI」等時，App 預設不翻譯這部作品；閱讀時需要你確認才會翻譯，而且**不會使用 AI 翻譯服務**；離線儲存時也不會自動翻譯。
 - **翻譯準確性**：機器翻譯可能有誤，不能取代原文。標籤、警告（Archive Warnings）與作者注尤其請以原文為準。
 
 ## 意見回饋與維護
@@ -118,7 +120,7 @@ AO3 官網在中國大陸通常無法直接連線。第一次開啟時的新手�
 ## 備份與遷移
 
 - **換新裝置**：在舊裝置開啟「設定 › 資料同步」（iCloud 或 WebDAV），新裝置選擇相同的同步方式後，即可取回離線清單、閱讀進度、閱讀時長、偏好設定、搜尋記錄與本機儲存的書籤等資料。
-- **離線檔案**不會同步：新裝置會依離線清單自動重新下載。已匯出的 EPUB 等檔案可在「檔案」App 的 YAAO3R › Bookshelf 中另行備份。
+- **離線檔案**不會同步：新裝置會依離線清單自動重新下載。已匯出的 EPUB 等檔案可在「檔案」App 的 YAFR › Bookshelf 中另行備份。
 - **不會同步的資料**：翻譯服務的 API Key、匯入的字型與背景圖片、翻譯快取與 AO3 登入狀態，換機後需要重新設定或登入。
 - App 的本機資料也會包含在 iPhone 的 iCloud 備份或電腦備份中，從備份還原時一併恢復（翻譯快取除外）。
 
@@ -178,7 +180,7 @@ AO3Reader/
 | 手動執行（可填版本號） | 輸入的版本號 | Artifact；勾選「發行」時另建 GitHub Release |
 | 推送 tag `v1.2.3` | `1.2.3` | Artifact + GitHub Release |
 
-IPA 檔名為 `YAAO3R-<版本號>-unsigned.ipa`。
+IPA 檔名為 `YAFR-<版本號>-unsigned.ipa`。
 
 ## 注意事項
 

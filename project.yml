@@ -1,4 +1,4 @@
-# Yet another AO3 reader（YAAO3R）
+# Yet another fanfic reader（YAFR）
 # 使用 XcodeGen 產生 Xcode 專案：brew install xcodegen && xcodegen generate
 name: AO3Reader
 options:
@@ -42,13 +42,13 @@ targets:
         CURRENT_PROJECT_VERSION: "1"
         GENERATE_INFOPLIST_FILE: YES
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-        INFOPLIST_KEY_CFBundleDisplayName: YAAO3R
+        INFOPLIST_KEY_CFBundleDisplayName: YAFR
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: 選擇閱讀頁面的背景圖片
         INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: 保存 QR code 到相簿
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
-        # 下載的作品檔案顯示在「檔案」App 的「我的 iPhone › YAAO3R」
+        # 下載的作品檔案顯示在「檔案」App 的「我的 iPhone › YAFR」
         INFOPLIST_KEY_UIFileSharingEnabled: YES
         INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace: YES
         TARGETED_DEVICE_FAMILY: "1,2"

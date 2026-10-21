@@ -4720,7 +4720,7 @@
         }
       }
     },
-    "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。": {
+    "Yet another fanfic reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
@@ -4738,7 +4738,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yet another AO3 reader: browse, search and save AO3 works offline, and read them with the original and translation side by side."
+            "value": "Yet another fanfic reader: browse, search and save AO3 works offline, and read them with the original and translation side by side."
           }
         },
         "es": {
@@ -4834,31 +4834,31 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yet another AO3 reader：浏览、搜索与离线保存 AO3 作品，并以原文与译文对照阅读。"
+            "value": "Yet another fanfic reader：浏览、搜索与离线保存 AO3 作品，并以原文与译文对照阅读。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
+            "value": "Yet another fanfic reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
+            "value": "Yet another fanfic reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
+            "value": "Yet another fanfic reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yet another AO3 reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
+            "value": "Yet another fanfic reader：瀏覽、搜尋與離線保存 AO3 作品，並以原文與譯文對照閱讀。"
           }
         }
       }
@@ -8295,6 +8295,149 @@
         }
       }
     },
+    "不翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Don't Translate"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不翻譯"
+          }
+        }
+      }
+    },
     "不限": {
       "extractionState": "manual",
       "localizations": {
@@ -9578,6 +9721,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "介面語言、外觀與字型可在「設定」調整"
+          }
+        }
+      }
+    },
+    "仍要翻譯（僅供自己閱讀）": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Translate Anyway (For My Own Reading)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仍要翻译（仅供自己阅读）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仍要翻譯（僅供自己閱讀）"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仍要翻譯（僅供自己閱讀）"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仍要翻譯（僅供自己閱讀）"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仍要翻譯（僅供自己閱讀）"
           }
         }
       }
@@ -10869,6 +11155,149 @@
         }
       }
     },
+    "作品序號": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work number"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作品序号"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作品序號"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作品序號"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作品序號"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作品序號"
+          }
+        }
+      }
+    },
     "作品標籤": {
       "extractionState": "manual",
       "localizations": {
@@ -11866,6 +12295,721 @@
           "stringUnit": {
             "state": "translated",
             "value": "作者 / 創作者"
+          }
+        }
+      }
+    },
+    "作者不希望被翻譯，未自動翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not translated: the author asked not to be translated"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望被翻译，未自动翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望被翻譯，未自動翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望被翻譯，未自動翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望被翻譯，未自動翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望被翻譯，未自動翻譯"
+          }
+        }
+      }
+    },
+    "作者不希望這部作品被翻譯": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Author Asked Not to Translate This Work"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望这部作品被翻译"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯"
+          }
+        }
+      }
+    },
+    "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望这部作品被翻译或用于 AI，不会使用 AI 翻译服务。请在「设置 › 翻译服务」改用非 AI 的服务。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者不希望這部作品被翻譯或用於 AI，不會使用 AI 翻譯服務。請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        }
+      }
+    },
+    "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n为尊重作者，这部作品不会使用 AI 翻译服务。如果仍需要协助阅读，请在「设置 › 翻译服务」改用非 AI 的服务。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n為尊重作者，這部作品不會使用 AI 翻譯服務。如果仍需要協助閱讀，請在「設定 › 翻譯服務」改用非 AI 的服務。"
+          }
+        }
+      }
+    },
+    "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n请尊重作者的意愿。若仍要翻译，译文只会显示给你自己，请勿分享或转载。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作者在作品中表示：「%@」\n請尊重作者的意願。若仍要翻譯，譯文只會顯示給你自己，請勿分享或轉載。"
           }
         }
       }
@@ -16013,6 +17157,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "僅連載"
+          }
+        }
+      }
+    },
+    "僅限登入用戶的作品不提供分享": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Works restricted to logged-in users can't be shared"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅限登录用户的作品不提供分享"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅限登入使用者的作品不提供分享"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅限登入用戶的作品不提供分享"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅限登入用戶的作品不提供分享"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅限登入使用者的作品不提供分享"
           }
         }
       }
@@ -33892,145 +35179,145 @@
         }
       }
     },
-    "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。": {
+    "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAFR。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "معلومات الحساب › الأمان › تطبيقات الطرف الثالث › أضف تطبيقًا، وقم بتسميته YAAO3R."
+            "value": "معلومات الحساب › الأمان › تطبيقات الطرف الثالث › أضف تطبيقًا، وقم بتسميته YAFR."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kontoinformationen › Sicherheit › Drittanbieter-Apps › App hinzufügen und nennen Sie sie YAAO3R."
+            "value": "Kontoinformationen › Sicherheit › Drittanbieter-Apps › App hinzufügen und nennen Sie sie YAFR."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Account Info › Security › Third-Party Apps › Add App, and name it YAAO3R."
+            "value": "Account Info › Security › Third-Party Apps › Add App, and name it YAFR."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Información de cuenta › Seguridad › Aplicaciones de terceros › Agregar aplicación y asígnele el nombre YAAO3R."
+            "value": "Información de cuenta › Seguridad › Aplicaciones de terceros › Agregar aplicación y asígnele el nombre YAFR."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Informations sur le compte › Sécurité › Applications tierces › Ajoutez une application et nommez-la YAAO3R."
+            "value": "Informations sur le compte › Sécurité › Applications tierces › Ajoutez une application et nommez-la YAFR."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "खाता जानकारी › सुरक्षा › तृतीय-पक्ष ऐप्स › ऐप जोड़ें, और इसे YAAO3R नाम दें।"
+            "value": "खाता जानकारी › सुरक्षा › तृतीय-पक्ष ऐप्स › ऐप जोड़ें, और इसे YAFR नाम दें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Info Akun › Keamanan › Aplikasi Pihak Ketiga › Tambah Aplikasi, dan beri nama YAAO3R."
+            "value": "Info Akun › Keamanan › Aplikasi Pihak Ketiga › Tambah Aplikasi, dan beri nama YAFR."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Informazioni sull'account › Sicurezza › App di terze parti › Aggiungi app e chiamala YAAO3R."
+            "value": "Informazioni sull'account › Sicurezza › App di terze parti › Aggiungi app e chiamala YAFR."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "アカウント情報 › セキュリティ › サードパーティ アプリ › アプリを追加し、YAAO3R という名前を付けます。"
+            "value": "アカウント情報 › セキュリティ › サードパーティ アプリ › アプリを追加し、YAFR という名前を付けます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "계정 정보 › 보안 › 타사 앱 › 앱을 추가하고 이름을 YAAO3R로 지정합니다."
+            "value": "계정 정보 › 보안 › 타사 앱 › 앱을 추가하고 이름을 YAFR로 지정합니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Accountinfo › Beveiliging › Apps van derden › App toevoegen en deze YAAO3R noemen."
+            "value": "Accountinfo › Beveiliging › Apps van derden › App toevoegen en deze YAFR noemen."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Informacje o koncie > Bezpieczeństwo > Aplikacje innych firm > Dodaj aplikację i nadaj jej nazwę YAAO3R."
+            "value": "Informacje o koncie > Bezpieczeństwo > Aplikacje innych firm > Dodaj aplikację i nadaj jej nazwę YAFR."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Informações da conta › Segurança › Aplicativos de terceiros › Adicionar aplicativo e nomeie-o como YAAO3R."
+            "value": "Informações da conta › Segurança › Aplicativos de terceiros › Adicionar aplicativo e nomeie-o como YAFR."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Информация об учетной записи › Безопасность › Сторонние приложения › Добавьте приложение и назовите его YAAO3R."
+            "value": "Информация об учетной записи › Безопасность › Сторонние приложения › Добавьте приложение и назовите его YAFR."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ข้อมูลบัญชี › ความปลอดภัย › แอปของบุคคลที่สาม › เพิ่มแอป และตั้งชื่อเป็น YAAO3R"
+            "value": "ข้อมูลบัญชี › ความปลอดภัย › แอปของบุคคลที่สาม › เพิ่มแอป และตั้งชื่อเป็น YAFR"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Hesap Bilgileri › Güvenlik › Üçüncü Taraf Uygulamalar › Uygulamayı ekleyin ve YAAO3R olarak adlandırın."
+            "value": "Hesap Bilgileri › Güvenlik › Üçüncü Taraf Uygulamalar › Uygulamayı ekleyin ve YAFR olarak adlandırın."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Інформація про обліковий запис › Безпека › Програми сторонніх розробників › Додайте програму та назвіть її YAAO3R."
+            "value": "Інформація про обліковий запис › Безпека › Програми сторонніх розробників › Додайте програму та назвіть її YAFR."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Thông tin tài khoản > Bảo mật > Ứng dụng của bên thứ ba > Thêm ứng dụng và đặt tên là YAAO3R."
+            "value": "Thông tin tài khoản > Bảo mật > Ứng dụng của bên thứ ba > Thêm ứng dụng và đặt tên là YAFR."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "账户信息 › 安全选项 › 第三方应用管理 › 添加应用，名称填 YAAO3R。"
+            "value": "账户信息 › 安全选项 › 第三方应用管理 › 添加应用，名称填 YAFR。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAFR。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAFR。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAFR。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAAO3R。"
+            "value": "帳戶資訊 › 安全選項 › 第三方應用管理 › 添加應用，名稱填 YAFR。"
           }
         }
       }
@@ -35318,6 +36605,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "從雲端硬碟匯入"
+          }
+        }
+      }
+    },
+    "快速跳轉": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick Jump"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速跳转"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速跳轉"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速跳轉"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速跳轉"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速跳轉"
           }
         }
       }
@@ -47334,145 +48764,145 @@
         }
       }
     },
-    "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。": {
+    "本檔案由 YAFR 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "أُنشئ هذا الملف بواسطة YAAO3R للقراءة الشخصية دون اتصال. العمل ملك لمؤلفه (مؤلفيه)؛ والترجمات آلية وقد تكون غير دقيقة. يُرجى عدم إعادة نشر هذا العمل أو ترجمته أو توزيعهما أو بيعهما."
+            "value": "أُنشئ هذا الملف بواسطة YAFR للقراءة الشخصية دون اتصال. العمل ملك لمؤلفه (مؤلفيه)؛ والترجمات آلية وقد تكون غير دقيقة. يُرجى عدم إعادة نشر هذا العمل أو ترجمته أو توزيعهما أو بيعهما."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Diese Datei wurde von YAAO3R zum privaten Offline-Lesen erstellt. Das Werk gehört seinen Autor*innen; Übersetzungen sind maschinell erstellt und können fehlerhaft sein. Bitte veröffentlichen, verbreiten oder verkaufen Sie dieses Werk und seine Übersetzung nicht."
+            "value": "Diese Datei wurde von YAFR zum privaten Offline-Lesen erstellt. Das Werk gehört seinen Autor*innen; Übersetzungen sind maschinell erstellt und können fehlerhaft sein. Bitte veröffentlichen, verbreiten oder verkaufen Sie dieses Werk und seine Übersetzung nicht."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This file was generated by YAAO3R for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
+            "value": "This file was generated by YAFR for personal offline reading. The work belongs to its author(s); translations are machine-generated and may be inaccurate. Please do not repost, distribute or sell this work or its translation."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Este archivo fue generado por YAAO3R para lectura personal sin conexión. La obra pertenece a sus autores; las traducciones son automáticas y pueden contener errores, así que prevalece el original. No vuelvas a publicar, distribuyas ni vendas esta obra ni su traducción."
+            "value": "Este archivo fue generado por YAFR para lectura personal sin conexión. La obra pertenece a sus autores; las traducciones son automáticas y pueden contener errores, así que prevalece el original. No vuelvas a publicar, distribuyas ni vendas esta obra ni su traducción."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ce fichier a été généré par YAAO3R pour une lecture personnelle hors ligne. L'œuvre appartient à son ou ses auteurs ; les traductions sont automatiques et peuvent être inexactes, le texte original fait foi. Ne republiez, ne distribuez et ne vendez pas cette œuvre ni sa traduction."
+            "value": "Ce fichier a été généré par YAFR pour une lecture personnelle hors ligne. L'œuvre appartient à son ou ses auteurs ; les traductions sont automatiques et peuvent être inexactes, le texte original fait foi. Ne republiez, ne distribuez et ne vendez pas cette œuvre ni sa traduction."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "यह फ़ाइल YAAO3R ने निजी ऑफ़लाइन पढ़ने के लिए बनाई है। रचना का कॉपीराइट इसके लेखक(कों) का है; अनुवाद मशीन से किए गए हैं और गलत हो सकते हैं। कृपया इस रचना या इसके अनुवाद को दोबारा पोस्ट, वितरित या बेचें नहीं।"
+            "value": "यह फ़ाइल YAFR ने निजी ऑफ़लाइन पढ़ने के लिए बनाई है। रचना का कॉपीराइट इसके लेखक(कों) का है; अनुवाद मशीन से किए गए हैं और गलत हो सकते हैं। कृपया इस रचना या इसके अनुवाद को दोबारा पोस्ट, वितरित या बेचें नहीं।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "File ini dibuat oleh YAAO3R untuk bacaan luring pribadi. Hak cipta karya ini milik penulisnya; terjemahan dibuat oleh mesin dan mungkin tidak akurat. Jangan unggah ulang, sebarkan, atau jual karya ini maupun terjemahannya."
+            "value": "File ini dibuat oleh YAFR untuk bacaan luring pribadi. Hak cipta karya ini milik penulisnya; terjemahan dibuat oleh mesin dan mungkin tidak akurat. Jangan unggah ulang, sebarkan, atau jual karya ini maupun terjemahannya."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Questo file è stato generato da YAAO3R per la lettura offline personale. L'opera appartiene ai suoi autori; le traduzioni sono automatiche e potrebbero essere imprecise. Non ripubblicare, distribuire né vendere quest'opera o la sua traduzione."
+            "value": "Questo file è stato generato da YAFR per la lettura offline personale. L'opera appartiene ai suoi autori; le traduzioni sono automatiche e potrebbero essere imprecise. Non ripubblicare, distribuire né vendere quest'opera o la sua traduzione."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "このファイルは YAAO3R により個人のオフライン閲覧用に生成されました。作品の著作権は原作者に帰属します。翻訳は機械翻訳のため誤りを含む可能性があり、原文を優先してください。本作品およびその翻訳を公開転載・配布・販売しないでください。"
+            "value": "このファイルは YAFR により個人のオフライン閲覧用に生成されました。作品の著作権は原作者に帰属します。翻訳は機械翻訳のため誤りを含む可能性があり、原文を優先してください。本作品およびその翻訳を公開転載・配布・販売しないでください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "이 파일은 YAAO3R이 개인 오프라인 읽기용으로 생성했습니다. 작품의 저작권은 원작자에게 있으며, 번역은 기계 번역이므로 부정확할 수 있으니 원문을 기준으로 해 주세요. 이 작품과 번역본을 공개적으로 전재, 배포 또는 판매하지 마세요."
+            "value": "이 파일은 YAFR이 개인 오프라인 읽기용으로 생성했습니다. 작품의 저작권은 원작자에게 있으며, 번역은 기계 번역이므로 부정확할 수 있으니 원문을 기준으로 해 주세요. 이 작품과 번역본을 공개적으로 전재, 배포 또는 판매하지 마세요."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dit bestand is door YAAO3R gemaakt om persoonlijk offline te lezen. Het werk is van de auteur(s); vertalingen zijn machinevertalingen en kunnen onjuist zijn. Publiceer, verspreid of verkoop dit werk of de vertaling ervan niet."
+            "value": "Dit bestand is door YAFR gemaakt om persoonlijk offline te lezen. Het werk is van de auteur(s); vertalingen zijn machinevertalingen en kunnen onjuist zijn. Publiceer, verspreid of verkoop dit werk of de vertaling ervan niet."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ten plik został wygenerowany przez YAAO3R do osobistego czytania offline. Utwór należy do jego autora (autorów); tłumaczenie jest maszynowe i może być niedokładne. Nie publikuj ponownie, nie rozpowszechniaj ani nie sprzedawaj tego utworu ani jego tłumaczenia."
+            "value": "Ten plik został wygenerowany przez YAFR do osobistego czytania offline. Utwór należy do jego autora (autorów); tłumaczenie jest maszynowe i może być niedokładne. Nie publikuj ponownie, nie rozpowszechniaj ani nie sprzedawaj tego utworu ani jego tłumaczenia."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Este arquivo foi gerado pelo YAAO3R para leitura off-line pessoal. A obra pertence a seus autores; as traduções são automáticas e podem conter erros. Não republique, distribua nem venda esta obra ou sua tradução."
+            "value": "Este arquivo foi gerado pelo YAFR para leitura off-line pessoal. A obra pertence a seus autores; as traduções são automáticas e podem conter erros. Não republique, distribua nem venda esta obra ou sua tradução."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Этот файл создан YAAO3R для личного офлайн-чтения. Произведение принадлежит его авторам; переводы выполнены машинным способом и могут быть неточными. Не публикуйте повторно, не распространяйте и не продавайте это произведение и его перевод."
+            "value": "Этот файл создан YAFR для личного офлайн-чтения. Произведение принадлежит его авторам; переводы выполнены машинным способом и могут быть неточными. Не публикуйте повторно, не распространяйте и не продавайте это произведение и его перевод."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ไฟล์นี้สร้างโดย YAAO3R สำหรับการอ่านแบบออฟไลน์ส่วนตัว ลิขสิทธิ์ของผลงานเป็นของผู้เขียน คำแปลเป็นการแปลด้วยเครื่องและอาจไม่ถูกต้อง โปรดอย่าโพสต์ซ้ำ เผยแพร่ หรือขายผลงานนี้หรือคำแปลของผลงาน"
+            "value": "ไฟล์นี้สร้างโดย YAFR สำหรับการอ่านแบบออฟไลน์ส่วนตัว ลิขสิทธิ์ของผลงานเป็นของผู้เขียน คำแปลเป็นการแปลด้วยเครื่องและอาจไม่ถูกต้อง โปรดอย่าโพสต์ซ้ำ เผยแพร่ หรือขายผลงานนี้หรือคำแปลของผลงาน"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bu dosya, YAAO3R tarafından kişisel çevrimdışı okuma için oluşturuldu. Eser, yazar(lar)ına aittir; çeviriler makine çevirisidir ve hatalı olabilir. Lütfen bu eseri veya çevirisini yeniden yayımlamayın, dağıtmayın ya da satmayın."
+            "value": "Bu dosya, YAFR tarafından kişisel çevrimdışı okuma için oluşturuldu. Eser, yazar(lar)ına aittir; çeviriler makine çevirisidir ve hatalı olabilir. Lütfen bu eseri veya çevirisini yeniden yayımlamayın, dağıtmayın ya da satmayın."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Цей файл створено в YAAO3R для особистого офлайн-читання. Твір належить його автору (авторам); переклад машинний і може бути неточним. Не публікуйте повторно, не поширюйте й не продавайте цей твір або його переклад."
+            "value": "Цей файл створено в YAFR для особистого офлайн-читання. Твір належить його автору (авторам); переклад машинний і може бути неточним. Не публікуйте повторно, не поширюйте й не продавайте цей твір або його переклад."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tệp này được YAAO3R tạo ra để đọc ngoại tuyến cá nhân. Bản quyền tác phẩm thuộc về (các) tác giả; bản dịch do máy thực hiện và có thể không chính xác. Vui lòng không đăng lại, phân phối hoặc bán tác phẩm này cũng như bản dịch của nó."
+            "value": "Tệp này được YAFR tạo ra để đọc ngoại tuyến cá nhân. Bản quyền tác phẩm thuộc về (các) tác giả; bản dịch do máy thực hiện và có thể không chính xác. Vui lòng không đăng lại, phân phối hoặc bán tác phẩm này cũng như bản dịch của nó."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "本文件由 YAAO3R 为个人离线阅读产生。作品的著作权属于原作者；译文为机器翻译，可能有误，请以原文为准。请勿公开转载、散布或贩售本作品及其译文。"
+            "value": "本文件由 YAFR 为个人离线阅读产生。作品的著作权属于原作者；译文为机器翻译，可能有误，请以原文为准。请勿公开转载、散布或贩售本作品及其译文。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+            "value": "本檔案由 YAFR 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+            "value": "本檔案由 YAFR 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+            "value": "本檔案由 YAFR 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "本檔案由 YAAO3R 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
+            "value": "本檔案由 YAFR 為個人離線閱讀產生。作品的著作權屬於原作者；譯文為機器翻譯，可能有誤，請以原文為準。請勿公開轉載、散布或販售本作品及其譯文。"
           }
         }
       }
@@ -50194,85 +51624,85 @@
         }
       }
     },
-    "歡迎使用 YAAO3R": {
+    "歡迎使用 YAFR": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "مرحبا بكم في YAAO3R"
+            "value": "مرحبا بكم في YAFR"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Willkommen bei YAAO3R"
+            "value": "Willkommen bei YAFR"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Welcome to YAAO3R"
+            "value": "Welcome to YAFR"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bienvenido a YAAO3R"
+            "value": "Bienvenido a YAFR"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bienvenue sur YAAO3R"
+            "value": "Bienvenue sur YAFR"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "YAAO3R में आपका स्वागत है"
+            "value": "YAFR में आपका स्वागत है"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Selamat datang di YAAO3R"
+            "value": "Selamat datang di YAFR"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Benvenuti su YAAO3R"
+            "value": "Benvenuti su YAFR"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "YAAO3Rへようこそ"
+            "value": "YAFRへようこそ"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "YAAO3R에 오신 것을 환영합니다"
+            "value": "YAFR에 오신 것을 환영합니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Welkom bij YAAO3R"
+            "value": "Welkom bij YAFR"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Witamy w YAAO3R"
+            "value": "Witamy w YAFR"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bem-vindo ao YAAO3R"
+            "value": "Bem-vindo ao YAFR"
           }
         },
         "ru": {
@@ -50284,55 +51714,55 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ยินดีต้อนรับสู่ YAAO3R"
+            "value": "ยินดีต้อนรับสู่ YAFR"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "YAAO3R'ye hoş geldiniz"
+            "value": "YAFR'ye hoş geldiniz"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ласкаво просимо до YAAO3R"
+            "value": "Ласкаво просимо до YAFR"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Chào mừng đến với YAAO3R"
+            "value": "Chào mừng đến với YAFR"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "欢迎使用 YAAO3R"
+            "value": "欢迎使用 YAFR"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "歡迎使用 YAAO3R"
+            "value": "歡迎使用 YAFR"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "歡迎使用 YAAO3R"
+            "value": "歡迎使用 YAFR"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "歡迎使用 YAAO3R"
+            "value": "歡迎使用 YAFR"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "歡迎使用 YAAO3R"
+            "value": "歡迎使用 YAFR"
           }
         }
       }
@@ -52911,145 +54341,145 @@
         }
       }
     },
-    "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片": {
+    "沒有相簿權限，請在「設定」中允許 YAFR 加入照片": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "لا يمكن الوصول إلى الصور. اسمح لـ YAAO3R بإضافة الصور في الإعدادات."
+            "value": "لا يمكن الوصول إلى الصور. اسمح لـ YAFR بإضافة الصور في الإعدادات."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kein Zugriff auf Fotos. Erlauben Sie YAAO3R, Fotos in den Einstellungen hinzuzufügen."
+            "value": "Kein Zugriff auf Fotos. Erlauben Sie YAFR, Fotos in den Einstellungen hinzuzufügen."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "No access to Photos. Allow YAAO3R to add photos in Settings."
+            "value": "No access to Photos. Allow YAFR to add photos in Settings."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sin acceso a Fotos. Permita que YAAO3R agregue fotos en Configuración."
+            "value": "Sin acceso a Fotos. Permita que YAFR agregue fotos en Configuración."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pas d'accès aux photos. Autorisez YAAO3R à ajouter des photos dans Paramètres."
+            "value": "Pas d'accès aux photos. Autorisez YAFR à ajouter des photos dans Paramètres."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "फ़ोटो तक पहुंच नहीं. YAAO3R को सेटिंग्स में फ़ोटो जोड़ने की अनुमति दें।"
+            "value": "फ़ोटो तक पहुंच नहीं. YAFR को सेटिंग्स में फ़ोटो जोड़ने की अनुमति दें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tidak ada akses ke Foto. Izinkan YAAO3R menambahkan foto di Pengaturan."
+            "value": "Tidak ada akses ke Foto. Izinkan YAFR menambahkan foto di Pengaturan."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nessun accesso alle foto. Consenti a YAAO3R di aggiungere foto nelle Impostazioni."
+            "value": "Nessun accesso alle foto. Consenti a YAFR di aggiungere foto nelle Impostazioni."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "写真にアクセスできません。 YAAO3R が設定で写真を追加できるようにします。"
+            "value": "写真にアクセスできません。 YAFR が設定で写真を追加できるようにします。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "사진에 액세스할 수 없습니다. YAAO3R이 설정에서 사진을 추가하도록 허용하세요."
+            "value": "사진에 액세스할 수 없습니다. YAFR이 설정에서 사진을 추가하도록 허용하세요."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Geen toegang tot Foto's. Sta YAAO3R toe om foto's toe te voegen in Instellingen."
+            "value": "Geen toegang tot Foto's. Sta YAFR toe om foto's toe te voegen in Instellingen."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Brak dostępu do zdjęć. Zezwól YAAO3R na dodawanie zdjęć w Ustawieniach."
+            "value": "Brak dostępu do zdjęć. Zezwól YAFR na dodawanie zdjęć w Ustawieniach."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sem acesso às fotos. Permita que YAAO3R adicione fotos em Configurações."
+            "value": "Sem acesso às fotos. Permita que YAFR adicione fotos em Configurações."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Нет доступа к фотографиям. Разрешите YAAO3R добавлять фотографии в настройках."
+            "value": "Нет доступа к фотографиям. Разрешите YAFR добавлять фотографии в настройках."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ไม่สามารถเข้าถึงรูปถ่าย อนุญาตให้ YAAO3R เพิ่มรูปภาพในการตั้งค่า"
+            "value": "ไม่สามารถเข้าถึงรูปถ่าย อนุญาตให้ YAFR เพิ่มรูปภาพในการตั้งค่า"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fotoğraflar'a erişim yok. YAAO3R'nin Ayarlar'da fotoğraf eklemesine izin verin."
+            "value": "Fotoğraflar'a erişim yok. YAFR'nin Ayarlar'da fotoğraf eklemesine izin verin."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Немає доступу до фотографій. Дозвольте YAAO3R додавати фотографії в налаштуваннях."
+            "value": "Немає доступу до фотографій. Дозвольте YAFR додавати фотографії в налаштуваннях."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Không có quyền truy cập vào Ảnh. Cho phép YAAO3R thêm ảnh trong Cài đặt."
+            "value": "Không có quyền truy cập vào Ảnh. Cho phép YAFR thêm ảnh trong Cài đặt."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "没有图库权限，请在「设置」中允许 YAAO3R 加入照片"
+            "value": "没有图库权限，请在「设置」中允许 YAFR 加入照片"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片"
+            "value": "沒有相簿權限，請在「設定」中允許 YAFR 加入照片"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片"
+            "value": "沒有相簿權限，請在「設定」中允許 YAFR 加入照片"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片"
+            "value": "沒有相簿權限，請在「設定」中允許 YAFR 加入照片"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "沒有相簿權限，請在「設定」中允許 YAAO3R 加入照片"
+            "value": "沒有相簿權限，請在「設定」中允許 YAFR 加入照片"
           }
         }
       }
@@ -79223,6 +80653,149 @@
         }
       }
     },
+    "跳到第幾部作品": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jump to Work Number"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳到第几部作品"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳到第幾部作品"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳到第幾部作品"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳到第幾部作品"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳到第幾部作品"
+          }
+        }
+      }
+    },
     "跳轉": {
       "extractionState": "manual",
       "localizations": {
@@ -80220,6 +81793,292 @@
           "stringUnit": {
             "state": "translated",
             "value": "輸入合集標題；不輸入直接按搜尋可瀏覽全部合集"
+          }
+        }
+      }
+    },
+    "輸入序號跳到對應的作品。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入序号跳到对应的作品。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品。"
+          }
+        }
+      }
+    },
+    "輸入序號跳到對應的作品；超過目前已載入的數量時會繼續載入。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入序号跳到对应的作品；超过目前已加载的数量时会继续加载。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品；超過目前已載入的數量時會繼續載入。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品；超過目前已載入的數量時會繼續載入。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品；超過目前已載入的數量時會繼續載入。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輸入序號跳到對應的作品；超過目前已載入的數量時會繼續載入。"
           }
         }
       }
@@ -87517,145 +89376,145 @@
         }
       }
     },
-    "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": {
+    "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAFR › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "يتم تنزيل الأعمال المحفوظة في وضع عدم الاتصال إلى التطبيق: النسخ الأصلية أولاً، ثم الترجمات بمجرد انتهاء جميع التنزيلات. EPUB هو إصدار ثنائي اللغة تم إنشاؤه بواسطة التطبيق؛ تستخدم التنسيقات الأخرى ملفات AO3 الخاصة. الملفات المصدرة موجودة في تطبيق الملفات ضمن YAAO3R ›Bookshelf. سيتم سؤالك قبل استخدام واجهة برمجة تطبيقات الترجمة المدفوعة. بعد تغيير اللغة المستهدفة، اضغط لفترة طويلة على العمل في وضع عدم الاتصال واختر \"ترجمة مرة أخرى\"."
+            "value": "يتم تنزيل الأعمال المحفوظة في وضع عدم الاتصال إلى التطبيق: النسخ الأصلية أولاً، ثم الترجمات بمجرد انتهاء جميع التنزيلات. EPUB هو إصدار ثنائي اللغة تم إنشاؤه بواسطة التطبيق؛ تستخدم التنسيقات الأخرى ملفات AO3 الخاصة. الملفات المصدرة موجودة في تطبيق الملفات ضمن YAFR ›Bookshelf. سيتم سؤالك قبل استخدام واجهة برمجة تطبيقات الترجمة المدفوعة. بعد تغيير اللغة المستهدفة، اضغط لفترة طويلة على العمل في وضع عدم الاتصال واختر \"ترجمة مرة أخرى\"."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Offline gespeicherte Werke werden in die App heruntergeladen: zuerst die Originale, dann die Übersetzungen, sobald alle Downloads abgeschlossen sind. EPUB ist eine zweisprachige Ausgabe, die von der App erstellt wird; andere Formate verwenden AO3-eigene Dateien. Exportierte Dateien befinden sich in der Dateien-App unter YAAO3R › Bookshelf. Sie werden gefragt, bevor eine kostenpflichtige Übersetzungs-API verwendet wird. Nachdem Sie die Zielsprache geändert haben, drücken Sie lange auf ein Werk im Offline-Modus und wählen Sie „Erneut übersetzen“."
+            "value": "Offline gespeicherte Werke werden in die App heruntergeladen: zuerst die Originale, dann die Übersetzungen, sobald alle Downloads abgeschlossen sind. EPUB ist eine zweisprachige Ausgabe, die von der App erstellt wird; andere Formate verwenden AO3-eigene Dateien. Exportierte Dateien befinden sich in der Dateien-App unter YAFR › Bookshelf. Sie werden gefragt, bevor eine kostenpflichtige Übersetzungs-API verwendet wird. Nachdem Sie die Zielsprache geändert haben, drücken Sie lange auf ein Werk im Offline-Modus und wählen Sie „Erneut übersetzen“."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works saved offline are downloaded into the app: originals first, then translations once all downloads finish. EPUB is a bilingual edition made by the app; other formats use AO3's own files. Exported files are in the Files app under YAAO3R › Bookshelf. You'll be asked before a paid translation API is used. After changing the target language, long-press a work in Offline and choose “Translate Again”."
+            "value": "Works saved offline are downloaded into the app: originals first, then translations once all downloads finish. EPUB is a bilingual edition made by the app; other formats use AO3's own files. Exported files are in the Files app under YAFR › Bookshelf. You'll be asked before a paid translation API is used. After changing the target language, long-press a work in Offline and choose “Translate Again”."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Los trabajos guardados sin conexión se descargan en la aplicación: primero los originales y luego las traducciones una vez finalizadas todas las descargas. EPUB es una edición bilingüe realizada por la aplicación; otros formatos utilizan archivos propios de AO3. Los archivos exportados se encuentran en la aplicación Archivos en YAAO3R › Bookshelf. Se le preguntará antes de utilizar una API de traducción paga. Después de cambiar el idioma de destino, mantenga presionada una obra sin conexión y elija \"Traducir nuevamente\"."
+            "value": "Los trabajos guardados sin conexión se descargan en la aplicación: primero los originales y luego las traducciones una vez finalizadas todas las descargas. EPUB es una edición bilingüe realizada por la aplicación; otros formatos utilizan archivos propios de AO3. Los archivos exportados se encuentran en la aplicación Archivos en YAFR › Bookshelf. Se le preguntará antes de utilizar una API de traducción paga. Después de cambiar el idioma de destino, mantenga presionada una obra sin conexión y elija \"Traducir nuevamente\"."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les œuvres enregistrées hors ligne sont téléchargées dans l'application : les originaux d'abord, puis les traductions une fois tous les téléchargements terminés. EPUB est une édition bilingue réalisée par l'application ; d'autres formats utilisent les propres fichiers d'AO3. Les fichiers exportés se trouvent dans l'application Fichiers sous YAAO3R › Bookshelf. Vous serez invité à utiliser une API de traduction payante. Après avoir changé la langue cible, appuyez longuement sur une œuvre hors ligne et choisissez « Traduire à nouveau »."
+            "value": "Les œuvres enregistrées hors ligne sont téléchargées dans l'application : les originaux d'abord, puis les traductions une fois tous les téléchargements terminés. EPUB est une édition bilingue réalisée par l'application ; d'autres formats utilisent les propres fichiers d'AO3. Les fichiers exportés se trouvent dans l'application Fichiers sous YAFR › Bookshelf. Vous serez invité à utiliser une API de traduction payante. Après avoir changé la langue cible, appuyez longuement sur une œuvre hors ligne et choisissez « Traduire à nouveau »."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "ऑफ़लाइन सहेजे गए कार्यों को ऐप में डाउनलोड किया जाता है: पहले मूल, फिर सभी डाउनलोड समाप्त होने पर अनुवाद। EPUB ऐप द्वारा बनाया गया एक द्विभाषी संस्करण है; अन्य प्रारूप AO3 की अपनी फ़ाइलों का उपयोग करते हैं। निर्यात की गई फ़ाइलें YAAO3R › बुकशेल्फ़ के अंतर्गत फ़ाइलें ऐप में हैं। सशुल्क अनुवाद एपीआई का उपयोग करने से पहले आपसे पूछा जाएगा। लक्ष्य भाषा बदलने के बाद, ऑफ़लाइन में किसी कार्य को देर तक दबाकर रखें और \"फिर से अनुवाद करें\" चुनें।"
+            "value": "ऑफ़लाइन सहेजे गए कार्यों को ऐप में डाउनलोड किया जाता है: पहले मूल, फिर सभी डाउनलोड समाप्त होने पर अनुवाद। EPUB ऐप द्वारा बनाया गया एक द्विभाषी संस्करण है; अन्य प्रारूप AO3 की अपनी फ़ाइलों का उपयोग करते हैं। निर्यात की गई फ़ाइलें YAFR › बुकशेल्फ़ के अंतर्गत फ़ाइलें ऐप में हैं। सशुल्क अनुवाद एपीआई का उपयोग करने से पहले आपसे पूछा जाएगा। लक्ष्य भाषा बदलने के बाद, ऑफ़लाइन में किसी कार्य को देर तक दबाकर रखें और \"फिर से अनुवाद करें\" चुनें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Karya yang disimpan secara offline diunduh ke dalam aplikasi: karya asli terlebih dahulu, kemudian terjemahan setelah semua unduhan selesai. EPUB adalah edisi bilingual yang dibuat oleh aplikasi; format lain menggunakan file AO3 sendiri. File yang diekspor ada di aplikasi Files pada YAAO3R › Bookshelf. Anda akan ditanya sebelum API terjemahan berbayar digunakan. Setelah mengubah bahasa target, tekan lama sebuah karya dalam mode Offline dan pilih “Terjemahkan Lagi”."
+            "value": "Karya yang disimpan secara offline diunduh ke dalam aplikasi: karya asli terlebih dahulu, kemudian terjemahan setelah semua unduhan selesai. EPUB adalah edisi bilingual yang dibuat oleh aplikasi; format lain menggunakan file AO3 sendiri. File yang diekspor ada di aplikasi Files pada YAFR › Bookshelf. Anda akan ditanya sebelum API terjemahan berbayar digunakan. Setelah mengubah bahasa target, tekan lama sebuah karya dalam mode Offline dan pilih “Terjemahkan Lagi”."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le opere salvate offline vengono scaricate nell'app: prima gli originali, poi le traduzioni una volta terminati tutti i download. EPUB è un'edizione bilingue realizzata dall'app; altri formati utilizzano i file di AO3. I file esportati si trovano nell'app File in YAAO3R › Libreria. Ti verrà chiesto prima di utilizzare un'API di traduzione a pagamento. Dopo aver cambiato la lingua di destinazione, premi a lungo un'opera in offline e scegli \"Traduci di nuovo\"."
+            "value": "Le opere salvate offline vengono scaricate nell'app: prima gli originali, poi le traduzioni una volta terminati tutti i download. EPUB è un'edizione bilingue realizzata dall'app; altri formati utilizzano i file di AO3. I file esportati si trovano nell'app File in YAFR › Libreria. Ti verrà chiesto prima di utilizzare un'API di traduzione a pagamento. Dopo aver cambiato la lingua di destinazione, premi a lungo un'opera in offline e scegli \"Traduci di nuovo\"."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "オフラインで保存された作品はアプリにダウンロードされます。最初にオリジナルがあり、すべてのダウンロードが完了すると翻訳が続きます。 EPUB はアプリによって作成されたバイリンガル版です。他の形式は AO3 独自のファイルを使用します。エクスポートされたファイルは、ファイル アプリの YAAO3R › Bookshelf にあります。有料の翻訳 API を使用する前に質問されます。翻訳言語を変更した後、オフラインで作品を長押しし、「再翻訳」を選択します。"
+            "value": "オフラインで保存された作品はアプリにダウンロードされます。最初にオリジナルがあり、すべてのダウンロードが完了すると翻訳が続きます。 EPUB はアプリによって作成されたバイリンガル版です。他の形式は AO3 独自のファイルを使用します。エクスポートされたファイルは、ファイル アプリの YAFR › Bookshelf にあります。有料の翻訳 API を使用する前に質問されます。翻訳言語を変更した後、オフラインで作品を長押しし、「再翻訳」を選択します。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "오프라인으로 저장된 작품은 앱에 다운로드됩니다. 먼저 원본을 다운로드한 다음 모든 다운로드가 완료되면 번역을 다운로드합니다. EPUB는 앱에서 만든 이중 언어 버전입니다. 다른 형식은 AO3 자체 파일을 사용합니다. 내보낸 파일은 YAAO3R › Bookshelf 아래의 파일 앱에 있습니다. 유료 번역 API를 사용하기 전에 묻는 메시지가 표시됩니다. 대상 언어를 변경한 후 오프라인에서 작품을 길게 누르고 '다시 번역'을 선택하세요."
+            "value": "오프라인으로 저장된 작품은 앱에 다운로드됩니다. 먼저 원본을 다운로드한 다음 모든 다운로드가 완료되면 번역을 다운로드합니다. EPUB는 앱에서 만든 이중 언어 버전입니다. 다른 형식은 AO3 자체 파일을 사용합니다. 내보낸 파일은 YAFR › Bookshelf 아래의 파일 앱에 있습니다. 유료 번역 API를 사용하기 전에 묻는 메시지가 표시됩니다. 대상 언어를 변경한 후 오프라인에서 작품을 길게 누르고 '다시 번역'을 선택하세요."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Offline opgeslagen werken worden naar de app gedownload: eerst de originelen, daarna de vertalingen zodra alle downloads zijn voltooid. EPUB is een tweetalige editie gemaakt door de app; andere formaten gebruiken de eigen bestanden van AO3. Geëxporteerde bestanden bevinden zich in de app Bestanden onder YAAO3R ›Boekenplank. U wordt gevraagd voordat een betaalde vertaal-API wordt gebruikt. Nadat u de doeltaal heeft gewijzigd, drukt u lang op een werk in Offline en kiest u “Opnieuw vertalen”."
+            "value": "Offline opgeslagen werken worden naar de app gedownload: eerst de originelen, daarna de vertalingen zodra alle downloads zijn voltooid. EPUB is een tweetalige editie gemaakt door de app; andere formaten gebruiken de eigen bestanden van AO3. Geëxporteerde bestanden bevinden zich in de app Bestanden onder YAFR ›Boekenplank. U wordt gevraagd voordat een betaalde vertaal-API wordt gebruikt. Nadat u de doeltaal heeft gewijzigd, drukt u lang op een werk in Offline en kiest u “Opnieuw vertalen”."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prace zapisane w trybie offline są pobierane do aplikacji: najpierw oryginały, a po zakończeniu pobierania wszystkich tłumaczeń. EPUB to dwujęzyczna edycja stworzona przez aplikację; inne formaty korzystają z własnych plików AO3. Wyeksportowane pliki znajdują się w aplikacji Pliki w sekcji YAAO3R › Półka na książki. Przed użyciem płatnego interfejsu API tłumaczenia zostaniesz zapytany. Po zmianie języka docelowego naciśnij i przytrzymaj utwór w trybie offline i wybierz „Przetłumacz ponownie”."
+            "value": "Prace zapisane w trybie offline są pobierane do aplikacji: najpierw oryginały, a po zakończeniu pobierania wszystkich tłumaczeń. EPUB to dwujęzyczna edycja stworzona przez aplikację; inne formaty korzystają z własnych plików AO3. Wyeksportowane pliki znajdują się w aplikacji Pliki w sekcji YAFR › Półka na książki. Przed użyciem płatnego interfejsu API tłumaczenia zostaniesz zapytany. Po zmianie języka docelowego naciśnij i przytrzymaj utwór w trybie offline i wybierz „Przetłumacz ponownie”."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "As obras salvas off-line são baixadas no aplicativo: primeiro os originais e depois as traduções quando todos os downloads terminarem. EPUB é uma edição bilíngue feita pelo app; outros formatos usam arquivos próprios do AO3. Os arquivos exportados estão no aplicativo Arquivos em YAAO3R › Bookshelf. Você será questionado antes de uma API de tradução paga ser usada. Após alterar o idioma de destino, mantenha uma obra pressionada no Offline e escolha “Traduzir novamente”."
+            "value": "As obras salvas off-line são baixadas no aplicativo: primeiro os originais e depois as traduções quando todos os downloads terminarem. EPUB é uma edição bilíngue feita pelo app; outros formatos usam arquivos próprios do AO3. Os arquivos exportados estão no aplicativo Arquivos em YAFR › Bookshelf. Você será questionado antes de uma API de tradução paga ser usada. Após alterar o idioma de destino, mantenha uma obra pressionada no Offline e escolha “Traduzir novamente”."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Работы, сохраненные в автономном режиме, загружаются в приложение: сначала оригиналы, затем переводы, как только все загрузки завершатся. EPUB — двуязычное издание, созданное приложением; другие форматы используют собственные файлы AO3. Экспортированные файлы находятся в приложении «Файлы» в разделе YAAO3R › Книжная полка. Перед использованием API платного перевода вас спросят. После изменения целевого языка нажмите и удерживайте произведение в автономном режиме и выберите «Перевести еще раз»."
+            "value": "Работы, сохраненные в автономном режиме, загружаются в приложение: сначала оригиналы, затем переводы, как только все загрузки завершатся. EPUB — двуязычное издание, созданное приложением; другие форматы используют собственные файлы AO3. Экспортированные файлы находятся в приложении «Файлы» в разделе YAFR › Книжная полка. Перед использованием API платного перевода вас спросят. После изменения целевого языка нажмите и удерживайте произведение в автономном режиме и выберите «Перевести еще раз»."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "งานที่บันทึกไว้แบบออฟไลน์จะถูกดาวน์โหลดลงในแอป: ต้นฉบับก่อน จากนั้นจึงแปลเมื่อการดาวน์โหลดทั้งหมดเสร็จสิ้น EPUB เป็นฉบับสองภาษาที่สร้างโดยแอป รูปแบบอื่นใช้ไฟล์ของ AO3 เอง ไฟล์ที่ส่งออกจะอยู่ในแอป Files ภายใต้ YAAO3R › Bookshelf คุณจะถูกถามก่อนที่จะใช้ API การแปลแบบชำระเงิน หลังจากเปลี่ยนภาษาเป้าหมายแล้ว ให้กดงานที่ออฟไลน์ค้างไว้แล้วเลือก \"แปลอีกครั้ง\""
+            "value": "งานที่บันทึกไว้แบบออฟไลน์จะถูกดาวน์โหลดลงในแอป: ต้นฉบับก่อน จากนั้นจึงแปลเมื่อการดาวน์โหลดทั้งหมดเสร็จสิ้น EPUB เป็นฉบับสองภาษาที่สร้างโดยแอป รูปแบบอื่นใช้ไฟล์ของ AO3 เอง ไฟล์ที่ส่งออกจะอยู่ในแอป Files ภายใต้ YAFR › Bookshelf คุณจะถูกถามก่อนที่จะใช้ API การแปลแบบชำระเงิน หลังจากเปลี่ยนภาษาเป้าหมายแล้ว ให้กดงานที่ออฟไลน์ค้างไว้แล้วเลือก \"แปลอีกครั้ง\""
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Çevrimdışı kaydedilen çalışmalar uygulamaya indirilir: önce orijinaller, ardından tüm indirmeler bittiğinde çeviriler. EPUB, uygulama tarafından hazırlanan iki dilli bir sürümdür; diğer formatlar AO3'ün kendi dosyalarını kullanır. Dışa aktarılan dosyalar YAAO3R › Kitaplık altındaki Dosyalar uygulamasındadır. Ücretli bir çeviri API'si kullanılmadan önce size sorulacaktır. Hedef dili değiştirdikten sonra Çevrimdışında bir çalışmaya uzun basın ve “Yeniden Çevir”i seçin."
+            "value": "Çevrimdışı kaydedilen çalışmalar uygulamaya indirilir: önce orijinaller, ardından tüm indirmeler bittiğinde çeviriler. EPUB, uygulama tarafından hazırlanan iki dilli bir sürümdür; diğer formatlar AO3'ün kendi dosyalarını kullanır. Dışa aktarılan dosyalar YAFR › Kitaplık altındaki Dosyalar uygulamasındadır. Ücretli bir çeviri API'si kullanılmadan önce size sorulacaktır. Hedef dili değiştirdikten sonra Çevrimdışında bir çalışmaya uzun basın ve “Yeniden Çevir”i seçin."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Твори, збережені офлайн, завантажуються в додаток: спочатку оригінали, а потім переклади, коли всі завантаження закінчаться. EPUB – це двомовне видання, створене програмою; інші формати використовують власні файли AO3. Експортовані файли знаходяться в програмі Файли в YAAO3R › Книжкова полиця. Вам буде запропоновано перед використанням платного API перекладу. Після зміни цільової мови натисніть і утримуйте твір у режимі офлайн і виберіть «Перекласти ще раз»."
+            "value": "Твори, збережені офлайн, завантажуються в додаток: спочатку оригінали, а потім переклади, коли всі завантаження закінчаться. EPUB – це двомовне видання, створене програмою; інші формати використовують власні файли AO3. Експортовані файли знаходяться в програмі Файли в YAFR › Книжкова полиця. Вам буде запропоновано перед використанням платного API перекладу. Після зміни цільової мови натисніть і утримуйте твір у режимі офлайн і виберіть «Перекласти ще раз»."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Các tác phẩm được lưu ngoại tuyến sẽ được tải xuống ứng dụng: bản gốc trước, sau đó là bản dịch sau khi tất cả quá trình tải xuống hoàn tất. EPUB là phiên bản song ngữ do ứng dụng tạo ra; các định dạng khác sử dụng tệp riêng của AO3. Các tệp đã xuất nằm trong ứng dụng Tệp trong YAAO3R > Giá sách. Bạn sẽ được hỏi trước khi sử dụng API dịch thuật trả phí. Sau khi thay đổi ngôn ngữ đích, hãy nhấn và giữ một tác phẩm ở chế độ Ngoại tuyến và chọn “Dịch lại”."
+            "value": "Các tác phẩm được lưu ngoại tuyến sẽ được tải xuống ứng dụng: bản gốc trước, sau đó là bản dịch sau khi tất cả quá trình tải xuống hoàn tất. EPUB là phiên bản song ngữ do ứng dụng tạo ra; các định dạng khác sử dụng tệp riêng của AO3. Các tệp đã xuất nằm trong ứng dụng Tệp trong YAFR > Giá sách. Bạn sẽ được hỏi trước khi sử dụng API dịch thuật trả phí. Sau khi thay đổi ngôn ngữ đích, hãy nhấn và giữ một tác phẩm ở chế độ Ngoại tuyến và chọn “Dịch lại”."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "离线保存的作品会下载到 App 内：先下载原文，全部完成后再翻译。EPUB 为 App 产生的双语版本，其他格式使用 AO3 官网文件；导出文件可在「文件」App 的 YAAO3R › Bookshelf 中找到。使用付费翻译 API 时会先询问；更换目标语言后可在「离线」长按作品「重新翻译」。"
+            "value": "离线保存的作品会下载到 App 内：先下载原文，全部完成后再翻译。EPUB 为 App 产生的双语版本，其他格式使用 AO3 官网文件；导出文件可在「文件」App 的 YAFR › Bookshelf 中找到。使用付费翻译 API 时会先询问；更换目标语言后可在「离线」长按作品「重新翻译」。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
+            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAFR › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
+            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAFR › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
+            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAFR › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAAO3R › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
+            "value": "離線保存的作品會下載到 App 內：先下載原文，全部完成後再翻譯。EPUB 為 App 產生的雙語版本，其他格式使用 AO3 官網檔案；匯出檔可在「檔案」App 的 YAFR › Bookshelf 中找到。使用付費翻譯 API 時會先詢問；更換目標語言後可在「離線」長按作品「重新翻譯」。"
           }
         }
       }

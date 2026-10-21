@@ -98,8 +98,14 @@ final class OfflineManager {
         return try? JSONDecoder().decode(OfflineTranslations.self, from: data)
     }
 
+    /// 作者設為僅限登入用戶閱讀的作品：只在 App 內離線閱讀，不產生匯出檔、不提供分享，
+    /// 避免作品被帶出 AO3（尊重作者的限制）
+    func isRestricted(_ id: Int) -> Bool {
+        records[id]?.isRestricted == true || bookshelf.state.items.first { $0.id == id }?.work.isRestricted == true
+    }
+
     func exportURL(_ id: Int) -> URL? {
-        guard let name = records[id]?.exportFileName else { return nil }
+        guard !isRestricted(id), let name = records[id]?.exportFileName else { return nil }
         let url = Self.exportDirectory.appending(path: name)
         return FileManager.default.fileExists(atPath: url.path) ? url : nil
     }
@@ -110,6 +116,7 @@ final class OfflineManager {
     /// - 原文：匯出格式為官網格式時直接用匯出檔，否則（EPUB）另外產生只有原文的 EPUB。
     /// - 原文與譯文：匯出格式為 EPUB 時直接用匯出檔，否則另外產生雙語 EPUB。
     func shareFile(_ id: Int, bilingual: Bool) -> URL? {
+        guard !isRestricted(id) else { return nil }
         let format = records[id]?.format ?? .epub
         if (format == .epub) == bilingual, let url = exportURL(id) { return url }
         guard let work = Self.loadWork(id) else { return nil }
@@ -529,6 +536,14 @@ final class OfflineManager {
         records[id]?.translatableCount = paragraphs.count
         records[id]?.originalLanguage = work.info?.language
 
+        // 作者不希望作品被翻譯或用於 AI：尊重作者，不自動翻譯（閱讀時可由使用者自行決定）
+        let declined = AuthorWishes.declinesTranslation(work.detail) != nil
+        records[id]?.authorDeclinesTranslation = declined
+        if declined {
+            records[id]?.translatedCount = 0
+            return nil
+        }
+
         // 原文與目標語言相同：不需要翻譯
         if isSameLanguage(work.info?.language) {
             records[id]?.translatedCount = 0
@@ -587,6 +602,16 @@ final class OfflineManager {
 
     private func export(_ work: OfflineWork) async throws {
         let id = work.id
+        // 僅限登入用戶的作品不產生匯出檔（「檔案」App 中看得到匯出檔，容易被帶出 AO3）
+        records[id]?.isRestricted = work.info?.isRestricted
+        if work.info?.isRestricted == true {
+            if let old = records[id]?.exportFileName {
+                try? FileManager.default.removeItem(at: Self.exportDirectory.appending(path: old))
+                records[id]?.exportFileName = nil
+                saveRecords()
+            }
+            return
+        }
         let format = records[id]?.format ?? DownloadFormat(rawValue: UserDefaults.standard.string(forKey: DownloadFormat.storageKey) ?? "") ?? .epub
         try FileManager.default.createDirectory(at: Self.exportDirectory, withIntermediateDirectories: true)
         let name = "\(AO3Client.fileName(work.title)) (\(id)).\(format.rawValue)"
@@ -670,11 +695,11 @@ extension AO3Client {
         return try AO3Parser.workDetail(html: html, id: workID, chapterOffset: index)
     }
 
-    /// 作品目前已發布的章節數（作品頁統計列「3/10」的前半）
+    /// 作品目前已發布的章節數。讀取章節目錄頁（/navigate）而不是作品頁：
+    /// 背景檢查更新不應增加作者的點擊數（Hits）
     func publishedChapterCount(id: Int) async throws -> Int? {
         if isDemo { return try DemoSite.detail(id: id).chapters.count }
-        let html = try await get("/works/\(id)", query: [URLQueryItem(name: "view_adult", value: "true")])
-        let text = try SwiftSoup.parse(html).select("dl.stats dd.chapters").first()?.text() ?? ""
-        return Int(text.split(separator: "/").first?.trimmingCharacters(in: .whitespaces).filter(\.isNumber) ?? "")
+        let count = try await chapterIDs(workID: id).count
+        return count > 0 ? count : nil
     }
 }

@@ -92,6 +92,10 @@ struct OfflineRecord: Codable, Sendable {
     var contentDeleted = false
     /// 作品的原文語言（AO3 顯示名稱，例如 English）；與目標語言相同時不翻譯
     var originalLanguage: String?
+    /// 作者設為僅限登入用戶閱讀（不產生匯出檔、不提供分享）
+    var isRestricted: Bool?
+    /// 作者聲明不希望作品被翻譯或用於 AI：不自動翻譯
+    var authorDeclinesTranslation: Bool?
 
     var isTranslationComplete: Bool { translatableCount > 0 && translatedCount >= translatableCount }
 }
