@@ -667,7 +667,8 @@
   "開啟驗證頁": "確認ページを開く",
   "稍後再試": "後で試してください",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "数回の検証の後もリクエストはブロックされます。 AO3 は今のところ保護を強化している可能性があります。後でもう一度試すか、[設定] › [コンテンツ ソース] で別のミラーに切り替えてください。",
-  "支持贊助": "サポートしてください"
+  "支持贊助": "サポートしてください",
+  "重新整理": "リフレッシュ"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1337,7 +1338,8 @@
   "開啟驗證頁": "확인 페이지 열기",
   "稍後再試": "나중에 시도",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "여러 번의 확인 후에도 요청이 계속 차단됩니다. AO3는 현재로서는 보호를 강화했을 수 있습니다. 나중에 다시 시도하거나 설정 > 콘텐츠 소스에서 다른 미러로 전환하세요.",
-  "支持贊助": "우리를 지원하세요"
+  "支持贊助": "우리를 지원하세요",
+  "重新整理": "새로 고치다"
  },
  "es": {
   "載入中": "Cargando",
@@ -2007,7 +2009,8 @@
   "開啟驗證頁": "Abrir página de verificación",
   "稍後再試": "Inténtalo más tarde",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Las solicitudes siguen bloqueadas después de varias verificaciones. Es posible que AO3 haya reforzado su protección por ahora. Vuelva a intentarlo más tarde o cambie a otro espejo en Configuración > Fuente de contenido.",
-  "支持贊助": "Apóyanos"
+  "支持贊助": "Apóyanos",
+  "重新整理": "Refrescar"
  },
  "fr": {
   "載入中": "Chargement",
@@ -2677,7 +2680,8 @@
   "開啟驗證頁": "Ouvrir la page de vérification",
   "稍後再試": "Essayez plus tard",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Les demandes sont toujours bloquées après plusieurs vérifications. AO3 a peut-être renforcé sa protection pour le moment. Réessayez plus tard ou passez à un autre miroir dans Paramètres > Source de contenu.",
-  "支持贊助": "Soutenez-nous"
+  "支持贊助": "Soutenez-nous",
+  "重新整理": "Rafraîchir"
  },
  "de": {
   "載入中": "Laden",
@@ -3347,7 +3351,8 @@
   "開啟驗證頁": "Öffnen Sie die Verifizierungsseite",
   "稍後再試": "Versuchen Sie es später",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Anfragen werden auch nach mehreren Überprüfungen immer noch blockiert. Möglicherweise hat AO3 seinen Schutz vorerst verschärft. Versuchen Sie es später erneut oder wechseln Sie unter Einstellungen › Inhaltsquelle zu einem anderen Spiegel.",
-  "支持贊助": "Unterstützen Sie uns"
+  "支持贊助": "Unterstützen Sie uns",
+  "重新整理": "Aktualisieren"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -4017,7 +4022,8 @@
   "開啟驗證頁": "Abrir página de verificação",
   "稍後再試": "Tente mais tarde",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "As solicitações ainda estão bloqueadas após várias verificações. O AO3 pode ter reforçado a sua proteção por enquanto. Tente novamente mais tarde ou mude para outro espelho em Configurações › Fonte de conteúdo.",
-  "支持贊助": "Apoie-nos"
+  "支持贊助": "Apoie-nos",
+  "重新整理": "Atualizar"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -4687,7 +4693,8 @@
   "開啟驗證頁": "Apri la pagina di verifica",
   "稍後再試": "Prova più tardi",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Le richieste risultano ancora bloccate dopo diverse verifiche. AO3 potrebbe aver rafforzato la sua protezione per ora. Riprova più tardi o passa a un altro mirror in Impostazioni › Origine contenuto.",
-  "支持贊助": "Sostienici"
+  "支持贊助": "Sostienici",
+  "重新整理": "Aggiorna"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -5357,7 +5364,8 @@
   "開啟驗證頁": "Открыть страницу проверки",
   "稍後再試": "Попробуйте позже",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Запросы по-прежнему блокируются после нескольких проверок. AO3, возможно, ужесточила свою защиту. Повторите попытку позже или переключитесь на другое зеркало в «Настройки» > «Источник контента».",
-  "支持贊助": "Поддержите нас"
+  "支持贊助": "Поддержите нас",
+  "重新整理": "Обновить"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -6027,7 +6035,8 @@
   "開啟驗證頁": "Відкрийте сторінку підтвердження",
   "稍後再試": "Спробуйте пізніше",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Запити все одно блокуються після кількох перевірок. Можливо, AO3 наразі посилив захист. Спробуйте пізніше або перейдіть до іншого дзеркала в Налаштуваннях › Джерело вмісту.",
-  "支持贊助": "Підтримайте нас"
+  "支持贊助": "Підтримайте нас",
+  "重新整理": "Оновити"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -6697,7 +6706,8 @@
   "開啟驗證頁": "Otwórz stronę weryfikacyjną",
   "稍後再試": "Spróbuj później",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Po kilku weryfikacjach żądania są nadal blokowane. Być może AO3 na razie zaostrzyło swoją ochronę. Spróbuj ponownie później lub przełącz się na inne lustro w Ustawieniach > Źródło treści.",
-  "支持贊助": "Wesprzyj nas"
+  "支持贊助": "Wesprzyj nas",
+  "重新整理": "Odświeżać"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -7367,7 +7377,8 @@
   "開啟驗證頁": "Doğrulama Sayfasını Aç",
   "稍後再試": "Daha Sonra Deneyin",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Birkaç doğrulamadan sonra istekler hâlâ engelleniyor. AO3 şimdilik korumasını sıkılaştırmış olabilir. Daha sonra tekrar deneyin veya Ayarlar › İçerik Kaynağı bölümünden başka bir yansıtmaya geçin.",
-  "支持贊助": "Bizi Destekleyin"
+  "支持贊助": "Bizi Destekleyin",
+  "重新整理": "Yenile"
  },
  "nl": {
   "載入中": "Laden",
@@ -8037,7 +8048,8 @@
   "開啟驗證頁": "Open de verificatiepagina",
   "稍後再試": "Probeer het later",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Verzoeken worden na verschillende verificaties nog steeds geblokkeerd. Mogelijk heeft AO3 voorlopig zijn bescherming aangescherpt. Probeer het later opnieuw of schakel over naar een andere mirror in Instellingen › Inhoudsbron.",
-  "支持贊助": "Steun ons"
+  "支持贊助": "Steun ons",
+  "重新整理": "Vernieuwen"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -8707,7 +8719,8 @@
   "開啟驗證頁": "افتح صفحة التحقق",
   "稍後再試": "حاول لاحقًا",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "لا تزال الطلبات محظورة بعد عدة عمليات تحقق. ربما يكون AO3 قد شدد حمايته في الوقت الحالي. حاول مرة أخرى لاحقًا، أو قم بالتبديل إلى نسخة متطابقة أخرى في الإعدادات › مصدر المحتوى.",
-  "支持贊助": "ادعمنا"
+  "支持贊助": "ادعمنا",
+  "重新整理": "ينعش"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -9377,7 +9390,8 @@
   "開啟驗證頁": "सत्यापन पृष्ठ खोलें",
   "稍後再試": "बाद में प्रयास करें",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "कई सत्यापनों के बाद भी अनुरोध अवरुद्ध हैं। हो सकता है कि AO3 ने फिलहाल अपनी सुरक्षा कड़ी कर दी हो। बाद में पुनः प्रयास करें, या सेटिंग्स › सामग्री स्रोत में किसी अन्य दर्पण पर स्विच करें।",
-  "支持贊助": "हमें प्रोत्साहन दें"
+  "支持贊助": "हमें प्रोत्साहन दें",
+  "重新整理": "ताज़ा करना"
  },
  "id": {
   "載入中": "Memuat",
@@ -10047,7 +10061,8 @@
   "開啟驗證頁": "Buka Halaman Verifikasi",
   "稍後再試": "Coba Nanti",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Permintaan masih diblokir setelah beberapa kali verifikasi. AO3 mungkin telah memperketat perlindungannya untuk saat ini. Coba lagi nanti, atau beralih ke mirror lain di Pengaturan › Sumber Konten.",
-  "支持贊助": "Dukung Kami"
+  "支持贊助": "Dukung Kami",
+  "重新整理": "Menyegarkan"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -10717,7 +10732,8 @@
   "開啟驗證頁": "Mở trang xác minh",
   "稍後再試": "Thử sau",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "Yêu cầu vẫn bị chặn sau nhiều lần xác minh. AO3 có thể đã thắt chặt việc bảo vệ vào lúc này. Hãy thử lại sau hoặc chuyển sang một máy phản chiếu khác trong Cài đặt > Nguồn nội dung.",
-  "支持贊助": "Hỗ trợ chúng tôi"
+  "支持贊助": "Hỗ trợ chúng tôi",
+  "重新整理": "Làm cho khỏe lại"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -11387,6 +11403,7 @@
   "開啟驗證頁": "เปิดหน้าการยืนยัน",
   "稍後再試": "ลองภายหลัง",
   "驗證多次後仍被攔下，可能是 AO3 暫時加強了防護。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。": "คำขอยังคงถูกบล็อกหลังจากการตรวจสอบหลายครั้ง AO3 อาจจะเพิ่มการป้องกันให้เข้มงวดขึ้นในตอนนี้ ลองอีกครั้งในภายหลัง หรือเปลี่ยนไปใช้มิเรอร์อื่นในการตั้งค่า > แหล่งที่มาของเนื้อหา",
-  "支持贊助": "สนับสนุนเรา"
+  "支持贊助": "สนับสนุนเรา",
+  "重新整理": "รีเฟรช"
  }
 }

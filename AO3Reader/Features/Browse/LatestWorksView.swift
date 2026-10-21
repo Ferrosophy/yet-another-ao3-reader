@@ -83,6 +83,14 @@ struct LatestWorksView: View {
         .navigationTitle(board == .latest ? "最新作品" : "\(board.title) 排行")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                // 以目前的榜單與篩選重新載入，回到第一張卡片
+                Button("重新整理", systemImage: "arrow.clockwise") {
+                    currentIndex = 0
+                    Task { await model?.reload(clear: true) }
+                }
+                .disabled(model?.isLoading ?? true)
+            }
             ToolbarItem(placement: .topBarTrailing) {
                 Button("AO3 說明", systemImage: "info.circle") { showsGuide = true }
             }
