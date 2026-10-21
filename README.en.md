@@ -80,6 +80,39 @@ Traditional Chinese (Taiwan, Hong Kong, Macau), Simplified Chinese, English, Jap
 
 If you enjoy the app, you can buy the developer a coffee in **Settings › Support Us**.
 
+Donations support only the developer of this app. They are not affiliated with AO3 or the OTW and don't unlock anything; every feature is free forever. To support AO3 itself, please donate on the [OTW website](https://www.transformativeworks.org).
+
+## Known issues
+
+- The IPA is unsigned and must be signed yourself; with a free Apple ID it must be re-signed every 7 days.
+- Requires iOS 26 or later.
+- Some mirrors' protection (Cloudflare or Anubis) may still reject the app's requests after verification. Switch to another mirror if that happens.
+- Key-free translation services use unofficial endpoints and may be rate-limited or temporarily unavailable.
+- Comments can be read and translated but not posted; post comments on the original site.
+- In paging mode, the end-of-work kudos and comments panel appears when you keep paging past the last page.
+- Some newly added interface text currently appears in English in languages other than Chinese and English.
+
+## Backup and migration
+
+- **New device**: turn on Settings › Sync (iCloud or WebDAV) on the old device and choose the same method on the new one to restore your offline list, reading progress, reading time, preferences, search history and on-device bookmarks.
+- **Offline files** aren't synced; the new device re-downloads them from your offline list. Exported EPUBs and other files can be backed up from the Files app under YAAO3R › Bookshelf.
+- **Not synced**: translation API keys, imported fonts and background images, translation cache and AO3 login state. Set these up or log in again after moving.
+- The app's local data is included in iCloud or computer backups of your iPhone and is restored with them (except the translation cache).
+
+## Troubleshooting
+
+- **Can't reach AO3**: add a mirror you trust in Settings › Content Source, and complete any human check that appears.
+- **AO3 rate limiting (HTTP 429)**: the app stops retrying and shows how long to wait.
+- **Pages fail to load or look incomplete**: AO3 may have changed its pages. Triple-tap App Version in Settings to open the debug page, copy the log and report it in Issues so the parser can be updated. Works already saved offline aren't affected.
+- **Translation fails**: switch services in Settings › Translation Service (for example, on-device Apple Translate). Reading the original is unaffected.
+- **Offline reading** works without a connection.
+
+## Privacy and security
+
+- [Privacy policy](PRIVACY.md): where data goes and how to delete it.
+- [Security policy](SECURITY.md): report vulnerabilities privately through GitHub, not in public issues.
+- [Changelog](CHANGELOG.md)
+
 ## Development
 
 Requires Xcode 26 or later and the iOS 26 SDK.

@@ -115,7 +115,7 @@ struct LatestWorksView: View {
         }
         .task(id: LoadKey(language: languageID, languageCount: languages.count, board: board, period: period, rating: ratingID)) {
             let key = LoadKey(language: languageID, languageCount: languages.count, board: board, period: period, rating: ratingID)
-            guard key != loadedKey || model == nil else { return }
+            guard key != loadedKey || model == nil || model?.needsReload == true else { return }
             loadedKey = key
             let client = app.client
             var query = WorkSearchQuery()

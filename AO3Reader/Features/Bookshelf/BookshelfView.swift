@@ -207,7 +207,7 @@ struct BookCoverView: View {
         return ZStack(alignment: .topLeading) {
             LinearGradient(colors: [palette.0, palette.1], startPoint: .topLeading, endPoint: .bottomTrailing)
             VStack(alignment: .leading, spacing: 6) {
-                Image("AO3Logo")
+                Image(systemName: "book.closed.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 14)

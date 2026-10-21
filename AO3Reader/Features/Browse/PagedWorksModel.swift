@@ -23,6 +23,9 @@ final class PagedWorksModel {
         self.loader = loader
     }
 
+    /// 第一頁的請求被取消、還沒有結果：畫面再次出現時應重新載入
+    var needsReload: Bool { !hasLoaded && !isLoading && works.isEmpty && error == nil }
+
     func replaceLoader(_ loader: @escaping Loader) {
         self.loader = loader
     }
@@ -51,15 +54,20 @@ final class PagedWorksModel {
     private func loadNext(reset: Bool) async {
         guard !isLoading else { return }
         let generation = generation
+        var cancelled = false
         isLoading = true
         defer {
             if generation == self.generation {
                 isLoading = false
-                hasLoaded = true
+                hasLoaded = !cancelled
             }
         }
         do {
-            let result = try await loader(page + 1)
+            // 請求不跟著畫面的 task 取消：切換分頁、進出作品頁或切換來源時畫面會暫時消失，
+            // 若請求被取消會留下「載入失敗」，回到畫面時條件沒變也不會重新載入
+            let loader = loader
+            let next = page + 1
+            let result = try await Task { try await loader(next) }.value
             guard generation == self.generation else { return }
             page = result.page
             hasNextPage = result.hasNextPage
@@ -71,6 +79,11 @@ final class PagedWorksModel {
             error = nil
         } catch {
             guard generation == self.generation else { return }
+            // 被取消的請求不算失敗：保持未載入狀態，下次出現時重新載入
+            if error is CancellationError || (error as? URLError)?.code == .cancelled {
+                cancelled = true
+                return
+            }
             self.error = error.localizedDescription
         }
     }

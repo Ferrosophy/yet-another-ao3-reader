@@ -77,6 +77,10 @@ struct AO3Client: Sendable {
         var headers: [String: String] = [:]
         for (key, value) in session.configuration.httpAdditionalHeaders ?? [:] { headers["\(key)"] = "\(value)" }
         for (key, value) in request.allHTTPHeaderFields ?? [:] { headers[key] = value }
+        // 除錯紀錄可能被複製給開發者：不記錄驗證權杖與 Cookie 的值
+        for key in headers.keys where ["x-csrf-token", "cookie", "authorization"].contains(key.lowercased()) {
+            headers[key] = "<redacted>"
+        }
         return headers
     }
 
