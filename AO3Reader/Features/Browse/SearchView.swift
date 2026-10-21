@@ -353,11 +353,12 @@ struct SearchCondition: Identifiable {
         func add(_ id: String, _ label: String, _ remove: @escaping (inout WorkSearchQuery) -> Void) {
             result.append(SearchCondition(id: id, label: label, remove: remove))
         }
-        func text(_ id: String, _ title: String, _ keyPath: WritableKeyPath<WorkSearchQuery, String>) {
+        // 鍵路徑需為 Sendable 才能放進移除條件的閉包
+        func text(_ id: String, _ title: String, _ keyPath: WritableKeyPath<WorkSearchQuery, String> & Sendable) {
             let value = query[keyPath: keyPath].trimmingCharacters(in: .whitespaces)
             if !value.isEmpty { add(id, "\(title) \(value)") { $0[keyPath: keyPath] = "" } }
         }
-        func tags(_ id: String, _ keyPath: WritableKeyPath<WorkSearchQuery, String>, prefix: String = "") {
+        func tags(_ id: String, _ keyPath: WritableKeyPath<WorkSearchQuery, String> & Sendable, prefix: String = "") {
             let names = query[keyPath: keyPath].split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
             for name in names {
                 add("\(id):\(name)", prefix + name) { query in
