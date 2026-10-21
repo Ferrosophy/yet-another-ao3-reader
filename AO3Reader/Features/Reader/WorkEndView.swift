@@ -29,7 +29,12 @@ final class WorkEndModel {
     let client: AO3Client
     private(set) var isBusy = false
     private(set) var hasGivenKudos: Bool
+    /// 這次閱讀中已點過 Kudos（不論結果）：章末的支持提示不再顯示
+    private(set) var hasTappedKudos = false
     var alert: String?
+
+    /// 章末是否顯示支持作者的提示
+    var showsPrompt: Bool { !hasGivenKudos && !hasTappedKudos }
 
     init(workID: Int, client: AO3Client) {
         self.workID = workID
@@ -39,6 +44,7 @@ final class WorkEndModel {
 
     func leaveKudos() async {
         guard !isBusy else { return }
+        hasTappedKudos = true
         if hasGivenKudos {
             alert = String(localized: "你已經給過這部作品 Kudos 了")
             return
@@ -65,7 +71,7 @@ struct WorkEndView: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            if !model.hasGivenKudos {
+            if model.showsPrompt {
                 Text("如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。")
                     .font(font)
                     .foregroundStyle(color.opacity(0.7))
@@ -75,20 +81,20 @@ struct WorkEndView: View {
                 Button {
                     Task { await model.leaveKudos() }
                 } label: {
-                    Group {
-                        if model.isBusy {
-                            ProgressView()
-                        } else {
-                            Label {
-                                Text(verbatim: "Kudos")
-                            } icon: {
-                                Image(systemName: "heart.fill")
-                            }
-                        }
+                    // 文字一直保留，送出中只暫時隱藏並疊上進度圈（替換整個內容會讓玻璃按鈕的文字消失）
+                    Label {
+                        Text(verbatim: "Kudos")
+                    } icon: {
+                        Image(systemName: "heart.fill")
+                    }
+                    .opacity(model.isBusy ? 0 : 1)
+                    .overlay {
+                        if model.isBusy { ProgressView().tint(.white) }
                     }
                     .frame(minWidth: 96)
                 }
                 .buttonStyle(.glassProminent)
+                .disabled(model.isBusy)
                 Button(action: onComments) {
                     Label("評論", systemImage: "text.bubble.fill")
                         .frame(minWidth: 96)
