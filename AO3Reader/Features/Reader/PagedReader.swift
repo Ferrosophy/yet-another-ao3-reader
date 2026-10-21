@@ -231,6 +231,8 @@ struct PagedReaderView: UIViewControllerRepresentable {
     let content: PagedContent
     /// 作品第一頁：標題、作者、系列、標籤、簡介等正文以外的資訊，可上下捲動；nil 表示沒有
     let header: AnyView?
+    /// 每章最後一頁：Kudos 與評論等章末內容；nil 表示沒有
+    let footer: AnyView?
     let transition: PageTransition
     let margins: PageMargins
     let background: PageBackground
@@ -252,6 +254,7 @@ struct PagedReaderView: UIViewControllerRepresentable {
         controller.update(
             content: content,
             header: header,
+            footer: footer,
             transition: transition,
             margins: margins,
             background: background,
@@ -418,6 +421,7 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
 
     private var content: PagedContent?
     private var header: AnyView?
+    private var footer: AnyView?
     private var pageRanges: [NSRange] = []
     /// 目前頁碼（含資訊頁；有資訊頁時第 0 頁為資訊頁）
     private var currentIndex = 0
@@ -440,9 +444,13 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     /// 換章時的翻頁方向（nil 表示不需要動畫，例如第一次載入）
     private var pendingChapterDirection: Bool?
     private let headerHosts = NSHashTable<UIHostingController<AnyView>>.weakObjects()
+    private let footerHosts = NSHashTable<UIHostingController<AnyView>>.weakObjects()
 
     private var headerOffset: Int { header == nil ? 0 : 1 }
-    private var pageCount: Int { headerOffset + pageRanges.count }
+    private var footerCount: Int { footer == nil ? 0 : 1 }
+    /// 章末頁的頁碼（在所有正文頁之後）
+    private var footerIndex: Int { headerOffset + pageRanges.count }
+    private var pageCount: Int { headerOffset + pageRanges.count + footerCount }
     private var insets: UIEdgeInsets { margins.insets(safeArea: view.window?.safeAreaInsets ?? DeviceInsets.current) }
 
     private var visiblePage: ReaderPage? {
@@ -465,10 +473,10 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         if view.bounds.size != laidOutSize || insets != laidOutInsets { relayout() }
     }
 
-    func update(content: PagedContent, header: AnyView?, transition: PageTransition, margins: PageMargins,
+    func update(content: PagedContent, header: AnyView?, footer: AnyView?, transition: PageTransition, margins: PageMargins,
                 background: PageBackground, anchorParagraphID: String?, startAtEnd: Bool) {
         let chapterChanged = self.content?.chapterIndex != content.chapterIndex
-        let headerChanged = (header == nil) != (self.header == nil)
+        let headerChanged = (header == nil) != (self.header == nil) || (footer == nil) != (self.footer == nil)
         let transitionChanged = transition != self.transition
         let backgroundChanged = background != self.background
         if chapterChanged {
@@ -485,11 +493,15 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         }
         self.content = content
         self.header = header
+        self.footer = footer
         self.transition = transition
         self.margins = margins
         self.background = background
         if let header {
             for host in headerHosts.allObjects { host.rootView = header }
+        }
+        if let footer {
+            for host in footerHosts.allObjects { host.rootView = footer }
         }
         if transitionChanged { rebuildContainer() }
         if chapterChanged || headerChanged || content.signature != laidOutSignature || insets != laidOutInsets
@@ -510,6 +522,9 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         // 先記住目前頁首在哪個段落的第幾個字，重新分頁後回到同一位置
         var anchor: (id: String, offset: Int)?
         var onHeader = false
+        // 停在章末頁時，重新分頁後仍停在章末頁（譯文載入會改變正文頁數）
+        let onFooter = footer != nil && pendingAnchor == nil && laidOutSignature != nil && lastContent?.chapterIndex == content.chapterIndex
+            && currentIndex - laidOutHeaderOffset >= pageRanges.count
         if let pending = pendingAnchor {
             anchor = (pending, 0)
         } else if laidOutSignature != nil, let old = lastContent, old.chapterIndex == content.chapterIndex {
@@ -535,6 +550,8 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
             currentIndex = headerOffset
         } else if onHeader {
             currentIndex = 0
+        } else if onFooter {
+            currentIndex = pageCount - 1
         } else if let anchor, let span = content.spans.first(where: { $0.paragraph.id == anchor.id }) {
             let target = span.range.location + min(anchor.offset, max(span.range.length - 1, 0))
             currentIndex = headerOffset + (pageRanges.firstIndex { NSLocationInRange(target, $0) } ?? 0)
@@ -574,6 +591,11 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         if let header, index == 0 {
             let page = HeaderPageController(index: 0, rootView: header, background: pageBackground)
             headerHosts.add(page.hosting)
+            return page
+        }
+        if let footer, index == footerIndex {
+            let page = HeaderPageController(index: index, rootView: footer, background: pageBackground)
+            footerHosts.add(page.hosting)
             return page
         }
         let textIndex = index - headerOffset
@@ -782,7 +804,8 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
 
     private func notifyPageChange() {
         guard let content else { return }
-        let textIndex = currentIndex - headerOffset
+        // 章末頁視為最後一個正文頁（閱讀進度為本章結尾）
+        let textIndex = min(currentIndex - headerOffset, pageRanges.count - 1)
         var paragraphs: [Paragraph] = []
         if pageRanges.indices.contains(textIndex) {
             let range = pageRanges[textIndex]

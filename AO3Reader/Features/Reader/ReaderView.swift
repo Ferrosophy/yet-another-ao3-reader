@@ -30,8 +30,6 @@ struct ReaderView: View {
     /// 文末 Kudos 與評論
     @State private var workEnd: WorkEndModel
     @State private var showsComments = false
-    /// 翻頁模式在最後一頁繼續往後翻時彈出文末
-    @State private var showsWorkEnd = false
     /// 第一次在閱讀頁開啟雲端翻譯時，說明文字會傳送給第三方服務
     @AppStorage("translation.cloudNoticeShown") private var cloudNoticeShown = false
     @State private var showsCloudNotice = false
@@ -148,18 +146,6 @@ struct ReaderView: View {
         }
         .sheet(isPresented: $showsComments) {
             CommentsSheet(workID: model.route.id, client: model.client, app: app, translates: model.isTranslationOn)
-        }
-        .sheet(isPresented: $showsWorkEnd) {
-            WorkEndView(model: workEnd) {
-                showsWorkEnd = false
-                // 等文末面板收起後再開評論頁
-                Task {
-                    try? await Task.sleep(for: .milliseconds(450))
-                    showsComments = true
-                }
-            }
-            .padding(.horizontal, 24)
-            .presentationDetents([.medium])
         }
         .sheet(isPresented: $showsChapters) {
             ChapterListSheet(model: model)
@@ -281,11 +267,9 @@ struct ReaderView: View {
                 }
                 endNotes(detail: detail, chapter: chapter)
                     .padding(.top, 8)
-                // 最後一章結尾：Kudos 與評論
-                if !model.hasNext {
-                    WorkEndView(model: workEnd, font: Font(style.uiFont(scale: 0.9)), color: bodyColor) {
-                        showsComments = true
-                    }
+                // 每章結尾：Kudos 與評論
+                WorkEndView(model: workEnd, font: Font(style.uiFont(scale: 0.9)), color: bodyColor) {
+                    showsComments = true
                 }
                 // 章末留白（換章使用底部控制列的上一章 / 下一章）
                 Color.clear.frame(height: 24)
@@ -375,6 +359,7 @@ struct ReaderView: View {
         return PagedReaderView(
             content: content,
             header: model.chapterIndex == 0 ? pagedHeader(detail: detail, chapter: chapter) : nil,
+            footer: pagedFooter(),
             transition: layout.pageTransition,
             margins: pageMargins,
             background: background,
@@ -392,9 +377,6 @@ struct ReaderView: View {
                 } else if !forward, model.hasPrevious {
                     startAtEnd = true
                     model.previousChapter()
-                } else if forward {
-                    // 最後一章的最後一頁繼續往後翻：顯示文末的 Kudos 與評論
-                    showsWorkEnd = true
                 }
             }
         )
@@ -512,6 +494,36 @@ struct ReaderView: View {
         .foregroundStyle(bodyColor)
         .environment(app)
         .environment(\.openWorkList, openWorkList)
+        .tint(appearance.accentColor)
+        .environment(\.interfaceFont, appearance.interfaceFontChoice)
+        .environment(\.locale, InterfaceLanguage.selectedCode.map(Locale.init(identifier:)) ?? .autoupdatingCurrent)
+        return AnyView(page)
+    }
+
+    /// 翻頁模式每章的最後一頁：Kudos 與評論按鈕嵌在頁面中（與捲動模式的章末相同）。
+    /// 以 UIHostingController 放進翻頁器，因此明確傳入環境。
+    private func pagedFooter() -> AnyView {
+        let insets = pageMargins.insets(safeArea: DeviceInsets.current)
+        let page = VStack(spacing: 20) {
+            Spacer(minLength: 0)
+            WorkEndView(model: workEnd, font: Font(style.uiFont(scale: 0.9)), color: bodyColor) {
+                showsComments = true
+            }
+            Label(model.hasNext ? LocalizedStringKey("向左翻頁繼續閱讀") : LocalizedStringKey("已讀完最後一章"),
+                  systemImage: model.hasNext ? "chevron.right.2" : "checkmark")
+                .font(Font(style.uiFont(scale: 0.8)))
+                .foregroundStyle(bodyColor.opacity(0.5))
+            Spacer(minLength: 0)
+        }
+        .padding(.leading, insets.left)
+        .padding(.trailing, insets.right)
+        .padding(.top, insets.top)
+        .padding(.bottom, insets.bottom)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .contentShape(.rect)
+        .onTapGesture { withAnimation { toggleChrome() } }
+        .foregroundStyle(bodyColor)
+        .environment(app)
         .tint(appearance.accentColor)
         .environment(\.interfaceFont, appearance.interfaceFontChoice)
         .environment(\.locale, InterfaceLanguage.selectedCode.map(Locale.init(identifier:)) ?? .autoupdatingCurrent)

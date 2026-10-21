@@ -752,7 +752,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple 翻訳はデバイス上で動作し、テキストがこのデバイスの外に送信されることはありません。",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "翻訳時、翻訳するテキスト（本文、タイトル、タグ、概要、作者の注釈、コメント）は選択したサービスに送信されます。デバイス上で動作するのは Apple 翻訳のみです。",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "キー不要のサービスや Web 版サービスは、提供元が許可していない非公式のインターフェースを使用しています。提供元の利用規約に違反したり、いつでも使えなくなったりする可能性があります。安定して規約に沿った利用には、公式 API または Apple 翻訳を選択してください。",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "機械翻訳は誤りを含む可能性があり、原文の代わりにはなりません。タグ、警告、作者の注釈は原文を優先してください。"
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "機械翻訳は誤りを含む可能性があり、原文の代わりにはなりません。タグ、警告、作者の注釈は原文を優先してください。",
+  "向左翻頁繼續閱讀": "左にめくって続きを読む",
+  "已讀完最後一章": "最終章まで読み終えました"
  },
  "ko": {
   "載入中": "로드 중",
@@ -1507,7 +1509,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple 번역은 기기에서 실행되며 텍스트가 이 기기 밖으로 전송되지 않습니다.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "번역 시 번역할 텍스트(본문, 제목, 태그, 요약, 작가 메모, 댓글)가 선택한 서비스로 전송됩니다. 기기에서 실행되는 것은 Apple 번역뿐입니다.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "키가 필요 없는 서비스와 웹 버전 서비스는 제공업체가 승인하지 않은 비공식 인터페이스를 사용합니다. 제공업체의 이용 약관을 위반하거나 언제든지 작동하지 않을 수 있습니다. 안정적이고 규정에 맞게 사용하려면 공식 API 또는 Apple 번역을 선택하세요.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "기계 번역은 부정확할 수 있으며 원문을 대신할 수 없습니다. 태그, 경고, 작가 메모는 원문을 기준으로 해 주세요."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "기계 번역은 부정확할 수 있으며 원문을 대신할 수 없습니다. 태그, 경고, 작가 메모는 원문을 기준으로 해 주세요.",
+  "向左翻頁繼續閱讀": "왼쪽으로 넘겨 계속 읽기",
+  "已讀完最後一章": "마지막 장까지 다 읽었습니다"
  },
  "es": {
   "載入中": "Cargando",
@@ -2262,7 +2266,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate funciona en el dispositivo; el texto nunca sale de este dispositivo.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "El texto que se va a traducir (cuerpo, títulos, etiquetas, resúmenes, notas y comentarios) se envía al servicio seleccionado. Solo Apple Translate funciona en el dispositivo.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Los servicios sin clave y web usan interfaces no oficiales que los proveedores no han autorizado. Pueden infringir los términos de los proveedores o dejar de funcionar en cualquier momento. Para un uso fiable y conforme, elige una API oficial o Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traducción automática puede tener errores y no sustituye al original. Para etiquetas, advertencias y notas del autor, prevalece el original."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traducción automática puede tener errores y no sustituye al original. Para etiquetas, advertencias y notas del autor, prevalece el original.",
+  "向左翻頁繼續閱讀": "Pasa la página para seguir leyendo",
+  "已讀完最後一章": "Has terminado el último capítulo"
  },
  "fr": {
   "載入中": "Chargement",
@@ -3017,7 +3023,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate fonctionne sur l'appareil ; le texte ne quitte jamais cet appareil.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Le texte à traduire (corps, titres, balises, résumés, notes et commentaires) est envoyé au service sélectionné. Seul Apple Translate fonctionne sur l'appareil.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Les services sans clé et web utilisent des interfaces non officielles non autorisées par les fournisseurs. Ils peuvent enfreindre les conditions des fournisseurs ou cesser de fonctionner à tout moment. Pour une utilisation fiable et conforme, choisissez une API officielle ou Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traduction automatique peut être erronée et ne remplace pas l'original. Pour les balises, avertissements et notes de l'auteur, le texte original fait foi."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traduction automatique peut être erronée et ne remplace pas l'original. Pour les balises, avertissements et notes de l'auteur, le texte original fait foi.",
+  "向左翻頁繼續閱讀": "Tournez la page pour continuer",
+  "已讀完最後一章": "Vous avez terminé le dernier chapitre"
  },
  "de": {
   "載入中": "Laden",
@@ -3772,7 +3780,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate läuft auf dem Gerät; Text verlässt dieses Gerät nie.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Zu übersetzender Text (Haupttext, Titel, Schlagworte, Zusammenfassungen, Notizen und Kommentare) wird an den ausgewählten Dienst gesendet. Nur Apple Translate läuft auf dem Gerät.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Dienste ohne Schlüssel und Webdienste nutzen inoffizielle Schnittstellen, die von den Anbietern nicht autorisiert sind. Sie können gegen deren Nutzungsbedingungen verstoßen oder jederzeit ausfallen. Für eine zuverlässige, regelkonforme Nutzung wählen Sie eine offizielle API oder Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Maschinelle Übersetzungen können fehlerhaft sein und ersetzen nicht das Original. Bei Schlagworten, Warnungen und Notizen der Autor*innen ist das Original maßgeblich."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Maschinelle Übersetzungen können fehlerhaft sein und ersetzen nicht das Original. Bei Schlagworten, Warnungen und Notizen der Autor*innen ist das Original maßgeblich.",
+  "向左翻頁繼續閱讀": "Weiterblättern zum Weiterlesen",
+  "已讀完最後一章": "Letztes Kapitel gelesen"
  },
  "pt-BR": {
   "載入中": "Carregando",
@@ -4527,7 +4537,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "O Apple Translate funciona no dispositivo; o texto nunca sai deste dispositivo.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "O texto a ser traduzido (corpo, títulos, etiquetas, resumos, notas e comentários) é enviado ao serviço selecionado. Apenas o Apple Translate funciona no dispositivo.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Serviços sem chave e da web usam interfaces não oficiais que os provedores não autorizaram. Eles podem violar os termos dos provedores ou parar de funcionar a qualquer momento. Para um uso confiável e em conformidade, escolha uma API oficial ou o Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "A tradução automática pode conter erros e não substitui o original. Para etiquetas, avisos e notas do autor, confie no original."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "A tradução automática pode conter erros e não substitui o original. Para etiquetas, avisos e notas do autor, confie no original.",
+  "向左翻頁繼續閱讀": "Vire a página para continuar lendo",
+  "已讀完最後一章": "Você terminou o último capítulo"
  },
  "it": {
   "載入中": "Caricamento in corso",
@@ -5282,7 +5294,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Traduttore funziona sul dispositivo; il testo non lascia mai questo dispositivo.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Il testo da tradurre (corpo, titoli, tag, riepiloghi, note e commenti) viene inviato al servizio selezionato. Solo Apple Traduttore funziona sul dispositivo.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "I servizi senza chiave e web usano interfacce non ufficiali non autorizzate dai fornitori. Potrebbero violare i termini dei fornitori o smettere di funzionare in qualsiasi momento. Per un uso affidabile e conforme, scegli un'API ufficiale o Apple Traduttore.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traduzione automatica può contenere errori e non sostituisce l'originale. Per tag, avvertenze e note dell'autore fai riferimento all'originale."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "La traduzione automatica può contenere errori e non sostituisce l'originale. Per tag, avvertenze e note dell'autore fai riferimento all'originale.",
+  "向左翻頁繼續閱讀": "Gira pagina per continuare a leggere",
+  "已讀完最後一章": "Hai finito l’ultimo capitolo"
  },
  "ru": {
   "載入中": "Загрузка",
@@ -6037,7 +6051,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate работает на устройстве; текст никогда не покидает это устройство.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Текст для перевода (основной текст, заголовки, теги, резюме, примечания и комментарии) отправляется выбранному сервису. Только Apple Translate работает на устройстве.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Сервисы без ключа и веб-сервисы используют неофициальные интерфейсы, не разрешённые их владельцами. Они могут нарушать условия использования сервисов или перестать работать в любой момент. Для надёжного и правомерного использования выберите официальный API или Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Машинный перевод может содержать ошибки и не заменяет оригинал. Для тегов, предупреждений и примечаний автора ориентируйтесь на оригинал."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Машинный перевод может содержать ошибки и не заменяет оригинал. Для тегов, предупреждений и примечаний автора ориентируйтесь на оригинал.",
+  "向左翻頁繼續閱讀": "Листайте дальше, чтобы продолжить",
+  "已讀完最後一章": "Последняя глава прочитана"
  },
  "uk": {
   "載入中": "Завантаження",
@@ -6792,7 +6808,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate працює на пристрої; текст не залишає цей пристрій.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Текст для перекладу (основний текст, назви, теги, резюме, примітки й коментарі) надсилається до вибраної служби. Лише Apple Translate працює на пристрої.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Служби без ключа та веб-служби використовують неофіційні інтерфейси, не дозволені постачальниками. Вони можуть порушувати умови постачальників або будь-коли перестати працювати. Для надійного й правомірного використання оберіть офіційний API або Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Машинний переклад може містити помилки й не замінює оригінал. Щодо тегів, попереджень і приміток автора орієнтуйтеся на оригінал."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Машинний переклад може містити помилки й не замінює оригінал. Щодо тегів, попереджень і приміток автора орієнтуйтеся на оригінал.",
+  "向左翻頁繼續閱讀": "Гортайте далі, щоб продовжити",
+  "已讀完最後一章": "Останній розділ прочитано"
  },
  "pl": {
   "載入中": "Ładowanie",
@@ -7547,7 +7565,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate działa na urządzeniu; tekst nigdy go nie opuszcza.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Tekst do przetłumaczenia (treść, tytuły, tagi, podsumowania, notatki i komentarze) jest wysyłany do wybranej usługi. Tylko Apple Translate działa na urządzeniu.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Usługi bez klucza i usługi webowe korzystają z nieoficjalnych interfejsów, na które dostawcy nie wyrazili zgody. Mogą naruszać regulaminy dostawców lub w każdej chwili przestać działać. Aby korzystać niezawodnie i zgodnie z zasadami, wybierz oficjalne API lub Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Tłumaczenie maszynowe może zawierać błędy i nie zastępuje oryginału. W przypadku tagów, ostrzeżeń i notatek autora polegaj na oryginale."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Tłumaczenie maszynowe może zawierać błędy i nie zastępuje oryginału. W przypadku tagów, ostrzeżeń i notatek autora polegaj na oryginale.",
+  "向左翻頁繼續閱讀": "Przewiń dalej, aby czytać",
+  "已讀完最後一章": "Przeczytano ostatni rozdział"
  },
  "tr": {
   "載入中": "Yükleniyor",
@@ -8302,7 +8322,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate cihazda çalışır; metin bu cihazdan asla çıkmaz.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Çevrilecek metin (gövde, başlıklar, etiketler, özetler, notlar ve yorumlar) seçilen hizmete gönderilir. Yalnızca Apple Translate cihazda çalışır.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Anahtarsız ve web hizmetleri, sağlayıcıların yetkilendirmediği resmi olmayan uç noktalar kullanır. Sağlayıcıların koşullarını ihlal edebilir veya her an çalışmayı durdurabilirler. Güvenilir ve kurallara uygun kullanım için resmi bir API veya Apple Translate seçin.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Makine çevirisi hatalı olabilir ve orijinalin yerini tutmaz. Etiketler, uyarılar ve yazar notları için orijinali esas alın."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Makine çevirisi hatalı olabilir ve orijinalin yerini tutmaz. Etiketler, uyarılar ve yazar notları için orijinali esas alın.",
+  "向左翻頁繼續閱讀": "Okumaya devam etmek için sayfayı çevirin",
+  "已讀完最後一章": "Son bölümü bitirdiniz"
  },
  "nl": {
   "載入中": "Laden",
@@ -9057,7 +9079,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate werkt op het apparaat; tekst verlaat dit apparaat nooit.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Te vertalen tekst (hoofdtekst, titels, labels, samenvattingen, notities en opmerkingen) wordt naar de gekozen dienst gestuurd. Alleen Apple Translate werkt op het apparaat.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Diensten zonder sleutel en webdiensten gebruiken onofficiële eindpunten waarvoor de aanbieders geen toestemming hebben gegeven. Ze kunnen de voorwaarden van de aanbieders schenden of op elk moment stoppen met werken. Kies voor betrouwbaar en correct gebruik een officiële API of Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Machinevertaling kan fouten bevatten en vervangt het origineel niet. Vertrouw voor labels, waarschuwingen en notities van de auteur op het origineel."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Machinevertaling kan fouten bevatten en vervangt het origineel niet. Vertrouw voor labels, waarschuwingen en notities van de auteur op het origineel.",
+  "向左翻頁繼續閱讀": "Blader verder om te blijven lezen",
+  "已讀完最後一章": "Laatste hoofdstuk gelezen"
  },
  "ar": {
   "載入中": "جاري التحميل",
@@ -9812,7 +9836,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "تعمل Apple Translate على الجهاز؛ ولا يغادر النص هذا الجهاز أبدًا.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "يُرسَل النص المطلوب ترجمته (المتن والعناوين والعلامات والملخصات والملاحظات والتعليقات) إلى الخدمة المحددة. وحدها Apple Translate تعمل على الجهاز.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "تستخدم الخدمات التي لا تتطلب مفتاحًا وخدمات الويب واجهات غير رسمية لم يأذن بها مقدّموها. وقد تنتهك شروط مقدّمي الخدمة أو تتوقف عن العمل في أي وقت. للاستخدام الموثوق والمتوافق مع الشروط، اختر واجهة API رسمية أو Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "قد تكون الترجمة الآلية خاطئة ولا تحل محل النص الأصلي. اعتمد على النص الأصلي في العلامات والتحذيرات وملاحظات المؤلف."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "قد تكون الترجمة الآلية خاطئة ولا تحل محل النص الأصلي. اعتمد على النص الأصلي في العلامات والتحذيرات وملاحظات المؤلف.",
+  "向左翻頁繼續閱讀": "اقلب الصفحة لمتابعة القراءة",
+  "已讀完最後一章": "أنهيت الفصل الأخير"
  },
  "hi": {
   "載入中": "लोड हो रहा है",
@@ -10567,7 +10593,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple अनुवाद डिवाइस पर चलता है; टेक्स्ट कभी इस डिवाइस से बाहर नहीं जाता।",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "अनुवाद किया जाने वाला टेक्स्ट (मुख्य पाठ, शीर्षक, टैग, सारांश, नोट्स और टिप्पणियाँ) चुनी गई सेवा को भेजा जाता है। केवल Apple अनुवाद डिवाइस पर चलता है।",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "बिना कुंजी वाली और वेब सेवाएँ अनौपचारिक एंडपॉइंट का उपयोग करती हैं, जिन्हें प्रदाताओं ने अधिकृत नहीं किया है। वे प्रदाताओं की शर्तों का उल्लंघन कर सकती हैं या कभी भी काम करना बंद कर सकती हैं। भरोसेमंद और नियमों के अनुरूप उपयोग के लिए आधिकारिक API या Apple अनुवाद चुनें।",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "मशीन अनुवाद गलत हो सकता है और मूल पाठ की जगह नहीं ले सकता। टैग, चेतावनियों और लेखक के नोट्स के लिए मूल पाठ पर भरोसा करें।"
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "मशीन अनुवाद गलत हो सकता है और मूल पाठ की जगह नहीं ले सकता। टैग, चेतावनियों और लेखक के नोट्स के लिए मूल पाठ पर भरोसा करें।",
+  "向左翻頁繼續閱讀": "पढ़ना जारी रखने के लिए पन्ना पलटें",
+  "已讀完最後一章": "आपने अंतिम अध्याय पढ़ लिया है"
  },
  "id": {
   "載入中": "Memuat",
@@ -11322,7 +11350,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate berjalan di perangkat; teks tidak pernah keluar dari perangkat ini.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Teks yang akan diterjemahkan (isi, judul, tag, ringkasan, catatan, dan komentar) dikirim ke layanan yang dipilih. Hanya Apple Translate yang berjalan di perangkat.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Layanan tanpa kunci dan layanan web menggunakan endpoint tidak resmi yang tidak diizinkan oleh penyedianya. Layanan ini dapat melanggar ketentuan penyedia atau berhenti berfungsi kapan saja. Untuk penggunaan yang andal dan sesuai aturan, pilih API resmi atau Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Terjemahan mesin bisa salah dan tidak menggantikan teks asli. Jadikan teks asli sebagai acuan untuk tag, peringatan, dan catatan penulis."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Terjemahan mesin bisa salah dan tidak menggantikan teks asli. Jadikan teks asli sebagai acuan untuk tag, peringatan, dan catatan penulis.",
+  "向左翻頁繼續閱讀": "Balik halaman untuk lanjut membaca",
+  "已讀完最後一章": "Anda telah menyelesaikan bab terakhir"
  },
  "vi": {
   "載入中": "Đang tải",
@@ -12077,7 +12107,9 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translate chạy trên thiết bị; văn bản không bao giờ rời khỏi thiết bị này.",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "Văn bản cần dịch (nội dung, tiêu đề, thẻ, tóm tắt, ghi chú và bình luận) sẽ được gửi đến dịch vụ đã chọn. Chỉ Apple Translate chạy trên thiết bị.",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "Các dịch vụ không cần khóa và dịch vụ web dùng endpoint không chính thức, chưa được nhà cung cấp cho phép. Chúng có thể vi phạm điều khoản của nhà cung cấp hoặc ngừng hoạt động bất cứ lúc nào. Để sử dụng ổn định và hợp lệ, hãy chọn API chính thức hoặc Apple Translate.",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Bản dịch máy có thể sai và không thay thế được bản gốc. Hãy lấy bản gốc làm chuẩn cho thẻ, cảnh báo và ghi chú của tác giả."
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "Bản dịch máy có thể sai và không thay thế được bản gốc. Hãy lấy bản gốc làm chuẩn cho thẻ, cảnh báo và ghi chú của tác giả.",
+  "向左翻頁繼續閱讀": "Lật trang để đọc tiếp",
+  "已讀完最後一章": "Bạn đã đọc xong chương cuối"
  },
  "th": {
   "載入中": "กำลังโหลด",
@@ -12832,6 +12864,8 @@
   "Apple 翻譯在裝置上進行，文字不會傳出這台裝置。": "Apple Translateทำงานบนอุปกรณ์ ข้อความจะไม่ออกจากอุปกรณ์นี้",
   "翻譯時，要翻譯的文字（正文、標題、標籤、簡介、作者註與評論）會傳送到所選的服務；只有 Apple 翻譯在裝置上進行。": "ข้อความที่จะแปล (เนื้อหา ชื่อเรื่อง แท็ก บทสรุป หมายเหตุ และความคิดเห็น) จะถูกส่งไปยังบริการที่เลือก มีเพียง Apple Translateที่ทำงานบนอุปกรณ์",
   "免金鑰與網頁版服務使用非官方介面，未經服務商授權，可能違反其服務條款或隨時失效。需要穩定、合規的使用時，請改用官方 API 或 Apple 翻譯。": "บริการแบบไม่ต้องใช้คีย์และบริการเว็บใช้ endpoint ที่ไม่เป็นทางการซึ่งผู้ให้บริการไม่ได้อนุญาต อาจละเมิดข้อกำหนดของผู้ให้บริการหรือหยุดทำงานได้ทุกเมื่อ หากต้องการใช้งานที่เสถียรและถูกต้องตามข้อกำหนด โปรดเลือก API ทางการหรือ Apple Translate",
-  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "การแปลด้วยเครื่องอาจผิดพลาดและไม่สามารถแทนที่ต้นฉบับได้ โปรดยึดต้นฉบับเป็นหลักสำหรับแท็ก คำเตือน และหมายเหตุของผู้เขียน"
+  "機器翻譯可能有誤，不能取代原文；標籤、警告與作者註請以原文為準。": "การแปลด้วยเครื่องอาจผิดพลาดและไม่สามารถแทนที่ต้นฉบับได้ โปรดยึดต้นฉบับเป็นหลักสำหรับแท็ก คำเตือน และหมายเหตุของผู้เขียน",
+  "向左翻頁繼續閱讀": "พลิกหน้าเพื่ออ่านต่อ",
+  "已讀完最後一章": "อ่านจบบทสุดท้ายแล้ว"
  }
 }

@@ -107,7 +107,6 @@ Donations support only the developer of this app. They are not affiliated with A
 - Some mirrors' protection (Cloudflare or Anubis) may still reject the app's requests after verification. Switch to another mirror if that happens.
 - Key-free translation services use unofficial endpoints and may be rate-limited or temporarily unavailable.
 - Comments can be read and translated but not posted; post comments on the original site.
-- In paging mode, the end-of-work kudos and comments panel appears when you keep paging past the last page.
 - Some newly added interface text currently appears in English in languages other than Chinese and English.
 
 ## Backup and migration
