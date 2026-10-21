@@ -97,13 +97,6 @@ final class OfflineManager {
         return try? JSONDecoder().decode(OfflineTranslations.self, from: data)
     }
 
-    /// 閱讀頁手動重譯某段後，同步更新離線譯文（語言相同才寫入）
-    nonisolated static func saveTranslation(_ text: String, for paragraph: Paragraph, workID: Int, targetLanguageCode: String) {
-        guard var translations = loadTranslations(workID), translations.targetLanguageCode == targetLanguageCode else { return }
-        translations.entries[paragraph.id] = .init(hash: OfflineTranslations.hash(paragraph.text), text: text)
-        try? JSONEncoder().encode(translations).write(to: translationsURL(workID), options: .atomic)
-    }
-
     func exportURL(_ id: Int) -> URL? {
         guard let name = records[id]?.exportFileName else { return nil }
         let url = Self.exportDirectory.appending(path: name)

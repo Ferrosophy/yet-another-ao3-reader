@@ -239,8 +239,6 @@ struct PagedReaderView: UIViewControllerRepresentable {
     var onPageChange: ([Paragraph]) -> Void
     var onCenterTap: () -> Void
     var onBoundary: (_ forward: Bool) -> Void
-    /// 長按段落：重新翻譯此段（nil 表示不提供，例如未開啟翻譯）
-    var onRetranslate: ((Paragraph) -> Void)?
 
     func makeUIViewController(context: Context) -> PagerController {
         PagerController()
@@ -250,7 +248,6 @@ struct PagedReaderView: UIViewControllerRepresentable {
         controller.onPageChange = onPageChange
         controller.onCenterTap = onCenterTap
         controller.onBoundary = onBoundary
-        controller.onRetranslate = onRetranslate
         controller.update(
             content: content,
             header: header,
@@ -314,22 +311,6 @@ final class TextPageController: ReaderPage {
 
     @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError() }
-
-    /// 頁面上某一點對應的字元位置（相對於本頁文字），用於長按段落
-    func characterIndex(at point: CGPoint) -> Int? {
-        let storage = NSTextStorage(attributedString: text)
-        let manager = NSLayoutManager()
-        storage.addLayoutManager(manager)
-        let container = NSTextContainer(size: CGSize(width: view.bounds.width - insets.left - insets.right,
-                                                     height: CGFloat.greatestFiniteMagnitude))
-        container.lineFragmentPadding = 0
-        manager.addTextContainer(container)
-        let local = CGPoint(x: point.x - insets.left, y: point.y - insets.top)
-        let used = manager.usedRect(for: container)
-        guard local.y >= 0, local.y <= used.maxY else { return nil }
-        let glyph = manager.glyphIndex(for: local, in: container)
-        return manager.characterIndexForGlyph(at: glyph)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -433,7 +414,6 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     var onPageChange: (([Paragraph]) -> Void)?
     var onCenterTap: (() -> Void)?
     var onBoundary: ((Bool) -> Void)?
-    var onRetranslate: ((Paragraph) -> Void)?
 
     private var content: PagedContent?
     private var header: AnyView?
@@ -477,36 +457,6 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
         let pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         pan.delegate = self
         view.addGestureRecognizer(pan)
-        let press = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
-        press.delegate = self
-        view.addGestureRecognizer(press)
-    }
-
-    /// 長按正文段落：選單提供重新翻譯此段與複製原文
-    @objc private func handleLongPress(_ recognizer: UILongPressGestureRecognizer) {
-        guard recognizer.state == .began, !isAnimating, let content,
-              let page = visiblePage as? TextPageController else { return }
-        let textIndex = page.index - headerOffset
-        guard pageRanges.indices.contains(textIndex) else { return }
-        let point = recognizer.location(in: page.view)
-        guard let local = page.characterIndex(at: point) else { return }
-        let location = pageRanges[textIndex].location + local
-        guard let paragraph = content.spans.first(where: { NSLocationInRange(location, $0.range) })?.paragraph,
-              paragraph.isTranslatable else { return }
-        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-        let sheet = UIAlertController(title: nil, message: String(paragraph.text.prefix(80)), preferredStyle: .actionSheet)
-        if let onRetranslate {
-            sheet.addAction(UIAlertAction(title: String(localized: "重新翻譯此段"), style: .default) { _ in onRetranslate(paragraph) })
-        }
-        sheet.addAction(UIAlertAction(title: String(localized: "複製原文"), style: .default) { _ in
-            UIPasteboard.general.string = paragraph.text
-        })
-        sheet.addAction(UIAlertAction(title: String(localized: "取消"), style: .cancel))
-        if let popover = sheet.popoverPresentationController {
-            popover.sourceView = page.view
-            popover.sourceRect = CGRect(origin: point, size: .zero)
-        }
-        present(sheet, animated: true)
     }
 
     override func viewDidLayoutSubviews() {
@@ -915,9 +865,8 @@ final class PagerController: UIViewController, UIPageViewControllerDataSource, U
     }
 
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        // 資訊頁上的點擊與長按交給頁內的內容
-        if gestureRecognizer is UITapGestureRecognizer || gestureRecognizer is UILongPressGestureRecognizer,
-           visiblePage is HeaderPageController { return false }
+        // 資訊頁上的點擊交給頁內的按鈕與連結
+        if gestureRecognizer is UITapGestureRecognizer, visiblePage is HeaderPageController { return false }
         return true
     }
 

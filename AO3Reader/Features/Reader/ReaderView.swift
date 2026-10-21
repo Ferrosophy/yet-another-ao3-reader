@@ -11,7 +11,6 @@ struct ReaderView: View {
 
     @State private var showsChrome = true
     @State private var showsChapters = false
-    @State private var showsParagraphPicker = false
     @State private var showsAppearance = false
     @State private var showsSourcePicker = false
     @State private var showsTargetPicker = false
@@ -119,10 +118,6 @@ struct ReaderView: View {
         .task(id: "\(model.detail?.id ?? 0)-\(model.detail?.actions != nil)") {
             if let detail = model.detail { await actions.load(from: detail) }
         }
-        .sheet(isPresented: $showsParagraphPicker) {
-            ParagraphRetranslateSheet(model: model)
-                .presentationDetents([.large])
-        }
         .sheet(isPresented: $showsChapters) {
             ChapterListSheet(model: model)
                 .presentationDetents([.medium, .large])
@@ -228,16 +223,6 @@ struct ReaderView: View {
                         style: style,
                         onRetry: { model.retry(paragraph) }
                     )
-                    // 長按段落：重新翻譯此段（開啟翻譯時）
-                    .contextMenu {
-                        if model.isTranslationOn, paragraph.isTranslatable {
-                            Button("重新翻譯此段", systemImage: "arrow.clockwise") { model.retranslate(paragraph) }
-                            Button("複製原文", systemImage: "doc.on.doc") { UIPasteboard.general.string = paragraph.text }
-                            Button("複製譯文", systemImage: "doc.on.doc") {
-                                if case .done(let text) = model.slot(paragraph.id).value { UIPasteboard.general.string = text }
-                            }
-                        }
-                    }
                     .onAppear { model.paragraphAppeared(paragraph) }
                     .onDisappear { model.paragraphDisappeared(paragraph) }
                 }
@@ -349,8 +334,7 @@ struct ReaderView: View {
                     startAtEnd = true
                     model.previousChapter()
                 }
-            },
-            onRetranslate: model.isTranslationOn ? { model.retranslate($0) } : nil
+            }
         )
         .ignoresSafeArea()
     }
@@ -607,7 +591,6 @@ struct ReaderView: View {
                 Label("顯示方式", systemImage: "text.below.photo")
                 Text(model.displayMode.title)
             }
-            Button("選擇段落重新翻譯", systemImage: "checklist") { showsParagraphPicker = true }
             Button("重新翻譯本章", systemImage: "arrow.clockwise") { model.resetTranslations() }
         } label: {
             Text(model.targetLanguage.name)
@@ -780,88 +763,6 @@ struct ChapterListSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .task { await model.translateChapterTitles() }
         }
-    }
-}
-
-/// 選擇段落重新翻譯：列出本章段落（原文與目前譯文），勾選後一次重新翻譯，結果覆蓋舊譯文。
-/// 使用 ScrollView + LazyVStack 並以 scrollPosition 定位到目前段落（List 在剛出現時捲動到指定列可能閃退）。
-struct ParagraphRetranslateSheet: View {
-    let model: ReaderViewModel
-    @Environment(\.dismiss) private var dismiss
-    @State private var selection: Set<Paragraph.ID> = []
-    @State private var position: Paragraph.ID?
-    @State private var paragraphs: [Paragraph] = []
-
-    var body: some View {
-        NavigationStack {
-            ScrollView {
-                LazyVStack(alignment: .leading, spacing: 0) {
-                    ForEach(paragraphs) { paragraph in
-                        ParagraphChoiceRow(paragraph: paragraph, slot: model.slot(paragraph.id),
-                                           isSelected: selection.contains(paragraph.id)) {
-                            if selection.contains(paragraph.id) { selection.remove(paragraph.id) } else { selection.insert(paragraph.id) }
-                        }
-                        .id(paragraph.id)
-                        Divider().padding(.leading, 52)
-                    }
-                }
-                .scrollTargetLayout()
-            }
-            .scrollPosition(id: $position, anchor: .top)
-            .navigationTitle("選擇段落")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("重新翻譯（\(selection.count)）") {
-                        let chosen = paragraphs.filter { selection.contains($0.id) }
-                        dismiss()
-                        model.retranslate(chosen)
-                    }
-                    .buttonStyle(.glassProminent)
-                    .disabled(selection.isEmpty)
-                }
-            }
-            .onAppear {
-                guard paragraphs.isEmpty else { return }
-                paragraphs = model.chapter?.paragraphs.filter(\.isTranslatable) ?? []
-                // 從目前閱讀到的段落開始
-                if let anchor = model.scrollAnchor, paragraphs.contains(where: { $0.id == anchor }) { position = anchor }
-            }
-        }
-    }
-}
-
-private struct ParagraphChoiceRow: View {
-    let paragraph: Paragraph
-    let slot: TranslationSlot
-    let isSelected: Bool
-    var onToggle: () -> Void
-
-    var body: some View {
-        Button(action: onToggle) {
-            HStack(alignment: .top, spacing: 12) {
-                Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
-                    .foregroundStyle(isSelected ? AnyShapeStyle(.tint) : AnyShapeStyle(.secondary))
-                    .imageScale(.large)
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(paragraph.text)
-                        .lineLimit(4)
-                        .foregroundStyle(.primary)
-                    if case .done(let text) = slot.value {
-                        Text(text)
-                            .appFont(.footnote)
-                            .lineLimit(3)
-                            .foregroundStyle(.secondary)
-                    }
-                }
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 10)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .contentShape(.rect)
-        }
-        .buttonStyle(.plain)
     }
 }
 
