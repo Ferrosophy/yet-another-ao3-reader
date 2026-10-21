@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YAAO3R · Yet another AO3 reader</title>
+<meta name="description" content="原生 iOS 的 AO3 閱讀器：Liquid Glass 設計、沉浸式翻譯、離線閱讀。A native iOS reader for Archive of Our Own with immersive translation.">
+<meta property="og:title" content="YAAO3R · Yet another AO3 reader">
+<meta property="og:description" content="A native iOS reader for Archive of Our Own · Liquid Glass · Immersive translation">
+<meta property="og:image" content="https://ferrosophy.github.io/yet-another-ao3-reader/icon.png">
+<link rel="icon" href="favicon.png">
+<style>
+  :root {
+    --bg: #fbf6f5;
+    --bg-2: #f6e9e7;
+    --text: #2a1d1d;
+    --muted: #6f5d5c;
+    --accent: #990000;
+    --accent-text: #ffffff;
+    --card: rgba(255, 255, 255, 0.62);
+    --card-border: rgba(255, 255, 255, 0.9);
+    --shadow: 0 10px 30px rgba(120, 30, 30, 0.08);
+    --blob-1: rgba(214, 74, 74, 0.22);
+    --blob-2: rgba(255, 170, 150, 0.30);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #140d0e;
+      --bg-2: #1d1213;
+      --text: #f4e9e8;
+      --muted: #b9a5a4;
+      --accent: #e0574f;
+      --accent-text: #ffffff;
+      --card: rgba(255, 255, 255, 0.06);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      --blob-1: rgba(180, 40, 40, 0.30);
+      --blob-2: rgba(120, 40, 60, 0.30);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "PingFang SC", "Hiragino Sans", "Noto Sans CJK TC", "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+  }
+  .backdrop {
+    position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(40rem 30rem at 15% -5%, var(--blob-2), transparent 70%),
+      radial-gradient(36rem 28rem at 100% 20%, var(--blob-1), transparent 70%),
+      linear-gradient(var(--bg), var(--bg-2));
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; color: inherit; }
+  .brand img { width: 28px; height: 28px; }
+  .langs { display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--card); border: 1px solid var(--card-border); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+  .langs button {
+    border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 13px;
+    padding: 4px 10px; border-radius: 999px; cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); }
+  header.hero { text-align: center; padding: 48px 0 32px; }
+  .hero img.icon { width: 132px; height: 132px; filter: drop-shadow(0 16px 30px rgba(153, 0, 0, 0.22)); }
+  .hero h1 { font-size: clamp(30px, 6vw, 48px); line-height: 1.15; margin: 20px 0 8px; letter-spacing: -0.02em; }
+  .hero .sub { font-size: clamp(16px, 2.4vw, 20px); color: var(--muted); margin: 0 auto 28px; max-width: 40rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px;
+    font-weight: 600; text-decoration: none; border: 1px solid var(--card-border);
+    background: var(--card); color: var(--text); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+    box-shadow: var(--shadow);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); border-color: transparent; }
+  .note { color: var(--muted); font-size: 14px; margin-top: 14px; }
+  section { padding: 28px 0; }
+  h2 { font-size: clamp(22px, 3.4vw, 30px); margin: 0 0 18px; letter-spacing: -0.01em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .card {
+    padding: 20px; border-radius: 22px; background: var(--card); border: 1px solid var(--card-border);
+    backdrop-filter: blur(22px) saturate(1.4); -webkit-backdrop-filter: blur(22px) saturate(1.4);
+    box-shadow: var(--shadow);
+  }
+  .card h3 { margin: 0 0 6px; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+  .card h3 .dot { width: 30px; height: 30px; border-radius: 10px; display: inline-grid; place-items: center; background: var(--accent); color: var(--accent-text); font-size: 15px; flex: none; }
+  .card p { margin: 0; color: var(--muted); }
+  ol.steps { margin: 0; padding-left: 1.3em; }
+  ol.steps li { margin: 6px 0; }
+  .card a { color: var(--accent); }
+  footer { padding: 36px 0 48px; color: var(--muted); font-size: 14px; text-align: center; }
+  footer a { color: inherit; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="backdrop"></div>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="./"><img src="favicon.png" alt="">YAAO3R</a>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-set-lang="zh-Hant">繁</button>
+      <button data-set-lang="zh-Hans">简</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img class="icon" src="icon.png" alt="YAAO3R">
+    <h1>Yet another AO3 reader</h1>
+    <p class="sub" data-i18n="tagline"></p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest" data-i18n="download"></a>
+      <a class="btn" href="https://github.com/Ferrosophy/yet-another-ao3-reader">GitHub</a>
+    </div>
+    <p class="note" data-i18n="requires"></p>
+  </header>
+
+  <section>
+    <h2 data-i18n="featuresTitle"></h2>
+    <div class="grid" id="features"></div>
+  </section>
+
+  <section>
+    <h2 data-i18n="installTitle"></h2>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="dot">↓</span><span data-i18n="installCard"></span></h3>
+        <ol class="steps" data-i18n-list="installSteps"></ol>
+      </div>
+      <div class="card">
+        <h3><span class="dot">⇄</span><span data-i18n="chinaCard"></span></h3>
+        <p data-i18n="chinaText"></p>
+      </div>
+      <div class="card">
+        <h3><span class="dot">✓</span><span data-i18n="privacyCard"></span></h3>
+        <p data-i18n="privacyText"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p data-i18n="disclaimer"></p>
+    <p><a href="https://github.com/Ferrosophy/yet-another-ao3-reader/issues" data-i18n="feedback"></a></p>
+  </footer>
+</div>
+
+<script>
+const T = {
+  "zh-Hant": {
+    tagline: "原生 iOS 的 Archive of Our Own 閱讀器。Liquid Glass 設計，以原文與譯文對照閱讀任何語言的作品。",
+    download: "下載最新版",
+    requires: "需要 iOS 26 或以上 · 未簽名 IPA，需自行簽名安裝",
+    featuresTitle: "功能",
+    features: [
+      ["文", "沉浸式翻譯", "不取代原文，每段原文下方顯示譯文；標題、標籤、簡介與作者註也能翻譯。"],
+      ["⚙︎", "多種翻譯服務", "免金鑰的 Google、Bing、騰訊、火山、百度、有道、搜狗、DeepL、Apple 翻譯，或自備 API Key 使用 OpenAI 相容服務、Claude、Gemini 等。"],
+      ["↓", "離線閱讀", "先下載原文再翻譯，失敗自動續傳；可分享為雙語 EPUB。"],
+      ["⌕", "搜尋與篩選", "作品、標籤、用戶、合集，與 AO3 的詳細搜尋欄位一一對應。"],
+      ["◎", "帳號或本機", "登入 AO3 使用書籤、訂閱、紀錄；或不登入，把資料保存在本機並以 iCloud / WebDAV 同步。"],
+      ["Aa", "閱讀外觀", "捲動或翻頁、主題色、背景、字體匯入，以及字級、行距、邊距等細節。"]
+    ],
+    installTitle: "開始使用",
+    installCard: "安裝",
+    installSteps: [
+      "從 GitHub Releases 下載 YAAO3R-<版本號>-unsigned.ipa。",
+      "用 AltStore、SideStore、Sideloadly 或自己的開發者憑證簽名並安裝。",
+      "使用免費 Apple ID 簽名時，每 7 天需要重新簽名一次。"
+    ],
+    chinaCard: "連不上 AO3？",
+    chinaText: "第一次開啟時，新手引導會檢測連線；連不上時教你加入鏡像源，並推薦可用的翻譯服務。App 不內建、不提供任何鏡像網址，請只使用你信任的鏡像。",
+    privacyCard: "隱私",
+    privacyText: "沒有帳號系統、沒有伺服器，不收集任何使用資料。不保存 AO3 密碼；API Key 只存在本機鑰匙圈。",
+    disclaimer: "YAAO3R 為非官方的第三方客戶端，與 AO3 及 OTW 無關。作品著作權屬於原作者。",
+    feedback: "意見回饋"
+  },
+  "zh-Hans": {
+    tagline: "原生 iOS 的 Archive of Our Own 阅读器。Liquid Glass 设计，以原文与译文对照阅读任何语言的作品。",
+    download: "下载最新版",
+    requires: "需要 iOS 26 或以上 · 未签名 IPA，需自行签名安装",
+    featuresTitle: "功能",
+    features: [
+      ["文", "沉浸式翻译", "不取代原文，每段原文下方显示译文；标题、标签、简介与作者注也能翻译。"],
+      ["⚙︎", "多种翻译服务", "免密钥的 Google、Bing、腾讯、火山、百度、有道、搜狗、DeepL、Apple 翻译，或自备 API Key 使用 OpenAI 兼容服务、Claude、Gemini 等。"],
+      ["↓", "离线阅读", "先下载原文再翻译，失败自动续传；可分享为双语 EPUB。"],
+      ["⌕", "搜索与筛选", "作品、标签、用户、合集，与 AO3 的详细搜索字段一一对应。"],
+      ["◎", "账号或本机", "登录 AO3 使用书签、订阅、记录；或不登录，把数据保存在本机并通过 iCloud / WebDAV 同步。"],
+      ["Aa", "阅读外观", "滚动或翻页、主题色、背景、字体导入，以及字号、行距、边距等细节。"]
+    ],
+    installTitle: "开始使用",
+    installCard: "安装",
+    installSteps: [
+      "从 GitHub Releases 下载 YAAO3R-<版本号>-unsigned.ipa。",
+      "用 AltStore、SideStore、Sideloadly 或自己的开发者证书签名并安装。",
+      "使用免费 Apple ID 签名时，每 7 天需要重新签名一次。"
+    ],
+    chinaCard: "连不上 AO3？",
+    chinaText: "第一次打开时，新手引导会检测连接；连不上时教你加入镜像源，并推荐可用的翻译服务。App 不内置、不提供任何镜像网址，请只使用你信任的镜像。",
+    privacyCard: "隐私",
+    privacyText: "没有账号系统、没有服务器，不收集任何使用数据。不保存 AO3 密码；API Key 只存在本机钥匙串。",
+    disclaimer: "YAAO3R 为非官方的第三方客户端，与 AO3 及 OTW 无关。作品版权属于原作者。",
+    feedback: "意见反馈"
+  },
+  "en": {
+    tagline: "A native iOS reader for Archive of Our Own. Designed for Liquid Glass, with each translation shown right below its original paragraph.",
+    download: "Download the latest version",
+    requires: "Requires iOS 26 or later · Unsigned IPA, sign it yourself to install",
+    featuresTitle: "Features",
+    features: [
+      ["文", "Immersive translation", "The original stays; each translation appears below its paragraph. Titles, tags, summaries and notes can be translated too."],
+      ["⚙︎", "Many translation services", "Key-free Google, Bing, Tencent, Volcano, Baidu, Youdao, Sogou, DeepL and Apple Translate, or bring your own key for OpenAI-compatible services, Claude, Gemini and more."],
+      ["↓", "Offline reading", "Originals download first, then get translated; failed downloads resume. Share as a bilingual EPUB."],
+      ["⌕", "Search and filters", "Works, tags, people and collections, with the same fields as AO3's detailed search."],
+      ["◎", "Account or on-device", "Log in to AO3 for bookmarks, subscriptions and history, or keep everything on your device and sync via iCloud / WebDAV."],
+      ["Aa", "Your reading style", "Scrolling or paging, accent colors, backgrounds, imported fonts, and fine control over size, spacing and margins."]
+    ],
+    installTitle: "Get started",
+    installCard: "Install",
+    installSteps: [
+      "Download YAAO3R-<version>-unsigned.ipa from GitHub Releases.",
+      "Sign and install it with AltStore, SideStore, Sideloadly or your own developer certificate.",
+      "Apps signed with a free Apple ID must be re-signed every 7 days."
+    ],
+    chinaCard: "Can't reach AO3?",
+    chinaText: "On first launch, onboarding checks your connection. If AO3 can't be reached, it shows you how to add a mirror and suggests translation services that work. The app doesn't include or provide any mirror addresses; only use mirrors you trust.",
+    privacyCard: "Privacy",
+    privacyText: "No account system, no server, no usage data collected. Your AO3 password is never stored, and API keys stay in the device keychain.",
+    disclaimer: "YAAO3R is an unofficial third-party app and is not affiliated with AO3 or the OTW. Works belong to their authors.",
+    feedback: "Feedback"
+  }
+};
+
+function pickDefault() {
+  try {
+    const saved = localStorage.getItem("lang");
+    if (saved && T[saved]) return saved;
+  } catch (e) {}
+  const langs = navigator.languages || [navigator.language || "en"];
+  for (const l of langs) {
+    const v = l.toLowerCase();
+    if (v.startsWith("zh")) {
+      return /hans|cn|sg|my/.test(v) ? "zh-Hans" : "zh-Hant";
+    }
+    if (v.startsWith("en")) return "en";
+  }
+  return "en";
+}
+
+function render(lang) {
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t[el.dataset.i18n]; });
+  document.querySelectorAll("[data-i18n-list]").forEach(el => {
+    el.replaceChildren(...t[el.dataset.i18nList].map(text => {
+      const li = document.createElement("li"); li.textContent = text; return li;
+    }));
+  });
+  const grid = document.getElementById("features");
+  grid.replaceChildren(...t.features.map(([icon, title, text]) => {
+    const card = document.createElement("div"); card.className = "card";
+    const h3 = document.createElement("h3");
+    const dot = document.createElement("span"); dot.className = "dot"; dot.textContent = icon;
+    const name = document.createElement("span"); name.textContent = title;
+    h3.append(dot, name);
+    const p = document.createElement("p"); p.textContent = text;
+    card.append(h3, p);
+    return card;
+  }));
+  document.querySelectorAll("[data-set-lang]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
+}
+
+document.querySelectorAll("[data-set-lang]").forEach(b => b.addEventListener("click", () => {
+  try { localStorage.setItem("lang", b.dataset.setLang); } catch (e) {}
+  render(b.dataset.setLang);
+}));
+render(pickDefault());
+</script>
+</body>
+</html>

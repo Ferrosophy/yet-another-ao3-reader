@@ -2,7 +2,7 @@ name: Build IPA
 
 # 版本號規則：
 # - 推送 tag `v1.2.3` → 版本號 1.2.3，並建立 GitHub Release 附上 IPA
-# - 手動執行（workflow_dispatch）→ 使用輸入的版本號
+# - 手動執行（workflow_dispatch）→ 使用輸入的版本號；勾選「發行」時建立 tag `v<版本號>` 與 GitHub Release
 # - 其他推送 / PR → 使用 project.yml 中的 MARKETING_VERSION
 # 建置號（CFBundleVersion）一律為 GitHub Actions 的 run_number，單調遞增。
 # IPA 未簽名，需自行重新簽名後安裝。
@@ -15,8 +15,12 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "版本號（例如 0.1.0），留空則使用 project.yml"
+        description: "版本號（例如 1.0.0），留空則使用 project.yml"
         required: false
+      release:
+        description: "發行：建立 tag v<版本號> 與 GitHub Release（附 IPA，說明取自 .github/RELEASE_NOTES.md）"
+        type: boolean
+        default: false
 
 concurrency:
   group: build-${{ github.ref }}
@@ -28,8 +32,8 @@ permissions:
 jobs:
   test:
     name: Unit tests
-    # 推送時只編譯 IPA，避免同時搶兩台 macOS 機器；單元測試在 PR 與手動執行時跑
-    if: github.event_name != 'push'
+    # 推送與發行時只編譯 IPA，避免同時搶兩台 macOS 機器；單元測試在 PR 與一般手動執行時跑
+    if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && !inputs.release)
     runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
@@ -106,12 +110,13 @@ jobs:
           path: build/xcodebuild.log
 
       - name: Publish release
-        if: github.ref_type == 'tag'
+        if: github.ref_type == 'tag' || (github.event_name == 'workflow_dispatch' && inputs.release)
         uses: softprops/action-gh-release@v2
         with:
-          name: AO3 Reader ${{ steps.version.outputs.version }} (${{ steps.version.outputs.build }})
+          tag_name: v${{ steps.version.outputs.version }}
+          target_commitish: ${{ github.sha }}
+          name: YAAO3R ${{ steps.version.outputs.version }}
           files: ${{ steps.build.outputs.ipa_path }}
-          body: |
-            未簽名 IPA，請自行簽名後安裝。
-            版本 ${{ steps.version.outputs.version }}，建置號 ${{ steps.version.outputs.build }}。
+          body_path: .github/RELEASE_NOTES.md
           prerelease: ${{ startsWith(steps.version.outputs.version, '0.') }}
+          make_latest: ${{ !startsWith(steps.version.outputs.version, '0.') }}

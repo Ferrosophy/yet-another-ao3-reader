@@ -33434,7 +33434,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "意见回馈"
+            "value": "意见反馈"
           }
         },
         "zh-Hant": {
@@ -38439,7 +38439,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "收件匣"
+            "value": "收件箱"
           }
         },
         "zh-Hant": {
@@ -38582,7 +38582,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "收件匣是空的"
+            "value": "收件箱是空的"
           }
         },
         "zh-Hant": {
@@ -60318,7 +60318,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "目前使用 AO3 账号数据，书签、稍后阅读、阅读记录、订阅与收件匣直接读写你的 AO3 账号。在「我的 AO3」切换为本机保存后才会同步。"
+            "value": "目前使用 AO3 账号数据，书签、稍后阅读、阅读记录、订阅与收件箱直接读写你的 AO3 账号。在「我的 AO3」切换为本机保存后才会同步。"
           }
         },
         "zh-Hant": {

@@ -14,7 +14,7 @@ struct SettingsView: View {
     /// GitHub Issues 的新回饋網址，預先填入版本與系統資訊（不含帳號或閱讀資料）
     private static let feedbackURL: URL = {
         let system = "iOS \(ProcessInfo.processInfo.operatingSystemVersionString)"
-        var components = URLComponents(string: "https://github.com/Ferrosophy/AO3-ios-translator/issues/new")!
+        var components = URLComponents(string: "https://github.com/Ferrosophy/yet-another-ao3-reader/issues/new")!
         components.queryItems = [URLQueryItem(name: "body", value: "\n\n---\nApp \(versionString) · \(system)")]
         return components.url!
     }()
