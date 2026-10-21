@@ -45,6 +45,7 @@ struct FilterSheet: View {
                             Text(app.tags.translation(for: $0.title) ?? $0.title).tag(Optional($0))
                         }
                     }
+                    .tint(.primary)
                 } header: {
                     Text("作品標籤")
                 } footer: {
@@ -81,6 +82,7 @@ struct FilterSheet: View {
                             Text($0.title).tag($0)
                         }
                     }
+                    .tint(.primary)
                     Picker("方向", selection: $query.sortDirection) {
                         ForEach(WorkSearchQuery.SortDirection.allCases) { Text($0.title).tag($0) }
                     }
@@ -122,6 +124,8 @@ struct FilterSheet: View {
             Text(yes).tag(WorkSearchQuery.TriState.yes)
             Text(no).tag(WorkSearchQuery.TriState.no)
         }
+        // 選單的值一律使用一般文字色，不跟隨主題色
+        .tint(.primary)
     }
 
     private func membership<T: Hashable>(_ element: T, in set: Binding<Set<T>>) -> Binding<Bool> {

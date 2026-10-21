@@ -50,6 +50,8 @@ struct SearchView: View {
             .navigationTitle("搜尋")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $text, prompt: Text(prompt))
+            // 輸入時也保留標題與左上角的詳細搜尋（預設會隱藏導覽列）
+            .searchPresentationToolbarBehavior(.avoidHidingContent)
             .searchSuggestions {
                 ForEach(suggestions) { suggestion in
                     Button {
@@ -75,17 +77,17 @@ struct SearchView: View {
             .onChange(of: tagType) { if scope == .tags, !text.isEmpty { submit() } }
             .safeAreaBar(edge: .top) { topBar }
             .toolbar {
-                if scope == .works {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button("詳細搜尋", systemImage: query.isEmpty ? "line.3.horizontal.decrease" : "line.3.horizontal.decrease.circle.fill") {
-                            showsFilters = true
-                        }
+                // 詳細搜尋（作品的條件）任何範圍都可打開，送出時切到作品範圍
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("詳細搜尋", systemImage: query.isEmpty ? "line.3.horizontal.decrease" : "line.3.horizontal.decrease.circle.fill") {
+                        showsFilters = true
                     }
                 }
             }
             .sheet(isPresented: $showsFilters) {
                 FilterSheet(query: $query, mode: .search) {
                     showsFilters = false
+                    if scope != .works { scope = .works }
                     submitWorks()
                 }
                 .presentationDetents([.medium, .large])
@@ -314,11 +316,14 @@ struct SearchView: View {
             if scope == .people {
                 let names = (try? await client.autocomplete(.pseud, term: term)) ?? []
                 guard !Task.isCancelled else { return }
-                suggestions = names.prefix(8).map { name in
-                    let (pseud, user) = Self.splitPseud(name)
-                    let path = pseud == user ? "/users/\(user)" : "/users/\(user)/pseuds/\(pseud)"
-                    return Suggestion(title: name, route: .person(name: pseud, path: path))
+                // 以帳號為單位顯示（同一位作者的多個 pseud 只列一次），避免 pseud 名稱看起來像標籤
+                var seen: Set<String> = []
+                suggestions = names.compactMap { name -> Suggestion? in
+                    let user = Self.splitPseud(name).user
+                    guard seen.insert(user.lowercased()).inserted else { return nil }
+                    return Suggestion(title: user, route: .person(name: user, path: "/users/\(user)"))
                 }
+                .prefix(8).map { $0 }
             } else {
                 let names = (try? await client.autocomplete(kind, term: term)) ?? []
                 guard !Task.isCancelled else { return }
