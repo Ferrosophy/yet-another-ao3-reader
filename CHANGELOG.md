@@ -2,7 +2,7 @@
 
 版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)：主版本.次版本.修订号。正式版发布在 GitHub Releases，并附 IPA 的 SHA-256 校验值。
 
-## 1.0.2（未发行）
+## 1.0.3（未发行）
 
 **尊重作者与社区**
 - App 更名为 Yet another fanfic reader（YAFR），不再使用「AO3」作为名称的一部分。

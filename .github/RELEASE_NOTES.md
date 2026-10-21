@@ -1,4 +1,4 @@
-## YAFR 1.0.2
+## YAFR 1.0.3
 
 App 更名为 **Yet another fanfic reader（YAFR）**，仍是非官方的 AO3 阅读器。
 
