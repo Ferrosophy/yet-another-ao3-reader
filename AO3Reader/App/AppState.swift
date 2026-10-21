@@ -63,6 +63,17 @@ final class AppState {
     /// 目前來源的客戶端；切換來源時自動跟著變更。
     var client: AO3Client { AO3Client(baseURL: sources.selected.baseURL) }
 
+    /// 進入 / 離開展示模式（除錯頁）：切換到虛構的示範來源，離開時回到官網
+    func setDemoMode(_ enabled: Bool) async {
+        if enabled {
+            sources.setDemoListed(true)
+            await selectSource(DemoSite.source)
+        } else {
+            await selectSource(.official)
+            sources.setDemoListed(false)
+        }
+    }
+
     func selectSource(_ source: AO3Source) async {
         sources.selectedID = source.id
         await auth.refresh(client: client)

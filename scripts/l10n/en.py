@@ -717,6 +717,21 @@ EN = {
 '隨時可以在「設定 › 顯示教程」重新查看本引導。': 'You can view this guide again anytime in Settings › Show Tutorial.',
 '顯示教程': 'Show Tutorial',
 '網頁已通過驗證，但這個鏡像仍拒絕 App 的請求，可能不支援在 App 中使用。請稍後再試，或在「設定 › 內容來源」換用其他鏡像。': "The page passed verification, but this mirror still rejects the app's requests and may not work in the app. Try again later, or switch to another mirror in Settings › Content Source.",
+'展示（虛構內容）': 'Demo (Fictional Content)',
+'找不到送出 Kudos 需要的驗證資料，請重新整理後再試': "Couldn't find the verification data needed to leave kudos. Refresh and try again.",
+'AO3 沒有確認這次 Kudos，請稍後再試': "AO3 didn't confirm the kudos. Please try again later.",
+'展示模式': 'Demo Mode',
+'展示': 'Demo',
+'用於截取宣傳圖：來源切換為虛構的示範站，作品、作者與評論全部是 AI 生成的虛構內容，不會出現真實作者。重新開啟 App 或關閉此開關後回到官網。': 'For taking promotional screenshots: the source switches to a fictional demo site whose works, authors and comments are all AI-generated, so no real authors appear. Relaunching the app or turning this off returns to the official site.',
+'要留言請點右上角，在原網站登入後留下評論。': 'To leave a comment, tap the top-right button and log in on the original site.',
+'還沒有評論': 'No Comments Yet',
+'在網頁中打開': 'Open in Browser',
+'訪客': 'Guest',
+'在 Safari 開啟': 'Open in Safari',
+'你已經給過這部作品 Kudos 了': "You've already left kudos on this work.",
+'已送出 Kudos，謝謝你的支持！': 'Kudos sent. Thanks for your support!',
+'Kudos 送出失敗：%@': "Couldn't leave kudos: %@",
+'喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。': 'If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author.',
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

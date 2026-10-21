@@ -38,6 +38,8 @@ for k in keys:
     locs = {}
     for lang, table in locales.items():
         value = table.get(k)
+        # 機器翻譯暫缺（例如翻譯服務連線失敗）時以英文代替，避免顯示原始的中文鍵
+        if value is None and lang in mt: value = EN.get(k)
         if value is None: continue
         locs[lang] = {'stringUnit': {'state': 'translated', 'value': value}}
     catalog['strings'][k] = {'extractionState': 'manual', 'localizations': locs}

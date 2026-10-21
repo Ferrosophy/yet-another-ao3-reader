@@ -519,4 +519,55 @@ struct AnubisDetectionTests {
         #expect(rebuilt.sameSitePolicy == .sameSiteLax)
         #expect(rebuilt.expiresDate != nil)
     }
+
+    @Test func parsesNestedComments() throws {
+        let html = """
+        <div id="comments_placeholder"><ol class="thread">
+          <li class="comment group" id="comment_1">
+            <h4 class="heading byline"><a href="/users/reader/pseuds/reader">reader</a>
+              <span class="parent">on <a href="/works/1/chapters/2">Chapter 2</a></span>
+              <span class="posted datetime"><abbr class="day">Mon</abbr> <span class="date">01</span> <abbr class="month">Jan</abbr> <span class="year">2024</span></span></h4>
+            <blockquote class="userstuff"><p>Loved it!</p><p>Second line.</p></blockquote>
+            <ol class="thread">
+              <li class="comment group" id="comment_2">
+                <h4 class="heading byline">Visitor <span class="role">(Guest)</span></h4>
+                <blockquote class="userstuff"><p>Me too.</p></blockquote>
+              </li>
+            </ol>
+          </li>
+        </ol></div>
+        <ol class="pagination actions"><li class="next"><a href="?page=2">Next</a></li></ol>
+        """
+        let page = try AO3Parser.comments(html: html, page: 1)
+        #expect(page.comments.count == 2)
+        #expect(page.comments[0].author == "reader")
+        #expect(page.comments[0].text == "Loved it!\n\nSecond line.")
+        #expect(page.comments[0].posted.contains("Chapter 2"))
+        #expect(page.comments[0].depth == 0)
+        #expect(page.comments[1].author == "Visitor")
+        #expect(page.comments[1].isGuest)
+        #expect(page.comments[1].depth == 1)
+        #expect(page.hasNextPage)
+    }
+
+    @Test func readsKudosFlashMessages() throws {
+        let given = try AO3Parser.flashMessage(html: #"<div class="flash comment_notice">Thank you for leaving kudos!</div>"#)
+        #expect(given?.isError == false)
+        let already = try AO3Parser.flashMessage(html: #"<div class="flash comment_error">You have already left kudos here. :)</div>"#)
+        #expect(already?.isError == true)
+        #expect(already?.text.contains("already") == true)
+        #expect(try AO3Parser.flashMessage(html: "<p>No flash</p>") == nil)
+    }
+
+    @Test func demoSiteServesFictionalWorks() throws {
+        let client = AO3Client(baseURL: DemoSite.baseURL)
+        #expect(client.isDemo)
+        let page = DemoSite.searchPage(WorkSearchQuery(), page: 1)
+        #expect(page.works.count == DemoSite.works.count)
+        let detail = try DemoSite.detail(id: DemoSite.works[2].detail.id)
+        #expect(detail.chapters.count == 3)
+        #expect(DemoSite.leaveKudos(workID: -1) == .given)
+        #expect(DemoSite.leaveKudos(workID: -1) == .alreadyGiven)
+        #expect(!DemoSite.comments(workID: DemoSite.works[0].detail.id, page: 1).comments.isEmpty)
+    }
 }

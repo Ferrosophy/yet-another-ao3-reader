@@ -38,8 +38,9 @@ final class SourceStore {
         let stored = defaults.data(forKey: Self.sourcesKey)
             .flatMap { try? JSONDecoder().decode([AO3Source].self, from: $0) } ?? []
         self.sources = [.official] + stored.filter { !$0.isBuiltIn }
-        self.selectedID = defaults.string(forKey: Self.selectedKey)
-            .flatMap(UUID.init(uuidString:)) ?? AO3Source.official.id
+        let storedID = defaults.string(forKey: Self.selectedKey).flatMap(UUID.init(uuidString:)) ?? AO3Source.official.id
+        // 展示來源不保存：重新開啟 App 時回到官網
+        self.selectedID = storedID == DemoSite.source.id ? AO3Source.official.id : storedID
     }
 
     /// 解析使用者輸入的網址，補齊 scheme 並去掉路徑。
@@ -66,6 +67,15 @@ final class SourceStore {
         sources.append(source)
         save()
         return source
+    }
+
+    /// 目前是否為展示模式（虛構的示範內容）
+    var isDemo: Bool { selectedID == DemoSite.source.id }
+
+    /// 加入或移除展示來源（不保存到來源列表）
+    func setDemoListed(_ listed: Bool) {
+        sources.removeAll { $0.id == DemoSite.source.id }
+        if listed { sources.append(DemoSite.source) }
     }
 
     func remove(_ source: AO3Source) {

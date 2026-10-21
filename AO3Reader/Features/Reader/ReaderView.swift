@@ -24,11 +24,19 @@ struct ReaderView: View {
     @State private var topInset: CGFloat = 0
     @State private var bottomInset: CGFloat = 0
     @State private var pagedCache = PagedContentCache()
+    /// 在 App 內網頁打開作品
+    @State private var webTarget: WebTarget?
+    /// 文末 Kudos 與評論
+    @State private var workEnd: WorkEndModel
+    @State private var showsComments = false
+    /// 翻頁模式在最後一頁繼續往後翻時彈出文末
+    @State private var showsWorkEnd = false
     @Namespace private var glass
 
     init(model: ReaderViewModel) {
         _model = State(initialValue: model)
         _actions = State(initialValue: WorkActionsModel(workID: model.route.id, client: model.client))
+        _workEnd = State(initialValue: WorkEndModel(workID: model.route.id, client: model.client))
     }
 
     private var appearance: AppearanceSettings { app.appearance }
@@ -72,6 +80,12 @@ struct ReaderView: View {
         .toolbar {
             ToolbarItemGroup(placement: .topBarTrailing) {
                 if let detail = model.detail {
+                    // 在 App 內打開來源網站（使用鏡像時為鏡像站）的作品頁，並跳到目前章節
+                    Button {
+                        webTarget = WebTarget(url: webURL(detail: detail))
+                    } label: {
+                        Label("在網頁中打開", systemImage: "safari")
+                    }
                     Button {
                         // 加入書架即開始離線下載與翻譯；移出書架時一併刪除離線內容
                         if app.bookshelf.contains(detail.id) {
@@ -118,6 +132,22 @@ struct ReaderView: View {
         .task(id: "\(model.detail?.id ?? 0)-\(model.detail?.actions != nil)") {
             if let detail = model.detail { await actions.load(from: detail) }
         }
+        .sheet(item: $webTarget) { WebPageSheet(url: $0.url) }
+        .sheet(isPresented: $showsComments) {
+            CommentsSheet(workID: model.route.id, client: model.client, app: app, translates: model.isTranslationOn)
+        }
+        .sheet(isPresented: $showsWorkEnd) {
+            WorkEndView(model: workEnd) {
+                showsWorkEnd = false
+                // 等文末面板收起後再開評論頁
+                Task {
+                    try? await Task.sleep(for: .milliseconds(450))
+                    showsComments = true
+                }
+            }
+            .padding(.horizontal, 24)
+            .presentationDetents([.medium])
+        }
         .sheet(isPresented: $showsChapters) {
             ChapterListSheet(model: model)
                 .presentationDetents([.medium, .large])
@@ -151,6 +181,16 @@ struct ReaderView: View {
             TranslationLanguageSheet(title: "原文語言", languages: app.translation.config.provider.sourceLanguages, allowsAutomatic: true,
                                 selection: Binding(get: { model.sourceLanguage?.code }, set: { model.setSourceLanguage($0) }))
         }
+    }
+
+    /// 作品在目前來源上的網址；多章作品以完整作品頁開啟並跳到目前章節
+    private func webURL(detail: WorkDetail) -> URL {
+        var query = [URLQueryItem(name: "view_adult", value: "true")]
+        if detail.chapters.count > 1 { query.append(URLQueryItem(name: "view_full_work", value: "true")) }
+        let url = model.client.url("/works/\(detail.id)", query: query)
+        guard detail.chapters.count > 1, var components = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return url }
+        components.fragment = "chapter-\(model.chapterIndex + 1)"
+        return components.url ?? url
     }
 
     private func startReadingTimer(_ detail: WorkDetail) {
@@ -228,6 +268,12 @@ struct ReaderView: View {
                 }
                 endNotes(detail: detail, chapter: chapter)
                     .padding(.top, 8)
+                // 最後一章結尾：Kudos 與評論
+                if !model.hasNext {
+                    WorkEndView(model: workEnd, font: Font(style.uiFont(scale: 0.9)), color: bodyColor) {
+                        showsComments = true
+                    }
+                }
                 // 章末留白（換章使用底部控制列的上一章 / 下一章）
                 Color.clear.frame(height: 24)
             }
@@ -333,6 +379,9 @@ struct ReaderView: View {
                 } else if !forward, model.hasPrevious {
                     startAtEnd = true
                     model.previousChapter()
+                } else if forward {
+                    // 最後一章的最後一頁繼續往後翻：顯示文末的 Kudos 與評論
+                    showsWorkEnd = true
                 }
             }
         )

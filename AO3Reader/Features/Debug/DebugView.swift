@@ -12,6 +12,14 @@ struct DebugView: View {
 
     var body: some View {
         List {
+            Section {
+                Toggle("展示模式", isOn: Binding(get: { app.sources.isDemo },
+                                                set: { enabled in Task { await app.setDemoMode(enabled) } }))
+            } header: {
+                Text("展示")
+            } footer: {
+                Text("用於截取宣傳圖：來源切換為虛構的示範站，作品、作者與評論全部是 AI 生成的虛構內容，不會出現真實作者。重新開啟 App 或關閉此開關後回到官網。")
+            }
             Section("環境") {
                 LabeledContent("來源", value: app.sources.selected.baseURL.absoluteString)
                 LabeledContent("Accept-Language", value: AO3Client.acceptLanguage)
