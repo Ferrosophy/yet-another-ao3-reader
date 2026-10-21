@@ -8301,13 +8301,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "عدم الترجمة"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Nicht übersetzen"
           }
         },
         "en": {
@@ -8319,91 +8319,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "No traducir"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Ne pas traduire"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "अनुवाद न करें"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Jangan Terjemahkan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Non tradurre"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "翻訳しない"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "번역 안 함"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Niet vertalen"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Nie tłumacz"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Não traduzir"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Не переводить"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "ไม่แปล"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Çevirme"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Не перекладати"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Don't Translate"
+            "value": "Không dịch"
           }
         },
         "zh-Hans": {
@@ -9731,13 +9731,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "الترجمة على أي حال (لقراءتي الشخصية)"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Trotzdem übersetzen (nur für mich)"
           }
         },
         "en": {
@@ -9749,91 +9749,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Traducir de todos modos (solo para mí)"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Traduire quand même (pour ma lecture personnelle)"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "फिर भी अनुवाद करें (केवल अपने पढ़ने के लिए)"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Tetap Terjemahkan (Untuk Dibaca Sendiri)"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Traduci comunque (solo per me)"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "それでも翻訳する（自分で読むためのみ）"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "그래도 번역 (본인 열람용)"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Toch vertalen (alleen voor mezelf)"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Przetłumacz mimo to (tylko dla mnie)"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Traduzir mesmo assim (só para mim)"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Всё равно перевести (только для себя)"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "แปลต่อไป (อ่านเองเท่านั้น)"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Yine de Çevir (Yalnızca Kendim İçin)"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Однаково перекласти (лише для себе)"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Translate Anyway (For My Own Reading)"
+            "value": "Vẫn dịch (chỉ để tự đọc)"
           }
         },
         "zh-Hans": {
@@ -11161,13 +11161,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "رقم العمل"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Werknummer"
           }
         },
         "en": {
@@ -11179,91 +11179,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Número de obra"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Numéro de l’œuvre"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "रचना संख्या"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Nomor karya"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Numero dell’opera"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "作品番号"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "작품 번호"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Werknummer"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Numer utworu"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Número da obra"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Номер работы"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "ลำดับผลงาน"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Eser numarası"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Номер твору"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work number"
+            "value": "Số thứ tự tác phẩm"
           }
         },
         "zh-Hans": {
@@ -12305,13 +12305,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "لم تتم الترجمة: طلب المؤلف عدم ترجمة أعماله"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Nicht übersetzt: Der Autor wünscht keine Übersetzung"
           }
         },
         "en": {
@@ -12323,91 +12323,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Sin traducir: el autor pidió que no se tradujera"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Non traduit : l’auteur a demandé à ne pas être traduit"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "अनुवाद नहीं किया गया: लेखक ने अनुवाद न करने का अनुरोध किया है"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Tidak diterjemahkan: penulis meminta agar tidak diterjemahkan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Non tradotto: l’autore ha chiesto di non essere tradotto"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "作者が翻訳を希望していないため、自動翻訳していません"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "작가가 번역을 원하지 않아 자동 번역하지 않았습니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Niet vertaald: de auteur wil niet vertaald worden"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Nie przetłumaczono: autor prosi o brak tłumaczenia"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Não traduzido: o autor pediu para não ser traduzido"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Не переведено: автор просил не переводить"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "ไม่ได้แปล: ผู้เขียนขอไม่ให้แปล"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Çevrilmedi: yazar çevrilmemesini istedi"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Не перекладено: автор просив не перекладати"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not translated: the author asked not to be translated"
+            "value": "Chưa dịch: tác giả yêu cầu không dịch"
           }
         },
         "zh-Hans": {
@@ -12448,13 +12448,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "طلب المؤلف عدم ترجمة هذا العمل"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "Der Autor wünscht keine Übersetzung dieses Werks"
           }
         },
         "en": {
@@ -12466,91 +12466,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "El autor pidió no traducir esta obra"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "L’auteur a demandé à ne pas traduire cette œuvre"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "लेखक ने इस रचना का अनुवाद न करने का अनुरोध किया है"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "Penulis Meminta Karya Ini Tidak Diterjemahkan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "L’autore ha chiesto di non tradurre quest’opera"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "作者はこの作品の翻訳を希望していません"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "작가가 이 작품의 번역을 원하지 않습니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "De auteur wil niet dat dit werk wordt vertaald"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "Autor prosi, by nie tłumaczyć tego utworu"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "O autor pediu para não traduzir esta obra"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "Автор просил не переводить эту работу"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "ผู้เขียนขอไม่ให้แปลผลงานนี้"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "Yazar Bu Eserin Çevrilmemesini İstedi"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "Автор просив не перекладати цей твір"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The Author Asked Not to Translate This Work"
+            "value": "Tác giả yêu cầu không dịch tác phẩm này"
           }
         },
         "zh-Hans": {
@@ -12591,13 +12591,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "لا يرغب المؤلف في ترجمة هذا العمل أو استخدامه مع AI، لذا لن تُستخدم خدمات الترجمة بالـ AI. انتقل إلى خدمة لا تعتمد على AI من الإعدادات › خدمة الترجمة."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "Der Autor möchte nicht, dass dieses Werk übersetzt oder mit AI verwendet wird, daher werden keine AI-Übersetzungsdienste verwendet. Wechseln Sie unter Einstellungen › Übersetzungsdienst zu einem Dienst ohne AI."
           }
         },
         "en": {
@@ -12609,91 +12609,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "El autor no quiere que esta obra se traduzca ni se use con AI, por lo que no se usarán servicios de traducción con AI. Cambia a un servicio sin AI en Configuración › Servicio de traducción."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "L’auteur ne souhaite pas que cette œuvre soit traduite ni utilisée avec l’AI ; aucun service de traduction par AI ne sera donc utilisé. Passez à un service sans AI dans Paramètres › Service de traduction."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "लेखक नहीं चाहते कि इस रचना का अनुवाद हो या इसे AI के साथ उपयोग किया जाए, इसलिए AI अनुवाद सेवाओं का उपयोग नहीं किया जाएगा। सेटिंग्स › अनुवाद सेवा में जाकर बिना AI वाली सेवा चुनें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "Penulis tidak ingin karya ini diterjemahkan atau digunakan dengan AI, jadi layanan terjemahan AI tidak akan digunakan. Beralihlah ke layanan non-AI di Pengaturan › Layanan Terjemahan."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "L’autore non vuole che quest’opera venga tradotta o usata con l’AI, quindi non verranno usati servizi di traduzione AI. Passa a un servizio non AI in Impostazioni › Servizio di traduzione."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "作者はこの作品の翻訳や AI での利用を希望していないため、AI 翻訳サービスは使用しません。「設定 › 翻訳サービス」で AI 以外のサービスに切り替えてください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "작가가 이 작품의 번역이나 AI 사용을 원하지 않으므로 AI 번역 서비스를 사용하지 않습니다. ‘설정 › 번역 서비스’에서 AI가 아닌 서비스로 변경하세요."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "De auteur wil niet dat dit werk wordt vertaald of met AI wordt gebruikt, dus worden er geen AI-vertaaldiensten gebruikt. Kies een dienst zonder AI in Instellingen › Vertaaldienst."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "Autor nie chce, aby ten utwór był tłumaczony ani używany z AI, dlatego usługi tłumaczeniowe AI nie będą używane. Przełącz się na usługę bez AI w Ustawienia › Usługa tłumaczeniowa."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "O autor não quer que esta obra seja traduzida nem usada com AI, por isso os serviços de tradução com AI não serão usados. Mude para um serviço sem AI em Configurações › Serviço de tradução."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "Автор не хочет, чтобы эту работу переводили или использовали с AI, поэтому службы перевода на основе AI использоваться не будут. Выберите службу без AI в разделе Настройки › Служба перевода."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "ผู้เขียนไม่ต้องการให้ผลงานนี้ถูกแปลหรือใช้กับ AI จึงจะไม่ใช้บริการแปลด้วย AI โปรดเปลี่ยนไปใช้บริการที่ไม่ใช่ AI ใน การตั้งค่า › บริการแปล"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "Yazar bu eserin çevrilmesini veya AI ile kullanılmasını istemiyor, bu yüzden AI çeviri hizmetleri kullanılmayacak. Ayarlar › Çeviri Hizmeti bölümünden AI olmayan bir hizmete geçin."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "Автор не хоче, щоб цей твір перекладали або використовували з AI, тому служби перекладу на основі AI не використовуватимуться. Виберіть службу без AI у розділі Налаштування › Служба перекладу."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author doesn't want this work translated or used with AI, so AI translation services won't be used. Switch to a non-AI service in Settings › Translation Service."
+            "value": "Tác giả không muốn tác phẩm này bị dịch hoặc dùng với AI, vì vậy dịch vụ dịch bằng AI sẽ không được dùng. Hãy chuyển sang dịch vụ không dùng AI trong Cài đặt › Dịch vụ dịch thuật."
           }
         },
         "zh-Hans": {
@@ -12734,13 +12734,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "كتب المؤلف: «%@»\nاحترامًا للمؤلف، لن تُستخدم خدمات الترجمة بالـ AI لهذا العمل. إذا كنت لا تزال بحاجة إلى مساعدة في القراءة، فانتقل إلى خدمة لا تعتمد على AI من الإعدادات › خدمة الترجمة."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "Der Autor schreibt: „%@“\nAus Respekt vor dem Autor werden für dieses Werk keine AI-Übersetzungsdienste verwendet. Wenn Sie trotzdem Hilfe beim Lesen benötigen, wechseln Sie unter Einstellungen › Übersetzungsdienst zu einem Dienst ohne AI."
           }
         },
         "en": {
@@ -12752,91 +12752,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "El autor escribió: “%@”\nPor respeto al autor, no se usarán servicios de traducción con AI para esta obra. Si aun así necesitas ayuda para leerla, cambia a un servicio sin AI en Configuración › Servicio de traducción."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "L’auteur a écrit : « %@ »\nPar respect pour l’auteur, aucun service de traduction par AI ne sera utilisé pour cette œuvre. Si vous avez tout de même besoin d’aide pour la lire, passez à un service sans AI dans Paramètres › Service de traduction."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "लेखक ने लिखा है: “%@”\nलेखक के सम्मान में, इस रचना के लिए AI अनुवाद सेवाओं का उपयोग नहीं किया जाएगा। अगर आपको फिर भी पढ़ने में मदद चाहिए, तो सेटिंग्स › अनुवाद सेवा में जाकर बिना AI वाली सेवा चुनें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "Penulis menulis: “%@”\nSebagai bentuk hormat kepada penulis, layanan terjemahan AI tidak akan digunakan untuk karya ini. Jika Anda tetap memerlukan bantuan membaca, beralihlah ke layanan non-AI di Pengaturan › Layanan Terjemahan."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "L’autore ha scritto: “%@”\nPer rispetto verso l’autore, per quest’opera non verranno usati servizi di traduzione AI. Se hai comunque bisogno di aiuto per leggerla, passa a un servizio non AI in Impostazioni › Servizio di traduzione."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "作者は作品内で次のように述べています：「%@」\n作者の意思を尊重し、この作品には AI 翻訳サービスを使用しません。読むための補助が必要な場合は、「設定 › 翻訳サービス」で AI 以外のサービスに切り替えてください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "작가의 말: “%@”\n작가를 존중하여 이 작품에는 AI 번역 서비스를 사용하지 않습니다. 읽는 데 도움이 필요하다면 ‘설정 › 번역 서비스’에서 AI가 아닌 서비스로 변경하세요."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "De auteur schreef: ‘%@’\nUit respect voor de auteur worden voor dit werk geen AI-vertaaldiensten gebruikt. Hebt u toch hulp nodig bij het lezen, kies dan een dienst zonder AI in Instellingen › Vertaaldienst."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "Autor napisał: „%@”\nZ szacunku dla autora usługi tłumaczeniowe AI nie będą używane dla tego utworu. Jeśli mimo to potrzebujesz pomocy w czytaniu, przełącz się na usługę bez AI w Ustawienia › Usługa tłumaczeniowa."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "O autor escreveu: “%@”\nEm respeito ao autor, os serviços de tradução com AI não serão usados nesta obra. Se ainda precisar de ajuda para ler, mude para um serviço sem AI em Configurações › Serviço de tradução."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "Автор пишет: «%@»\nИз уважения к автору службы перевода на основе AI для этой работы использоваться не будут. Если вам всё же нужна помощь в чтении, выберите службу без AI в разделе Настройки › Служба перевода."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "ผู้เขียนระบุว่า: “%@”\nเพื่อเคารพผู้เขียน จะไม่ใช้บริการแปลด้วย AI กับผลงานนี้ หากยังต้องการความช่วยเหลือในการอ่าน โปรดเปลี่ยนไปใช้บริการที่ไม่ใช่ AI ใน การตั้งค่า › บริการแปล"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "Yazar şöyle yazdı: “%@”\nYazara saygı gereği bu eser için AI çeviri hizmetleri kullanılmayacak. Okumak için yine de yardıma ihtiyacınız varsa Ayarlar › Çeviri Hizmeti bölümünden AI olmayan bir hizmete geçin."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "Автор пише: «%@»\nЗ поваги до автора служби перекладу на основі AI для цього твору не використовуватимуться. Якщо вам усе ж потрібна допомога з читанням, виберіть службу без AI у розділі Налаштування › Служба перекладу."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nOut of respect for the author, AI translation services won't be used for this work. If you still need help reading it, switch to a non-AI service in Settings › Translation Service."
+            "value": "Tác giả viết: “%@”\nĐể tôn trọng tác giả, dịch vụ dịch bằng AI sẽ không được dùng cho tác phẩm này. Nếu bạn vẫn cần hỗ trợ đọc, hãy chuyển sang dịch vụ không dùng AI trong Cài đặt › Dịch vụ dịch thuật."
           }
         },
         "zh-Hans": {
@@ -12877,13 +12877,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "كتب المؤلف: «%@»\nيُرجى احترام رغبة المؤلف. إذا ترجمته على أي حال، فستظهر الترجمة لك وحدك؛ لا تشاركها ولا تُعِد نشرها."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "Der Autor schreibt: „%@“\nBitte respektieren Sie den Wunsch des Autors. Wenn Sie trotzdem übersetzen, wird die Übersetzung nur Ihnen angezeigt; bitte nicht teilen oder erneut veröffentlichen."
           }
         },
         "en": {
@@ -12895,91 +12895,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "El autor escribió: “%@”\nRespeta los deseos del autor. Si la traduces de todos modos, la traducción solo se mostrará a ti; no la compartas ni la vuelvas a publicar."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "L’auteur a écrit : « %@ »\nVeuillez respecter la volonté de l’auteur. Si vous traduisez quand même, la traduction ne s’affichera que pour vous ; ne la partagez pas et ne la republiez pas."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "लेखक ने लिखा है: “%@”\nकृपया लेखक की इच्छा का सम्मान करें। अगर आप फिर भी अनुवाद करते हैं, तो अनुवाद केवल आपको दिखेगा; इसे शेयर या दोबारा पोस्ट न करें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "Penulis menulis: “%@”\nHormati keinginan penulis. Jika Anda tetap menerjemahkannya, terjemahan hanya ditampilkan untuk Anda; jangan bagikan atau unggah ulang."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "L’autore ha scritto: “%@”\nRispetta la volontà dell’autore. Se traduci comunque, la traduzione sarà visibile solo a te; non condividerla né ripubblicarla."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "作者は作品内で次のように述べています：「%@」\n作者の意思を尊重してください。それでも翻訳する場合、訳文はあなただけに表示されます。共有や転載はしないでください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "작가의 말: “%@”\n작가의 뜻을 존중해 주세요. 그래도 번역하면 번역문은 본인에게만 표시됩니다. 공유하거나 다른 곳에 게시하지 마세요."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "De auteur schreef: ‘%@’\nRespecteer de wens van de auteur. Als u toch vertaalt, is de vertaling alleen voor u zichtbaar; deel of herpubliceer deze niet."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "Autor napisał: „%@”\nUszanuj wolę autora. Jeśli mimo to przetłumaczysz utwór, tłumaczenie będzie widoczne tylko dla Ciebie; nie udostępniaj go ani nie publikuj ponownie."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "O autor escreveu: “%@”\nRespeite a vontade do autor. Se traduzir mesmo assim, a tradução será exibida só para você; não a compartilhe nem a republique."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "Автор пишет: «%@»\nПожалуйста, уважайте желание автора. Если вы всё равно переведёте работу, перевод будет виден только вам; не распространяйте и не публикуйте его."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "ผู้เขียนระบุว่า: “%@”\nโปรดเคารพความต้องการของผู้เขียน หากยังแปล คำแปลจะแสดงให้คุณเห็นเท่านั้น โปรดอย่าแชร์หรือโพสต์ซ้ำ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "Yazar şöyle yazdı: “%@”\nLütfen yazarın isteğine saygı gösterin. Yine de çevirirseniz çeviri yalnızca size gösterilir; paylaşmayın veya yeniden yayımlamayın."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "Автор пише: «%@»\nБудь ласка, поважайте бажання автора. Якщо ви все одно перекладете твір, переклад бачитимете лише ви; не поширюйте й не публікуйте його."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "The author wrote: “%@”\nPlease respect the author's wishes. If you translate anyway, the translation is shown only to you; don't share or repost it."
+            "value": "Tác giả viết: “%@”\nHãy tôn trọng mong muốn của tác giả. Nếu bạn vẫn dịch, bản dịch chỉ hiển thị cho riêng bạn; vui lòng không chia sẻ hoặc đăng lại."
           }
         },
         "zh-Hans": {
@@ -17167,13 +17167,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "لا يمكن مشاركة الأعمال المقتصرة على المستخدمين المسجلين"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Werke, die nur für angemeldete Nutzer sichtbar sind, können nicht geteilt werden"
           }
         },
         "en": {
@@ -17185,91 +17185,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Las obras restringidas a usuarios registrados no se pueden compartir"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Les œuvres réservées aux utilisateurs connectés ne peuvent pas être partagées"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "केवल लॉग-इन उपयोगकर्ताओं के लिए सीमित रचनाएँ शेयर नहीं की जा सकतीं"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Karya yang dibatasi untuk pengguna yang masuk tidak dapat dibagikan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Le opere riservate agli utenti registrati non possono essere condivise"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "ログインユーザー限定の作品は共有できません"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "로그인 사용자 전용 작품은 공유할 수 없습니다"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Werken die alleen voor ingelogde gebruikers zijn, kunnen niet worden gedeeld"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Utworów dostępnych tylko dla zalogowanych użytkowników nie można udostępniać"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Obras restritas a usuários conectados não podem ser compartilhadas"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Работами, доступными только вошедшим пользователям, нельзя поделиться"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "ไม่สามารถแชร์ผลงานที่จำกัดเฉพาะผู้ใช้ที่เข้าสู่ระบบ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Yalnızca giriş yapmış kullanıcılara açık eserler paylaşılamaz"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Твори, доступні лише користувачам, що увійшли, не можна поширювати"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Works restricted to logged-in users can't be shared"
+            "value": "Không thể chia sẻ tác phẩm chỉ dành cho người dùng đã đăng nhập"
           }
         },
         "zh-Hans": {
@@ -36615,13 +36615,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "انتقال سريع"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Schnellsprung"
           }
         },
         "en": {
@@ -36633,91 +36633,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Salto rápido"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Accès rapide"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "त्वरित जंप"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Lompat Cepat"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Salto rapido"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "クイックジャンプ"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "빠른 이동"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Snel springen"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Szybkie przejście"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Salto rápido"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Быстрый переход"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "ข้ามด่วน"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Hızlı Git"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Швидкий перехід"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quick Jump"
+            "value": "Đi nhanh"
           }
         },
         "zh-Hans": {
@@ -80659,13 +80659,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "الانتقال إلى العمل رقم"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Zu Werk Nr. springen"
           }
         },
         "en": {
@@ -80677,91 +80677,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Ir a la obra número"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Aller à l’œuvre n°"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "रचना संख्या पर जाएँ"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Lompat ke Karya Nomor"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Vai all’opera numero"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "作品番号へ移動"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "작품 번호로 이동"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Naar werk nummer"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Przejdź do utworu nr"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Ir para a obra número"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Перейти к работе №"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "ไปยังผลงานลำดับที่"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Eser Numarasına Git"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Перейти до твору №"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jump to Work Number"
+            "value": "Đi đến tác phẩm số"
           }
         },
         "zh-Hans": {
@@ -81803,13 +81803,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "أدخل رقمًا للانتقال إلى ذلك العمل."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Geben Sie eine Nummer ein, um zu diesem Werk zu springen."
           }
         },
         "en": {
@@ -81821,91 +81821,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Introduce un número para ir a esa obra."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Saisissez un numéro pour accéder à cette œuvre."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "किसी रचना पर जाने के लिए उसकी संख्या दर्ज करें।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Masukkan nomor untuk melompat ke karya tersebut."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Inserisci un numero per andare a quell’opera."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "番号を入力すると、その作品へ移動します。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "번호를 입력하면 해당 작품으로 이동합니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Voer een nummer in om naar dat werk te gaan."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Wpisz numer, aby przejść do tego utworu."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Digite um número para ir até essa obra."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Введите номер, чтобы перейти к этой работе."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "ป้อนหมายเลขเพื่อไปยังผลงานนั้น"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "O esere gitmek için bir numara girin."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Введіть номер, щоб перейти до цього твору."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work."
+            "value": "Nhập số để đi đến tác phẩm đó."
           }
         },
         "zh-Hans": {
@@ -81946,13 +81946,13 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "أدخل رقمًا للانتقال إلى ذلك العمل. إذا لم يكن قد حُمّل بعد، فسيتم تحميل المزيد من الصفحات."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Geben Sie eine Nummer ein, um zu diesem Werk zu springen. Ist es noch nicht geladen, werden weitere Seiten geladen."
           }
         },
         "en": {
@@ -81964,91 +81964,91 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Introduce un número para ir a esa obra. Si aún no se ha cargado, se cargarán más páginas."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Saisissez un numéro pour accéder à cette œuvre. S’il dépasse les œuvres déjà chargées, d’autres pages seront chargées."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "किसी रचना पर जाने के लिए उसकी संख्या दर्ज करें। अगर वह अभी लोड नहीं हुई है, तो और पेज लोड होंगे।"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Masukkan nomor untuk melompat ke karya tersebut. Jika belum dimuat, halaman berikutnya akan dimuat."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Inserisci un numero per andare a quell’opera. Se non è ancora stata caricata, verranno caricate altre pagine."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "番号を入力すると、その作品へ移動します。まだ読み込まれていない場合は、続けて読み込みます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "번호를 입력하면 해당 작품으로 이동합니다. 아직 불러오지 않은 번호라면 계속 불러옵니다."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Voer een nummer in om naar dat werk te gaan. Als het nog niet is geladen, worden meer pagina’s geladen."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Wpisz numer, aby przejść do tego utworu. Jeśli nie został jeszcze wczytany, zostaną wczytane kolejne strony."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Digite um número para ir até essa obra. Se ela ainda não tiver sido carregada, mais páginas serão carregadas."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Введите номер, чтобы перейти к этой работе. Если она ещё не загружена, будут загружены следующие страницы."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "ป้อนหมายเลขเพื่อไปยังผลงานนั้น หากยังโหลดไม่ถึง ระบบจะโหลดหน้าเพิ่มเติม"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "O esere gitmek için bir numara girin. Henüz yüklenmemişse daha fazla sayfa yüklenecektir."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Введіть номер, щоб перейти до цього твору. Якщо його ще не завантажено, буде завантажено наступні сторінки."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enter a number to jump to that work. If it is beyond what has loaded, more pages will load."
+            "value": "Nhập số để đi đến tác phẩm đó. Nếu tác phẩm chưa được tải, ứng dụng sẽ tải thêm trang."
           }
         },
         "zh-Hans": {
