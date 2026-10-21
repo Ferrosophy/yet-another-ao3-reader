@@ -102,6 +102,18 @@ final class ReaderViewModel {
         return chapters[chapterIndex]
     }
 
+    /// 整部作品的閱讀進度（0...1）：以畫面上最後一個正文段落在全部正文段落中的位置計算
+    var progress: Double {
+        guard let chapters = detail?.chapters else { return 0 }
+        let total = chapters.reduce(0) { $0 + $1.paragraphs.count }
+        guard total > 0 else { return 0 }
+        let before = chapters.prefix(chapterIndex).reduce(0) { $0 + $1.paragraphs.count }
+        // 段落 ID 為「c<章>-p<段>」
+        let prefix = "c\(chapterIndex)-p"
+        let last = visible.compactMap { $0.hasPrefix(prefix) ? Int($0.dropFirst(prefix.count)) : nil }.max()
+        return min(1, Double(before + (last.map { $0 + 1 } ?? 0)) / Double(total))
+    }
+
     var hasPrevious: Bool { chapterIndex > 0 }
     var hasNext: Bool { chapterIndex + 1 < (detail?.chapters.count ?? 0) }
     var targetLanguage: TranslationLanguage { settings.config.targetLanguage }

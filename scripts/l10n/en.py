@@ -732,6 +732,15 @@ EN = {
 '已送出 Kudos，謝謝你的支持！': 'Kudos sent. Thanks for your support!',
 'Kudos 送出失敗：%@': "Couldn't leave kudos: %@",
 '喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。': 'If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author.',
+'3 天內最多批次下載 %lld 部，額度將於 %@ 恢復': 'You can batch download up to %lld works every 3 days. Your quota resets on %@.',
+'3 天內最多批次下載 %lld 部，目前剩餘 %lld 部': 'You can batch download up to %lld works every 3 days. %lld remaining.',
+'閱讀進度': 'Reading Progress',
+'如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。': 'If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author.',
+'本項目完全開源、永久免費、無廣告，不收集用戶資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。': "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW).",
+'清除所有本地資料': 'Erase All Local Data',
+'清除所有本地資料？': 'Erase All Local Data?',
+'清除並關閉 App': 'Erase and Close App',
+'將刪除這台裝置上的所有設定、離線作品、書架、閱讀紀錄、翻譯快取、匯入的字體、API Key 與登入狀態，且無法復原。iCloud 或 WebDAV 上的同步資料不受影響。完成後 App 會關閉，請重新開啟。': "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it.",
 }
 # 非介面字串（語言自稱、程式內部比對用），不翻譯
 SKIP = {"第%@章","零","一","二","两","兩","三","四","五","六","七","八","九","十","百","千","验证","驗證","安全验证","简体中文","繁體中文（台灣）","繁體中文（香港）","繁體中文（澳門）","日本語","中文","Aa 永字八法 あア","中文-普通话 國語","繁體中文","粵語","請稍候","请稍候","しばらくお待ち","**問題描述 / Description**\n\n\n**重現步驟 / Steps**\n1. \n\n**預期結果 / Expected**\n\n\n---\nApp %@ · %@","**建議 / Suggestion**\n\n\n---\nApp %@ · %@"}

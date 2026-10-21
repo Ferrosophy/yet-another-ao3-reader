@@ -1002,6 +1002,292 @@
         }
       }
     },
+    "3 天內最多批次下載 %lld 部，目前剩餘 %lld 部": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. %lld remaining."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天内最多批量下载 %lld 部，目前剩余 %lld 部"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，目前剩餘 %lld 部"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，目前剩餘 %lld 部"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，目前剩餘 %lld 部"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，目前剩餘 %lld 部"
+          }
+        }
+      }
+    },
+    "3 天內最多批次下載 %lld 部，額度將於 %@ 恢復": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can batch download up to %lld works every 3 days. Your quota resets on %@."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天内最多批量下载 %lld 部，额度将于 %@ 恢复"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，額度將於 %@ 恢復"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，額度將於 %@ 恢復"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，額度將於 %@ 恢復"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 天內最多批次下載 %lld 部，額度將於 %@ 恢復"
+          }
+        }
+      }
+    },
     "30 天": {
       "extractionState": "manual",
       "localizations": {
@@ -18162,292 +18448,6 @@
         }
       }
     },
-    "刪除所有 API Key？": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "هل تريد حذف جميع مفاتيح واجهة برمجة التطبيقات؟"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle API-Schlüssel löschen?"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete All API Keys?"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "¿Eliminar todas las claves API?"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Supprimer toutes les clés API ?"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "सभी एपीआई कुंजियाँ हटाएँ?"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hapus Semua Kunci API?"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Eliminare tutte le chiavi API?"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "すべての API キーを削除しますか?"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "모든 API 키를 삭제하시겠습니까?"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle API-sleutels verwijderen?"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usunąć wszystkie klucze API?"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Excluir todas as chaves de API?"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Удалить все ключи API?"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ลบคีย์ API ทั้งหมดใช่ไหม"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tüm API Anahtarları Silinsin mi?"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Видалити всі ключі API?"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Xóa tất cả khóa API?"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除所有 API Key？"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有 API Key？"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有 API Key？"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有 API Key？"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有 API Key？"
-          }
-        }
-      }
-    },
-    "刪除所有已保存的 API Key": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "حذف كافة مفاتيح API المحفوظة"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Löschen Sie alle gespeicherten API-Schlüssel"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete All Saved API Keys"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Eliminar todas las claves API guardadas"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Supprimer toutes les clés API enregistrées"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "सभी सहेजी गई API कुंजियाँ हटाएँ"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hapus Semua Kunci API Tersimpan"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Elimina tutte le chiavi API salvate"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保存されているすべての API キーを削除する"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "저장된 모든 API 키 삭제"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Verwijder alle opgeslagen API-sleutels"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usuń wszystkie zapisane klucze API"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Excluir todas as chaves de API salvas"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Удалить все сохраненные ключи API"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ลบคีย์ API ที่บันทึกไว้ทั้งหมด"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kaydedilen Tüm API Anahtarlarını Sil"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Видалити всі збережені ключі API"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Xóa tất cả các khóa API đã lưu"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除所有已保存的 API Key"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有已保存的 API Key"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有已保存的 API Key"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有已保存的 API Key"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "刪除所有已保存的 API Key"
-          }
-        }
-      }
-    },
     "加亮": {
       "extractionState": "manual",
       "localizations": {
@@ -24311,149 +24311,6 @@
         }
       }
     },
-    "喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。": {
-      "extractionState": "manual",
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "喜欢这部作品的话，可以按下 Kudos 送出一个小小的心意，或到原网站登录后留下评论。你的支持是作者最大的鼓励。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。"
-          }
-        },
-        "zh-Hant-HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。"
-          }
-        },
-        "zh-Hant-MO": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。"
-          }
-        },
-        "zh-Hant-TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。"
-          }
-        }
-      }
-    },
     "回應不像 AO3 頁面，可能不是相容的鏡像": {
       "extractionState": "manual",
       "localizations": {
@@ -27600,145 +27457,145 @@
         }
       }
     },
-    "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕": {
+    "如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。": {
       "extractionState": "manual",
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "إذا كان هذا قد جعل الأمور أسهل بالنسبة لك، فلا تتردد في شراء القهوة لي. يساعد دعمك في الحفاظ على تطوير المشروع وصيانته. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wenn es Ihnen die Sache etwas erleichtert hat, können Sie mir gerne einen Kaffee spendieren. Ihre Unterstützung trägt dazu bei, dass das Projekt weiterentwickelt und gepflegt wird. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "If it has made things a little easier for you, feel free to buy me a coffee. Your support helps keep the project developed and maintained. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Si te ha facilitado un poco las cosas, no dudes en invitarme a un café. Su apoyo ayuda a mantener el proyecto desarrollado y mantenido. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Si cela vous a rendu les choses un peu plus faciles, n'hésitez pas à m'offrir un café. Votre soutien aide à maintenir le projet développé et maintenu. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "यदि इससे आपके लिए चीज़ें थोड़ी आसान हो गई हैं, तो बेझिझक मेरे लिए एक कॉफ़ी खरीदें। आपका समर्थन परियोजना को विकसित और बनाए रखने में मदद करता है। ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jika ini membuat segalanya lebih mudah bagi Anda, silakan belikan saya kopi. Dukungan Anda membantu menjaga proyek tetap berkembang dan dipelihara. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Se ti ha reso le cose un po' più facili, sentiti libero di offrirmi un caffè. Il tuo supporto aiuta a mantenere il progetto sviluppato e mantenuto. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "少しでも気が楽になったら、遠慮なく私にコーヒーを買ってきてください。あなたのサポートは、プロジェクトの開発と維持に役立ちます。 ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "일이 조금 더 편해졌으면, 나에게 커피 한 잔 사주세요. 귀하의 지원은 프로젝트를 계속 개발하고 유지하는 데 도움이 됩니다. 찻잔"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Als het de zaken wat makkelijker voor je heeft gemaakt, trakteer me dan gerust op een kopje koffie. Uw steun helpt het project ontwikkeld en onderhouden te houden. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jeśli to ci choć trochę ułatwiło sprawę, nie wahaj się postawić mi kawy. Twoje wsparcie pomoże w dalszym rozwoju i utrzymaniu projektu. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Se isso tornou as coisas um pouco mais fáceis para você, fique à vontade para me pagar um café. Seu apoio ajuda a manter o projeto desenvolvido e mantido. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Если вам это немного облегчило задачу, не стесняйтесь угостить меня кофе. Ваша поддержка помогает проекту развиваться и поддерживаться. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ถ้ามันทำให้ทุกอย่างง่ายขึ้นสำหรับคุณ อย่าลังเลที่จะซื้อกาแฟให้ฉัน การสนับสนุนของคุณช่วยให้โครงการพัฒนาและบำรุงรักษา ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eğer bu senin için işleri biraz kolaylaştırdıysa bana bir kahve ısmarlamaktan çekinme. Desteğiniz projenin geliştirilmesine ve sürdürülmesine yardımcı olur. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Якщо це полегшило вам справи, не соромтеся купити мені кави. Ваша підтримка допомагає розвивати та підтримувати проект. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nếu nó giúp mọi việc dễ dàng hơn một chút với bạn, vui lòng mua cho tôi một ly cà phê. Sự hỗ trợ của bạn giúp dự án được phát triển và duy trì. ☕"
+            "value": "If you enjoyed this work, leave a kudos or sign in on the original site to comment. Your support means a lot to the author."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "如果它为你带来了一点便利，欢迎请我喝杯咖啡。你的支持将帮助项目持续开发与维护。☕"
+            "value": "如果您喜欢这部作品，可以点一下 Kudos 送上小小的心意，或到原网站登录后留下评论。您的支持是作者最大的鼓励。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕"
+            "value": "如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。"
           }
         },
         "zh-Hant-HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕"
+            "value": "如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。"
           }
         },
         "zh-Hant-MO": {
           "stringUnit": {
             "state": "translated",
-            "value": "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕"
+            "value": "如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。"
           }
         },
         "zh-Hant-TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕"
+            "value": "如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。"
           }
         }
       }
@@ -29169,6 +29026,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "密碼只會直接傳送給目前的 AO3 來源，不會被本應用保存。"
+          }
+        }
+      }
+    },
+    "將刪除這台裝置上的所有設定、離線作品、書架、閱讀紀錄、翻譯快取、匯入的字體、API Key 與登入狀態，且無法復原。iCloud 或 WebDAV 上的同步資料不受影響。完成後 App 會關閉，請重新開啟。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes all settings, offline works, bookshelf, reading history, translation cache, imported fonts, API keys and login state on this device, and can't be undone. Synced data in iCloud or WebDAV isn't affected. The app will close when finished; please reopen it."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将删除这台设备上的所有设置、离线作品、书架、阅读记录、翻译缓存、导入的字体、API Key 与登录状态，且无法复原。iCloud 或 WebDAV 上的同步数据不受影响。完成后 App 会关闭，请重新打开。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將刪除這台裝置上的所有設定、離線作品、書架、閱讀紀錄、翻譯快取、匯入的字型、API Key 與登入狀態，且無法復原。iCloud 或 WebDAV 上的同步資料不受影響。完成後 App 會關閉，請重新開啟。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將刪除這台裝置上的所有設定、離線作品、書架、閱讀紀錄、翻譯快取、匯入的字體、API Key 與登入狀態，且無法復原。iCloud 或 WebDAV 上的同步資料不受影響。完成後 App 會關閉，請重新開啟。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將刪除這台裝置上的所有設定、離線作品、書架、閱讀紀錄、翻譯快取、匯入的字體、API Key 與登入狀態，且無法復原。iCloud 或 WebDAV 上的同步資料不受影響。完成後 App 會關閉，請重新開啟。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將刪除這台裝置上的所有設定、離線作品、書架、閱讀紀錄、翻譯快取、匯入的字型、API Key 與登入狀態，且無法復原。iCloud 或 WebDAV 上的同步資料不受影響。完成後 App 會關閉，請重新開啟。"
           }
         }
       }
@@ -46476,6 +46476,149 @@
         }
       }
     },
+    "本項目完全開源、永久免費、無廣告，不收集用戶資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This project is fully open source, free forever, ad-free, and collects no user data.\nEvery feature is free to use. If you like the project, you can voluntarily support an independent developer's maintenance and development work.\nDonations don't unlock any extra features and have nothing to do with selling or charging for AO3 works.\nThis is an independently developed, unofficial AO3 reader with no official affiliation with Archive of Our Own (AO3) or the Organization for Transformative Works (OTW)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本项目完全开源、永久免费、无广告，不收集用户数据。\n所有功能均可免费使用。如果你喜欢这个项目，可以自愿支持独立开发者的维护与开发工作。\n赞助不会解锁任何额外功能，也不涉及 AO3 作品的销售或收费。\n本项目是独立开发的非官方 AO3 阅读器，与 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方关联。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本項目完全開源、永久免費、無廣告，不收集使用者資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本項目完全開源、永久免費、無廣告，不收集用戶資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本項目完全開源、永久免費、無廣告，不收集用戶資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本項目完全開源、永久免費、無廣告，不收集使用者資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。"
+          }
+        }
+      }
+    },
     "榜單": {
       "extractionState": "manual",
       "localizations": {
@@ -55052,6 +55195,435 @@
           "stringUnit": {
             "state": "translated",
             "value": "清除"
+          }
+        }
+      }
+    },
+    "清除並關閉 App": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase and Close App"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除并关闭 App"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除並關閉 App"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除並關閉 App"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除並關閉 App"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除並關閉 App"
+          }
+        }
+      }
+    },
+    "清除所有本地資料": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地数据"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料"
+          }
+        }
+      }
+    },
+    "清除所有本地資料？": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase All Local Data?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地数据？"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料？"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料？"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料？"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有本地資料？"
           }
         }
       }
@@ -82222,6 +82794,149 @@
           "stringUnit": {
             "state": "translated",
             "value": "閱讀設定"
+          }
+        }
+      }
+    },
+    "閱讀進度": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading Progress"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "阅读进度"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀進度"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀進度"
+          }
+        },
+        "zh-Hant-MO": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀進度"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閱讀進度"
           }
         }
       }

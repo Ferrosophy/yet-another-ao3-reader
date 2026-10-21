@@ -134,7 +134,7 @@ struct SettingsView: View {
                 Button("清除翻譯快取", role: .destructive) {
                     Task { await app.translator.clearCache() }
                 }
-                Button("刪除所有已保存的 API Key", role: .destructive) {
+                Button("清除所有本地資料", role: .destructive) {
                     showsClearConfirm = true
                 }
             } header: {
@@ -144,8 +144,16 @@ struct SettingsView: View {
         .navigationTitle("設定")
         .sheet(isPresented: $showsDonate) { DonateView() }
         .navigationDestination(isPresented: $showsDebug) { DebugView() }
-        .confirmationDialog("刪除所有 API Key？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
-            Button("刪除", role: .destructive) { KeychainStore.deleteAll() }
+        .confirmationDialog("清除所有本地資料？", isPresented: $showsClearConfirm, titleVisibility: .visible) {
+            Button("清除並關閉 App", role: .destructive) {
+                Task {
+                    await LocalDataEraser.eraseAll()
+                    // 各資料儲存仍在記憶體中，關閉 App 避免舊資料再被寫回
+                    exit(0)
+                }
+            }
+        } message: {
+            Text("將刪除這台裝置上的所有設定、離線作品、書架、閱讀紀錄、翻譯快取、匯入的字體、API Key 與登入狀態，且無法復原。iCloud 或 WebDAV 上的同步資料不受影響。完成後 App 會關閉，請重新開啟。")
         }
     }
 }

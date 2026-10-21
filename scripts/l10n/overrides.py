@@ -44,4 +44,6 @@ OVERRIDES = {lang: {k: v.split('|')[i] for k, v in _T.items()} for i, lang in en
 assert all(len(v.split('|')) == len(LANGS) for v in _T.values())
 
 # 簡體中文的個別用語
-OVERRIDES['zh-Hans'] = {"保存QR code到相簿": "保存二维码到相册"}
+OVERRIDES['zh-Hans'] = {
+        '本項目完全開源、永久免費、無廣告，不收集用戶資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。': '本项目完全开源、永久免费、无广告，不收集用户数据。\n所有功能均可免费使用。如果你喜欢这个项目，可以自愿支持独立开发者的维护与开发工作。\n赞助不会解锁任何额外功能，也不涉及 AO3 作品的销售或收费。\n本项目是独立开发的非官方 AO3 阅读器，与 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方关联。',
+        '如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。': '如果您喜欢这部作品，可以点一下 Kudos 送上小小的心意，或到原网站登录后留下评论。您的支持是作者最大的鼓励。',"保存QR code到相簿": "保存二维码到相册"}

@@ -199,6 +199,16 @@ struct BatchDownloadView: View {
     @State private var message: String?
 
     private var limit: Int { OfflineManager.batchLimit }
+    /// 每 3 天的批次下載額度剩餘數（選取上限取兩者較小值）
+    @State private var remaining = BatchDownloadQuota.remaining()
+    private var selectionLimit: Int { min(limit, remaining) }
+
+    private var quotaMessage: String {
+        if let date = BatchDownloadQuota.nextAvailable() {
+            return String(localized: "3 天內最多批次下載 \(BatchDownloadQuota.limit) 部，額度將於 \(date.formatted(date: .abbreviated, time: .shortened)) 恢復")
+        }
+        return String(localized: "3 天內最多批次下載 \(BatchDownloadQuota.limit) 部，目前剩餘 \(remaining) 部")
+    }
 
     private var works: [WorkSummary] {
         let works = model?.works ?? []
@@ -229,7 +239,10 @@ struct BatchDownloadView: View {
                     LabeledContent("下載列表", value: activeCount > 0 ? String(localized: "\(activeCount) 項進行中") : "")
                 }
             } footer: {
-                Text("選取的作品會離線保存：先下載原文，再自動翻譯，並以選擇的格式保存。篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 \(limit) 部。")
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("選取的作品會離線保存：先下載原文，再自動翻譯，並以選擇的格式保存。篩選條件與官網作品搜尋相同，可同時使用 Fandom、分級、標籤、字數、語言等多層條件。每次最多選取 \(limit) 部。")
+                    Text(quotaMessage)
+                }
             }
 
             if let model {
@@ -258,7 +271,8 @@ struct BatchDownloadView: View {
                 Menu {
                     ForEach([5, 10, limit], id: \.self) { count in
                         Button(String(localized: "依目前順序選取前 \(count) 部")) {
-                            selection = Array(works.prefix(count).map(\.id))
+                            selection = Array(works.prefix(min(count, selectionLimit)).map(\.id))
+                            if count > selectionLimit { message = quotaMessage }
                         }
                     }
                     Button("取消全部選取", role: .destructive) { selection = [] }
@@ -301,7 +315,10 @@ struct BatchDownloadView: View {
             }
             .presentationDetents([.medium, .large])
         }
-        .onAppear { if model == nil { showsFilters = true } }
+        .onAppear {
+            remaining = BatchDownloadQuota.remaining()
+            if model == nil { showsFilters = true }
+        }
     }
 
     private func row(_ work: WorkSummary) -> some View {
@@ -309,6 +326,8 @@ struct BatchDownloadView: View {
         return Button {
             if selected {
                 selection.removeAll { $0 == work.id }
+            } else if selection.count >= remaining {
+                message = quotaMessage
             } else if selection.count >= limit {
                 message = String(localized: "每次最多選取 \(limit) 部")
             } else {
@@ -341,8 +360,16 @@ struct BatchDownloadView: View {
     }
 
     private func download() {
-        let chosen = (model?.works ?? []).filter { selection.contains($0.id) }
+        let available = BatchDownloadQuota.remaining()
+        let chosen = Array((model?.works ?? []).filter { selection.contains($0.id) }.prefix(available))
+        guard !chosen.isEmpty else {
+            remaining = available
+            message = quotaMessage
+            return
+        }
         for work in chosen { app.offline.add(work, format: format ?? defaultFormat) }
+        BatchDownloadQuota.record(chosen.count)
+        remaining = BatchDownloadQuota.remaining()
         message = String(localized: "已離線保存：\(chosen.count) 部")
         selection = []
     }

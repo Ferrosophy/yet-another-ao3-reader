@@ -13,7 +13,7 @@ struct DonateView: View {
                 VStack(spacing: 20) {
                     Text("喜歡這個項目嗎？")
                         .appFont(.title2, weight: .bold)
-                    Text("如果它為你帶來了一點便利，歡迎請我喝杯咖啡。你的支持將幫助項目持續開發與維護。☕")
+                    Text("本項目完全開源、永久免費、無廣告，不收集用戶資料。\n所有功能均可免費使用。如果你喜歡這個項目，可以自願支持獨立開發者的維護與開發工作。\n贊助不會解鎖任何額外功能，也不涉及 AO3 作品的銷售或收費。\n本項目是獨立開發的非官方 AO3 閱讀器，與 Archive of Our Own（AO3）及 Organization for Transformative Works（OTW）不存在官方關聯。")
                         .appFont(.body)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)

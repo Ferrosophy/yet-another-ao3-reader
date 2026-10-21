@@ -65,7 +65,7 @@ struct WorkEndView: View {
     var body: some View {
         VStack(spacing: 16) {
             if !model.hasGivenKudos {
-                Text("喜歡這部作品的話，可以按下 Kudos 送出一個小小的心意，或到原網站登入後留下評論。你的支持是作者最大的鼓勵。")
+                Text("如果您喜歡這部作品，可以點一下 Kudos 送上小小的心意，或到原網站登入後留下評論。您的支持是作者最大的鼓勵。")
                     .font(font)
                     .foregroundStyle(color.opacity(0.7))
                     .multilineTextAlignment(.center)

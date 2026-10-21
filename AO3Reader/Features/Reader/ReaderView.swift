@@ -560,6 +560,15 @@ struct ReaderView: View {
                     .glassEffect(.regular.tint(.red.opacity(0.25)), in: .capsule)
             }
 
+            // 整部作品的閱讀進度
+            Text(model.progress, format: .percent.precision(.fractionLength(0)))
+                .appFont(.caption, weight: .medium)
+                .monospacedDigit()
+                .padding(.horizontal, 12)
+                .padding(.vertical, 5)
+                .glassEffect(.regular, in: .capsule)
+                .accessibilityLabel(Text("閱讀進度"))
+
             GlassEffectContainer(spacing: 10) {
                 HStack(spacing: 10) {
                     circleButton("chevron.left", label: "上一章", enabled: model.hasPrevious) {
