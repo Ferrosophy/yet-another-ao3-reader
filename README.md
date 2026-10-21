@@ -5,120 +5,124 @@
 <h1 align="center">Yet another AO3 reader（YAAO3R）</h1>
 
 <p align="center">
-  原生 iOS 的 Archive of Our Own 閱讀器 · Liquid Glass · 沉浸式翻譯
+  原生 iOS 的 Archive of Our Own 阅读器 · Liquid Glass · 沉浸式翻译
 </p>
 
 <p align="center">
-  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest"><b>下載最新版</b></a> ·
-  <a href="https://ferrosophy.github.io/yet-another-ao3-reader/">介紹網頁</a> ·
-  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/issues">意見回饋</a>
+  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest"><b>下载最新版</b></a> ·
+  <a href="https://ferrosophy.github.io/yet-another-ao3-reader/">介绍网页</a> ·
+  <a href="https://github.com/Ferrosophy/yet-another-ao3-reader/issues">意见反馈</a>
 </p>
 
 <p align="center">
-  繁體中文 · <a href="README.zh-Hans.md">简体中文</a> · <a href="README.en.md">English</a>
+  简体中文 · <a href="README.zh-Hant.md">繁體中文</a> · <a href="README.en.md">English</a>
 </p>
 
 ---
 
-YAAO3R 是一個用 SwiftUI 打造的 [Archive of Our Own](https://archiveofourown.org)（AO3）第三方閱讀器，採用 iOS 26 的 Liquid Glass 設計。你可以瀏覽、搜尋、離線保存作品，並以「原文在上、譯文在下」的方式閱讀任何語言的同人作品。
+YAAO3R 是一个用 SwiftUI 打造的 [Archive of Our Own](https://archiveofourown.org)（AO3）第三方阅读器，采用 iOS 26 的 Liquid Glass 设计。你可以浏览、搜索、离线保存作品，并以「原文在上、译文在下」的方式阅读任何语言的同人作品。
 
-> 本 App 為非官方的第三方客戶端，與 AO3 及 Organization for Transformative Works（OTW）無關。
+> 本 App 为非官方的第三方客户端，与 AO3 及 Organization for Transformative Works（OTW）无关。
 
 ## 功能
 
-### 閱讀與翻譯
-- **沉浸式翻譯**：不取代原文，每段原文下方顯示譯文，也可切換為「僅譯文」。作品標題、標籤、簡介與作者註都能翻譯，可分別設定在瀏覽頁與閱讀頁顯示哪些。
-- **多種翻譯服務**：
-  - 免金鑰：Google、Bing、騰訊交互翻譯 TranSmart、火山、百度、有道、搜狗、DeepL 網頁版、Apple 翻譯（裝置上）。
-  - 自備 API Key：Google Cloud、Microsoft Azure、DeepL API、OpenAI 相容服務（OpenAI / DeepSeek / OpenRouter / Groq / 自訂）、Anthropic Claude、Google Gemini。
-- **閱讀模式**：捲動或翻頁（仿真、平滑、覆蓋、淡入淡出）；作者註依官網位置顯示在章首或章末。
-- **外觀**：深色模式、主題色、自訂背景（純色或圖片）與文字顏色；字級、字重、行距、段距、字距、上下左右邊距；可匯入 TTF / OTF 字體，或從 Google Drive、百度網盤匯入。
+### 阅读与翻译
+- **沉浸式翻译**：不取代原文，每段原文下方显示译文，也可切换为「仅译文」。作品标题、标签、简介与作者注都能翻译，可分别设置在浏览页与阅读页显示哪些。
+- **多种翻译服务**：
+  - 免密钥：Google、Bing、腾讯交互翻译 TranSmart、火山、百度、有道、搜狗、DeepL 网页版、Apple 翻译（设备上）。
+  - 自备 API Key：Google Cloud、Microsoft Azure、DeepL API、OpenAI 兼容服务（OpenAI / DeepSeek / OpenRouter / Groq / 自定义）、Anthropic Claude、Google Gemini。
+- **阅读模式**：滚动或翻页（仿真、平滑、覆盖、淡入淡出）；作者注依官网位置显示在章首或章末。
+- **外观**：深色模式、主题色、自定义背景（纯色或图片）与文字颜色；字级、字重、行距、段距、字距、上下左右边距；可导入 TTF / OTF 字体，或从 Google Drive、百度网盘导入。
 
-### 瀏覽與搜尋
-- **瀏覽**：最新作品，以及 Kudos、評論、點擊排行榜，可依語言等條件篩選。
-- **搜尋**：作品、標籤、用戶、合集四種範圍，附自動完成建議與搜尋紀錄。
-- **詳細搜尋與篩選**：與 AO3 的 Work Search 及 Sort and Filter 欄位一一對應，例如原作、分級、警告、分類、角色、配對、標籤包含 / 排除、字數、更新時間、點擊、Kudos 等。
+### 浏览与搜索
+- **浏览**：最新作品，以及 Kudos、评论、点击排行榜，可依语言等条件筛选。
+- **搜索**：作品、标签、用户、合集四种范围，附自动补全建议与搜索记录。
+- **详细搜索与筛选**：与 AO3 的 Work Search 及 Sort and Filter 字段一一对应，例如原作、分级、警告、分类、角色、配对、标签包含 / 排除、字数、更新时间、点击、Kudos 等。
 
-### 離線
-- 加入「離線」的作品會自動**先下載原文、再翻譯**，沒有網路也能閱讀。原文與目標語言相同時只下載原文。
-- 下載失敗會自動斷點續傳；可暫停、重試，或只更新新章節。
-- 可分享為 App 產生的雙語 EPUB，或官網的 AZW3 / MOBI / PDF / HTML。
+### 离线
+- 加入「离线」的作品会自动**先下载原文、再翻译**，没有网络也能阅读。原文与目标语言相同时只下载原文。
+- 下载失败会自动断点续传；可暂停、重试，或只更新新章节。
+- 可分享为 App 产生的双语 EPUB，或官网的 AZW3 / MOBI / PDF / HTML。
 
-### 帳號與資料
-- **AO3 帳號**：登入後可使用收件匣、訂閱、閱讀紀錄、稍後閱讀、書籤，並直接在 App 內加入書籤、訂閱作品 / 作者 / 系列。
-- **本機保存**：不登入也能把書籤、稍後閱讀、閱讀紀錄、訂閱保存在本機，也可從 AO3 匯入。
-- **同步**：離線清單、閱讀進度、閱讀時長、偏好與搜尋紀錄，可透過 iCloud 或 WebDAV（例如堅果雲）在裝置間同步。
-- **時長管理**：閱讀時長統計，連續閱讀一段時間後提醒休息。
+### 账号与数据
+- **AO3 账号**：登录后可使用收件箱、订阅、阅读记录、稍后阅读、书签，并直接在 App 内加入书签、订阅作品 / 作者 / 系列。
+- **本机保存**：不登录也能把书签、稍后阅读、阅读记录、订阅保存在本机，也可从 AO3 导入。
+- **同步**：离线清单、阅读进度、阅读时长、偏好与搜索记录，可通过 iCloud 或 WebDAV（例如坚果云）在设备间同步。
+- **时长管理**：阅读时长统计，连续阅读一段时间后提醒休息。
 
-### 連線
-- **鏡像源**：可自行加入與 AO3 結構相同的鏡像網址，切換後所有瀏覽、閱讀、登入都改走該來源。**App 不內建、不提供任何鏡像網址。**
-- **新手引導**：第一次開啟時檢測能否連上 AO3，連不上時引導你加入鏡像源，並推薦可用的翻譯服務。
-- **人機驗證**：遇到 Cloudflare 或 Anubis 驗證時自動彈出驗證頁，通過後自動回到 App。
+### 连接
+- **镜像源**：可自行加入与 AO3 结构相同的镜像网址，切换后所有浏览、阅读、登录都改走该来源。**App 不内置、不提供任何镜像网址。**
+- **新手引导**：第一次打开时检测能否连上 AO3，连不上时引导你加入镜像源，并推荐可用的翻译服务。
+- **人机验证**：遇到 Cloudflare 或 Anubis 验证时自动弹出验证页，通过后自动回到 App。
 
-### 多語言介面
-繁體中文（台灣、香港、澳門）、简体中文、English、日本語、한국어、Français、Deutsch、Español、Português (Brasil)、Italiano、Nederlands、Русский、Українська、Polski、Türkçe、Tiếng Việt、ไทย、Bahasa Indonesia、हिन्दी、العربية。
+### 多语言界面
+繁体中文（台湾、香港、澳门）、简体中文、English、日本語、한국어、Français、Deutsch、Español、Português (Brasil)、Italiano、Nederlands、Русский、Українська、Polski、Türkçe、Tiếng Việt、ไทย、Bahasa Indonesia、हिन्दी、العربية。
 
-## 安裝
+## 安装
 
 - 需要 **iOS 26 或以上**的 iPhone。
-- 到 [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest) 下載 `YAAO3R-<版本號>-unsigned.ipa`。
-- IPA **未簽名**，請用 [AltStore](https://altstore.io)、[SideStore](https://sidestore.io)、[Sideloadly](https://sideloadly.io) 或自己的開發者憑證簽名後安裝。
-- 使用免費 Apple ID 簽名時，App 每 7 天需要重新簽名一次。
+- 到 [Releases](https://github.com/Ferrosophy/yet-another-ao3-reader/releases/latest) 下载 `YAAO3R-<版本号>-unsigned.ipa`。
+- IPA **未签名**，请用 [AltStore](https://altstore.io)、[SideStore](https://sidestore.io)、[Sideloadly](https://sideloadly.io) 或自己的开发者凭证签名后安装。
+- 使用免费 Apple ID 签名时，App 每 7 天需要重新签名一次。
 
-### 在中國大陸使用
-AO3 官網在中國大陸通常無法直接連線。第一次開啟時的新手引導會檢測連線，並教你加入鏡像源；之後也可以在「設定 › 內容來源」管理。Google 翻譯在中國大陸通常也無法使用，建議改用騰訊、火山或 Bing 翻譯。
+### 在中国大陆使用
+AO3 官网在中国大陆通常无法直接连接。第一次打开时的新手引导会检测连接，并教你加入镜像源；之后也可以在「设置 › 内容来源」管理。Google 翻译在中国大陆通常也无法使用，建议改用腾讯、火山或 Bing 翻译。
 
-> 登入時密碼會傳送給所選的來源，請只使用你信任的鏡像。
+> 登录时密码会发送给所选的来源，请只使用你信任的镜像。
 
-## 隱私
+## 隐私
 
-- App 本身沒有帳號系統，也沒有伺服器，不收集任何使用資料。
-- AO3 的登入狀態以 Cookie 保存在本機，不保存你的密碼。
-- 翻譯 API Key 只存在本機鑰匙圈，不會同步到 iCloud；翻譯時文字直接送往你選擇的翻譯服務。
-- 同步資料只存放在你自己的 iCloud 或 WebDAV。
+- App 本身没有账号系统，也没有服务器，不收集任何使用数据。
+- AO3 的登录状态以 Cookie 保存在本机，不保存你的密码。
+- 翻译 API Key 只存在本机钥匙圈，不会同步到 iCloud；翻译时文本直接送往你选择的翻译服务。
+- 同步数据只存放在你自己的 iCloud 或 WebDAV。
 
-## 意見回饋
+## 意见反馈
 
-在 App 的「設定 › 意見回饋」可以直接開啟 [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues)，系統會自動附上版本資訊。如果某個鏡像源無法使用，在「設定」連點三下「應用版本」可以進入除錯頁，複製紀錄後一起附上。
+在 App 的「设置 › 意见反馈」可以直接打开 [GitHub Issues](https://github.com/Ferrosophy/yet-another-ao3-reader/issues)，系统会自动附上版本信息。如果某个镜像源无法使用，在「设置」连点三下「应用版本」可以进入调试页，拷贝记录后一起附上。
 
-喜歡這個專案的話，可以在「設定 › 支持贊助」請開發者喝杯咖啡。
+喜欢这个项目的话，可以在「设置 › 支持赞助」请开发者喝杯咖啡。
 
-贊助只支持本 App 的開發者，與 AO3 及 OTW 無關，也不會解鎖任何功能，所有功能永久免費。如果想支持 AO3 本身，請前往 [OTW 官網](https://www.transformativeworks.org)捐款。
+赞助只支持本 App 的开发者，与 AO3 及 OTW 无关，也不会解锁任何功能，所有功能永久免费。如果想支持 AO3 本身，请前往 [OTW 官网](https://www.transformativeworks.org)捐款。
 
-## 已知問題
+## 已知问题
 
-- IPA 未簽名，需要自行簽名；使用免費 Apple ID 簽名時每 7 天需重新簽名一次。
-- 只支援 iOS 26 或以上。
-- 部分鏡像站的防護（Cloudflare 或 Anubis）可能讓 App 的請求在驗證後仍被拒絕，此時請換用其他鏡像。
-- 免金鑰的翻譯服務屬於非官方介面，可能限流或暫時失效。
-- 評論目前只能閱讀與翻譯，發表評論需到原網站。
-- 翻頁模式下，文末的 Kudos 與評論面板需在最後一頁繼續往後翻才會出現。
-- 部分新加入的介面文字，在中文與英文以外的語言中暫時以英文顯示。
+- IPA 未签名，需要自行签名；使用免费 Apple ID 签名时每 7 天需重新签名一次。
+- 只支持 iOS 26 或以上。
+- 部分镜像站的防护（Cloudflare 或 Anubis）可能让 App 的请求在验证后仍被拒绝，此时请换用其他镜像。
+- 免密钥的翻译服务属于非官方接口，可能限流或暂时失效。
+- 评论目前只能阅读与翻译，发表评论需到原网站。
+- 翻页模式下，文末的 Kudos 与评论面板需在最后一页继续往后翻才会出现。
+- 部分新加入的界面文本，在中文与英文以外的语言中暂时以英文显示。
 
-## 備份與遷移
+## 备份与迁移
 
-- **換新裝置**：在舊裝置開啟「設定 › 資料同步」（iCloud 或 WebDAV），新裝置選擇相同的同步方式後，即可取回離線清單、閱讀進度、閱讀時長、偏好設定、搜尋紀錄與本機保存的書籤等資料。
-- **離線檔案**不會同步：新裝置會依離線清單自動重新下載。已匯出的 EPUB 等檔案可在「檔案」App 的 YAAO3R › Bookshelf 中另行備份。
-- **不會同步的資料**：翻譯服務的 API Key、匯入的字體與背景圖片、翻譯快取與 AO3 登入狀態，換機後需要重新設定或登入。
-- App 的本機資料也會包含在 iPhone 的 iCloud 備份或電腦備份中，從備份還原時一併恢復（翻譯快取除外）。
+- **换新设备**：在旧设备打开「设置 › 数据同步」（iCloud 或 WebDAV），新设备选择相同的同步方式后，即可取回离线清单、阅读进度、阅读时长、偏好设置、搜索记录与本机保存的书签等数据。
+- **离线文件**不会同步：新设备会依离线清单自动重新下载。已导出的 EPUB 等文件可在「文件」App 的 YAAO3R › Bookshelf 中另行备份。
+- **不会同步的数据**：翻译服务的 API Key、导入的字体与背景图片、翻译缓存与 AO3 登录状态，换机后需要重新设置或登录。
+- App 的本机数据也会包含在 iPhone 的 iCloud 备份或电脑备份中，从备份还原时一并恢复（翻译缓存除外）。
 
-## 疑難排解
+## 疑难排解
 
-- **連不上 AO3**：在「設定 › 內容來源」加入你信任的鏡像源；遇到人機驗證時照畫面完成即可。
-- **AO3 暫時限制存取（HTTP 429）**：App 會停止重試並顯示需要等待的時間，請稍後再試。
-- **頁面讀取失敗或內容不完整**：可能是 AO3 改版。請在「設定」連點三下「應用版本」打開除錯頁，複製紀錄後到 Issues 回報，我們會更新解析規則。已離線保存的作品不受影響。
-- **翻譯失敗**：到「設定 › 翻譯服務」換用其他服務（例如裝置上的 Apple 翻譯）；不翻譯時原文閱讀不受影響。
-- **離線閱讀**不需要網路；書架上已下載的作品隨時可讀。
+- **连不上 AO3**：在「设置 › 内容来源」加入你信任的镜像源；遇到人机验证时照画面完成即可。
+- **AO3 暂时限制访问（HTTP 429）**：App 会停止重试并显示需要等待的时间，请稍后再试。
+- **页面读取失败或内容不完整**：可能是 AO3 改版。请在「设置」连点三下「应用版本」打开调试页，拷贝记录后到 Issues 回报，我们会更新解析规则。已离线保存的作品不受影响。
+- **翻译失败**：到「设置 › 翻译服务」换用其他服务（例如设备上的 Apple 翻译）；不翻译时原文阅读不受影响。
+- **离线阅读**不需要网络；书架上已下载的作品随时可读。
 
-## 隱私與安全
+## 隐私与安全
 
-- [隱私政策](PRIVACY.md)：資料流向與刪除方式。
-- [安全政策](SECURITY.md)：請透過 GitHub 的私密回報功能回報安全漏洞，不要公開發布。
-- [更新日誌](CHANGELOG.md)
+- [隐私政策](PRIVACY.md)：数据流向与删除方式。
+- [安全政策](SECURITY.md)：请通过 GitHub 的私密回报功能回报安全漏洞，不要公开发布。
+- [更新日志](CHANGELOG.md)
 
-## 開發
+## 许可证
 
-需要 Xcode 26 以上與 iOS 26 SDK。
+本项目以 [GNU 通用公共许可证第 3 版（GPL-3.0）](LICENSE)开源：你可以自由使用、修改和再发布，但再发布（包括修改后的版本）时必须同样以 GPL-3.0 公开源代码。第三方依赖 [SwiftSoup](https://github.com/scinfu/SwiftSoup) 采用 MIT 许可证。
+
+## 开发
+
+需要 Xcode 26 以上与 iOS 26 SDK。
 
 ```bash
 brew install xcodegen
@@ -126,32 +130,32 @@ xcodegen generate
 open AO3Reader.xcodeproj
 ```
 
-- 相依套件：[SwiftSoup](https://github.com/scinfu/SwiftSoup)（Swift Package Manager，用於解析 HTML）。
-- 架構與需求規格見 [SPEC.md](SPEC.md)；介面多語系的產生流程見 [scripts/l10n](scripts/l10n/README.md)。
+- 相依套件：[SwiftSoup](https://github.com/scinfu/SwiftSoup)（Swift Package Manager，用于解析 HTML）。
+- 架构与需求规格见 [SPEC.md](SPEC.md)；界面多语系的产生流程见 [scripts/l10n](scripts/l10n/README.md)。
 
 ```
 AO3Reader/
-├── App/            進入點、分頁、全域狀態
-├── Models/         作品、章節、段落、搜尋條件
-├── Core/           網路（AO3Client、來源、除錯紀錄）、解析（AO3Parser）、登入、離線、儲存與同步
-├── Translation/    翻譯服務、快取、設定
-└── Features/       瀏覽、搜尋、閱讀、離線、帳號、設定、新手引導
+├── App/            进入点、分页、全域状态
+├── Models/         作品、章节、段落、搜索条件
+├── Core/           网络（AO3Client、来源、调试记录）、解析（AO3Parser）、登录、离线、保存与同步
+├── Translation/    翻译服务、缓存、设置
+└── Features/       浏览、搜索、阅读、离线、账号、设置、新手引导
 ```
 
-### 雲端建置
+### 云端建置
 
-`.github/workflows/build-ipa.yml` 會在 GitHub Actions 的 macOS runner 上產生**未簽名** IPA：
+`.github/workflows/build-ipa.yml` 会在 GitHub Actions 的 macOS runner 上产生**未签名** IPA：
 
-| 觸發方式 | 版本號 | 產物 |
+| 触发方式 | 版本号 | 产物 |
 | --- | --- | --- |
 | 推送 main / PR | `project.yml` 的 `MARKETING_VERSION` | Artifact |
-| 手動執行（可填版本號） | 輸入的版本號 | Artifact；勾選「發行」時另建 GitHub Release |
+| 手动运行（可填版本号） | 输入的版本号 | Artifact；勾选「发行」时另建 GitHub Release |
 | 推送 tag `v1.2.3` | `1.2.3` | Artifact + GitHub Release |
 
-IPA 檔名為 `YAAO3R-<版本號>-unsigned.ipa`。
+IPA 文件名为 `YAAO3R-<版本号>-unsigned.ipa`。
 
-## 注意事項
+## 注意事项
 
-- 請遵守 AO3 的[服務條款](https://archiveofourown.org/tos)。App 只在你操作時載入頁面，遇到 HTTP 429 會停止重試並顯示等待時間。
-- 免金鑰的翻譯服務屬於非官方介面，可能限流或變更；需要穩定時建議使用自備 API Key 的服務。
-- 作品的著作權屬於原作者。請勿把離線或匯出的作品與譯文再散布。
+- 请遵守 AO3 的[服务条款](https://archiveofourown.org/tos)。App 只在你操作时加载页面，遇到 HTTP 429 会停止重试并显示等待时间。
+- 免密钥的翻译服务属于非官方界面，可能限流或变更；需要稳定时建议使用自备 API Key 的服务。
+- 作品的著作权属于原作者。请勿把离线或导出的作品与译文再散布。

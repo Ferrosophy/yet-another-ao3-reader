@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">繁體中文</a> · <a href="README.zh-Hans.md">简体中文</a> · English
+  <a href="README.md">简体中文</a> · <a href="README.zh-Hant.md">繁體中文</a> · English
 </p>
 
 ---
@@ -112,6 +112,10 @@ Donations support only the developer of this app. They are not affiliated with A
 - [Privacy policy](PRIVACY.md): where data goes and how to delete it.
 - [Security policy](SECURITY.md): report vulnerabilities privately through GitHub, not in public issues.
 - [Changelog](CHANGELOG.md)
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE). You may use, modify and redistribute it, but redistributed versions (including modified ones) must also be released under GPL-3.0 with their source code. The dependency [SwiftSoup](https://github.com/scinfu/SwiftSoup) is MIT-licensed.
 
 ## Development
 

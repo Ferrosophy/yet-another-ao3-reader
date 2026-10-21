@@ -1,24 +1,24 @@
-## YAAO3R 1.0 🎉
+## YAAO3R 1.0.1
 
-第一個正式版。原生 iOS 的 Archive of Our Own 閱讀器，採用 Liquid Glass 設計，以原文與譯文對照閱讀任何語言的作品。
+**新功能**
+- 阅读页：「在网页中打开」（使用镜像时打开镜像站），并显示整部作品的阅读进度百分比。
+- 文末：支持作者的提示、「❤️ Kudos」按钮（已给过时会提示），以及评论列表与评论的沉浸式翻译。
+- 设置 › 隐私：新增「清除所有本地数据」。
+- 批量下载每 3 天最多 50 部。
 
-**主要功能**
-- 沉浸式翻譯：每段原文下方顯示譯文；標題、標籤、簡介與作者註也能翻譯。
-- 多種翻譯服務：免金鑰的 Google、Bing、騰訊、火山、百度、有道、搜狗、DeepL、Apple 翻譯，或自備 API Key 使用 OpenAI 相容服務、Claude、Gemini 等。
-- 離線：先下載原文再翻譯，失敗自動續傳，可分享為雙語 EPUB。
-- 瀏覽、搜尋與詳細篩選，與 AO3 的搜尋欄位一一對應。
-- AO3 帳號或本機保存，並以 iCloud / WebDAV 同步。
-- 鏡像源與新手引導：連不上 AO3 時引導加入鏡像源（App 不提供鏡像網址）。
-- 支援 20 種介面語言（中文含繁簡與港澳台用字）。
+**修复与调整**
+- 修复切换来源或分页后，浏览页有时显示加载失败、需要重开 App 的问题。
+- 不再使用 AO3 官方标志；调试记录隐藏验证令牌与 Cookie 的值。
+- 更新赞助页说明；项目改以 GPL-3.0 许可证开源。
 
-**安裝**
+**安装**
 - 需要 iOS 26 或以上。
-- 下方的 IPA **未簽名**，請用 AltStore、SideStore、Sideloadly 或自己的開發者憑證簽名後安裝。
+- 下方的 IPA **未签名**，请用 AltStore、SideStore、Sideloadly 或自己的开发者证书签名后安装。
 
 ---
 
-**简体中文**：第一个正式版。需要 iOS 26 或以上；IPA 未签名，请用 AltStore、SideStore、Sideloadly 或自己的开发者证书签名后安装。连不上 AO3 时，首次打开的新手引导会教你加入镜像源。
+**繁體中文**：新增「在網頁中打開」、閱讀進度百分比、文末 Kudos 與評論（含沉浸式翻譯）、「清除所有本地資料」，並修正切換來源後瀏覽頁載入失敗的問題。需要 iOS 26 或以上；IPA 未簽名，需自行簽名後安裝。
 
-**English**: The first stable release. Requires iOS 26 or later. The IPA is unsigned; sign it with AltStore, SideStore, Sideloadly or your own developer certificate before installing.
+**English**: Adds Open in Browser, a reading progress percentage, end-of-work kudos and comments (with immersive translation) and Erase All Local Data, and fixes the browse page sometimes failing to load after switching sources. Requires iOS 26 or later; the IPA is unsigned and must be signed before installing.
 
-YAAO3R is an unofficial third-party app and is not affiliated with AO3 or the OTW.
+YAAO3R 是独立开发的非官方 AO3 阅读器，与 AO3 及 OTW 没有官方关联。

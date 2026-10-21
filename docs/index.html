@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>YAAO3R · Yet another AO3 reader</title>
-<meta name="description" content="原生 iOS 的 AO3 閱讀器：Liquid Glass 設計、沉浸式翻譯、離線閱讀。A native iOS reader for Archive of Our Own with immersive translation.">
+<meta name="description" content="原生 iOS 的 AO3 阅读器：Liquid Glass 设计、沉浸式翻译、离线阅读。A native iOS reader for Archive of Our Own with immersive translation.">
 <meta property="og:title" content="YAAO3R · Yet another AO3 reader">
 <meta property="og:description" content="A native iOS reader for Archive of Our Own · Liquid Glass · Immersive translation">
 <meta property="og:image" content="https://ferrosophy.github.io/yet-another-ao3-reader/icon.png">
@@ -107,8 +107,8 @@
   <nav>
     <a class="brand" href="./"><img src="favicon.png" alt="">YAAO3R</a>
     <div class="langs" role="group" aria-label="Language">
-      <button data-set-lang="zh-Hant">繁</button>
       <button data-set-lang="zh-Hans">简</button>
+      <button data-set-lang="zh-Hant">繁</button>
       <button data-set-lang="en">EN</button>
     </div>
   </nav>
@@ -246,12 +246,13 @@ function pickDefault() {
   const langs = navigator.languages || [navigator.language || "en"];
   for (const l of langs) {
     const v = l.toLowerCase();
+    // 以简体中文为主：只有繁体中文（台湾、香港、澳门）与英文浏览器显示对应语言
     if (v.startsWith("zh")) {
-      return /hans|cn|sg|my/.test(v) ? "zh-Hans" : "zh-Hant";
+      return /hant|tw|hk|mo/.test(v) ? "zh-Hant" : "zh-Hans";
     }
     if (v.startsWith("en")) return "en";
   }
-  return "en";
+  return "zh-Hans";
 }
 
 function render(lang) {
